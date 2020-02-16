@@ -1,5 +1,6 @@
 """Calculate the Partisan Voter Index (PVI) for various Massachusetts geographies"""
 
+import functools
 import pandas as pd
 import electionstats
 import pvi
@@ -22,7 +23,9 @@ def main():
                   .reset_index())
     pct_pvi_16["PVI_N"] = pvi.calc_pvi(pct_pvi_16)
     pct_pvi_16["PVI"] = pct_pvi_16["PVI_N"].map(pvi.pvi_string)
-    pct_pvi_16[["City/Town", "Ward", "Pct", "PVI_N", "PVI"]].to_csv("ma_precinct_pvi_2016.csv", index=False)
+    (pct_pvi_16[["City/Town", "Ward", "Pct", "PVI_N", "PVI"]]
+     .sort_values(["City/Town", "Ward", "Pct"])
+     .to_csv("ma_precinct_pvi_2016.csv", index=False))
 
     # For City/Town, County, and legislative district PVI calculation
     # the GROUPING_PVI function does the work. We save each result.
@@ -85,20 +88,18 @@ def read_merge_precincts():
     # which City/Town, County, State Rep, State Senate, US House,
     # and Gov Council district it is in.
     print("Merge...")
-    pcts = (pd.merge(sr16,
-                     pd.merge(ss16,
-                              pd.merge(ush16,
-                                       pd.merge(gc16,
-                                                pd.merge(p16,
-                                                         pd.merge(p12, ctd[["City/Town", "County"]],
-                                                                  on="City/Town"),
-                                                         on=["City/Town", "Ward", "Pct"]),
-                                                on=["City/Town", "Ward", "Pct"]),
-                                       on=["City/Town", "Ward", "Pct"]),
-                              on=["City/Town", "Ward", "Pct"]),
-                     on=["City/Town", "Ward", "Pct"])).sort_values(["City/Town", "Ward", "Pct"])
+    # Use REDUCE for a the nested precinct-based merges and then
+    # do the last merge for County on City/Town.
+    pcts = pd.merge(functools.reduce(merge_on_precinct,
+                                     [sr16, ss16, ush16, gc16, p16, p12]),
+                    ctd[["City/Town", "County"]],
+                    on="City/Town")
     return pcts
-    
+
+def merge_on_precinct(df1, df2):
+    m = pd.merge(df1, df2, on=["City/Town", "Ward", "Pct"])
+    return m
+
 def office_precincts(office, year):
     """Return the precinct-level results for every district for the
     particular legislative office (e.g., State Rep, US House, etc.)"""
