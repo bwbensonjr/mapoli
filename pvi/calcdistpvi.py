@@ -62,7 +62,7 @@ def read_merge_precincts():
     # Map each town to a county for county-level calculation
     print("Counties...")
     ctd = pd.read_csv("ma_town_demographics_2010.csv")
-    ctd["City/Town"] = ctd["City/Town"].map(abbreviate_compass)
+    ctd["City/Town"] = ctd["City/Town"].map(electionstats.abbreviate_compass)
 
     # Read the results of each legislative office district results by precinct
     print("State Rep 2016...")
@@ -73,6 +73,7 @@ def read_merge_precincts():
     ss16 = (office_precincts("State Senate", 2016)
             [["City/Town", "Ward", "Pct", "district"]]
             .rename(columns={"district": "State Senate"}))
+    # Note: Fix the name of "Berkshire, Hampshire, Franklin and Hampden"
     print("US House 2016...")
     ush16 = (office_precincts("US House", 2016)
              [["City/Town", "Ward", "Pct", "district"]]
@@ -127,15 +128,6 @@ def grouping_pvi(pcts, group):
     dists["PVI"] = dists["PVI_N"].map(pvi.pvi_string)
     dpvi = dists[[group, "PVI_N", "PVI"]]
     return dpvi
-
-def abbreviate_compass(name):
-    """Abbreviate the directional part of municipality names to 
-    match those found in the electionstats database."""
-    abbr_name = (name.replace("North ", "N. ")
-                 .replace("East ", "E. ")
-                 .replace("South ", "S. ")
-                 .replace("West ", "W. "))
-    return abbr_name
 
 if __name__ == "__main__":
     main()
