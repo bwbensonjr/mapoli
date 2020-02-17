@@ -40,10 +40,10 @@ function polygonStyle(feature) {
 
 function featurePopupInfo(feature) {
     p = feature.properties;
-    info = `<b>${p.SEN_DIST}</b><br/>
+    info = `<b>${p.DISTRICT}</b><br/>
             PVI: ${p.PVI}<br/>
-            Representative: ${p.REP}`;
-    return info;
+            Senator: ${p.SENATOR}`; 
+   return info;
 }
 
 var layerPopup;
