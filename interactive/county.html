@@ -81,7 +81,7 @@ function onEachFeature(feature, layer) {
     });
 }
 
-var geoms = new L.geoJson.ajax("../gis/geojson/counties.geojson",
+var geoms = new L.geoJson.ajax("../gis/geojson/counties_pvi.geojson",
                                    {style: polygonStyle,
                                     onEachFeature: onEachFeature});
 geoms.addTo(map);

@@ -1,0 +1,89 @@
+<html>
+<head>  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+</head>
+<body>
+<div id="mapid" style="width: 100%; height: 100%;"></div>  
+<script>
+var map = L.map('mapid').setView([42.084487,-71.6208089], 9);
+  
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+function getColor(pvi_n) {
+   c = pvi_n > 40  ? '#000000':
+       pvi_n > 30  ? '#100f16':
+       pvi_n > 20  ? '#33385a':
+       pvi_n > 10  ? '#6780b3':
+       pvi_n > 0   ? '#b5c6e8':
+       pvi_n > -10 ? '#F6BDC0':
+       pvi_n > -20 ? '#F1959B':
+       pvi_n > -30 ? '#F07470':
+       pvi_n > -40 ? '#EA4C46':
+       'DC1C13';
+   return c;
+}
+
+function polygonStyle(feature) {
+    s = {
+        fillColor: getColor(feature.properties.PVI_N),
+        fillOpacity: 0.4,
+        weight: 2,
+        color: "grey",
+        opacity: 1
+    };
+    return s;
+}
+
+function featurePopupInfo(feature) {
+    p = feature.properties;
+    info = `<b>${p.GC_DIST}</b><br/>
+            PVI: ${p.PVI}<br/>
+            Member: ${p.MEMBER} (${p.PARTY})`; 
+   return info;
+}
+
+var layerPopup;
+
+function highlightFeature(e) {
+    var layer = e.target;
+
+    if (map) {
+          layerPopup = L.popup().setLatLng(e.latlng).setContent(featurePopupInfo(layer.feature)).openOn(map);
+    }
+
+    layer.setStyle({
+        weight: 3,
+        color: 'black'
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+
+function resetHighlight(e) {
+    geoms.resetStyle(e.target);
+    if (layerPopup && map) {
+        map.closePopup(layerPopup);
+        layerPopup = null;
+    }
+}
+
+function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight
+    });
+}
+
+var geoms = new L.geoJson.ajax("../gis/geojson/govcouncil2012_pvi.geojson",
+                                   {style: polygonStyle,
+                                    onEachFeature: onEachFeature});
+geoms.addTo(map);
+</script>
+</body>
+</html>

@@ -79,7 +79,7 @@ function onEachFeature(feature, layer) {
     });
 }
 
-var geoms = new L.geoJson.ajax("../gis/geojson/towns2019.geojson",
+var geoms = new L.geoJson.ajax("../gis/geojson/towns2019_pvi.geojson",
                                    {style: polygonStyle,
                                     onEachFeature: onEachFeature});
 geoms.addTo(map);
