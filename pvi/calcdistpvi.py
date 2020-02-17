@@ -73,7 +73,8 @@ def read_merge_precincts():
     ss16 = (office_precincts("State Senate", 2016)
             [["City/Town", "Ward", "Pct", "district"]]
             .rename(columns={"district": "State Senate"}))
-    # Note: Fix the name of "Berkshire, Hampshire, Franklin and Hampden"
+    ss16["State Senate"] = ss16["State Senate"].replace("Berkshire, Hampshire and Franklin",
+                                                        "Berkshire, Hampshire, Franklin and Hampden")
     print("US House 2016...")
     ush16 = (office_precincts("US House", 2016)
              [["City/Town", "Ward", "Pct", "district"]]
@@ -82,7 +83,7 @@ def read_merge_precincts():
     gc16 = (office_precincts("Gov Council", 2016)
             [["City/Town", "Ward", "Pct", "district"]]
             .rename(columns={"district": "Gov Council"}))
-    gc16["Gov Council"] = gc16["Gov Council"].str.lstrip()
+    gc16["Gov Council"] = gc16["Gov Council"].map(lambda name: name.lstrip() + " District")
 
     # Merge all of the separate precinct results so every precinct
     # has the presidential vote information and a column indicating
