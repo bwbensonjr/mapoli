@@ -53,5 +53,20 @@ def main():
     gc_geom_pvi = pd.merge(gc_geom, gc_pvi.rename(columns={"Gov Council": "GC_DIST"}), on="GC_DIST")
     gc_geom_pvi.to_file("../gis/geojson/govcouncil2012_pvi.geojson", driver="GeoJSON")
 
+    # Wards and Precincts
+    print("Wards/Precincts")
+    wp_geom = gpd.read_file("../gis/geojson/wardsprecincts2012.geojson")
+    wp_geom["CITY_TOWN"] = wp_geom["TOWN"].map(lambda name:
+                                               electionstats.abbreviate_compass(name.title())
+                                               .replace("Manchester", "Manchester-by-the-Sea"))
+    wp_geom["WARD"] = wp_geom["WARD"].map(lambda w: "-" if w is None else w)
+    wp_pvi = pd.read_csv("ma_precinct_pvi_2016.csv", dtype={"Ward": str, "Pct": str})
+    wp_geom_pvi = pd.merge(wp_geom,
+                           wp_pvi.rename(columns={"City/Town": "CITY_TOWN", "Ward": "WARD", "Pct": "PRECINCT"}),
+                           on=["CITY_TOWN", "WARD", "PRECINCT"],
+                           how="left")
+    wp_geom_pvi.to_file("../gis/geojson/wardsprecincts2012_pvi.geojson", driver="GeoJSON")
+
+
 if __name__ == "__main__":
     main()
