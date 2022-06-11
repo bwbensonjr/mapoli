@@ -17,29 +17,35 @@ def main():
     # We don't need to do any grouping for the individual precint
     # PVI calculation, but we restrict to the appropriate columns
     # and calculate.
-    pct_pvi_16 = (pcts[["City/Town", "Ward", "Pct",
-                        "cur_dem_votes", "cur_gop_votes", "prev_dem_votes", "prev_gop_votes"]]
-                  .assign(pvi_year=2016)
-                  .reset_index())
-    pct_pvi_16["PVI_N"] = pvi.calc_pvi(pct_pvi_16)
+    pct_pvi_16 = pcts[["City/Town", "Ward", "Pct",
+                       "Clinton_16", "Trump_16",
+                       "Obama_12", "Romney_12"]]
+    pct_pvi_16["PVI_N"] = pvi.calc_pvi(pct_pvi_16, pvi_year=2016)
     pct_pvi_16["PVI"] = pct_pvi_16["PVI_N"].map(pvi.pvi_string)
     (pct_pvi_16[["City/Town", "Ward", "Pct", "PVI_N", "PVI"]]
      .sort_values(["City/Town", "Ward", "Pct"])
      .to_csv("ma_precinct_pvi_2016.csv", index=False))
 
+    pvi_cols_2016 = [
+        "Clinton_16",
+        "Trump_16",
+        "Obama_12",
+        "Romney_12",
+        ]
+    
     # For City/Town, County, and legislative district PVI calculation
     # the GROUPING_PVI function does the work. We save each result.
-    ct_pvi_16 = grouping_pvi(pcts, "City/Town")
+    ct_pvi_16 = grouping_pvi(pcts, "City/Town", pvi_cols_2016, 2016)
     ct_pvi_16.to_csv("ma_city_town_pvi_2016.csv", index=False)
-    county_pvi_16 = grouping_pvi(pcts, "County")
+    county_pvi_16 = grouping_pvi(pcts, "County", pvi_cols_2016, 2016)
     county_pvi_16.to_csv("ma_county_pvi_2016.csv", index=False)
-    sr_pvi_16 = grouping_pvi(pcts, "State Rep")
+    sr_pvi_16 = grouping_pvi(pcts, "State Rep", pvi_cols_2016, 2016)
     sr_pvi_16.to_csv("ma_state_rep_dist_pvi_2016.csv", index=False)
-    ss_pvi_16 = grouping_pvi(pcts, "State Senate")
+    ss_pvi_16 = grouping_pvi(pcts, "State Senate", pvi_cols_2016, 2016)
     ss_pvi_16.to_csv("ma_state_senate_dist_pvi_2016.csv", index=False)
-    ush_pvi_16 = grouping_pvi(pcts, "US House")
+    ush_pvi_16 = grouping_pvi(pcts, "US House", pvi_cols_2016, 2016)
     ush_pvi_16.to_csv("ma_us_house_dist_pvi_2016.csv", index=False)
-    gc_pvi_16 = grouping_pvi(pcts, "Gov Council")
+    gc_pvi_16 = grouping_pvi(pcts, "Gov Council", pvi_cols_2016, 2016)
     gc_pvi_16.to_csv("ma_gov_council_dist_pvi_2016.csv", index=False)
     print("Done.")
 
@@ -50,14 +56,14 @@ def read_merge_precincts():
     # Get the precinct-level results for the last two elections
     print("President 2016...")
     p16 = (office_precincts("President", 2016)
-           .rename(columns={"Clinton/ Kaine": "cur_dem_votes",
-                            "Trump/ Pence": "cur_gop_votes"})
-           [["City/Town", "Ward", "Pct", "cur_dem_votes", "cur_gop_votes"]])
+           .rename(columns={"Clinton/ Kaine": "Clinton_16",
+                            "Trump/ Pence": "Trump_16"})
+           [["City/Town", "Ward", "Pct", "Clinton_16", "Trump_16"]])
     print("President 2012...")
     p12 = (office_precincts("President", 2012)
-           .rename(columns={"Obama/ Biden": "prev_dem_votes",
-                            "Romney/ Ryan": "prev_gop_votes"})
-           [["City/Town", "Ward", "Pct", "prev_dem_votes", "prev_gop_votes"]])
+           .rename(columns={"Obama/ Biden": "Obama_12",
+                            "Romney/ Ryan": "Romney_12"})
+           [["City/Town", "Ward", "Pct", "Obama_12", "Romney_12"]])
 
     # Map each town to a county for county-level calculation
     print("Counties...")
@@ -117,15 +123,14 @@ def add_district(r):
     p["district"] = r["district"]
     return p
 
-def grouping_pvi(pcts, group):
+def grouping_pvi(pcts, group, pres_cols, pvi_year):
     """Sum the election results by group (e.g., City/Town, State Senate, etc.)
     and do the PVI calculation for each group."""
-    dists = (pcts[[group, "cur_dem_votes", "cur_gop_votes", "prev_dem_votes", "prev_gop_votes"]]
+    dists = (pcts[[group] + pres_cols]
              .groupby(group)
              .sum()
-             .assign(pvi_year=2016)
              .reset_index())
-    dists["PVI_N"] = pvi.calc_pvi(dists)
+    dists["PVI_N"] = pvi.calc_pvi(dists, pvi_year=pvi_year)
     dists["PVI"] = dists["PVI_N"].map(pvi.pvi_string)
     dpvi = dists[[group, "PVI_N", "PVI"]]
     return dpvi

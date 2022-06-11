@@ -1,4 +1,4 @@
-City/Town,Ward,Pct,State Rep,State Senate,US House,Gov Council,cur_dem_votes,cur_gop_votes,prev_dem_votes,prev_gop_votes,County
+City/Town,Ward,Pct,State Rep,State Senate,US House,Gov Council,Clinton_16,Trump_16,Obama_12,Romney_12,County
 Fairhaven,-,1,10th Bristol,2nd Bristol and Plymouth,9th Congressional,1st District,832,606,843,576,Bristol
 Fairhaven,-,2,10th Bristol,2nd Bristol and Plymouth,9th Congressional,1st District,744,600,884,490,Bristol
 Fairhaven,-,3,10th Bristol,2nd Bristol and Plymouth,9th Congressional,1st District,581,536,706,379,Bristol
