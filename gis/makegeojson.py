@@ -22,9 +22,9 @@ def main():
         "shp/GOVCOUNCIL2021/GOVCOUNCIL2021_POLY.shp",
         "geojson/govcouncil2021.geojson",
         {"DIST_NUM": "district_num",
-         "DIST_NAME": "district",
+         "DIST_NAME": "district_display",
          "SHAPE_AREA": "shape_area"},
-        word_transform,
+        minus_district_transform,
     )
     shp_to_geojson(
         "shp/CONGRESSMA118/CONGRESSMA118_POLY.shp",
@@ -32,7 +32,7 @@ def main():
         {"DIST_NUM": "district_num",
          "DISTRICT": "district_display",
          "SHAPE_AREA": "shape_area"},
-        number_transform,
+        number_minus_district_transform,
     )
 
 SIMPLIFY_TOLERANCE = 10
@@ -57,6 +57,20 @@ def number_transform(df):
     new_df = df.assign(
         district = lambda x: (x["district_display"]
                               .map(number_to_word))
+    )
+    return new_df
+
+def minus_district_transform(df):
+    new_df = df.assign(
+        district = lambda x: (x["district_display"]
+                              .map(first_word))
+    )
+    return new_df
+
+def number_minus_district_transform(df):
+    new_df = df.assign(
+        district = lambda x: (x["district_display"]
+                              .map(number_minus_district))
     )
     return new_df
 
@@ -130,6 +144,14 @@ def number_to_word(name):
         parts[0] = NUMBER_TO_WORD[num]
         name = " ".join(parts)
     return name
-            
+
+def first_word(name):
+    parts = name.split(" ")
+    return parts[0]
+
+def number_minus_district(name):
+    new_name = first_word(number_to_word(name))
+    return new_name
+
 if __name__ == "__main__":
     main()
