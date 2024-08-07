@@ -35,10 +35,13 @@ def main():
         number_transform,
     )
 
+SIMPLIFY_TOLERANCE = 10
+    
 def shp_to_geojson(in_file, out_file, col_rename, name_transform):
     print(f"Reading {in_file}...")
     geom = (
         gp.read_file(in_file)
+        .assign(geometry = lambda x: x["geometry"].simplify(SIMPLIFY_TOLERANCE))
         .rename(columns=col_rename)
         .pipe(name_transform)
         .sort_values("district_num")
