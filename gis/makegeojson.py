@@ -36,6 +36,19 @@ def main():
          "SHAPE_AREA": "shape_area"},
         number_minus_district_transform,
     )
+    geom = (gp.read_file("https://bwbensonjr.github.io/ma-wards-precincts/ma_wards_precincts_w_subs.geojson")
+            .assign(geometry = lambda x: x["geometry"].simplify(SIMPLIFY_TOLERANCE))
+            .rename(columns={
+                "name": "precinct_name",
+                "Ward": "ward",
+                "Pct": "precinct",
+                "State_Rep": "State Representative",
+                "State_Senate": "State Senate",
+                "US_House": "Representative in Congress",
+                "Gov_Council": "Governor's Council",
+            }))
+    geom.to_file("geojson/wards_precincts_w_subs.geojson")
+    
     wp_in_file = "shp/wardsprecincts2022/WARDSPRECINCTS2022_POLY.shp"
     wp_out_file = "geojson/wardsprecincts2022.geojson"
     print(f"Reading {wp_in_file}...")
