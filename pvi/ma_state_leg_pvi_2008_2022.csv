@@ -1,0 +1,1001 @@
+pvi_year,office,district,PVI_N,PVI
+2008,State Representative,10th Bristol,6.896891214288159,D+7
+2008,State Representative,10th Essex,19.31167705778461,D+19
+2008,State Representative,10th Hampden,29.18849921181276,D+29
+2008,State Representative,10th Middlesex,17.020879236346342,D+17
+2008,State Representative,10th Norfolk,2.9767353934931684,D+3
+2008,State Representative,10th Plymouth,8.72744014610587,D+9
+2008,State Representative,10th Suffolk,14.301603428849496,D+14
+2008,State Representative,10th Worcester,5.43695300982614,D+5
+2008,State Representative,11th Bristol,19.47514678964072,D+19
+2008,State Representative,11th Essex,19.2265078701304,D+19
+2008,State Representative,11th Hampden,33.120969335009754,D+33
+2008,State Representative,11th Middlesex,25.973557418549508,D+26
+2008,State Representative,11th Norfolk,4.294846002603059,D+4
+2008,State Representative,11th Plymouth,10.979373626119248,D+11
+2008,State Representative,11th Suffolk,42.84175184066928,D+43
+2008,State Representative,11th Worcester,6.028088378151697,D+6
+2008,State Representative,12th Bristol,8.458796699020565,D+8
+2008,State Representative,12th Essex,9.82975372660164,D+10
+2008,State Representative,12th Hampden,6.459906229359302,D+6
+2008,State Representative,12th Middlesex,25.590896644875528,D+26
+2008,State Representative,12th Norfolk,4.808863773515415,D+5
+2008,State Representative,12th Plymouth,-0.4973050626456587,EVEN
+2008,State Representative,12th Suffolk,32.938392999049206,D+33
+2008,State Representative,12th Worcester,3.753453139897589,D+4
+2008,State Representative,13th Bristol,27.9713919731705,D+28
+2008,State Representative,13th Essex,1.8920242803350475,D+2
+2008,State Representative,13th Middlesex,15.617782533932644,D+16
+2008,State Representative,13th Norfolk,10.751336453901985,D+11
+2008,State Representative,13th Suffolk,24.261233015912065,D+24
+2008,State Representative,13th Worcester,13.60565739284384,D+14
+2008,State Representative,14th Bristol,0.8749141403953553,D+1
+2008,State Representative,14th Essex,6.678958348884656,D+7
+2008,State Representative,14th Middlesex,14.09345922411992,D+14
+2008,State Representative,14th Norfolk,11.357758996902302,D+11
+2008,State Representative,14th Suffolk,24.07102158890453,D+24
+2008,State Representative,14th Worcester,12.40624766412337,D+12
+2008,State Representative,15th Essex,2.0786501633371146,D+2
+2008,State Representative,15th Middlesex,16.776804183691684,D+17
+2008,State Representative,15th Norfolk,31.849855894521205,D+32
+2008,State Representative,15th Suffolk,34.56092201452806,D+35
+2008,State Representative,15th Worcester,20.576303635760507,D+21
+2008,State Representative,16th Essex,34.275520576567395,D+34
+2008,State Representative,16th Middlesex,7.442147326473592,D+7
+2008,State Representative,16th Suffolk,11.78815760595483,D+12
+2008,State Representative,16th Worcester,17.165194223606917,D+17
+2008,State Representative,17th Essex,4.99995050010289,D+5
+2008,State Representative,17th Middlesex,12.301731000562532,D+12
+2008,State Representative,17th Suffolk,28.892444798771088,D+29
+2008,State Representative,17th Worcester,12.921165499336418,D+13
+2008,State Representative,18th Essex,2.222428494075501,D+2
+2008,State Representative,18th Middlesex,17.27212919983483,D+17
+2008,State Representative,18th Suffolk,26.955781326289557,D+27
+2008,State Representative,18th Worcester,1.0070013989794455,D+1
+2008,State Representative,19th Middlesex,0.2330398823069068,EVEN
+2008,State Representative,19th Suffolk,12.790132881648288,D+13
+2008,State Representative,1st Barnstable,4.573408551968827,D+5
+2008,State Representative,1st Berkshire,24.541453250877275,D+25
+2008,State Representative,1st Bristol,1.891815202602498,D+2
+2008,State Representative,1st Essex,10.466856481916532,D+10
+2008,State Representative,1st Franklin,22.07874978919537,D+22
+2008,State Representative,1st Hampden,3.687211002776503,D+4
+2008,State Representative,1st Hampshire,24.541639299243744,D+25
+2008,State Representative,1st Middlesex,0.7922382452249299,D+1
+2008,State Representative,1st Norfolk,10.6335755165469,D+11
+2008,State Representative,1st Plymouth,2.341211195978188,D+2
+2008,State Representative,1st Suffolk,18.166677292781785,D+18
+2008,State Representative,1st Worcester,-0.4967483904476544,EVEN
+2008,State Representative,20th Middlesex,-0.4907032507340481,EVEN
+2008,State Representative,21st Middlesex,5.750635070981791,D+6
+2008,State Representative,22nd Middlesex,0.6062346112659767,D+1
+2008,State Representative,23rd Middlesex,20.79424570784596,D+21
+2008,State Representative,24th Middlesex,23.36379759099889,D+23
+2008,State Representative,25th Middlesex,39.3147627465808,D+39
+2008,State Representative,26th Middlesex,33.20170287452723,D+33
+2008,State Representative,27th Middlesex,32.58901265437834,D+33
+2008,State Representative,28th Middlesex,16.866957821761343,D+17
+2008,State Representative,29th Middlesex,25.314421640544893,D+25
+2008,State Representative,2nd Barnstable,4.220376152456796,D+4
+2008,State Representative,2nd Berkshire,20.341567665269856,D+20
+2008,State Representative,2nd Bristol,5.428373495761019,D+5
+2008,State Representative,2nd Essex,1.188774249829594,D+1
+2008,State Representative,2nd Franklin,14.23361676048348,D+14
+2008,State Representative,2nd Hampden,4.5964939569957615,D+5
+2008,State Representative,2nd Hampshire,15.692822178145684,D+16
+2008,State Representative,2nd Middlesex,3.4141059980491217,D+3
+2008,State Representative,2nd Norfolk,10.951580887636226,D+11
+2008,State Representative,2nd Plymouth,3.480755507803168,D+3
+2008,State Representative,2nd Suffolk,19.27746865577351,D+19
+2008,State Representative,2nd Worcester,6.050482657624123,D+6
+2008,State Representative,30th Middlesex,5.670410469267118,D+6
+2008,State Representative,31st Middlesex,7.732164906878348,D+8
+2008,State Representative,32nd Middlesex,8.977692758495037,D+9
+2008,State Representative,33rd Middlesex,18.28388249696244,D+18
+2008,State Representative,34th Middlesex,24.75220965031176,D+25
+2008,State Representative,35th Middlesex,15.344851743130429,D+15
+2008,State Representative,36th Middlesex,-1.253341589197643,R+1
+2008,State Representative,37th Middlesex,9.062467748523083,D+9
+2008,State Representative,3rd Barnstable,2.6369508867646108,D+3
+2008,State Representative,3rd Berkshire,25.517707990383357,D+26
+2008,State Representative,3rd Bristol,10.052391348238388,D+10
+2008,State Representative,3rd Essex,8.707709659463958,D+9
+2008,State Representative,3rd Hampden,1.6411143676494655,D+2
+2008,State Representative,3rd Hampshire,30.06030420197852,D+30
+2008,State Representative,3rd Middlesex,9.051281651679622,D+9
+2008,State Representative,3rd Norfolk,7.604630820514268,D+8
+2008,State Representative,3rd Plymouth,4.076065963197295,D+4
+2008,State Representative,3rd Suffolk,27.14630652487176,D+27
+2008,State Representative,3rd Worcester,10.776749794558691,D+11
+2008,State Representative,4th Barnstable,9.94741686306594,D+10
+2008,State Representative,4th Berkshire,22.36146973766764,D+22
+2008,State Representative,4th Bristol,4.878115278889894,D+5
+2008,State Representative,4th Essex,1.7799598525587323,D+2
+2008,State Representative,4th Hampden,3.202773297220829,D+3
+2008,State Representative,4th Middlesex,6.812999431639044,D+7
+2008,State Representative,4th Norfolk,5.420592762081111,D+5
+2008,State Representative,4th Plymouth,0.662218312505658,D+1
+2008,State Representative,4th Suffolk,11.755011136205862,D+12
+2008,State Representative,4th Worcester,5.923092514466544,D+6
+2008,State Representative,5th Barnstable,0.6832128009784721,D+1
+2008,State Representative,5th Bristol,11.495589263200436,D+11
+2008,State Representative,5th Essex,13.246332314553255,D+13
+2008,State Representative,5th Hampden,19.913098942617992,D+20
+2008,State Representative,5th Middlesex,11.766746578289844,D+12
+2008,State Representative,5th Norfolk,4.021857633781789,D+4
+2008,State Representative,5th Plymouth,-1.8877790565944907,R+2
+2008,State Representative,5th Suffolk,38.88258143272738,D+39
+2008,State Representative,5th Worcester,1.866213443835052,D+2
+2008,State Representative,6th Bristol,15.72600084877227,D+16
+2008,State Representative,6th Essex,9.135624969110513,D+9
+2008,State Representative,6th Hampden,8.70092338931313,D+9
+2008,State Representative,6th Middlesex,15.719631580426965,D+16
+2008,State Representative,6th Norfolk,6.25095153970856,D+6
+2008,State Representative,6th Plymouth,-1.0834697556122983,R+1
+2008,State Representative,6th Suffolk,40.30438892580357,D+40
+2008,State Representative,6th Worcester,2.639460889164702,D+3
+2008,State Representative,7th Bristol,25.76186499711942,D+26
+2008,State Representative,7th Essex,18.133904791490384,D+18
+2008,State Representative,7th Hampden,9.897685084958097,D+10
+2008,State Representative,7th Middlesex,13.51889895484667,D+14
+2008,State Representative,7th Norfolk,14.116543319840035,D+14
+2008,State Representative,7th Plymouth,-0.3780151022430789,EVEN
+2008,State Representative,7th Suffolk,41.37197571020496,D+41
+2008,State Representative,7th Worcester,3.396980285282813,D+3
+2008,State Representative,8th Bristol,18.104617221256703,D+18
+2008,State Representative,8th Essex,12.235759413152902,D+12
+2008,State Representative,8th Hampden,12.85485357695373,D+13
+2008,State Representative,8th Middlesex,4.816903549470519,D+5
+2008,State Representative,8th Norfolk,10.9370810612485,D+11
+2008,State Representative,8th Plymouth,-1.2624232412016934,R+1
+2008,State Representative,8th Suffolk,28.453860538359933,D+28
+2008,State Representative,8th Worcester,0.6688956859580042,D+1
+2008,State Representative,9th Bristol,13.044321347601572,D+13
+2008,State Representative,9th Essex,3.643993819614233,D+4
+2008,State Representative,9th Hampden,19.52228381888891,D+20
+2008,State Representative,9th Middlesex,14.224376137422524,D+14
+2008,State Representative,9th Norfolk,-1.5595815492477738,R+2
+2008,State Representative,9th Plymouth,17.04942309516134,D+17
+2008,State Representative,9th Suffolk,33.63041298328366,D+34
+2008,State Representative,9th Worcester,1.6966087895322055,D+2
+2008,State Representative,"Barnstable, Dukes and Nantucket",17.433458063126384,D+17
+2008,State Senate,1st Bristol and Plymouth,14.820256673323208,D+15
+2008,State Senate,1st Essex,5.697208851181723,D+6
+2008,State Senate,1st Essex and Middlesex,3.349668866775324,D+3
+2008,State Senate,1st Hampden and Hampshire,9.748299782425606,D+10
+2008,State Senate,1st Middlesex,7.311854436269083,D+7
+2008,State Senate,1st Middlesex and Norfolk,25.09521728517929,D+25
+2008,State Senate,1st Plymouth and Bristol,3.486976247213613,D+3
+2008,State Senate,1st Suffolk,27.660020508844795,D+28
+2008,State Senate,1st Suffolk and Middlesex,21.68098059371801,D+22
+2008,State Senate,1st Worcester,10.638425108612948,D+11
+2008,State Senate,2nd Bristol and Plymouth,19.368982180063032,D+19
+2008,State Senate,2nd Essex,9.424428130936937,D+9
+2008,State Senate,2nd Essex and Middlesex,7.806681696588869,D+8
+2008,State Senate,2nd Hampden and Hampshire,10.107586820864222,D+10
+2008,State Senate,2nd Middlesex,21.217209986952813,D+21
+2008,State Senate,2nd Middlesex and Norfolk,10.041925956642416,D+10
+2008,State Senate,2nd Plymouth and Bristol,7.391913585502285,D+7
+2008,State Senate,2nd Suffolk,36.85142616636886,D+37
+2008,State Senate,2nd Suffolk and Middlesex,25.46787931582852,D+25
+2008,State Senate,2nd Worcester,8.032408925305868,D+8
+2008,State Senate,3rd Essex and Middlesex,13.134760994036409,D+13
+2008,State Senate,3rd Middlesex,11.762868071534571,D+12
+2008,State Senate,4th Middlesex,11.226795343297535,D+11
+2008,State Senate,"Berkshire, Hampshire and Franklin",23.129843405759576,D+23
+2008,State Senate,Bristol and Norfolk,3.172359683339121,D+3
+2008,State Senate,Cape and Islands,8.109685530217515,D+8
+2008,State Senate,Hampden,15.880998447057484,D+16
+2008,State Senate,Hampshire and Franklin,25.13255310800082,D+25
+2008,State Senate,Middlesex and Essex,9.037363477721938,D+9
+2008,State Senate,Middlesex and Worcester,9.348768818955175,D+9
+2008,State Senate,"Middlesex, Suffolk and Essex",24.0612469896302,D+24
+2008,State Senate,Norfolk and Plymouth,6.98556678315475,D+7
+2008,State Senate,"Norfolk, Bristol and Middlesex",7.061749821640184,D+7
+2008,State Senate,"Norfolk, Bristol and Plymouth",8.90027809038887,D+9
+2008,State Senate,Plymouth and Barnstable,2.416533752943817,D+2
+2008,State Senate,Plymouth and Norfolk,2.4910189928331827,D+2
+2008,State Senate,Suffolk and Norfolk,13.641929800275332,D+14
+2008,State Senate,Worcester and Middlesex,4.866727982363139,D+5
+2008,State Senate,Worcester and Norfolk,2.577474723574691,D+3
+2008,State Senate,"Worcester, Hampden, Hampshire and Franklin",1.875785546514186,D+2
+2012,State Representative,10th Bristol,6.150016856363571,D+6
+2012,State Representative,10th Essex,19.40927104662333,D+19
+2012,State Representative,10th Hampden,34.48354554119776,D+34
+2012,State Representative,10th Middlesex,14.78837991878933,D+15
+2012,State Representative,10th Norfolk,-1.2384600443340554,R+1
+2012,State Representative,10th Plymouth,7.89884306717833,D+8
+2012,State Representative,10th Suffolk,11.487804720857865,D+11
+2012,State Representative,10th Worcester,1.1033341467263091,D+1
+2012,State Representative,11th Bristol,14.571791775141383,D+15
+2012,State Representative,11th Essex,18.58643704685397,D+19
+2012,State Representative,11th Hampden,33.267094495750726,D+33
+2012,State Representative,11th Middlesex,21.695273151141848,D+22
+2012,State Representative,11th Norfolk,0.2800387158292228,EVEN
+2012,State Representative,11th Plymouth,4.944595666033813,D+5
+2012,State Representative,11th Suffolk,40.25773523396579,D+40
+2012,State Representative,11th Worcester,2.3315053950426323,D+2
+2012,State Representative,12th Bristol,-4.027300522848787,R+4
+2012,State Representative,12th Essex,5.778739126720289,D+6
+2012,State Representative,12th Hampden,4.341633855644567,D+4
+2012,State Representative,12th Middlesex,21.293930634398173,D+21
+2012,State Representative,12th Norfolk,0.3335725575281389,EVEN
+2012,State Representative,12th Plymouth,-4.399405587847438,R+4
+2012,State Representative,12th Suffolk,35.7352392799466,D+36
+2012,State Representative,12th Worcester,-0.3798787147778149,EVEN
+2012,State Representative,13th Bristol,25.83212196456501,D+26
+2012,State Representative,13th Essex,-2.010506546327606,R+2
+2012,State Representative,13th Middlesex,9.245646129014917,D+9
+2012,State Representative,13th Norfolk,6.259072894943829,D+6
+2012,State Representative,13th Suffolk,20.302625586397383,D+20
+2012,State Representative,13th Worcester,12.194630295773036,D+12
+2012,State Representative,14th Bristol,-3.088258979342806,R+3
+2012,State Representative,14th Essex,3.389110644757132,D+3
+2012,State Representative,14th Middlesex,11.040166130305174,D+11
+2012,State Representative,14th Norfolk,6.629463539576141,D+7
+2012,State Representative,14th Suffolk,24.503109367001557,D+25
+2012,State Representative,14th Worcester,10.75956072502182,D+11
+2012,State Representative,15th Essex,-1.6527535380422842,R+2
+2012,State Representative,15th Middlesex,13.96753192573803,D+14
+2012,State Representative,15th Norfolk,29.13385613589305,D+29
+2012,State Representative,15th Suffolk,33.7541911409251,D+34
+2012,State Representative,15th Worcester,21.342555621490188,D+21
+2012,State Representative,16th Essex,30.94317497195117,D+31
+2012,State Representative,16th Middlesex,5.640263342880525,D+6
+2012,State Representative,16th Suffolk,8.693772418682165,D+9
+2012,State Representative,16th Worcester,15.93441303676939,D+16
+2012,State Representative,17th Essex,17.50938822988345,D+18
+2012,State Representative,17th Middlesex,11.665169202419868,D+12
+2012,State Representative,17th Suffolk,27.11178790729556,D+27
+2012,State Representative,17th Worcester,10.933599377369074,D+11
+2012,State Representative,18th Essex,-4.016269813156603,R+4
+2012,State Representative,18th Middlesex,18.311354920866545,D+18
+2012,State Representative,18th Suffolk,23.79660599177115,D+24
+2012,State Representative,18th Worcester,-5.335794622248546,R+5
+2012,State Representative,19th Middlesex,-4.349352096354265,R+4
+2012,State Representative,19th Suffolk,9.562973346473536,D+10
+2012,State Representative,1st Barnstable,1.2696879081937062,D+1
+2012,State Representative,1st Berkshire,23.540990022569208,D+24
+2012,State Representative,1st Bristol,-1.6582345333760906,R+2
+2012,State Representative,1st Essex,7.688957718856648,D+8
+2012,State Representative,1st Franklin,21.449814144258315,D+21
+2012,State Representative,1st Hampden,-0.4840477684403876,EVEN
+2012,State Representative,1st Hampshire,23.867536232788467,D+24
+2012,State Representative,1st Middlesex,-3.4086928029415486,R+3
+2012,State Representative,1st Norfolk,8.80692891817123,D+9
+2012,State Representative,1st Plymouth,-1.0594773172026284,R+1
+2012,State Representative,1st Suffolk,18.082524939135546,D+18
+2012,State Representative,1st Worcester,-4.175990252605244,R+4
+2012,State Representative,20th Middlesex,-6.526096832078482,R+7
+2012,State Representative,21st Middlesex,1.9088302573223803,D+2
+2012,State Representative,22nd Middlesex,-3.173067282128084,R+3
+2012,State Representative,23rd Middlesex,18.139140665848977,D+18
+2012,State Representative,24th Middlesex,19.9701648823151,D+20
+2012,State Representative,25th Middlesex,37.5268780242311,D+38
+2012,State Representative,26th Middlesex,32.56637712673302,D+33
+2012,State Representative,27th Middlesex,32.64486599489842,D+33
+2012,State Representative,28th Middlesex,16.101757780385206,D+16
+2012,State Representative,29th Middlesex,26.1889045091391,D+26
+2012,State Representative,2nd Barnstable,0.2043810757122677,EVEN
+2012,State Representative,2nd Berkshire,20.37860821628645,D+20
+2012,State Representative,2nd Bristol,2.611006194750598,D+3
+2012,State Representative,2nd Essex,-3.277926007279341,R+3
+2012,State Representative,2nd Franklin,5.911504516505229,D+6
+2012,State Representative,2nd Hampden,-1.5313174625820714,R+2
+2012,State Representative,2nd Hampshire,13.387462513350012,D+13
+2012,State Representative,2nd Middlesex,-0.0954516339497169,EVEN
+2012,State Representative,2nd Norfolk,7.41424816079117,D+7
+2012,State Representative,2nd Plymouth,-0.6484294412917757,R+1
+2012,State Representative,2nd Suffolk,18.48666237673412,D+18
+2012,State Representative,2nd Worcester,2.4015272958819778,D+2
+2012,State Representative,30th Middlesex,2.1573033814268228,D+2
+2012,State Representative,31st Middlesex,3.043005741413618,D+3
+2012,State Representative,32nd Middlesex,6.277120141328152,D+6
+2012,State Representative,33rd Middlesex,17.40690837499882,D+17
+2012,State Representative,34th Middlesex,24.55321494927537,D+25
+2012,State Representative,35th Middlesex,13.078722126691622,D+13
+2012,State Representative,36th Middlesex,-5.74317554327598,R+6
+2012,State Representative,37th Middlesex,6.358234528603857,D+6
+2012,State Representative,3rd Barnstable,0.2620489299196227,EVEN
+2012,State Representative,3rd Berkshire,25.178898419555107,D+25
+2012,State Representative,3rd Bristol,5.304582190475527,D+5
+2012,State Representative,3rd Essex,6.519468866954536,D+7
+2012,State Representative,3rd Hampden,-2.98080246444854,R+3
+2012,State Representative,3rd Hampshire,31.049347450102992,D+31
+2012,State Representative,3rd Middlesex,5.658495898597771,D+6
+2012,State Representative,3rd Norfolk,4.21157356823948,D+4
+2012,State Representative,3rd Plymouth,-0.2795622870992442,EVEN
+2012,State Representative,3rd Suffolk,21.519611387223435,D+22
+2012,State Representative,3rd Worcester,6.798746015306135,D+7
+2012,State Representative,4th Barnstable,7.91801288891455,D+8
+2012,State Representative,4th Berkshire,21.24838331417251,D+21
+2012,State Representative,4th Bristol,-0.8754928408689522,R+1
+2012,State Representative,4th Essex,-1.112017760509465,R+1
+2012,State Representative,4th Hampden,0.2083781438251497,EVEN
+2012,State Representative,4th Middlesex,4.881357255626229,D+5
+2012,State Representative,4th Norfolk,0.9736731246807406,D+1
+2012,State Representative,4th Plymouth,-3.810720670052242,R+4
+2012,State Representative,4th Suffolk,8.33254011945639,D+8
+2012,State Representative,4th Worcester,1.415749518352194,D+1
+2012,State Representative,5th Barnstable,-4.465367601145143,R+4
+2012,State Representative,5th Bristol,6.746850496407964,D+7
+2012,State Representative,5th Essex,10.6755542786218,D+11
+2012,State Representative,5th Hampden,21.922085603426652,D+22
+2012,State Representative,5th Middlesex,8.671097090702373,D+9
+2012,State Representative,5th Norfolk,0.0352788249106561,EVEN
+2012,State Representative,5th Plymouth,-6.619197538389498,R+7
+2012,State Representative,5th Suffolk,41.16310036778995,D+41
+2012,State Representative,5th Worcester,-3.2584959658111923,R+3
+2012,State Representative,6th Bristol,16.300798552278785,D+16
+2012,State Representative,6th Essex,6.680038438032065,D+7
+2012,State Representative,6th Hampden,5.407811854288402,D+5
+2012,State Representative,6th Middlesex,11.94426542547543,D+12
+2012,State Representative,6th Norfolk,2.2103824109173,D+2
+2012,State Representative,6th Plymouth,-5.667349865660593,R+6
+2012,State Representative,6th Suffolk,41.984325243804655,D+42
+2012,State Representative,6th Worcester,0.9442601998740364,D+1
+2012,State Representative,7th Bristol,23.75731417939477,D+24
+2012,State Representative,7th Essex,16.643477634979863,D+17
+2012,State Representative,7th Hampden,6.923075828094937,D+7
+2012,State Representative,7th Middlesex,12.719063370290415,D+13
+2012,State Representative,7th Norfolk,11.452881913148216,D+11
+2012,State Representative,7th Plymouth,-3.94750022870512,R+4
+2012,State Representative,7th Suffolk,40.02196779046384,D+40
+2012,State Representative,7th Worcester,-1.4661631697791222,R+1
+2012,State Representative,8th Bristol,10.222942343596664,D+10
+2012,State Representative,8th Essex,8.087278179396273,D+8
+2012,State Representative,8th Hampden,10.081655986839433,D+10
+2012,State Representative,8th Middlesex,1.614866562401629,D+2
+2012,State Representative,8th Norfolk,5.896807677605976,D+6
+2012,State Representative,8th Plymouth,-4.78696871932841,R+5
+2012,State Representative,8th Suffolk,24.412680462795468,D+24
+2012,State Representative,8th Worcester,-2.784866096830596,R+3
+2012,State Representative,9th Bristol,11.650978318291203,D+12
+2012,State Representative,9th Essex,-0.8489603302718196,R+1
+2012,State Representative,9th Hampden,19.756333636777413,D+20
+2012,State Representative,9th Middlesex,10.33184170162591,D+10
+2012,State Representative,9th Norfolk,-6.062408385898382,R+6
+2012,State Representative,9th Plymouth,25.889242360862465,D+26
+2012,State Representative,9th Suffolk,32.29747086257587,D+32
+2012,State Representative,9th Worcester,-3.171176517971197,R+3
+2012,State Representative,"Barnstable, Dukes and Nantucket",15.131465719303506,D+15
+2012,State Senate,1st Bristol and Plymouth,10.608746754636822,D+11
+2012,State Senate,1st Essex,3.5051243702767576,D+4
+2012,State Senate,1st Essex and Middlesex,-0.6901770853572353,R+1
+2012,State Senate,1st Hampden and Hampshire,4.545127413817673,D+5
+2012,State Senate,1st Middlesex,5.598430231068752,D+6
+2012,State Senate,1st Middlesex and Norfolk,21.212365356415653,D+21
+2012,State Senate,1st Plymouth and Bristol,-0.1744927428145692,EVEN
+2012,State Senate,1st Suffolk,26.775028369942568,D+27
+2012,State Senate,1st Suffolk and Middlesex,16.965435529674,D+17
+2012,State Senate,1st Worcester,9.444205772835655,D+9
+2012,State Senate,2nd Bristol and Plymouth,15.193599757781785,D+15
+2012,State Senate,2nd Essex,6.215278880458685,D+6
+2012,State Senate,2nd Essex and Middlesex,6.3901878092492375,D+6
+2012,State Senate,2nd Hampden and Hampshire,7.096316237055589,D+7
+2012,State Senate,2nd Middlesex,23.9400391913124,D+24
+2012,State Senate,2nd Middlesex and Norfolk,7.440581092602805,D+7
+2012,State Senate,2nd Plymouth and Bristol,5.76218651812006,D+6
+2012,State Senate,2nd Suffolk,38.38401781382213,D+38
+2012,State Senate,2nd Suffolk and Middlesex,20.868281838072537,D+21
+2012,State Senate,2nd Worcester,3.5617593881287712,D+4
+2012,State Senate,3rd Essex,7.982827578373486,D+8
+2012,State Senate,3rd Middlesex,8.542237657629359,D+9
+2012,State Senate,4th Middlesex,7.900228846227463,D+8
+2012,State Senate,5th Middlesex,6.9709541853716805,D+7
+2012,State Senate,"Berkshire, Hampshire and Franklin",22.283082231783624,D+22
+2012,State Senate,Bristol and Norfolk,-0.7979062168678719,R+1
+2012,State Senate,Cape and Islands,5.199148003030119,D+5
+2012,State Senate,Hampden,22.76929749942804,D+23
+2012,State Senate,"Hampshire, Franklin and Worcester",23.86429569683776,D+24
+2012,State Senate,Middlesex and Suffolk,25.69440050973293,D+26
+2012,State Senate,Middlesex and Worcester,6.326015925666462,D+6
+2012,State Senate,Norfolk and Plymouth,3.5373213608180576,D+4
+2012,State Senate,Norfolk and Suffolk,8.857712693267828,D+9
+2012,State Senate,"Norfolk, Bristol and Middlesex",2.007148274701065,D+2
+2012,State Senate,"Norfolk, Bristol and Plymouth",5.534194218199195,D+6
+2012,State Senate,Plymouth and Barnstable,-1.1634954284326704,R+1
+2012,State Senate,Plymouth and Norfolk,-1.943668071825144,R+2
+2012,State Senate,Worcester and Middlesex,0.8678617673188893,D+1
+2012,State Senate,Worcester and Norfolk,-1.2043784490130216,R+1
+2012,State Senate,"Worcester, Hampden, Hampshire and Middlesex",-2.237853238048315,R+2
+2016,State Representative,10th Bristol,4.452858539975512,D+4
+2016,State Representative,10th Essex,21.16453181899137,D+21
+2016,State Representative,10th Hampden,37.38336863931113,D+37
+2016,State Representative,10th Middlesex,19.014702495357525,D+19
+2016,State Representative,10th Norfolk,1.8810441828582716,D+2
+2016,State Representative,10th Plymouth,9.59721560343747,D+10
+2016,State Representative,10th Suffolk,16.41373224712873,D+16
+2016,State Representative,10th Worcester,2.3799943286367697,D+2
+2016,State Representative,11th Bristol,10.297216395196784,D+10
+2016,State Representative,11th Essex,19.90299013744281,D+20
+2016,State Representative,11th Hampden,34.626903484381224,D+35
+2016,State Representative,11th Middlesex,26.18427325408954,D+26
+2016,State Representative,11th Norfolk,5.531149068908414,D+6
+2016,State Representative,11th Plymouth,8.723716864749376,D+9
+2016,State Representative,11th Suffolk,42.48603978861759,D+42
+2016,State Representative,11th Worcester,5.849218355310226,D+6
+2016,State Representative,12th Bristol,-5.359530523798201,R+5
+2016,State Representative,12th Essex,5.792295067328801,D+6
+2016,State Representative,12th Hampden,4.534014829673449,D+5
+2016,State Representative,12th Middlesex,25.516487743962717,D+26
+2016,State Representative,12th Norfolk,3.7427673987717847,D+4
+2016,State Representative,12th Plymouth,-3.975527256747996,R+4
+2016,State Representative,12th Suffolk,38.18507338551538,D+38
+2016,State Representative,12th Worcester,1.881771002569532,D+2
+2016,State Representative,13th Bristol,23.567135973695663,D+24
+2016,State Representative,13th Essex,-1.96363481821642,R+2
+2016,State Representative,13th Middlesex,14.780649519294908,D+15
+2016,State Representative,13th Norfolk,12.378427006033744,D+12
+2016,State Representative,13th Suffolk,25.228816687878496,D+25
+2016,State Representative,13th Worcester,14.18013355818919,D+14
+2016,State Representative,14th Bristol,-1.4562337590348085,R+1
+2016,State Representative,14th Essex,5.489794806518455,D+5
+2016,State Representative,14th Middlesex,16.537748429651188,D+17
+2016,State Representative,14th Norfolk,13.16985035699856,D+13
+2016,State Representative,14th Suffolk,28.761222157601875,D+29
+2016,State Representative,14th Worcester,13.024102808168792,D+13
+2016,State Representative,15th Essex,-1.463224764790405,R+1
+2016,State Representative,15th Middlesex,17.96856138448566,D+18
+2016,State Representative,15th Norfolk,33.388446345125466,D+33
+2016,State Representative,15th Suffolk,37.136126017878645,D+37
+2016,State Representative,15th Worcester,23.08244511309001,D+23
+2016,State Representative,16th Essex,34.36904824852506,D+34
+2016,State Representative,16th Middlesex,7.2958788581674705,D+7
+2016,State Representative,16th Suffolk,10.481697918428669,D+10
+2016,State Representative,16th Worcester,18.076728317543388,D+18
+2016,State Representative,17th Essex,20.61388784995635,D+21
+2016,State Representative,17th Middlesex,14.09536596204447,D+14
+2016,State Representative,17th Suffolk,31.95195456158566,D+32
+2016,State Representative,17th Worcester,11.70000873116528,D+12
+2016,State Representative,18th Essex,-0.2477843220161868,EVEN
+2016,State Representative,18th Middlesex,21.77362885856995,D+22
+2016,State Representative,18th Suffolk,28.363385970872542,D+28
+2016,State Representative,18th Worcester,-6.917961690550195,R+7
+2016,State Representative,19th Middlesex,-3.802225890612565,R+4
+2016,State Representative,19th Suffolk,11.129666784501111,D+11
+2016,State Representative,1st Barnstable,3.097730395114784,D+3
+2016,State Representative,1st Berkshire,21.17425165441903,D+21
+2016,State Representative,1st Bristol,0.6068532226895296,D+1
+2016,State Representative,1st Essex,9.056363127897503,D+9
+2016,State Representative,1st Franklin,21.03774432050274,D+21
+2016,State Representative,1st Hampden,-3.966828206128648,R+4
+2016,State Representative,1st Hampshire,25.374705374926062,D+25
+2016,State Representative,1st Middlesex,-1.6796353722771773,R+2
+2016,State Representative,1st Norfolk,13.693884464496364,D+14
+2016,State Representative,1st Plymouth,-0.3143823111415145,EVEN
+2016,State Representative,1st Suffolk,23.264390283354963,D+23
+2016,State Representative,1st Worcester,-2.6603954126812712,R+3
+2016,State Representative,20th Middlesex,-3.770916169018856,R+4
+2016,State Representative,21st Middlesex,5.594236421188592,D+6
+2016,State Representative,22nd Middlesex,-2.7032388796360216,R+3
+2016,State Representative,23rd Middlesex,22.83027846636716,D+23
+2016,State Representative,24th Middlesex,24.463057578834025,D+24
+2016,State Representative,25th Middlesex,40.583136579614575,D+41
+2016,State Representative,26th Middlesex,35.91732022122201,D+36
+2016,State Representative,27th Middlesex,36.73713522191528,D+37
+2016,State Representative,28th Middlesex,19.198204982834145,D+19
+2016,State Representative,29th Middlesex,29.71456291883572,D+30
+2016,State Representative,2nd Barnstable,0.8066428192883279,D+1
+2016,State Representative,2nd Berkshire,19.0819395513832,D+19
+2016,State Representative,2nd Bristol,2.8679753363396565,D+3
+2016,State Representative,2nd Essex,-1.3498545817611896,R+1
+2016,State Representative,2nd Franklin,2.688842385752121,D+3
+2016,State Representative,2nd Hampden,-1.6995417606167185,R+2
+2016,State Representative,2nd Hampshire,13.544663447710626,D+14
+2016,State Representative,2nd Middlesex,4.4961322051848,D+4
+2016,State Representative,2nd Norfolk,11.711930954608018,D+12
+2016,State Representative,2nd Plymouth,-2.512383285907055,R+3
+2016,State Representative,2nd Suffolk,24.17330410919768,D+24
+2016,State Representative,2nd Worcester,-0.0714340275209224,EVEN
+2016,State Representative,30th Middlesex,4.971883217135331,D+5
+2016,State Representative,31st Middlesex,6.5308330657381735,D+7
+2016,State Representative,32nd Middlesex,10.778512737651557,D+11
+2016,State Representative,33rd Middlesex,20.617256788839555,D+21
+2016,State Representative,34th Middlesex,29.05372696061077,D+29
+2016,State Representative,35th Middlesex,17.34352068277869,D+17
+2016,State Representative,36th Middlesex,-6.298010158281498,R+6
+2016,State Representative,37th Middlesex,10.082530108332854,D+10
+2016,State Representative,3rd Barnstable,0.9355498764192948,D+1
+2016,State Representative,3rd Berkshire,24.807703539940327,D+25
+2016,State Representative,3rd Bristol,4.80059243152986,D+5
+2016,State Representative,3rd Essex,6.411829680121928,D+6
+2016,State Representative,3rd Hampden,-6.054325139561789,R+6
+2016,State Representative,3rd Hampshire,32.910795666918204,D+33
+2016,State Representative,3rd Middlesex,9.3197028310809,D+9
+2016,State Representative,3rd Norfolk,6.6860537954608334,D+7
+2016,State Representative,3rd Plymouth,4.590836544496679,D+5
+2016,State Representative,3rd Suffolk,25.920088371090657,D+26
+2016,State Representative,3rd Worcester,7.618095481583564,D+8
+2016,State Representative,4th Barnstable,10.151569863628527,D+10
+2016,State Representative,4th Berkshire,20.66943489591113,D+21
+2016,State Representative,4th Bristol,-3.2278685962519704,R+3
+2016,State Representative,4th Essex,3.168827662787244,D+3
+2016,State Representative,4th Hampden,-1.8975473729829109,R+2
+2016,State Representative,4th Middlesex,8.849417536174043,D+9
+2016,State Representative,4th Norfolk,3.6299187503818553,D+4
+2016,State Representative,4th Plymouth,-1.4875958328043226,R+1
+2016,State Representative,4th Suffolk,15.132643438638638,D+15
+2016,State Representative,4th Worcester,1.6774913710372874,D+2
+2016,State Representative,5th Barnstable,-4.067333878794233,R+4
+2016,State Representative,5th Bristol,2.734405910323434,D+3
+2016,State Representative,5th Essex,11.960053700946016,D+12
+2016,State Representative,5th Hampden,23.626602465300522,D+24
+2016,State Representative,5th Middlesex,13.879714326508552,D+14
+2016,State Representative,5th Norfolk,3.1637692350054203,D+3
+2016,State Representative,5th Plymouth,-4.3951528258378,R+4
+2016,State Representative,5th Suffolk,42.709033504079386,D+43
+2016,State Representative,5th Worcester,-5.918408835851991,R+6
+2016,State Representative,6th Bristol,12.323170201526024,D+12
+2016,State Representative,6th Essex,10.177867317641777,D+10
+2016,State Representative,6th Hampden,4.1898387088390665,D+4
+2016,State Representative,6th Middlesex,16.43167497294763,D+16
+2016,State Representative,6th Norfolk,6.0420600710973,D+6
+2016,State Representative,6th Plymouth,-4.374216170925172,R+4
+2016,State Representative,6th Suffolk,43.35179709781435,D+43
+2016,State Representative,6th Worcester,-1.400495499073939,R+1
+2016,State Representative,7th Bristol,18.62076444678602,D+19
+2016,State Representative,7th Essex,19.576395700732164,D+20
+2016,State Representative,7th Hampden,3.6870494355464967,D+4
+2016,State Representative,7th Middlesex,17.169419496264837,D+17
+2016,State Representative,7th Norfolk,16.868821448158823,D+17
+2016,State Representative,7th Plymouth,-3.869684253829214,R+4
+2016,State Representative,7th Suffolk,41.52071266725675,D+42
+2016,State Representative,7th Worcester,-2.464714373178978,R+2
+2016,State Representative,8th Bristol,5.0905926451092265,D+5
+2016,State Representative,8th Essex,12.06918199655208,D+12
+2016,State Representative,8th Hampden,7.36075164511083,D+7
+2016,State Representative,8th Middlesex,7.063040476771865,D+7
+2016,State Representative,8th Norfolk,9.859216847651798,D+10
+2016,State Representative,8th Plymouth,-4.630786331677034,R+5
+2016,State Representative,8th Suffolk,28.793859331164995,D+29
+2016,State Representative,8th Worcester,-3.9072877610555214,R+4
+2016,State Representative,9th Bristol,9.048657594933896,D+9
+2016,State Representative,9th Essex,-1.1057192916122949,R+1
+2016,State Representative,9th Hampden,20.433976803221366,D+20
+2016,State Representative,9th Middlesex,13.87042934048397,D+14
+2016,State Representative,9th Norfolk,-2.616278863200444,R+3
+2016,State Representative,9th Plymouth,28.916636142939,D+29
+2016,State Representative,9th Suffolk,35.39990833724185,D+35
+2016,State Representative,9th Worcester,-1.0334808033287235,R+1
+2016,State Representative,"Barnstable, Dukes and Nantucket",17.130491595581887,D+17
+2016,State Senate,1st Bristol and Plymouth,6.268418688193577,D+6
+2016,State Senate,1st Essex,4.239027222451252,D+4
+2016,State Senate,1st Essex and Middlesex,1.799159950972773,D+2
+2016,State Senate,1st Hampden and Hampshire,3.5170298453216065,D+4
+2016,State Senate,1st Middlesex,8.646131604993545,D+9
+2016,State Senate,1st Middlesex and Norfolk,25.808126023216527,D+26
+2016,State Senate,1st Plymouth and Bristol,-1.1853310485445356,R+1
+2016,State Senate,1st Suffolk,30.330435700949376,D+30
+2016,State Senate,1st Suffolk and Middlesex,20.12948046063935,D+20
+2016,State Senate,1st Worcester,11.855015011789185,D+12
+2016,State Senate,2nd Bristol and Plymouth,12.082750466791136,D+12
+2016,State Senate,2nd Essex,8.051668061203653,D+8
+2016,State Senate,2nd Essex and Middlesex,8.79773642969679,D+9
+2016,State Senate,2nd Hampden and Hampshire,5.936955594771898,D+6
+2016,State Senate,2nd Middlesex,28.38782769750595,D+28
+2016,State Senate,2nd Middlesex and Norfolk,12.018838660398837,D+12
+2016,State Senate,2nd Plymouth and Bristol,7.649070380016909,D+8
+2016,State Senate,2nd Suffolk,40.54161162249612,D+41
+2016,State Senate,2nd Suffolk and Middlesex,25.17759835334877,D+25
+2016,State Senate,2nd Worcester,5.121749696257128,D+5
+2016,State Senate,3rd Essex,9.801371633141386,D+10
+2016,State Senate,3rd Middlesex,13.151292819067104,D+13
+2016,State Senate,4th Middlesex,10.874654083241674,D+11
+2016,State Senate,5th Middlesex,10.546718945246123,D+11
+2016,State Senate,"Berkshire, Hampshire and Franklin",21.25898031872749,D+21
+2016,State Senate,Bristol and Norfolk,1.2790253755206704,D+1
+2016,State Senate,Cape and Islands,6.735433331255958,D+7
+2016,State Senate,Hampden,23.6701284881652,D+24
+2016,State Senate,"Hampshire, Franklin and Worcester",24.61910962442748,D+25
+2016,State Senate,Middlesex and Suffolk,29.628491500496747,D+30
+2016,State Senate,Middlesex and Worcester,10.665063105623153,D+11
+2016,State Senate,Norfolk and Plymouth,6.662288414810513,D+7
+2016,State Senate,Norfolk and Suffolk,13.994501315706586,D+14
+2016,State Senate,"Norfolk, Bristol and Middlesex",5.40272788994447,D+5
+2016,State Senate,"Norfolk, Bristol and Plymouth",9.336307788931464,D+9
+2016,State Senate,Plymouth and Barnstable,-0.3558963746979837,EVEN
+2016,State Senate,Plymouth and Norfolk,1.4109496532123345,D+1
+2016,State Senate,Worcester and Middlesex,1.4961119351069363,D+1
+2016,State Senate,Worcester and Norfolk,-2.201692985805803,R+2
+2016,State Senate,"Worcester, Hampden, Hampshire and Middlesex",-4.964316125338176,R+5
+2020,State Representative,10th Bristol,4.708067413946104,D+5
+2020,State Representative,10th Essex,20.34179021190573,D+20
+2020,State Representative,10th Hampden,32.36311250597471,D+32
+2020,State Representative,10th Middlesex,23.63215030363628,D+24
+2020,State Representative,10th Norfolk,9.171780286503504,D+9
+2020,State Representative,10th Plymouth,12.166636615801574,D+12
+2020,State Representative,10th Suffolk,22.15131070053029,D+22
+2020,State Representative,10th Worcester,6.730939162281002,D+7
+2020,State Representative,11th Bristol,2.966136350483184,D+3
+2020,State Representative,11th Essex,19.07514755074481,D+19
+2020,State Representative,11th Hampden,32.11879663904698,D+32
+2020,State Representative,11th Middlesex,32.02352338831385,D+32
+2020,State Representative,11th Norfolk,13.710379258472582,D+14
+2020,State Representative,11th Plymouth,14.764435843986757,D+15
+2020,State Representative,11th Suffolk,42.750805567707175,D+43
+2020,State Representative,11th Worcester,13.404929965472832,D+13
+2020,State Representative,12th Bristol,-4.529835529948195,R+5
+2020,State Representative,12th Essex,7.074727860714214,D+7
+2020,State Representative,12th Hampden,6.792356130752419,D+7
+2020,State Representative,12th Middlesex,31.88966033104069,D+32
+2020,State Representative,12th Norfolk,10.19561322656517,D+10
+2020,State Representative,12th Plymouth,0.1569779416733308,EVEN
+2020,State Representative,12th Suffolk,38.568859486547744,D+39
+2020,State Representative,12th Worcester,7.449755912743461,D+7
+2020,State Representative,13th Bristol,17.278104425081843,D+17
+2020,State Representative,13th Essex,1.586203999841873,D+2
+2020,State Representative,13th Middlesex,23.59563897358045,D+24
+2020,State Representative,13th Norfolk,23.544917415007504,D+24
+2020,State Representative,13th Suffolk,24.63503683255882,D+25
+2020,State Representative,13th Worcester,17.97101133362159,D+18
+2020,State Representative,14th Bristol,4.849008993326487,D+5
+2020,State Representative,14th Essex,10.1164330745085,D+10
+2020,State Representative,14th Middlesex,25.727811335487683,D+26
+2020,State Representative,14th Norfolk,25.51025969706924,D+26
+2020,State Representative,14th Suffolk,30.656410727811657,D+31
+2020,State Representative,14th Worcester,15.62245718865942,D+16
+2020,State Representative,15th Essex,2.2341143667211183,D+2
+2020,State Representative,15th Middlesex,24.44149830994179,D+24
+2020,State Representative,15th Norfolk,38.53611827640945,D+39
+2020,State Representative,15th Suffolk,39.69428647712786,D+40
+2020,State Representative,15th Worcester,20.937484271637164,D+21
+2020,State Representative,16th Essex,29.94160398016056,D+30
+2020,State Representative,16th Middlesex,10.71642661057931,D+11
+2020,State Representative,16th Suffolk,10.454594466773749,D+10
+2020,State Representative,16th Worcester,17.34283205058944,D+17
+2020,State Representative,17th Essex,21.66474584410252,D+22
+2020,State Representative,17th Middlesex,15.849712172626374,D+16
+2020,State Representative,17th Suffolk,36.04135206811054,D+36
+2020,State Representative,17th Worcester,10.330190187474864,D+10
+2020,State Representative,18th Essex,9.278383131397783,D+9
+2020,State Representative,18th Middlesex,20.413084584111477,D+20
+2020,State Representative,18th Suffolk,33.49894880194954,D+33
+2020,State Representative,18th Worcester,-4.940821850831006,R+5
+2020,State Representative,19th Middlesex,-0.0119659487302969,EVEN
+2020,State Representative,19th Suffolk,12.883076347792654,D+13
+2020,State Representative,1st Barnstable,8.596699506576455,D+9
+2020,State Representative,1st Berkshire,18.37815270822872,D+18
+2020,State Representative,1st Bristol,6.595678513891068,D+7
+2020,State Representative,1st Essex,13.813198143274152,D+14
+2020,State Representative,1st Franklin,21.732515221587047,D+22
+2020,State Representative,1st Hampden,-4.075536918620676,R+4
+2020,State Representative,1st Hampshire,27.53722322908233,D+28
+2020,State Representative,1st Middlesex,4.6162714661184046,D+5
+2020,State Representative,1st Norfolk,17.197782991810296,D+17
+2020,State Representative,1st Plymouth,4.5812182839880204,D+5
+2020,State Representative,1st Suffolk,25.326264288940216,D+25
+2020,State Representative,1st Worcester,2.866096897969106,D+3
+2020,State Representative,20th Middlesex,3.4637980406491464,D+3
+2020,State Representative,21st Middlesex,12.378846523787146,D+12
+2020,State Representative,22nd Middlesex,1.1379645048677167,D+1
+2020,State Representative,23rd Middlesex,29.02848300892731,D+29
+2020,State Representative,24th Middlesex,31.12105226451496,D+31
+2020,State Representative,25th Middlesex,43.756133419723895,D+44
+2020,State Representative,26th Middlesex,38.14482848615333,D+38
+2020,State Representative,27th Middlesex,39.72359726205983,D+40
+2020,State Representative,28th Middlesex,19.76109526175657,D+20
+2020,State Representative,29th Middlesex,33.8325065772297,D+34
+2020,State Representative,2nd Barnstable,5.338718973508005,D+5
+2020,State Representative,2nd Berkshire,18.36816254400405,D+18
+2020,State Representative,2nd Bristol,5.756480886212955,D+6
+2020,State Representative,2nd Essex,5.203207906932916,D+5
+2020,State Representative,2nd Franklin,2.013603098141725,D+2
+2020,State Representative,2nd Hampden,2.6169891388231448,D+3
+2020,State Representative,2nd Hampshire,16.222631538623045,D+16
+2020,State Representative,2nd Middlesex,13.774021874605202,D+14
+2020,State Representative,2nd Norfolk,15.25501210678608,D+15
+2020,State Representative,2nd Plymouth,-2.0010772097804552,R+2
+2020,State Representative,2nd Suffolk,27.98144930995583,D+28
+2020,State Representative,2nd Worcester,0.2608427881019004,EVEN
+2020,State Representative,30th Middlesex,10.44037253109219,D+10
+2020,State Representative,31st Middlesex,13.43203276181768,D+13
+2020,State Representative,32nd Middlesex,17.852124812520863,D+18
+2020,State Representative,33rd Middlesex,23.06597160221597,D+23
+2020,State Representative,34th Middlesex,31.96392624312746,D+32
+2020,State Representative,35th Middlesex,20.90054769450752,D+21
+2020,State Representative,36th Middlesex,-2.865521547219424,R+3
+2020,State Representative,37th Middlesex,17.087944241549668,D+17
+2020,State Representative,3rd Barnstable,5.645423309481757,D+6
+2020,State Representative,3rd Berkshire,24.200718814435096,D+24
+2020,State Representative,3rd Bristol,5.171515292617047,D+5
+2020,State Representative,3rd Essex,8.068598300758811,D+8
+2020,State Representative,3rd Hampden,-6.123620859345985,R+6
+2020,State Representative,3rd Hampshire,35.5203389935326,D+36
+2020,State Representative,3rd Middlesex,16.224261896644656,D+16
+2020,State Representative,3rd Norfolk,10.06619978747384,D+10
+2020,State Representative,3rd Plymouth,14.080828965918446,D+14
+2020,State Representative,3rd Suffolk,32.280445976099884,D+32
+2020,State Representative,3rd Worcester,9.191600398915876,D+9
+2020,State Representative,4th Barnstable,16.002240565175562,D+16
+2020,State Representative,4th Berkshire,21.151733038457333,D+21
+2020,State Representative,4th Bristol,-2.1184684041746618,R+2
+2020,State Representative,4th Essex,11.843055288135629,D+12
+2020,State Representative,4th Hampden,-2.1437810374879964,R+2
+2020,State Representative,4th Middlesex,15.211930802280785,D+15
+2020,State Representative,4th Norfolk,8.361346361640754,D+8
+2020,State Representative,4th Plymouth,5.289529911064561,D+5
+2020,State Representative,4th Suffolk,21.39424116635621,D+21
+2020,State Representative,4th Worcester,5.383270318862687,D+5
+2020,State Representative,5th Barnstable,0.8502582233860689,D+1
+2020,State Representative,5th Bristol,-0.5259538947326559,R+1
+2020,State Representative,5th Essex,16.18670932142898,D+16
+2020,State Representative,5th Hampden,20.475593780506408,D+20
+2020,State Representative,5th Middlesex,21.959620360048127,D+22
+2020,State Representative,5th Norfolk,7.4595629760796704,D+7
+2020,State Representative,5th Plymouth,1.379722427690866,D+1
+2020,State Representative,5th Suffolk,40.6186161390779,D+41
+2020,State Representative,5th Worcester,-5.34465972426113,R+5
+2020,State Representative,6th Bristol,6.683403739462356,D+7
+2020,State Representative,6th Essex,16.39663724283935,D+16
+2020,State Representative,6th Hampden,3.733679608128082,D+4
+2020,State Representative,6th Middlesex,22.356881844532296,D+22
+2020,State Representative,6th Norfolk,11.921924730438494,D+12
+2020,State Representative,6th Plymouth,1.657343861986449,D+2
+2020,State Representative,6th Suffolk,42.56347127127654,D+43
+2020,State Representative,6th Worcester,-2.269579621746598,R+2
+2020,State Representative,7th Bristol,7.328617435403084,D+7
+2020,State Representative,7th Essex,23.635715833291396,D+24
+2020,State Representative,7th Hampden,2.584108194661894,D+3
+2020,State Representative,7th Middlesex,21.54511067927528,D+22
+2020,State Representative,7th Norfolk,23.034287317902542,D+23
+2020,State Representative,7th Plymouth,-0.9960341144757634,R+1
+2020,State Representative,7th Suffolk,42.11092557143636,D+42
+2020,State Representative,7th Worcester,-0.1107822113043721,EVEN
+2020,State Representative,8th Bristol,-0.3393929712981247,EVEN
+2020,State Representative,8th Essex,19.745720286850133,D+20
+2020,State Representative,8th Hampden,5.305579590166598,D+5
+2020,State Representative,8th Middlesex,17.458963449659215,D+17
+2020,State Representative,8th Norfolk,16.878488795470947,D+17
+2020,State Representative,8th Plymouth,-1.269708818071369,R+1
+2020,State Representative,8th Suffolk,36.41848244843503,D+36
+2020,State Representative,8th Worcester,-1.9552693984141332,R+2
+2020,State Representative,9th Bristol,5.723148256219279,D+6
+2020,State Representative,9th Essex,1.6940902154380155,D+2
+2020,State Representative,9th Hampden,18.330005516424286,D+18
+2020,State Representative,9th Middlesex,19.26775397084328,D+19
+2020,State Representative,9th Norfolk,5.865411089382455,D+6
+2020,State Representative,9th Plymouth,29.727798038509988,D+30
+2020,State Representative,9th Suffolk,39.11289854276547,D+39
+2020,State Representative,9th Worcester,5.201474314159027,D+5
+2020,State Representative,"Barnstable, Dukes and Nantucket",21.992763426220453,D+22
+2020,State Senate,1st Bristol and Plymouth,1.23766569937086,D+1
+2020,State Senate,1st Essex,8.057623490630583,D+8
+2020,State Senate,1st Essex and Middlesex,8.404697121437676,D+8
+2020,State Senate,1st Hampden and Hampshire,5.078444561936413,D+5
+2020,State Senate,1st Middlesex,12.771535985964032,D+13
+2020,State Senate,1st Middlesex and Norfolk,32.54755895617942,D+33
+2020,State Senate,1st Plymouth and Bristol,-0.1910616921301455,EVEN
+2020,State Senate,1st Suffolk,30.95014610631711,D+31
+2020,State Senate,1st Suffolk and Middlesex,23.328213181784665,D+23
+2020,State Senate,1st Worcester,14.964248819760408,D+15
+2020,State Senate,2nd Bristol and Plymouth,7.321175454546614,D+7
+2020,State Senate,2nd Essex,12.212004943861876,D+12
+2020,State Senate,2nd Essex and Middlesex,11.132309389534289,D+11
+2020,State Senate,2nd Hampden and Hampshire,5.195585110211365,D+5
+2020,State Senate,2nd Middlesex,32.32218071092214,D+32
+2020,State Senate,2nd Middlesex and Norfolk,18.93976620508703,D+19
+2020,State Senate,2nd Plymouth and Bristol,10.771421321593024,D+11
+2020,State Senate,2nd Suffolk,41.399131710400006,D+41
+2020,State Senate,2nd Suffolk and Middlesex,31.09564591739239,D+31
+2020,State Senate,2nd Worcester,8.599033645745813,D+9
+2020,State Senate,3rd Essex,12.767646881131146,D+13
+2020,State Senate,3rd Middlesex,20.996758077496917,D+21
+2020,State Senate,4th Middlesex,15.97389335443572,D+16
+2020,State Senate,5th Middlesex,16.296538472564436,D+16
+2020,State Senate,"Berkshire, Hampshire, Franklin & Hampden",20.538069344657483,D+21
+2020,State Senate,Bristol and Norfolk,7.106613789630978,D+7
+2020,State Senate,Cape and Islands,11.913278018356388,D+12
+2020,State Senate,Hampden,20.22576612378052,D+20
+2020,State Senate,"Hampshire, Franklin and Worcester",25.834557064871145,D+26
+2020,State Senate,Middlesex and Suffolk,32.20614236848566,D+32
+2020,State Senate,Middlesex and Worcester,18.13814036909882,D+18
+2020,State Senate,Norfolk and Plymouth,10.103273859879536,D+10
+2020,State Senate,Norfolk and Suffolk,20.17009003717192,D+20
+2020,State Senate,"Norfolk, Bristol and Middlesex",12.958822964736882,D+13
+2020,State Senate,"Norfolk, Bristol and Plymouth",14.885150701204108,D+15
+2020,State Senate,Plymouth and Barnstable,4.3909972676912,D+4
+2020,State Senate,Plymouth and Norfolk,8.741856405083192,D+9
+2020,State Senate,Worcester and Middlesex,5.216813747966964,D+5
+2020,State Senate,Worcester and Norfolk,-0.3670470807160431,EVEN
+2020,State Senate,"Worcester, Hampden, Hampshire and Middlesex",-4.3117097268668525,R+4
+2022,State Representative,1st Barnstable,8.71884046611471,D+9
+2022,State Representative,2nd Barnstable,5.7669417820742,D+6
+2022,State Representative,3rd Barnstable,6.43417443730532,D+6
+2022,State Representative,4th Barnstable,16.1370061769616,D+16
+2022,State Representative,5th Barnstable,0.671737557497442,D+1
+2022,State Representative,"Barnstable, Dukes & Nantucket",22.6877547521396,D+23
+2022,State Representative,1st Berkshire,17.1496558394002,D+17
+2022,State Representative,2nd Berkshire,23.845664371615,D+24
+2022,State Representative,3rd Berkshire,23.2526640997637,D+23
+2022,State Representative,1st Bristol,6.38619636466924,D+6
+2022,State Representative,2nd Bristol,5.54699873699113,D+6
+2022,State Representative,3rd Bristol,5.26193082272427,D+5
+2022,State Representative,4th Bristol,-2.32795055339647,R+2
+2022,State Representative,5th Bristol,-0.735436043954473,R+1
+2022,State Representative,6th Bristol,6.47392159024053,D+6
+2022,State Representative,7th Bristol,7.11913528618126,D+7
+2022,State Representative,8th Bristol,-1.86078061181296,R+2
+2022,State Representative,9th Bristol,3.69863400165793,D+4
+2022,State Representative,10th Bristol,2.26998475070677,D+2
+2022,State Representative,11th Bristol,16.5117009974243,D+17
+2022,State Representative,12th Bristol,-3.8955630249713,R+4
+2022,State Representative,13th Bristol,14.4884616612982,D+14
+2022,State Representative,14th Bristol,4.63952684410466,D+5
+2022,State Representative,1st Essex,12.3793948374393,D+12
+2022,State Representative,2nd Essex,8.6942707527079,D+9
+2022,State Representative,3rd Essex,8.01395233253979,D+8
+2022,State Representative,4th Essex,19.3282183971102,D+19
+2022,State Representative,5th Essex,16.4748907560371,D+16
+2022,State Representative,6th Essex,16.1343258249702,D+16
+2022,State Representative,7th Essex,23.4262336840695,D+23
+2022,State Representative,8th Essex,19.5362381376283,D+20
+2022,State Representative,9th Essex,1.48460806621619,D+1
+2022,State Representative,10th Essex,19.7696391347956,D+20
+2022,State Representative,11th Essex,19.2402332673982,D+19
+2022,State Representative,12th Essex,6.36084418891172,D+6
+2022,State Representative,13th Essex,2.96583337799782,D+3
+2022,State Representative,14th Essex,7.69274080461706,D+8
+2022,State Representative,15th Essex,1.26552637391546,D+1
+2022,State Representative,16th Essex,18.0915979778243,D+18
+2022,State Representative,17th Essex,23.0107473732875,D+23
+2022,State Representative,18th Essex,9.58540358511274,D+10
+2022,State Representative,1st Franklin,22.9387949493844,D+23
+2022,State Representative,2nd Franklin,5.78035092212602,D+6
+2022,State Representative,1st Hampden,-4.28501906784249,R+4
+2022,State Representative,2nd Hampden,3.94716251539279,D+4
+2022,State Representative,3rd Hampden,-6.7509689154595804,R+7
+2022,State Representative,4th Hampden,-1.69219321490035,R+2
+2022,State Representative,5th Hampden,19.0897846782075,D+19
+2022,State Representative,6th Hampden,1.42214847267898,D+1
+2022,State Representative,7th Hampden,6.29846268197606,D+6
+2022,State Representative,8th Hampden,4.10843565975427,D+4
+2022,State Representative,9th Hampden,23.0259088478263,D+23
+2022,State Representative,10th Hampden,31.6812557781789,D+32
+2022,State Representative,11th Hampden,29.2213722657644,D+29
+2022,State Representative,12th Hampden,5.26729141249798,D+5
+2022,State Representative,1st Hampshire,30.5236474918419,D+31
+2022,State Representative,2nd Hampshire,16.0131493894012,D+16
+2022,State Representative,3rd Hampshire,35.1725906082967,D+35
+2022,State Representative,1st Middlesex,2.27298012800049,D+2
+2022,State Representative,2nd Middlesex,13.8300368821105,D+14
+2022,State Representative,3rd Middlesex,16.0147797474228,D+16
+2022,State Representative,4th Middlesex,15.14266786413,D+15
+2022,State Representative,5th Middlesex,24.1383328704708,D+24
+2022,State Representative,6th Middlesex,24.8984431338499,D+25
+2022,State Representative,7th Middlesex,20.1639187612241,D+20
+2022,State Representative,8th Middlesex,16.9513792835503,D+17
+2022,State Representative,9th Middlesex,17.6444569947933,D+18
+2022,State Representative,10th Middlesex,23.0686942737468,D+23
+2022,State Representative,11th Middlesex,32.380004153146,D+32
+2022,State Representative,12th Middlesex,31.7397879614006,D+32
+2022,State Representative,13th Middlesex,26.0717726743056,D+26
+2022,State Representative,14th Middlesex,21.6699640550195,D+22
+2022,State Representative,15th Middlesex,22.9904908056937,D+23
+2022,State Representative,16th Middlesex,10.5069444613574,D+11
+2022,State Representative,17th Middlesex,14.8875452996649,D+15
+2022,State Representative,18th Middlesex,20.2036024348896,D+20
+2022,State Representative,19th Middlesex,-0.125117708500155,EVEN
+2022,State Representative,20th Middlesex,2.30262527012597,D+2
+2022,State Representative,21st Middlesex,14.7750197474428,D+15
+2022,State Representative,22nd Middlesex,0.928482355645898,D+1
+2022,State Representative,23rd Middlesex,28.596159736496,D+29
+2022,State Representative,24th Middlesex,30.280614008703,D+30
+2022,State Representative,25th Middlesex,43.546651270502,D+44
+2022,State Representative,26th Middlesex,39.2001618046086,D+39
+2022,State Representative,27th Middlesex,39.402892058697,D+39
+2022,State Representative,28th Middlesex,19.6993419021757,D+20
+2022,State Representative,29th Middlesex,34.5694519406143,D+35
+2022,State Representative,30th Middlesex,10.390199465307,D+10
+2022,State Representative,31st Middlesex,13.2062868560174,D+13
+2022,State Representative,32nd Middlesex,17.642642663299,D+18
+2022,State Representative,33rd Middlesex,22.8564894529941,D+23
+2022,State Representative,34th Middlesex,31.9005540557566,D+32
+2022,State Representative,35th Middlesex,20.6910655452857,D+21
+2022,State Representative,36th Middlesex,-3.07500369644124,R+3
+2022,State Representative,37th Middlesex,19.5048148017934,D+20
+2022,State Representative,1st Norfolk,17.0409741681526,D+17
+2022,State Representative,2nd Norfolk,15.3409105599521,D+15
+2022,State Representative,3rd Norfolk,10.479372913529,D+10
+2022,State Representative,4th Norfolk,7.32204620355271,D+7
+2022,State Representative,5th Norfolk,5.71689942225901,D+6
+2022,State Representative,6th Norfolk,11.7124425812166,D+12
+2022,State Representative,7th Norfolk,22.826035589707,D+23
+2022,State Representative,8th Norfolk,16.669006646249098,D+17
+2022,State Representative,9th Norfolk,5.65592894016063,D+6
+2022,State Representative,10th Norfolk,8.96229813728168,D+9
+2022,State Representative,11th Norfolk,13.5008971092507,D+14
+2022,State Representative,12th Norfolk,9.98613107734335,D+10
+2022,State Representative,13th Norfolk,23.3354352657856,D+23
+2022,State Representative,14th Norfolk,25.2483770411038,D+25
+2022,State Representative,15th Norfolk,38.4227757984296,D+38
+2022,State Representative,1st Plymouth,2.83602568333233,D+3
+2022,State Representative,2nd Plymouth,-2.21055935900227,R+2
+2022,State Representative,3rd Plymouth,13.9931346307929,D+14
+2022,State Representative,4th Plymouth,6.02163383718278,D+6
+2022,State Representative,5th Plymouth,0.145981155102026,EVEN
+2022,State Representative,6th Plymouth,2.50847732823876,D+3
+2022,State Representative,7th Plymouth,-1.32889375363438,R+1
+2022,State Representative,8th Plymouth,-1.47919096729318,R+1
+2022,State Representative,9th Plymouth,7.57917253515029,D+8
+2022,State Representative,10th Plymouth,22.0183970766032,D+22
+2022,State Representative,11th Plymouth,31.2440446906535,D+31
+2022,State Representative,12th Plymouth,0.768923979054869,D+1
+2022,State Representative,1st Suffolk,25.1167821397183,D+25
+2022,State Representative,2nd Suffolk,30.0987655231298,D+30
+2022,State Representative,3rd Suffolk,30.2557397627305,D+30
+2022,State Representative,4th Suffolk,20.3755971254985,D+20
+2022,State Representative,5th Suffolk,41.6109575093128,D+42
+2022,State Representative,6th Suffolk,42.2842344692445,D+42
+2022,State Representative,7th Suffolk,42.8250587788077,D+43
+2022,State Representative,8th Suffolk,33.8861480415236,D+34
+2022,State Representative,9th Suffolk,38.5477750226184,D+39
+2022,State Representative,10th Suffolk,23.9069968334866,D+24
+2022,State Representative,11th Suffolk,27.6364103980508,D+28
+2022,State Representative,12th Suffolk,39.5668112962914,D+40
+2022,State Representative,13th Suffolk,23.2758765737537,D+23
+2022,State Representative,14th Suffolk,31.8705248615246,D+32
+2022,State Representative,15th Suffolk,42.3836866979772,D+42
+2022,State Representative,16th Suffolk,8.06193749203718,D+8
+2022,State Representative,17th Suffolk,36.0390130888345,D+36
+2022,State Representative,18th Suffolk,33.0243501947523,D+33
+2022,State Representative,19th Suffolk,11.961626436477,D+12
+2022,State Representative,1st Worcester,2.46807439182813,D+2
+2022,State Representative,2nd Worcester,-0.504860745475199,R+1
+2022,State Representative,3rd Worcester,8.98211824969406,D+9
+2022,State Representative,4th Worcester,5.17378816964086,D+5
+2022,State Representative,5th Worcester,-5.5704084506937,R+6
+2022,State Representative,6th Worcester,-2.47906177096841,R+2
+2022,State Representative,7th Worcester,-0.625071613693128,R+1
+2022,State Representative,8th Worcester,-1.18634907190219,R+1
+2022,State Representative,9th Worcester,4.9919921649372,D+5
+2022,State Representative,10th Worcester,6.48462196189347,D+6
+2022,State Representative,11th Worcester,12.3646716465683,D+12
+2022,State Representative,12th Worcester,5.87262179426075,D+6
+2022,State Representative,13th Worcester,17.8002857396839,D+18
+2022,State Representative,14th Worcester,15.4224724211698,D+15
+2022,State Representative,15th Worcester,22.7310073587476,D+23
+2022,State Representative,16th Worcester,15.1359600443562,D+15
+2022,State Representative,17th Worcester,14.7060757769419,D+15
+2022,State Representative,18th Worcester,-5.14957509167842,R+5
+2022,State Representative,19th Worcester,17.5099161770318,D+18
+2022,State Senate,"Berkshire, Hampden, Franklin and Hampshire",17.9107870926574,D+18
+2022,State Senate,Hampden and Hampshire,5.56840974691665,D+6
+2022,State Senate,Hampden,22.3619762647681,D+22
+2022,State Senate,"Hampden, Hampshire and Worcester",3.5049316324011,D+4
+2022,State Senate,"Hampshire, Franklin and Worcester",22.5639260544754,D+23
+2022,State Senate,Worcester and Hampshire,-0.0803702889478286,EVEN
+2022,State Senate,Worcester and Hampden,-2.48617158625628,R+2
+2022,State Senate,2nd Worcester,10.944685306668,D+11
+2022,State Senate,1st Worcester,17.2352860666141,D+17
+2022,State Senate,Worcester and Middlesex,7.50568958047882,D+8
+2022,State Senate,1st Middlesex,7.84478328395695,D+8
+2022,State Senate,Middlesex and Worcester,19.7593625097213,D+20
+2022,State Senate,Middlesex and Norfolk,20.0670512438398,D+20
+2022,State Senate,"Norfolk, Worcester and Middlesex",11.5590969206571,D+12
+2022,State Senate,3rd Middlesex,20.4393028902552,D+20
+2022,State Senate,4th Middlesex,15.7644112052139,D+16
+2022,State Senate,Norfolk and Middlesex,32.1468477702668,D+32
+2022,State Senate,Norfolk and Suffolk,18.343824513724,D+18
+2022,State Senate,1st Essex,15.2551501274617,D+15
+2022,State Senate,2nd Essex and Middlesex,6.16073549469691,D+6
+2022,State Senate,1st Essex and Middlesex,9.97245789716418,D+10
+2022,State Senate,2nd Essex,12.212307616672,D+12
+2022,State Senate,5th Middlesex,16.0870563233426,D+16
+2022,State Senate,3rd Essex,12.5581647319093,D+13
+2022,State Senate,3rd Suffolk,21.1156110059473,D+21
+2022,State Senate,Middlesex and Suffolk,32.3401375390695,D+32
+2022,State Senate,2nd Middlesex,31.8892598540162,D+32
+2022,State Senate,Suffolk and Middlesex,31.9183647676403,D+32
+2022,State Senate,2nd Suffolk,42.4753218118109,D+42
+2022,State Senate,1st Suffolk,29.9151053659204,D+30
+2022,State Senate,1st Plymouth and Norfolk,8.53247659369674,D+9
+2022,State Senate,Norfolk and Plymouth,9.00550719227848,D+9
+2022,State Senate,"Norfolk, Plymouth and Bristol",10.8564036576989,D+11
+2022,State Senate,2nd Plymouth and Norfolk,13.6371018125967,D+14
+2022,State Senate,Bristol and Norfolk,8.33052148620098,D+8
+2022,State Senate,3rd Bristol and Plymouth,-0.678732557941741,R+1
+2022,State Senate,1st Bristol and Plymouth,1.02818355014904,D+1
+2022,State Senate,2nd Bristol and Plymouth,7.11169330532479,D+7
+2022,State Senate,Plymouth and Barnstable,4.13686896835614,D+4
+2022,State Senate,Cape and Islands,12.2987157179472,D+12
