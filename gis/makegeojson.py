@@ -1,6 +1,8 @@
 import sys
 import geopandas as gp
 
+SIMPLIFY_TOLERANCE = 10
+
 def main():
     shp_to_geojson(
         "shp/HOUSE2021/HOUSE2021_POLY.shp",
@@ -34,9 +36,31 @@ def main():
          "SHAPE_AREA": "shape_area"},
         number_minus_district_transform,
     )
+    wp_in_file = "shp/wardsprecincts2022/WARDSPRECINCTS2022_POLY.shp"
+    wp_out_file = "geojson/wardsprecincts2022.geojson"
+    print(f"Reading {wp_in_file}...")
+    geom = (gp.read_file(wp_in_file)
+            .rename(columns={
+                "TOWN": "city_town",
+                "WARD": "ward",
+                "PRECINCT": "precinct",
+                "WP_DISTRIC": "precinct_district",
+                "WP_NAME": "precinct_name",
+                "TOWN_ID": "city_town_id",
+                "POP_2020": "population_2020",
+                "AREA_MILES": "area_miles",
+                "PERIMETER_": "perimeter",
+                "SHAPE_AREA": "shape_area",
+                "SHAPE_LEN": "shape_len",
+            })
+            .sort_values("precinct_name")
+            .assign(geometry = lambda x: x["geometry"].simplify(SIMPLIFY_TOLERANCE),
+                    city_town = lambda x: x["city_town"].map(fix_ct_name),
+                    ward = lambda x: x["ward"].fillna("-")))
+    print(f"Writing {len(geom)} lines to {wp_out_file}...")
+    geom.to_file(wp_out_file)
+    print("Done.")
 
-SIMPLIFY_TOLERANCE = 10
-    
 def shp_to_geojson(in_file, out_file, col_rename, name_transform):
     print(f"Reading {in_file}...")
     geom = (
@@ -50,9 +74,16 @@ def shp_to_geojson(in_file, out_file, col_rename, name_transform):
           "district_num",
           "shape_area",
           "geometry"]])
-    print(f"Write {len(geom)} rows to {out_file}...")
+    print(f"Writing {len(geom)} rows to {out_file}...")
     geom.to_file(out_file)
 
+def fix_ct_name(ct_name):
+    city_town = (ct_name
+                 .title()
+                 .replace("Manchester-By-The-Sea",
+                          "Manchester-by-the-Sea"))
+    return city_town
+    
 def number_transform(df):
     new_df = df.assign(
         district = lambda x: (x["district_display"]
