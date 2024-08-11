@@ -1,4 +1,4 @@
-olibrary(tidyverse)
+library(tidyverse)
 library(lubridate)
 library(rstanarm)
 
@@ -84,6 +84,11 @@ leg_elecs <- read_csv(GEN_ELECS_URL) %>%
     left_join(leg_dist_pvi, by=c("office",
                                  "district_display",
                                  "pvi_year"))
+
+## leg_elecs %>%
+##     write_csv("ma_leg_two_party_2008_2024.csv")
+##
+## leg_elecs <- read_csv("ma_leg_two_party_2008_2024.csv")
 
 win_model <- stan_glm(dem_win ~ PVI_N + incumbent_status + pres_elec,
                       data=leg_elecs,
