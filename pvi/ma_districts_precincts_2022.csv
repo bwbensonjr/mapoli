@@ -1,0 +1,2384 @@
+city_town,Ward,Pct,State_Rep,State_Senate,US_House,Gov_Council
+Abington,-,1,Seventh Plymouth,Norfolk and Plymouth,8,Fourth
+Abington,-,2,Seventh Plymouth,Norfolk and Plymouth,8,Fourth
+Abington,-,3,Seventh Plymouth,Norfolk and Plymouth,8,Fourth
+Abington,-,4,Seventh Plymouth,Norfolk and Plymouth,8,Fourth
+Abington,-,5,Seventh Plymouth,Norfolk and Plymouth,8,Fourth
+Acton,-,1,Fourteenth Middlesex,Middlesex and Worcester,3,Third
+Acton,-,2,Fourteenth Middlesex,Middlesex and Worcester,3,Third
+Acton,-,3,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Acton,-,4,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Acton,-,5,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Acton,-,6,Fourteenth Middlesex,Middlesex and Worcester,3,Third
+Acton,-,6A,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Acton,-,7,Fourteenth Middlesex,Middlesex and Worcester,3,Third
+Acushnet,-,1,Tenth Bristol,Second Bristol and Plymouth,9,First
+Acushnet,-,2,Eighth Bristol,Second Bristol and Plymouth,9,First
+Acushnet,-,2A,Tenth Bristol,Second Bristol and Plymouth,9,First
+Acushnet,-,3,Eighth Bristol,Second Bristol and Plymouth,9,First
+Adams,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Adams,-,2,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Adams,-,3,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Adams,-,4,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Adams,-,5,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Agawam,-,1,Sixth Hampden,Hampden and Hampshire,1,Eighth
+Agawam,-,2,Third Hampden,Hampden and Hampshire,1,Eighth
+Agawam,-,3,Third Hampden,Hampden and Hampshire,1,Eighth
+Agawam,-,4,Third Hampden,Hampden and Hampshire,1,Eighth
+Agawam,-,5,Third Hampden,Hampden and Hampshire,1,Eighth
+Agawam,-,6,Third Hampden,Hampden and Hampshire,1,Eighth
+Agawam,-,7,Third Hampden,Hampden and Hampshire,1,Eighth
+Agawam,-,8,Third Hampden,Hampden and Hampshire,1,Eighth
+Alford,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Amesbury,-,1,Fourteenth Essex,Second Essex and Middlesex,6,Fifth
+Amesbury,-,2,First Essex,Second Essex and Middlesex,6,Fifth
+Amesbury,-,3,First Essex,Second Essex and Middlesex,6,Fifth
+Amesbury,-,4,First Essex,Second Essex and Middlesex,6,Fifth
+Amesbury,-,5,First Essex,Second Essex and Middlesex,6,Fifth
+Amesbury,-,6,Fourteenth Essex,Second Essex and Middlesex,6,Fifth
+Amherst,-,1A,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,1B,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,2A,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,2B,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,3A,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,3B,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,4A,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,4B,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,5A,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Amherst,-,5B,Third Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Andover,-,1,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,10,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,2,Seventeenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,3,Seventeenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,4,Seventeenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,4A,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,5,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,6,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,7,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,8,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Andover,-,9,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Aquinnah,-,1,"Barnstable, Dukes and Nantucket",Cape and Islands,9,First
+Arlington,-,1,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,10,Twenty-Fourth Middlesex,Fourth Middlesex,5,Third
+Arlington,-,11,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,12,Twenty-Fourth Middlesex,Fourth Middlesex,5,Third
+Arlington,-,13,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,14,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,15,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,16,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,17,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,18,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,19,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,2,Twenty-Fourth Middlesex,Fourth Middlesex,5,Third
+Arlington,-,20,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,21,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,3,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,4,Twenty-Fourth Middlesex,Fourth Middlesex,5,Third
+Arlington,-,5,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,6,Twenty-Fourth Middlesex,Fourth Middlesex,5,Third
+Arlington,-,7,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Arlington,-,8,Twenty-Fourth Middlesex,Fourth Middlesex,5,Third
+Arlington,-,9,Twenty-Third Middlesex,Fourth Middlesex,5,Third
+Ashburnham,-,1,Second Worcester,"Hampshire, Franklin and Worcester",3,Eighth
+Ashburnham,-,2,Second Worcester,"Hampshire, Franklin and Worcester",3,Eighth
+Ashby,-,1,First Middlesex,Worcester and Middlesex,3,Seventh
+Ashfield,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Ashland,-,1,Seventh Middlesex,Middlesex and Norfolk,2,Second
+Ashland,-,2,Seventh Middlesex,Middlesex and Norfolk,2,Second
+Ashland,-,3,Seventh Middlesex,Middlesex and Norfolk,2,Second
+Ashland,-,4,Seventh Middlesex,Middlesex and Norfolk,2,Second
+Ashland,-,5,Seventh Middlesex,Middlesex and Norfolk,2,Second
+Ashland,-,6,Seventh Middlesex,Middlesex and Norfolk,2,Second
+Athol,-,1,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Athol,-,2,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Athol,-,3,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Attleboro,1,A,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,1,B,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,2,A,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,2,B,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,3,A,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,3,B,Fourteenth Bristol,Bristol and Norfolk,4,Second
+Attleboro,4,A,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,4,B,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,5,A,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,5,B,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,6,A,Second Bristol,Bristol and Norfolk,4,Second
+Attleboro,6,B,Second Bristol,Bristol and Norfolk,4,Second
+Auburn,-,1,Seventh Worcester,Second Worcester,2,Seventh
+Auburn,-,2,Seventh Worcester,Second Worcester,2,Seventh
+Auburn,-,3,Seventh Worcester,Second Worcester,2,Seventh
+Auburn,-,4,Seventh Worcester,Second Worcester,2,Seventh
+Auburn,-,5,Seventh Worcester,Second Worcester,2,Seventh
+Avon,-,1,Sixth Norfolk,Second Plymouth & Norfolk,8,Second
+Ayer,-,1,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Ayer,-,2,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Ayer,-,3,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Barnstable,-,1,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,10,Fifth Barnstable,Cape and Islands,9,First
+Barnstable,-,11,Fifth Barnstable,Cape and Islands,9,First
+Barnstable,-,12,Fifth Barnstable,Cape and Islands,9,First
+Barnstable,-,13,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,2,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,3,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,4,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,5,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,6,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,7,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,8,Second Barnstable,Cape and Islands,9,First
+Barnstable,-,9,Second Barnstable,Cape and Islands,9,First
+Barre,-,1,Fifth Worcester,Worcester & Hampshire,2,Seventh
+Barre,-,2,Fifth Worcester,Worcester & Hampshire,2,Seventh
+Becket,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Bedford,-,1,Twenty-First Middlesex,Third Middlesex,6,Third
+Bedford,-,2,Twenty-First Middlesex,Third Middlesex,6,Third
+Bedford,-,2A,Twenty-First Middlesex,Third Middlesex,5,Third
+Bedford,-,3,Twenty-First Middlesex,Third Middlesex,6,Third
+Bedford,-,4,Twenty-First Middlesex,Third Middlesex,6,Third
+Belchertown,-,A,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Belchertown,-,B,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Belchertown,-,C,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Belchertown,-,D,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Bellingham,-,1,Eighth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Bellingham,-,2,Eighth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Bellingham,-,3,Eighth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Bellingham,-,4,Eighth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Bellingham,-,5,Eighth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Belmont,-,1,Twenty-Fourth Middlesex,Suffolk and Middlesex,5,Third
+Belmont,-,2,Twenty-Fourth Middlesex,Suffolk and Middlesex,5,Third
+Belmont,-,3,Twenty-Fourth Middlesex,Suffolk and Middlesex,5,Third
+Belmont,-,4,Twenty-Fourth Middlesex,Suffolk and Middlesex,5,Third
+Belmont,-,5,Twenty-Fourth Middlesex,Suffolk and Middlesex,5,Third
+Belmont,-,6,Twenty-Fourth Middlesex,Suffolk and Middlesex,5,Third
+Belmont,-,7,Twenty-Fourth Middlesex,Suffolk and Middlesex,5,Third
+Belmont,-,8,Twenty-Fourth Middlesex,Suffolk and Middlesex,5,Third
+Berkley,-,1,Twelfth Bristol,Third Bristol & Plymouth,4,First
+Berkley,-,2,Twelfth Bristol,Third Bristol & Plymouth,4,First
+Berlin,-,1,Twelfth Worcester,First Worcester,3,Seventh
+Bernardston,-,1,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Beverly,1,1,Sixth Essex,Second Essex,6,Fifth
+Beverly,1,2,Sixth Essex,Second Essex,6,Fifth
+Beverly,2,1,Sixth Essex,Second Essex,6,Fifth
+Beverly,2,2,Sixth Essex,Second Essex,6,Fifth
+Beverly,3,1,Sixth Essex,Second Essex,6,Fifth
+Beverly,3,2,Sixth Essex,Second Essex,6,Fifth
+Beverly,4,1,Sixth Essex,Second Essex,6,Fifth
+Beverly,4,2,Sixth Essex,Second Essex,6,Fifth
+Beverly,5,1,Sixth Essex,Second Essex,6,Fifth
+Beverly,5,2,Sixth Essex,Second Essex,6,Fifth
+Beverly,6,1,Sixth Essex,Second Essex,6,Fifth
+Beverly,6,2,Sixth Essex,Second Essex,6,Fifth
+Billerica,-,1,Twenty-Second Middlesex,Fourth Middlesex,3,Third
+Billerica,-,10,Twenty-Second Middlesex,Fourth Middlesex,6,Third
+Billerica,-,11,Twenty-Second Middlesex,Fourth Middlesex,3,Third
+Billerica,-,12,Twenty-Second Middlesex,Fourth Middlesex,3,Third
+Billerica,-,2,Twenty-Second Middlesex,Fourth Middlesex,3,Third
+Billerica,-,3,Twenty-Second Middlesex,Fourth Middlesex,6,Third
+Billerica,-,4,Twenty-Second Middlesex,Fourth Middlesex,6,Third
+Billerica,-,5,Twenty-Second Middlesex,Fourth Middlesex,6,Third
+Billerica,-,6,Twenty-Second Middlesex,Fourth Middlesex,3,Third
+Billerica,-,7,Twenty-Second Middlesex,Fourth Middlesex,3,Third
+Billerica,-,8,Twenty-Second Middlesex,Fourth Middlesex,3,Third
+Billerica,-,9,Twenty-Second Middlesex,Fourth Middlesex,6,Third
+Blackstone,-,1,Eighth Worcester,Worcester & Hampden,4,Seventh
+Blackstone,-,2,Eighth Worcester,Worcester & Hampden,4,Seventh
+Blackstone,-,3,Eighth Worcester,Worcester & Hampden,4,Seventh
+Blandford,-,1,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Bolton,-,1,Third Middlesex,First Worcester,3,Seventh
+Boston,1,1,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,10,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,11,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,12,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,13,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,14,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,15,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,1,2,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,3,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,4,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,5,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,6,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,7,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,8,First Suffolk,Third Suffolk,7,Sixth
+Boston,1,9,First Suffolk,Third Suffolk,7,Sixth
+Boston,10,1,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,10,2,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,10,3,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,10,4,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,10,5,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,10,6,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,10,7,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,10,8,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,10,9,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,10,9A,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,11,1,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,11,10,Fifteenth Suffolk,Second Suffolk,8,Fourth
+Boston,11,2,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,11,3,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,11,4,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,11,5,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,11,6,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,11,7,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,11,8,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,11,9,Fifteenth Suffolk,Second Suffolk,8,Fourth
+Boston,12,1,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,12,2,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,12,3,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,12,4,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,12,5,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,12,6,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,12,7,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,12,8,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,12,9,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,13,1,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,13,10,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,13,2,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,13,3,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,13,4,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,13,5,Fifth Suffolk,First Suffolk,7,Fourth
+Boston,13,6,Thirteenth Suffolk,First Suffolk,7,Fourth
+Boston,13,7,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,13,8,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,13,9,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,14,1,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,14,10,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,11,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,12,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,13,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,14,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,2,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,3,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,14,4,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,14,5,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,6,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,7,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,8,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,14,9,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,15,1,Fifth Suffolk,First Suffolk,7,Fourth
+Boston,15,2,Fifth Suffolk,First Suffolk,7,Fourth
+Boston,15,3,Fifth Suffolk,First Suffolk,7,Fourth
+Boston,15,4,Fifth Suffolk,First Suffolk,7,Fourth
+Boston,15,5,Fifth Suffolk,First Suffolk,7,Fourth
+Boston,15,6,Thirteenth Suffolk,First Suffolk,7,Fourth
+Boston,15,7,Fifth Suffolk,First Suffolk,7,Fourth
+Boston,15,8,Thirteenth Suffolk,First Suffolk,7,Fourth
+Boston,15,9,Fifth Suffolk,First Suffolk,7,Fourth
+Boston,16,1,Thirteenth Suffolk,First Suffolk,7,Fourth
+Boston,16,10,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,16,11,Twelfth Suffolk,First Suffolk,8,Fourth
+Boston,16,12,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,16,2,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,16,3,Thirteenth Suffolk,First Suffolk,7,Fourth
+Boston,16,4,Thirteenth Suffolk,First Suffolk,7,Fourth
+Boston,16,5,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,16,6,Thirteenth Suffolk,First Suffolk,7,Fourth
+Boston,16,7,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,16,8,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,16,9,Thirteenth Suffolk,First Suffolk,8,Fourth
+Boston,17,1,Sixth Suffolk,First Suffolk,7,Fourth
+Boston,17,10,Twelfth Suffolk,First Suffolk,7,Fourth
+Boston,17,11,Twelfth Suffolk,First Suffolk,7,Fourth
+Boston,17,12,Twelfth Suffolk,First Suffolk,7,Fourth
+Boston,17,13,Twelfth Suffolk,First Suffolk,8,Fourth
+Boston,17,14,Twelfth Suffolk,First Suffolk,7,Fourth
+Boston,17,2,Sixth Suffolk,First Suffolk,7,Fourth
+Boston,17,3,Sixth Suffolk,First Suffolk,7,Fourth
+Boston,17,4,Twelfth Suffolk,First Suffolk,7,Fourth
+Boston,17,5,Sixth Suffolk,First Suffolk,7,Fourth
+Boston,17,6,Sixth Suffolk,First Suffolk,7,Fourth
+Boston,17,7,Sixth Suffolk,First Suffolk,7,Fourth
+Boston,17,8,Twelfth Suffolk,First Suffolk,7,Fourth
+Boston,17,9,Twelfth Suffolk,First Suffolk,7,Fourth
+Boston,18,1,Twelfth Suffolk,Second Suffolk,7,Fourth
+Boston,18,10,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,11,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,12,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,13,Fourteenth Suffolk,Second Suffolk,7,Fourth
+Boston,18,14,Fourteenth Suffolk,Second Suffolk,7,Fourth
+Boston,18,15,Fourteenth Suffolk,Second Suffolk,7,Fourth
+Boston,18,16,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,17,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,18,Fourteenth Suffolk,Second Suffolk,7,Fourth
+Boston,18,19,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,2,Twelfth Suffolk,Second Suffolk,7,Fourth
+Boston,18,20,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,21,Twelfth Suffolk,Second Suffolk,7,Fourth
+Boston,18,22,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,23,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,18,3,Twelfth Suffolk,Second Suffolk,7,Fourth
+Boston,18,4,Twelfth Suffolk,Second Suffolk,7,Fourth
+Boston,18,5,Twelfth Suffolk,Second Suffolk,7,Fourth
+Boston,18,6,Twelfth Suffolk,Second Suffolk,7,Fourth
+Boston,18,7,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,18,8,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,18,9,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,19,1,Fifteenth Suffolk,Second Suffolk,8,Fourth
+Boston,19,10,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,19,11,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,19,12,Sixth Suffolk,Second Suffolk,7,Fourth
+Boston,19,13,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,19,2,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,19,3,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,19,4,Fifteenth Suffolk,Second Suffolk,8,Fourth
+Boston,19,5,Fifteenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,19,6,Fifteenth Suffolk,Second Suffolk,8,Fourth
+Boston,19,7,Fifteenth Suffolk,Second Suffolk,7,Fourth
+Boston,19,8,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,19,9,Fifteenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,2,1,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Boston,2,2,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Boston,2,3,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Boston,2,4,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Boston,2,5,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Boston,2,6,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Boston,2,7,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Boston,2,8,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Boston,20,1,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,10,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,11,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,12,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,13,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,14,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,15,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,16,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,17,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,18,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,19,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,2,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,20,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,21,Fourteenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,3,Fourteenth Suffolk,Norfolk and Suffolk,7,Fourth
+Boston,20,4,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,5,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,6,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,7,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,8,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,20,9,Tenth Suffolk,Norfolk and Suffolk,8,Fourth
+Boston,21,1,Second Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,10,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,11,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,12,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,13,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,14,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,15,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,16,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,2,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,3,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,4,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,5,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,6,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,7,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,8,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,21,9,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,1,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,10,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,11,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,12,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,13,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,2,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,3,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,4,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,5,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,6,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,7,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,8,Eighteenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,22,9,Seventeenth Suffolk,Suffolk and Middlesex,7,Third
+Boston,3,1,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,10,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,11,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,12,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,13,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,13A,Third Suffolk,First Suffolk,8,Fourth
+Boston,3,14,Third Suffolk,First Suffolk,7,Fourth
+Boston,3,15,Third Suffolk,First Suffolk,7,Fourth
+Boston,3,16,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,3,17,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,3,2,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,3,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,4,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,5,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,3,6,Third Suffolk,Third Suffolk,8,Sixth
+Boston,3,7,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,3,8,Third Suffolk,First Suffolk,7,Fourth
+Boston,3,9,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,4,1,Third Suffolk,First Suffolk,7,Fourth
+Boston,4,10,Seventh Suffolk,Suffolk and Middlesex,7,Third
+Boston,4,10A,Second Suffolk,Suffolk and Middlesex,7,Third
+Boston,4,11,Eighth Suffolk,Second Suffolk,7,Fourth
+Boston,4,12,Eighth Suffolk,Suffolk and Middlesex,7,Third
+Boston,4,2,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,4,3,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,4,4,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,4,5,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,4,6,Eighth Suffolk,Third Suffolk,7,Sixth
+Boston,4,7,Eighth Suffolk,Third Suffolk,7,Sixth
+Boston,4,8,Eighth Suffolk,Third Suffolk,7,Sixth
+Boston,4,9,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,5,1,Third Suffolk,First Suffolk,7,Fourth
+Boston,5,10,Second Suffolk,Suffolk and Middlesex,7,Third
+Boston,5,11,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,5,12,Second Suffolk,Suffolk and Middlesex,7,Third
+Boston,5,13,Third Suffolk,First Suffolk,7,Fourth
+Boston,5,14,Third Suffolk,First Suffolk,7,Fourth
+Boston,5,15,Eighth Suffolk,Suffolk and Middlesex,7,Third
+Boston,5,2,Eighth Suffolk,Suffolk and Middlesex,7,Third
+Boston,5,3,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,5,4,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,5,5,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,5,6,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,5,7,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,5,8,Eighth Suffolk,Third Suffolk,8,Sixth
+Boston,5,9,Eighth Suffolk,Third Suffolk,7,Sixth
+Boston,6,1,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,10,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,11,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,12,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,12A,First Suffolk,First Suffolk,7,Fourth
+Boston,6,2,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,3,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,4,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,5,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,6,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,7,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,8,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,6,9,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,7,1,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,7,10,Fifth Suffolk,First Suffolk,8,Fourth
+Boston,7,2,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,7,3,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,7,4,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,7,5,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,7,6,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,7,7,Fourth Suffolk,First Suffolk,8,Fourth
+Boston,7,8,Ninth Suffolk,First Suffolk,8,Fourth
+Boston,7,9,Ninth Suffolk,First Suffolk,8,Fourth
+Boston,8,1,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,8,2,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,8,3,Ninth Suffolk,Second Suffolk,7,Fourth
+Boston,8,4,Ninth Suffolk,Second Suffolk,7,Fourth
+Boston,8,5,Fifth Suffolk,Second Suffolk,7,Fourth
+Boston,8,6,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,8,6A,Ninth Suffolk,First Suffolk,8,Fourth
+Boston,9,1,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,9,2,Ninth Suffolk,First Suffolk,7,Fourth
+Boston,9,3,Ninth Suffolk,Second Suffolk,7,Fourth
+Boston,9,4,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,9,5,Seventh Suffolk,Second Suffolk,7,Fourth
+Boston,9,6,Ninth Suffolk,Second Suffolk,7,Fourth
+Boston,9,7,Seventh Suffolk,Second Suffolk,7,Fourth
+Bourne,-,1,Fifth Barnstable,Plymouth and Barnstable,9,First
+Bourne,-,2,Fifth Barnstable,Plymouth and Barnstable,9,First
+Bourne,-,3,Fifth Barnstable,Plymouth and Barnstable,9,First
+Bourne,-,4,Third Barnstable,Plymouth and Barnstable,9,First
+Bourne,-,5,Third Barnstable,Plymouth and Barnstable,9,First
+Bourne,-,5A,Fifth Barnstable,Plymouth and Barnstable,9,First
+Bourne,-,6,Third Barnstable,Plymouth and Barnstable,9,First
+Bourne,-,7,Fifth Barnstable,Plymouth and Barnstable,9,First
+Boxborough,-,1,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Boxford,-,1,Eighteenth Essex,First Essex and Middlesex,6,Fifth
+Boxford,-,2,Fourteenth Essex,First Essex and Middlesex,6,Fifth
+Boxford,-,3,Fourteenth Essex,First Essex and Middlesex,6,Fifth
+Boylston,-,1,Twelfth Worcester,First Worcester,2,Seventh
+Braintree,-,1A,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Braintree,-,1B,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Braintree,-,2A,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Braintree,-,2B,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Braintree,-,3A,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Braintree,-,3B,Fifth Norfolk,Norfolk and Plymouth,8,Fourth
+Braintree,-,4A,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Braintree,-,4B,Fifth Norfolk,Norfolk and Plymouth,8,Fourth
+Braintree,-,5A,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Braintree,-,5B,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Braintree,-,6A,Fifth Norfolk,Norfolk and Plymouth,8,Fourth
+Braintree,-,6B,Fifth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Brewster,-,1,First Barnstable,Cape and Islands,9,First
+Brewster,-,2,First Barnstable,Cape and Islands,9,First
+Brewster,-,3,First Barnstable,Cape and Islands,9,First
+Bridgewater,-,1,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Bridgewater,-,2,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Bridgewater,-,3,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Bridgewater,-,4,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Bridgewater,-,5,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Bridgewater,-,6,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Bridgewater,-,7,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Bridgewater,-,8,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Bridgewater,-,9,Eighth Plymouth,"Norfolk, Plymouth & Bristol",9,Second
+Brimfield,-,1,First Hampden,Worcester & Hampden,1,Seventh
+Brockton,1,A,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,1,B,Ninth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,1,C,Ninth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,1,D,Ninth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,2,A,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,2,B,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,2,C,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,2,D,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,3,A,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,3,B,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,3,C,Ninth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,3,D,Ninth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,4,A,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,4,B,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,4,C,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,4,D,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,5,A,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,5,B,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,5,C,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,5,D,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,6,A,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,6,B,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,6,C,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,6,D,Tenth Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,7,A,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,7,B,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,7,C,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brockton,7,D,Eleventh Plymouth,Second Plymouth & Norfolk,8,Second
+Brookfield,-,1,Fifth Worcester,Worcester & Hampshire,1,Seventh
+Brookline,-,1,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,10,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,11,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,12,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,13,Seventeenth Suffolk,Norfolk & Middlesex,4,Third
+Brookline,-,13A,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Brookline,-,14,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Brookline,-,14A,Seventeenth Suffolk,Norfolk & Middlesex,4,Third
+Brookline,-,15,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Brookline,-,16,Tenth Suffolk,Norfolk & Middlesex,4,Third
+Brookline,-,17,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,2,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,3,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,4,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,5,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Brookline,-,5A,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,6,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,7,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,8,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Brookline,-,9,Fifteenth Norfolk,Norfolk & Middlesex,4,Third
+Buckland,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Burlington,-,1,Twenty-First Middlesex,Fourth Middlesex,6,Third
+Burlington,-,2,Twenty-First Middlesex,Fourth Middlesex,6,Third
+Burlington,-,3,Twenty-First Middlesex,Fourth Middlesex,6,Third
+Burlington,-,4,Twenty-First Middlesex,Fourth Middlesex,6,Third
+Burlington,-,5,Twenty-First Middlesex,Fourth Middlesex,6,Third
+Burlington,-,6,Twenty-First Middlesex,Fourth Middlesex,6,Third
+Burlington,-,7,Twenty-First Middlesex,Fourth Middlesex,6,Third
+Cambridge,1,1,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Cambridge,1,2,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Cambridge,1,2A,Eighteenth Suffolk,Middlesex and Suffolk,7,Sixth
+Cambridge,1,3,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,10,1,Twenty-Ninth Middlesex,Second Middlesex,7,Sixth
+Cambridge,10,1A,Twenty-Fifth Middlesex,Second Middlesex,5,Sixth
+Cambridge,10,2,Twenty-Fifth Middlesex,Second Middlesex,5,Sixth
+Cambridge,10,3,Twenty-Ninth Middlesex,Second Middlesex,7,Sixth
+Cambridge,11,1,Twenty-Fourth Middlesex,Second Middlesex,7,Sixth
+Cambridge,11,1A,Twenty-Ninth Middlesex,Second Middlesex,7,Sixth
+Cambridge,11,2,Twenty-Ninth Middlesex,Second Middlesex,7,Sixth
+Cambridge,11,3,Twenty-Fourth Middlesex,Second Middlesex,5,Sixth
+Cambridge,11,3A,Twenty-Ninth Middlesex,Second Middlesex,7,Sixth
+Cambridge,2,1,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,2,2,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,2,3,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Cambridge,2,3A,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,3,1,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,3,2,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,3,3,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,3,3A,Twenty-Fifth Middlesex,Middlesex and Suffolk,5,Sixth
+Cambridge,4,1,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,4,2,Twenty-Fifth Middlesex,Middlesex and Suffolk,5,Sixth
+Cambridge,4,2A,Twenty-Fifth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,4,3,Twenty-Fifth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,5,1,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,5,2,Eighteenth Suffolk,Middlesex and Suffolk,7,Sixth
+Cambridge,5,3,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,6,1,Twenty-Sixth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,6,1A,Twenty-Sixth Middlesex,Middlesex and Suffolk,5,Sixth
+Cambridge,6,2,Twenty-Fifth Middlesex,Middlesex and Suffolk,5,Sixth
+Cambridge,6,3,Twenty-Fifth Middlesex,Middlesex and Suffolk,5,Sixth
+Cambridge,7,1,Twenty-Fifth Middlesex,Second Middlesex,5,Sixth
+Cambridge,7,2,Twenty-Fifth Middlesex,Middlesex and Suffolk,5,Sixth
+Cambridge,7,2A,Twenty-Fifth Middlesex,Middlesex and Suffolk,7,Sixth
+Cambridge,7,3,Twenty-Fifth Middlesex,Middlesex and Suffolk,5,Sixth
+Cambridge,8,1,Twenty-Fifth Middlesex,Second Middlesex,5,Sixth
+Cambridge,8,2,Twenty-Fifth Middlesex,Suffolk and Middlesex,5,Third
+Cambridge,8,3,Twenty-Fifth Middlesex,Middlesex and Suffolk,5,Sixth
+Cambridge,9,1,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Cambridge,9,2,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Cambridge,9,3,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Canton,-,1,Sixth Norfolk,Bristol and Norfolk,8,Second
+Canton,-,2,Sixth Norfolk,Bristol and Norfolk,8,Second
+Canton,-,3,Sixth Norfolk,Bristol and Norfolk,8,Second
+Canton,-,4,Sixth Norfolk,Bristol and Norfolk,8,Second
+Canton,-,5,Sixth Norfolk,Bristol and Norfolk,8,Second
+Canton,-,6,Sixth Norfolk,Bristol and Norfolk,8,Second
+Canton,-,7,Sixth Norfolk,Bristol and Norfolk,8,Second
+Carlisle,-,1,Fourteenth Middlesex,Third Middlesex,3,Third
+Carver,-,1,Second Plymouth,Third Bristol & Plymouth,9,First
+Carver,-,2,Second Plymouth,Third Bristol & Plymouth,9,First
+Carver,-,3,Second Plymouth,Third Bristol & Plymouth,9,First
+Charlemont,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Charlton,-,1,Sixth Worcester,Worcester & Hampden,1,Seventh
+Charlton,-,2,Sixth Worcester,Worcester & Hampden,1,Seventh
+Charlton,-,3,Sixth Worcester,Worcester & Hampden,1,Seventh
+Charlton,-,4,Seventh Worcester,Worcester & Hampden,1,Seventh
+Charlton,-,4A,Sixth Worcester,Worcester & Hampden,1,Seventh
+Chatham,-,1,Fourth Barnstable,Cape and Islands,9,First
+Chatham,-,2,Fourth Barnstable,Cape and Islands,9,First
+Chelmsford,-,1,Sixteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,10,Fourteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,11,Fourteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,2,Sixteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,3A,Sixteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,3B,Second Middlesex,Third Middlesex,3,Third
+Chelmsford,-,4,Second Middlesex,Third Middlesex,3,Third
+Chelmsford,-,5A,Second Middlesex,Third Middlesex,3,Third
+Chelmsford,-,5B,Sixteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,6,Sixteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,7,Fourteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,8,Fourteenth Middlesex,Third Middlesex,3,Third
+Chelmsford,-,9,Fourteenth Middlesex,Third Middlesex,3,Third
+Chelsea,1,1,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,1,2,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,1,3,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,1,4,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,2,1,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,2,2,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,2,3,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,2,4,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,3,1,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,3,2,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,3,3,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,3,4,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,4,1,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,4,2,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,4,3,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Chelsea,4,4,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Cheshire,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Chester,-,1,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Chesterfield,-,1,First Hampshire,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Chicopee,1,A,Eighth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Chicopee,1,B,Eighth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Chicopee,2,A,Sixth Hampden,Hampden,1,Eighth
+Chicopee,2,B,Eighth Hampden,Hampden,1,Eighth
+Chicopee,3,A,Sixth Hampden,Hampden,1,Eighth
+Chicopee,3,A1,Fifth Hampden,Hampden,1,Eighth
+Chicopee,3,B,Fifth Hampden,Hampden,1,Eighth
+Chicopee,4,A,Sixth Hampden,Hampden,1,Eighth
+Chicopee,4,B,Eighth Hampden,Hampden,1,Eighth
+Chicopee,5,A,Eighth Hampden,Hampden,1,Eighth
+Chicopee,5,B,Eighth Hampden,Hampden,1,Eighth
+Chicopee,6,A,Eighth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Chicopee,6,B,Eighth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Chicopee,7,A,Eighth Hampden,Hampden and Hampshire,1,Eighth
+Chicopee,7,B,Eighth Hampden,Hampden,1,Eighth
+Chicopee,8,A,Eighth Hampden,Hampden,1,Eighth
+Chicopee,8,B,Eighth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Chicopee,9,A,Eighth Hampden,Hampden and Hampshire,1,Eighth
+Chicopee,9,B,Eighth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Chilmark,-,1,"Barnstable, Dukes and Nantucket",Cape and Islands,9,First
+Clarksburg,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Clinton,-,1,Twelfth Worcester,Worcester and Middlesex,3,Seventh
+Clinton,-,2,Twelfth Worcester,Worcester and Middlesex,3,Seventh
+Clinton,-,3,Twelfth Worcester,Worcester and Middlesex,3,Seventh
+Clinton,-,4,Twelfth Worcester,Worcester and Middlesex,3,Seventh
+Cohasset,-,1,Third Plymouth,First Plymouth & Norfolk,9,Fourth
+Cohasset,-,2,Third Plymouth,First Plymouth & Norfolk,9,Fourth
+Cohasset,-,3,Third Plymouth,First Plymouth & Norfolk,9,Fourth
+Colrain,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Concord,-,1,Fourteenth Middlesex,Third Middlesex,3,Third
+Concord,-,2,Fourteenth Middlesex,Third Middlesex,3,Third
+Concord,-,3,Thirteenth Middlesex,Third Middlesex,3,Third
+Concord,-,4,Thirteenth Middlesex,Third Middlesex,3,Third
+Concord,-,5,Fourteenth Middlesex,Third Middlesex,3,Third
+Conway,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Cummington,-,1,First Hampshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Dalton,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Dalton,-,2,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Danvers,-,1,Thirteenth Essex,Second Essex,6,Fifth
+Danvers,-,2,Thirteenth Essex,Second Essex,6,Fifth
+Danvers,-,3,Thirteenth Essex,Second Essex,6,Fifth
+Danvers,-,4,Thirteenth Essex,Second Essex,6,Fifth
+Danvers,-,5,Thirteenth Essex,Second Essex,6,Fifth
+Danvers,-,6,Thirteenth Essex,Second Essex,6,Fifth
+Danvers,-,7,Thirteenth Essex,Second Essex,6,Fifth
+Danvers,-,8,Thirteenth Essex,Second Essex,6,Fifth
+Dartmouth,-,1,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dartmouth,-,2,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dartmouth,-,3,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dartmouth,-,4,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dartmouth,-,5,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dartmouth,-,6,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dartmouth,-,7,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dartmouth,-,8,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dartmouth,-,9,Ninth Bristol,Second Bristol and Plymouth,9,First
+Dedham,-,1,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Dedham,-,2,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Dedham,-,3,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Dedham,-,4,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Dedham,-,5,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Dedham,-,6,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Dedham,-,7,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Deerfield,-,1,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Dennis,-,1,First Barnstable,Cape and Islands,9,First
+Dennis,-,2,First Barnstable,Cape and Islands,9,First
+Dennis,-,3,First Barnstable,Cape and Islands,9,First
+Dennis,-,4,First Barnstable,Cape and Islands,9,First
+Dennis,-,5,First Barnstable,Cape and Islands,9,First
+Dighton,-,1,Fifth Bristol,Third Bristol & Plymouth,4,First
+Dighton,-,2,Fifth Bristol,Third Bristol & Plymouth,4,First
+Dighton,-,3,Fifth Bristol,Third Bristol & Plymouth,4,First
+Douglas,-,1,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Douglas,-,2,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Douglas,-,3,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Dover,-,1,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Dracut,-,1,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dracut,-,2,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dracut,-,3,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dracut,-,4,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dracut,-,5,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dracut,-,6,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dracut,-,7,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dracut,-,8,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dracut,-,9,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Dudley,-,1,Sixth Worcester,Worcester & Hampden,1,Seventh
+Dudley,-,2,Sixth Worcester,Worcester & Hampden,1,Seventh
+Dudley,-,3,Sixth Worcester,Worcester & Hampden,1,Seventh
+Dudley,-,4,Sixth Worcester,Worcester & Hampden,1,Seventh
+Dunstable,-,1,First Middlesex,First Middlesex,3,Fifth
+Duxbury,-,1,Sixth Plymouth,First Plymouth & Norfolk,9,Fourth
+Duxbury,-,2,Sixth Plymouth,First Plymouth & Norfolk,9,Fourth
+Duxbury,-,3,Sixth Plymouth,First Plymouth & Norfolk,9,Fourth
+Duxbury,-,4,Sixth Plymouth,First Plymouth & Norfolk,9,Fourth
+Duxbury,-,5,Sixth Plymouth,First Plymouth & Norfolk,9,Fourth
+Duxbury,-,6,Sixth Plymouth,First Plymouth & Norfolk,9,Fourth
+East Bridgewater,-,1,Seventh Plymouth,Second Plymouth & Norfolk,8,Second
+East Bridgewater,-,2,Seventh Plymouth,Second Plymouth & Norfolk,8,Second
+East Bridgewater,-,3,Seventh Plymouth,Second Plymouth & Norfolk,8,Second
+East Bridgewater,-,4,Ninth Plymouth,Second Plymouth & Norfolk,8,Second
+East Brookfield,-,1,Fifth Worcester,Worcester & Hampshire,1,Seventh
+East Longmeadow,-,1,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+East Longmeadow,-,2,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+East Longmeadow,-,2A,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+East Longmeadow,-,3,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+East Longmeadow,-,3A,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+East Longmeadow,-,4,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+East Longmeadow,-,4A,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+East Longmeadow,-,5,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Eastham,-,1,Fourth Barnstable,Cape and Islands,9,First
+Easthampton,-,1,Second Hampshire,Hampden and Hampshire,1,Eighth
+Easthampton,-,2,Second Hampshire,Hampden and Hampshire,1,Eighth
+Easthampton,-,3,Second Hampshire,Hampden and Hampshire,1,Eighth
+Easthampton,-,4,Second Hampshire,Hampden and Hampshire,1,Eighth
+Easthampton,-,5,Second Hampshire,Hampden and Hampshire,1,Eighth
+Easton,-,1,Ninth Plymouth,"Norfolk, Plymouth & Bristol",8,Second
+Easton,-,2,Ninth Plymouth,"Norfolk, Plymouth & Bristol",8,Second
+Easton,-,3,Ninth Plymouth,"Norfolk, Plymouth & Bristol",8,Second
+Easton,-,4A,Third Bristol,"Norfolk, Plymouth & Bristol",8,Second
+Easton,-,4B,Ninth Plymouth,"Norfolk, Plymouth & Bristol",8,Second
+Easton,-,5,Third Bristol,"Norfolk, Plymouth & Bristol",8,Second
+Easton,-,6,Third Bristol,"Norfolk, Plymouth & Bristol",8,Second
+Easton,-,7,Ninth Plymouth,"Norfolk, Plymouth & Bristol",8,Second
+Edgartown,-,1,"Barnstable, Dukes and Nantucket",Cape and Islands,9,First
+Egremont,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Erving,-,1,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Essex,-,1,Fifth Essex,First Essex and Middlesex,6,Fifth
+Everett,1,1,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,1,2,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,1,3,Second Suffolk,Middlesex and Suffolk,7,Sixth
+Everett,1,3A,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,2,1,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Everett,2,2,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,2,2A,Eleventh Suffolk,Middlesex and Suffolk,7,Sixth
+Everett,2,3,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,3,1,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,3,2,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,3,3,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,4,1,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,4,2,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,4,3,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,5,1,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,5,2,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,5,3,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,6,1,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,6,2,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Everett,6,3,Twenty-Eighth Middlesex,Middlesex and Suffolk,7,Sixth
+Fairhaven,-,1,Tenth Bristol,Second Bristol and Plymouth,9,First
+Fairhaven,-,2,Tenth Bristol,Second Bristol and Plymouth,9,First
+Fairhaven,-,3,Tenth Bristol,Second Bristol and Plymouth,9,First
+Fairhaven,-,4,Tenth Bristol,Second Bristol and Plymouth,9,First
+Fairhaven,-,5,Tenth Bristol,Second Bristol and Plymouth,9,First
+Fairhaven,-,6,Tenth Bristol,Second Bristol and Plymouth,9,First
+Fall River,1,A,Eighth Bristol,First Bristol and Plymouth,4,First
+Fall River,1,B,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,1,C,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,2,A,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,2,B,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,2,C,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,3,A,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,3,B,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,3,C,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,4,A,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,4,B,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,4,C,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,5,A,Seventh Bristol,First Bristol and Plymouth,4,First
+Fall River,5,B,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,5,C,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,6,A,Eighth Bristol,First Bristol and Plymouth,4,First
+Fall River,6,B,Eighth Bristol,First Bristol and Plymouth,4,First
+Fall River,6,C,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,7,A,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,7,B,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,7,C,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,8,A,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,8,B,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,8,C,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,9,A,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,9,B,Sixth Bristol,First Bristol and Plymouth,4,First
+Fall River,9,C,Sixth Bristol,First Bristol and Plymouth,4,First
+Falmouth,-,1,"Barnstable, Dukes and Nantucket",Plymouth and Barnstable,9,First
+Falmouth,-,2,"Barnstable, Dukes and Nantucket",Plymouth and Barnstable,9,First
+Falmouth,-,3,Third Barnstable,Plymouth and Barnstable,9,First
+Falmouth,-,4,Third Barnstable,Plymouth and Barnstable,9,First
+Falmouth,-,5,Third Barnstable,Plymouth and Barnstable,9,First
+Falmouth,-,6,"Barnstable, Dukes and Nantucket",Plymouth and Barnstable,9,First
+Falmouth,-,7,Third Barnstable,Plymouth and Barnstable,9,First
+Falmouth,-,8,Third Barnstable,Plymouth and Barnstable,9,First
+Falmouth,-,9,Third Barnstable,Plymouth and Barnstable,9,First
+Fitchburg,1,A,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,1,B,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,2,A,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,2,B,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,3,A,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,3,B,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,4,A,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,4,B,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,5,A,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,5,B,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,6,A,Third Worcester,Worcester and Middlesex,3,Seventh
+Fitchburg,6,B,Third Worcester,Worcester and Middlesex,3,Seventh
+Florida,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Foxborough,-,1,First Bristol,Bristol and Norfolk,4,Second
+Foxborough,-,2,First Bristol,Bristol and Norfolk,4,Second
+Foxborough,-,3,First Bristol,Bristol and Norfolk,4,Second
+Foxborough,-,4,First Bristol,Bristol and Norfolk,4,Second
+Foxborough,-,5,First Bristol,Bristol and Norfolk,4,Second
+Framingham,-,1,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,10,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,11,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,12,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,13,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,14,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,15,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,16,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,17,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,18,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,19,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,2,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,20,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,21A,Nineteenth Worcester,Middlesex and Norfolk,5,Second
+Framingham,-,21B,Fourth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,21C,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,22,Fourth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,23,Fourth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,24,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,25,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,26,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,27,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,3,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,4,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,5,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,6,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,7,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,8,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,9A,Seventh Middlesex,Middlesex and Norfolk,5,Second
+Framingham,-,9B,Sixth Middlesex,Middlesex and Norfolk,5,Second
+Franklin,-,1,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Franklin,-,2,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Franklin,-,3,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Franklin,-,4,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Franklin,-,5,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Franklin,-,6,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Franklin,-,7,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Franklin,-,8,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Franklin,-,9,Tenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Freetown,-,1,Sixth Bristol,First Bristol and Plymouth,4,First
+Freetown,-,2,Eighth Bristol,First Bristol and Plymouth,4,First
+Freetown,-,3,Eighth Bristol,First Bristol and Plymouth,4,First
+Gardner,1,A,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,1,B,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,2,A,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,2,B,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,3,A,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,3,B,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,4,A,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,4,B,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,5,A,Second Worcester,Worcester & Hampshire,3,Seventh
+Gardner,5,B,Second Worcester,Worcester & Hampshire,3,Seventh
+Georgetown,-,1,Second Essex,First Essex and Middlesex,6,Fifth
+Georgetown,-,2,Second Essex,First Essex and Middlesex,6,Fifth
+Georgetown,-,3,Second Essex,First Essex and Middlesex,6,Fifth
+Gill,-,1,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Gloucester,1,1,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,1,2,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,2,1,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,2,2,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,3,1,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,3,2,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,4,1,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,4,2,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,5,1,Fifth Essex,First Essex and Middlesex,6,Fifth
+Gloucester,5,2,Fifth Essex,First Essex and Middlesex,6,Fifth
+Goshen,-,1,First Hampshire,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Gosnold,-,1,"Barnstable, Dukes and Nantucket",Cape and Islands,9,First
+Grafton,-,1,Ninth Worcester,Second Worcester,2,Seventh
+Grafton,-,2,Ninth Worcester,Second Worcester,2,Seventh
+Grafton,-,3,Ninth Worcester,Second Worcester,2,Seventh
+Grafton,-,4,Ninth Worcester,Second Worcester,2,Seventh
+Grafton,-,5,Ninth Worcester,Second Worcester,2,Seventh
+Granby,-,1,Third Hampshire,"Hampden, Hampshire & Worcester",1,Eighth
+Granby,-,2,Second Hampshire,"Hampden, Hampshire & Worcester",1,Eighth
+Granby,-,2A,Third Hampshire,"Hampden, Hampshire & Worcester",1,Eighth
+Granville,-,1,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Great Barrington,-,A,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Great Barrington,-,B,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Great Barrington,-,C,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Great Barrington,-,D,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Greenfield,-,1,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Greenfield,-,2,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Greenfield,-,3,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Greenfield,-,4,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Greenfield,-,5,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Greenfield,-,6,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Greenfield,-,7,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Greenfield,-,8,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Greenfield,-,9,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Groton,-,1,Thirty-Seventh Middlesex,Worcester and Middlesex,3,Seventh
+Groton,-,2,First Middlesex,Worcester and Middlesex,3,Seventh
+Groton,-,3,First Middlesex,Worcester and Middlesex,3,Seventh
+Groton,-,3A,Thirty-Seventh Middlesex,Worcester and Middlesex,3,Seventh
+Groveland,-,1,Fourteenth Essex,First Essex and Middlesex,6,Fifth
+Groveland,-,2,Fourteenth Essex,First Essex and Middlesex,6,Fifth
+Hadley,-,1,Second Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Halifax,-,1,Twelfth Plymouth,Second Plymouth & Norfolk,9,Second
+Halifax,-,2,Sixth Plymouth,Second Plymouth & Norfolk,9,Second
+Halifax,-,2A,Twelfth Plymouth,Second Plymouth & Norfolk,9,Second
+Hamilton,-,1,Second Essex,First Essex and Middlesex,6,Fifth
+Hamilton,-,2,Second Essex,First Essex and Middlesex,6,Fifth
+Hampden,-,1,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Hancock,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Hanover,-,1,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Hanover,-,2,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Hanover,-,3,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Hanover,-,4,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Hanson,-,1,Fifth Plymouth,Second Plymouth & Norfolk,9,Second
+Hanson,-,2,Sixth Plymouth,Second Plymouth & Norfolk,9,Second
+Hanson,-,3,Sixth Plymouth,Second Plymouth & Norfolk,9,Second
+Hardwick,-,1,Fifth Worcester,Worcester & Hampshire,2,Seventh
+Harvard,-,1,Thirty-Seventh Middlesex,Middlesex and Worcester,3,Third
+Harwich,-,1,Fourth Barnstable,Cape and Islands,9,First
+Harwich,-,2,Fourth Barnstable,Cape and Islands,9,First
+Harwich,-,3,Fourth Barnstable,Cape and Islands,9,First
+Harwich,-,4,Fourth Barnstable,Cape and Islands,9,First
+Hatfield,-,1,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Haverhill,1,1,Third Essex,First Essex,3,Fifth
+Haverhill,1,2,Third Essex,First Essex,3,Fifth
+Haverhill,1,2A,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,1,3,Third Essex,First Essex,3,Fifth
+Haverhill,1,3A,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,2,1,Fifteenth Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,2,2,Fifteenth Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,2,3,Third Essex,First Essex,3,Fifth
+Haverhill,3,1,Third Essex,First Essex,3,Fifth
+Haverhill,3,2,Third Essex,First Essex,3,Fifth
+Haverhill,3,3,Third Essex,First Essex,3,Fifth
+Haverhill,4,1,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,4,2,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,4,3,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,5,1,Fifteenth Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,5,1A,Fifteenth Essex,First Essex,3,Fifth
+Haverhill,5,2,Fifteenth Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,5,3,Fifteenth Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,5,3A,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,6,1,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,6,2,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,6,2A,Third Essex,First Essex,3,Fifth
+Haverhill,6,3,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,7,1,Fifteenth Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,7,2,Fifteenth Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,7,2A,Fifteenth Essex,First Essex,3,Fifth
+Haverhill,7,3,Third Essex,Second Essex and Middlesex,3,Fifth
+Haverhill,7,3A,Fifteenth Essex,Second Essex and Middlesex,3,Fifth
+Hawley,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Heath,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Hingham,-,1,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hingham,-,2,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hingham,-,3,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hingham,-,4,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hingham,-,5,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hingham,-,6,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hingham,-,7,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hinsdale,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Holbrook,-,1,Fifth Norfolk,Norfolk and Plymouth,8,Fourth
+Holbrook,-,2,Fifth Norfolk,Norfolk and Plymouth,8,Fourth
+Holbrook,-,3,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Holbrook,-,4,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Holden,-,1,First Worcester,Worcester & Hampshire,2,Seventh
+Holden,-,2,First Worcester,Worcester & Hampshire,2,Seventh
+Holden,-,3,First Worcester,Worcester & Hampshire,2,Seventh
+Holden,-,4,First Worcester,Worcester & Hampshire,2,Seventh
+Holden,-,5,First Worcester,Worcester & Hampshire,2,Seventh
+Holden,-,6,First Worcester,Worcester & Hampshire,2,Seventh
+Holland,-,1,First Hampden,Worcester & Hampden,1,Seventh
+Holliston,-,1,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Holliston,-,2,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Holliston,-,3,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Holliston,-,4,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Holyoke,1,A,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,1,B,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,2,A,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,2,B,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,3,A,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,3,B,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,4,A,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,4,B,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,5,A,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,5,B,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,6,A,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,6,B,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,7,A,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Holyoke,7,B,Fifth Hampden,Hampden and Hampshire,1,Eighth
+Hopedale,-,1,Tenth Worcester,Worcester & Hampden,4,Seventh
+Hopkinton,-,1,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Hopkinton,-,2,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Hopkinton,-,3,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Hopkinton,-,4,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Hopkinton,-,5,Eighth Middlesex,Middlesex and Norfolk,2,Second
+Hubbardston,-,1,Fifth Worcester,Worcester & Hampshire,2,Seventh
+Hudson,-,1,Third Middlesex,Middlesex and Worcester,3,Third
+Hudson,-,2,Third Middlesex,Middlesex and Worcester,3,Third
+Hudson,-,3,Third Middlesex,Middlesex and Worcester,3,Third
+Hudson,-,4,Third Middlesex,Middlesex and Worcester,3,Third
+Hudson,-,5,Third Middlesex,Middlesex and Worcester,3,Third
+Hudson,-,6,Third Middlesex,Middlesex and Worcester,3,Third
+Hull,-,1,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hull,-,2,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Hull,-,3,Third Plymouth,First Plymouth & Norfolk,8,Fourth
+Huntington,-,1,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Ipswich,-,1,Second Essex,First Essex and Middlesex,6,Fifth
+Ipswich,-,2,Second Essex,First Essex and Middlesex,6,Fifth
+Ipswich,-,3,Second Essex,First Essex and Middlesex,6,Fifth
+Ipswich,-,4,Second Essex,First Essex and Middlesex,6,Fifth
+Kingston,-,1,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Kingston,-,2,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Kingston,-,3,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Kingston,-,4,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Lakeville,-,1,Twelfth Bristol,First Bristol and Plymouth,4,First
+Lakeville,-,2,Twelfth Bristol,First Bristol and Plymouth,4,First
+Lakeville,-,3,Twelfth Bristol,First Bristol and Plymouth,4,First
+Lancaster,-,1,Twelfth Worcester,Worcester and Middlesex,3,Seventh
+Lancaster,-,2,Twelfth Worcester,Worcester and Middlesex,3,Seventh
+Lanesborough,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Lawrence,A,1,Fourth Essex,First Essex,3,Fifth
+Lawrence,A,2,Fourth Essex,First Essex,3,Fifth
+Lawrence,A,2A,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,A,3,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,A,4,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,B,1,Fourth Essex,First Essex,3,Fifth
+Lawrence,B,2,Fourth Essex,First Essex,3,Fifth
+Lawrence,B,3,Fourth Essex,First Essex,3,Fifth
+Lawrence,B,4,Fourth Essex,First Essex,3,Fifth
+Lawrence,C,1,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,C,2,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,C,3,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,C,4,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,D,1,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,D,2,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,D,3,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,D,4,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,E,1,Seventeenth Essex,First Essex,3,Fifth
+Lawrence,E,1A,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,E,2,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,E,3,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,E,4,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,F,1,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,F,2,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,F,3,Sixteenth Essex,First Essex,3,Fifth
+Lawrence,F,4,Sixteenth Essex,First Essex,3,Fifth
+Lee,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Leicester,-,1,Fifth Worcester,Worcester & Hampshire,2,Seventh
+Leicester,-,2,Seventeenth Worcester,Worcester & Hampshire,2,Seventh
+Leicester,-,3,Seventh Worcester,Worcester & Hampshire,2,Seventh
+Leicester,-,4,Seventeenth Worcester,Worcester & Hampshire,2,Seventh
+Lenox,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Leominster,1,A,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,1,B,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,1,C,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,2,A,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,2,B,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,2,C,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,3,A,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,3,B,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,3,C,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,4,A,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,4,B,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,4,C,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,5,A,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,5,B,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leominster,5,C,Fourth Worcester,Worcester and Middlesex,2,Seventh
+Leverett,-,1,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Lexington,-,1,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Lexington,-,2,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Lexington,-,3,Fifteenth Middlesex,Third Middlesex,5,Third
+Lexington,-,4,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Lexington,-,5,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Lexington,-,6,Twenty-First Middlesex,Fourth Middlesex,5,Third
+Lexington,-,7,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Lexington,-,8,Fifteenth Middlesex,Third Middlesex,5,Third
+Lexington,-,9,Fifteenth Middlesex,Third Middlesex,5,Third
+Leyden,-,1,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Lincoln,-,1,Thirteenth Middlesex,Third Middlesex,5,Third
+Lincoln,-,2,Fourteenth Norfolk,Third Middlesex,5,Third
+Littleton,-,1,Second Middlesex,Middlesex and Worcester,3,Third
+Littleton,-,2,Second Middlesex,Middlesex and Worcester,3,Third
+Littleton,-,3,Second Middlesex,Middlesex and Worcester,3,Third
+Longmeadow,-,A,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Longmeadow,-,B,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Longmeadow,-,C,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Longmeadow,-,D,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Longmeadow,-,E,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Lowell,1,1,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,1,1A,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,1,2,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,1,3,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,1,4,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,2,1,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,2,2,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,2,3,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,2,4,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,3,1,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,3,2,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,3,3,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,3,4,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,4,1,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,4,2,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,4,3,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,4,3A,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,4,4,Sixteenth Middlesex,First Middlesex,3,Fifth
+Lowell,4,4A,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,5,1,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,5,1A,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,5,2,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,5,3,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,5,4,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,6,1,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,6,2,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,6,3,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,6,3A,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,6,4,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,6,4A,Seventeenth Middlesex,First Middlesex,3,Fifth
+Lowell,7,1,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,7,2,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,7,3,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,7,4,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,8,1,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,8,2,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,8,3,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,8,4,Eighteenth Middlesex,First Middlesex,3,Fifth
+Lowell,8,4A,Seventeenth Middlesex,First Middlesex,3,Fifth
+Ludlow,-,1,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Ludlow,-,2,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Ludlow,-,3,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Ludlow,-,4,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Ludlow,-,5,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Ludlow,-,6,Seventh Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Lunenburg,-,A,First Middlesex,Worcester and Middlesex,3,Seventh
+Lunenburg,-,B,Third Worcester,Worcester and Middlesex,3,Seventh
+Lunenburg,-,B1,First Middlesex,Worcester and Middlesex,3,Seventh
+Lunenburg,-,C,First Middlesex,Worcester and Middlesex,3,Seventh
+Lunenburg,-,C1,Third Worcester,Worcester and Middlesex,3,Seventh
+Lunenburg,-,D,First Middlesex,Worcester and Middlesex,3,Seventh
+Lynn,1,1,Ninth Essex,Third Essex,6,Sixth
+Lynn,1,2,Ninth Essex,Third Essex,6,Sixth
+Lynn,1,2A,Tenth Essex,Third Essex,6,Sixth
+Lynn,1,3,Tenth Essex,Third Essex,6,Sixth
+Lynn,1,4,Tenth Essex,Third Essex,6,Sixth
+Lynn,2,1,Tenth Essex,Third Essex,6,Sixth
+Lynn,2,2,Tenth Essex,Third Essex,6,Sixth
+Lynn,2,3,Tenth Essex,Third Essex,6,Sixth
+Lynn,2,4,Tenth Essex,Third Essex,6,Sixth
+Lynn,3,1,Tenth Essex,Third Essex,6,Sixth
+Lynn,3,2,Tenth Essex,Third Essex,6,Sixth
+Lynn,3,3,Tenth Essex,Third Essex,6,Sixth
+Lynn,3,4,Eighth Essex,Third Essex,6,Sixth
+Lynn,4,1,Tenth Essex,Third Essex,6,Sixth
+Lynn,4,2,Tenth Essex,Third Essex,6,Sixth
+Lynn,4,3,Eleventh Essex,Third Essex,6,Sixth
+Lynn,4,3A,Eighth Essex,Third Essex,6,Sixth
+Lynn,4,4,Eighth Essex,Third Essex,6,Sixth
+Lynn,5,1,Eleventh Essex,Third Essex,6,Sixth
+Lynn,5,2,Eleventh Essex,Third Essex,6,Sixth
+Lynn,5,3,Tenth Essex,Third Essex,6,Sixth
+Lynn,5,4,Eleventh Essex,Third Essex,6,Sixth
+Lynn,6,1,Eleventh Essex,Third Essex,6,Sixth
+Lynn,6,2,Eleventh Essex,Third Essex,6,Sixth
+Lynn,6,3,Eleventh Essex,Third Essex,6,Sixth
+Lynn,6,4,Eleventh Essex,Third Essex,6,Sixth
+Lynn,7,1,Eleventh Essex,Third Essex,6,Sixth
+Lynn,7,2,Eleventh Essex,Third Essex,6,Sixth
+Lynn,7,3,Eleventh Essex,Third Essex,6,Sixth
+Lynn,7,4,Eleventh Essex,Third Essex,6,Sixth
+Lynnfield,-,1,Twentieth Middlesex,Third Essex,6,Sixth
+Lynnfield,-,2,Twentieth Middlesex,Third Essex,6,Sixth
+Lynnfield,-,3,Twentieth Middlesex,Third Essex,6,Sixth
+Lynnfield,-,4,Twentieth Middlesex,Third Essex,6,Sixth
+Malden,1,1,Thirty-Fifth Middlesex,Fifth Middlesex,5,Sixth
+Malden,1,2,Thirty-Fifth Middlesex,Fifth Middlesex,5,Sixth
+Malden,1,3,Thirty-Fifth Middlesex,Fifth Middlesex,5,Sixth
+Malden,2,1,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,2,2,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,2,3,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,3,1,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,3,1A,Thirty-Fifth Middlesex,Fifth Middlesex,5,Sixth
+Malden,3,2,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,3,3,Thirty-Fifth Middlesex,Fifth Middlesex,5,Sixth
+Malden,4,1,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,4,2,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,4,3,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,5,1,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,5,2,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Malden,5,3,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,5,3A,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Malden,6,1,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,6,2,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,6,3,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,7,1,Thirty-Fifth Middlesex,Fifth Middlesex,5,Sixth
+Malden,7,2,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,7,3,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,7,3A,Thirty-Fifth Middlesex,Fifth Middlesex,5,Sixth
+Malden,8,1,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,8,2,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Malden,8,3,Thirty-Third Middlesex,Fifth Middlesex,5,Sixth
+Manchester-by-the-Sea,-,1,Fifth Essex,First Essex and Middlesex,6,Fifth
+Mansfield,-,1,Fourteenth Bristol,Bristol and Norfolk,4,Second
+Mansfield,-,2,First Bristol,Bristol and Norfolk,4,Second
+Mansfield,-,2A,Fourteenth Bristol,Bristol and Norfolk,4,Second
+Mansfield,-,3,First Bristol,Bristol and Norfolk,4,Second
+Mansfield,-,4,Eighth Norfolk,Bristol and Norfolk,4,Second
+Mansfield,-,5,Fourteenth Bristol,Bristol and Norfolk,4,Second
+Mansfield,-,6,First Bristol,Bristol and Norfolk,4,Second
+Mansfield,-,6A,Eighth Norfolk,Bristol and Norfolk,4,Second
+Mansfield,-,7,First Bristol,Bristol and Norfolk,4,Second
+Marblehead,-,1,Eighth Essex,Third Essex,6,Sixth
+Marblehead,-,2,Eighth Essex,Third Essex,6,Sixth
+Marblehead,-,3,Eighth Essex,Third Essex,6,Sixth
+Marblehead,-,4,Eighth Essex,Third Essex,6,Sixth
+Marblehead,-,5,Eighth Essex,Third Essex,6,Sixth
+Marblehead,-,6,Eighth Essex,Third Essex,6,Sixth
+Marion,-,1,Tenth Bristol,Third Bristol & Plymouth,9,First
+Marlborough,1,1,Thirteenth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,1,1A,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,1,2,Thirteenth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,2,1,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,2,2,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,2,2A,Thirteenth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,3,1,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,3,2,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,4,1,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,4,2,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,5,1,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,5,2,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,6,1,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,6,2,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,7,1,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,7,2,Fourth Middlesex,Middlesex and Worcester,3,Third
+Marlborough,7,2A,Thirteenth Middlesex,Middlesex and Worcester,3,Third
+Marshfield,-,1,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Marshfield,-,2,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Marshfield,-,2A,Sixth Plymouth,First Plymouth & Norfolk,9,Fourth
+Marshfield,-,3,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Marshfield,-,4,Sixth Plymouth,First Plymouth & Norfolk,9,Fourth
+Marshfield,-,5,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Marshfield,-,6,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Marshfield,-,7,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Mashpee,-,1,Third Barnstable,Plymouth and Barnstable,9,First
+Mashpee,-,2,Third Barnstable,Plymouth and Barnstable,9,First
+Mashpee,-,3,Third Barnstable,Plymouth and Barnstable,9,First
+Mashpee,-,4,Third Barnstable,Plymouth and Barnstable,9,First
+Mashpee,-,5,Third Barnstable,Plymouth and Barnstable,9,First
+Mattapoisett,-,1,Tenth Bristol,Second Bristol and Plymouth,9,First
+Mattapoisett,-,2,Tenth Bristol,Second Bristol and Plymouth,9,First
+Maynard,-,1,Third Middlesex,Middlesex and Worcester,5,Third
+Maynard,-,2,Third Middlesex,Middlesex and Worcester,5,Third
+Maynard,-,3,Third Middlesex,Middlesex and Worcester,5,Third
+Maynard,-,4,Third Middlesex,Middlesex and Worcester,5,Third
+Medfield,-,1,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Medfield,-,2,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Medfield,-,3,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Medfield,-,4,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Medford,1,1,Thirty-Fifth Middlesex,Second Middlesex,5,Sixth
+Medford,1,2,Thirty-Fifth Middlesex,Second Middlesex,5,Sixth
+Medford,2,1,Thirty-Fifth Middlesex,Second Middlesex,5,Sixth
+Medford,2,2,Thirty-Fifth Middlesex,Second Middlesex,5,Sixth
+Medford,3,1,Thirty-Fifth Middlesex,Second Middlesex,5,Sixth
+Medford,3,2,Twenty-Third Middlesex,Second Middlesex,5,Sixth
+Medford,4,1,Thirty-Fourth Middlesex,Second Middlesex,5,Sixth
+Medford,4,2,Thirty-Fourth Middlesex,Second Middlesex,5,Sixth
+Medford,5,1,Thirty-Fourth Middlesex,Second Middlesex,5,Sixth
+Medford,5,2,Thirty-Fourth Middlesex,Second Middlesex,5,Sixth
+Medford,6,1,Twenty-Third Middlesex,Second Middlesex,5,Sixth
+Medford,6,2,Twenty-Third Middlesex,Second Middlesex,5,Sixth
+Medford,6,2A,Thirty-Fifth Middlesex,Second Middlesex,5,Sixth
+Medford,7,1,Thirty-Fourth Middlesex,Second Middlesex,5,Sixth
+Medford,7,2,Thirty-Fifth Middlesex,Second Middlesex,5,Sixth
+Medford,7,2A,Thirty-Fourth Middlesex,Second Middlesex,5,Sixth
+Medford,8,1,Thirty-Fifth Middlesex,Second Middlesex,5,Sixth
+Medford,8,2,Thirty-Fourth Middlesex,Second Middlesex,5,Sixth
+Medway,-,1,Eighth Worcester,Middlesex and Norfolk,2,Second
+Medway,-,2,Tenth Norfolk,Middlesex and Norfolk,2,Second
+Medway,-,3,Tenth Norfolk,Middlesex and Norfolk,2,Second
+Medway,-,4,Tenth Norfolk,Middlesex and Norfolk,2,Second
+Melrose,1,1,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,1,2,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,2,1,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,2,2,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,3,1,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,3,2,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,4,1,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,4,2,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,5,1,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,5,2,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,6,1,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,6,2,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,7,1,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Melrose,7,2,Thirty-Second Middlesex,Fifth Middlesex,5,Sixth
+Mendon,-,1,Tenth Worcester,Worcester & Hampden,4,Seventh
+Mendon,-,2,Tenth Worcester,Worcester & Hampden,4,Seventh
+Merrimac,-,1,First Essex,Second Essex and Middlesex,6,Fifth
+Merrimac,-,2,First Essex,Second Essex and Middlesex,6,Fifth
+Methuen,-,1,Fourth Essex,First Essex,3,Fifth
+Methuen,-,10,Fifteenth Essex,First Essex,3,Fifth
+Methuen,-,11,Fifteenth Essex,First Essex,3,Fifth
+Methuen,-,12,Fifteenth Essex,First Essex,3,Fifth
+Methuen,-,13,Fourth Essex,First Essex,3,Fifth
+Methuen,-,13A,Sixteenth Essex,First Essex,3,Fifth
+Methuen,-,14,Fourth Essex,First Essex,3,Fifth
+Methuen,-,15,Fourth Essex,First Essex,3,Fifth
+Methuen,-,2,Fourth Essex,First Essex,3,Fifth
+Methuen,-,3,Sixteenth Essex,First Essex,3,Fifth
+Methuen,-,4,Fourth Essex,First Essex,3,Fifth
+Methuen,-,5,Fifteenth Essex,First Essex,3,Fifth
+Methuen,-,6,Fifteenth Essex,First Essex,3,Fifth
+Methuen,-,6A,Fourth Essex,First Essex,3,Fifth
+Methuen,-,7,Sixteenth Essex,First Essex,3,Fifth
+Methuen,-,8,Fifteenth Essex,First Essex,3,Fifth
+Methuen,-,9,Fifteenth Essex,First Essex,3,Fifth
+Middleborough,-,1,Twelfth Plymouth,Third Bristol & Plymouth,9,First
+Middleborough,-,2,Twelfth Bristol,Third Bristol & Plymouth,9,First
+Middleborough,-,3,Second Plymouth,Third Bristol & Plymouth,9,First
+Middleborough,-,4,Twelfth Bristol,Third Bristol & Plymouth,9,First
+Middleborough,-,5,Twelfth Bristol,Third Bristol & Plymouth,9,First
+Middleborough,-,5A,Twelfth Plymouth,Third Bristol & Plymouth,9,First
+Middleborough,-,6,Second Plymouth,Third Bristol & Plymouth,9,First
+Middleborough,-,7,Twelfth Bristol,Third Bristol & Plymouth,9,First
+Middleborough,-,7A,Second Plymouth,Third Bristol & Plymouth,9,First
+Middlefield,-,1,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Middleton,-,1,Twentieth Middlesex,First Essex and Middlesex,6,Fifth
+Middleton,-,2,Thirteenth Essex,First Essex and Middlesex,6,Fifth
+Middleton,-,3,Twentieth Middlesex,First Essex and Middlesex,6,Fifth
+Milford,-,1,Tenth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Milford,-,2,Tenth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Milford,-,3,Tenth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Milford,-,4,Tenth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Milford,-,5,Tenth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Milford,-,6,Tenth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Milford,-,7,Tenth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Milford,-,8,Tenth Worcester,"Norfolk, Worcester & Middlesex",4,Second
+Millbury,-,1,Seventh Worcester,Second Worcester,2,Seventh
+Millbury,-,2,Seventh Worcester,Second Worcester,2,Seventh
+Millbury,-,3,Seventh Worcester,Second Worcester,2,Seventh
+Millbury,-,4,Seventh Worcester,Second Worcester,2,Seventh
+Millis,-,1,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Millis,-,2,Eighth Middlesex,"Norfolk, Worcester & Middlesex",4,Second
+Millis,-,3,Eighth Middlesex,"Norfolk, Worcester & Middlesex",4,Second
+Millville,-,1,Eighth Worcester,Worcester & Hampden,4,Seventh
+Milton,-,1,Twelfth Suffolk,"Norfolk, Plymouth & Bristol",7,Second
+Milton,-,10,Seventh Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Milton,-,2,Twelfth Suffolk,"Norfolk, Plymouth & Bristol",7,Second
+Milton,-,3,Seventh Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Milton,-,4,Seventh Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Milton,-,4A,Twelfth Suffolk,"Norfolk, Plymouth & Bristol",7,Second
+Milton,-,5,Seventh Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Milton,-,6,Seventh Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Milton,-,7,Seventh Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Milton,-,8,Seventh Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Milton,-,9,Seventh Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Monroe,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Monson,-,A,Twelfth Hampden,Worcester & Hampden,1,Seventh
+Monson,-,B,Second Hampden,Worcester & Hampden,1,Seventh
+Monson,-,C,Second Hampden,Worcester & Hampden,1,Seventh
+Montague,-,1,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Montague,-,2,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Montague,-,3,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Montague,-,4,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Montague,-,5,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Montague,-,6,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Monterey,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Montgomery,-,1,Third Hampden,Hampden and Hampshire,1,Eighth
+Mount Washington,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Nahant,-,1,Eleventh Essex,Third Essex,6,Sixth
+Nantucket,-,1,"Barnstable, Dukes and Nantucket",Cape and Islands,9,First
+Natick,-,1,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,10,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,2,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,3,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,4,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,5,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,6,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,7,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,8,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Natick,-,9,Fifth Middlesex,Middlesex and Norfolk,5,Second
+Needham,-,A,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,B,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,C,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,D,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,E,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,F,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,G,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,H,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,I,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Needham,-,J,Thirteenth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+New Ashford,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+New Bedford,1,A,Tenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,1,A1,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,1,B,Tenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,1,B1,Eighth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,1,C,Eighth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,1,C1,Tenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,1,D,Ninth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,1,E,Ninth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,1,F,Ninth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,2,A,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,2,B,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,2,C,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,2,D,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,2,E,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,2,F,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,3,A,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,3,B,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,3,C,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,3,D,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,3,E,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,3,F,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,3,F1,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,4,A,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,4,A1,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,4,B,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,4,C,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,4,D,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,4,E,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,4,F,Eleventh Bristol,Second Bristol and Plymouth,9,First
+New Bedford,5,A,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,5,B,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,5,C,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,5,D,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,5,E,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,5,F,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,6,A,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,6,B,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,6,C,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,6,D,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,6,E,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Bedford,6,F,Thirteenth Bristol,Second Bristol and Plymouth,9,First
+New Braintree,-,1,Fifth Worcester,Worcester & Hampshire,1,Seventh
+New Marlborough,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+New Salem,-,1,Seventh Hampden,"Hampshire, Franklin and Worcester",2,Eighth
+Newbury,-,1,Second Essex,First Essex and Middlesex,6,Fifth
+Newbury,-,2,Second Essex,First Essex and Middlesex,6,Fifth
+Newburyport,1,1,First Essex,First Essex and Middlesex,6,Fifth
+Newburyport,2,1,First Essex,First Essex and Middlesex,6,Fifth
+Newburyport,3,1,First Essex,First Essex and Middlesex,6,Fifth
+Newburyport,4,1,First Essex,First Essex and Middlesex,6,Fifth
+Newburyport,5,1,First Essex,First Essex and Middlesex,6,Fifth
+Newburyport,6,1,First Essex,First Essex and Middlesex,6,Fifth
+Newton,1,1,Tenth Middlesex,Norfolk & Middlesex,4,Third
+Newton,1,2,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,1,2A,Tenth Middlesex,Norfolk & Middlesex,4,Third
+Newton,1,3,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,1,4,Tenth Middlesex,Norfolk & Middlesex,4,Third
+Newton,2,1,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,2,2,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,2,3,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,2,4,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,3,1,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,3,1A,Tenth Middlesex,Norfolk & Middlesex,4,Third
+Newton,3,2,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,3,3,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,3,4,Tenth Middlesex,Norfolk & Middlesex,4,Third
+Newton,4,1,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,4,2,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,4,3,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,4,4,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,5,1,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,5,2,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,5,3,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,5,4,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,6,1,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,6,2,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,6,3,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,6,4,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,7,1,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,7,2,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,7,3,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,7,4,Eleventh Middlesex,Norfolk & Middlesex,4,Third
+Newton,8,1,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,8,2,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,8,3,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Newton,8,4,Twelfth Middlesex,Norfolk & Middlesex,4,Third
+Norfolk,-,1,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Norfolk,-,2,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Norfolk,-,3,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Norfolk,-,4,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+North Adams,1,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+North Adams,2,2,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+North Adams,3,3,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+North Adams,4,4,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+North Adams,5,5,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+North Andover,-,1,Fourteenth Essex,Second Essex and Middlesex,6,Fifth
+North Andover,-,2,Fourteenth Essex,Second Essex and Middlesex,6,Fifth
+North Andover,-,3,Fourteenth Essex,Second Essex and Middlesex,6,Fifth
+North Andover,-,4,Fourteenth Essex,Second Essex and Middlesex,6,Fifth
+North Andover,-,5,Fourteenth Essex,Second Essex and Middlesex,6,Fifth
+North Andover,-,6,Fourteenth Essex,Second Essex and Middlesex,6,Fifth
+North Andover,-,7,Eighteenth Essex,First Essex and Middlesex,6,Fifth
+North Andover,-,8,Eighteenth Essex,First Essex and Middlesex,6,Fifth
+North Attleborough,-,1,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Attleborough,-,2,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Attleborough,-,3,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Attleborough,-,4,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Attleborough,-,5,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Attleborough,-,6,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Attleborough,-,7,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Attleborough,-,8,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Attleborough,-,9,Fourteenth Bristol,Bristol and Norfolk,4,Second
+North Brookfield,-,1,Fifth Worcester,Worcester & Hampshire,1,Seventh
+North Reading,-,1,Twentieth Middlesex,First Essex and Middlesex,6,Fifth
+North Reading,-,2,Twentieth Middlesex,First Essex and Middlesex,6,Fifth
+North Reading,-,3,Twentieth Middlesex,First Essex and Middlesex,6,Fifth
+North Reading,-,4,Twentieth Middlesex,First Essex and Middlesex,6,Fifth
+Northampton,1,A,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,1,B,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,2,A,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,2,B,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,3,A,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,3,B,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,4,A,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,4,B,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,5,A,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,5,B,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,6,A,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,6,B,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,7,A,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northampton,7,B,First Hampshire,"Hampshire, Franklin and Worcester",2,Eighth
+Northborough,-,1,Nineteenth Worcester,First Worcester,2,Seventh
+Northborough,-,2,Nineteenth Worcester,First Worcester,2,Seventh
+Northborough,-,3,Nineteenth Worcester,First Worcester,2,Seventh
+Northborough,-,4,Twelfth Worcester,First Worcester,2,Seventh
+Northbridge,-,1,Ninth Worcester,Worcester & Hampden,2,Seventh
+Northbridge,-,2,Ninth Worcester,Worcester & Hampden,2,Seventh
+Northbridge,-,3,Ninth Worcester,Worcester & Hampden,2,Seventh
+Northbridge,-,4,Ninth Worcester,Worcester & Hampden,2,Seventh
+Northbridge,-,5,Ninth Worcester,Worcester & Hampden,2,Seventh
+Northfield,-,1,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Norton,-,1,Fourth Bristol,Bristol and Norfolk,4,Second
+Norton,-,2,Fourth Bristol,Bristol and Norfolk,4,Second
+Norton,-,3,First Bristol,Bristol and Norfolk,4,Second
+Norton,-,4,First Bristol,Bristol and Norfolk,4,Second
+Norton,-,5,First Bristol,Bristol and Norfolk,4,Second
+Norwell,-,1,Fifth Plymouth,First Plymouth & Norfolk,9,Fourth
+Norwell,-,2,Fifth Plymouth,First Plymouth & Norfolk,9,Fourth
+Norwell,-,3,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Norwood,-,1,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Norwood,-,2,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Norwood,-,3,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Norwood,-,4,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Norwood,-,5,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Norwood,-,6,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Norwood,-,7,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Norwood,-,8,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Norwood,-,9,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Oak Bluffs,-,1,"Barnstable, Dukes and Nantucket",Cape and Islands,9,First
+Oakham,-,1,Fifth Worcester,Worcester & Hampshire,2,Seventh
+Orange,-,1,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Orange,-,2,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Orleans,-,1,Fourth Barnstable,Cape and Islands,9,First
+Orleans,-,2,Fourth Barnstable,Cape and Islands,9,First
+Otis,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Oxford,-,1,Eighteenth Worcester,Worcester & Hampden,1,Seventh
+Oxford,-,2,Seventh Worcester,Worcester & Hampden,1,Seventh
+Oxford,-,3,Seventh Worcester,Worcester & Hampden,1,Seventh
+Oxford,-,4,Eighteenth Worcester,Worcester & Hampden,1,Seventh
+Oxford,-,4A,Seventh Worcester,Worcester & Hampden,1,Seventh
+Palmer,-,1,First Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Palmer,-,2,First Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Palmer,-,3,First Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Palmer,-,4,First Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Paxton,-,1,First Worcester,Worcester & Hampshire,2,Seventh
+Peabody,1,1,Twelfth Essex,Second Essex,6,Fifth
+Peabody,1,2,Twelfth Essex,Second Essex,6,Fifth
+Peabody,1,3,Twelfth Essex,Second Essex,6,Fifth
+Peabody,2,1,Twelfth Essex,Second Essex,6,Fifth
+Peabody,2,2,Twelfth Essex,Second Essex,6,Fifth
+Peabody,2,3,Twelfth Essex,Second Essex,6,Fifth
+Peabody,3,1,Twelfth Essex,Second Essex,6,Fifth
+Peabody,3,2,Twelfth Essex,Second Essex,6,Fifth
+Peabody,3,3,Twelfth Essex,Second Essex,6,Fifth
+Peabody,4,1,Twelfth Essex,Second Essex,6,Fifth
+Peabody,4,2,Twelfth Essex,Second Essex,6,Fifth
+Peabody,4,3,Twelfth Essex,Second Essex,6,Fifth
+Peabody,5,1,Twelfth Essex,Second Essex,6,Fifth
+Peabody,5,2,Twelfth Essex,Second Essex,6,Fifth
+Peabody,5,3,Twelfth Essex,Second Essex,6,Fifth
+Peabody,6,1,Thirteenth Essex,Second Essex,6,Fifth
+Peabody,6,2,Thirteenth Essex,Second Essex,6,Fifth
+Peabody,6,3,Thirteenth Essex,Second Essex,6,Fifth
+Pelham,-,1,Seventh Hampden,"Hampshire, Franklin and Worcester",2,Eighth
+Pembroke,-,1,Sixth Plymouth,Plymouth and Barnstable,9,First
+Pembroke,-,2,Sixth Plymouth,Plymouth and Barnstable,9,First
+Pembroke,-,3,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Pembroke,-,3A,Sixth Plymouth,Plymouth and Barnstable,9,First
+Pembroke,-,4,Sixth Plymouth,Plymouth and Barnstable,9,First
+Pembroke,-,5,Sixth Plymouth,Plymouth and Barnstable,9,First
+Pepperell,-,1,First Middlesex,First Middlesex,3,Fifth
+Pepperell,-,2,First Middlesex,First Middlesex,3,Fifth
+Pepperell,-,3,First Middlesex,First Middlesex,3,Fifth
+Pepperell,-,4,First Middlesex,First Middlesex,3,Fifth
+Peru,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Petersham,-,1,Seventh Hampden,"Hampshire, Franklin and Worcester",2,Eighth
+Phillipston,-,1,Second Franklin,Worcester & Hampshire,2,Seventh
+Pittsfield,1,A,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,1,B,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,2,A,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,2,B,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,3,A,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,3,B,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,4,A,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,4,B,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,5,A,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,5,B,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,6,A,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,6,B,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,7,A,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Pittsfield,7,B,Second Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Plainfield,-,1,First Hampshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Plainville,-,1,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Plainville,-,2,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Plainville,-,3,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Plymouth,-,1,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,10,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,11,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,12,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,13,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,14,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,15,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,16,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,17,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,18,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,2,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,3,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,4,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,5,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,6,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,7,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,8,First Plymouth,Plymouth and Barnstable,9,First
+Plymouth,-,9,First Plymouth,Plymouth and Barnstable,9,First
+Plympton,-,1,Twelfth Plymouth,Plymouth and Barnstable,9,First
+Princeton,-,1,First Worcester,Worcester & Hampshire,2,Seventh
+Provincetown,-,1,Fourth Barnstable,Cape and Islands,9,First
+Quincy,1,1,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,1,2,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,1,3,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,1,4,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,1,5,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,2,1,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,2,2,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,2,3,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,2,4,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,2,5,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,3,1,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,3,2,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,3,3,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,3,4,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,3,5,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,4,1,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,4,2,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,4,3,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,4,4,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,4,5,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,5,1,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,5,1A,Third Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,5,2,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,5,3,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,5,4,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,5,5,Second Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,6,1,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,6,2,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,6,3,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,6,4,First Norfolk,Norfolk and Plymouth,8,Fourth
+Quincy,6,5,First Norfolk,Norfolk and Plymouth,8,Fourth
+Randolph,-,1,Seventh Norfolk,Second Plymouth & Norfolk,7,Second
+Randolph,-,10,Seventh Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Randolph,-,11,First Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Randolph,-,12,First Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Randolph,-,2,Seventh Norfolk,Second Plymouth & Norfolk,7,Second
+Randolph,-,3,Seventh Norfolk,Second Plymouth & Norfolk,7,Second
+Randolph,-,4,Seventh Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Randolph,-,5,Seventh Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Randolph,-,6,Seventh Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Randolph,-,7,First Norfolk,Second Plymouth & Norfolk,7,Second
+Randolph,-,8,First Norfolk,Second Plymouth & Norfolk,7,Second
+Randolph,-,9,Seventh Norfolk,"Norfolk, Plymouth & Bristol",7,Second
+Raynham,-,1,Eighth Plymouth,Third Bristol & Plymouth,9,First
+Raynham,-,2,Eighth Plymouth,Third Bristol & Plymouth,9,First
+Raynham,-,2A,Eighth Plymouth,Third Bristol & Plymouth,4,First
+Raynham,-,3,Eighth Plymouth,Third Bristol & Plymouth,4,First
+Raynham,-,4,Eighth Plymouth,Third Bristol & Plymouth,4,First
+Raynham,-,4A,Eighth Plymouth,Third Bristol & Plymouth,9,First
+Reading,-,1,Twentieth Middlesex,Fifth Middlesex,6,Sixth
+Reading,-,2,Thirtieth Middlesex,Fifth Middlesex,6,Sixth
+Reading,-,3,Thirtieth Middlesex,Fifth Middlesex,6,Sixth
+Reading,-,4,Thirtieth Middlesex,Fifth Middlesex,6,Sixth
+Reading,-,5,Thirtieth Middlesex,Fifth Middlesex,6,Sixth
+Reading,-,6,Thirtieth Middlesex,Fifth Middlesex,6,Sixth
+Reading,-,7,Twentieth Middlesex,Fifth Middlesex,6,Sixth
+Reading,-,8,Twentieth Middlesex,Fifth Middlesex,6,Sixth
+Rehoboth,-,1,Fourth Bristol,Third Bristol & Plymouth,4,First
+Rehoboth,-,2,Fourth Bristol,Third Bristol & Plymouth,4,First
+Rehoboth,-,3,Fourth Bristol,Third Bristol & Plymouth,4,First
+Rehoboth,-,4,Fourth Bristol,Third Bristol & Plymouth,4,First
+Revere,1,1,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Revere,1,2,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Revere,1,3,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,2,1,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Revere,2,2,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Revere,2,3,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,2,3A,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Revere,3,1,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,3,2,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,3,3,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,4,1,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,4,2,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,4,3,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,5,1,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Revere,5,2,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Revere,5,3,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Revere,6,1,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,6,2,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Revere,6,3,Sixteenth Suffolk,Third Suffolk,5,Sixth
+Richmond,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Rochester,-,1,Tenth Bristol,First Bristol and Plymouth,9,First
+Rockland,-,1,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Rockland,-,2,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Rockland,-,3,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Rockland,-,4,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Rockland,-,5,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Rockland,-,6,Fifth Plymouth,Norfolk and Plymouth,9,Fourth
+Rockport,-,1,Fifth Essex,First Essex and Middlesex,6,Fifth
+Rockport,-,2,Fifth Essex,First Essex and Middlesex,6,Fifth
+Rockport,-,3,Fifth Essex,First Essex and Middlesex,6,Fifth
+Rowe,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Rowley,-,1,Second Essex,First Essex and Middlesex,6,Fifth
+Royalston,-,1,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Russell,-,1,Third Hampden,Hampden and Hampshire,1,Eighth
+Rutland,-,1,First Worcester,Worcester & Hampshire,2,Seventh
+Rutland,-,2,First Worcester,Worcester & Hampshire,2,Seventh
+Rutland,-,3,First Worcester,Worcester & Hampshire,2,Seventh
+Salem,1,1,Seventh Essex,Second Essex,6,Fifth
+Salem,1,2,Seventh Essex,Second Essex,6,Fifth
+Salem,2,1,Seventh Essex,Second Essex,6,Fifth
+Salem,2,2,Seventh Essex,Second Essex,6,Fifth
+Salem,3,1,Seventh Essex,Second Essex,6,Fifth
+Salem,3,2,Seventh Essex,Second Essex,6,Fifth
+Salem,4,1,Seventh Essex,Second Essex,6,Fifth
+Salem,4,2,Seventh Essex,Second Essex,6,Fifth
+Salem,5,1,Seventh Essex,Second Essex,6,Fifth
+Salem,5,2,Seventh Essex,Second Essex,6,Fifth
+Salem,6,1,Seventh Essex,Second Essex,6,Fifth
+Salem,6,2,Seventh Essex,Second Essex,6,Fifth
+Salem,7,1,Seventh Essex,Second Essex,6,Fifth
+Salem,7,2,Seventh Essex,Second Essex,6,Fifth
+Salisbury,-,1,First Essex,First Essex and Middlesex,6,Fifth
+Salisbury,-,2,First Essex,First Essex and Middlesex,6,Fifth
+Salisbury,-,3,First Essex,First Essex and Middlesex,6,Fifth
+Sandisfield,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Sandwich,-,1,Fifth Barnstable,Plymouth and Barnstable,9,First
+Sandwich,-,2,Fifth Barnstable,Plymouth and Barnstable,9,First
+Sandwich,-,3,Fifth Barnstable,Plymouth and Barnstable,9,First
+Sandwich,-,4,Fifth Barnstable,Plymouth and Barnstable,9,First
+Sandwich,-,5,Fifth Barnstable,Plymouth and Barnstable,9,First
+Sandwich,-,6,Fifth Barnstable,Plymouth and Barnstable,9,First
+Saugus,-,1,Ninth Essex,Third Essex,6,Sixth
+Saugus,-,10,Sixteenth Suffolk,Third Essex,6,Sixth
+Saugus,-,2,Ninth Essex,Third Essex,6,Sixth
+Saugus,-,3,Sixteenth Suffolk,Third Essex,6,Sixth
+Saugus,-,4,Ninth Essex,Third Essex,6,Sixth
+Saugus,-,5,Ninth Essex,Third Essex,6,Sixth
+Saugus,-,6,Ninth Essex,Third Essex,6,Sixth
+Saugus,-,7,Ninth Essex,Third Essex,6,Sixth
+Saugus,-,8,Ninth Essex,Third Essex,6,Sixth
+Saugus,-,9,Ninth Essex,Third Essex,6,Sixth
+Savoy,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Scituate,-,1,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Scituate,-,2,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Scituate,-,3,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Scituate,-,4,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Scituate,-,5,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Scituate,-,6,Fourth Plymouth,First Plymouth & Norfolk,9,Fourth
+Seekonk,-,1,Fourth Bristol,Third Bristol & Plymouth,4,First
+Seekonk,-,2,Fourth Bristol,Third Bristol & Plymouth,4,First
+Seekonk,-,3,Fourth Bristol,Third Bristol & Plymouth,4,First
+Seekonk,-,4,Fourth Bristol,Third Bristol & Plymouth,4,First
+Sharon,-,1,Eighth Norfolk,Bristol and Norfolk,4,Second
+Sharon,-,2,Eighth Norfolk,Bristol and Norfolk,4,Second
+Sharon,-,3,Eighth Norfolk,Bristol and Norfolk,4,Second
+Sharon,-,4,Eighth Norfolk,Bristol and Norfolk,4,Second
+Sharon,-,5,Eighth Norfolk,Bristol and Norfolk,4,Second
+Sheffield,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Shelburne,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Sherborn,-,1,Eighth Middlesex,"Norfolk, Worcester & Middlesex",4,Second
+Shirley,-,1,Thirty-Seventh Middlesex,Worcester and Middlesex,3,Seventh
+Shrewsbury,-,1,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,10,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,2,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,3,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,4,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,5,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,6,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,7,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,8,Eleventh Worcester,Second Worcester,2,Seventh
+Shrewsbury,-,9,Eleventh Worcester,Second Worcester,2,Seventh
+Shutesbury,-,1,Seventh Hampden,"Hampshire, Franklin and Worcester",2,Eighth
+Somerset,-,1,Fifth Bristol,First Bristol and Plymouth,4,First
+Somerset,-,2,Fifth Bristol,First Bristol and Plymouth,4,First
+Somerset,-,3,Fifth Bristol,First Bristol and Plymouth,4,First
+Somerset,-,4,Fifth Bristol,First Bristol and Plymouth,4,First
+Somerset,-,5,Fifth Bristol,First Bristol and Plymouth,4,First
+Somerville,1,1,Twenty-Sixth Middlesex,Second Middlesex,7,Sixth
+Somerville,1,2,Twenty-Sixth Middlesex,Second Middlesex,7,Sixth
+Somerville,1,3,Twenty-Sixth Middlesex,Second Middlesex,7,Sixth
+Somerville,1,4,Twenty-Sixth Middlesex,Second Middlesex,7,Sixth
+Somerville,1,4A,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,2,1,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,2,1A,Twenty-Sixth Middlesex,Second Middlesex,7,Sixth
+Somerville,2,2,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,2,3,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,2,4,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,3,1,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,3,2,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,3,3,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,3,4,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,4,1,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+Somerville,4,2,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+Somerville,4,2A,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,4,3,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+Somerville,4,4,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+Somerville,5,1,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,5,2,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,5,3,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,5,4,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,6,1,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,6,2,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,6,3,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,6,3A,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+Somerville,6,4,Twenty-Seventh Middlesex,Second Middlesex,7,Sixth
+Somerville,7,1,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+Somerville,7,2,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+Somerville,7,3,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+Somerville,7,4,Thirty-Fourth Middlesex,Second Middlesex,7,Sixth
+South Hadley,-,A,Second Hampshire,"Hampden, Hampshire & Worcester",1,Eighth
+South Hadley,-,B,Second Hampshire,"Hampden, Hampshire & Worcester",1,Eighth
+South Hadley,-,C,Second Hampshire,"Hampden, Hampshire & Worcester",1,Eighth
+South Hadley,-,D,Second Hampshire,"Hampden, Hampshire & Worcester",1,Eighth
+South Hadley,-,E,Second Hampshire,"Hampden, Hampshire & Worcester",1,Eighth
+Southampton,-,1,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Southampton,-,2,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Southborough,-,1,Nineteenth Worcester,Middlesex and Worcester,2,Third
+Southborough,-,2,Nineteenth Worcester,Middlesex and Worcester,2,Third
+Southborough,-,3,Nineteenth Worcester,Middlesex and Worcester,2,Third
+Southbridge,-,1,Sixth Worcester,Worcester & Hampden,1,Seventh
+Southbridge,-,2,Sixth Worcester,Worcester & Hampden,1,Seventh
+Southbridge,-,3,Sixth Worcester,Worcester & Hampden,1,Seventh
+Southbridge,-,4,Sixth Worcester,Worcester & Hampden,1,Seventh
+Southbridge,-,5,Sixth Worcester,Worcester & Hampden,1,Seventh
+Southwick,-,1,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Southwick,-,2,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Southwick,-,3,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Spencer,-,1,Sixth Worcester,Worcester & Hampshire,1,Seventh
+Spencer,-,2,Fifth Worcester,Worcester & Hampshire,1,Seventh
+Spencer,-,3,Fifth Worcester,Worcester & Hampshire,1,Seventh
+Spencer,-,4,Fifth Worcester,Worcester & Hampshire,1,Seventh
+Springfield,1,A,Tenth Hampden,Hampden,1,Eighth
+Springfield,1,B,Tenth Hampden,Hampden,1,Eighth
+Springfield,1,C,Tenth Hampden,Hampden,1,Eighth
+Springfield,1,C1,Ninth Hampden,Hampden,1,Eighth
+Springfield,1,D,Ninth Hampden,Hampden,1,Eighth
+Springfield,1,D1,Tenth Hampden,Hampden,1,Eighth
+Springfield,1,E,Tenth Hampden,Hampden,1,Eighth
+Springfield,1,F,Tenth Hampden,Hampden,1,Eighth
+Springfield,1,G,Tenth Hampden,Hampden,1,Eighth
+Springfield,1,H,Tenth Hampden,Hampden,1,Eighth
+Springfield,2,A,Ninth Hampden,Hampden,1,Eighth
+Springfield,2,B,Ninth Hampden,Hampden,1,Eighth
+Springfield,2,C,Ninth Hampden,Hampden,1,Eighth
+Springfield,2,D,Ninth Hampden,Hampden,1,Eighth
+Springfield,2,E,Ninth Hampden,Hampden,1,Eighth
+Springfield,2,F,Ninth Hampden,Hampden,1,Eighth
+Springfield,2,G,Ninth Hampden,Hampden,1,Eighth
+Springfield,2,H,Ninth Hampden,Hampden,1,Eighth
+Springfield,3,A,Eleventh Hampden,Hampden,1,Eighth
+Springfield,3,B,Tenth Hampden,Hampden,1,Eighth
+Springfield,3,C,Tenth Hampden,Hampden,1,Eighth
+Springfield,3,D,Tenth Hampden,Hampden,1,Eighth
+Springfield,3,E,Tenth Hampden,Hampden,1,Eighth
+Springfield,3,F,Tenth Hampden,Hampden,1,Eighth
+Springfield,3,G,Tenth Hampden,Hampden,1,Eighth
+Springfield,3,H,Tenth Hampden,Hampden,1,Eighth
+Springfield,4,A,Eleventh Hampden,Hampden,1,Eighth
+Springfield,4,B,Eleventh Hampden,Hampden,1,Eighth
+Springfield,4,C,Eleventh Hampden,Hampden,1,Eighth
+Springfield,4,D,Eleventh Hampden,Hampden,1,Eighth
+Springfield,4,E,Eleventh Hampden,Hampden,1,Eighth
+Springfield,4,F,Eleventh Hampden,Hampden,1,Eighth
+Springfield,4,G,Eleventh Hampden,Hampden,1,Eighth
+Springfield,4,H,Eleventh Hampden,Hampden,1,Eighth
+Springfield,5,A,Eleventh Hampden,Hampden,1,Eighth
+Springfield,5,B,Eleventh Hampden,Hampden,1,Eighth
+Springfield,5,C,Ninth Hampden,Hampden,1,Eighth
+Springfield,5,C1,Eleventh Hampden,Hampden,1,Eighth
+Springfield,5,D,Twelfth Hampden,Hampden,1,Eighth
+Springfield,5,E,Eleventh Hampden,Hampden,1,Eighth
+Springfield,5,F,Eleventh Hampden,Hampden,1,Eighth
+Springfield,5,G,Twelfth Hampden,Hampden,1,Eighth
+Springfield,5,H,Eleventh Hampden,Hampden,1,Eighth
+Springfield,6,A,Tenth Hampden,Hampden,1,Eighth
+Springfield,6,B,Tenth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,6,C,Second Hampden,Hampden,1,Eighth
+Springfield,6,D,Second Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,6,D1,Eleventh Hampden,Hampden,1,Eighth
+Springfield,6,E,Tenth Hampden,Hampden,1,Eighth
+Springfield,6,F,Tenth Hampden,Hampden,1,Eighth
+Springfield,6,G,Eleventh Hampden,Hampden,1,Eighth
+Springfield,6,H,Eleventh Hampden,Hampden,1,Eighth
+Springfield,7,A,Eleventh Hampden,Hampden,1,Eighth
+Springfield,7,A1,Tenth Hampden,Hampden,1,Eighth
+Springfield,7,B,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,7,B1,Eleventh Hampden,Hampden,1,Eighth
+Springfield,7,C,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,7,D,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,7,E,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,7,F,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,7,G,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,7,H,Eleventh Hampden,Hampden,1,Eighth
+Springfield,7,H1,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Springfield,8,A,Ninth Hampden,Hampden,1,Eighth
+Springfield,8,B,Ninth Hampden,Hampden,1,Eighth
+Springfield,8,B1,Twelfth Hampden,Hampden,1,Eighth
+Springfield,8,C,Ninth Hampden,Hampden,1,Eighth
+Springfield,8,D,Ninth Hampden,Hampden,1,Eighth
+Springfield,8,E,Ninth Hampden,Hampden,1,Eighth
+Springfield,8,F,Ninth Hampden,Hampden,1,Eighth
+Springfield,8,G,Twelfth Hampden,Hampden,1,Eighth
+Springfield,8,G1,Ninth Hampden,Hampden,1,Eighth
+Springfield,8,H,Ninth Hampden,Hampden,1,Eighth
+Sterling,-,1,Twelfth Worcester,Worcester & Hampshire,2,Seventh
+Sterling,-,2,Twelfth Worcester,Worcester & Hampshire,2,Seventh
+Stockbridge,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Stoneham,-,1,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Stoneham,-,2,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Stoneham,-,3,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Stoneham,-,4,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Stoneham,-,5,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Stoneham,-,6,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Stoneham,-,7,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Stoughton,-,1,Sixth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,2,Eighth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,2A,Sixth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,3,Eighth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,4,Eighth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,4A,Sixth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,5,Sixth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,5A,Eighth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,6,Eighth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,7,Sixth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,7A,Eighth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,8,Sixth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stoughton,-,8A,Eighth Norfolk,"Norfolk, Plymouth & Bristol",8,Second
+Stow,-,1,Third Middlesex,Middlesex and Worcester,3,Third
+Stow,-,2,Third Middlesex,Middlesex and Worcester,3,Third
+Sturbridge,-,1,First Hampden,Worcester & Hampden,1,Seventh
+Sturbridge,-,2,First Hampden,Worcester & Hampden,1,Seventh
+Sturbridge,-,3,First Hampden,Worcester & Hampden,1,Seventh
+Sudbury,-,1,Thirteenth Middlesex,Middlesex and Worcester,5,Third
+Sudbury,-,2,Thirteenth Middlesex,Middlesex and Worcester,5,Third
+Sudbury,-,3,Thirteenth Middlesex,Middlesex and Worcester,5,Third
+Sudbury,-,4,Thirteenth Middlesex,Middlesex and Worcester,5,Third
+Sudbury,-,5,Thirteenth Middlesex,Middlesex and Worcester,5,Third
+Sudbury,-,6,Thirteenth Middlesex,Middlesex and Worcester,5,Third
+Sunderland,-,1,First Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Sutton,-,1,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Sutton,-,2,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Sutton,-,3,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Swampscott,-,1,Eighth Essex,Third Essex,6,Sixth
+Swampscott,-,2,Eighth Essex,Third Essex,6,Sixth
+Swampscott,-,3,Eighth Essex,Third Essex,6,Sixth
+Swampscott,-,4,Eighth Essex,Third Essex,6,Sixth
+Swampscott,-,5,Eighth Essex,Third Essex,6,Sixth
+Swampscott,-,6,Eighth Essex,Third Essex,6,Sixth
+Swansea,-,1,Fifth Bristol,First Bristol and Plymouth,4,First
+Swansea,-,2,Fifth Bristol,First Bristol and Plymouth,4,First
+Swansea,-,3,Fifth Bristol,First Bristol and Plymouth,4,First
+Swansea,-,4,Fourth Bristol,First Bristol and Plymouth,4,First
+Swansea,-,5,Fourth Bristol,First Bristol and Plymouth,4,First
+Taunton,1,A,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,1,A1,Fifth Bristol,Third Bristol & Plymouth,4,First
+Taunton,1,B,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,2,A,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,2,B,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,3,A,Twelfth Bristol,Third Bristol & Plymouth,4,First
+Taunton,3,B,Twelfth Bristol,Third Bristol & Plymouth,4,First
+Taunton,4,A,Twelfth Bristol,Third Bristol & Plymouth,4,First
+Taunton,4,B,Twelfth Bristol,Third Bristol & Plymouth,4,First
+Taunton,4,B1,Fifth Bristol,Third Bristol & Plymouth,4,First
+Taunton,5,A,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,5,B,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,6,A,Fifth Bristol,Third Bristol & Plymouth,4,First
+Taunton,6,B,Fifth Bristol,Third Bristol & Plymouth,4,First
+Taunton,7,A,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,7,B,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,8,A,Third Bristol,Third Bristol & Plymouth,4,First
+Taunton,8,B,Third Bristol,Third Bristol & Plymouth,4,First
+Templeton,-,A,Second Worcester,Worcester & Hampshire,2,Seventh
+Templeton,-,B,Second Worcester,Worcester & Hampshire,2,Seventh
+Templeton,-,C,Second Worcester,Worcester & Hampshire,2,Seventh
+Tewksbury,-,1,Seventeenth Middlesex,Second Essex and Middlesex,6,Fifth
+Tewksbury,-,2,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Tewksbury,-,3,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Tewksbury,-,4,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Tewksbury,-,5,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Tewksbury,-,5A,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Tewksbury,-,6,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Tewksbury,-,7,Eighteenth Essex,Second Essex and Middlesex,6,Fifth
+Tewksbury,-,8,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Tisbury,-,1,"Barnstable, Dukes and Nantucket",Cape and Islands,9,First
+Tolland,-,1,Third Hampden,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Topsfield,-,1,Second Essex,First Essex and Middlesex,6,Fifth
+Topsfield,-,2,Thirteenth Essex,First Essex and Middlesex,6,Fifth
+Townsend,-,1,First Middlesex,Worcester and Middlesex,3,Seventh
+Townsend,-,2,First Middlesex,Worcester and Middlesex,3,Seventh
+Townsend,-,3,First Middlesex,Worcester and Middlesex,3,Seventh
+Truro,-,1,Fourth Barnstable,Cape and Islands,9,First
+Tyngsborough,-,1,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Tyngsborough,-,2,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Tyngsborough,-,3,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Tyngsborough,-,4,Thirty-Sixth Middlesex,First Middlesex,3,Fifth
+Tyringham,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Upton,-,1,Ninth Worcester,Worcester & Hampden,2,Seventh
+Upton,-,2,Ninth Worcester,Worcester & Hampden,2,Seventh
+Upton,-,3,Ninth Worcester,Worcester & Hampden,2,Seventh
+Uxbridge,-,1,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Uxbridge,-,1A,Eighth Worcester,Worcester & Hampden,2,Seventh
+Uxbridge,-,2,Eighth Worcester,Worcester & Hampden,2,Seventh
+Uxbridge,-,3,Eighth Worcester,Worcester & Hampden,2,Seventh
+Uxbridge,-,4,Eighth Worcester,Worcester & Hampden,2,Seventh
+Wakefield,-,1,Ninth Essex,Fifth Middlesex,6,Sixth
+Wakefield,-,2,Ninth Essex,Fifth Middlesex,6,Sixth
+Wakefield,-,3,Ninth Essex,Fifth Middlesex,6,Sixth
+Wakefield,-,4,Thirty-Second Middlesex,Fifth Middlesex,6,Sixth
+Wakefield,-,5,Thirty-Second Middlesex,Fifth Middlesex,6,Sixth
+Wakefield,-,6,Thirty-Second Middlesex,Fifth Middlesex,6,Sixth
+Wakefield,-,7,Ninth Essex,Fifth Middlesex,6,Sixth
+Wales,-,1,First Hampden,Worcester & Hampden,1,Seventh
+Walpole,-,1,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,2,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,2A,Eighth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,3,Eighth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,4,Eighth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,5,Ninth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,5A,Eighth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,6,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,7,Twelfth Norfolk,Norfolk and Suffolk,8,Fourth
+Walpole,-,8,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Waltham,1,1,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,1,2,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,1,2A,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,2,1,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,2,2,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,3,1,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,3,2,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,3,2A,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,4,1,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,4,1A,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,4,2,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,5,1,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,5,2,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,5,2A,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,6,1,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,6,2,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,6,2A,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,7,1,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,7,2,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,8,1,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,8,2,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,8,2A,Ninth Middlesex,Third Middlesex,5,Third
+Waltham,9,1,Tenth Middlesex,Third Middlesex,5,Third
+Waltham,9,2,Tenth Middlesex,Third Middlesex,5,Third
+Ware,-,A,Fifth Worcester,Worcester & Hampshire,1,Seventh
+Ware,-,B,First Hampden,Worcester & Hampshire,1,Seventh
+Ware,-,C,First Hampden,Worcester & Hampshire,1,Seventh
+Wareham,-,1,Second Plymouth,Third Bristol & Plymouth,9,First
+Wareham,-,2,Second Plymouth,Third Bristol & Plymouth,9,First
+Wareham,-,3,Second Plymouth,Third Bristol & Plymouth,9,First
+Wareham,-,4,Second Plymouth,Third Bristol & Plymouth,9,First
+Wareham,-,5,Second Plymouth,Third Bristol & Plymouth,9,First
+Wareham,-,6,Second Plymouth,Third Bristol & Plymouth,9,First
+Warren,-,1,First Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Warwick,-,1,Second Franklin,"Hampshire, Franklin and Worcester",2,Eighth
+Washington,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Watertown,-,1,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,10,Tenth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,11,Tenth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,12,Tenth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,2,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,3,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,4,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,5,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,6,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,7,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,8,Twenty-Ninth Middlesex,Suffolk and Middlesex,5,Third
+Watertown,-,9,Tenth Middlesex,Suffolk and Middlesex,5,Third
+Wayland,-,1,Thirteenth Middlesex,Middlesex and Worcester,5,Third
+Wayland,-,2,Fifth Middlesex,Middlesex and Worcester,5,Third
+Wayland,-,3,Fifth Middlesex,Middlesex and Worcester,5,Third
+Wayland,-,4,Thirteenth Middlesex,Middlesex and Worcester,5,Third
+Webster,-,1,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Webster,-,1A,Eighteenth Worcester,Worcester & Hampden,1,Seventh
+Webster,-,2,Eighteenth Worcester,Worcester & Hampden,1,Seventh
+Webster,-,3,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Webster,-,4,Eighteenth Worcester,Worcester & Hampden,2,Seventh
+Webster,-,5,Eighteenth Worcester,Worcester & Hampden,1,Seventh
+Wellesley,-,A,Fourteenth Norfolk,Norfolk & Middlesex,5,Third
+Wellesley,-,B,Fourteenth Norfolk,Norfolk & Middlesex,5,Third
+Wellesley,-,C,Fourteenth Norfolk,Norfolk & Middlesex,5,Third
+Wellesley,-,D,Fourteenth Norfolk,Norfolk & Middlesex,5,Third
+Wellesley,-,E,Fourteenth Norfolk,Norfolk & Middlesex,4,Third
+Wellesley,-,F,Fourteenth Norfolk,Norfolk & Middlesex,4,Third
+Wellesley,-,G,Fourteenth Norfolk,Norfolk & Middlesex,5,Third
+Wellesley,-,H,Fourteenth Norfolk,Norfolk & Middlesex,5,Third
+Wellfleet,-,1,Fourth Barnstable,Cape and Islands,9,First
+Wendell,-,1,Seventh Hampden,"Hampshire, Franklin and Worcester",2,Eighth
+Wenham,-,1,Sixth Essex,First Essex and Middlesex,6,Fifth
+Wenham,-,1A,Thirteenth Essex,First Essex and Middlesex,6,Fifth
+West Boylston,-,1,Fourteenth Worcester,First Worcester,2,Seventh
+West Boylston,-,2,Fourteenth Worcester,First Worcester,2,Seventh
+West Bridgewater,-,1,Ninth Plymouth,"Norfolk, Plymouth & Bristol",8,Second
+West Bridgewater,-,2,Ninth Plymouth,"Norfolk, Plymouth & Bristol",8,Second
+West Brookfield,-,1,Fifth Worcester,Worcester & Hampshire,1,Seventh
+West Newbury,-,1,Fourteenth Essex,First Essex and Middlesex,6,Fifth
+West Springfield,-,1,Sixth Hampden,Hampden and Hampshire,1,Eighth
+West Springfield,-,2,Sixth Hampden,Hampden and Hampshire,1,Eighth
+West Springfield,-,3,Sixth Hampden,Hampden and Hampshire,1,Eighth
+West Springfield,-,4,Sixth Hampden,Hampden and Hampshire,1,Eighth
+West Springfield,-,5,Sixth Hampden,Hampden and Hampshire,1,Eighth
+West Springfield,-,6,Sixth Hampden,Hampden and Hampshire,1,Eighth
+West Springfield,-,7,Sixth Hampden,Hampden and Hampshire,1,Eighth
+West Springfield,-,8,Sixth Hampden,Hampden and Hampshire,1,Eighth
+West Stockbridge,-,1,Third Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+West Tisbury,-,1,"Barnstable, Dukes and Nantucket",Cape and Islands,9,First
+Westborough,-,1,Nineteenth Worcester,Second Worcester,2,Seventh
+Westborough,-,2,Nineteenth Worcester,Second Worcester,2,Seventh
+Westborough,-,3,Nineteenth Worcester,Second Worcester,2,Seventh
+Westborough,-,4,Eleventh Worcester,Second Worcester,2,Seventh
+Westborough,-,5,Nineteenth Worcester,Second Worcester,2,Seventh
+Westborough,-,6,Nineteenth Worcester,Second Worcester,2,Seventh
+Westfield,1,A,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,1,B,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,2,A,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,2,A1,Sixth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,2,B,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,3,A,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,3,B,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,4,A,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,4,B,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,5,A,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,5,B,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,6,A,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,6,B,Sixth Hampden,Hampden and Hampshire,1,Eighth
+Westfield,6,B1,Fourth Hampden,Hampden and Hampshire,1,Eighth
+Westford,-,1,Second Middlesex,Worcester and Middlesex,3,Seventh
+Westford,-,2,Second Middlesex,Worcester and Middlesex,3,Seventh
+Westford,-,3,Second Middlesex,Worcester and Middlesex,3,Seventh
+Westford,-,4,Second Middlesex,Worcester and Middlesex,3,Seventh
+Westford,-,5,Second Middlesex,Worcester and Middlesex,3,Seventh
+Westford,-,6,Second Middlesex,Worcester and Middlesex,3,Seventh
+Westford,-,7,Second Middlesex,Worcester and Middlesex,3,Seventh
+Westhampton,-,1,First Hampshire,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Westminster,-,1,First Worcester,Worcester & Hampshire,3,Seventh
+Westminster,-,2,First Worcester,Worcester & Hampshire,3,Seventh
+Westminster,-,2A,First Worcester,Worcester & Hampshire,2,Seventh
+Westminster,-,3,First Worcester,Worcester & Hampshire,3,Seventh
+Weston,-,1,Fourteenth Norfolk,Third Middlesex,5,Third
+Weston,-,2,Fourteenth Norfolk,Third Middlesex,5,Third
+Weston,-,3,Fourteenth Norfolk,Third Middlesex,5,Third
+Weston,-,4,Fourteenth Norfolk,Third Middlesex,5,Third
+Westport,-,A,Eighth Bristol,First Bristol and Plymouth,9,First
+Westport,-,B,Eighth Bristol,First Bristol and Plymouth,9,First
+Westport,-,C,Eighth Bristol,First Bristol and Plymouth,9,First
+Westport,-,D,Eighth Bristol,First Bristol and Plymouth,9,First
+Westport,-,E,Eighth Bristol,First Bristol and Plymouth,9,First
+Westwood,-,1,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Westwood,-,2,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Westwood,-,3,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Westwood,-,4,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Westwood,-,5,Eleventh Norfolk,Norfolk and Suffolk,8,Fourth
+Weymouth,-,1,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,10,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,11,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,12,Third Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,13,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,14,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,15,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,16,Third Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,17,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,18,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,2,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,3,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,4,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,5,Third Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,6,Third Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,7,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,8,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,9,Third Norfolk,First Plymouth & Norfolk,8,Fourth
+Weymouth,-,9A,Fourth Norfolk,First Plymouth & Norfolk,8,Fourth
+Whately,-,1,First Franklin,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Whitman,-,1,Seventh Plymouth,Second Plymouth & Norfolk,8,Second
+Whitman,-,2,Seventh Plymouth,Second Plymouth & Norfolk,8,Second
+Whitman,-,3,Seventh Plymouth,Second Plymouth & Norfolk,8,Second
+Whitman,-,4,Seventh Plymouth,Second Plymouth & Norfolk,8,Second
+Wilbraham,-,A,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Wilbraham,-,B,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Wilbraham,-,C,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Wilbraham,-,D,Twelfth Hampden,"Hampden, Hampshire & Worcester",1,Eighth
+Williamsburg,-,1,First Hampshire,"Berkshire, Hampden, Franklin & Hampshire",2,Eighth
+Williamstown,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Williamstown,-,2,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Williamstown,-,3,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Wilmington,-,1,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Wilmington,-,2,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Wilmington,-,3,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Wilmington,-,4,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Wilmington,-,5,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Wilmington,-,6,Nineteenth Middlesex,Second Essex and Middlesex,6,Fifth
+Winchendon,-,1,Second Franklin,"Hampshire, Franklin and Worcester",3,Eighth
+Winchendon,-,2,Second Worcester,"Hampshire, Franklin and Worcester",3,Eighth
+Winchendon,-,3,Second Worcester,"Hampshire, Franklin and Worcester",3,Eighth
+Winchester,-,1,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Winchester,-,2,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Winchester,-,3,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Winchester,-,4,Thirty-First Middlesex,Second Middlesex,5,Sixth
+Winchester,-,5,Thirty-First Middlesex,Second Middlesex,5,Sixth
+Winchester,-,6,Fifteenth Middlesex,Second Middlesex,5,Sixth
+Winchester,-,7,Thirty-First Middlesex,Second Middlesex,5,Sixth
+Winchester,-,8,Thirty-First Middlesex,Fifth Middlesex,5,Sixth
+Windsor,-,1,First Berkshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Winthrop,-,1,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Winthrop,-,2,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Winthrop,-,3,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Winthrop,-,4,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Winthrop,-,5,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Winthrop,-,6,Nineteenth Suffolk,Third Suffolk,5,Sixth
+Woburn,1,1,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Woburn,1,2,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Woburn,1,2A,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,2,1,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,2,2,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,3,1,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,3,2,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,4,1,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,4,2,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,5,1,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,5,2,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,6,1,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,6,2,Thirtieth Middlesex,Fourth Middlesex,5,Third
+Woburn,7,1,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Woburn,7,2,Fifteenth Middlesex,Fourth Middlesex,5,Third
+Worcester,1,1,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,1,2,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,1,3,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,1,4,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,1,5,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,1,6,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,10,1,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,10,2,Fifteenth Worcester,First Worcester,2,Seventh
+Worcester,10,3,Fifteenth Worcester,First Worcester,2,Seventh
+Worcester,10,4,Fifteenth Worcester,First Worcester,2,Seventh
+Worcester,10,5,Fifteenth Worcester,First Worcester,2,Seventh
+Worcester,10,6,Seventeenth Worcester,First Worcester,2,Seventh
+Worcester,2,1,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,2,2,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,2,3,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,2,4,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,2,5,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,2,6,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,3,1,Fifteenth Worcester,First Worcester,2,Seventh
+Worcester,3,2,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,3,3,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,3,4,Fifteenth Worcester,First Worcester,2,Seventh
+Worcester,3,5,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,3,6,Fourteenth Worcester,First Worcester,2,Seventh
+Worcester,4,1,Fifteenth Worcester,Second Worcester,2,Seventh
+Worcester,4,2,Fifteenth Worcester,First Worcester,2,Seventh
+Worcester,4,2A,Fifteenth Worcester,Second Worcester,2,Seventh
+Worcester,4,3,Fifteenth Worcester,First Worcester,2,Seventh
+Worcester,4,4,Fifteenth Worcester,Second Worcester,2,Seventh
+Worcester,4,5,Fifteenth Worcester,Second Worcester,2,Seventh
+Worcester,4,6,Fifteenth Worcester,Second Worcester,2,Seventh
+Worcester,5,1,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,5,2,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,5,3,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,5,4,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,5,5,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,5,6,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,6,1,Fifteenth Worcester,Second Worcester,2,Seventh
+Worcester,6,2,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,6,3,Sixteenth Worcester,First Worcester,2,Seventh
+Worcester,6,4,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,6,5,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,6,6,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,7,1,Seventeenth Worcester,First Worcester,2,Seventh
+Worcester,7,2,Seventeenth Worcester,Worcester & Hampshire,2,Seventh
+Worcester,7,3,Seventeenth Worcester,First Worcester,2,Seventh
+Worcester,7,4,Seventeenth Worcester,Worcester & Hampshire,2,Seventh
+Worcester,7,5,Seventeenth Worcester,Worcester & Hampshire,2,Seventh
+Worcester,7,5A,Seventeenth Worcester,Second Worcester,2,Seventh
+Worcester,7,6,Seventeenth Worcester,Worcester & Hampshire,2,Seventh
+Worcester,8,1,Sixteenth Worcester,First Worcester,2,Seventh
+Worcester,8,2,Seventeenth Worcester,First Worcester,2,Seventh
+Worcester,8,3,Seventeenth Worcester,First Worcester,2,Seventh
+Worcester,8,4,Seventeenth Worcester,First Worcester,2,Seventh
+Worcester,8,5,Sixteenth Worcester,Second Worcester,2,Seventh
+Worcester,8,6,Seventeenth Worcester,First Worcester,2,Seventh
+Worcester,9,1,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,9,2,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,9,3,Thirteenth Worcester,Worcester & Hampshire,2,Seventh
+Worcester,9,4,Thirteenth Worcester,Worcester & Hampshire,2,Seventh
+Worcester,9,5,Thirteenth Worcester,First Worcester,2,Seventh
+Worcester,9,6,Thirteenth Worcester,First Worcester,2,Seventh
+Worthington,-,1,First Hampshire,"Berkshire, Hampden, Franklin & Hampshire",1,Eighth
+Wrentham,-,1,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Wrentham,-,2,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Wrentham,-,3,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Wrentham,-,4,Ninth Norfolk,"Norfolk, Worcester & Middlesex",4,Second
+Yarmouth,-,1,First Barnstable,Cape and Islands,9,First
+Yarmouth,-,2,First Barnstable,Cape and Islands,9,First
+Yarmouth,-,3,First Barnstable,Cape and Islands,9,First
+Yarmouth,-,4,First Barnstable,Cape and Islands,9,First
+Yarmouth,-,5,Second Barnstable,Cape and Islands,9,First
+Yarmouth,-,6,Second Barnstable,Cape and Islands,9,First
+Yarmouth,-,7,First Barnstable,Cape and Islands,9,First
+Yarmouth,-,8,First Barnstable,Cape and Islands,9,First
+Yarmouth,-,8A,Second Barnstable,Cape and Islands,9,First
