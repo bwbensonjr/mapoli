@@ -47,14 +47,14 @@ dist_name_changes <- c(
 
 democratic_margin <- function(percent_dem, percent_gop, percent_third_party, percent_write_in) {
     if (is.na(percent_dem)) {
-        -(percent_gop - max(percent_third_party,
-                            percent_write_in,
-                            na.rm=TRUE))
+        -((percent_gop - max(percent_third_party,
+                             percent_write_in,
+                             na.rm=TRUE) * 100))
     } else {
-        (percent_dem - max(percent_gop,
-                           percent_third_party,
-                           percent_write_in,
-                           na.rm=TRUE))
+        ((percent_dem - max(percent_gop,
+                            percent_third_party,
+                            percent_write_in,
+                            na.rm=TRUE)) * 100)
     }
 }
 
