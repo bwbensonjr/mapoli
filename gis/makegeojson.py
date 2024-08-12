@@ -36,6 +36,35 @@ def main():
          "SHAPE_AREA": "shape_area"},
         number_minus_district_transform,
     )
+
+def cities_and_towns_2024():
+    geom = (gp.read_file("shp/townssurvey_shp/TOWNSSURVEY_POLYM_GENCOAST.shp")
+            .rename(columns={
+                "TOWN": "city_town",
+                "TOWN_ID": "city_town_id",
+                "TYPE": "type",
+                "COUNTY": "county",
+                "FIPS_STCO": "fips_state_county",
+                "FOURCOLOR": "four_color",
+                "POP1960": "pop_1960",
+                "POP1970": "pop_1970",
+                "POP1980": "pop_1980",
+                "POP1990": "pop_1990",
+                "POP2000": "pop_2000",
+                "POP2010": "pop_2010",
+                "POP2020": "pop_2020",
+                "POPCH10_20": "pop_change_10_20",
+                "AREA_ACRES": "area_acres",
+                "AREA_SQMI": "area_sqmi",
+                "SHAPE_Leng": "shape_length",
+                "SHAPE_Area": "shape_area",
+            })
+            .assign(geometry = lambda x: x["geometry"].simplify(SIMPLIFY_TOLERANCE),
+                    city_town = lambda x: x["city_town"].map(fix_ct_name),
+                    county = lambda x: x["county"].str.title()))
+    geom.to_file("geojson/city_town_2024.geojson")
+    
+def wards_precincts_2020():
     geom = (gp.read_file("https://bwbensonjr.github.io/ma-wards-precincts/ma_wards_precincts_w_subs.geojson")
             .assign(geometry = lambda x: x["geometry"].simplify(SIMPLIFY_TOLERANCE))
             .rename(columns={
@@ -73,7 +102,8 @@ def main():
     print(f"Writing {len(geom)} lines to {wp_out_file}...")
     geom.to_file(wp_out_file)
     print("Done.")
-
+    
+    
 def shp_to_geojson(in_file, out_file, col_rename, name_transform):
     print(f"Reading {in_file}...")
     geom = (
