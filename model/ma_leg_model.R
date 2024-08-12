@@ -85,8 +85,7 @@ leg_elecs <- read_csv(GEN_ELECS_URL) %>%
                                  "district_display",
                                  "pvi_year"))
 
-## leg_elecs %>%
-##     write_csv("ma_leg_two_party_2008_2024.csv")
+## leg_elecs %>% write_csv("ma_leg_two_party_2008_2024.csv")
 ##
 ## leg_elecs <- read_csv("ma_leg_two_party_2008_2024.csv")
 
