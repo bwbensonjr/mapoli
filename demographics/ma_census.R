@@ -3,8 +3,11 @@ library(tidycensus)
 library(sf)
 library(tigris)
 
+## Read the table of variables we want to capture or use
 census_vars <- read_csv("census_vars.csv")
 
+## The set of variables that are only used for calculations but
+## aren't kept around after use.
 temp_var_names <- census_vars %>%
     filter(!keep) %>%
     pull(var_name)
@@ -211,6 +214,7 @@ interpolate_geom <- function(target_geom, target_id, target_crs) {
 
 state_rep_geom <- read_sf("../gis/geojson/house2021.geojson")
 state_rep_vars <- interpolate_geom(state_rep_geom, "district", 6491)
+state_rep_vars |> write_csv("data/ma_state_rep_demographics.csv")
 
 state_senate_geom <- read_sf("../gis/geojson/senate2021.geojson")
 state_senate_vars <- interpolate_geom(state_senate_geom, "district", 6491)
