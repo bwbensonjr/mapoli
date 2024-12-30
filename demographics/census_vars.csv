@@ -1,0 +1,61 @@
+variable,var_name,keep,geography,count
+DP02_0001,total_households,TRUE,tract,TRUE
+B01003_001,total_population,TRUE,block group,TRUE
+B01001_002,gender_male,TRUE,block group,TRUE
+B01001_026,gender_female,TRUE,block group,TRUE
+B03002_003,race_white,TRUE,block group,TRUE
+B03002_004,race_black,TRUE,block group,TRUE
+B03002_005,race_native_american,TRUE,block group,TRUE
+B03002_006,race_asian,TRUE,block group,TRUE
+B03002_007,race_hawaiian,TRUE,block group,TRUE
+B03002_008,race_other,TRUE,block group,TRUE
+B03002_009,race_multiracial,TRUE,block group,TRUE
+B03002_012,race_hispanic,TRUE,block group,TRUE
+B19013_001,median_household_income,TRUE,block group,FALSE
+B19113_001,median_family_income,TRUE,block group,FALSE
+B15003_001,ed_25yrs_older_total,TRUE,block group,TRUE
+B15003_002,ed_no_schooling,FALSE,block group,TRUE
+B15003_003,ed_nursery_school,FALSE,block group,TRUE
+B15003_004,ed_kindergarten,FALSE,block group,TRUE
+B15003_005,ed_1st_grade,FALSE,block group,TRUE
+B15003_006,ed_2nd_grade,FALSE,block group,TRUE
+B15003_007,ed_3rd_grade,FALSE,block group,TRUE
+B15003_008,ed_4th_grade,FALSE,block group,TRUE
+B15003_009,ed_5th_grade,FALSE,block group,TRUE
+B15003_010,ed_6th_grade,FALSE,block group,TRUE
+B15003_011,ed_7th_grade,FALSE,block group,TRUE
+B15003_012,ed_8th_grade,FALSE,block group,TRUE
+B15003_013,ed_9th_grade,FALSE,block group,TRUE
+B15003_014,ed_10th_grade,FALSE,block group,TRUE
+B15003_015,ed_11th_grade,FALSE,block group,TRUE
+B15003_016,ed_12th_grade,FALSE,block group,TRUE
+B15003_017,ed_high_school_diploma,FALSE,block group,TRUE
+B15003_018,ed_ged,FALSE,block group,TRUE
+B15003_019,ed_college_lt_1,FALSE,block group,TRUE
+B15003_020,ed_college_gt_1,FALSE,block group,TRUE
+B15003_021,ed_associates,FALSE,block group,TRUE
+B15003_022,ed_bachelors,FALSE,block group,TRUE
+B15003_023,ed_masters,FALSE,block group,TRUE
+B15003_024,ed_professional,FALSE,block group,TRUE
+B15003_025,ed_doctorate,FALSE,block group,TRUE
+B01002_001,median_age,TRUE,block group,FALSE
+B05003_009,vote_male_native_18_plus,FALSE,tract,TRUE
+B05003_011,vote_male_naturalized_18_plus,FALSE,tract,TRUE
+B05003_012,vote_male_non_citizen_18_plus,FALSE,tract,TRUE
+B05003_020,vote_female_native_18_plus,FALSE,tract,TRUE
+B05003_022,vote_female_naturalized_18_plus,FALSE,tract,TRUE
+B05003_023,vote_female_non_citizen_18_plus,FALSE,tract,TRUE
+B17001_001,poverty_total,TRUE,tract,TRUE
+B17001_002,below_poverty_level,TRUE,tract,TRUE
+B17001_031,above_poverty_level,TRUE,tract,TRUE
+C15002H_001,white_nh,FALSE,tract,TRUE
+C15002H_002,white_nh_male,FALSE,tract,TRUE
+C15002H_003,white_nh_male_lt_high_school,FALSE,tract,TRUE
+C15002H_004,white_nh_male_high_school_grad,FALSE,tract,TRUE
+C15002H_005,white_nh_male_some_college,FALSE,tract,TRUE
+C15002H_006,white_nh_male_bachelors_or_gt,FALSE,tract,TRUE
+C15002H_007,white_nh_female,FALSE,tract,TRUE
+C15002H_008,white_nh_female_lt_high_school,FALSE,tract,TRUE
+C15002H_009,white_nh_female_high_school_grad,FALSE,tract,TRUE
+C15002H_010,white_nh_female_some_college,FALSE,tract,TRUE
+C15002H_011,white_nh_female_bachelors_or_gt,FALSE,tract,TRUE
