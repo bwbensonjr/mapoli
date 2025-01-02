@@ -172,7 +172,15 @@ add_calculations <- function(df) {
         mutate(shift_20_24 = dem_pct_24 - dem_pct_20,
                pvi_shift = PVI_N - PVI_N_20)
 }
-    
+
+ma_pvi <- comb_results |>
+    select(-US_House) |>
+    summarize(across(where(is.numeric), sum)) |>
+    add_calculations()
+
+ma_pvi |>
+    write_csv("ma_state_pres_pvi_2024.csv")
+
 state_rep_pvi <- comb_results %>%
     select(-US_House) |>
     group_by(State_Rep) |>
