@@ -178,6 +178,15 @@ tracts <- tract_geom %>%
                            state=25),
               by="GEOID")
 
+add_geometry_area <- function(target_vars, target_geom, target_id) {
+    target_vars |>
+        left_join((target_geom |>
+                   st_drop_geometry() |>
+                   select(all_of(target_id), shape_area)),
+                  by=target_id) |>
+        rename(area_m2 = shape_area)
+}
+
 ## It looks like we need to do the interpolation
 ## in three different cases:
 ## - block groups, extensive=TRUE
