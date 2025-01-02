@@ -1,5 +1,4 @@
 variable,var_name,keep,geography,count
-DP02_0001,total_households,TRUE,tract,TRUE
 B01003_001,total_population,TRUE,block group,TRUE
 B01001_002,gender_male,TRUE,block group,TRUE
 B01001_026,gender_female,TRUE,block group,TRUE
@@ -11,6 +10,7 @@ B03002_007,race_hawaiian,TRUE,block group,TRUE
 B03002_008,race_other,TRUE,block group,TRUE
 B03002_009,race_multiracial,TRUE,block group,TRUE
 B03002_012,race_hispanic,TRUE,block group,TRUE
+B11001_001,total_households,TRUE,block group,TRUE
 B19013_001,median_household_income,TRUE,block group,FALSE
 B19113_001,median_family_income,TRUE,block group,FALSE
 B15003_001,ed_25yrs_older_total,TRUE,block group,TRUE

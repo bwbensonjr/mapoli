@@ -218,6 +218,8 @@ state_densities %>% select(state_fips, state, state_name, density_very_low, dens
 
 ## County density
 
+square_meters_per_square_mile = 2.59e+6
+
 state_county_density <- function(state_fips) {
     tract_households <- get_acs(geography="tract", variables=c("NAME", "DP02_0001E"), state=state_fips) %>%
         rename(total_households = estimate) %>%
@@ -226,7 +228,7 @@ state_county_density <- function(state_fips) {
                county_fips = str_sub(GEOID, 3, 5),
                county_geoid = str_sub(GEOID, 1, 5))
     tract_geom <- as_tibble(tracts(state_fips, cb=TRUE, class="sf")) %>%
-        mutate(area = (st_area(geometry)/2.59e+6))
+        mutate(area = (st_area(geometry)/square_meters_per_square_mile))
     tract_density <- tract_households %>%
         inner_join(tract_geom %>% select(GEOID, ALAND, AWATER, area), by="GEOID") %>%
         mutate(hh_per_sq_mi = as.double(total_households / area),

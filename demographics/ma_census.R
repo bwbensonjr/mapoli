@@ -2,8 +2,10 @@ library(tidyverse)
 library(tidycensus)
 library(sf)
 library(tigris)
+library(glue)
 
 ## Read the table of variables we want to capture or use
+message("Reading census variables to collect...")
 census_vars <- read_csv("census_vars.csv")
 
 ## The set of variables that are only used for calculations but
@@ -85,40 +87,40 @@ city_town_county <- function(comp_name) {
     str_replace(first_part, " County", "")
 }
 
-city_town_vars <- census_query("county subdivision",
-                               census_vars,
-                               state=25) %>%
-    filter(!str_detect(NAME, "not defined")) %>%
-    mutate(city_town = city_town_name(NAME),
-           county = city_town_county(NAME)) %>%
-    rename(city_town_fips = GEOID) %>%
-    select(-NAME) %>%
-    add_calculated_factors() %>%
-    add_percentage_factors() %>%
-    select(-all_of(temp_var_names))
+## city_town_vars <- census_query("county subdivision",
+##                                census_vars,
+##                                state=25) %>%
+##     filter(!str_detect(NAME, "not defined")) %>%
+##     mutate(city_town = city_town_name(NAME),
+##            county = city_town_county(NAME)) %>%
+##     rename(city_town_fips = GEOID) %>%
+##     select(-NAME) %>%
+##     add_calculated_factors() %>%
+##     add_percentage_factors() %>%
+##     select(-all_of(temp_var_names))
 
-county_vars <- census_query("county",
-                               census_vars,
-                            state=25) %>%
-    mutate(county = str_replace(NAME, " County, Massachusetts", "")) %>%
-    rename(county_fips = GEOID) %>%
-    select(-NAME) %>%
-    add_calculated_factors() %>%
-    add_percentage_factors() %>%
-    select(-all_of(temp_var_names))
+## county_vars <- census_query("county",
+##                                census_vars,
+##                             state=25) %>%
+##     mutate(county = str_replace(NAME, " County, Massachusetts", "")) %>%
+##     rename(county_fips = GEOID) %>%
+##     select(-NAME) %>%
+##     add_calculated_factors() %>%
+##     add_percentage_factors() %>%
+##     select(-all_of(temp_var_names))
 
-cong_dist_vars <- get_acs(geography="congressional district",
-                          variables=census_vars$variable,
-                          year=2022,
-                          sumfile="cd118",
-                          state=25) %>%
-    left_join(census_vars, by="variable") %>%
-    pivot_wider(id_cols=c("GEOID", "NAME"),
-                names_from="var_name",
-                values_from="estimate") %>%
-    add_calculated_factors() %>%
-    add_percentage_factors() %>%
-    select(-all_of(temp_var_names))
+## cong_dist_vars <- get_acs(geography="congressional district",
+##                           variables=census_vars$variable,
+##                           year=2022,
+##                           sumfile="cd118",
+##                           state=25) %>%
+##     left_join(census_vars, by="variable") %>%
+##     pivot_wider(id_cols=c("GEOID", "NAME"),
+##                 names_from="var_name",
+##                 values_from="estimate") %>%
+##     add_calculated_factors() %>%
+##     add_percentage_factors() %>%
+##     select(-all_of(temp_var_names))
 
 ## The new MA State Rep and State Senate districts
 ## are different from the ones known by the census so
@@ -138,21 +140,25 @@ block_group_median_vars <- census_vars %>%
 tract_count_vars <- census_vars %>%
     filter(geography == "tract")
 
+message("Reading block geometry...")
 block_geom <- blocks(state=25, year=2022) %>%
     st_transform(6491)
 
+message("Reading block group geometry...")
 block_group_geom <- block_groups(state=25,
                                  cb=TRUE,
                                  year=2022) %>%
     st_transform(6491) %>%
     select(GEOID)
 
+message("Reading tract geometry...")
 tract_geom <- tracts(state=25,
                      cb=TRUE,
                      year=2022) %>%
     st_transform(6491) %>%
     select(GEOID)
 
+message("Reading block group counts and medians...")
 block_group_counts <- block_group_geom %>%
     left_join(census_query("block group",
                            block_group_count_vars,
@@ -165,6 +171,7 @@ block_group_medians <- block_group_geom %>%
                            state=25),
               by="GEOID")
 
+message("Reading tract counts...")
 tracts <- tract_geom %>%
     left_join(census_query("tract",
                            tract_count_vars,
@@ -178,7 +185,6 @@ tracts <- tract_geom %>%
 ## - tracts, extensive=TRUE
 ## - tracts, extensive=FALSE (we don't have this case)
 ##
-
 interpolate_geom <- function(target_geom, target_id, target_crs) {
     target_block_group_counts <- interpolate_pw(block_group_counts,
                                                 target_geom,
@@ -209,12 +215,23 @@ interpolate_geom <- function(target_geom, target_id, target_crs) {
         left_join(target_tract_counts, by=target_id) %>%
         add_calculated_factors() %>%
         add_percentage_factors() %>%
-        select(-all_of(temp_var_names))
+        select(-all_of(temp_var_names)) %>%
+        add_geometry_area(target_geom, target_id)
 }
 
+message("Interpolating State Rep values...")
 state_rep_geom <- read_sf("../gis/geojson/house2021.geojson")
 state_rep_vars <- interpolate_geom(state_rep_geom, "district", 6491)
-state_rep_vars |> write_csv("data/ma_state_rep_demographics.csv")
+state_rep_file_name <- "data/ma_state_rep_demographics.csv"
+message(glue("Writing State Rep variables to file {state_rep_file_name}..."))
+state_rep_vars |> write_csv(state_rep_file_name)
 
+message("Interpolating State Senate values...")
 state_senate_geom <- read_sf("../gis/geojson/senate2021.geojson")
-state_senate_vars <- interpolate_geom(state_senate_geom, "district", 6491)
+state_senate_vars <- interpolate_geom(state_senate_geom, "district", 6491) 
+state_senate_file_name <- "data/ma_state_senate_demographics.csv"
+message(glue("Writing State Senate variables to file {state_senate_file_name}..."))
+state_senate_vars |> write_csv(state_senate_file_name)
+
+message("Done.")
+
