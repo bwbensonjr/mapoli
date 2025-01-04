@@ -76,7 +76,6 @@ combine_precincts <- function(df, parentage) {
 
 pres_24 <- read_csv("../results/MA-President-2024-11-05.csv") %>%
     fill_missing_ward_precinct() %>%
-
     select(-c(office, district)) %>%
     mutate(city_town = unabbreviate_compass(city_town),
            receiver = str_replace(receiver,
