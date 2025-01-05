@@ -26,6 +26,7 @@ census_query <- function(geography, vars, state=NULL) {
 }
 
 add_calculated_factors <- function(df) {
+    ## We might want to add some categories for ancestry
     df %>%
         mutate(ed_college_degree = (ed_bachelors +
                                     ed_masters +
@@ -72,7 +73,9 @@ add_percentage_factors <- function(df) {
                           white_nh_female_some_college) / total_population,
                white_college_pct = ((white_nh_male_bachelors_or_gt +
                                      white_nh_female_bachelors_or_gt) /
-                                    total_population))
+                                    total_population),
+               ancestry_french_candadian_pct = ancestry_french_canadian/total_population,
+               ancestry_portuguese_pct = ancestry_portuguese/total_population)
 }
 
 city_town_name <- function(comp_name) {
