@@ -119,7 +119,7 @@ state_rep_map <- district_map(
     "Massachusetts State Representative Districts",
     0.8
 )              
-tmap_save(state_rep_map, "state-rep/state-rep-map.html", selfcontained=TRUE)
+tmap_save(state_rep_map, "state-rep/state-rep-map.html")
 
 state_senate <- read_sf("../gis/geojson/senate2021.geojson") |>
     mutate(office = "State Senate") |>
@@ -131,7 +131,7 @@ state_senate_map <- district_map(
     "Massachusetts State Senate Districts",
     0.9
 )              
-tmap_save(state_senate_map, "state-senate/state-senate-map.html", selfcontained=TRUE)
+tmap_save(state_senate_map, "state-senate/state-senate-map.html")
 
 gov_council <- read_sf("../gis/geojson/govcouncil2021.geojson") |>
     mutate(office = "Governor's Council") |>
@@ -143,7 +143,7 @@ gov_council_map <- district_map(
     "Massachusetts Governor's Council Districts",
     1.5
 )              
-tmap_save(gov_council_map, "gov-council/gov-council-map.html", selfcontained=TRUE)
+tmap_save(gov_council_map, "gov-council/gov-council-map.html")
 
 us_house <- read_sf("../gis/geojson/congressma118.geojson") |>
     mutate(office = "U.S. House",
@@ -156,7 +156,7 @@ us_house_map <- district_map(
     "Massachusetts U.S. House Districts",
     1.5
 )              
-tmap_save(us_house_map, "us-house/us-house-map.html", selfcontained=TRUE)
+tmap_save(us_house_map, "us-house/us-house-map.html")
 
 # district_map <- (
 #     state_rep_map +
