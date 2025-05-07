@@ -68,6 +68,11 @@ district_table <- function(office_name) {
         cols_hide(columns=c(office, district_id)) |>
         fmt_percent(columns=percent, decimals=0) |>
         fmt_number(columns=PVI_N, decimals=1) |>
+        cols_width(
+            c(percent, PVI, PVI_N) ~ px(100),
+            party ~ px(170),
+            city_town ~ px(200)
+        ) |>
         opt_interactive(
             use_pagination=FALSE,
             use_search=TRUE,
