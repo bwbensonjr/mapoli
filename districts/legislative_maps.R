@@ -8,7 +8,7 @@ ma_most_recent <- read_csv("https://bwbensonjr.github.io/ma-election-db/data/ma_
 tmap_mode("view")
 
 district_map <- function(dist, title, scale) {
-    (tm_shape(dist) +
+    (tm_shape(dist, name=title) +
      tm_polygons(
          col="MAP_COLORS",
          alpha=0.6,
@@ -22,7 +22,7 @@ district_map <- function(dist, title, scale) {
          fontface="bold"
      ) +
      tm_view(text.size.variable=TRUE) +
-     tm_layout(title) +
+     # tm_layout(title) +
      tm_basemap("OpenStreetMap"))
 }
 
@@ -43,7 +43,7 @@ state_rep_map <- district_map(
     "Massachusetts State Representative Districts",
     0.8
 )              
-tmap_save(state_rep_map, "ma_state_rep_districts.html")
+# tmap_save(state_rep_map, "ma_state_rep_districts.html")
 
 state_senate_names <- ma_most_recent |>
     filter(office == "State Senate") |>
@@ -64,7 +64,7 @@ state_senate_map <- district_map(
     "Massachusetts State Senate Districts",
     0.9
 )              
-tmap_save(state_senate_map, "ma_state_senate_districts.html")
+# tmap_save(state_senate_map, "ma_state_senate_districts.html")
 
 gov_council_names <- ma_most_recent |>
     filter(office == "Governor's Council") |>
@@ -83,7 +83,7 @@ gov_council_map <- district_map(
     "Massachusetts Governor's Council Districts",
     1.5
 )              
-tmap_save(gov_council_map, "ma_gov_council_districts.html")
+# tmap_save(gov_council_map, "ma_gov_council_districts.html")
 
 us_house_names <- ma_most_recent |>
     filter(office == "U.S. House") |>
@@ -104,5 +104,11 @@ us_house_map <- district_map(
     "Massachusetts U.S. House Districts",
     1.5
 )              
-tmap_save(us_house_map, "ma_us_house_districts.html")
+# tmap_save(us_house_map, "ma_us_house_districts.html")
 
+district_map <- (
+    state_rep_map +
+    state_senate_map +
+    gov_council_map +
+    us_house_map
+)

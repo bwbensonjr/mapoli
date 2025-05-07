@@ -1,8 +1,24 @@
 # Massachusetts Legislative Districts
 
-Interactive maps with legislator and PVI information.
+## Interactive maps with legislator and PVI information.
 
-- [State Representative Districts](ma_state_rep_districts.html)
-- [State Senate Districts](ma_state_senate_districts.html)
-- [Governor's Council Districts](ma_gov_council_districts.html)
-- [U.S. House Districts](ma_us_house_districts.html)
+- [State Representative Districts](state-rep/state-rep-districts.html)
+- [State Senate Districts](state-senate/state-senate-districts.html)
+- [Governor's Council Districts](gov-council/gov-council-districts.html)
+- [U.S. House Districts](us-house/us-house-districts.html)
+
+## Ideas for Enhancements
+
+- Tables for each office with high-level information
+- Detail pages for each district
+
+## TODO
+
+- [x] Rename files to kebab case
+- [x] Make subdirectories for each office
+
+
+
+
+
+
