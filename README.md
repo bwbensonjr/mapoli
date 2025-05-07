@@ -2,7 +2,7 @@
 
 Files relating to Massachusetts politics and elections.
 
-- districts - Basic maps for Massachusetts legislative districts
+- [districts](districts) - Basic maps for Massachusetts legislative districts
   - [State Representative Districts](districts/state-rep/state-rep-districts.html)
   - [State Senate Districts](districts/state-senate/state-senate-districts.html)
   - [Governor's Council Districts](districts/gov-council/gov-council-districts.html)
