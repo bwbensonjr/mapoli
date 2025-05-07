@@ -1,0 +1,218 @@
+office,district_id,district,legislator,party,city_town,percent,PVI,PVI_N
+U.S. House,58684,1,Richard E. Neal (D-Springfield),Democratic,Springfield,0.6257758275260104,D+8,8.278990832539012
+U.S. House,58685,2,James P. McGovern (D-Worcester),Democratic,Worcester,0.6879257796041652,D+13,13.207655762446946
+U.S. House,58686,3,Lori Loureiro Trahan (D-Westford),Democratic,Westford,1,D+11,11.06231803372113
+U.S. House,58687,4,Jake Auchincloss (D-Newton),Democratic,Newton,0.9962161641062366,D+12,11.553235203889578
+U.S. House,58688,5,Katherine M. Clark (D-Revere),Democratic,Revere,1,D+24,23.86286204636846
+U.S. House,58689,6,Seth W. Moulton (D-Salem),Democratic,Salem,1,D+12,11.583484566037871
+U.S. House,58690,7,Ayanna S. Pressley (D-Boston),Democratic,Boston,1,D+34,34.00849263714911
+U.S. House,58691,8,Stephen F. Lynch (D-Boston),Democratic,Boston,0.7058047703884915,D+15,15.045252156556876
+U.S. House,58692,9,Bill Keating (D-Bourne),Democratic,Bourne,0.5651807166749299,D+7,6.591565859452075
+State Representative,58733,First Barnstable,Christopher Richard Flanagan (D-Dennis),Democratic,Dennis,0.5654095569322175,D+11,10.95319772217448
+State Representative,58734,Second Barnstable,Kip A. Diggs (D-Barnstable),Democratic,Barnstable,0.5935887215205807,D+8,7.796722435356484
+State Representative,58735,Third Barnstable,David T. Vieira (R-Falmouth),Republican,Falmouth,0.5603475348058201,D+9,8.97038541605909
+State Representative,58736,Fourth Barnstable,Hadley Luddy (D-Orleans),Democratic,Orleans,1,D+19,19.17802968782366
+State Representative,58737,Fifth Barnstable,Steven G. Xiarhos (R-Barnstable),Republican,Barnstable,0.6138858705833864,D+3,3.027405835365382
+State Representative,58738,First Berkshire,"John P. Barrett, III (D-North Adams)",Democratic,North Adams,1,D+17,16.790556878620688
+State Representative,58739,Second Berkshire,Tricia Farley-Bouvier (D-Pittsfield),Democratic,Pittsfield,1,D+24,23.62924496824385
+State Representative,58740,Third Berkshire,Leigh Susan Davis (D-Great Barrington),Democratic,Great Barrington,0.5748097000956699,D+24,23.843976597052553
+State Representative,58742,First Bristol,Michael Chaisson (R-Foxborough),Republican,Foxborough,0.5019366197183098,D+8,7.547209052382986
+State Representative,58743,Second Bristol,James K. Hawkins (D-Attleboro),Democratic,Attleboro,0.6829072628088566,D+7,6.708132062772554
+State Representative,58744,Third Bristol,Carol Ann Doherty (D-Taunton),Democratic,Taunton,1,D+5,4.901133835618121
+State Representative,58745,Fourth Bristol,Steven S. Howitt (R-Seekonk),Republican,Seekonk,1,R+2,-1.8720657640736824
+State Representative,58746,Fifth Bristol,Justin Thurber (R-Somerset),Republican,Somerset,0.5194097426008216,R+2,-1.8709180290921223
+State Representative,58747,Sixth Bristol,Carole A. Fiola (D-Fall River),Democratic,Fall River,1,D+3,3.059446756812234
+State Representative,58748,Seventh Bristol,Alan Silvia (D-Fall River),Democratic,Fall River,1,D+1,0.543046406617187
+State Representative,58749,Eighth Bristol,Steven J. Ouellette (D-Westport),Democratic,Westport,0.3386637755793468,R+4,-4.073253942758543
+State Representative,58750,Ninth Bristol,Christopher M. Markey (D-Dartmouth),Democratic,Dartmouth,1,D+1,1.350005288072087
+State Representative,58751,Tenth Bristol,Mark David Sylvia (D-Fairhaven),Democratic,Fairhaven,0.5263502581092534,D+2,2.2758180549442453
+State Representative,58752,Eleventh Bristol,Christopher Hendricks (D-New Bedford),Democratic,New Bedford,1,D+10,9.805807506644925
+State Representative,58753,Twelfth Bristol,Norman J. Orrall (R-Lakeville),Republican,Lakeville,1,R+4,-3.906338726189023
+State Representative,58754,Thirteenth Bristol,Antonio d. F. Cabral (D-New Bedford),Democratic,New Bedford,1,D+10,9.918097010773709
+State Representative,58755,Fourteenth Bristol,Adam J. Scanlon (D-North Attleborough),Democratic,North Attleborough,0.5595264786332451,D+6,6.293451731024657
+State Representative,58756,First Essex,Dawne Frances Shand (D-Newburyport),Democratic,Newburyport,1,D+14,14.369170130136366
+State Representative,58757,Second Essex,Kristin E. Kassner (D-Hamilton),Democratic,Hamilton,0.542210970464135,D+11,11.033870522250687
+State Representative,58758,Third Essex,Andres X. Vargas (D-Haverhill),Democratic,Haverhill,1,D+8,7.900742394426608
+State Representative,58759,Fourth Essex,Estela A. Reyes (D-Lawrence),Democratic,Lawrence,1,D+12,11.741635333670263
+State Representative,58760,Fifth Essex,Ann-Margaret Ferrante (D-Gloucester),Democratic,Gloucester,0.6669775771368877,D+18,17.85341745630433
+State Representative,58761,Sixth Essex,Jerald A. Parisella (D-Beverly),Democratic,Beverly,0.7104699940073624,D+18,18.038372152331327
+State Representative,58762,Seventh Essex,Manny Cruz (D-Salem),Democratic,Salem,1,D+24,24.419589436019095
+State Representative,58763,Eighth Essex,Jennifer Wb Armini (D-Marblehead),Democratic,Marblehead,1,D+21,20.785686254560652
+State Representative,58764,Ninth Essex,Donald H. Wong (R-Saugus),Republican,Saugus,1,D+3,2.701185101154091
+State Representative,58765,Tenth Essex,Daniel H. Cahill (D-Lynn),Democratic,Lynn,1,D+16,15.94136852972362
+State Representative,58766,Eleventh Essex,Sean Reid (D-Lynn),Democratic,Lynn,1,D+16,16.037690264568226
+State Representative,58767,Twelfth Essex,Thomas P. Walsh (D-Peabody),Democratic,Peabody,1,D+5,5.101521832852751
+State Representative,58768,Thirteenth Essex,Sally P. Kerans (D-Danvers),Democratic,Danvers,1,D+4,4.274293049761491
+State Representative,58769,Fourteenth Essex,Adrianne Pusateri Ramos (D-North Andover),Democratic,North Andover,1,D+10,10.383075638402916
+State Representative,58770,Fifteenth Essex,Ryan M. Hamilton (D-Methuen),Democratic,Methuen,1,D+3,2.523134863947629
+State Representative,58771,Sixteenth Essex,Francisco E. Paulino (D-Methuen),Democratic,Methuen,1,D+11,11.301587396282477
+State Representative,58772,Seventeenth Essex,Frank A. Moran (D-Lawrence),Democratic,Lawrence,1,D+17,16.734542758407432
+State Representative,58773,Eighteenth Essex,Tram T. Nguyen (D-Andover),Democratic,Andover,1,D+11,11.48667962229657
+State Representative,58774,First Franklin,Natalie M. Blais (D-Deerfield),Democratic,Deerfield,1,D+24,23.610433703863553
+State Representative,58775,Second Franklin,Susannah M. Whipps (U-Athol),Unenrolled,Athol,0.657475405293058,D+6,6.161635602536519
+State Representative,58776,First Hampden,Todd M. Smola (R-Warren),Republican,Warren,1,R+3,-2.948641469389318
+State Representative,58777,Second Hampden,Brian M. Ashe (D-Longmeadow),Democratic,Longmeadow,1,D+5,5.284261962616177
+State Representative,58778,Third Hampden,Nicholas A. Boldyga (R-Southwick),Republican,Southwick,1,R+6,-5.614496466112351
+State Representative,58779,Fourth Hampden,Kelly W. Pease (R-Westfield),Republican,Westfield,0.5883104439476206,EVEN,-0.3976457315406523
+State Representative,58780,Fifth Hampden,Patricia A. Duffy (D-Holyoke),Democratic,Holyoke,1,D+16,15.997787095997584
+State Representative,58781,Sixth Hampden,Michael J. Finn (D-West Springfield),Democratic,West Springfield,1,D+1,1.4296139833125832
+State Representative,58782,Seventh Hampden,Aaron L. Saunders (D-Belchertown),Democratic,Belchertown,1,D+7,7.170917300545321
+State Representative,58783,Eighth Hampden,Shirley B. Arriaga (D-Chicopee),Democratic,Chicopee,1,D+4,4.207007404892183
+State Representative,58784,Ninth Hampden,Orlando Ramos (D-Springfield),Democratic,Springfield,1,D+18,17.86151088923692
+State Representative,58785,Tenth Hampden,Carlos Gonzalez (D-Springfield),Democratic,Springfield,1,D+24,23.95171648675214
+State Representative,58786,Eleventh Hampden,Bud L. Williams (D-Springfield),Democratic,Springfield,1,D+26,25.612769986504254
+State Representative,58787,Twelfth Hampden,"Angelo J. Puppolo, Jr. (D-Springfield)",Democratic,Springfield,1,D+6,6.365518143554672
+State Representative,58788,First Hampshire,Lindsay N. Sabadosa (D-Northampton),Democratic,Northampton,1,D+32,31.818311968329883
+State Representative,58789,Second Hampshire,Homar Gomez (D-Easthampton),Democratic,Easthampton,1,D+18,18.034318353177923
+State Representative,58790,Third Hampshire,Mindy Domb (D-Amherst),Democratic,Amherst,1,D+36,35.50821563275488
+State Representative,58791,First Middlesex,Margaret R. Scarsdale (D-Pepperell),Democratic,Pepperell,0.5134960952308742,D+5,4.865775599005251
+State Representative,58792,Second Middlesex,James Arciero (D-Westford),Democratic,Westford,1,D+17,16.615547337379365
+State Representative,58793,Third Middlesex,Kate Hogan (D-Stow),Democratic,Stow,1,D+18,18.232780959673367
+State Representative,58794,Fourth Middlesex,Danielle W. Gregoire (D-Marlborough),Democratic,Marlborough,1,D+15,15.430600534800288
+State Representative,58795,Fifth Middlesex,David Paul Linsky (D-Natick),Democratic,Natick,1,D+26,25.65454609305861
+State Representative,58796,Sixth Middlesex,Priscila S. Sousa (D-Framingham),Democratic,Framingham,1,D+23,22.50032190825575
+State Representative,58797,Seventh Middlesex,Jack Patrick Lewis (D-Framingham),Democratic,Framingham,1,D+21,21.42334356628407
+State Representative,58798,Eighth Middlesex,James Arena-DeRosa (D-Holliston),Democratic,Holliston,1,D+19,19.294087820784167
+State Representative,58799,Ninth Middlesex,Thomas M. Stanley (D-Waltham),Democratic,Waltham,0.7273267433695241,D+19,18.915887024687297
+State Representative,58800,Tenth Middlesex,"John J. Lawn, Jr. (D-Watertown)",Democratic,Watertown,1,D+23,23.456848285416122
+State Representative,58801,Eleventh Middlesex,Amy Mah Sangiolo (D-Newton),Democratic,Newton,0.8127065914835699,D+33,32.609768305001715
+State Representative,58802,Twelfth Middlesex,Greg Schwartz (D-Newton),Democratic,Newton,1,D+32,31.823267801381196
+State Representative,58803,Thirteenth Middlesex,Carmine Lawrence Gentile (D-Sudbury),Democratic,Sudbury,0.7355834060442611,D+28,27.86960088148549
+State Representative,58804,Fourteenth Middlesex,Simon Cataldo (D-Concord),Democratic,Concord,1,D+24,23.835172538761096
+State Representative,58805,Fifteenth Middlesex,Michelle Ciccolo (D-Lexington),Democratic,Lexington,1,D+24,24.456859254907105
+State Representative,58806,Sixteenth Middlesex,Rodney M. Elliott (D-Lowell),Democratic,Lowell,1,D+11,10.851563140403384
+State Representative,58807,Seventeenth Middlesex,Vanna Howard (D-Lowell),Democratic,Lowell,0.7786205261910405,D+14,13.50014857274784
+State Representative,58808,Eighteenth Middlesex,Tara Thorn Hong (D-Lowell),Democratic,Lowell,0.7833264548080892,D+16,16.207433520760773
+State Representative,58809,Nineteenth Middlesex,David Allen Robertson (D-Wilmington),Democratic,Wilmington,0.5262055385646655,D+2,1.647545595652522
+State Representative,58810,Twentieth Middlesex,"Bradley H. Jones, Jr. (R-North Reading)",Republican,North Reading,1,D+4,4.124059686428949
+State Representative,58811,Twenty-First Middlesex,Kenneth I. Gordon (D-Bedford),Democratic,Bedford,1,D+17,16.575544501110095
+State Representative,58812,Twenty-Second Middlesex,Marc T. Lombardo (R-Billerica),Republican,Billerica,0.6112387428781474,D+2,2.3574020739756008
+State Representative,58813,Twenty-Third Middlesex,Sean Garballey (D-Arlington),Democratic,Arlington,1,D+31,30.892554878958112
+State Representative,58814,Twenty-Fourth Middlesex,David M. Rogers (D-Cambridge),Democratic,Cambridge,1,D+32,32.4025364207801
+State Representative,58815,Twenty-Fifth Middlesex,Marjorie C. Decker (D-Cambridge),Democratic,Cambridge,0.975131448060253,D+44,43.83274567908123
+State Representative,58816,Twenty-Sixth Middlesex,Mike Connolly (D-Cambridge),Democratic,Cambridge,1,D+39,38.943071882759114
+State Representative,58817,Twenty-Seventh Middlesex,Erika Uyterhoeven (D-Somerville),Democratic,Somerville,1,D+40,40.20586051555074
+State Representative,58818,Twenty-Eighth Middlesex,"Joseph W. Mcgonagle, Jr (D-Everett)",Democratic,Everett,1,D+17,17.04208786819762
+State Representative,58819,Twenty-Ninth Middlesex,Steven C. Owens (D-Watertown),Democratic,Watertown,1,D+35,35.341904736686026
+State Representative,58820,Thirtieth Middlesex,Richard M. Haggerty (D-Woburn),Democratic,Woburn,1,D+12,12.006489684580778
+State Representative,58821,Thirty-First Middlesex,Michael Seamus Day (D-Stoneham),Democratic,Stoneham,1,D+15,14.88095383836776
+State Representative,58822,Thirty-Second Middlesex,Kate Lipper-Garabedian (D-Melrose),Democratic,Melrose,1,D+20,20.21137813826417
+State Representative,58823,Thirty-Third Middlesex,Steven Ultrino (D-Malden),Democratic,Malden,1,D+22,21.75462237371607
+State Representative,58824,Thirty-Fourth Middlesex,Christine P. Barber (D-Somerville),Democratic,Somerville,1,D+32,32.13904068076408
+State Representative,58825,Thirty-Fifth Middlesex,"Paul J. Donato, Sr. (D-Medford)",Democratic,Medford,1,D+21,20.93820374884944
+State Representative,58826,Thirty-Sixth Middlesex,Colleen M. Garry (D-Dracut),Democratic,Dracut,1,R+1,-1.3437822130037411
+State Representative,58827,Thirty-Seventh Middlesex,Danillo A. Sena (D-Acton),Democratic,Acton,1,D+22,21.658715710360298
+State Representative,58828,First Norfolk,Bruce J. Ayers (D-Quincy),Democratic,Quincy,1,D+16,16.38792074222033
+State Representative,58829,Second Norfolk,Tackey Chan (D-Quincy),Democratic,Quincy,0.6957294415423555,D+15,15.082643882209112
+State Representative,58830,Third Norfolk,Ronald Mariano (D-Quincy),Democratic,Quincy,1,D+11,11.011869493554126
+State Representative,58831,Fourth Norfolk,James Michael Murphy (D-Weymouth),Democratic,Weymouth,1,D+8,8.200189763683719
+State Representative,58832,Fifth Norfolk,Mark J. Cusack (D-Braintree),Democratic,Braintree,1,D+6,5.857836708968877
+State Representative,58833,Sixth Norfolk,William C. Galvin (D-Canton),Democratic,Canton,1,D+13,12.62774305373381
+State Representative,58834,Seventh Norfolk,"Richard Gerard Wells, Jr (D-Milton)",Democratic,Milton,0.6485844483226683,D+23,23.401282849064387
+State Representative,58835,Eighth Norfolk,Ted Philips (D-Sharon),Democratic,Sharon,1,D+18,17.577197819863
+State Representative,58836,Ninth Norfolk,Marcus S. Vaughn (R-Wrentham),Republican,Wrentham,0.5740970888411856,D+7,7.441965971801878
+State Representative,58837,Tenth Norfolk,Jeffrey N. Roy (D-Franklin),Democratic,Franklin,0.6177029702970297,D+11,10.726500953100016
+State Representative,58838,Eleventh Norfolk,Paul McMurtry (D-Dedham),Democratic,Dedham,0.6809930371352785,D+15,14.98012557045928
+State Representative,58839,Twelfth Norfolk,John H. Rogers (D-Norwood),Democratic,Norwood,1,D+11,11.07474571348057
+State Representative,58840,Thirteenth Norfolk,Joshua Tarsky (D-Needham),Democratic,Needham,0.61457489878542515,D+25,25.167533242032636
+State Representative,58841,Fourteenth Norfolk,Alice Hanlon Peisch (D-Wellesley),Democratic,Wellesley,1,D+26,26.216994822713747
+State Representative,58842,Fifteenth Norfolk,Tommy Vitolo (D-Brookline),Democratic,Brookline,1,D+39,38.82729550607576
+State Representative,58843,First Plymouth,Michelle L. Badger (D-Plymouth),Democratic,Plymouth,0.5226658455643368,D+5,4.997793416536966
+State Representative,58844,Second Plymouth,John Robert Gaskey (R-Carver),Republican,Carver,0.8901691719478343,R+2,-1.8160239506206932
+State Representative,58845,Third Plymouth,Joan Meschino (D-Hull),Democratic,Hull,1,D+16,15.723339499327585
+State Representative,58846,Fourth Plymouth,Patrick Joseph Kearney (D-Scituate),Democratic,Scituate,1,D+8,8.323852946244937
+State Representative,58847,Fifth Plymouth,David F. Decoste (R-Norwell),Republican,Norwell,1,D+1,1.3562480036048208
+State Representative,58848,Sixth Plymouth,Kenneth Sweezey (R-Pembroke),Republican,Pembroke,0.5297420225996731,D+4,3.955962584959905
+State Representative,58849,Seventh Plymouth,Alyson M. Sullivan-Almeida (R-Abington),Republican,Abington,1,EVEN,-0.26123607103129
+State Representative,58850,Eighth Plymouth,Dennis C. Gallagher (D-Bridgewater),Democratic,Bridgewater,0.5051104972375691,EVEN,-0.0836044244397871
+State Representative,58851,Ninth Plymouth,Bridget M. Plouffe (D-Brockton),Democratic,Brockton,0.5430423986020417,D+9,9.184837677753777
+State Representative,58852,Tenth Plymouth,Michelle Marie Dubois (D-Brockton),Democratic,Brockton,1,D+22,22.094916515831752
+State Representative,58853,Eleventh Plymouth,Rita A. Mendes (D-Brockton),Democratic,Brockton,1,D+30,30.084495484942885
+State Representative,58854,Twelfth Plymouth,Kathleen R. Lanatra (D-Kingston),Democratic,Kingston,0.5313786008230452,D+2,1.958533053062572
+State Representative,58855,First Suffolk,Adrian C. Madaro (D-Boston),Democratic,Boston,1,D+24,23.57026151586974
+State Representative,58856,Second Suffolk,Daniel J. Ryan (D-Boston),Democratic,Boston,1,D+30,29.99008954658202
+State Representative,58857,Third Suffolk,Aaron M. Michlewitz (D-Boston),Democratic,Boston,1,D+29,29.462678802554176
+State Representative,58858,Fourth Suffolk,David Biele (D-Boston),Democratic,Boston,1,D+18,17.959018868308718
+State Representative,58859,Fifth Suffolk,Christopher J. Worrell (D-Boston),Democratic,Boston,1,D+37,37.37099425293046
+State Representative,58860,Sixth Suffolk,Russell E. Holmes (D-Boston),Democratic,Boston,1,D+39,39.471998654366494
+State Representative,58861,Seventh Suffolk,Chynah Tyler (D-Boston),Democratic,Boston,1,D+40,39.82087592771696
+State Representative,58862,Eighth Suffolk,Jay D. Livingstone (D-Boston),Democratic,Boston,1,D+34,33.77894907934677
+State Representative,58863,Ninth Suffolk,John Francis Moran (D-Boston),Democratic,Boston,0.8245861670730142,D+37,36.77199919737589
+State Representative,58864,Tenth Suffolk,William Macgregor (D-Boston),Democratic,Boston,1,D+25,24.681057552928166
+State Representative,58865,Eleventh Suffolk,Judith A. Garcia (D-Chelsea),Democratic,Chelsea,1,D+23,22.74509920588844
+State Representative,58866,Twelfth Suffolk,Brandy Fluker Oakley (D-Boston),Democratic,Boston,1,D+38,38.32711596561465
+State Representative,58867,Thirteenth Suffolk,Daniel J. Hunt (D-Boston),Democratic,Boston,1,D+20,20.02048881911377
+State Representative,58868,Fourteenth Suffolk,Rob Consalvo (D-Boston),Democratic,Boston,1,D+30,30.47402303165132
+State Representative,58869,Fifteenth Suffolk,Samantha Montaño (D-Boston),Democratic,Boston,1,D+42,41.657745277719194
+State Representative,58870,Sixteenth Suffolk,Jessica Ann Giannino (D-Revere),Democratic,Revere,1,D+5,4.7094201039646455
+State Representative,58871,Seventeenth Suffolk,Kevin G. Honan (D-Boston),Democratic,Boston,1,D+36,35.751010141944384
+State Representative,58872,Eighteenth Suffolk,Michael J. Moran (D-Boston),Democratic,Boston,1,D+32,32.24326095057036
+State Representative,58873,Nineteenth Suffolk,Jeffrey Rosario Turco (D-Winthrop),Democratic,Winthrop,1,D+11,10.752112051039177
+State Representative,58874,First Worcester,Kimberly N. Ferguson (R-Holden),Republican,Holden,0.6980924152606779,D+4,4.143231379634615
+State Representative,58875,Second Worcester,Jonathan D. Zlotnik (D-Gardner),Democratic,Gardner,0.5224702812409394,EVEN,0.1500603758008534
+State Representative,58876,Third Worcester,Michael P. Kushmerek (D-Fitchburg),Democratic,Fitchburg,1,D+8,7.907419229523526
+State Representative,58877,Fourth Worcester,Natalie Higgins (D-Leominster),Democratic,Leominster,0.5750201938610663,D+6,6.122553188247892
+State Representative,58878,Fifth Worcester,"Donald R. Berthiaume, Jr (R-Spencer)",Republican,Spencer,1,R+4,-4.109918060503115
+State Representative,58879,Sixth Worcester,"John J. Marsi, Jr (R-Dudley)",Republican,Dudley,0.6193060188181411,R+2,-2.4690926880335584
+State Representative,58880,Seventh Worcester,Paul K. Frost (R-Auburn),Republican,Auburn,0.6921880909358322,D+1,0.7648883474973833
+State Representative,58881,Eighth Worcester,Michael J. Soter (R-Bellingham),Republican,Bellingham,1,EVEN,-0.08140309301012394
+State Representative,58882,Ninth Worcester,"David Kent Muradian, Jr (R-Grafton)",Republican,Grafton,1,D+7,7.150454218866997
+State Representative,58883,Tenth Worcester,Brian William Murray (D-Milford),Democratic,Milford,1,D+7,7.102161568604492
+State Representative,58884,Eleventh Worcester,Hannah E. Kane (R-Shrewsbury),Republican,Shrewsbury,1,D+14,13.500840747664457
+State Representative,58885,Twelfth Worcester,Meghan Kilcoyne (D-Clinton),Democratic,Clinton,1,D+8,7.6983773553922275
+State Representative,58886,Thirteenth Worcester,"John J. Mahoney, Jr. (D-Worcester)",Democratic,Worcester,1,D+18,17.931933535709444
+State Representative,58887,Fourteenth Worcester,James J. O'Day (D-West Boylston),Democratic,West Boylston,1,D+15,15.090236656743883
+State Representative,58888,Fifteenth Worcester,Mary S. Keefe (D-Worcester),Democratic,Worcester,1,D+19,18.9521340273064
+State Representative,58889,Sixteenth Worcester,Daniel M. Donahue (D-Worcester),Democratic,Worcester,1,D+13,12.513826996228584
+State Representative,58890,Seventeenth Worcester,David Henry Argosky Leboeuf (D-Worcester),Democratic,Worcester,1,D+11,11.309597892948153
+State Representative,58891,Eighteenth Worcester,Joseph D. Mckenna (R-Sutton),Republican,Sutton,1,R+4,-3.936739124273342
+State Representative,62910,"Barnstable, Dukes and Nantucket",Thomas W. Moakley (D-Falmouth),Democratic,Falmouth,1,D+24,23.707141503568018
+State Representative,64670,Nineteenth Worcester,Kate Donaghue (D-Westborough),Democratic,Westborough,0.777097366809553,D+20,19.851071015062328
+State Senate,55780,Second Essex,Joan B. Lovely (D-Salem),Democratic,Salem,0.6685189020040956,D+13,12.9289467569208
+State Senate,58695,Bristol and Norfolk,Paul R. Feeney (D-Foxborough),Democratic,Foxborough,0.729946492200255,D+9,9.47839616473235
+State Senate,58696,First Bristol and Plymouth,Michael J. Rodrigues (D-Westport),Democratic,Westport,1,R+1,-1.4599731568909535
+State Senate,58697,Second Bristol and Plymouth,Mark C. Montigny (D-New Bedford),Democratic,New Bedford,1,D+4,3.935096690163764
+State Senate,58698,Cape and Islands,Julian Andre Cyr (D-Provincetown),Democratic,Provincetown,0.6096470543849389,D+14,14.409380508630342
+State Senate,58699,First Essex,Pavel M. Payano (D-Lawrence),Democratic,Lawrence,1,D+10,9.519211043685772
+State Senate,58700,First Essex and Middlesex,Bruce E. Tarr (R-Gloucester),Republican,Gloucester,1,D+12,11.9293645644304
+State Senate,58701,Second Essex and Middlesex,Barry R. Finegold (D-Andover),Democratic,Andover,1,D+8,8.143477036493207
+State Senate,58703,Hampden,Adam Gomez (D-Springfield),Democratic,Springfield,1,D+18,17.828746548560225
+State Senate,58707,First Middlesex,Edward J. Kennedy (D-Lowell),Democratic,Lowell,0.6357897028409709,D+7,7.266316629349056
+State Senate,58708,Second Middlesex,Patricia D. Jehlen (D-Somerville),Democratic,Somerville,1,D+33,32.50176308863265
+State Senate,58709,Third Middlesex,Michael J. Barrett (D-Lexington),Democratic,Lexington,1,D+22,22.155391589982187
+State Senate,58710,Fourth Middlesex,Cindy F. Friedman (D-Arlington),Democratic,Arlington,1,D+17,17.20513975219945
+State Senate,58715,Middlesex and Worcester,James B. Eldridge (D-Marlborough),Democratic,Marlborough,1,D+21,21.443548298873104
+State Senate,58718,Norfolk and Plymouth,John F. Keenan (D-Quincy),Democratic,Quincy,1,D+9,9.082035835637392
+State Senate,58719,Plymouth and Barnstable,Dylan A. Fernandes (D-Falmouth),Democratic,Falmouth,0.5121328114174865,D+6,6.0986180739747375
+State Senate,58723,First Suffolk,Nicholas P. Collins (D-Boston),Democratic,Boston,1,D+27,27.212056215154213
+State Senate,58724,Second Suffolk,Liz Miranda (D-Boston),Democratic,Boston,1,D+40,40.2087692868763
+State Senate,58728,First Worcester,Robyn K. Kennedy (D-Worcester),Democratic,Worcester,1,D+17,16.51094380074456
+State Senate,58729,Second Worcester,Michael O. Moore (D-Millbury),Democratic,Millbury,1,D+12,11.567678489701482
+State Senate,58731,Worcester and Middlesex,John J. Cronin (D-Fitchburg),Democratic,Fitchburg,0.5910417205920417,D+9,8.846797761372272
+State Senate,64656,Middlesex and Suffolk,Sal N. DiDomenico (D-Everett),Democratic,Everett,1,D+31,30.82359925048955
+State Senate,64661,Fifth Middlesex,Jason M. Lewis (D-Winchester),Democratic,Winchester,1,D+17,17.355988873109883
+State Senate,64692,Hampden and Hampshire,John C. Velis (D-Westfield),Democratic,Westfield,1,D+6,5.5864423743640534
+State Senate,64693,Middlesex and Norfolk,Karen E. Spilka (D-Ashland),Democratic,Ashland,1,D+21,21.1605689270696
+State Senate,64702,Third Essex,Brendan Peter Crighton (D-Lynn),Democratic,Lynn,1,D+12,11.911769508162951
+State Senate,64862,Norfolk and Suffolk,Michael F. Rush (D-Boston),Democratic,Boston,1,D+19,18.86430200238145
+State Senate,64878,Suffolk and Middlesex,William N. Brownsberger (D-Belmont),Democratic,Belmont,1,D+33,32.56648583953291
+State Senate,64948,Third Suffolk,Lydia Marie Edwards (D-Boston),Democratic,Boston,0.7021946741675229,D+20,20.071702724081295
+State Senate,64949,"Hampshire, Franklin and Worcester",Jo Comerford (D-Northampton),Democratic,Northampton,1,D+23,22.661200817202452
+State Senate,65020,"Berkshire, Hampden, Franklin and Hampshire",Paul W. Mark (D-Becket),Democratic,Becket,0.7094469074456082,D+18,18.186788229768613
+State Senate,65021,Second Plymouth and Norfolk,Michael D. Brady (D-Brockton),Democratic,Brockton,1,D+14,13.552147878024511
+State Senate,65022,Worcester and Hampshire,Peter J. Durant (R-Spencer),Republican,Spencer,0.5841712039727873,D+1,1.0676722896603486
+State Senate,65023,"Hampden, Hampshire and Worcester",Jacob R. Oliveira (D-Ludlow),Democratic,Ludlow,1,D+5,4.932168934103808
+State Senate,65024,"Norfolk, Worcester and Middlesex",Rebecca L. Rausch (D-Needham),Democratic,Needham,0.5890412366895531,D+13,12.964356385234389
+State Senate,65025,Third Bristol and Plymouth,Kelly A. Dooner (R-Taunton),Republican,Taunton,0.48363989815215896,R+1,-0.7007936319190278
+State Senate,65026,Worcester and Hampden,Ryan C. Fattman (R-Sutton),Republican,Sutton,0.6586679282126644,R+1,-1.3099412039348055
+State Senate,65027,"Norfolk, Plymouth and Bristol","William J. Driscoll, Jr (D-Milton)",Democratic,Milton,1,D+12,11.658550094168165
+State Senate,65028,Norfolk and Middlesex,Cynthia Stone Creem (D-Newton),Democratic,Newton,1,D+32,32.4504218278043
+State Senate,65029,First Plymouth and Norfolk,Patrick A. O'Connor (R-Weymouth),Republican,Weymouth,1,D+10,10.275992493547248
+Governor's Council,64603,First,Joseph C. Ferreira (D-Swansea),Democratic,Swansea,0.565693515964658,D+5,5.031921466265398
+Governor's Council,64604,Second,Tamisha L. Civil (D-Stoughton),Democratic,Stoughton,0.5729079923310805,D+14,13.634628748448218
+Governor's Council,64605,Third,Mara Dolan (D-Concord),Democratic,Concord,1,D+25,24.667141203761688
+Governor's Council,64606,Fourth,"Christopher A. Iannella, Jr. (D-Boston)",Democratic,Boston,1,D+20,19.67748016859413
+Governor's Council,64607,Fifth,Eunice Delice Zeigler (D-Methuen),Democratic,Methuen,0.47265755251750585,D+10,10.18103838710439
+Governor's Council,64608,Sixth,Terrence W. Kennedy (D-Lynnfield),Democratic,Lynnfield,1,D+22,22.287634553879965
+Governor's Council,64609,Seventh,Paul M. Depalo (D-Worcester),Democratic,Worcester,0.5739671079021259,D+6,6.386092810654754
+Governor's Council,64610,Eighth,Tara J. Jacobs (D-North Adams),Democratic,North Adams,1,D+13,13.46386864998539

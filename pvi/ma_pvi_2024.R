@@ -214,3 +214,72 @@ us_house_pvi <- comb_results %>%
     
 us_house_pvi %>%
     write_csv("ma_us_house_pres_pvi_2024.csv")
+
+## Combine into single file for legislative offices
+
+state_rep_pvi <-
+    read_csv("ma_state_rep_pres_pvi_2024.csv") |>
+    mutate(office = "State Representative") |>
+    select(
+        office,
+        district=State_Rep,
+        PVI,
+        PVI_N
+    )
+
+state_senate_pvi <-
+    read_csv("ma_state_senate_pres_pvi_2024.csv") |>
+    mutate(office = "State Senate") |>
+    select(
+        office,
+        district=State_Senate,
+        PVI,
+        PVI_N
+    )
+
+gov_council_pvi <-
+    read_csv("ma_gov_council_pres_pvi_2024.csv") |>
+    mutate(office = "Governor's Council") |>
+    select(
+        office,
+        district=Gov_Council,
+        PVI,
+        PVI_N
+    )
+
+district_num_to_district <- function(district_num) {
+    case_when(
+        (district_num == 1) ~ "First",
+        (district_num == 2) ~ "Second",
+        (district_num == 3) ~ "Third",
+        (district_num == 4) ~ "Fourth",
+        (district_num == 5) ~ "Fifth",
+        (district_num == 6) ~ "Sixth",
+        (district_num == 7) ~ "Seventh",
+        (district_num == 8) ~ "Eighth",
+        (district_num == 9) ~ "Ninth",
+        TRUE ~ as.character(district_num)
+    )
+}
+
+us_house_pvi <-
+    read_csv("ma_us_house_pres_pvi_2024.csv") |>
+    mutate(office = "U.S. House",
+           district = as.character(US_House)) |>
+    select(
+        office,
+        district,
+        PVI,
+        PVI_N
+    )
+
+legislative_pvi <-
+   bind_rows(
+       state_rep_pvi,
+       state_senate_pvi,
+       gov_council_pvi,
+       us_house_pvi
+   )
+
+legislative_pvi |>
+    write_csv("ma_legislative_district_pvi_2024.csv")

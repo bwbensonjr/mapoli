@@ -14,8 +14,9 @@
 
 ## TODO
 
-- [x]  Rename files to kebab case
-- [x]  Make subdirectories for each office
+- [x] Rename files to kebab case
+- [x] Make subdirectories for each office
+
 
 
 
