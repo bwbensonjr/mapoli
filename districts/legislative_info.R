@@ -74,18 +74,24 @@ district_path <- function(office_name, district_name) {
     str_glue("pages/{district_file(office_name, district_name)}")
 }
 
-district_reference <- function(office_name, district_name) {
+district_md_ref <- function(office_name, district_name) {
     str_glue("[{district_name}]({district_file(office_name, district_name)})")
+}
+
+district_web_ref <- function(office_name, district_name) {
+    str_glue("<a href={district_file(office_name, district_name)}>{district_name}</a>")
 }
 
 legislative_district_info <-
     latest_district_elections |>
-        mutate(district_ref = district_reference(office, district)) |>
+        mutate(district_md_ref = district_md_ref(office, district),
+               district_web_ref = district_web_ref(office, district)) |>
         select(
             office,
             district_id,
             district,
-            district_ref,
+            district_md_ref,
+            district_web_ref,
             legislator=display_winner,
             party=party_winner,
             city_town=city_town_winner,
@@ -106,8 +112,8 @@ district_table <- function(office_name) {
         tab_header(
             title=md(str_glue("Massachusetts **{office_name}** Districts"))
         ) |>
-        cols_hide(columns=c(office, district_id, district)) |>
-        fmt_markdown(columns=district_ref) |>
+        cols_hide(columns=c(office, district_id, district, district_web_ref)) |>
+        fmt_markdown(columns=district_md_ref) |>
         fmt_percent(columns=percent, decimals=0) |>
         fmt_number(columns=PVI_N, decimals=1) |>
         cols_width(
@@ -142,7 +148,12 @@ district_map <- function(dist, title, scale) {
      tm_polygons(
          col="MAP_COLORS",
          alpha=0.6,
-         popup.vars=c("legislator", "PVI")
+         popup.vars=c(
+             "legislator",
+             "PVI",
+             "district_web_ref"
+         ),
+         popup.format=list(html.escape=FALSE)
      ) +
      tm_text(
          "district_display",
@@ -213,25 +224,6 @@ tmap_save(us_house_map, "pages/us-house-map.html")
 # )
 
 ## Per-District Pages
-
-district_details <- function(office_name, district_name) {
-    leg_elections |>
-        filter(
-             office == office_name,
-             district == district_name
-         ) |>
-         arrange(desc(election_date)) |>
-         select(
-             election_date,
-             is_special,
-             display_dem,
-             percent_dem,
-             display_gop,
-             percent_gop,
-             display_third_party,
-             percent_third_party
-         )
-}
 
 election_history_table <- function(elections, office_name, district_name) {
     elections |>
