@@ -15,6 +15,8 @@
 - [x] Detail pages for each district 
 - [ ] Refactor maps code
 - [x] Add district links to map
+- [ ] Put maps in district pages
+- [ ] Consider putting maps at top of office pages
 
 
 
