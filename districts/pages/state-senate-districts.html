@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/core-js-2.5.3/shim.min.js"></script>
+<script src="lib/react-18.2.0/react.min.js"></script>
+<script src="lib/react-18.2.0/react-dom.min.js"></script>
+<script src="lib/reactwidget-2.0.0/react-tools.umd.cjs"></script>
+<script src="lib/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="lib/reactable-0.4.4/reactable.css" rel="stylesheet" />
+<script src="lib/reactable-binding-0.4.4/reactable.js"></script>
+
+</head>
+<body>
+<div id="zsatxfzadg" class=".gt_table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  <style>#zsatxfzadg table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#zsatxfzadg thead, #zsatxfzadg tbody, #zsatxfzadg tfoot, #zsatxfzadg tr, #zsatxfzadg td, #zsatxfzadg th {
+  border-style: none;
+}
+
+#zsatxfzadg p {
+  margin: 0;
+  padding: 0;
+}
+
+#zsatxfzadg .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#zsatxfzadg .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#zsatxfzadg .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#zsatxfzadg .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#zsatxfzadg .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#zsatxfzadg .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#zsatxfzadg .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#zsatxfzadg .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#zsatxfzadg .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#zsatxfzadg .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#zsatxfzadg .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#zsatxfzadg .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#zsatxfzadg .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#zsatxfzadg .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#zsatxfzadg .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsatxfzadg .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#zsatxfzadg .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#zsatxfzadg .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#zsatxfzadg .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsatxfzadg .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#zsatxfzadg .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsatxfzadg .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#zsatxfzadg .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsatxfzadg .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zsatxfzadg .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zsatxfzadg .gt_left {
+  text-align: left;
+}
+
+#zsatxfzadg .gt_center {
+  text-align: center;
+}
+
+#zsatxfzadg .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#zsatxfzadg .gt_font_normal {
+  font-weight: normal;
+}
+
+#zsatxfzadg .gt_font_bold {
+  font-weight: bold;
+}
+
+#zsatxfzadg .gt_font_italic {
+  font-style: italic;
+}
+
+#zsatxfzadg .gt_super {
+  font-size: 65%;
+}
+
+#zsatxfzadg .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#zsatxfzadg .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#zsatxfzadg .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#zsatxfzadg .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#zsatxfzadg .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#zsatxfzadg .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#zsatxfzadg .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#zsatxfzadg .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#zsatxfzadg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+  <div style="font-family:system-ui, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif;border-top-style:solid;border-top-width:2px;border-top-color:#D3D3D3;padding-bottom:8px;">
+    <div class="gt_heading gt_title gt_font_normal" style="text-size:bigger;"><span class='gt_from_md'>Massachusetts <strong>State Senate</strong> Districts</span></div>
+    <div class="gt_heading gt_subtitle gt_bottom_border"></div>
+  </div>
+  <div id="zsatxfzadg" class="reactable html-widget" style="width:auto;height:auto;"></div>
+  <script type="application/json" data-for="zsatxfzadg">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"district_ref":["[Second Essex](state-senate-second-essex.html)","[Bristol and Norfolk](state-senate-bristol-and-norfolk.html)","[First Bristol and Plymouth](state-senate-first-bristol-and-plymouth.html)","[Second Bristol and Plymouth](state-senate-second-bristol-and-plymouth.html)","[Cape and Islands](state-senate-cape-and-islands.html)","[First Essex](state-senate-first-essex.html)","[First Essex and Middlesex](state-senate-first-essex-and-middlesex.html)","[Second Essex and Middlesex](state-senate-second-essex-and-middlesex.html)","[Hampden](state-senate-hampden.html)","[First Middlesex](state-senate-first-middlesex.html)","[Second Middlesex](state-senate-second-middlesex.html)","[Third Middlesex](state-senate-third-middlesex.html)","[Fourth Middlesex](state-senate-fourth-middlesex.html)","[Middlesex and Worcester](state-senate-middlesex-and-worcester.html)","[Norfolk and Plymouth](state-senate-norfolk-and-plymouth.html)","[Plymouth and Barnstable](state-senate-plymouth-and-barnstable.html)","[First Suffolk](state-senate-first-suffolk.html)","[Second Suffolk](state-senate-second-suffolk.html)","[First Worcester](state-senate-first-worcester.html)","[Second Worcester](state-senate-second-worcester.html)","[Worcester and Middlesex](state-senate-worcester-and-middlesex.html)","[Middlesex and Suffolk](state-senate-middlesex-and-suffolk.html)","[Fifth Middlesex](state-senate-fifth-middlesex.html)","[Hampden and Hampshire](state-senate-hampden-and-hampshire.html)","[Middlesex and Norfolk](state-senate-middlesex-and-norfolk.html)","[Third Essex](state-senate-third-essex.html)","[Norfolk and Suffolk](state-senate-norfolk-and-suffolk.html)","[Suffolk and Middlesex](state-senate-suffolk-and-middlesex.html)","[Third Suffolk](state-senate-third-suffolk.html)","[Hampshire, Franklin and Worcester](state-senate-hampshire-franklin-and-worcester.html)","[Berkshire, Hampden, Franklin and Hampshire](state-senate-berkshire-hampden-franklin-and-hampshire.html)","[Second Plymouth and Norfolk](state-senate-second-plymouth-and-norfolk.html)","[Worcester and Hampshire](state-senate-worcester-and-hampshire.html)","[Hampden, Hampshire and Worcester](state-senate-hampden-hampshire-and-worcester.html)","[Norfolk, Worcester and Middlesex](state-senate-norfolk-worcester-and-middlesex.html)","[Third Bristol and Plymouth](state-senate-third-bristol-and-plymouth.html)","[Worcester and Hampden](state-senate-worcester-and-hampden.html)","[Norfolk, Plymouth and Bristol](state-senate-norfolk-plymouth-and-bristol.html)","[Norfolk and Middlesex](state-senate-norfolk-and-middlesex.html)","[First Plymouth and Norfolk](state-senate-first-plymouth-and-norfolk.html)"],"legislator":["Joan B. Lovely (D-Salem)","Paul R. Feeney (D-Foxborough)","Michael J. Rodrigues (D-Westport)","Mark C. Montigny (D-New Bedford)","Julian Andre Cyr (D-Provincetown)","Pavel M. Payano (D-Lawrence)","Bruce E. Tarr (R-Gloucester)","Barry R. Finegold (D-Andover)","Adam Gomez (D-Springfield)","Edward J. Kennedy (D-Lowell)","Patricia D. Jehlen (D-Somerville)","Michael J. Barrett (D-Lexington)","Cindy F. Friedman (D-Arlington)","James B. Eldridge (D-Marlborough)","John F. Keenan (D-Quincy)","Dylan A. Fernandes (D-Falmouth)","Nicholas P. Collins (D-Boston)","Liz Miranda (D-Boston)","Robyn K. Kennedy (D-Worcester)","Michael O. Moore (D-Millbury)","John J. Cronin (D-Fitchburg)","Sal N. DiDomenico (D-Everett)","Jason M. Lewis (D-Winchester)","John C. Velis (D-Westfield)","Karen E. Spilka (D-Ashland)","Brendan Peter Crighton (D-Lynn)","Michael F. Rush (D-Boston)","William N. Brownsberger (D-Belmont)","Lydia Marie Edwards (D-Boston)","Jo Comerford (D-Northampton)","Paul W. Mark (D-Becket)","Michael D. Brady (D-Brockton)","Peter J. Durant (R-Spencer)","Jacob R. Oliveira (D-Ludlow)","Rebecca L. Rausch (D-Needham)","Kelly A. Dooner (R-Taunton)","Ryan C. Fattman (R-Sutton)","William J. Driscoll, Jr (D-Milton)","Cynthia Stone Creem (D-Newton)","Patrick A. O'Connor (R-Weymouth)"],"party":["Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Republican","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Democratic","Republican","Democratic","Democratic","Republican","Republican","Democratic","Democratic","Republican"],"city_town":["Salem","Foxborough","Westport","New Bedford","Provincetown","Lawrence","Gloucester","Andover","Springfield","Lowell","Somerville","Lexington","Arlington","Marlborough","Quincy","Falmouth","Boston","Boston","Worcester","Millbury","Fitchburg","Everett","Winchester","Westfield","Ashland","Lynn","Boston","Belmont","Boston","Northampton","Becket","Brockton","Spencer","Ludlow","Needham","Taunton","Sutton","Milton","Newton","Weymouth"],"percent":[0.668518902004096,0.729946492200255,1,1,0.609647054384939,1,1,1,1,0.635789702840971,1,1,1,1,1,0.512132811417486,1,1,1,1,0.591041720592042,1,1,1,1,1,1,1,0.702194674167523,1,0.709446907445608,1,0.584171203972787,1,0.589041236689553,0.483639898152159,0.658667928212664,1,1,1],"PVI":["D+13","D+9","R+1","D+4","D+14","D+10","D+12","D+8","D+18","D+7","D+33","D+22","D+17","D+21","D+9","D+6","D+27","D+40","D+17","D+12","D+9","D+31","D+17","D+6","D+21","D+12","D+19","D+33","D+20","D+23","D+18","D+14","D+1","D+5","D+13","R+1","R+1","D+12","D+32","D+10"],"PVI_N":[12.9289467569208,9.47839616473235,-1.45997315689095,3.93509669016376,14.4093805086303,9.51921104368577,11.9293645644304,8.14347703649321,17.8287465485602,7.26631662934906,32.5017630886327,22.1553915899822,17.2051397521995,21.4435482988731,9.08203583563739,6.09861807397474,27.2120562151542,40.2087692868763,16.5109438007446,11.5676784897015,8.84679776137227,30.8235992504896,17.3559888731099,5.58644237436405,21.1605689270696,11.911769508163,18.8643020023815,32.5664858395329,20.0717027240813,22.6612008172025,18.1867882297686,13.5521478780245,1.06767228966035,4.93216893410381,12.9643563852344,-0.700793631919028,-1.30994120393481,11.6585500941682,32.4504218278043,10.2759924935472]},"columns":[{"id":"district_ref","name":"district_ref","type":["glue","character"],"na":"NA","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["<span class='gt_from_md'><a href=\"state-senate-second-essex.html\">Second Essex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-bristol-and-norfolk.html\">Bristol and Norfolk<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-first-bristol-and-plymouth.html\">First Bristol and Plymouth<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-second-bristol-and-plymouth.html\">Second Bristol and Plymouth<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-cape-and-islands.html\">Cape and Islands<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-first-essex.html\">First Essex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-first-essex-and-middlesex.html\">First Essex and Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-second-essex-and-middlesex.html\">Second Essex and Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-hampden.html\">Hampden<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-first-middlesex.html\">First Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-second-middlesex.html\">Second Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-third-middlesex.html\">Third Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-fourth-middlesex.html\">Fourth Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-middlesex-and-worcester.html\">Middlesex and Worcester<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-norfolk-and-plymouth.html\">Norfolk and Plymouth<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-plymouth-and-barnstable.html\">Plymouth and Barnstable<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-first-suffolk.html\">First Suffolk<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-second-suffolk.html\">Second Suffolk<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-first-worcester.html\">First Worcester<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-second-worcester.html\">Second Worcester<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-worcester-and-middlesex.html\">Worcester and Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-middlesex-and-suffolk.html\">Middlesex and Suffolk<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-fifth-middlesex.html\">Fifth Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-hampden-and-hampshire.html\">Hampden and Hampshire<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-middlesex-and-norfolk.html\">Middlesex and Norfolk<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-third-essex.html\">Third Essex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-norfolk-and-suffolk.html\">Norfolk and Suffolk<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-suffolk-and-middlesex.html\">Suffolk and Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-third-suffolk.html\">Third Suffolk<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-hampshire-franklin-and-worcester.html\">Hampshire, Franklin and Worcester<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-berkshire-hampden-franklin-and-hampshire.html\">Berkshire, Hampden, Franklin and Hampshire<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-second-plymouth-and-norfolk.html\">Second Plymouth and Norfolk<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-worcester-and-hampshire.html\">Worcester and Hampshire<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-hampden-hampshire-and-worcester.html\">Hampden, Hampshire and Worcester<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-norfolk-worcester-and-middlesex.html\">Norfolk, Worcester and Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-third-bristol-and-plymouth.html\">Third Bristol and Plymouth<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-worcester-and-hampden.html\">Worcester and Hampden<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-norfolk-plymouth-and-bristol.html\">Norfolk, Plymouth and Bristol<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-norfolk-and-middlesex.html\">Norfolk and Middlesex<\/a><\/span>","<span class='gt_from_md'><a href=\"state-senate-first-plymouth-and-norfolk.html\">First Plymouth and Norfolk<\/a><\/span>"],"html":true,"align":"center"},{"id":"legislator","name":"legislator","type":"character","na":"NA","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","html":true,"align":"left"},{"id":"party","name":"party","type":"character","na":"NA","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","html":true,"width":170,"align":"left"},{"id":"city_town","name":"city_town","type":"character","na":"NA","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","html":true,"width":200,"align":"left"},{"id":"percent","name":"percent","type":"numeric","na":"NA","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["67%","73%","100%","100%","61%","100%","100%","100%","100%","64%","100%","100%","100%","100%","100%","51%","100%","100%","100%","100%","59%","100%","100%","100%","100%","100%","100%","100%","70%","100%","71%","100%","58%","100%","59%","48%","66%","100%","100%","100%"],"html":true,"width":100,"align":"right"},{"id":"PVI","name":"PVI","type":"character","na":"NA","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","html":true,"width":100,"align":"left"},{"id":"PVI_N","name":"PVI_N","type":"numeric","na":"NA","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["12.9","9.5","−1.5","3.9","14.4","9.5","11.9","8.1","17.8","7.3","32.5","22.2","17.2","21.4","9.1","6.1","27.2","40.2","16.5","11.6","8.8","30.8","17.4","5.6","21.2","11.9","18.9","32.6","20.1","22.7","18.2","13.6","1.1","4.9","13.0","−0.7","−1.3","11.7","32.5","10.3"],"html":true,"width":100,"align":"right"}],"filterable":true,"searchable":true,"pagination":false,"defaultPageSize":10,"showPageSizeOptions":false,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPagination":false,"showPageInfo":true,"minRows":1,"compact":true,"height":"auto","theme":{"color":"#333333","backgroundColor":"#FFFFFF","stripedColor":"rgba(128,128,128,0.05)","style":{"font-family":"system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif","fontSize":"16px"},"tableStyle":{"borderTopStyle":"solid","borderTopWidth":"2px","borderTopColor":"#D3D3D3"},"headerStyle":{"fontWeight":"normal","backgroundColor":"transparent","borderBottomStyle":"solid","borderBottomWidth":"2px","borderBottomColor":"#D3D3D3"},"groupHeaderStyle":{"fontWeight":"normal","backgroundColor":"transparent","borderBottomStyle":"solid","borderBottomWidth":"2px","borderBottomColor":"#D3D3D3"},"cellStyle":{"fontWeight":"normal"}},"elementId":"zsatxfzadg","dataKey":"c63d323a94c8fc849b263a9158cd0263"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.0.style","tag.attribs.columns.1.style","tag.attribs.columns.2.style","tag.attribs.columns.3.style","tag.attribs.columns.4.style","tag.attribs.columns.5.style","tag.attribs.columns.6.style"],"jsHooks":[]}</script>
+</div>
+</body>
+</html>
