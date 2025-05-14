@@ -2,13 +2,42 @@ library(tidyverse)
 library(gt)
 library(sf)
 library(tmap)
+library(quarto)
 
+fix_district <- function(district_name) {
+    str_replace_all(
+        district_name,
+        c(" & " = " and ",
+          "10" = "Tenth",
+          "11" = "Eleventh",
+          "1" = "First",
+          "2" = "Second",
+          "3" = "Third",
+          "4" = "Fourth",
+          "5" = "Fifth",
+          "6" = "Sixth",
+          "7" = "Seventh",
+          "8" = "Eighth",
+          "9" = "Ninth")
+    )
+}
+
+## Read district-level PVI data for joining with elections
+##
 pvi_all <-
     read_csv("../pvi/ma_legislative_district_pvi_2024.csv") |>
-    mutate(district = str_replace(district, " & ", " and "))
+    mutate(district = fix_district(district))
 
+## "State Representative"
+## "State Senate"
+## "Governor's Council"
+## "U.S. House"
+##
 legislative_offices <- unique(pvi_all$office)
 
+## General election summaries from 1990 filtered
+## for just the legislative offices.
+##
 leg_elections <-
     read_csv(
         str_c("https://bwbensonjr.github.io/",
@@ -16,8 +45,11 @@ leg_elections <-
               "ma_general_election_summaries.csv.gz")
     ) |>
     filter(office %in% legislative_offices) |>
-    mutate(district = str_replace(district, " & ", " and "))
-    
+    mutate(district = fix_district(district))
+
+## The most recent general election date for each
+## legislative office.
+##
 most_recent_general <-
     leg_elections |>
         filter(! is_special) |>
@@ -27,6 +59,10 @@ most_recent_general <-
         select(office, latest_general=election_date) |>
         ungroup()
 
+## The most recent election for each legislative
+## district which may be the most recent general,
+## or a special election that has happened since.
+##
 latest_district_elections <-
     leg_elections |>
         left_join(most_recent_general, by="office") |>
@@ -36,10 +72,12 @@ latest_district_elections <-
         slice(1) |>
         ungroup()
 
-latest_district_elections |>
-    write_csv("ma_latest_legislative_elections.csv")
+## latest_district_elections |>
+##     write_csv("ma_latest_legislative_elections.csv")
 
-office_prefix <- function(office_name) {
+## Office-specific slug for use in file names.
+##
+office_slug <- function(office_name) {
     case_when(
         (office_name == "State Representative") ~ "state-rep",
         (office_name == "State Senate") ~ "state-senate",
@@ -48,6 +86,8 @@ office_prefix <- function(office_name) {
     )
 }
 
+## District-specific slug for use in file names.
+##
 district_slug <- function(district_name) {
     str_replace_all(
         str_to_lower(district_name),
@@ -66,22 +106,32 @@ district_slug <- function(district_name) {
      )
 }
 
+## Office-specific path
+office_path <- function(office_name) {
+    str_glue("pages/{office_slug(office_name)}-districts.html")
+}
+
+## District-specific file name
 district_file <- function(office_name, district_name) {
-    str_glue("{office_prefix(office_name)}-{district_slug(district_name)}.html")
+    str_glue("{office_slug(office_name)}-{district_slug(district_name)}.html")
 }
 
 district_path <- function(office_name, district_name) {
     str_glue("pages/{district_file(office_name, district_name)}")
 }
 
+## Markdown reference to district file
 district_md_ref <- function(office_name, district_name) {
     str_glue("[{district_name}]({district_file(office_name, district_name)})")
 }
 
+## `href` reference to district file for map label
 district_web_ref <- function(office_name, district_name) {
     str_glue("<a href={district_file(office_name, district_name)}>{district_name}</a>")
 }
 
+## A high-level summary of districts used in office-level table.
+##
 legislative_district_info <-
     latest_district_elections |>
         mutate(district_md_ref = district_md_ref(office, district),
@@ -99,12 +149,12 @@ legislative_district_info <-
         ) |>
         left_join(pvi_all, by=c("office", "district"))
 
-legislative_district_info |>
-    write_csv("ma_legislative_district_info.csv")
+## legislative_district_info |>
+##     write_csv("ma_legislative_district_info.csv")
 
-## Create HTML info tables by legislative office
+## Office-level summary table of districts
 
-district_table <- function(office_name) {
+office_table <- function(office_name) {
     legislative_district_info |>
         filter(office == office_name) |>
         arrange(district_id) |>
@@ -113,6 +163,13 @@ district_table <- function(office_name) {
             title=md(str_glue("Massachusetts **{office_name}** Districts"))
         ) |>
         cols_hide(columns=c(office, district_id, district, district_web_ref)) |>
+        cols_label(
+            district_md_ref ~ "District",
+            legislator ~ "Legislator",
+            party ~ "Party",
+            city_town ~ "City/Town",
+            percent ~ "Vote"
+        ) |>
         fmt_markdown(columns=district_md_ref) |>
         fmt_percent(columns=percent, decimals=0) |>
         fmt_number(columns=PVI_N, decimals=1) |>
@@ -129,22 +186,37 @@ district_table <- function(office_name) {
         )
 }
 
-write_district_info_page <- function(office_name, output_file) {
-    table <- district_table(office_name)
-    gtsave(table, output_file)
-}
-
-write_district_info_page("State Representative", "pages/state-rep-districts.html")
-write_district_info_page("State Senate", "pages/state-senate-districts.html")
-write_district_info_page("Governor's Council", "pages/gov-council-districts.html")
-write_district_info_page("U.S. House", "pages/us-house-districts.html")
-
-## Create map by legislative office
+## Office-level map
 
 tmap_mode("view")
 
-district_map <- function(dist, title, scale) {
-    (tm_shape(dist, name=title) +
+office_map_scale <- function(office_name) {
+    case_when(
+        (office_name == "State Representative") ~ 0.8,
+        (office_name == "State Senate") ~ 0.9,
+        (office_name == "Governor's Council") ~ 1.5,
+        (office_name == "U.S. House") ~ 1.5
+    )
+}
+
+office_map_geom_file <- function(office_name) {
+    case_when(
+        (office_name == "State Representative") ~ "../gis/geojson/house2021.geojson",
+        (office_name == "State Senate") ~ "../gis/geojson/senate2021.geojson",
+        (office_name == "Governor's Council") ~ "../gis/geojson/govcouncil2021.geojson",
+        (office_name == "U.S. House") ~ "../gis/geojson/congressma118.geojson"
+    )
+}
+
+office_map <- function(office_name) {
+    title <- str_glue("Massachusetts {office_name} Districts")
+    scale <- office_map_scale(office_name)
+    office_df <-
+        read_sf(office_map_geom_file(office_name)) |>
+        mutate(office = office_name) |>
+        left_join(legislative_district_info,
+                  by=c("office", "district"))
+    (tm_shape(office_df) +
      tm_polygons(
          col="MAP_COLORS",
          alpha=0.6,
@@ -167,66 +239,8 @@ district_map <- function(dist, title, scale) {
      tm_basemap("OpenStreetMap"))
 }
 
-state_rep <- read_sf("../gis/geojson/house2021.geojson") |>
-    mutate(office = "State Representative") |>
-    left_join(legislative_district_info, by=c("office", "district")) |>
-    select(-c(district_num, shape_area, office))
-
-state_rep_map <- district_map(
-    state_rep,
-    "Massachusetts State Representative Districts",
-    0.8
-)              
-tmap_save(state_rep_map, "pages/state-rep-map.html")
-
-state_senate <- read_sf("../gis/geojson/senate2021.geojson") |>
-    mutate(office = "State Senate") |>
-    left_join(legislative_district_info, by=c("office", "district")) |>
-    select(-c(district_num, shape_area, office))
-
-state_senate_map <- district_map(
-    state_senate,
-    "Massachusetts State Senate Districts",
-    0.9
-)              
-tmap_save(state_senate_map, "pages/state-senate-map.html")
-
-gov_council <- read_sf("../gis/geojson/govcouncil2021.geojson") |>
-    mutate(office = "Governor's Council") |>
-    left_join(legislative_district_info, by=c("office", "district")) |>
-    select(-c(district_num, shape_area, office))
-
-gov_council_map <- district_map(
-    gov_council,
-    "Massachusetts Governor's Council Districts",
-    1.5
-)              
-tmap_save(gov_council_map, "pages/gov-council-map.html")
-
-us_house <- read_sf("../gis/geojson/congressma118.geojson") |>
-    mutate(office = "U.S. House",
-           district = as.character(district_num)) |>
-    left_join(legislative_district_info, by=c("office", "district")) |>
-    select(-c(district_num, shape_area, office))
-
-us_house_map <- district_map(
-    us_house,
-    "Massachusetts U.S. House Districts",
-    1.5
-)              
-tmap_save(us_house_map, "pages/us-house-map.html")
-
-# district_map <- (
-#     state_rep_map +
-#     state_senate_map +
-#     gov_council_map +
-#     us_house_map
-# )
-
-## Per-District Pages
-
-election_history_table <- function(elections, office_name, district_name) {
-    elections |>
+district_table <- function(office_name, district_name) {
+    leg_elections |>
         filter(office == office_name, district == district_name) |>
         mutate(special = if_else(is_special, "Special", "")) |>
         arrange(desc(election_date)) |>
@@ -251,7 +265,10 @@ election_history_table <- function(elections, office_name, district_name) {
         tab_spanner(label="Democratic", columns=ends_with("_dem")) |>
         tab_spanner(label="Republican", columns=ends_with("_gop")) |>
         tab_spanner(label="Third-Party", columns=ends_with("_third_party")) |>
-        cols_label(-election_date ~ "") |> # Hide most column names
+        cols_label(-election_date ~ "", election_date ~ "Date") |> # Hide most column names
+        cols_width(
+            c(percent_dem, percent_gop, percent_third_party) ~ px(120)
+        ) |>
         tab_style(
             style=cell_text(weight="bold"),
             locations=list(
@@ -265,16 +282,6 @@ election_history_table <- function(elections, office_name, district_name) {
         )
 }
 
-generate_district_page <- function(office_name, district_name) {
-    table <- election_history_table(
-        leg_elections,
-        office_name,
-        district_name
-    )
-    file_name <- district_path(office_name, district_name)
-    gtsave(table, file_name)
+district_map <- function(office_name, district_name) {
+    str_glue("{office_name} - {district_name}")
 }
-
-legislative_district_info |>
-    select(office, district) |>
-    pwalk(generate_district_page)

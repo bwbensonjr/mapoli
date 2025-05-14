@@ -1,0 +1,26 @@
+---
+format:
+  html:
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+params:
+  office_name: "Legislative Office"
+  district_name: "Legislative District"
+title: Massachusetts `r params$district_name` `r params$office_name` District
+---
+
+```{r}
+source("legislative_info.R")
+```
+
+```{r}
+district_map(params$office_name, params$district_name)
+```
+
+```{r}
+district_table(params$office_name, params$district_name)
+```
+
+
