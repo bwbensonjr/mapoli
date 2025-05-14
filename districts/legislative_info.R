@@ -164,11 +164,11 @@ office_table <- function(office_name) {
         ) |>
         cols_hide(columns=c(office, district_id, district, district_web_ref)) |>
         cols_label(
-            district_md_ref ~ "District",
-            legislator ~ "Legislator",
-            party ~ "Party",
-            city_town ~ "City/Town",
-            percent ~ "Vote"
+            district_md_ref = "District",
+            legislator = "Legislator",
+            party = "Party",
+            city_town = "City/Town",
+            percent = "Vote"
         ) |>
         fmt_markdown(columns=district_md_ref) |>
         fmt_percent(columns=percent, decimals=0) |>
@@ -265,7 +265,7 @@ district_table <- function(office_name, district_name) {
         tab_spanner(label="Democratic", columns=ends_with("_dem")) |>
         tab_spanner(label="Republican", columns=ends_with("_gop")) |>
         tab_spanner(label="Third-Party", columns=ends_with("_third_party")) |>
-        cols_label(-election_date ~ "", election_date ~ "Date") |> # Hide most column names
+        cols_label(-election_date ~ "", election_date = "Date") |> # Hide most column names
         cols_width(
             c(percent_dem, percent_gop, percent_third_party) ~ px(120)
         ) |>

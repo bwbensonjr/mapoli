@@ -4,8 +4,8 @@ import subprocess
 def main():
     df = pd.read_csv("ma_legislative_district_info.csv")
     offices = df["office"].unique()
-    # for office_name in offices:
-    #     generate_office_page(office_name)
+    for office_name in offices:
+        generate_office_page(office_name)
     districts = df[["office", "district"]].values
     for office_name, district_name in districts:
         generate_district_page(office_name, district_name)
