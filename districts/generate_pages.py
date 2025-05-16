@@ -38,6 +38,7 @@ def district_file(office_name, district_name):
 
 def generate_office_page(office_name):
     output_file = office_summary_file(office_name)
+    print(f"Generating office page {office_name} - {output_file}...")
     command = [
         "quarto", "render", "office_page.qmd",
         "--to", "html",
@@ -50,6 +51,7 @@ def generate_office_page(office_name):
 
 def generate_district_page(office_name, district_name):
     output_file = district_file(office_name, district_name)
+    print(f"Generating district page {office_name} - {district_name} - {output_file}...")
     command = [
         "quarto", "render", "district_page.qmd",
         "--to", "html",

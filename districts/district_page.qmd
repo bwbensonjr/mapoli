@@ -15,12 +15,19 @@ title: Massachusetts `r params$district_name` `r params$office_name` District
 source("legislative_info.R")
 ```
 
-```{r}
-district_map(params$office_name, params$district_name)
-```
+## District
 
 ```{r}
-district_table(params$office_name, params$district_name)
+# district_precincts(params$office_name, params$district_name)
+
+dist_map <- district_map(params$office_name, params$district_name)
+tmap_leaflet(dist_map)
+```
+
+## Elections
+
+```{r}
+district_elections(params$office_name, params$district_name)
 ```
 
 

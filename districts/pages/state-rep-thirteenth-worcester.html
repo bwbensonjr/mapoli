@@ -33,6 +33,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="district_page_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="district_page_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="district_page_files/libs/bootstrap/bootstrap-973236bd072d72a04ee9cd82dcc9cb29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="district_page_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="district_page_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="district_page_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="district_page_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="district_page_files/libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="district_page_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="district_page_files/libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="district_page_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="district_page_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="district_page_files/libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<script src="district_page_files/libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="district_page_files/libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
 
 </head>
@@ -62,30 +74,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>State Representative - Thirteenth Worcester</code></pre>
-</div>
-</div>
+<section id="district" class="level2">
+<h2 class="anchored" data-anchor-id="district">District</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="qbbjpvzlrf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qbbjpvzlrf table {
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-71e0291bbf43b21d6a32" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-71e0291bbf43b21d6a32">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.840985,-71.844931,-71.845873,-71.84819999999999,-71.84826699999999,-71.84783500000002,-71.84776599999999,-71.847301,-71.847185,-71.845867,-71.846608,-71.848507,-71.850537,-71.85386099999999,-71.85486899999999,-71.854708,-71.85484199999999,-71.854327,-71.854708,-71.85674399999999,-71.85816199999999,-71.860074,-71.861023,-71.861392,-71.86160799999999,-71.861234,-71.86125299999999,-71.86234999999999,-71.87672599999999,-71.88404299999999,-71.85906200000001,-71.845416,-71.82886300000001,-71.811865,-71.811038,-71.810846,-71.810445,-71.80975200000002,-71.80922799999999,-71.80734099999999,-71.80539999999999,-71.807399,-71.805831,-71.80657099999999,-71.807231,-71.805983,-71.80085699999999,-71.801068,-71.80134,-71.800915,-71.80250199999999,-71.803134,-71.804779,-71.805127,-71.807243,-71.807126,-71.806787,-71.80662599999999,-71.80775,-71.809112,-71.809597,-71.810868,-71.81133,-71.811661,-71.812292,-71.812646,-71.81366299999999,-71.814255,-71.815287,-71.816226,-71.81668599999999,-71.818032,-71.81777599999999,-71.81788399999999,-71.819058,-71.82095289999999,-71.82090599999999,-71.82056399999999,-71.81867099999999,-71.8197065,-71.819739,-71.820263,-71.818063,-71.81819399999999,-71.81768199999999,-71.81781699999999,-71.81707899999999,-71.81693199999999,-71.81607,-71.812899,-71.812966,-71.81196799999999,-71.812291,-71.80722799999999,-71.80728100000002,-71.807022,-71.806557,-71.808522,-71.80853569999999,-71.80598900000001,-71.80623299999999,-71.80539499999999,-71.804233,-71.80429099999999,-71.803268,-71.79968099999999,-71.79965299999999,-71.80053599999999,-71.799587,-71.798132,-71.79758700000001,-71.797434,-71.797843,-71.79796999999999,-71.7979,-71.79782899999999,-71.79758,-71.793474,-71.794079,-71.795039,-71.795489,-71.79627700000002,-71.798439,-71.79867299999999,-71.798636,-71.80225799999999,-71.8067291,-71.80688499999999,-71.80868,-71.80931699999999,-71.80975400000001,-71.81220399999999,-71.81457399999999,-71.81527,-71.814618,-71.82008650000002,-71.81640899999999,-71.81699399999999,-71.817673,-71.82067499999999,-71.81844099999999,-71.82076499999999,-71.82127899999999,-71.82579199999999,-71.82747499999999,-71.829803,-71.830989,-71.830117,-71.8326,-71.833776,-71.836545,-71.838222,-71.8384028,-71.837593,-71.839614,-71.839015,-71.840985],"lat":[42.261408,42.260189,42.260433,42.26222,42.261321,42.260675,42.26001900000001,42.25946,42.25882199999999,42.25868699999999,42.258194,42.257754,42.261948,42.266569,42.270043,42.271539,42.273459,42.274574,42.273816,42.27335300000001,42.272552,42.27188900000001,42.271181,42.270639,42.26982699999999,42.268347,42.267503,42.265968,42.26669200000001,42.281253,42.29652299999999,42.30485900000001,42.314981,42.325392,42.323967,42.32235499999999,42.321604,42.321356,42.32082399999999,42.317921,42.317328,42.31470400000001,42.314299,42.311915,42.30701499999999,42.30691399999999,42.305118,42.304484,42.302166,42.300016,42.29856399999999,42.296545,42.299075,42.29893999999999,42.299067,42.300429,42.300815,42.301603,42.30361,42.302555,42.302552,42.30298500000001,42.302969,42.302722,42.30315700000001,42.302599,42.302376,42.302649,42.303678,42.30419,42.304707,42.304791,42.302096,42.299881,42.300196,42.3003742,42.299737,42.298834,42.29627199999999,42.2963515,42.29603499999999,42.293065,42.292744,42.29226,42.292194,42.291286,42.29125800000001,42.29113299999999,42.29118799999999,42.289911,42.289243,42.289019,42.28705300000001,42.286542,42.286756,42.286515,42.286525,42.283334,42.2816451,42.281863,42.282266,42.282521,42.28264799999999,42.282954,42.283353,42.28415,42.28548199999999,42.287178,42.287498,42.28765500000001,42.28797300000001,42.287567,42.286454,42.285434,42.282926,42.27901599999999,42.277504,42.268764,42.268819,42.26916300000001,42.269088,42.268655,42.268738,42.27002799999999,42.271285,42.271443,42.2710816,42.26779399999999,42.267981,42.263986,42.26400700000001,42.26403799999999,42.263732,42.266094,42.270444,42.27011650000001,42.27031600000001,42.26956,42.26746600000001,42.261493,42.260892,42.25644200000001,42.256561,42.25768,42.25859,42.25875499999999,42.25923299999999,42.263016,42.263461,42.26407999999999,42.265648,42.264461,42.26460969999999,42.26389,42.26309500000001,42.262184,42.261408]}],[{"lng":[-71.853309,-71.853087,-71.854327,-71.853309],"lat":[42.275652,42.27600150000001,42.274574,42.275652]}],[{"lng":[-71.83961579999999,-71.83939099999999,-71.83934259999999,-71.83961579999999],"lat":[42.2658885,42.265488,42.265445,42.2658885]}],[{"lng":[-71.84164699999999,-71.842619,-71.84162619999999,-71.84164699999999],"lat":[42.26943,42.270008,42.2693908,42.26943]}],[{"lng":[-71.84161550000002,-71.84160899999999,-71.84170899999999,-71.84161550000002],"lat":[42.2700717,42.270203,42.270475,42.2700717]}],[{"lng":[-71.8409071,-71.841953,-71.8419078,-71.8409071],"lat":[42.27518389999999,42.271527,42.2713323,42.27518389999999]}],[{"lng":[-71.8362266,-71.83728099999999,-71.8376227,-71.8362266],"lat":[42.27676690000001,42.27725,42.27730990000001,42.27676690000001]}],[{"lng":[-71.83806199999999,-71.83894219999999,-71.83787180000002,-71.83806199999999],"lat":[42.277387,42.2773508,42.2773536,42.277387]}],[{"lng":[-71.840345,-71.84026249999999,-71.841883,-71.840345],"lat":[42.277347,42.27734720000001,42.277498,42.277347]}],[{"lng":[-71.855279,-71.855042,-71.85496790000001,-71.855279],"lat":[42.278205,42.276903,42.27683680000001,42.278205]}],[{"lng":[-71.8336412,-71.833679,-71.834034,-71.8336412],"lat":[42.2835546,42.283486,42.281882,42.2835546]}],[{"lng":[-71.85470550000001,-71.854901,-71.85505499999999,-71.85470550000001],"lat":[42.286156,42.28619,42.286044,42.286156]}],[{"lng":[-71.85458389999999,-71.854936,-71.85466719999999,-71.85458389999999],"lat":[42.2861949,42.286356,42.2861682,42.2861949]}],[{"lng":[-71.843135,-71.837806,-71.84322039999999,-71.843135],"lat":[42.300884,42.296319,42.30098479999999,42.300884]}],[{"lng":[-71.82530199999999,-71.825361,-71.8251118,-71.82530199999999],"lat":[42.269804,42.2697642,42.2698154,42.269804]}],[{"lng":[-71.828839,-71.82879299999999,-71.82868089999999,-71.828839],"lat":[42.2709896,42.270953,42.27091610000001,42.2709896]}],[{"lng":[-71.8301968,-71.83015399999999,-71.8297573,-71.8301968],"lat":[42.2720897,42.272037,42.271721,42.2720897]}],[{"lng":[-71.83128099999999,-71.8315679,-71.83081039999999,-71.83128099999999],"lat":[42.273446,42.2737166,42.2728405,42.273446]}],[{"lng":[-71.83193299999999,-71.83553499999999,-71.83562359999999,-71.83189639999999,-71.83193299999999],"lat":[42.274061,42.27645,42.2764906,42.2740265,42.274061]}],[{"lng":[-71.81711299999999,-71.818178,-71.816907,-71.81711299999999],"lat":[42.280086,42.27517599999999,42.28096,42.280086]}],[{"lng":[-71.81532799999999,-71.81718599999999,-71.816907,-71.81532799999999],"lat":[42.281617,42.2809184,42.28096,42.281617]}],[{"lng":[-71.80855249999999,-71.808527,-71.80854459999999,-71.80855249999999],"lat":[42.2789795,42.279023,42.2804167,42.2789795]}],[{"lng":[-71.81742799999999,-71.81854899999999,-71.81756399999999,-71.81742799999999],"lat":[42.2808823,42.28107600000001,42.280862,42.2808823]}],[{"lng":[-71.82030899999999,-71.8213064,-71.82121599999999,-71.82030899999999],"lat":[42.282013,42.2823633,42.28231,42.282013]}],[{"lng":[-71.82422699999999,-71.82753199999999,-71.827371,-71.82422699999999],"lat":[42.284544,42.2861163,42.28597600000001,42.284544]}],[{"lng":[-71.8283864,-71.828373,-71.8281518,-71.8283864],"lat":[42.2869366,42.286849,42.2866563,42.2869366]}],[{"lng":[-71.8290049,-71.828593,-71.82894899999999,-71.8290049],"lat":[42.2888597,42.288292,42.288825,42.2888597]}]]],"Worcester","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#CCEBC5","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Worcester<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>city_town<\/nobr><\/td><td align=\"right\"><nobr>Worcester<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>name<\/nobr><\/td><td align=\"right\"><nobr>Worcester - 13 of 62 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Worcester",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.28593352432421,-71.83581975175682,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Worcester.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Worcester",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.25644200000001,42.325392],"lng":[-71.88404299999999,-71.793474]},"fitBounds":[42.25644199931214,-71.8840429998436,42.32539200042113,-71.79347399994396,[]]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="elections" class="level2">
+<h2 class="anchored" data-anchor-id="elections">Elections</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="rajdsksvis" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rajdsksvis table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qbbjpvzlrf thead, #qbbjpvzlrf tbody, #qbbjpvzlrf tfoot, #qbbjpvzlrf tr, #qbbjpvzlrf td, #qbbjpvzlrf th {
+#rajdsksvis thead, #rajdsksvis tbody, #rajdsksvis tfoot, #rajdsksvis tr, #rajdsksvis td, #rajdsksvis th {
   border-style: none;
 }
 
-#qbbjpvzlrf p {
+#rajdsksvis p {
   margin: 0;
   padding: 0;
 }
 
-#qbbjpvzlrf .gt_table {
+#rajdsksvis .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -111,12 +129,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_caption {
+#rajdsksvis .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qbbjpvzlrf .gt_title {
+#rajdsksvis .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -128,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#qbbjpvzlrf .gt_subtitle {
+#rajdsksvis .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -140,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#qbbjpvzlrf .gt_heading {
+#rajdsksvis .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -152,13 +170,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_bottom_border {
+#rajdsksvis .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_col_headings {
+#rajdsksvis .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -173,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_col_heading {
+#rajdsksvis .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -193,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#qbbjpvzlrf .gt_column_spanner_outer {
+#rajdsksvis .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -205,15 +223,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#qbbjpvzlrf .gt_column_spanner_outer:first-child {
+#rajdsksvis .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qbbjpvzlrf .gt_column_spanner_outer:last-child {
+#rajdsksvis .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qbbjpvzlrf .gt_column_spanner {
+#rajdsksvis .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -225,11 +243,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#qbbjpvzlrf .gt_spanner_row {
+#rajdsksvis .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qbbjpvzlrf .gt_group_heading {
+#rajdsksvis .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +273,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#qbbjpvzlrf .gt_empty_group_heading {
+#rajdsksvis .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -270,15 +288,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#qbbjpvzlrf .gt_from_md > :first-child {
+#rajdsksvis .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qbbjpvzlrf .gt_from_md > :last-child {
+#rajdsksvis .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qbbjpvzlrf .gt_row {
+#rajdsksvis .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -297,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#qbbjpvzlrf .gt_stub {
+#rajdsksvis .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -310,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qbbjpvzlrf .gt_stub_row_group {
+#rajdsksvis .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -324,15 +342,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#qbbjpvzlrf .gt_row_group_first td {
+#rajdsksvis .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qbbjpvzlrf .gt_row_group_first th {
+#rajdsksvis .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qbbjpvzlrf .gt_summary_row {
+#rajdsksvis .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -342,16 +360,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qbbjpvzlrf .gt_first_summary_row {
+#rajdsksvis .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_first_summary_row.thick {
+#rajdsksvis .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qbbjpvzlrf .gt_last_summary_row {
+#rajdsksvis .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -361,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_grand_summary_row {
+#rajdsksvis .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -371,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qbbjpvzlrf .gt_first_grand_summary_row {
+#rajdsksvis .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +399,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_last_grand_summary_row_top {
+#rajdsksvis .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -391,11 +409,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_striped {
+#rajdsksvis .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qbbjpvzlrf .gt_table_body {
+#rajdsksvis .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -404,7 +422,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_footnotes {
+#rajdsksvis .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -418,7 +436,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_footnote {
+#rajdsksvis .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -427,7 +445,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qbbjpvzlrf .gt_sourcenotes {
+#rajdsksvis .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -441,7 +459,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qbbjpvzlrf .gt_sourcenote {
+#rajdsksvis .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -449,82 +467,79 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qbbjpvzlrf .gt_left {
+#rajdsksvis .gt_left {
   text-align: left;
 }
 
-#qbbjpvzlrf .gt_center {
+#rajdsksvis .gt_center {
   text-align: center;
 }
 
-#qbbjpvzlrf .gt_right {
+#rajdsksvis .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qbbjpvzlrf .gt_font_normal {
+#rajdsksvis .gt_font_normal {
   font-weight: normal;
 }
 
-#qbbjpvzlrf .gt_font_bold {
+#rajdsksvis .gt_font_bold {
   font-weight: bold;
 }
 
-#qbbjpvzlrf .gt_font_italic {
+#rajdsksvis .gt_font_italic {
   font-style: italic;
 }
 
-#qbbjpvzlrf .gt_super {
+#rajdsksvis .gt_super {
   font-size: 65%;
 }
 
-#qbbjpvzlrf .gt_footnote_marks {
+#rajdsksvis .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qbbjpvzlrf .gt_asterisk {
+#rajdsksvis .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qbbjpvzlrf .gt_indent_1 {
+#rajdsksvis .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qbbjpvzlrf .gt_indent_2 {
+#rajdsksvis .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qbbjpvzlrf .gt_indent_3 {
+#rajdsksvis .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qbbjpvzlrf .gt_indent_4 {
+#rajdsksvis .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qbbjpvzlrf .gt_indent_5 {
+#rajdsksvis .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qbbjpvzlrf .katex-display {
+#rajdsksvis .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qbbjpvzlrf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#rajdsksvis div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
 <table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
-<tr class="gt_heading header">
-<th colspan="8" class="gt_heading gt_title gt_font_normal gt_bottom_border">Massachusetts <strong>Thirteenth Worcester</strong> State Representative District</th>
-</tr>
-<tr class="gt_col_headings gt_spanner_row even">
+<tr class="gt_col_headings gt_spanner_row header">
 <th rowspan="2" id="election_date" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Date</th>
 <th rowspan="2" id="special" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"></th>
 <th colspan="2" id="Democratic" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
@@ -537,7 +552,7 @@ Republican
 Third-Party
 </div></th>
 </tr>
-<tr class="gt_col_headings header">
+<tr class="gt_col_headings even">
 <th id="display_dem" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
 <th id="percent_dem" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"></th>
 <th id="display_gop" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
@@ -791,6 +806,7 @@ Third-Party
 </div>
 </div>
 </div>
+</section>
 
 </main>
 <!-- /main column -->

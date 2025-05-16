@@ -22,6 +22,12 @@ fix_district <- function(district_name) {
     )
 }
 
+## Districts by precinct
+prec_dist <-
+    read_csv("../pvi/ma_precincts_districts_pres_2024.csv") |>
+    mutate(State_Senate = fix_district(State_Senate),
+           US_House = fix_district(US_House))
+
 ## Read district-level PVI data for joining with elections
 ##
 pvi_all <-
@@ -159,9 +165,6 @@ office_table <- function(office_name) {
         filter(office == office_name) |>
         arrange(district_id) |>
         gt() |>
-        tab_header(
-            title=md(str_glue("Massachusetts **{office_name}** Districts"))
-        ) |>
         cols_hide(columns=c(office, district_id, district, district_web_ref)) |>
         cols_label(
             district_md_ref = "District",
@@ -189,6 +192,7 @@ office_table <- function(office_name) {
 ## Office-level map
 
 tmap_mode("view")
+tmap_options(check.and.fix=TRUE)
 
 office_map_scale <- function(office_name) {
     case_when(
@@ -239,7 +243,7 @@ office_map <- function(office_name) {
      tm_basemap("OpenStreetMap"))
 }
 
-district_table <- function(office_name, district_name) {
+district_elections <- function(office_name, district_name) {
     leg_elections |>
         filter(office == office_name, district == district_name) |>
         mutate(special = if_else(is_special, "Special", "")) |>
@@ -256,9 +260,6 @@ district_table <- function(office_name, district_name) {
             percent_third_party
         ) |>
         gt() |>
-        tab_header(
-            title=md(str_glue("Massachusetts **{district_name}** {office_name} District"))
-        ) |>
         cols_hide(columns=display_winner) |>
         sub_missing(missing_text="") |>
         fmt_percent(columns=starts_with("percent_"), decimals=0) |>
@@ -282,6 +283,62 @@ district_table <- function(office_name, district_name) {
         )
 }
 
-district_map <- function(office_name, district_name) {
-    str_glue("{office_name} - {district_name}")
+office_column <- function(office_name) {
+    case_when(
+        (office_name == "State Representative") ~ "State_Rep",
+        (office_name == "State Senate") ~ "State_Senate",
+        (office_name == "Governor's Council") ~ "Gov_Council",
+        (office_name == "U.S. House") ~ "US_House"
+    )
 }
+
+city_town_total_precincts <-
+    prec_dist |>
+        group_by(city_town) |>
+        summarize(total_precincts = n())
+
+ward_precinct <- function(ward, precinct) {
+    if_else(ward == "-",
+            precinct,
+            str_c(ward, "-", precinct))
+}
+
+district_precincts <- function(office_name, district_name) {
+    office_col <- office_column(office_name)
+    prec_dist |>
+        filter(!!sym(office_col) == district_name) |>
+        left_join(city_town_total_precincts, by="city_town") |>
+        group_by(city_town) |>
+        summarize(precincts = if_else((first(total_precincts) == n()),
+                                      "-",
+                                      str_flatten_comma(ward_precinct(ward, precinct)))) |>
+        gt() |>
+        cols_label(
+            city_town = "City/Town",
+            precincts = "Precincts"
+        )
+}
+
+district_map <- function(office_name, district_name) {
+    office_col <- office_column(office_name)
+    dist_pcts <- prec_dist |>
+        filter(!!sym(office_col) == district_name) |>
+        left_join(city_town_total_precincts, by="city_town") |>
+        select(city_town, ward, precinct, total_precincts)
+    dist_geom <- read_sf("../gis/geojson/wards_pcts_subs_2022.geojson") |>
+        select(city_town, ward=Ward, precinct=Pct, geometry) |>
+        right_join(dist_pcts, by=c("city_town", "ward", "precinct")) |>
+        filter(!st_is_empty(geometry)) |>
+        group_by(city_town) |>
+        summarize(name = if_else(
+            first(total_precincts) == n(),
+            first(city_town),
+            str_glue("{first(city_town)} - {n()} of {first(total_precincts)} precincts"))) |>
+        st_make_valid()
+    (tm_shape(dist_geom) +
+     tm_polygons(col="MAP_COLORS",
+                 alpha=0.6) +
+     tm_text("city_town") +
+     tm_basemap("OpenStreetMap"))
+}
+
