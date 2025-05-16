@@ -1,15 +1,40 @@
+import argparse
 import pandas as pd
 import subprocess
 
 def main():
+    parser = create_arg_parser()
+    args = parser.parse_args()
+    if args.district and not args.office:
+        parser.error("--district requires --office")
     df = pd.read_csv("ma_legislative_district_info.csv")
     offices = df["office"].unique()
     for office_name in offices:
+        if args.office and (args.office != office_name):
+            continue
         generate_office_page(office_name)
     districts = df[["office", "district"]].values
     for office_name, district_name in districts:
+        if args.office and (args.office != office_name):
+            continue
+        if args.district and (args.district != district_name):
+            continue
         generate_district_page(office_name, district_name)
 
+def create_arg_parser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--office",
+        type=str,
+        help="Only generate pages for the provided office"
+    )
+    parser.add_argument(
+        "--district",
+        type=str,
+        help="Only generate pages for the provided district (requires --office)"
+    )
+    return parser
+        
 OFFICE_SLUG = {
     "State Representative": "state-rep",
     "State Senate": "state-senate",

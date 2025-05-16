@@ -10,6 +10,11 @@ params:
 title: Massachusetts `r params$office_name` Districts
 ---
 
+- [Governor's Council Districts](gov-council-districts.html)
+- [State Representative Districts](state-rep-districts.html)
+- [State State Districts](state-senate-districts.html)
+- [U.S. House Districts](us-house-districts.html)
+
 ```{r}
 source("legislative_info.R")
 ```
