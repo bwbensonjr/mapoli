@@ -13,14 +13,9 @@
 - [x] Make subdirectories for each office
 - [x] Page for each office listing all districts
 - [x] Detail pages for each district 
-- [ ] Refactor maps code
+- [x] Refactor maps code
 - [x] Add district links to map
-- [ ] Put maps in district pages
-- [ ] Consider putting maps at top of office pages
-
-
-
-
-
-
+- [x] Put maps in district pages
+- [x] Consider putting maps at top of office pages
+- [x] Add menu to get to summary pages
 
