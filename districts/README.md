@@ -33,5 +33,6 @@ and their vote share in the election.
 <p align="center">
 <a href="pages/state-senate-worcester-and-middlesex.html">
 <img width="300" src="pages/district-page-example-small.png">
+</a>
 </p>
 
