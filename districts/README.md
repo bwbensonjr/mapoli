@@ -6,7 +6,9 @@ incumbent and the Partisan Voter Index (PVI) of the district. The map
 popup and the district line both contain a link to a district-specific
 page.
 
-![Legislative office page example](pages/office-page-example-small.png){width=2in fig-align="center"}
+<p align="center">
+<img width="300" src="pages/office-page-example-small.png">
+</p>
 
 Each district-specific page contains a map of the district with an
 overlay for the party of each city or town contained in the district
@@ -15,8 +17,9 @@ district. There is also a list of the general elections for the
 district back to 1990 (or the year the district was created if it was
 post-1990).
 
-
-![Legislative district detial page example](pages/district-page-example-small.png){width=2in fig-align="center"}
+<p align="center">
+<img width="300" src="pages/district-page-example-small.png">
+</p>
 
 ## Legislative District Maps and Information
 
