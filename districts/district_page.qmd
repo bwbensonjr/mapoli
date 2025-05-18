@@ -11,9 +11,9 @@ params:
 title: Massachusetts `r params$district_name` `r params$office_name` District
 ---
 
-- [Governor's Council Districts](gov-council-districts.html)
 - [State Representative Districts](state-rep-districts.html)
 - [State Senate Districts](state-senate-districts.html)
+- [Governor's Council Districts](gov-council-districts.html)
 - [U.S. House Districts](us-house-districts.html)
 
 ```{r}
