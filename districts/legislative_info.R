@@ -233,10 +233,13 @@ office_map <- function(office_name) {
      ) +
      tm_text(
          "district_display",
-         size="AREA",
-         scale=scale,
-         fontfamily="serif",
-         fontface="bold"
+         clustering = leaflet::markerClusterOptions(
+            maxClusterRadius = 40,    # smaller radius → more, tighter clusters
+            disableClusteringAtZoom = 12   # stop clustering once zoom is ≥12
+         )
+         # clustering=TRUE
+         # size="AREA",
+         # scale=scale
      ) +
      tm_view(text.size.variable=TRUE) +
      tm_layout(title) +
