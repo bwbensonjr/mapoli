@@ -245,5 +245,24 @@ state_senate_file_name <- "data/ma_state_senate_demographics.csv"
 message(glue("Writing State Senate variables to file {state_senate_file_name}..."))
 state_senate_vars |> write_csv(state_senate_file_name)
 
+message("Interpolating precinct-level values...")
+precinct_geom <-
+    read_sf("../gis/geojson/wards_pcts_subs_2022.geojson") |>
+    rename(
+        precinct_name = name,
+        ward = Ward,
+        precinct = Pct
+    ) |>
+    mutate(shape_area = st_area(geometry))
+precinct_ids <- precinct_geom |>
+    as_tibble() |>
+    select(precinct_name, city_town, ward, precinct)
+precinct_vars <- interpolate_geom(precinct_geom, "precinct_name", 6491) |>
+    left_join(precinct_ids, by="precinct_name") |>
+    relocate(name=precinct_name, city_town, ward, precinct)
+precinct_file_name <- "data/ma_precinct_demographics.csv"
+message(glue("Writing precinct-level variables to file {precinct_file_name}..."))
+precinct_vars |> write_csv(precinct_file_name)
+
 message("Done.")
 
