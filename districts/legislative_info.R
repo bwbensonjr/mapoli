@@ -323,7 +323,7 @@ district_precincts <- function(office_name, district_name) {
         )
 }
 
-district_map <- function(office_name, district_name) {
+district_map <- function(office_name, district_name, simp_tol=50) {
     office_col <- office_column(office_name)
     dist_pcts <- prec_dist |>
         filter(!!sym(office_col) == district_name) |>
@@ -337,8 +337,11 @@ district_map <- function(office_name, district_name) {
         summarize(name = if_else(
             first(total_precincts) == n(),
             first(city_town),
-            str_glue("{first(city_town)} - {n()} of {first(total_precincts)} precincts"))) |>
-        st_make_valid()
+            str_glue("{first(city_town)} - {n()} of {first(total_precincts)} precincts")
+            )
+        ) |>
+        st_make_valid() |>
+        st_simplify(dTolerance=simp_tol)
     (tm_shape(dist_geom) +
      tm_polygons(col="MAP_COLORS",
                  alpha=0.6) +
