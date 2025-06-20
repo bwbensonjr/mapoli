@@ -246,11 +246,12 @@ office_table_demographic <- function(office_name) {
             decimals=0
         ) |>
         fmt_number(columns=c(area_sq_miles), decimals=0) |>
-        ## cols_width(
-        ##     c(percent, PVI, PVI_N) ~ px(100),
-        ##     party ~ px(170),
-        ##     city_town ~ px(200)
-        ## ) |>
+        cols_width(
+            ends_with("_pct") ~ px(75),
+            area_sq_miles ~ px(80),
+            legislator ~ px(220),
+            district_md_ref ~ px(200)
+        ) |>
         opt_interactive(
             use_pagination=FALSE,
             use_search=TRUE,
