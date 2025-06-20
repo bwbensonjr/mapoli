@@ -159,9 +159,9 @@ legislative_district_info <-
 ## legislative_district_info |>
 ##     write_csv("ma_legislative_district_info.csv")
 
-## Office-level summary table of districts
+## Office-level political and demographic summary tables
 
-office_table <- function(office_name) {
+office_table_political <- function(office_name) {
     legislative_district_info |>
         filter(office == office_name) |>
         arrange(district_id) |>
@@ -182,6 +182,75 @@ office_table <- function(office_name) {
             party ~ px(170),
             city_town ~ px(200)
         ) |>
+        opt_interactive(
+            use_pagination=FALSE,
+            use_search=TRUE,
+            use_filters=TRUE,
+            use_compact_mode=TRUE
+        )
+}
+
+office_demo_file <- function(office_name) {
+    case_when(
+        (office_name == "State Representative") ~ "../demographics/data/ma_state_rep_demographics.csv",
+        (office_name == "State Senate") ~ "../demographics/data/ma_state_senate_demographics.csv",
+        (office_name == "Governor's Council") ~ "../demographics/data/ma_gov_council_demographics.csv",
+        (office_name == "U.S. House") ~ "../demographics/data/ma_us_house_demographics.csv",
+    )
+}
+
+office_demographics <- function(office_name) {
+    read_csv(office_demo_file(office_name)) |>
+        mutate(area_sq_miles = area_m2 / 2.58999e6) |>
+        select(
+            district,
+            area_sq_miles,
+            below_poverty_pct,
+            ed_college_degree_pct,
+            wwc_pct,
+            race_minority_pct,
+            race_white_pct,
+            race_black_pct,
+            race_asian_pct,
+            race_hispanic_pct
+        )
+}
+
+office_table_demographic <- function(office_name) {
+    legislative_district_info |>
+        filter(office == office_name) |>
+        arrange(district_id) |>
+        select(district, district_md_ref, legislator) |>
+        left_join(
+            office_demographics(office_name),
+            by=c("district")
+        ) |>
+        gt() |>
+        cols_hide(columns=c(district)) |>
+        cols_label(
+            district_md_ref = "District",
+            legislator = "Legislator",
+            area_sq_miles = "Area (mi^2)",
+            below_poverty_pct = "Poverty",
+            ed_college_degree_pct = "College Degree",
+            wwc_pct = "White Working-Class",
+            race_minority_pct = "Minority",
+            race_white_pct = "White",
+            race_black_pct = "Black",
+            race_asian_pct = "Asian",
+            race_hispanic_pct = "Hispanic"
+        ) |>
+        fmt_markdown(columns=district_md_ref) |>
+        fmt_percent(
+            columns=ends_with("_pct"),
+            decimals=0
+        ) |>
+        fmt_number(columns=c(area_sq_miles), decimals=0) |>
+        ## cols_width(
+        ##     c(percent, PVI, PVI_N) ~ px(100),
+        ##     party ~ px(170),
+        ##     city_town ~ px(200)
+        ## ) |>
         opt_interactive(
             use_pagination=FALSE,
             use_search=TRUE,
@@ -347,15 +416,6 @@ district_map <- function(office_name, district_name, simp_tol=50) {
                  alpha=0.6) +
      tm_text("city_town") +
      tm_basemap("OpenStreetMap"))
-}
-
-office_demo_file <- function(office_name) {
-    case_when(
-        (office_name == "State Representative") ~ "../demographics/data/ma_state_rep_demographics.csv",
-        (office_name == "State Senate") ~ "../demographics/data/ma_state_senate_demographics.csv",
-        (office_name == "Governor's Council") ~ "../demographics/data/ma_gov_council_demographics.csv",
-        (office_name == "U.S. House") ~ "../demographics/data/ma_us_house_demographics.csv",
-    )
 }
 
 district_demographics <- function(office_name, district_name) {

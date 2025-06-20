@@ -23,8 +23,22 @@ source("legislative_info.R")
 office_map(params$office_name)
 ```
 
+<br/>
+
+::: {.panel-tabset}
+
+## Political
+
 ```{r}
-office_table(params$office_name)
+office_table_political(params$office_name)
 ```
+
+## Demographic 
+
+```{r}
+office_table_demographic(params$office_name)
+```
+
+:::
 
 
