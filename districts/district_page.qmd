@@ -29,6 +29,12 @@ dist_map <- district_map(params$office_name, params$district_name)
 tmap_leaflet(dist_map)
 ```
 
+## Demographics
+
+```{r}
+district_demographics(params$office_name, params$district_name)
+```
+
 ## Elections
 
 ```{r}

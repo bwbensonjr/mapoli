@@ -231,19 +231,37 @@ interpolate_geom <- function(target_geom, target_id, target_crs) {
         add_geometry_area(target_geom, target_id)
 }
 
-message("Interpolating State Rep values...")
-state_rep_geom <- read_sf("../gis/geojson/house2021.geojson")
-state_rep_vars <- interpolate_geom(state_rep_geom, "district", 6491)
-state_rep_file_name <- "data/ma_state_rep_demographics.csv"
-message(glue("Writing State Rep variables to file {state_rep_file_name}..."))
-state_rep_vars |> write_csv(state_rep_file_name)
+interpolate_districts <- function(office, geom_file, out_file) {
+    message(str_glue("Interpolating {office} values..."))
+    dist_geom <- read_sf(geom_file)
+    dist_vars <- interpolate_geom(dist_geom, "district", 6491)
+    message(str_glue("Writing {office} variables to file {out_file}..."))
+    dist_vars |> write_csv(out_file)
+}
 
-message("Interpolating State Senate values...")
-state_senate_geom <- read_sf("../gis/geojson/senate2021.geojson")
-state_senate_vars <- interpolate_geom(state_senate_geom, "district", 6491) 
-state_senate_file_name <- "data/ma_state_senate_demographics.csv"
-message(glue("Writing State Senate variables to file {state_senate_file_name}..."))
-state_senate_vars |> write_csv(state_senate_file_name)
+interpolate_districts(
+    "State Representative",
+    "../gis/geojson/house2021.geojson",
+    "data/ma_state_rep_demographics.csv"
+)
+
+interpolate_districts(
+    "State Senate",
+    "../gis/geojson/senate2021.geojson",
+    "data/ma_state_senate_demographics.csv"
+)
+
+interpolate_districts(
+    "Governor's Council",
+    "../gis/geojson/govcouncil2021.geojson",
+    "data/ma_gov_council_demographics.csv"    
+)
+
+interpolate_districts(
+    "U.S. House",
+    "../gis/geojson/congressma118.geojson",
+    "data/ma_us_house_demographics.csv"    
+)
 
 message("Interpolating precinct-level values...")
 precinct_geom <-

@@ -349,3 +349,54 @@ district_map <- function(office_name, district_name, simp_tol=50) {
      tm_basemap("OpenStreetMap"))
 }
 
+office_demo_file <- function(office_name) {
+    case_when(
+        (office_name == "State Representative") ~ "../demographics/data/ma_state_rep_demographics.csv",
+        (office_name == "State Senate") ~ "../demographics/data/ma_state_senate_demographics.csv",
+        (office_name == "Governor's Council") ~ "../demographics/data/ma_gov_council_demographics.csv",
+        (office_name == "U.S. House") ~ "../demographics/data/ma_us_house_demographics.csv",
+    )
+}
+
+district_demographics <- function(office_name, district_name) {
+    read_csv(office_demo_file(office_name)) |>
+        filter(district == district_name) |>
+        mutate(area_sq_miles = area_m2 / 2.58999e6) |>
+        select(
+            Population = total_population,
+            `Area (square miles)` = area_sq_miles,
+            `Below Poverty` = below_poverty_pct,
+            `College Degree` = ed_college_degree_pct,
+            Minority = race_minority_pct,
+            White = race_white_pct,
+            Black = race_black_pct,
+            Asian = race_asian_pct,
+            Hispanic = race_hispanic_pct,
+            `White Working-Class` = wwc_pct
+        ) |>
+        pivot_longer(
+            cols = everything(),
+            names_to = "Variable",
+            values_to = "Value"
+        ) |>
+        gt() |>
+        tab_options(column_labels.hidden = TRUE) |>
+        fmt_percent(
+            columns=vars(Value),
+            rows=(Variable %in% c("Below Poverty",
+                                        "College Degree",
+                                        "Minority",
+                                        "White",
+                                        "Black",
+                                        "Asian",
+                                        "Hispanic",
+                                        "White Working-Class")),
+            decimals=0
+        ) |>
+        fmt_number(
+            columns=vars(Value),
+            rows=(Variable %in% c("Population",
+                                  "Area (square miles)")),
+            decimals=0
+        )
+}
