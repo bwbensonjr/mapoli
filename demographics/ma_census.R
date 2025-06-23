@@ -90,6 +90,82 @@ city_town_county <- function(comp_name) {
     str_replace(first_part, " County", "")
 }
 
+## Urbanicity
+##
+## We classify each census tract as "very low density",
+## "low density", "medium density", or "high density".
+##
+## When we look at larger geographies we will compute
+## the percentage of tracts of each type within the parent
+## geometry.
+ma_tract_hh <- get_acs(geography="tract",
+                       variables=c("NAME", "DP02_0001E"),
+                       year=2022,
+                       state=25) %>%
+    rename(total_households = estimate) %>%
+    select(-c(variable, moe))
+
+ma_tract_geom <- tracts(25, class="sf") |>
+    st_transform(6491) |>
+    mutate(area = ((ALAND + AWATER)/2.59e+6)) |>
+    select(GEOID, area, ALAND, AWATER)
+
+ma_tract_density <- ma_tract_geom |>
+    left_join(ma_tract_hh, by="GEOID") %>%
+    mutate(hh_per_sq_mi = as.double(total_households / area),
+           density_type = case_when(hh_per_sq_mi < 102 ~ "very low density",
+                                    hh_per_sq_mi < 800 ~ "low density",
+                                    hh_per_sq_mi < 2123 ~ "medium density",
+                                    TRUE ~ "high density"))
+
+density_order <- c("very low", "low", "medium", "high")
+
+district_density <- function(dist_geom) {
+    ma_tract_density |>
+        st_join(
+            dist_geom |> select(district) |> st_transform(6491)
+        ) |>
+        filter(!is.na(district)) |>
+        group_by(district) |>
+        summarize(
+            very_low_density_pct = sum(density_type == "very low density")/n(),
+            low_density_pct = sum(density_type == "low density")/n(),
+            medium_density_pct = sum(density_type == "medium density")/n(),
+            high_density_pct = sum(density_type == "high density")/n()
+        ) |>
+        st_drop_geometry() |>
+        rowwise() |>
+        mutate(
+            density_type = {
+                ## named vector of the four pct columns
+                v <- c(
+                    `very low` = very_low_density_pct,
+                    low      = low_density_pct,
+                    medium   = medium_density_pct,
+                    high     = high_density_pct
+                )
+                ## get the indices of largest and second-largest
+                ord <- order(v, decreasing = TRUE)
+                n1 <- names(v)[ord[1]]
+                n2 <- names(v)[ord[2]]
+                
+                ## first check if the top one alone > 0.5
+                if (v[n1] > 0.5) {
+                    n1
+                    ## else if top two sum > 0.5, paste them in your custom order
+                } else if (v[n1] + v[n2] > 0.5) {
+                    top2 <- c(n1, n2)
+                                        # sort top2 by the position in density_order
+                    top2_sorted <- top2[order(match(top2, density_order))]
+                    paste(top2_sorted, collapse = "/")
+                } else {
+                    "mixed"
+                }
+            }
+        ) |>
+        ungroup()
+}
+
 ## city_town_vars <- census_query("county subdivision",
 ##                                census_vars,
 ##                                state=25) %>%
@@ -190,8 +266,7 @@ add_geometry_area <- function(target_vars, target_geom, target_id) {
         rename(area_m2 = shape_area)
 }
 
-## It looks like we need to do the interpolation
-## in three different cases:
+## We need to do the interpolation in three different cases:
 ## - block groups, extensive=TRUE
 ## - block groups, extensive=FALSE (e.g., median vars)
 ## - tracts, extensive=TRUE
@@ -234,7 +309,9 @@ interpolate_geom <- function(target_geom, target_id, target_crs) {
 interpolate_districts <- function(office, geom_file, out_file) {
     message(str_glue("Interpolating {office} values..."))
     dist_geom <- read_sf(geom_file)
-    dist_vars <- interpolate_geom(dist_geom, "district", 6491)
+    dist_density <- district_density(dist_geom)
+    dist_vars <- interpolate_geom(dist_geom, "district", 6491) |>
+        left_join(dist_density, by="district")
     message(str_glue("Writing {office} variables to file {out_file}..."))
     dist_vars |> write_csv(out_file)
 }
