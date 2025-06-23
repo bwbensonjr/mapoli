@@ -205,6 +205,7 @@ office_demographics <- function(office_name) {
         select(
             district,
             area_sq_miles,
+            density_type,
             below_poverty_pct,
             ed_college_degree_pct,
             wwc_pct,
@@ -231,6 +232,7 @@ office_table_demographic <- function(office_name) {
             district_md_ref = "District",
             legislator = "Legislator",
             area_sq_miles = "Area (mi^2)",
+            density_type = "Density",
             below_poverty_pct = "Poverty",
             ed_college_degree_pct = "College Degree",
             wwc_pct = "White Working-Class",
@@ -249,6 +251,7 @@ office_table_demographic <- function(office_name) {
         cols_width(
             ends_with("_pct") ~ px(75),
             area_sq_miles ~ px(80),
+            density_type ~ px(100),
             legislator ~ px(220),
             district_md_ref ~ px(200)
         ) |>
