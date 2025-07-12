@@ -5,6 +5,8 @@
 - [Governor's Council Districts](districts/pages/gov-council-districts.html)
 - [U.S. House Districts](districts/pages/us-house-districts.html)
 
+### Statewide Overview of Districts
+
 The district atlas contains statewide maps for each legislative office
 with district-to-district comparison tables on political and
 demographic data.
@@ -14,6 +16,8 @@ demographic data.
 <img width="400" src="districts/pages/office-page-example-small.png">
 </a>
 </p>
+
+### Per-District Map, Demographics, and Elections
 
 There is also a separate page for each of the 160 State
 Representative, 40 State Senate, 9 U.S. House, and 8 Governor's
