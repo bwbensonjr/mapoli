@@ -13,7 +13,7 @@ demographic data.
    
 <p align="center">
 <a href="districts/pages/state-senate-districts.html">
-<img width="400" src="districts/pages/office-page-example-small.png">
+<img src="districts/pages/office-page-example-small.png">
 </a>
 </p>
 
@@ -26,7 +26,7 @@ Council districts with demographic details and electon results back to
 
 <p align="center">
 <a href="districts/pages/state-senate-worcester-and-middlesex.html">
-<img width="400" src="districts/pages/district-page-example-small.png">
+<img src="districts/pages/district-page-example-small.png">
 </a>
 </p>
 
