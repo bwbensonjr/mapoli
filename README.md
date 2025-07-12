@@ -1,5 +1,10 @@
 ## Massachusetts Legislative District Atlas
 
+- [State Representative Districts](districts/pages/state-rep-districts.html)
+- [State Senate Districts](districts/pages/state-senate-districts.html)
+- [Governor's Council Districts](districts/pages/gov-council-districts.html)
+- [U.S. House Districts](districts/pages/us-house-districts.html)
+
 The district atlas contains statewide maps for each legislative office
 with district-to-district comparison tables on political and
 demographic data.
@@ -20,11 +25,6 @@ Council districts with demographic details and electon results back to
 <img width="400" src="districts/pages/district-page-example-small.png">
 </a>
 </p>
-
-- [State Representative Districts](districts/pages/state-rep-districts.html)
-- [State Senate Districts](districts/pages/state-senate-districts.html)
-- [Governor's Council Districts](districts/pages/gov-council-districts.html)
-- [U.S. House Districts](districts/pages/us-house-districts.html)
 
 ## Census-Based Demographics
 
