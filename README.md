@@ -2,23 +2,24 @@
 
 ## Massachusetts Legislative District Atlas
 
-1. Statewide maps for each legislative office with
-   district-to-district comparison tables on political and demographic
-   data.
+The district atlas contains statewide maps for each legislative office
+with district-to-district comparison tables on political and
+demographic data.
    
 <p align="center">
 <a href="districts/pages/state-senate-districts.html">
-<img width="300" src="districts/pages/office-page-example-small.png">
+<img width="400" src="districts/pages/office-page-example-small.png">
 </a>
 </p>
-   
-2. A separate page for each of the 160 State Representative, 40 State
-   Senate, 9 U.S. House, and 8 Governor's Council districts with
-   demographic details and electon results back to 1990.
+
+There is also a separate page for each of the 160 State
+Representative, 40 State Senate, 9 U.S. House, and 8 Governor's
+Council districts with demographic details and electon results back to
+1990.
 
 <p align="center">
 <a href="districts/pages/state-senate-worcester-and-middlesex.html">
-<img width="300" src="districts/pages/district-page-example-small.png">
+<img width="400" src="districts/pages/district-page-example-small.png">
 </a>
 </p>
 
