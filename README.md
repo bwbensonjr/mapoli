@@ -22,11 +22,10 @@
 </a>
 </p>
 
-- [districts](districts) - Overview
-  - [State Representative Districts](districts/pages/state-rep-districts.html)
-  - [State Senate Districts](districts/pages/state-senate-districts.html)
-  - [Governor's Council Districts](districts/pages/gov-council-districts.html)
-  - [U.S. House Districts](districts/pages/us-house-districts.html)
+- [State Representative Districts](districts/pages/state-rep-districts.html)
+- [State Senate Districts](districts/pages/state-senate-districts.html)
+- [Governor's Council Districts](districts/pages/gov-council-districts.html)
+- [U.S. House Districts](districts/pages/us-house-districts.html)
 
 ## Census-Based Demographics
 
