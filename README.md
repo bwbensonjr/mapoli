@@ -1,5 +1,3 @@
-# Massachusetts Elections, Politics, and District Data
-
 ## Massachusetts Legislative District Atlas
 
 The district atlas contains statewide maps for each legislative office
