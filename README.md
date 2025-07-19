@@ -5,6 +5,21 @@
 - [Governor's Council Districts](districts/pages/gov-council-districts.html)
 - [U.S. House Districts](districts/pages/us-house-districts.html)
 
+### Fun Facts
+
+- Every `mapoli` State Representative district has approximately the
+  same population (currently about 44,000 people) the districts vary
+  widely in geographic size.
+  - The smallest State Representative district in area is Speaker
+    Aaron Michlewitz's [Third Suffolk
+    district](districts/pages/state-rep-third-suffolk.html) coming in
+    at a petite 1.36 square miles.
+  - The largest State Representative district in area is [Third
+    Berkshire
+    district](districts/pages/state-rep-third-berkshire.html)
+    represented by Leigh Davis of Great Barrington. The district is
+    551 square miles containing 18 separate municipalities.
+
 ### Statewide District Overviews and Comparisons
 
 The district atlas contains statewide maps for each legislative office
