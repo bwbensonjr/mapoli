@@ -7,18 +7,19 @@
 
 ### Fun Facts
 
+#### The largest and smallest State Rep districts
+
 - Every `mapoli` State Representative district has approximately the
   same population (currently about 44,000 people) the districts vary
   widely in geographic size.
-  - The smallest State Representative district in area is Speaker
-    Aaron Michlewitz's [Third Suffolk
-    district](districts/pages/state-rep-third-suffolk.html) coming in
-    at a petite 1.36 square miles.
-  - The largest State Representative district in area is [Third
-    Berkshire
-    district](districts/pages/state-rep-third-berkshire.html)
-    represented by Leigh Davis of Great Barrington. The district is
-    551 square miles containing 18 separate municipalities.
+- The smallest State Representative district in terms of area is
+  Speaker Aaron Michlewitz's [Third
+  Suffolk](districts/pages/state-rep-third-suffolk.html) district
+  coming in at a petite 1.36 square miles.
+- The largest State Representative district in area is the [Third
+  Berkshire](districts/pages/state-rep-third-berkshire.html) district
+  represented by Leigh Davis of Great Barrington. The district is a
+  whopping 551 square miles and contains 18 separate municipalities.
 
 ### Statewide District Overviews and Comparisons
 
