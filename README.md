@@ -49,7 +49,7 @@ Council districts with demographic details and electon results back to
 </a>
 </p>
 
-## Underlying code and data resources
+## Data and code
 
 See the `mapoli` GitHub repository for all of the data and code used
 to generate this site.
