@@ -49,18 +49,13 @@ Council districts with demographic details and electon results back to
 </a>
 </p>
 
-## Census-Based Demographics
+## Underlying code and data resources
 
-- Code for extracting fine-grained Census data: [ma_census.R](demographics/ma_census.R)
-- Data at the level of legislative district and precinct: [data](demographics/data)
+See the `mapoli` GitHub repository for all of the data and code used
+to generate this site.
 
-## GIS Data
-
-- [Shapefiles](gis/shp)
-- [GeoJSON](gis/geojson)
-
-## Partisan Voter Index (PVI) 
- 
-- [`pvi`](pvi) - Partisan Voter Index calculations for precincts, towns,
-  counties, and legislative districts
+- `mapoli` GitHub repository
+- [`mapoli/demographics`](https://github.com/bwbensonjr/mapoli)
+- [`mapoli/gis`](https://github.com/bwbensonjr/mapoli/tree/master/demographics)
+- [`mapoli/pvi`](https://github.com/bwbensonjr/mapoli/tree/master/pvi)
 
