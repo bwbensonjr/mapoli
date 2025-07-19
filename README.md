@@ -1,5 +1,8 @@
 ## Massachusetts Legislative District Atlas
 
+Interactive maps and demographic data for all 217 legislative
+districts across Massachusetts.
+
 - [State Representative Districts](districts/pages/state-rep-districts.html)
 - [State Senate Districts](districts/pages/state-senate-districts.html)
 - [Governor's Council Districts](districts/pages/gov-council-districts.html)
