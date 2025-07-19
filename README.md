@@ -9,9 +9,9 @@
 
 #### The largest and smallest State Rep districts
 
-- Every `mapoli` State Representative district has approximately the
-  same population (currently about 44,000 people) the districts vary
-  widely in geographic size.
+- While every `mapoli` State Representative district has approximately
+  the same population (currently about 44,000 people) the districts
+  vary widely in geographic size.
 - The smallest State Representative district in terms of area is
   Speaker Aaron Michlewitz's [Third
   Suffolk](districts/pages/state-rep-third-suffolk.html) district
