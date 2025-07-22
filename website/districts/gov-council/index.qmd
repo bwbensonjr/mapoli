@@ -1,0 +1,37 @@
+---
+format:
+  html:
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+params:
+  office_name: "Governor's Council"
+title: Massachusetts `r params$office_name` Districts
+---
+
+```{r}
+source("../../_gen/legislative_info.R")
+```
+
+```{r}
+office_map(params$office_name)
+```
+
+<br/>
+
+::: {.panel-tabset}
+
+## Political
+
+```{r}
+office_table_political(params$office_name)
+```
+
+## Demographic 
+
+```{r}
+office_table_demographic(params$office_name)
+```
+
+:::

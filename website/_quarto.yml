@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: ../docs
+  render:
+    - index.qmd
+    - districts/state-rep/*.qmd
+    - districts/state-senate/*.qmd
+    - districts/gov-council/*.qmd
+    - districts/us-house/*.qmd
+
+website:
+  title: "mapoli"
+  google-analytics: "G-D7H3929JG1"
+  navbar:
+    left:
+      - href: districts/state-rep/
+        text: "State Representative"
+      - href: districts/state-senate/
+        text: "State Senate"
+      - href: districts/gov-council/
+        text: "Governor's Council"
+      - href: districts/us-house/
+        text: "U.S. House"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+

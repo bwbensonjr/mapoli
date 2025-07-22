@@ -1,0 +1,39 @@
+---
+format:
+  html:
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+params:
+  office_name: "State Senate"
+  district_name: "Norfolk and Plymouth"
+title: Massachusetts `r params$district_name` `r params$office_name` District
+---
+
+```{r}
+source("../../_gen/legislative_info.R")
+```
+
+## District
+
+```{r}
+# district_precincts(params$office_name, params$district_name)
+
+dist_map <- district_map(params$office_name, params$district_name)
+tmap_leaflet(dist_map)
+```
+
+## Demographics
+
+```{r}
+district_demographics(params$office_name, params$district_name)
+```
+
+## Elections
+
+```{r}
+district_elections(params$office_name, params$district_name)
+```
+
+
