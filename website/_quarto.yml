@@ -10,6 +10,9 @@ project:
 
 website:
   title: "mapoli"
+  site-url: https://mapoli.us
+  twitter-card: true
+  open-graph: true
   google-analytics: "G-D7H3929JG1"
   navbar:
     left:
@@ -21,6 +24,10 @@ website:
         text: "Governor's Council"
       - href: districts/us-house/
         text: "U.S. House"
+    right:
+      - href: https://github.com/bwbensonjr/mapoli
+        icon: github
+        target: _blank
 
 format:
   html:
@@ -30,5 +37,5 @@ format:
     css: styles.css
     toc: true
 
-
-
+execute:
+  freeze: auto

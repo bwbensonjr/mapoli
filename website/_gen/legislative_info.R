@@ -413,8 +413,14 @@ district_map <- function(office_name, district_name, simp_tol=50) {
         st_make_valid() |>
         st_simplify(dTolerance=simp_tol)
     (tm_shape(dist_geom) +
-     tm_polygons(col="MAP_COLORS",
-                 alpha=0.6) +
+     tm_polygons(
+         col="MAP_COLORS",
+         alpha=0.6,
+         popup.vars=c(
+             "City/Town"="city_town",
+             "Precincts"="name"
+         )
+     ) +
      tm_text("city_town") +
      tm_basemap("OpenStreetMap"))
 }
