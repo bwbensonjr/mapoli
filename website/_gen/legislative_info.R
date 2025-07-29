@@ -286,7 +286,9 @@ office_map <- function(office_name) {
         read_sf(office_map_geom_file(office_name)) |>
         mutate(office = office_name) |>
         left_join(legislative_district_info,
-                  by=c("office", "district"))
+                  by=c("office", "district")) |>
+        left_join(office_demographics(office_name),
+                  by=c("district"))
     (tm_shape(office_df) +
      tm_polygons(
          col="MAP_COLORS",
@@ -294,7 +296,9 @@ office_map <- function(office_name) {
          popup.vars=c(
              "legislator",
              "PVI",
-             "district_web_ref"
+             "Details"="district_web_ref",
+             "Area (mi^2)"="area_sq_miles",
+             "Density Type"="density_type"
          ),
          popup.format=list(html.escape=FALSE)
      ) +
