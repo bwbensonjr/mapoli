@@ -411,7 +411,10 @@ district_map <- function(office_name, district_name, simp_tol=50) {
             )
         ) |>
         st_make_valid() |>
-        st_simplify(dTolerance=simp_tol)
+        st_buffer(dist = 10) |>      # Small positive buffer
+        st_buffer(dist = -10) |>     # Negative buffer to return to original size
+        st_simplify(dTolerance = 25)
+        ## st_simplify(dTolerance=simp_tol)
     (tm_shape(dist_geom) +
      tm_polygons(
          col="MAP_COLORS",
