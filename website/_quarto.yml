@@ -17,7 +17,7 @@ website:
   google-analytics: "G-D7H3929JG1"
   page-footer:
     center: |
-      See the [About](about.html) page for data source information.
+      See the [About](/about.html) page for data source information.
   navbar:
     left:
       - href: districts/state-rep/
