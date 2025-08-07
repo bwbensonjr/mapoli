@@ -4,6 +4,7 @@ project:
   render:
     - index.qmd
     - about.qmd
+    - districts/index.qmd
     - districts/state-rep/*.qmd
     - districts/state-senate/*.qmd
     - districts/gov-council/*.qmd

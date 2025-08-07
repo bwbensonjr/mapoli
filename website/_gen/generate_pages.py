@@ -1,13 +1,14 @@
 import argparse
 import pandas as pd
 import pathlib
+from pyprojroot import here
 
 def main():
     parser = create_arg_parser()
     args = parser.parse_args()
     if args.district and not args.office:
         parser.error("--district requires --office")
-    df = pd.read_csv("../districts/ma_legislative_district_info.csv")
+    df = pd.read_csv(here("districts/ma_legislative_district_info.csv"))
     offices = df["office"].unique()
     for office_name in offices:
         if args.office and (args.office != office_name):
@@ -47,7 +48,7 @@ OFFICE_SLUG = {
 }
 
 def office_summary_file(office_name):
-    file_name = f"districts/{OFFICE_SLUG[office_name]}/index.qmd"
+    file_name = here(f"website/districts/{OFFICE_SLUG[office_name]}/index.qmd")
     return file_name
 
 def district_slug(district_name):
@@ -59,8 +60,8 @@ def district_slug(district_name):
     return slug
 
 def district_file(office_name, district_name):
-    file_name = (
-        "districts/"
+    file_name = here(
+        "website/districts/"
         f"{OFFICE_SLUG[office_name]}/"
         f"{district_slug(district_name)}.qmd"
     )
@@ -69,7 +70,7 @@ def district_file(office_name, district_name):
 def generate_office_page(office_name):
     output_file = office_summary_file(office_name)
     print(f"Generating office page {office_name} - {output_file}...")
-    with open(local_file_path("office_page.qmd")) as f:
+    with open(here("website/_gen/office_page.qmd")) as f:
         template_str = f.read()
     file_contents = template_str % {"office_name": office_name}
     with open(output_file, "w") as f:
@@ -78,7 +79,7 @@ def generate_office_page(office_name):
 def generate_district_page(office_name, district_name):
     output_file = district_file(office_name, district_name)
     print(f"Generating district page {office_name} - {district_name} - {output_file}...")
-    with open(local_file_path("district_page.qmd")) as f:
+    with open(here("website/_gen/district_page.qmd")) as f:
         template_str = f.read()
     file_contents = (
         template_str % {

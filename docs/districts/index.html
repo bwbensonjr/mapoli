@@ -1,0 +1,4443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Massachusetts Legislative Districts – mapoli</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-D7H3929JG1"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Massachusetts Legislative Districts – mapoli">
+<meta property="og:site_name" content="mapoli">
+<meta name="twitter:title" content="Massachusetts Legislative Districts – mapoli">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">mapoli</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../districts/state-rep/"> 
+<span class="menu-text">State Representative</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../districts/state-senate/"> 
+<span class="menu-text">State Senate</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../districts/gov-council/"> 
+<span class="menu-text">Governor’s Council</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../districts/us-house/"> 
+<span class="menu-text">U.S. House</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/bwbensonjr/mapoli" target="_blank"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#state-representative-districts" id="toc-state-representative-districts" class="nav-link active" data-scroll-target="#state-representative-districts">State Representative Districts</a></li>
+  <li><a href="#state-senate-districts" id="toc-state-senate-districts" class="nav-link" data-scroll-target="#state-senate-districts">State Senate Districts</a></li>
+  <li><a href="#governors-council-districts" id="toc-governors-council-districts" class="nav-link" data-scroll-target="#governors-council-districts">Governor’s Council Districts</a></li>
+  <li><a href="#u.s.-house-districts" id="toc-u.s.-house-districts" class="nav-link" data-scroll-target="#u.s.-house-districts">U.S. House Districts</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Massachusetts Legislative Districts</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="state-representative-districts" class="level2">
+<h2 class="anchored" data-anchor-id="state-representative-districts">State Representative Districts</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="rktwomixbr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rktwomixbr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#rktwomixbr thead, #rktwomixbr tbody, #rktwomixbr tfoot, #rktwomixbr tr, #rktwomixbr td, #rktwomixbr th {
+  border-style: none;
+}
+
+#rktwomixbr p {
+  margin: 0;
+  padding: 0;
+}
+
+#rktwomixbr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#rktwomixbr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#rktwomixbr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#rktwomixbr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#rktwomixbr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#rktwomixbr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#rktwomixbr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#rktwomixbr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#rktwomixbr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#rktwomixbr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#rktwomixbr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#rktwomixbr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#rktwomixbr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#rktwomixbr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#rktwomixbr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rktwomixbr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#rktwomixbr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#rktwomixbr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#rktwomixbr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rktwomixbr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#rktwomixbr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rktwomixbr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#rktwomixbr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rktwomixbr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rktwomixbr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rktwomixbr .gt_left {
+  text-align: left;
+}
+
+#rktwomixbr .gt_center {
+  text-align: center;
+}
+
+#rktwomixbr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#rktwomixbr .gt_font_normal {
+  font-weight: normal;
+}
+
+#rktwomixbr .gt_font_bold {
+  font-weight: bold;
+}
+
+#rktwomixbr .gt_font_italic {
+  font-style: italic;
+}
+
+#rktwomixbr .gt_super {
+  font-size: 65%;
+}
+
+#rktwomixbr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#rktwomixbr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#rktwomixbr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#rktwomixbr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#rktwomixbr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#rktwomixbr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#rktwomixbr .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#rktwomixbr .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#rktwomixbr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="district_md_ref" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">District</th>
+<th id="legislator" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Legislator</th>
+<th id="party" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Party</th>
+<th id="city_town" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">City/Town</th>
+<th id="percent" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Vote</th>
+<th id="PVI" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">PVI</th>
+<th id="PVI_N" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">PVI_N</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-barnstable.html">First Barnstable</a></td>
+<td class="gt_row gt_left" headers="legislator">Christopher Richard Flanagan (D-Dennis)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Dennis</td>
+<td class="gt_row gt_right" headers="percent">57%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">11.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-barnstable.html">Second Barnstable</a></td>
+<td class="gt_row gt_left" headers="legislator">Kip A. Diggs (D-Barnstable)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Barnstable</td>
+<td class="gt_row gt_right" headers="percent">59%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">7.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-barnstable.html">Third Barnstable</a></td>
+<td class="gt_row gt_left" headers="legislator">David T. Vieira (R-Falmouth)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Falmouth</td>
+<td class="gt_row gt_right" headers="percent">56%</td>
+<td class="gt_row gt_left" headers="PVI">D+9</td>
+<td class="gt_row gt_right" headers="PVI_N">9.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-barnstable.html">Fourth Barnstable</a></td>
+<td class="gt_row gt_left" headers="legislator">Hadley Luddy (D-Orleans)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Orleans</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+19</td>
+<td class="gt_row gt_right" headers="PVI_N">19.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-barnstable.html">Fifth Barnstable</a></td>
+<td class="gt_row gt_left" headers="legislator">Steven G. Xiarhos (R-Barnstable)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Barnstable</td>
+<td class="gt_row gt_right" headers="percent">61%</td>
+<td class="gt_row gt_left" headers="PVI">D+3</td>
+<td class="gt_row gt_right" headers="PVI_N">3.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-berkshire.html">First Berkshire</a></td>
+<td class="gt_row gt_left" headers="legislator">John P. Barrett, III (D-North Adams)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">North Adams</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+17</td>
+<td class="gt_row gt_right" headers="PVI_N">16.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-berkshire.html">Second Berkshire</a></td>
+<td class="gt_row gt_left" headers="legislator">Tricia Farley-Bouvier (D-Pittsfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Pittsfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">23.6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-berkshire.html">Third Berkshire</a></td>
+<td class="gt_row gt_left" headers="legislator">Leigh Susan Davis (D-Great Barrington)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Great Barrington</td>
+<td class="gt_row gt_right" headers="percent">57%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">23.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-bristol.html">First Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael Chaisson (R-Foxborough)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Foxborough</td>
+<td class="gt_row gt_right" headers="percent">50%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">7.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-bristol.html">Second Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">James K. Hawkins (D-Attleboro)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Attleboro</td>
+<td class="gt_row gt_right" headers="percent">68%</td>
+<td class="gt_row gt_left" headers="PVI">D+7</td>
+<td class="gt_row gt_right" headers="PVI_N">6.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-bristol.html">Third Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Lisa M. Field (D-Taunton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Taunton</td>
+<td class="gt_row gt_right" headers="percent">50%</td>
+<td class="gt_row gt_left" headers="PVI">D+5</td>
+<td class="gt_row gt_right" headers="PVI_N">4.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-bristol.html">Fourth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Steven S. Howitt (R-Seekonk)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Seekonk</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">R+2</td>
+<td class="gt_row gt_right" headers="PVI_N">−1.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-bristol.html">Fifth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Justin Thurber (R-Somerset)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Somerset</td>
+<td class="gt_row gt_right" headers="percent">52%</td>
+<td class="gt_row gt_left" headers="PVI">R+2</td>
+<td class="gt_row gt_right" headers="PVI_N">−1.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixth-bristol.html">Sixth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Carole A. Fiola (D-Fall River)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Fall River</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+3</td>
+<td class="gt_row gt_right" headers="PVI_N">3.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventh-bristol.html">Seventh Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Alan Silvia (D-Fall River)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Fall River</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+1</td>
+<td class="gt_row gt_right" headers="PVI_N">0.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighth-bristol.html">Eighth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Steven J. Ouellette (D-Westport)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Westport</td>
+<td class="gt_row gt_right" headers="percent">34%</td>
+<td class="gt_row gt_left" headers="PVI">R+4</td>
+<td class="gt_row gt_right" headers="PVI_N">−4.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/ninth-bristol.html">Ninth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Christopher M. Markey (D-Dartmouth)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Dartmouth</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+1</td>
+<td class="gt_row gt_right" headers="PVI_N">1.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/tenth-bristol.html">Tenth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Mark David Sylvia (D-Fairhaven)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Fairhaven</td>
+<td class="gt_row gt_right" headers="percent">53%</td>
+<td class="gt_row gt_left" headers="PVI">D+2</td>
+<td class="gt_row gt_right" headers="PVI_N">2.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eleventh-bristol.html">Eleventh Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Christopher Hendricks (D-New Bedford)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">New Bedford</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+10</td>
+<td class="gt_row gt_right" headers="PVI_N">9.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twelfth-bristol.html">Twelfth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Norman J. Orrall (R-Lakeville)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Lakeville</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">R+4</td>
+<td class="gt_row gt_right" headers="PVI_N">−3.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirteenth-bristol.html">Thirteenth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Antonio d. F. Cabral (D-New Bedford)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">New Bedford</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+10</td>
+<td class="gt_row gt_right" headers="PVI_N">9.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourteenth-bristol.html">Fourteenth Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">Adam J. Scanlon (D-North Attleborough)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">North Attleborough</td>
+<td class="gt_row gt_right" headers="percent">56%</td>
+<td class="gt_row gt_left" headers="PVI">D+6</td>
+<td class="gt_row gt_right" headers="PVI_N">6.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-essex.html">First Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Dawne Frances Shand (D-Newburyport)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Newburyport</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+14</td>
+<td class="gt_row gt_right" headers="PVI_N">14.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-essex.html">Second Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Kristin E. Kassner (D-Hamilton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Hamilton</td>
+<td class="gt_row gt_right" headers="percent">54%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">11.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-essex.html">Third Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Andres X. Vargas (D-Haverhill)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Haverhill</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">7.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-essex.html">Fourth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Estela A. Reyes (D-Lawrence)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lawrence</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+12</td>
+<td class="gt_row gt_right" headers="PVI_N">11.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-essex.html">Fifth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Ann-Margaret Ferrante (D-Gloucester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Gloucester</td>
+<td class="gt_row gt_right" headers="percent">67%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">17.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixth-essex.html">Sixth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Hannah Louise Bowen (D-Beverly)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Beverly</td>
+<td class="gt_row gt_right" headers="percent">74%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">18.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventh-essex.html">Seventh Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Manny Cruz (D-Salem)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Salem</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">24.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighth-essex.html">Eighth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Jennifer Wb Armini (D-Marblehead)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Marblehead</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+21</td>
+<td class="gt_row gt_right" headers="PVI_N">20.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/ninth-essex.html">Ninth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Donald H. Wong (R-Saugus)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Saugus</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+3</td>
+<td class="gt_row gt_right" headers="PVI_N">2.7</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/tenth-essex.html">Tenth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Daniel H. Cahill (D-Lynn)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lynn</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+16</td>
+<td class="gt_row gt_right" headers="PVI_N">15.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eleventh-essex.html">Eleventh Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Sean Reid (D-Lynn)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lynn</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+16</td>
+<td class="gt_row gt_right" headers="PVI_N">16.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twelfth-essex.html">Twelfth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Thomas P. Walsh (D-Peabody)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Peabody</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+5</td>
+<td class="gt_row gt_right" headers="PVI_N">5.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirteenth-essex.html">Thirteenth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Sally P. Kerans (D-Danvers)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Danvers</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+4</td>
+<td class="gt_row gt_right" headers="PVI_N">4.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourteenth-essex.html">Fourteenth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Adrianne Pusateri Ramos (D-North Andover)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">North Andover</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+10</td>
+<td class="gt_row gt_right" headers="PVI_N">10.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifteenth-essex.html">Fifteenth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Ryan M. Hamilton (D-Methuen)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Methuen</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+3</td>
+<td class="gt_row gt_right" headers="PVI_N">2.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixteenth-essex.html">Sixteenth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Francisco E. Paulino (D-Methuen)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Methuen</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">11.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventeenth-essex.html">Seventeenth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Frank A. Moran (D-Lawrence)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lawrence</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+17</td>
+<td class="gt_row gt_right" headers="PVI_N">16.7</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighteenth-essex.html">Eighteenth Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Tram T. Nguyen (D-Andover)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Andover</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">11.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-franklin.html">First Franklin</a></td>
+<td class="gt_row gt_left" headers="legislator">Natalie M. Blais (D-Deerfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Deerfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">23.6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-franklin.html">Second Franklin</a></td>
+<td class="gt_row gt_left" headers="legislator">Susannah M. Whipps (U-Athol)</td>
+<td class="gt_row gt_left" headers="party">Unenrolled</td>
+<td class="gt_row gt_left" headers="city_town">Athol</td>
+<td class="gt_row gt_right" headers="percent">66%</td>
+<td class="gt_row gt_left" headers="PVI">D+6</td>
+<td class="gt_row gt_right" headers="PVI_N">6.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-hampden.html">First Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Todd M. Smola (R-Warren)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Warren</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">R+3</td>
+<td class="gt_row gt_right" headers="PVI_N">−2.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-hampden.html">Second Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Brian M. Ashe (D-Longmeadow)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Longmeadow</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+5</td>
+<td class="gt_row gt_right" headers="PVI_N">5.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-hampden.html">Third Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Nicholas A. Boldyga (R-Southwick)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Southwick</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">R+6</td>
+<td class="gt_row gt_right" headers="PVI_N">−5.6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-hampden.html">Fourth Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Kelly W. Pease (R-Westfield)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Westfield</td>
+<td class="gt_row gt_right" headers="percent">59%</td>
+<td class="gt_row gt_left" headers="PVI">EVEN</td>
+<td class="gt_row gt_right" headers="PVI_N">−0.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-hampden.html">Fifth Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Patricia A. Duffy (D-Holyoke)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Holyoke</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+16</td>
+<td class="gt_row gt_right" headers="PVI_N">16.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixth-hampden.html">Sixth Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael J. Finn (D-West Springfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">West Springfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+1</td>
+<td class="gt_row gt_right" headers="PVI_N">1.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventh-hampden.html">Seventh Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Aaron L. Saunders (D-Belchertown)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Belchertown</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+7</td>
+<td class="gt_row gt_right" headers="PVI_N">7.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighth-hampden.html">Eighth Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Shirley B. Arriaga (D-Chicopee)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Chicopee</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+4</td>
+<td class="gt_row gt_right" headers="PVI_N">4.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/ninth-hampden.html">Ninth Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Orlando Ramos (D-Springfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Springfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">17.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/tenth-hampden.html">Tenth Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Carlos Gonzalez (D-Springfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Springfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">24.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eleventh-hampden.html">Eleventh Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Bud L. Williams (D-Springfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Springfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+26</td>
+<td class="gt_row gt_right" headers="PVI_N">25.6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twelfth-hampden.html">Twelfth Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Angelo J. Puppolo, Jr. (D-Springfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Springfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+6</td>
+<td class="gt_row gt_right" headers="PVI_N">6.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-hampshire.html">First Hampshire</a></td>
+<td class="gt_row gt_left" headers="legislator">Lindsay N. Sabadosa (D-Northampton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Northampton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+32</td>
+<td class="gt_row gt_right" headers="PVI_N">31.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-hampshire.html">Second Hampshire</a></td>
+<td class="gt_row gt_left" headers="legislator">Homar Gomez (D-Easthampton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Easthampton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">18.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-hampshire.html">Third Hampshire</a></td>
+<td class="gt_row gt_left" headers="legislator">Mindy Domb (D-Amherst)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Amherst</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+36</td>
+<td class="gt_row gt_right" headers="PVI_N">35.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-middlesex.html">First Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Margaret R. Scarsdale (D-Pepperell)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Pepperell</td>
+<td class="gt_row gt_right" headers="percent">51%</td>
+<td class="gt_row gt_left" headers="PVI">D+5</td>
+<td class="gt_row gt_right" headers="PVI_N">4.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-middlesex.html">Second Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">James Arciero (D-Westford)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Westford</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+17</td>
+<td class="gt_row gt_right" headers="PVI_N">16.6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-middlesex.html">Third Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Kate Hogan (D-Stow)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Stow</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">18.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-middlesex.html">Fourth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Danielle W. Gregoire (D-Marlborough)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Marlborough</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+15</td>
+<td class="gt_row gt_right" headers="PVI_N">15.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-middlesex.html">Fifth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">David Paul Linsky (D-Natick)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Natick</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+26</td>
+<td class="gt_row gt_right" headers="PVI_N">25.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixth-middlesex.html">Sixth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Priscila S. Sousa (D-Framingham)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Framingham</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+23</td>
+<td class="gt_row gt_right" headers="PVI_N">22.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventh-middlesex.html">Seventh Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Jack Patrick Lewis (D-Framingham)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Framingham</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+21</td>
+<td class="gt_row gt_right" headers="PVI_N">21.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighth-middlesex.html">Eighth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">James Arena-DeRosa (D-Holliston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Holliston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+19</td>
+<td class="gt_row gt_right" headers="PVI_N">19.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/ninth-middlesex.html">Ninth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Thomas M. Stanley (D-Waltham)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Waltham</td>
+<td class="gt_row gt_right" headers="percent">73%</td>
+<td class="gt_row gt_left" headers="PVI">D+19</td>
+<td class="gt_row gt_right" headers="PVI_N">18.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/tenth-middlesex.html">Tenth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">John J. Lawn, Jr. (D-Watertown)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Watertown</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+23</td>
+<td class="gt_row gt_right" headers="PVI_N">23.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eleventh-middlesex.html">Eleventh Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Amy Mah Sangiolo (D-Newton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Newton</td>
+<td class="gt_row gt_right" headers="percent">81%</td>
+<td class="gt_row gt_left" headers="PVI">D+33</td>
+<td class="gt_row gt_right" headers="PVI_N">32.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twelfth-middlesex.html">Twelfth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Greg Schwartz (D-Newton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Newton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+32</td>
+<td class="gt_row gt_right" headers="PVI_N">31.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirteenth-middlesex.html">Thirteenth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Carmine Lawrence Gentile (D-Sudbury)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Sudbury</td>
+<td class="gt_row gt_right" headers="percent">74%</td>
+<td class="gt_row gt_left" headers="PVI">D+28</td>
+<td class="gt_row gt_right" headers="PVI_N">27.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourteenth-middlesex.html">Fourteenth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Simon Cataldo (D-Concord)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Concord</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">23.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifteenth-middlesex.html">Fifteenth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Michelle Ciccolo (D-Lexington)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lexington</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">24.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixteenth-middlesex.html">Sixteenth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Rodney M. Elliott (D-Lowell)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lowell</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">10.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventeenth-middlesex.html">Seventeenth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Vanna Howard (D-Lowell)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lowell</td>
+<td class="gt_row gt_right" headers="percent">78%</td>
+<td class="gt_row gt_left" headers="PVI">D+14</td>
+<td class="gt_row gt_right" headers="PVI_N">13.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighteenth-middlesex.html">Eighteenth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Tara Thorn Hong (D-Lowell)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lowell</td>
+<td class="gt_row gt_right" headers="percent">78%</td>
+<td class="gt_row gt_left" headers="PVI">D+16</td>
+<td class="gt_row gt_right" headers="PVI_N">16.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/nineteenth-middlesex.html">Nineteenth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">David Allen Robertson (D-Wilmington)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Wilmington</td>
+<td class="gt_row gt_right" headers="percent">53%</td>
+<td class="gt_row gt_left" headers="PVI">D+2</td>
+<td class="gt_row gt_right" headers="PVI_N">1.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twentieth-middlesex.html">Twentieth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Bradley H. Jones, Jr. (R-North Reading)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">North Reading</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+4</td>
+<td class="gt_row gt_right" headers="PVI_N">4.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-first-middlesex.html">Twenty-First Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Kenneth I. Gordon (D-Bedford)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Bedford</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+17</td>
+<td class="gt_row gt_right" headers="PVI_N">16.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-second-middlesex.html">Twenty-Second Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Marc T. Lombardo (R-Billerica)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Billerica</td>
+<td class="gt_row gt_right" headers="percent">61%</td>
+<td class="gt_row gt_left" headers="PVI">D+2</td>
+<td class="gt_row gt_right" headers="PVI_N">2.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-third-middlesex.html">Twenty-Third Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Sean Garballey (D-Arlington)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Arlington</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+31</td>
+<td class="gt_row gt_right" headers="PVI_N">30.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-fourth-middlesex.html">Twenty-Fourth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">David M. Rogers (D-Cambridge)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Cambridge</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+32</td>
+<td class="gt_row gt_right" headers="PVI_N">32.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-fifth-middlesex.html">Twenty-Fifth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Marjorie C. Decker (D-Cambridge)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Cambridge</td>
+<td class="gt_row gt_right" headers="percent">98%</td>
+<td class="gt_row gt_left" headers="PVI">D+44</td>
+<td class="gt_row gt_right" headers="PVI_N">43.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-sixth-middlesex.html">Twenty-Sixth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Mike Connolly (D-Cambridge)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Cambridge</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+39</td>
+<td class="gt_row gt_right" headers="PVI_N">38.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-seventh-middlesex.html">Twenty-Seventh Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Erika Uyterhoeven (D-Somerville)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Somerville</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+40</td>
+<td class="gt_row gt_right" headers="PVI_N">40.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-eighth-middlesex.html">Twenty-Eighth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Joseph W. Mcgonagle, Jr (D-Everett)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Everett</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+17</td>
+<td class="gt_row gt_right" headers="PVI_N">17.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twenty-ninth-middlesex.html">Twenty-Ninth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Steven C. Owens (D-Watertown)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Watertown</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+35</td>
+<td class="gt_row gt_right" headers="PVI_N">35.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirtieth-middlesex.html">Thirtieth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Richard M. Haggerty (D-Woburn)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Woburn</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+12</td>
+<td class="gt_row gt_right" headers="PVI_N">12.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirty-first-middlesex.html">Thirty-First Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael Seamus Day (D-Stoneham)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Stoneham</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+15</td>
+<td class="gt_row gt_right" headers="PVI_N">14.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirty-second-middlesex.html">Thirty-Second Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Kate Lipper-Garabedian (D-Melrose)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Melrose</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+20</td>
+<td class="gt_row gt_right" headers="PVI_N">20.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirty-third-middlesex.html">Thirty-Third Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Steven Ultrino (D-Malden)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Malden</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+22</td>
+<td class="gt_row gt_right" headers="PVI_N">21.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirty-fourth-middlesex.html">Thirty-Fourth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Christine P. Barber (D-Somerville)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Somerville</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+32</td>
+<td class="gt_row gt_right" headers="PVI_N">32.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirty-fifth-middlesex.html">Thirty-Fifth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Paul J. Donato, Sr. (D-Medford)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Medford</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+21</td>
+<td class="gt_row gt_right" headers="PVI_N">20.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirty-sixth-middlesex.html">Thirty-Sixth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Colleen M. Garry (D-Dracut)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Dracut</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">R+1</td>
+<td class="gt_row gt_right" headers="PVI_N">−1.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirty-seventh-middlesex.html">Thirty-Seventh Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Danillo A. Sena (D-Acton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Acton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+22</td>
+<td class="gt_row gt_right" headers="PVI_N">21.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-norfolk.html">First Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Bruce J. Ayers (D-Quincy)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Quincy</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+16</td>
+<td class="gt_row gt_right" headers="PVI_N">16.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-norfolk.html">Second Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Tackey Chan (D-Quincy)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Quincy</td>
+<td class="gt_row gt_right" headers="percent">70%</td>
+<td class="gt_row gt_left" headers="PVI">D+15</td>
+<td class="gt_row gt_right" headers="PVI_N">15.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-norfolk.html">Third Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Ronald Mariano (D-Quincy)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Quincy</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">11.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-norfolk.html">Fourth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">James Michael Murphy (D-Weymouth)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Weymouth</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">8.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-norfolk.html">Fifth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Mark J. Cusack (D-Braintree)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Braintree</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+6</td>
+<td class="gt_row gt_right" headers="PVI_N">5.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixth-norfolk.html">Sixth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">William C. Galvin (D-Canton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Canton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+13</td>
+<td class="gt_row gt_right" headers="PVI_N">12.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventh-norfolk.html">Seventh Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Richard Gerard Wells, Jr (D-Milton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Milton</td>
+<td class="gt_row gt_right" headers="percent">65%</td>
+<td class="gt_row gt_left" headers="PVI">D+23</td>
+<td class="gt_row gt_right" headers="PVI_N">23.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighth-norfolk.html">Eighth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Ted Philips (D-Sharon)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Sharon</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">17.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/ninth-norfolk.html">Ninth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Marcus S. Vaughn (R-Wrentham)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Wrentham</td>
+<td class="gt_row gt_right" headers="percent">57%</td>
+<td class="gt_row gt_left" headers="PVI">D+7</td>
+<td class="gt_row gt_right" headers="PVI_N">7.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/tenth-norfolk.html">Tenth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Jeffrey N. Roy (D-Franklin)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Franklin</td>
+<td class="gt_row gt_right" headers="percent">62%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">10.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eleventh-norfolk.html">Eleventh Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Paul McMurtry (D-Dedham)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Dedham</td>
+<td class="gt_row gt_right" headers="percent">68%</td>
+<td class="gt_row gt_left" headers="PVI">D+15</td>
+<td class="gt_row gt_right" headers="PVI_N">15.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twelfth-norfolk.html">Twelfth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">John H. Rogers (D-Norwood)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Norwood</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">11.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirteenth-norfolk.html">Thirteenth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Joshua Tarsky (D-Needham)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Needham</td>
+<td class="gt_row gt_right" headers="percent">61%</td>
+<td class="gt_row gt_left" headers="PVI">D+25</td>
+<td class="gt_row gt_right" headers="PVI_N">25.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourteenth-norfolk.html">Fourteenth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Alice Hanlon Peisch (D-Wellesley)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Wellesley</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+26</td>
+<td class="gt_row gt_right" headers="PVI_N">26.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifteenth-norfolk.html">Fifteenth Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Tommy Vitolo (D-Brookline)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Brookline</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+39</td>
+<td class="gt_row gt_right" headers="PVI_N">38.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-plymouth.html">First Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Michelle L. Badger (D-Plymouth)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Plymouth</td>
+<td class="gt_row gt_right" headers="percent">52%</td>
+<td class="gt_row gt_left" headers="PVI">D+5</td>
+<td class="gt_row gt_right" headers="PVI_N">5.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-plymouth.html">Second Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">John Robert Gaskey (R-Carver)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Carver</td>
+<td class="gt_row gt_right" headers="percent">89%</td>
+<td class="gt_row gt_left" headers="PVI">R+2</td>
+<td class="gt_row gt_right" headers="PVI_N">−1.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-plymouth.html">Third Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Joan Meschino (D-Hull)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Hull</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+16</td>
+<td class="gt_row gt_right" headers="PVI_N">15.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-plymouth.html">Fourth Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Patrick Joseph Kearney (D-Scituate)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Scituate</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">8.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-plymouth.html">Fifth Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">David F. Decoste (R-Norwell)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Norwell</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+1</td>
+<td class="gt_row gt_right" headers="PVI_N">1.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixth-plymouth.html">Sixth Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Kenneth Sweezey (R-Pembroke)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Pembroke</td>
+<td class="gt_row gt_right" headers="percent">53%</td>
+<td class="gt_row gt_left" headers="PVI">D+4</td>
+<td class="gt_row gt_right" headers="PVI_N">4.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventh-plymouth.html">Seventh Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Alyson M. Sullivan-Almeida (R-Abington)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Abington</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">EVEN</td>
+<td class="gt_row gt_right" headers="PVI_N">−0.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighth-plymouth.html">Eighth Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Dennis C. Gallagher (D-Bridgewater)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Bridgewater</td>
+<td class="gt_row gt_right" headers="percent">51%</td>
+<td class="gt_row gt_left" headers="PVI">EVEN</td>
+<td class="gt_row gt_right" headers="PVI_N">−0.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/ninth-plymouth.html">Ninth Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Bridget M. Plouffe (D-Brockton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Brockton</td>
+<td class="gt_row gt_right" headers="percent">54%</td>
+<td class="gt_row gt_left" headers="PVI">D+9</td>
+<td class="gt_row gt_right" headers="PVI_N">9.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/tenth-plymouth.html">Tenth Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Michelle Marie Dubois (D-Brockton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Brockton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+22</td>
+<td class="gt_row gt_right" headers="PVI_N">22.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eleventh-plymouth.html">Eleventh Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Rita A. Mendes (D-Brockton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Brockton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+30</td>
+<td class="gt_row gt_right" headers="PVI_N">30.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twelfth-plymouth.html">Twelfth Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Kathleen R. Lanatra (D-Kingston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Kingston</td>
+<td class="gt_row gt_right" headers="percent">53%</td>
+<td class="gt_row gt_left" headers="PVI">D+2</td>
+<td class="gt_row gt_right" headers="PVI_N">2.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-suffolk.html">First Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Adrian C. Madaro (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">23.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-suffolk.html">Second Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Daniel J. Ryan (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+30</td>
+<td class="gt_row gt_right" headers="PVI_N">30.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-suffolk.html">Third Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Aaron M. Michlewitz (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+29</td>
+<td class="gt_row gt_right" headers="PVI_N">29.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-suffolk.html">Fourth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">David Biele (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">18.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-suffolk.html">Fifth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Christopher J. Worrell (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+37</td>
+<td class="gt_row gt_right" headers="PVI_N">37.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixth-suffolk.html">Sixth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Russell E. Holmes (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+39</td>
+<td class="gt_row gt_right" headers="PVI_N">39.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventh-suffolk.html">Seventh Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Chynah Tyler (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+40</td>
+<td class="gt_row gt_right" headers="PVI_N">39.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighth-suffolk.html">Eighth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Jay D. Livingstone (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+34</td>
+<td class="gt_row gt_right" headers="PVI_N">33.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/ninth-suffolk.html">Ninth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">John Francis Moran (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">82%</td>
+<td class="gt_row gt_left" headers="PVI">D+37</td>
+<td class="gt_row gt_right" headers="PVI_N">36.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/tenth-suffolk.html">Tenth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">William Macgregor (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+25</td>
+<td class="gt_row gt_right" headers="PVI_N">24.7</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eleventh-suffolk.html">Eleventh Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Judith A. Garcia (D-Chelsea)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Chelsea</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+23</td>
+<td class="gt_row gt_right" headers="PVI_N">22.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twelfth-suffolk.html">Twelfth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Brandy Fluker Oakley (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+38</td>
+<td class="gt_row gt_right" headers="PVI_N">38.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirteenth-suffolk.html">Thirteenth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Daniel J. Hunt (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+20</td>
+<td class="gt_row gt_right" headers="PVI_N">20.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourteenth-suffolk.html">Fourteenth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Rob Consalvo (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+30</td>
+<td class="gt_row gt_right" headers="PVI_N">30.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifteenth-suffolk.html">Fifteenth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Samantha Montaño (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+42</td>
+<td class="gt_row gt_right" headers="PVI_N">41.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixteenth-suffolk.html">Sixteenth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Jessica Ann Giannino (D-Revere)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Revere</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+5</td>
+<td class="gt_row gt_right" headers="PVI_N">4.7</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventeenth-suffolk.html">Seventeenth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Kevin G. Honan (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+36</td>
+<td class="gt_row gt_right" headers="PVI_N">35.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighteenth-suffolk.html">Eighteenth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael J. Moran (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+32</td>
+<td class="gt_row gt_right" headers="PVI_N">32.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/nineteenth-suffolk.html">Nineteenth Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Jeffrey Rosario Turco (D-Winthrop)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Winthrop</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">10.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/first-worcester.html">First Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Kimberly N. Ferguson (R-Holden)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Holden</td>
+<td class="gt_row gt_right" headers="percent">70%</td>
+<td class="gt_row gt_left" headers="PVI">D+4</td>
+<td class="gt_row gt_right" headers="PVI_N">4.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/second-worcester.html">Second Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Jonathan D. Zlotnik (D-Gardner)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Gardner</td>
+<td class="gt_row gt_right" headers="percent">52%</td>
+<td class="gt_row gt_left" headers="PVI">EVEN</td>
+<td class="gt_row gt_right" headers="PVI_N">0.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/third-worcester.html">Third Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael P. Kushmerek (D-Fitchburg)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Fitchburg</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">7.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourth-worcester.html">Fourth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Natalie Higgins (D-Leominster)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Leominster</td>
+<td class="gt_row gt_right" headers="percent">58%</td>
+<td class="gt_row gt_left" headers="PVI">D+6</td>
+<td class="gt_row gt_right" headers="PVI_N">6.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifth-worcester.html">Fifth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Donald R. Berthiaume, Jr (R-Spencer)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Spencer</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">R+4</td>
+<td class="gt_row gt_right" headers="PVI_N">−4.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixth-worcester.html">Sixth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">John J. Marsi, Jr (R-Dudley)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Dudley</td>
+<td class="gt_row gt_right" headers="percent">62%</td>
+<td class="gt_row gt_left" headers="PVI">R+2</td>
+<td class="gt_row gt_right" headers="PVI_N">−2.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventh-worcester.html">Seventh Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Paul K. Frost (R-Auburn)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Auburn</td>
+<td class="gt_row gt_right" headers="percent">69%</td>
+<td class="gt_row gt_left" headers="PVI">D+1</td>
+<td class="gt_row gt_right" headers="PVI_N">0.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighth-worcester.html">Eighth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael J. Soter (R-Bellingham)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Bellingham</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">EVEN</td>
+<td class="gt_row gt_right" headers="PVI_N">−0.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/ninth-worcester.html">Ninth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">David Kent Muradian, Jr (R-Grafton)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Grafton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+7</td>
+<td class="gt_row gt_right" headers="PVI_N">7.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/tenth-worcester.html">Tenth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Brian William Murray (D-Milford)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Milford</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+7</td>
+<td class="gt_row gt_right" headers="PVI_N">7.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eleventh-worcester.html">Eleventh Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Hannah E. Kane (R-Shrewsbury)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Shrewsbury</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+14</td>
+<td class="gt_row gt_right" headers="PVI_N">13.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/twelfth-worcester.html">Twelfth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Meghan Kilcoyne (D-Clinton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Clinton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">7.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/thirteenth-worcester.html">Thirteenth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">John J. Mahoney, Jr. (D-Worcester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Worcester</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">17.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fourteenth-worcester.html">Fourteenth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">James J. O'Day (D-West Boylston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">West Boylston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+15</td>
+<td class="gt_row gt_right" headers="PVI_N">15.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/fifteenth-worcester.html">Fifteenth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Mary S. Keefe (D-Worcester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Worcester</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+19</td>
+<td class="gt_row gt_right" headers="PVI_N">19.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/sixteenth-worcester.html">Sixteenth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Daniel M. Donahue (D-Worcester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Worcester</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+13</td>
+<td class="gt_row gt_right" headers="PVI_N">12.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/seventeenth-worcester.html">Seventeenth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">David Henry Argosky Leboeuf (D-Worcester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Worcester</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">11.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/eighteenth-worcester.html">Eighteenth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Joseph D. Mckenna (R-Sutton)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Sutton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">R+4</td>
+<td class="gt_row gt_right" headers="PVI_N">−3.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/barnstable-dukes-and-nantucket.html">Barnstable, Dukes and Nantucket</a></td>
+<td class="gt_row gt_left" headers="legislator">Thomas W. Moakley (D-Falmouth)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Falmouth</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">23.7</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-rep/nineteenth-worcester.html">Nineteenth Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Kate Donaghue (D-Westborough)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Westborough</td>
+<td class="gt_row gt_right" headers="percent">78%</td>
+<td class="gt_row gt_left" headers="PVI">D+20</td>
+<td class="gt_row gt_right" headers="PVI_N">19.9</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="state-senate-districts" class="level2">
+<h2 class="anchored" data-anchor-id="state-senate-districts">State Senate Districts</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="dlwfomxudx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dlwfomxudx table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#dlwfomxudx thead, #dlwfomxudx tbody, #dlwfomxudx tfoot, #dlwfomxudx tr, #dlwfomxudx td, #dlwfomxudx th {
+  border-style: none;
+}
+
+#dlwfomxudx p {
+  margin: 0;
+  padding: 0;
+}
+
+#dlwfomxudx .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#dlwfomxudx .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#dlwfomxudx .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#dlwfomxudx .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#dlwfomxudx .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#dlwfomxudx .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#dlwfomxudx .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#dlwfomxudx .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#dlwfomxudx .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#dlwfomxudx .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#dlwfomxudx .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dlwfomxudx .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#dlwfomxudx .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#dlwfomxudx .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#dlwfomxudx .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dlwfomxudx .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#dlwfomxudx .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#dlwfomxudx .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#dlwfomxudx .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dlwfomxudx .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#dlwfomxudx .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dlwfomxudx .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#dlwfomxudx .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dlwfomxudx .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dlwfomxudx .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dlwfomxudx .gt_left {
+  text-align: left;
+}
+
+#dlwfomxudx .gt_center {
+  text-align: center;
+}
+
+#dlwfomxudx .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#dlwfomxudx .gt_font_normal {
+  font-weight: normal;
+}
+
+#dlwfomxudx .gt_font_bold {
+  font-weight: bold;
+}
+
+#dlwfomxudx .gt_font_italic {
+  font-style: italic;
+}
+
+#dlwfomxudx .gt_super {
+  font-size: 65%;
+}
+
+#dlwfomxudx .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#dlwfomxudx .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#dlwfomxudx .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#dlwfomxudx .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#dlwfomxudx .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#dlwfomxudx .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#dlwfomxudx .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#dlwfomxudx .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#dlwfomxudx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="district_md_ref" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">District</th>
+<th id="legislator" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Legislator</th>
+<th id="party" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Party</th>
+<th id="city_town" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">City/Town</th>
+<th id="percent" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Vote</th>
+<th id="PVI" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">PVI</th>
+<th id="PVI_N" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">PVI_N</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/second-essex.html">Second Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Joan B. Lovely (D-Salem)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Salem</td>
+<td class="gt_row gt_right" headers="percent">67%</td>
+<td class="gt_row gt_left" headers="PVI">D+13</td>
+<td class="gt_row gt_right" headers="PVI_N">12.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/bristol-and-norfolk.html">Bristol and Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Paul R. Feeney (D-Foxborough)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Foxborough</td>
+<td class="gt_row gt_right" headers="percent">73%</td>
+<td class="gt_row gt_left" headers="PVI">D+9</td>
+<td class="gt_row gt_right" headers="PVI_N">9.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/first-bristol-and-plymouth.html">First Bristol and Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael J. Rodrigues (D-Westport)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Westport</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">R+1</td>
+<td class="gt_row gt_right" headers="PVI_N">−1.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/second-bristol-and-plymouth.html">Second Bristol and Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Mark C. Montigny (D-New Bedford)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">New Bedford</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+4</td>
+<td class="gt_row gt_right" headers="PVI_N">3.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/cape-and-islands.html">Cape and Islands</a></td>
+<td class="gt_row gt_left" headers="legislator">Julian Andre Cyr (D-Provincetown)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Provincetown</td>
+<td class="gt_row gt_right" headers="percent">61%</td>
+<td class="gt_row gt_left" headers="PVI">D+14</td>
+<td class="gt_row gt_right" headers="PVI_N">14.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/first-essex.html">First Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Pavel M. Payano (D-Lawrence)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lawrence</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+10</td>
+<td class="gt_row gt_right" headers="PVI_N">9.5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/first-essex-and-middlesex.html">First Essex and Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Bruce E. Tarr (R-Gloucester)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Gloucester</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+12</td>
+<td class="gt_row gt_right" headers="PVI_N">11.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/second-essex-and-middlesex.html">Second Essex and Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Barry R. Finegold (D-Andover)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Andover</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">8.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/hampden.html">Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Adam Gomez (D-Springfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Springfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">17.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/first-middlesex.html">First Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Edward J. Kennedy (D-Lowell)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lowell</td>
+<td class="gt_row gt_right" headers="percent">64%</td>
+<td class="gt_row gt_left" headers="PVI">D+7</td>
+<td class="gt_row gt_right" headers="PVI_N">7.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/second-middlesex.html">Second Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Patricia D. Jehlen (D-Somerville)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Somerville</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+33</td>
+<td class="gt_row gt_right" headers="PVI_N">32.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/third-middlesex.html">Third Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael J. Barrett (D-Lexington)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lexington</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+22</td>
+<td class="gt_row gt_right" headers="PVI_N">22.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/fourth-middlesex.html">Fourth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Cindy F. Friedman (D-Arlington)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Arlington</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+17</td>
+<td class="gt_row gt_right" headers="PVI_N">17.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/middlesex-and-worcester.html">Middlesex and Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">James B. Eldridge (D-Marlborough)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Marlborough</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+21</td>
+<td class="gt_row gt_right" headers="PVI_N">21.4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/norfolk-and-plymouth.html">Norfolk and Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">John F. Keenan (D-Quincy)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Quincy</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+9</td>
+<td class="gt_row gt_right" headers="PVI_N">9.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/plymouth-and-barnstable.html">Plymouth and Barnstable</a></td>
+<td class="gt_row gt_left" headers="legislator">Dylan A. Fernandes (D-Falmouth)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Falmouth</td>
+<td class="gt_row gt_right" headers="percent">51%</td>
+<td class="gt_row gt_left" headers="PVI">D+6</td>
+<td class="gt_row gt_right" headers="PVI_N">6.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/first-suffolk.html">First Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Nicholas P. Collins (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+27</td>
+<td class="gt_row gt_right" headers="PVI_N">27.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/second-suffolk.html">Second Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Liz Miranda (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+40</td>
+<td class="gt_row gt_right" headers="PVI_N">40.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/first-worcester.html">First Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Robyn K. Kennedy (D-Worcester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Worcester</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+17</td>
+<td class="gt_row gt_right" headers="PVI_N">16.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/second-worcester.html">Second Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael O. Moore (D-Millbury)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Millbury</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+12</td>
+<td class="gt_row gt_right" headers="PVI_N">11.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/worcester-and-middlesex.html">Worcester and Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">John J. Cronin (D-Fitchburg)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Fitchburg</td>
+<td class="gt_row gt_right" headers="percent">59%</td>
+<td class="gt_row gt_left" headers="PVI">D+9</td>
+<td class="gt_row gt_right" headers="PVI_N">8.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/middlesex-and-suffolk.html">Middlesex and Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Sal N. DiDomenico (D-Everett)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Everett</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+31</td>
+<td class="gt_row gt_right" headers="PVI_N">30.8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/fifth-middlesex.html">Fifth Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Jason M. Lewis (D-Winchester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Winchester</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+17</td>
+<td class="gt_row gt_right" headers="PVI_N">17.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/hampden-and-hampshire.html">Hampden and Hampshire</a></td>
+<td class="gt_row gt_left" headers="legislator">John C. Velis (D-Westfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Westfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+6</td>
+<td class="gt_row gt_right" headers="PVI_N">5.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/middlesex-and-norfolk.html">Middlesex and Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Karen E. Spilka (D-Ashland)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Ashland</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+21</td>
+<td class="gt_row gt_right" headers="PVI_N">21.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/third-essex.html">Third Essex</a></td>
+<td class="gt_row gt_left" headers="legislator">Brendan Peter Crighton (D-Lynn)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lynn</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+12</td>
+<td class="gt_row gt_right" headers="PVI_N">11.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/norfolk-and-suffolk.html">Norfolk and Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael F. Rush (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+19</td>
+<td class="gt_row gt_right" headers="PVI_N">18.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/suffolk-and-middlesex.html">Suffolk and Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">William N. Brownsberger (D-Belmont)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Belmont</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+33</td>
+<td class="gt_row gt_right" headers="PVI_N">32.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/third-suffolk.html">Third Suffolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Lydia Marie Edwards (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">70%</td>
+<td class="gt_row gt_left" headers="PVI">D+20</td>
+<td class="gt_row gt_right" headers="PVI_N">20.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/hampshire-franklin-and-worcester.html">Hampshire, Franklin and Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Jo Comerford (D-Northampton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Northampton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+23</td>
+<td class="gt_row gt_right" headers="PVI_N">22.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/berkshire-hampden-franklin-and-hampshire.html">Berkshire, Hampden, Franklin and Hampshire</a></td>
+<td class="gt_row gt_left" headers="legislator">Paul W. Mark (D-Becket)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Becket</td>
+<td class="gt_row gt_right" headers="percent">71%</td>
+<td class="gt_row gt_left" headers="PVI">D+18</td>
+<td class="gt_row gt_right" headers="PVI_N">18.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/second-plymouth-and-norfolk.html">Second Plymouth and Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Michael D. Brady (D-Brockton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Brockton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+14</td>
+<td class="gt_row gt_right" headers="PVI_N">13.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/worcester-and-hampshire.html">Worcester and Hampshire</a></td>
+<td class="gt_row gt_left" headers="legislator">Peter J. Durant (R-Spencer)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Spencer</td>
+<td class="gt_row gt_right" headers="percent">58%</td>
+<td class="gt_row gt_left" headers="PVI">D+1</td>
+<td class="gt_row gt_right" headers="PVI_N">1.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/hampden-hampshire-and-worcester.html">Hampden, Hampshire and Worcester</a></td>
+<td class="gt_row gt_left" headers="legislator">Jacob R. Oliveira (D-Ludlow)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Ludlow</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+5</td>
+<td class="gt_row gt_right" headers="PVI_N">4.9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/norfolk-worcester-and-middlesex.html">Norfolk, Worcester and Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Rebecca L. Rausch (D-Needham)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Needham</td>
+<td class="gt_row gt_right" headers="percent">59%</td>
+<td class="gt_row gt_left" headers="PVI">D+13</td>
+<td class="gt_row gt_right" headers="PVI_N">13.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/third-bristol-and-plymouth.html">Third Bristol and Plymouth</a></td>
+<td class="gt_row gt_left" headers="legislator">Kelly A. Dooner (R-Taunton)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Taunton</td>
+<td class="gt_row gt_right" headers="percent">48%</td>
+<td class="gt_row gt_left" headers="PVI">R+1</td>
+<td class="gt_row gt_right" headers="PVI_N">−0.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/worcester-and-hampden.html">Worcester and Hampden</a></td>
+<td class="gt_row gt_left" headers="legislator">Ryan C. Fattman (R-Sutton)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Sutton</td>
+<td class="gt_row gt_right" headers="percent">66%</td>
+<td class="gt_row gt_left" headers="PVI">R+1</td>
+<td class="gt_row gt_right" headers="PVI_N">−1.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/norfolk-plymouth-and-bristol.html">Norfolk, Plymouth and Bristol</a></td>
+<td class="gt_row gt_left" headers="legislator">William J. Driscoll, Jr (D-Milton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Milton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+12</td>
+<td class="gt_row gt_right" headers="PVI_N">11.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/norfolk-and-middlesex.html">Norfolk and Middlesex</a></td>
+<td class="gt_row gt_left" headers="legislator">Cynthia Stone Creem (D-Newton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Newton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+32</td>
+<td class="gt_row gt_right" headers="PVI_N">32.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="state-senate/first-plymouth-and-norfolk.html">First Plymouth and Norfolk</a></td>
+<td class="gt_row gt_left" headers="legislator">Patrick A. O'Connor (R-Weymouth)</td>
+<td class="gt_row gt_left" headers="party">Republican</td>
+<td class="gt_row gt_left" headers="city_town">Weymouth</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+10</td>
+<td class="gt_row gt_right" headers="PVI_N">10.3</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="governors-council-districts" class="level2">
+<h2 class="anchored" data-anchor-id="governors-council-districts">Governor’s Council Districts</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="anfqbhpmvt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#anfqbhpmvt table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#anfqbhpmvt thead, #anfqbhpmvt tbody, #anfqbhpmvt tfoot, #anfqbhpmvt tr, #anfqbhpmvt td, #anfqbhpmvt th {
+  border-style: none;
+}
+
+#anfqbhpmvt p {
+  margin: 0;
+  padding: 0;
+}
+
+#anfqbhpmvt .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#anfqbhpmvt .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#anfqbhpmvt .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#anfqbhpmvt .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#anfqbhpmvt .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#anfqbhpmvt .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#anfqbhpmvt .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#anfqbhpmvt .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#anfqbhpmvt .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#anfqbhpmvt .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#anfqbhpmvt .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#anfqbhpmvt .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#anfqbhpmvt .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#anfqbhpmvt .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#anfqbhpmvt .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#anfqbhpmvt .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#anfqbhpmvt .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#anfqbhpmvt .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#anfqbhpmvt .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#anfqbhpmvt .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#anfqbhpmvt .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#anfqbhpmvt .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#anfqbhpmvt .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#anfqbhpmvt .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#anfqbhpmvt .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#anfqbhpmvt .gt_left {
+  text-align: left;
+}
+
+#anfqbhpmvt .gt_center {
+  text-align: center;
+}
+
+#anfqbhpmvt .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#anfqbhpmvt .gt_font_normal {
+  font-weight: normal;
+}
+
+#anfqbhpmvt .gt_font_bold {
+  font-weight: bold;
+}
+
+#anfqbhpmvt .gt_font_italic {
+  font-style: italic;
+}
+
+#anfqbhpmvt .gt_super {
+  font-size: 65%;
+}
+
+#anfqbhpmvt .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#anfqbhpmvt .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#anfqbhpmvt .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#anfqbhpmvt .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#anfqbhpmvt .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#anfqbhpmvt .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#anfqbhpmvt .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#anfqbhpmvt .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#anfqbhpmvt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="district_md_ref" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">District</th>
+<th id="legislator" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Legislator</th>
+<th id="party" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Party</th>
+<th id="city_town" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">City/Town</th>
+<th id="percent" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Vote</th>
+<th id="PVI" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">PVI</th>
+<th id="PVI_N" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">PVI_N</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="gov-council/first.html">First</a></td>
+<td class="gt_row gt_left" headers="legislator">Joseph C. Ferreira (D-Swansea)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Swansea</td>
+<td class="gt_row gt_right" headers="percent">57%</td>
+<td class="gt_row gt_left" headers="PVI">D+5</td>
+<td class="gt_row gt_right" headers="PVI_N">5.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="gov-council/second.html">Second</a></td>
+<td class="gt_row gt_left" headers="legislator">Tamisha L. Civil (D-Stoughton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Stoughton</td>
+<td class="gt_row gt_right" headers="percent">57%</td>
+<td class="gt_row gt_left" headers="PVI">D+14</td>
+<td class="gt_row gt_right" headers="PVI_N">13.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="gov-council/third.html">Third</a></td>
+<td class="gt_row gt_left" headers="legislator">Mara Dolan (D-Concord)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Concord</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+25</td>
+<td class="gt_row gt_right" headers="PVI_N">24.7</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="gov-council/fourth.html">Fourth</a></td>
+<td class="gt_row gt_left" headers="legislator">Christopher A. Iannella, Jr. (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+20</td>
+<td class="gt_row gt_right" headers="PVI_N">19.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="gov-council/fifth.html">Fifth</a></td>
+<td class="gt_row gt_left" headers="legislator">Eunice Delice Zeigler (D-Methuen)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Methuen</td>
+<td class="gt_row gt_right" headers="percent">47%</td>
+<td class="gt_row gt_left" headers="PVI">D+10</td>
+<td class="gt_row gt_right" headers="PVI_N">10.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="gov-council/sixth.html">Sixth</a></td>
+<td class="gt_row gt_left" headers="legislator">Terrence W. Kennedy (D-Lynnfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Lynnfield</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+22</td>
+<td class="gt_row gt_right" headers="PVI_N">22.3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="gov-council/seventh.html">Seventh</a></td>
+<td class="gt_row gt_left" headers="legislator">Paul M. Depalo (D-Worcester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Worcester</td>
+<td class="gt_row gt_right" headers="percent">57%</td>
+<td class="gt_row gt_left" headers="PVI">D+6</td>
+<td class="gt_row gt_right" headers="PVI_N">6.4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="gov-council/eighth.html">Eighth</a></td>
+<td class="gt_row gt_left" headers="legislator">Tara J. Jacobs (D-North Adams)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">North Adams</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+13</td>
+<td class="gt_row gt_right" headers="PVI_N">13.5</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="u.s.-house-districts" class="level2">
+<h2 class="anchored" data-anchor-id="u.s.-house-districts">U.S. House Districts</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="apbsaqkdxb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#apbsaqkdxb table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#apbsaqkdxb thead, #apbsaqkdxb tbody, #apbsaqkdxb tfoot, #apbsaqkdxb tr, #apbsaqkdxb td, #apbsaqkdxb th {
+  border-style: none;
+}
+
+#apbsaqkdxb p {
+  margin: 0;
+  padding: 0;
+}
+
+#apbsaqkdxb .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#apbsaqkdxb .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#apbsaqkdxb .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#apbsaqkdxb .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#apbsaqkdxb .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#apbsaqkdxb .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#apbsaqkdxb .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#apbsaqkdxb .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#apbsaqkdxb .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#apbsaqkdxb .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#apbsaqkdxb .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#apbsaqkdxb .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#apbsaqkdxb .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#apbsaqkdxb .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#apbsaqkdxb .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apbsaqkdxb .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#apbsaqkdxb .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#apbsaqkdxb .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#apbsaqkdxb .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apbsaqkdxb .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#apbsaqkdxb .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apbsaqkdxb .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#apbsaqkdxb .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apbsaqkdxb .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#apbsaqkdxb .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apbsaqkdxb .gt_left {
+  text-align: left;
+}
+
+#apbsaqkdxb .gt_center {
+  text-align: center;
+}
+
+#apbsaqkdxb .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#apbsaqkdxb .gt_font_normal {
+  font-weight: normal;
+}
+
+#apbsaqkdxb .gt_font_bold {
+  font-weight: bold;
+}
+
+#apbsaqkdxb .gt_font_italic {
+  font-style: italic;
+}
+
+#apbsaqkdxb .gt_super {
+  font-size: 65%;
+}
+
+#apbsaqkdxb .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#apbsaqkdxb .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#apbsaqkdxb .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#apbsaqkdxb .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#apbsaqkdxb .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#apbsaqkdxb .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#apbsaqkdxb .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#apbsaqkdxb .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#apbsaqkdxb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="district_md_ref" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">District</th>
+<th id="legislator" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Legislator</th>
+<th id="party" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Party</th>
+<th id="city_town" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">City/Town</th>
+<th id="percent" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Vote</th>
+<th id="PVI" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">PVI</th>
+<th id="PVI_N" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">PVI_N</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/first.html">First</a></td>
+<td class="gt_row gt_left" headers="legislator">Richard E. Neal (D-Springfield)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Springfield</td>
+<td class="gt_row gt_right" headers="percent">63%</td>
+<td class="gt_row gt_left" headers="PVI">D+8</td>
+<td class="gt_row gt_right" headers="PVI_N">8.3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/second.html">Second</a></td>
+<td class="gt_row gt_left" headers="legislator">James P. McGovern (D-Worcester)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Worcester</td>
+<td class="gt_row gt_right" headers="percent">69%</td>
+<td class="gt_row gt_left" headers="PVI">D+13</td>
+<td class="gt_row gt_right" headers="PVI_N">13.2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/third.html">Third</a></td>
+<td class="gt_row gt_left" headers="legislator">Lori Loureiro Trahan (D-Westford)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Westford</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+11</td>
+<td class="gt_row gt_right" headers="PVI_N">11.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/fourth.html">Fourth</a></td>
+<td class="gt_row gt_left" headers="legislator">Jake Auchincloss (D-Newton)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Newton</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+12</td>
+<td class="gt_row gt_right" headers="PVI_N">11.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/fifth.html">Fifth</a></td>
+<td class="gt_row gt_left" headers="legislator">Katherine M. Clark (D-Revere)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Revere</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+24</td>
+<td class="gt_row gt_right" headers="PVI_N">23.9</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/sixth.html">Sixth</a></td>
+<td class="gt_row gt_left" headers="legislator">Seth W. Moulton (D-Salem)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Salem</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+12</td>
+<td class="gt_row gt_right" headers="PVI_N">11.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/seventh.html">Seventh</a></td>
+<td class="gt_row gt_left" headers="legislator">Ayanna S. Pressley (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">100%</td>
+<td class="gt_row gt_left" headers="PVI">D+34</td>
+<td class="gt_row gt_right" headers="PVI_N">34.0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/eighth.html">Eighth</a></td>
+<td class="gt_row gt_left" headers="legislator">Stephen F. Lynch (D-Boston)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Boston</td>
+<td class="gt_row gt_right" headers="percent">71%</td>
+<td class="gt_row gt_left" headers="PVI">D+15</td>
+<td class="gt_row gt_right" headers="PVI_N">15.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="district_md_ref"><a href="us-house/ninth.html">Ninth</a></td>
+<td class="gt_row gt_left" headers="legislator">Bill Keating (D-Bourne)</td>
+<td class="gt_row gt_left" headers="party">Democratic</td>
+<td class="gt_row gt_left" headers="city_town">Bourne</td>
+<td class="gt_row gt_right" headers="percent">57%</td>
+<td class="gt_row gt_left" headers="PVI">D+7</td>
+<td class="gt_row gt_right" headers="PVI_N">6.6</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/mapoli\.us");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>See the <a href="../about.html">About</a> page for data source information.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

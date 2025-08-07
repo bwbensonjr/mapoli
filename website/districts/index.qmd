@@ -1,0 +1,38 @@
+---
+format:
+  html:
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+title: Massachusetts Legislative Districts
+---
+
+```{r}
+library(here)
+source(here("website/_gen/legislative_info.R"))
+```
+
+## State Representative Districts
+
+```{r}
+simple_office_table("State Representative")
+```
+
+## State Senate Districts
+
+```{r}
+simple_office_table("State Senate")
+```
+
+## Governor's Council Districts
+
+```{r}
+simple_office_table("Governor's Council")
+```
+
+## U.S. House Districts
+
+```{r}
+simple_office_table("U.S. House")
+```

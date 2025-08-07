@@ -11,7 +11,8 @@ title: Massachusetts `r params$office_name` Districts
 ---
 
 ```{r}
-source("../../_gen/legislative_info.R")
+library(here)
+source(here("website/_gen/legislative_info.R"))
 ```
 
 ```{r}

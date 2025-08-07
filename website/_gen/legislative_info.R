@@ -3,8 +3,7 @@ library(gt)
 library(sf)
 library(tmap)
 library(quarto)
-
-root_path = "../../.."
+library(here)
 
 fix_district <- function(district_name) {
     str_replace_all(
@@ -27,14 +26,14 @@ fix_district <- function(district_name) {
 ## Districts by precinct
 ##
 prec_dist <-
-    read_csv(str_c(root_path, "/pvi/ma_precincts_districts_pres_2024.csv")) |>
+    read_csv(here("pvi/ma_precincts_districts_pres_2024.csv")) |>
     mutate(State_Senate = fix_district(State_Senate),
            US_House = fix_district(US_House))
 
 ## Read district-level PVI data for joining with elections
 ##
 pvi_all <-
-    read_csv(str_c(root_path, "/pvi/ma_legislative_district_pvi_2024.csv")) |>
+    read_csv(here("pvi/ma_legislative_district_pvi_2024.csv")) |>
     mutate(district = fix_district(district))
 
 ## "State Representative"
@@ -185,10 +184,10 @@ office_table_political <- function(office_name) {
 
 office_demo_file <- function(office_name) {
     case_when(
-        (office_name == "State Representative") ~ str_c(root_path, "/demographics/data/ma_state_rep_demographics.csv"),
-        (office_name == "State Senate") ~ str_c(root_path, "/demographics/data/ma_state_senate_demographics.csv"),
-        (office_name == "Governor's Council") ~ str_c(root_path, "/demographics/data/ma_gov_council_demographics.csv"),
-        (office_name == "U.S. House") ~ str_c(root_path, "/demographics/data/ma_us_house_demographics.csv"),
+        (office_name == "State Representative") ~ here("demographics/data/ma_state_rep_demographics.csv"),
+        (office_name == "State Senate") ~ here("demographics/data/ma_state_senate_demographics.csv"),
+        (office_name == "Governor's Council") ~ here("demographics/data/ma_gov_council_demographics.csv"),
+        (office_name == "U.S. House") ~ here("demographics/data/ma_us_house_demographics.csv"),
     )
 }
 
@@ -272,10 +271,10 @@ office_map_scale <- function(office_name) {
 
 office_map_geom_file <- function(office_name) {
     case_when(
-        (office_name == "State Representative") ~ str_c(root_path, "/gis/geojson/house2021.geojson"),
-        (office_name == "State Senate") ~ str_c(root_path, "/gis/geojson/senate2021.geojson"),
-        (office_name == "Governor's Council") ~ str_c(root_path, "/gis/geojson/govcouncil2021.geojson"),
-        (office_name == "U.S. House") ~ str_c(root_path, "/gis/geojson/congressma118.geojson")
+        (office_name == "State Representative") ~ here("gis/geojson/house2021.geojson"),
+        (office_name == "State Senate") ~ here("gis/geojson/senate2021.geojson"),
+        (office_name == "Governor's Council") ~ here("gis/geojson/govcouncil2021.geojson"),
+        (office_name == "U.S. House") ~ here("gis/geojson/congressma118.geojson")
     )
 }
 
@@ -399,7 +398,7 @@ district_map <- function(office_name, district_name, simp_tol=50) {
         filter(!!sym(office_col) == district_name) |>
         left_join(city_town_total_precincts, by="city_town") |>
         select(city_town, ward, precinct, total_precincts)
-    dist_geom <- read_sf(str_c(root_path, "/gis/geojson/wards_pcts_subs_2022.geojson")) |>
+    dist_geom <- read_sf(here("gis/geojson/wards_pcts_subs_2022.geojson")) |>
         select(city_town, ward=Ward, precinct=Pct, geometry) |>
         right_join(dist_pcts, by=c("city_town", "ward", "precinct")) |>
         filter(!st_is_empty(geometry)) |>
@@ -468,5 +467,31 @@ district_demographics <- function(office_name, district_name) {
             rows=(Variable %in% c("Population",
                                   "Area (square miles)")),
             decimals=0
+        )
+}
+
+simple_office_table <- function(office_name) {
+    off_rep_slug <- str_c("(", office_slug(office_name), "/")
+    legislative_district_info |>
+        filter(office == office_name) |>
+        ## Hack to make the link work from the "districts" path level
+        mutate(district_md_ref = str_replace(district_md_ref, fixed("("), fixed(off_rep_slug))) |>
+        arrange(district_id) |>
+        gt() |>
+        cols_hide(columns=c(office, district_id, district, district_web_ref)) |>
+        cols_label(
+            district_md_ref = "District",
+            legislator = "Legislator",
+            party = "Party",
+            city_town = "City/Town",
+            percent = "Vote"
+        ) |>
+        fmt_markdown(columns=district_md_ref) |>
+        fmt_percent(columns=percent, decimals=0) |>
+        fmt_number(columns=PVI_N, decimals=1) |>
+        cols_width(
+            c(percent, PVI, PVI_N) ~ px(100),
+            party ~ px(170),
+            city_town ~ px(200)
         )
 }
