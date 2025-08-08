@@ -8,6 +8,7 @@ execute:
 params:
   office_name: "State Senate"
 title: Massachusetts `r params$office_name` Districts
+canonical-url: true
 ---
 
 ```{r}

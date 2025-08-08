@@ -1,5 +1,6 @@
 ---
 title: "mapoli"
+canonical-url: true
 ---
 
 ## Massachusetts Legislative District Atlas
