@@ -1,0 +1,9 @@
+[project]
+name = "mapoli-districts"
+version = "0.1.0"
+dependencies = [
+    "html2text>=2025.4.15",
+    "langchain>=0.3.27",
+    "langchain-aws>=0.2.30",
+    "pandas>=2.3.1",
+]
