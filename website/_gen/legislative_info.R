@@ -129,30 +129,32 @@ district_web_ref <- function(office_name, district_name) {
     str_glue("<a href={district_file(office_name, district_name)}>{district_name}</a>")
 }
 
+district_summaries <-
+    read_csv(here("districts/ma_leg_dists_w_summary.csv")) |>
+    select(office, district, summary)
+
 ## A high-level summary of districts used in office-level table.
 ##
-## legislative_district_info <-
-##     latest_district_elections |>
-##         mutate(district_md_ref = district_md_ref(office, district),
-##                district_web_ref = district_web_ref(office, district)) |>
-##         select(
-##             office,
-##             district_id,
-##             district,
-##             district_md_ref,
-##             district_web_ref,
-##             legislator=display_winner,
-##             party=party_winner,
-##             city_town=city_town_winner,
-##             percent=percent_winner
-##         ) |>
-##         left_join(pvi_all, by=c("office", "district"))
+legislative_district_info <-
+    latest_district_elections |>
+        mutate(district_md_ref = district_md_ref(office, district),
+               district_web_ref = district_web_ref(office, district)) |>
+        select(
+            office,
+            district_id,
+            district,
+            district_md_ref,
+            district_web_ref,
+            legislator=display_winner,
+            party=party_winner,
+            city_town=city_town_winner,
+            percent=percent_winner
+        ) |>
+    left_join(pvi_all, by=c("office", "district")) |>
+    left_join(district_summaries, by=c("office", "district"))
 
 ## legislative_district_info |>
 ##     write_csv("ma_legislative_district_info.csv")
-
-legislative_district_info <-
-    read_csv(here("districts/ma_leg_dists_w_summary.csv"))
 
 ## Office-level political and demographic summary tables
 
@@ -161,7 +163,7 @@ office_table_political <- function(office_name) {
         filter(office == office_name) |>
         arrange(district_id) |>
         gt() |>
-        cols_hide(columns=c(office, district_id, district, district_web_ref)) |>
+        cols_hide(columns=c(office, district_id, district, district_web_ref, summary)) |>
         cols_label(
             district_md_ref = "District",
             legislator = "Legislator",
@@ -481,7 +483,7 @@ simple_office_table <- function(office_name) {
         mutate(district_md_ref = str_replace(district_md_ref, fixed("("), fixed(off_rep_slug))) |>
         arrange(district_id) |>
         gt() |>
-        cols_hide(columns=c(office, district_id, district, district_web_ref)) |>
+        cols_hide(columns=c(office, district_id, district, district_web_ref, summary)) |>
         cols_label(
             district_md_ref = "District",
             legislator = "Legislator",
