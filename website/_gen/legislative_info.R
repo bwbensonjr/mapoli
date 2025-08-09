@@ -131,25 +131,28 @@ district_web_ref <- function(office_name, district_name) {
 
 ## A high-level summary of districts used in office-level table.
 ##
-legislative_district_info <-
-    latest_district_elections |>
-        mutate(district_md_ref = district_md_ref(office, district),
-               district_web_ref = district_web_ref(office, district)) |>
-        select(
-            office,
-            district_id,
-            district,
-            district_md_ref,
-            district_web_ref,
-            legislator=display_winner,
-            party=party_winner,
-            city_town=city_town_winner,
-            percent=percent_winner
-        ) |>
-        left_join(pvi_all, by=c("office", "district"))
+## legislative_district_info <-
+##     latest_district_elections |>
+##         mutate(district_md_ref = district_md_ref(office, district),
+##                district_web_ref = district_web_ref(office, district)) |>
+##         select(
+##             office,
+##             district_id,
+##             district,
+##             district_md_ref,
+##             district_web_ref,
+##             legislator=display_winner,
+##             party=party_winner,
+##             city_town=city_town_winner,
+##             percent=percent_winner
+##         ) |>
+##         left_join(pvi_all, by=c("office", "district"))
 
 ## legislative_district_info |>
 ##     write_csv("ma_legislative_district_info.csv")
+
+legislative_district_info <-
+    read_csv(here("districts/ma_leg_dists_w_summary.csv"))
 
 ## Office-level political and demographic summary tables
 
@@ -494,4 +497,11 @@ simple_office_table <- function(office_name) {
             party ~ px(170),
             city_town ~ px(200)
         )
+}
+
+district_summary <- function(office_name, district_name) {
+    legislative_district_info |>
+        filter(office == office_name,
+               district == district_name) |>
+        pull(summary)
 }
