@@ -15,7 +15,7 @@ using the address `brent` at `mapoli.us`.
 
 The primary sources for the data in the district atlas are:
 
-- Election results data from the incredible
+- Election results data from the invaluable
   [electionstats.state.ma.us](https://electionstats.state.ma.us/) site
   created by [Adam Friedman of Civera](https://civera.com/team/) and
   supported by the [Secretary of the
