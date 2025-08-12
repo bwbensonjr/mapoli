@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Massachusetts Sixteenth Worcester State Representative District encompasses 13 precincts in Worcester. The current incumbent is Democrat Daniel M. Donahue of Worcester, who has represented the district since winning a special election in 2013 and has run unopposed in most recent elections.">
 
 <title>Massachusetts Sixteenth Worcester State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Sixteenth Worcester State Representative District – mapoli">
+<meta property="og:description" content="Massachusetts Sixteenth Worcester State Representative District encompasses 13 precincts in Worcester. The current incumbent is Democrat Daniel M. Donahue of Worcester, who has represented the district since winning a special election in 2013 and has run unopposed in most recent elections.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Sixteenth Worcester State Representative District – mapoli">
+<meta name="twitter:description" content="Massachusetts Sixteenth Worcester State Representative District encompasses 13 precincts in Worcester. The current incumbent is Democrat Daniel M. Donahue of Worcester, who has represented the district since winning a special election in 2013 and has run unopposed in most recent elections.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Sixteenth Worcester State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    Massachusetts Sixteenth Worcester State Representative District encompasses 13 precincts in Worcester. The current incumbent is Democrat Daniel M. Donahue of Worcester, who has represented the district since winning a special election in 2013 and has run unopposed in most recent elections.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>Massachusetts Sixteenth Worcester State Representative District encompasses 13 precincts in Worcester. The current incumbent is Democrat Daniel M. Donahue of Worcester, who has represented the district since winning a special election in 2013 and has run unopposed in most recent elections.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-95b983377e87dade27f6" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-95b983377e87dade27f6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.82447287353536,-71.81926400182979,-71.81849696922612,-71.81691600610021,-71.81366506403832,-71.8145416112459,-71.81096806788922,-71.81204800884147,-71.80948599052668,-71.80584047635858,-71.80384716588061,-71.80261103172815,-71.8024866237966,-71.80175099532272,-71.80142097688703,-71.80079912862955,-71.80016602219693,-71.80073194717545,-71.79724197552893,-71.79678626714241,-71.79481809340284,-71.79256199271433,-71.79257895698359,-71.78914738508098,-71.78914195517602,-71.78427172049786,-71.78456288361753,-71.78505696114132,-71.77176082893949,-71.76734126212546,-71.76424299383251,-71.76144569001298,-71.75899732626829,-71.75226903529565,-71.75127754567863,-71.74607805590631,-71.73123705945493,-71.73342903175755,-71.79710598256935,-71.80383159888687,-71.80675096267852,-71.81002423373876,-71.81963893983949,-71.81938211596893,-71.82008495223154,-71.81786813348667,-71.82004034509232,-71.82279395255271,-71.82254659584194,-71.82330495408273,-71.82320858331246,-71.82377879165908,-71.82106434544995,-71.82447287353536],"lat":[42.24372902350686,42.2471619592279,42.24667070761461,42.2475959587528,42.2450359690104,42.243599315026,42.24382895493141,42.24162726952446,42.24261096503025,42.24288452532666,42.24396207033157,42.24548890660871,42.24460969749669,42.24449121843656,42.24495596306717,42.24489552248842,42.24587148099182,42.24612801469076,42.25353895919043,42.25338998112335,42.25019598849055,42.24878274728186,42.25086197098719,42.25120724370775,42.25186297231853,42.25217823414468,42.25505081397536,42.25586697254037,42.25651716430964,42.25789950727729,42.25945896763363,42.25890984805418,42.25969123157247,42.26018896712528,42.2544943655364,42.2438556860326,42.24128597957483,42.23797502134742,42.21005304217594,42.22092185374966,42.22389801383151,42.23122057608841,42.23031703490472,42.23088695597124,42.23099902411982,42.23841167101507,42.23912707247489,42.23915103060352,42.24051157902629,42.24059503055193,42.24131076641222,42.24140352542821,42.24353371218496,42.24372902350686]}]]],"Worcester","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#FFED6F","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Worcester<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Worcester<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Worcester - 13 of 62 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Worcester",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.23721214762186,-71.77920247920778,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Worcester.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Worcester",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.21005304217594,42.26018896712528],"lng":[-71.82447287353536,-71.73123705945493]},"fitBounds":[42.21005304217594,-71.82447287353536,42.26018896712528,-71.73123705945493,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-3b1fad2bd5f16a9045de" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-3b1fad2bd5f16a9045de">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.82447287353536,-71.81926400182979,-71.81849696922612,-71.81691600610021,-71.81366506403832,-71.8145416112459,-71.81096806788922,-71.81204800884147,-71.80948599052668,-71.80584047635858,-71.80384716588061,-71.80261103172815,-71.8024866237966,-71.80175099532272,-71.80142097688703,-71.80079912862955,-71.80016602219693,-71.80073194717545,-71.79724197552893,-71.79678626714241,-71.79481809340284,-71.79256199271433,-71.79257895698359,-71.78914738508098,-71.78914195517602,-71.78427172049786,-71.78456288361753,-71.78505696114132,-71.77176082893949,-71.76734126212546,-71.76424299383251,-71.76144569001298,-71.75899732626829,-71.75226903529565,-71.75127754567863,-71.74607805590631,-71.73123705945493,-71.73342903175755,-71.79710598256935,-71.80383159888687,-71.80675096267852,-71.81002423373876,-71.81963893983949,-71.81938211596893,-71.82008495223154,-71.81786813348667,-71.82004034509232,-71.82279395255271,-71.82254659584194,-71.82330495408273,-71.82320858331246,-71.82377879165908,-71.82106434544995,-71.82447287353536],"lat":[42.24372902350686,42.2471619592279,42.24667070761461,42.2475959587528,42.2450359690104,42.243599315026,42.24382895493141,42.24162726952446,42.24261096503025,42.24288452532666,42.24396207033157,42.24548890660871,42.24460969749669,42.24449121843656,42.24495596306717,42.24489552248842,42.24587148099182,42.24612801469076,42.25353895919043,42.25338998112335,42.25019598849055,42.24878274728186,42.25086197098719,42.25120724370775,42.25186297231853,42.25217823414468,42.25505081397536,42.25586697254037,42.25651716430964,42.25789950727729,42.25945896763363,42.25890984805418,42.25969123157247,42.26018896712528,42.2544943655364,42.2438556860326,42.24128597957483,42.23797502134742,42.21005304217594,42.22092185374966,42.22389801383151,42.23122057608841,42.23031703490472,42.23088695597124,42.23099902411982,42.23841167101507,42.23912707247489,42.23915103060352,42.24051157902629,42.24059503055193,42.24131076641222,42.24140352542821,42.24353371218496,42.24372902350686]}]]],"Worcester","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#CCEBC5","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Worcester<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Worcester<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Worcester - 13 of 62 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Worcester",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.23721214762186,-71.77920247920778,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Worcester.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Worcester",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.21005304217594,42.26018896712528],"lng":[-71.82447287353536,-71.73123705945493]},"fitBounds":[42.21005304217594,-71.82447287353536,42.26018896712528,-71.73123705945493,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="vzdxhhwtek" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vzdxhhwtek table {
+<div id="nlvrkqfnik" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nlvrkqfnik table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#vzdxhhwtek thead, #vzdxhhwtek tbody, #vzdxhhwtek tfoot, #vzdxhhwtek tr, #vzdxhhwtek td, #vzdxhhwtek th {
+#nlvrkqfnik thead, #nlvrkqfnik tbody, #nlvrkqfnik tfoot, #nlvrkqfnik tr, #nlvrkqfnik td, #nlvrkqfnik th {
   border-style: none;
 }
 
-#vzdxhhwtek p {
+#nlvrkqfnik p {
   margin: 0;
   padding: 0;
 }
 
-#vzdxhhwtek .gt_table {
+#nlvrkqfnik .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_caption {
+#nlvrkqfnik .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#vzdxhhwtek .gt_title {
+#nlvrkqfnik .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#vzdxhhwtek .gt_subtitle {
+#nlvrkqfnik .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#vzdxhhwtek .gt_heading {
+#nlvrkqfnik .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_bottom_border {
+#nlvrkqfnik .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_col_headings {
+#nlvrkqfnik .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_col_heading {
+#nlvrkqfnik .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#vzdxhhwtek .gt_column_spanner_outer {
+#nlvrkqfnik .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#vzdxhhwtek .gt_column_spanner_outer:first-child {
+#nlvrkqfnik .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vzdxhhwtek .gt_column_spanner_outer:last-child {
+#nlvrkqfnik .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vzdxhhwtek .gt_column_spanner {
+#nlvrkqfnik .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#vzdxhhwtek .gt_spanner_row {
+#nlvrkqfnik .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#vzdxhhwtek .gt_group_heading {
+#nlvrkqfnik .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#vzdxhhwtek .gt_empty_group_heading {
+#nlvrkqfnik .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#vzdxhhwtek .gt_from_md > :first-child {
+#nlvrkqfnik .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vzdxhhwtek .gt_from_md > :last-child {
+#nlvrkqfnik .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vzdxhhwtek .gt_row {
+#nlvrkqfnik .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#vzdxhhwtek .gt_stub {
+#nlvrkqfnik .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vzdxhhwtek .gt_stub_row_group {
+#nlvrkqfnik .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#vzdxhhwtek .gt_row_group_first td {
+#nlvrkqfnik .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vzdxhhwtek .gt_row_group_first th {
+#nlvrkqfnik .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vzdxhhwtek .gt_summary_row {
+#nlvrkqfnik .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vzdxhhwtek .gt_first_summary_row {
+#nlvrkqfnik .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_first_summary_row.thick {
+#nlvrkqfnik .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vzdxhhwtek .gt_last_summary_row {
+#nlvrkqfnik .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_grand_summary_row {
+#nlvrkqfnik .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vzdxhhwtek .gt_first_grand_summary_row {
+#nlvrkqfnik .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_last_grand_summary_row_top {
+#nlvrkqfnik .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_striped {
+#nlvrkqfnik .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vzdxhhwtek .gt_table_body {
+#nlvrkqfnik .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_footnotes {
+#nlvrkqfnik .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_footnote {
+#nlvrkqfnik .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vzdxhhwtek .gt_sourcenotes {
+#nlvrkqfnik .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#vzdxhhwtek .gt_sourcenote {
+#nlvrkqfnik .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vzdxhhwtek .gt_left {
+#nlvrkqfnik .gt_left {
   text-align: left;
 }
 
-#vzdxhhwtek .gt_center {
+#nlvrkqfnik .gt_center {
   text-align: center;
 }
 
-#vzdxhhwtek .gt_right {
+#nlvrkqfnik .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vzdxhhwtek .gt_font_normal {
+#nlvrkqfnik .gt_font_normal {
   font-weight: normal;
 }
 
-#vzdxhhwtek .gt_font_bold {
+#nlvrkqfnik .gt_font_bold {
   font-weight: bold;
 }
 
-#vzdxhhwtek .gt_font_italic {
+#nlvrkqfnik .gt_font_italic {
   font-style: italic;
 }
 
-#vzdxhhwtek .gt_super {
+#nlvrkqfnik .gt_super {
   font-size: 65%;
 }
 
-#vzdxhhwtek .gt_footnote_marks {
+#nlvrkqfnik .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vzdxhhwtek .gt_asterisk {
+#nlvrkqfnik .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vzdxhhwtek .gt_indent_1 {
+#nlvrkqfnik .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vzdxhhwtek .gt_indent_2 {
+#nlvrkqfnik .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vzdxhhwtek .gt_indent_3 {
+#nlvrkqfnik .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vzdxhhwtek .gt_indent_4 {
+#nlvrkqfnik .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vzdxhhwtek .gt_indent_5 {
+#nlvrkqfnik .gt_indent_5 {
   text-indent: 25px;
 }
 
-#vzdxhhwtek .katex-display {
+#nlvrkqfnik .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#vzdxhhwtek div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nlvrkqfnik div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="injptgqebz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#injptgqebz table {
+<div id="fntlmvvuiv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fntlmvvuiv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#injptgqebz thead, #injptgqebz tbody, #injptgqebz tfoot, #injptgqebz tr, #injptgqebz td, #injptgqebz th {
+#fntlmvvuiv thead, #fntlmvvuiv tbody, #fntlmvvuiv tfoot, #fntlmvvuiv tr, #fntlmvvuiv td, #fntlmvvuiv th {
   border-style: none;
 }
 
-#injptgqebz p {
+#fntlmvvuiv p {
   margin: 0;
   padding: 0;
 }
 
-#injptgqebz .gt_table {
+#fntlmvvuiv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#injptgqebz .gt_caption {
+#fntlmvvuiv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#injptgqebz .gt_title {
+#fntlmvvuiv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#injptgqebz .gt_subtitle {
+#fntlmvvuiv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#injptgqebz .gt_heading {
+#fntlmvvuiv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#injptgqebz .gt_bottom_border {
+#fntlmvvuiv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#injptgqebz .gt_col_headings {
+#fntlmvvuiv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#injptgqebz .gt_col_heading {
+#fntlmvvuiv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#injptgqebz .gt_column_spanner_outer {
+#fntlmvvuiv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#injptgqebz .gt_column_spanner_outer:first-child {
+#fntlmvvuiv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#injptgqebz .gt_column_spanner_outer:last-child {
+#fntlmvvuiv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#injptgqebz .gt_column_spanner {
+#fntlmvvuiv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#injptgqebz .gt_spanner_row {
+#fntlmvvuiv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#injptgqebz .gt_group_heading {
+#fntlmvvuiv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#injptgqebz .gt_empty_group_heading {
+#fntlmvvuiv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#injptgqebz .gt_from_md > :first-child {
+#fntlmvvuiv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#injptgqebz .gt_from_md > :last-child {
+#fntlmvvuiv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#injptgqebz .gt_row {
+#fntlmvvuiv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#injptgqebz .gt_stub {
+#fntlmvvuiv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#injptgqebz .gt_stub_row_group {
+#fntlmvvuiv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#injptgqebz .gt_row_group_first td {
+#fntlmvvuiv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#injptgqebz .gt_row_group_first th {
+#fntlmvvuiv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#injptgqebz .gt_summary_row {
+#fntlmvvuiv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#injptgqebz .gt_first_summary_row {
+#fntlmvvuiv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#injptgqebz .gt_first_summary_row.thick {
+#fntlmvvuiv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#injptgqebz .gt_last_summary_row {
+#fntlmvvuiv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#injptgqebz .gt_grand_summary_row {
+#fntlmvvuiv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#injptgqebz .gt_first_grand_summary_row {
+#fntlmvvuiv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#injptgqebz .gt_last_grand_summary_row_top {
+#fntlmvvuiv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#injptgqebz .gt_striped {
+#fntlmvvuiv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#injptgqebz .gt_table_body {
+#fntlmvvuiv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#injptgqebz .gt_footnotes {
+#fntlmvvuiv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#injptgqebz .gt_footnote {
+#fntlmvvuiv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#injptgqebz .gt_sourcenotes {
+#fntlmvvuiv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#injptgqebz .gt_sourcenote {
+#fntlmvvuiv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#injptgqebz .gt_left {
+#fntlmvvuiv .gt_left {
   text-align: left;
 }
 
-#injptgqebz .gt_center {
+#fntlmvvuiv .gt_center {
   text-align: center;
 }
 
-#injptgqebz .gt_right {
+#fntlmvvuiv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#injptgqebz .gt_font_normal {
+#fntlmvvuiv .gt_font_normal {
   font-weight: normal;
 }
 
-#injptgqebz .gt_font_bold {
+#fntlmvvuiv .gt_font_bold {
   font-weight: bold;
 }
 
-#injptgqebz .gt_font_italic {
+#fntlmvvuiv .gt_font_italic {
   font-style: italic;
 }
 
-#injptgqebz .gt_super {
+#fntlmvvuiv .gt_super {
   font-size: 65%;
 }
 
-#injptgqebz .gt_footnote_marks {
+#fntlmvvuiv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#injptgqebz .gt_asterisk {
+#fntlmvvuiv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#injptgqebz .gt_indent_1 {
+#fntlmvvuiv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#injptgqebz .gt_indent_2 {
+#fntlmvvuiv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#injptgqebz .gt_indent_3 {
+#fntlmvvuiv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#injptgqebz .gt_indent_4 {
+#fntlmvvuiv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#injptgqebz .gt_indent_5 {
+#fntlmvvuiv .gt_indent_5 {
   text-indent: 25px;
 }
 
-#injptgqebz .katex-display {
+#fntlmvvuiv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#injptgqebz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#fntlmvvuiv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1172,23 +1206,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="dnnfqcspbf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dnnfqcspbf table {
+<div id="xrbiommzmx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xrbiommzmx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dnnfqcspbf thead, #dnnfqcspbf tbody, #dnnfqcspbf tfoot, #dnnfqcspbf tr, #dnnfqcspbf td, #dnnfqcspbf th {
+#xrbiommzmx thead, #xrbiommzmx tbody, #xrbiommzmx tfoot, #xrbiommzmx tr, #xrbiommzmx td, #xrbiommzmx th {
   border-style: none;
 }
 
-#dnnfqcspbf p {
+#xrbiommzmx p {
   margin: 0;
   padding: 0;
 }
 
-#dnnfqcspbf .gt_table {
+#xrbiommzmx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1214,12 +1248,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_caption {
+#xrbiommzmx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dnnfqcspbf .gt_title {
+#xrbiommzmx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1231,7 +1265,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#dnnfqcspbf .gt_subtitle {
+#xrbiommzmx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1243,7 +1277,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#dnnfqcspbf .gt_heading {
+#xrbiommzmx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1255,13 +1289,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_bottom_border {
+#xrbiommzmx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_col_headings {
+#xrbiommzmx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1276,7 +1310,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_col_heading {
+#xrbiommzmx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1296,7 +1330,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#dnnfqcspbf .gt_column_spanner_outer {
+#xrbiommzmx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1308,15 +1342,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#dnnfqcspbf .gt_column_spanner_outer:first-child {
+#xrbiommzmx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dnnfqcspbf .gt_column_spanner_outer:last-child {
+#xrbiommzmx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dnnfqcspbf .gt_column_spanner {
+#xrbiommzmx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1328,11 +1362,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#dnnfqcspbf .gt_spanner_row {
+#xrbiommzmx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dnnfqcspbf .gt_group_heading {
+#xrbiommzmx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1358,7 +1392,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#dnnfqcspbf .gt_empty_group_heading {
+#xrbiommzmx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1373,15 +1407,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#dnnfqcspbf .gt_from_md > :first-child {
+#xrbiommzmx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dnnfqcspbf .gt_from_md > :last-child {
+#xrbiommzmx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dnnfqcspbf .gt_row {
+#xrbiommzmx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1400,7 +1434,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#dnnfqcspbf .gt_stub {
+#xrbiommzmx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1413,7 +1447,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#dnnfqcspbf .gt_stub_row_group {
+#xrbiommzmx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1427,15 +1461,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#dnnfqcspbf .gt_row_group_first td {
+#xrbiommzmx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dnnfqcspbf .gt_row_group_first th {
+#xrbiommzmx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dnnfqcspbf .gt_summary_row {
+#xrbiommzmx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1445,16 +1479,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#dnnfqcspbf .gt_first_summary_row {
+#xrbiommzmx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_first_summary_row.thick {
+#xrbiommzmx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dnnfqcspbf .gt_last_summary_row {
+#xrbiommzmx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1464,7 +1498,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_grand_summary_row {
+#xrbiommzmx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1474,7 +1508,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#dnnfqcspbf .gt_first_grand_summary_row {
+#xrbiommzmx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1484,7 +1518,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_last_grand_summary_row_top {
+#xrbiommzmx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1494,11 +1528,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_striped {
+#xrbiommzmx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dnnfqcspbf .gt_table_body {
+#xrbiommzmx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1507,7 +1541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_footnotes {
+#xrbiommzmx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1521,7 +1555,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_footnote {
+#xrbiommzmx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1530,7 +1564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#dnnfqcspbf .gt_sourcenotes {
+#xrbiommzmx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1544,7 +1578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#dnnfqcspbf .gt_sourcenote {
+#xrbiommzmx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1552,72 +1586,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#dnnfqcspbf .gt_left {
+#xrbiommzmx .gt_left {
   text-align: left;
 }
 
-#dnnfqcspbf .gt_center {
+#xrbiommzmx .gt_center {
   text-align: center;
 }
 
-#dnnfqcspbf .gt_right {
+#xrbiommzmx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dnnfqcspbf .gt_font_normal {
+#xrbiommzmx .gt_font_normal {
   font-weight: normal;
 }
 
-#dnnfqcspbf .gt_font_bold {
+#xrbiommzmx .gt_font_bold {
   font-weight: bold;
 }
 
-#dnnfqcspbf .gt_font_italic {
+#xrbiommzmx .gt_font_italic {
   font-style: italic;
 }
 
-#dnnfqcspbf .gt_super {
+#xrbiommzmx .gt_super {
   font-size: 65%;
 }
 
-#dnnfqcspbf .gt_footnote_marks {
+#xrbiommzmx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dnnfqcspbf .gt_asterisk {
+#xrbiommzmx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dnnfqcspbf .gt_indent_1 {
+#xrbiommzmx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dnnfqcspbf .gt_indent_2 {
+#xrbiommzmx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dnnfqcspbf .gt_indent_3 {
+#xrbiommzmx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dnnfqcspbf .gt_indent_4 {
+#xrbiommzmx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dnnfqcspbf .gt_indent_5 {
+#xrbiommzmx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dnnfqcspbf .katex-display {
+#xrbiommzmx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dnnfqcspbf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xrbiommzmx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

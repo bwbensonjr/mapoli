@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventeenth Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventeenth Suffolk State Representative District"
+description: "The Massachusetts Seventeenth Suffolk State Representative District is currently represented by Kevin G. Honan, a Democrat from Boston who has held the seat unchallenged since at least 1994. The district encompasses parts of Boston and Brookline, covering approximately 2 square miles with a population of 42,369 residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

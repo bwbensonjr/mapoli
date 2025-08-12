@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Third Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Third Middlesex State Senate District"
+description: "The Massachusetts Third Middlesex State Senate District is represented by incumbent Democrat Michael J. Barrett of Lexington, who has served since 2012 and has run unopposed in the last four elections. The district encompasses parts of Middlesex County, including Bedford, Carlisle, Chelmsford, Concord, parts of Lexington, Lincoln, Waltham, and Weston."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

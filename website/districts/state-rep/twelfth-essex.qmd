@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twelfth Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twelfth Essex State Representative District"
+description: "The Massachusetts Twelfth Essex State Representative District covers Peabody (all 15 precincts) with a population of 44,442. The current incumbent is Thomas P. Walsh, a Democrat from Peabody, who has represented the district since 2016 and previously served from 1990-1994."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

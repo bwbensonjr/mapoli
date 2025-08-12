@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Second Barnstable"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Second Barnstable State Representative District"
+description: "The Second Barnstable district is represented by incumbent Democrat Kip A. Diggs of Barnstable. The district includes most of Barnstable and portions of Yarmouth on Cape Cod, covering an area of 46 square miles with a population of approximately 44,853 residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

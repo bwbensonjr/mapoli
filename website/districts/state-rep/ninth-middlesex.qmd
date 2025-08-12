@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Ninth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Ninth Middlesex State Representative District"
+description: "This district is represented by incumbent Thomas M. Stanley (Democrat) from Waltham. The Ninth Middlesex State Representative District is located entirely within Waltham, covering 14 precincts in the city."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

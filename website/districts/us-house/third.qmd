@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "U.S. House"
   district_name: "Third"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Third U.S. House District"
+description: "The Massachusetts Third U.S. House District is represented by incumbent Lori Loureiro Trahan, a Democrat from Westford. The district covers portions of northeastern Massachusetts including parts of Middlesex, Worcester, and Essex counties, encompassing communities such as Acton, Lowell, Fitchburg, and portions of Billerica and Groton."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

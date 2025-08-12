@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fourth Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourth Worcester State Representative District"
+description: "The Massachusetts Fourth Worcester State Representative District encompasses the city of Leominster. The district is currently represented by incumbent Democrat Natalie Higgins of Leominster, who has held the seat since 2016 and most recently won reelection in 2024 with 58% of the vote against Republican challenger Salvatore Perla."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

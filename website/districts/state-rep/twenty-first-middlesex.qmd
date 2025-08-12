@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twenty-First Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twenty-First Middlesex State Representative District"
+description: "Massachusetts Twenty-First Middlesex State Representative District is currently represented by Kenneth I. Gordon (D-Bedford) who has been serving since 2012 and has run unopposed in the last four elections. The district covers Bedford, Burlington, and part of Lexington (Precinct 6)."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

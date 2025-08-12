@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Second Hampden"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Second Hampden State Representative District"
+description: "The Massachusetts Second Hampden State Representative District is represented by incumbent Brian M. Ashe (D-Longmeadow), who has held the seat since 2008. The district includes parts of East Longmeadow, Hampden, Longmeadow, Monson, and Springfield, covering approximately 72 square miles in western Massachusetts."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

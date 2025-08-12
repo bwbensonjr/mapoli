@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Eighth Bristol"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Eighth Bristol State Representative District"
+description: "The Eighth Bristol State Representative District is located in southeastern Massachusetts and includes portions of Acushnet, Fall River, Freetown, New Bedford, and Westport. The district has a population of 44,541 and is predominantly white (88%). Steven J. Ouellette (Democrat) is the incumbent, having won a close three-way race in 2024 with 40% of the vote."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

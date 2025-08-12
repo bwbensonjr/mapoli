@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twelfth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twelfth Middlesex State Representative District"
+description: "The Massachusetts Twelfth Middlesex State Representative District includes parts of Brookline and Newton, with a population of 44,561. The current incumbent is Democrat Greg Schwartz from Newton, who will represent the district following the 2024 election after a long tenure by Ruth B. Balser, who had represented the district since at least 2002."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

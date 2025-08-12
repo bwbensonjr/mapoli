@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventh Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventh Essex State Representative District"
+description: "The Massachusetts Seventh Essex State Representative District comprises the city of Salem, with a population of approximately 44,000. Democratic incumbent Manny Cruz currently represents the district, having been elected in 2022 after Paul F. Tucker's tenure from 2014-2022."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Nineteenth Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Nineteenth Worcester State Representative District"
+description: "The Nineteenth Worcester State Representative District is currently represented by Kate Donaghue (D-Westborough), who won reelection in 2024 with 78% of the vote. The district includes portions of Framingham, Northborough, Southborough, and Westborough, covering 47 square miles with a population of 41,148."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

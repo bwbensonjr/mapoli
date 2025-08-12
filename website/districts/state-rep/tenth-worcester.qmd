@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Tenth Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Tenth Worcester State Representative District"
+description: "The Massachusetts Tenth Worcester State Representative District includes the towns of Hopedale, Mendon, and Milford. The current incumbent is Brian William Murray, a Democrat from Milford, who has represented the district since 2016 and has won his most recent elections unopposed."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

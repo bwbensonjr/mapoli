@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "U.S. House"
   district_name: "Seventh"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventh U.S. House District"
+description: "The Massachusetts Seventh U.S. House District is currently represented by Democratic incumbent Ayanna S. Pressley of Boston, who has held the seat since 2018. The district is a densely populated urban area covering parts of Boston, Cambridge, Chelsea, Everett, Milton, Randolph, and Somerville, with a diverse population that is 61% minority."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

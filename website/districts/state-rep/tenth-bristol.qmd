@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Tenth Bristol"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Tenth Bristol State Representative District"
+description: "The Massachusetts Tenth Bristol State Representative District is located in southeastern Massachusetts, encompassing all of Fairhaven, Marion, and Mattapoisett, as well as portions of Acushnet, New Bedford, and Rochester. The current representative is Democrat Mark David Sylvia of Fairhaven, who won the seat in the 2024 election with 53% of the vote against Republican Joseph M. Pires."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Third Barnstable"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Third Barnstable State Representative District"
+description: "The Massachusetts Third Barnstable State Representative District covers parts of Bourne and Falmouth, as well as Mashpee, with a total population of 44,429. The district is currently represented by Republican David T. Vieira of Falmouth, who has held the seat since defeating Democrat Matthew Patrick in 2010 and most recently won reelection in 2024."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

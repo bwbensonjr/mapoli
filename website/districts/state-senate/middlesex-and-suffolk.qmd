@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Middlesex and Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Middlesex and Suffolk State Senate District"
+description: "The Massachusetts Middlesex and Suffolk State Senate District is represented by incumbent Sal N. DiDomenico (D-Everett), who has won his elections with 100% of the vote since at least 2012. The district covers parts of Boston and Cambridge, as well as Chelsea and Everett, with a diverse population that is 56% minority residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

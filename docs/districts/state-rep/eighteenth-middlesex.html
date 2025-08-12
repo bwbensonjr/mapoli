@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Massachusetts Eighteenth Middlesex State Representative District is located entirely within Lowell and is currently represented by Democratic incumbent Tara Thorn Hong, who won the seat in the 2024 election with 78% of the vote. The district has a highly diverse population with 62% minority residents and includes 16 precincts in Lowell.">
 
 <title>Massachusetts Eighteenth Middlesex State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Eighteenth Middlesex State Representative District – mapoli">
+<meta property="og:description" content="The Massachusetts Eighteenth Middlesex State Representative District is located entirely within Lowell and is currently represented by Democratic incumbent Tara Thorn Hong, who won the seat in the 2024 election with 78% of the vote. The district has a highly diverse population with 62% minority residents and includes 16 precincts in Lowell.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Eighteenth Middlesex State Representative District – mapoli">
+<meta name="twitter:description" content="The Massachusetts Eighteenth Middlesex State Representative District is located entirely within Lowell and is currently represented by Democratic incumbent Tara Thorn Hong, who won the seat in the 2024 election with 78% of the vote. The district has a highly diverse population with 62% minority residents and includes 16 precincts in Lowell.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Eighteenth Middlesex State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Massachusetts Eighteenth Middlesex State Representative District is located entirely within Lowell and is currently represented by Democratic incumbent Tara Thorn Hong, who won the seat in the 2024 election with 78% of the vote. The district has a highly diverse population with 62% minority residents and includes 16 precincts in Lowell.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Massachusetts Eighteenth Middlesex State Representative District is located entirely within Lowell and is currently represented by Democratic incumbent Tara Thorn Hong, who won the seat in the 2024 election with 78% of the vote. The district has a highly diverse population with 62% minority residents and includes 16 precincts in Lowell.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-111a6770ff9682926244" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-111a6770ff9682926244">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.36474894801654,-71.34362899120354,-71.34354096109459,-71.33970605739073,-71.33737719853727,-71.33062671463487,-71.33161194026351,-71.32952498348581,-71.32608705100328,-71.32761394442677,-71.3270059989261,-71.32439965091362,-71.32245096250706,-71.31953699161662,-71.31539199930332,-71.30792305272669,-71.30886602146272,-71.31043100867527,-71.31053227606812,-71.30950005656275,-71.31101902181861,-71.31193257499163,-71.31289301947034,-71.31338706367795,-71.31592102800988,-71.31666147887702,-71.31655451417126,-71.31503804797256,-71.3161470240113,-71.32513648845273,-71.32513703930779,-71.32391703103167,-71.32361259775267,-71.32180905558769,-71.32358660960035,-71.32153613058485,-71.32135596362593,-71.31914304398977,-71.31952782817392,-71.31869604244235,-71.32001017421655,-71.31996751620969,-71.31854404152182,-71.3183428889312,-71.31685138421149,-71.31929606090797,-71.31888204528265,-71.31989702741956,-71.32334097185094,-71.32540795349387,-71.32499138987221,-71.32571911283797,-71.32793598519993,-71.32943350103061,-71.35994296529438,-71.36474894801654],"lat":[42.63762397407398,42.64028112150226,42.64062898134467,42.64209403495902,42.6439144971142,42.64954869025898,42.65022200249625,42.65174396913178,42.65204179550069,42.65331700101147,42.65380595769047,42.6519377090497,42.65392897537387,42.65585096530025,42.65473295613344,42.64930199590217,42.64818403141321,42.64823292892996,42.64794521649113,42.64755498821305,42.64575603228533,42.64578980025156,42.64467503264636,42.64467641224646,42.64146102738629,42.64146009945467,42.64018038337006,42.63905899999108,42.63786002545869,42.63536158782708,42.62960882501625,42.62961596826973,42.6288866425762,42.62884297118129,42.62455019887273,42.62419829823638,42.62560295858716,42.6249599807436,42.62176372266582,42.61812800698026,42.61672687142836,42.61610047981736,42.61472398540643,42.61391672984279,42.61369000529407,42.61351488518033,42.60854400582384,42.60690002705049,42.60649003444919,42.61125099278605,42.61163221786076,42.61324530903391,42.61315503024498,42.61402693513782,42.62597202108908,42.63762397407398]}],[{"lng":[-71.32403582032579,-71.32394836056193,-71.32337291456642,-71.32398196328275,-71.32403582032579],"lat":[42.63027082879785,42.62993631362598,42.62990200619421,42.62992002900555,42.63027082879785]}]]],"Lowell","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#BEBADA","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Lowell<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Lowell<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Lowell - 16 of 39 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Lowell",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.63276649336588,-71.33426936547295,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Lowell.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Lowell",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.60649003444919,42.65585096530025],"lng":[-71.36474894801654,-71.30792305272669]},"fitBounds":[42.60649003444919,-71.36474894801654,42.65585096530025,-71.30792305272669,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-d153f7beaca3ec4b1538" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d153f7beaca3ec4b1538">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.36474894801654,-71.34362899120354,-71.34354096109459,-71.33970605739073,-71.33737719853727,-71.33062671463487,-71.33161194026351,-71.32952498348581,-71.32608705100328,-71.32761394442677,-71.3270059989261,-71.32439965091362,-71.32245096250706,-71.31953699161662,-71.31539199930332,-71.30792305272669,-71.30886602146272,-71.31043100867527,-71.31053227606812,-71.30950005656275,-71.31101902181861,-71.31193257499163,-71.31289301947034,-71.31338706367795,-71.31592102800988,-71.31666147887702,-71.31655451417126,-71.31503804797256,-71.3161470240113,-71.32513648845273,-71.32513703930779,-71.32391703103167,-71.32361259775267,-71.32180905558769,-71.32358660960035,-71.32153613058485,-71.32135596362593,-71.31914304398977,-71.31952782817392,-71.31869604244235,-71.32001017421655,-71.31996751620969,-71.31854404152182,-71.3183428889312,-71.31685138421149,-71.31929606090797,-71.31888204528265,-71.31989702741956,-71.32334097185094,-71.32540795349387,-71.32499138987221,-71.32571911283797,-71.32793598519993,-71.32943350103061,-71.35994296529438,-71.36474894801654],"lat":[42.63762397407398,42.64028112150226,42.64062898134467,42.64209403495902,42.6439144971142,42.64954869025898,42.65022200249625,42.65174396913178,42.65204179550069,42.65331700101147,42.65380595769047,42.6519377090497,42.65392897537387,42.65585096530025,42.65473295613344,42.64930199590217,42.64818403141321,42.64823292892996,42.64794521649113,42.64755498821305,42.64575603228533,42.64578980025156,42.64467503264636,42.64467641224646,42.64146102738629,42.64146009945467,42.64018038337006,42.63905899999108,42.63786002545869,42.63536158782708,42.62960882501625,42.62961596826973,42.6288866425762,42.62884297118129,42.62455019887273,42.62419829823638,42.62560295858716,42.6249599807436,42.62176372266582,42.61812800698026,42.61672687142836,42.61610047981736,42.61472398540643,42.61391672984279,42.61369000529407,42.61351488518033,42.60854400582384,42.60690002705049,42.60649003444919,42.61125099278605,42.61163221786076,42.61324530903391,42.61315503024498,42.61402693513782,42.62597202108908,42.63762397407398]}],[{"lng":[-71.32403582032579,-71.32394836056193,-71.32337291456642,-71.32398196328275,-71.32403582032579],"lat":[42.63027082879785,42.62993631362598,42.62990200619421,42.62992002900555,42.63027082879785]}]]],"Lowell","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#BEBADA","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Lowell<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Lowell<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Lowell - 16 of 39 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Lowell",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.63276649336588,-71.33426936547295,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Lowell.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Lowell",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.60649003444919,42.65585096530025],"lng":[-71.36474894801654,-71.30792305272669]},"fitBounds":[42.60649003444919,-71.36474894801654,42.65585096530025,-71.30792305272669,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="rhqwcscekd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rhqwcscekd table {
+<div id="rtxmdmlvyu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rtxmdmlvyu table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rhqwcscekd thead, #rhqwcscekd tbody, #rhqwcscekd tfoot, #rhqwcscekd tr, #rhqwcscekd td, #rhqwcscekd th {
+#rtxmdmlvyu thead, #rtxmdmlvyu tbody, #rtxmdmlvyu tfoot, #rtxmdmlvyu tr, #rtxmdmlvyu td, #rtxmdmlvyu th {
   border-style: none;
 }
 
-#rhqwcscekd p {
+#rtxmdmlvyu p {
   margin: 0;
   padding: 0;
 }
 
-#rhqwcscekd .gt_table {
+#rtxmdmlvyu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_caption {
+#rtxmdmlvyu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rhqwcscekd .gt_title {
+#rtxmdmlvyu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#rhqwcscekd .gt_subtitle {
+#rtxmdmlvyu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#rhqwcscekd .gt_heading {
+#rtxmdmlvyu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_bottom_border {
+#rtxmdmlvyu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_col_headings {
+#rtxmdmlvyu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_col_heading {
+#rtxmdmlvyu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#rhqwcscekd .gt_column_spanner_outer {
+#rtxmdmlvyu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#rhqwcscekd .gt_column_spanner_outer:first-child {
+#rtxmdmlvyu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rhqwcscekd .gt_column_spanner_outer:last-child {
+#rtxmdmlvyu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rhqwcscekd .gt_column_spanner {
+#rtxmdmlvyu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#rhqwcscekd .gt_spanner_row {
+#rtxmdmlvyu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rhqwcscekd .gt_group_heading {
+#rtxmdmlvyu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#rhqwcscekd .gt_empty_group_heading {
+#rtxmdmlvyu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#rhqwcscekd .gt_from_md > :first-child {
+#rtxmdmlvyu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rhqwcscekd .gt_from_md > :last-child {
+#rtxmdmlvyu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rhqwcscekd .gt_row {
+#rtxmdmlvyu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#rhqwcscekd .gt_stub {
+#rtxmdmlvyu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#rhqwcscekd .gt_stub_row_group {
+#rtxmdmlvyu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#rhqwcscekd .gt_row_group_first td {
+#rtxmdmlvyu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rhqwcscekd .gt_row_group_first th {
+#rtxmdmlvyu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rhqwcscekd .gt_summary_row {
+#rtxmdmlvyu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#rhqwcscekd .gt_first_summary_row {
+#rtxmdmlvyu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_first_summary_row.thick {
+#rtxmdmlvyu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rhqwcscekd .gt_last_summary_row {
+#rtxmdmlvyu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_grand_summary_row {
+#rtxmdmlvyu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#rhqwcscekd .gt_first_grand_summary_row {
+#rtxmdmlvyu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_last_grand_summary_row_top {
+#rtxmdmlvyu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_striped {
+#rtxmdmlvyu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rhqwcscekd .gt_table_body {
+#rtxmdmlvyu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_footnotes {
+#rtxmdmlvyu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_footnote {
+#rtxmdmlvyu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#rhqwcscekd .gt_sourcenotes {
+#rtxmdmlvyu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#rhqwcscekd .gt_sourcenote {
+#rtxmdmlvyu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#rhqwcscekd .gt_left {
+#rtxmdmlvyu .gt_left {
   text-align: left;
 }
 
-#rhqwcscekd .gt_center {
+#rtxmdmlvyu .gt_center {
   text-align: center;
 }
 
-#rhqwcscekd .gt_right {
+#rtxmdmlvyu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rhqwcscekd .gt_font_normal {
+#rtxmdmlvyu .gt_font_normal {
   font-weight: normal;
 }
 
-#rhqwcscekd .gt_font_bold {
+#rtxmdmlvyu .gt_font_bold {
   font-weight: bold;
 }
 
-#rhqwcscekd .gt_font_italic {
+#rtxmdmlvyu .gt_font_italic {
   font-style: italic;
 }
 
-#rhqwcscekd .gt_super {
+#rtxmdmlvyu .gt_super {
   font-size: 65%;
 }
 
-#rhqwcscekd .gt_footnote_marks {
+#rtxmdmlvyu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rhqwcscekd .gt_asterisk {
+#rtxmdmlvyu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rhqwcscekd .gt_indent_1 {
+#rtxmdmlvyu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rhqwcscekd .gt_indent_2 {
+#rtxmdmlvyu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rhqwcscekd .gt_indent_3 {
+#rtxmdmlvyu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rhqwcscekd .gt_indent_4 {
+#rtxmdmlvyu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rhqwcscekd .gt_indent_5 {
+#rtxmdmlvyu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rhqwcscekd .katex-display {
+#rtxmdmlvyu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rhqwcscekd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#rtxmdmlvyu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="plqupunkaw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#plqupunkaw table {
+<div id="huoulpenps" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#huoulpenps table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#plqupunkaw thead, #plqupunkaw tbody, #plqupunkaw tfoot, #plqupunkaw tr, #plqupunkaw td, #plqupunkaw th {
+#huoulpenps thead, #huoulpenps tbody, #huoulpenps tfoot, #huoulpenps tr, #huoulpenps td, #huoulpenps th {
   border-style: none;
 }
 
-#plqupunkaw p {
+#huoulpenps p {
   margin: 0;
   padding: 0;
 }
 
-#plqupunkaw .gt_table {
+#huoulpenps .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_caption {
+#huoulpenps .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#plqupunkaw .gt_title {
+#huoulpenps .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#plqupunkaw .gt_subtitle {
+#huoulpenps .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#plqupunkaw .gt_heading {
+#huoulpenps .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_bottom_border {
+#huoulpenps .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_col_headings {
+#huoulpenps .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_col_heading {
+#huoulpenps .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#plqupunkaw .gt_column_spanner_outer {
+#huoulpenps .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#plqupunkaw .gt_column_spanner_outer:first-child {
+#huoulpenps .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#plqupunkaw .gt_column_spanner_outer:last-child {
+#huoulpenps .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#plqupunkaw .gt_column_spanner {
+#huoulpenps .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#plqupunkaw .gt_spanner_row {
+#huoulpenps .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#plqupunkaw .gt_group_heading {
+#huoulpenps .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#plqupunkaw .gt_empty_group_heading {
+#huoulpenps .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#plqupunkaw .gt_from_md > :first-child {
+#huoulpenps .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#plqupunkaw .gt_from_md > :last-child {
+#huoulpenps .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#plqupunkaw .gt_row {
+#huoulpenps .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#plqupunkaw .gt_stub {
+#huoulpenps .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#plqupunkaw .gt_stub_row_group {
+#huoulpenps .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#plqupunkaw .gt_row_group_first td {
+#huoulpenps .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#plqupunkaw .gt_row_group_first th {
+#huoulpenps .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#plqupunkaw .gt_summary_row {
+#huoulpenps .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#plqupunkaw .gt_first_summary_row {
+#huoulpenps .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_first_summary_row.thick {
+#huoulpenps .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#plqupunkaw .gt_last_summary_row {
+#huoulpenps .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_grand_summary_row {
+#huoulpenps .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#plqupunkaw .gt_first_grand_summary_row {
+#huoulpenps .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_last_grand_summary_row_top {
+#huoulpenps .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_striped {
+#huoulpenps .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#plqupunkaw .gt_table_body {
+#huoulpenps .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_footnotes {
+#huoulpenps .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_footnote {
+#huoulpenps .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#plqupunkaw .gt_sourcenotes {
+#huoulpenps .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#plqupunkaw .gt_sourcenote {
+#huoulpenps .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#plqupunkaw .gt_left {
+#huoulpenps .gt_left {
   text-align: left;
 }
 
-#plqupunkaw .gt_center {
+#huoulpenps .gt_center {
   text-align: center;
 }
 
-#plqupunkaw .gt_right {
+#huoulpenps .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#plqupunkaw .gt_font_normal {
+#huoulpenps .gt_font_normal {
   font-weight: normal;
 }
 
-#plqupunkaw .gt_font_bold {
+#huoulpenps .gt_font_bold {
   font-weight: bold;
 }
 
-#plqupunkaw .gt_font_italic {
+#huoulpenps .gt_font_italic {
   font-style: italic;
 }
 
-#plqupunkaw .gt_super {
+#huoulpenps .gt_super {
   font-size: 65%;
 }
 
-#plqupunkaw .gt_footnote_marks {
+#huoulpenps .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#plqupunkaw .gt_asterisk {
+#huoulpenps .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#plqupunkaw .gt_indent_1 {
+#huoulpenps .gt_indent_1 {
   text-indent: 5px;
 }
 
-#plqupunkaw .gt_indent_2 {
+#huoulpenps .gt_indent_2 {
   text-indent: 10px;
 }
 
-#plqupunkaw .gt_indent_3 {
+#huoulpenps .gt_indent_3 {
   text-indent: 15px;
 }
 
-#plqupunkaw .gt_indent_4 {
+#huoulpenps .gt_indent_4 {
   text-indent: 20px;
 }
 
-#plqupunkaw .gt_indent_5 {
+#huoulpenps .gt_indent_5 {
   text-indent: 25px;
 }
 
-#plqupunkaw .katex-display {
+#huoulpenps .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#plqupunkaw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#huoulpenps div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1172,23 +1206,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="wazplbzkms" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wazplbzkms table {
+<div id="aclhibjevo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#aclhibjevo table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wazplbzkms thead, #wazplbzkms tbody, #wazplbzkms tfoot, #wazplbzkms tr, #wazplbzkms td, #wazplbzkms th {
+#aclhibjevo thead, #aclhibjevo tbody, #aclhibjevo tfoot, #aclhibjevo tr, #aclhibjevo td, #aclhibjevo th {
   border-style: none;
 }
 
-#wazplbzkms p {
+#aclhibjevo p {
   margin: 0;
   padding: 0;
 }
 
-#wazplbzkms .gt_table {
+#aclhibjevo .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1214,12 +1248,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_caption {
+#aclhibjevo .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wazplbzkms .gt_title {
+#aclhibjevo .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1231,7 +1265,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#wazplbzkms .gt_subtitle {
+#aclhibjevo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1243,7 +1277,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#wazplbzkms .gt_heading {
+#aclhibjevo .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1255,13 +1289,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_bottom_border {
+#aclhibjevo .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_col_headings {
+#aclhibjevo .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1276,7 +1310,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_col_heading {
+#aclhibjevo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1296,7 +1330,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#wazplbzkms .gt_column_spanner_outer {
+#aclhibjevo .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1308,15 +1342,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#wazplbzkms .gt_column_spanner_outer:first-child {
+#aclhibjevo .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wazplbzkms .gt_column_spanner_outer:last-child {
+#aclhibjevo .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wazplbzkms .gt_column_spanner {
+#aclhibjevo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1328,11 +1362,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#wazplbzkms .gt_spanner_row {
+#aclhibjevo .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wazplbzkms .gt_group_heading {
+#aclhibjevo .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1358,7 +1392,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#wazplbzkms .gt_empty_group_heading {
+#aclhibjevo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1373,15 +1407,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#wazplbzkms .gt_from_md > :first-child {
+#aclhibjevo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wazplbzkms .gt_from_md > :last-child {
+#aclhibjevo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wazplbzkms .gt_row {
+#aclhibjevo .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1400,7 +1434,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#wazplbzkms .gt_stub {
+#aclhibjevo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1413,7 +1447,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wazplbzkms .gt_stub_row_group {
+#aclhibjevo .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1427,15 +1461,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#wazplbzkms .gt_row_group_first td {
+#aclhibjevo .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wazplbzkms .gt_row_group_first th {
+#aclhibjevo .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wazplbzkms .gt_summary_row {
+#aclhibjevo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1445,16 +1479,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wazplbzkms .gt_first_summary_row {
+#aclhibjevo .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_first_summary_row.thick {
+#aclhibjevo .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wazplbzkms .gt_last_summary_row {
+#aclhibjevo .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1464,7 +1498,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_grand_summary_row {
+#aclhibjevo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1474,7 +1508,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wazplbzkms .gt_first_grand_summary_row {
+#aclhibjevo .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1484,7 +1518,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_last_grand_summary_row_top {
+#aclhibjevo .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1494,11 +1528,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_striped {
+#aclhibjevo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wazplbzkms .gt_table_body {
+#aclhibjevo .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1507,7 +1541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_footnotes {
+#aclhibjevo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1521,7 +1555,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_footnote {
+#aclhibjevo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1530,7 +1564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wazplbzkms .gt_sourcenotes {
+#aclhibjevo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1544,7 +1578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#wazplbzkms .gt_sourcenote {
+#aclhibjevo .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1552,72 +1586,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wazplbzkms .gt_left {
+#aclhibjevo .gt_left {
   text-align: left;
 }
 
-#wazplbzkms .gt_center {
+#aclhibjevo .gt_center {
   text-align: center;
 }
 
-#wazplbzkms .gt_right {
+#aclhibjevo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wazplbzkms .gt_font_normal {
+#aclhibjevo .gt_font_normal {
   font-weight: normal;
 }
 
-#wazplbzkms .gt_font_bold {
+#aclhibjevo .gt_font_bold {
   font-weight: bold;
 }
 
-#wazplbzkms .gt_font_italic {
+#aclhibjevo .gt_font_italic {
   font-style: italic;
 }
 
-#wazplbzkms .gt_super {
+#aclhibjevo .gt_super {
   font-size: 65%;
 }
 
-#wazplbzkms .gt_footnote_marks {
+#aclhibjevo .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wazplbzkms .gt_asterisk {
+#aclhibjevo .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wazplbzkms .gt_indent_1 {
+#aclhibjevo .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wazplbzkms .gt_indent_2 {
+#aclhibjevo .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wazplbzkms .gt_indent_3 {
+#aclhibjevo .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wazplbzkms .gt_indent_4 {
+#aclhibjevo .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wazplbzkms .gt_indent_5 {
+#aclhibjevo .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wazplbzkms .katex-display {
+#aclhibjevo .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wazplbzkms div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#aclhibjevo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

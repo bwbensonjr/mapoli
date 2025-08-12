@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Second Bristol and Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Second Bristol and Plymouth State Senate District"
+description: "The Massachusetts Second Bristol and Plymouth State Senate District is represented by long-serving Democratic incumbent Mark C. Montigny of New Bedford. The district encompasses parts of southeastern Massachusetts including Acushnet, Dartmouth, Fairhaven, Mattapoisett, and New Bedford."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

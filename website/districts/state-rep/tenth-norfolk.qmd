@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Tenth Norfolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Tenth Norfolk State Representative District"
+description: "This Massachusetts legislative district is currently represented by Democrat Jeffrey N. Roy of Franklin, who has held the seat since 2012. The district encompasses the town of Franklin and precincts 2, 3, and 4 of Medway, covering 35 square miles with a population of approximately 42,377 residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

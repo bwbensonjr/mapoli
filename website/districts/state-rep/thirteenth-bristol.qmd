@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Thirteenth Bristol"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Thirteenth Bristol State Representative District"
+description: "The Massachusetts Thirteenth Bristol State Representative District is located entirely within New Bedford and is currently represented by incumbent Democrat Antonio F.D. Cabral, who has held the seat since at least 1990. The district encompasses multiple precincts in New Bedford, covering an area of approximately 5 square miles."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

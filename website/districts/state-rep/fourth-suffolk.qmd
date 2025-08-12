@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fourth Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourth Suffolk State Representative District"
+description: "The Massachusetts Fourth Suffolk State Representative District is currently represented by incumbent Democratic representative David Biele of Boston. The district is located entirely within Boston, encompassing parts of South Boston and surrounding neighborhoods."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twelfth Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twelfth Plymouth State Representative District"
+description: "The Twelfth Plymouth State Representative District in Massachusetts includes parts of Halifax, Kingston, Middleborough, Pembroke, Plymouth, and Plympton, covering 77 square miles with a population of 45,094. The district is currently represented by incumbent Democrat Kathleen R. LaNatra of Kingston, who was most recently reelected in 2024."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Second Essex and Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Second Essex and Middlesex State Senate District"
+description: "The Massachusetts Second Essex and Middlesex State Senate District is represented by incumbent Democrat Barry R. Finegold of Andover. The district spans portions of Essex and Middlesex counties, including Amesbury, Andover, parts of Haverhill, Merrimac, North Andover, Tewksbury, and Wilmington."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

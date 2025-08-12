@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventh Bristol"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventh Bristol State Representative District"
+description: "The Massachusetts Seventh Bristol State Representative District is located in Fall River and is currently represented by Democrat Alan Silvia. The district has a population of about 40,266 with 35% minority residents and 21% living below poverty level."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

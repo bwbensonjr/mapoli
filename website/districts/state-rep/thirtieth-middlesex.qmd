@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Thirtieth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Thirtieth Middlesex State Representative District"
+description: "Massachusetts Thirtieth Middlesex State Representative District is currently represented by Richard M. Haggerty (Democrat) from Woburn. The district encompasses parts of Reading (precincts 2-6) and Woburn (multiple precincts), covering an area of 13 square miles with a population of approximately 46,920."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Massachusetts Eleventh Suffolk State Representative District covers parts of Chelsea and Everett, with a diverse population that is predominantly Hispanic (65%). The current incumbent is Democratic Representative Judith A. Garcia of Chelsea, who was first elected in 2022, winning with 73% of the vote against Republican Todd B. Taylor.">
 
 <title>Massachusetts Eleventh Suffolk State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Eleventh Suffolk State Representative District – mapoli">
+<meta property="og:description" content="The Massachusetts Eleventh Suffolk State Representative District covers parts of Chelsea and Everett, with a diverse population that is predominantly Hispanic (65%). The current incumbent is Democratic Representative Judith A. Garcia of Chelsea, who was first elected in 2022, winning with 73% of the vote against Republican Todd B. Taylor.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Eleventh Suffolk State Representative District – mapoli">
+<meta name="twitter:description" content="The Massachusetts Eleventh Suffolk State Representative District covers parts of Chelsea and Everett, with a diverse population that is predominantly Hispanic (65%). The current incumbent is Democratic Representative Judith A. Garcia of Chelsea, who was first elected in 2022, winning with 73% of the vote against Republican Todd B. Taylor.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Eleventh Suffolk State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Massachusetts Eleventh Suffolk State Representative District covers parts of Chelsea and Everett, with a diverse population that is predominantly Hispanic (65%). The current incumbent is Democratic Representative Judith A. Garcia of Chelsea, who was first elected in 2022, winning with 73% of the vote against Republican Todd B. Taylor.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Massachusetts Eleventh Suffolk State Representative District covers parts of Chelsea and Everett, with a diverse population that is predominantly Hispanic (65%). The current incumbent is Democratic Representative Judith A. Garcia of Chelsea, who was first elected in 2022, winning with 73% of the vote against Republican Todd B. Taylor.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-6571f8c9bda7ca3d35cd" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-6571f8c9bda7ca3d35cd">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.05333995912778,-71.05302596168252,-71.05148199249268,-71.05001801489256,-71.04808999026962,-71.04057359920924,-71.03318098011341,-71.02903603922681,-71.02711503325256,-71.02687570407961,-71.02603235280182,-71.02490101054475,-71.02286488298748,-71.02244198849358,-71.02061901836419,-71.02027705711048,-71.02115637522346,-71.0208947367091,-71.01855302408843,-71.01777552316837,-71.01640056908649,-71.01375301704088,-71.00993304748556,-71.01271201546173,-71.0147021171372,-71.0170018578151,-71.01686292105826,-71.01630111031164,-71.01788760955739,-71.01921800938406,-71.01766904281403,-71.01820404116968,-71.01919901951217,-71.02067691063246,-71.0201050438084,-71.02047708567115,-71.02275448868325,-71.02343204062647,-71.02679501048549,-71.02968495372514,-71.02959379202908,-71.03134385719221,-71.03140003370099,-71.03228596795888,-71.03256021213413,-71.03448695870972,-71.0371662980735,-71.03923439923788,-71.03967893603914,-71.03946328485043,-71.04094402368682,-71.04132318121833,-71.04147202496887,-71.0424677473634,-71.0439789781189,-71.04631994843955,-71.0460583185327,-71.04679632907421,-71.04880199540094,-71.04917757467496,-71.04967970408117,-71.05224897669741,-71.05333595331359,-71.05295796516094,-71.04938695666924,-71.04896112929656,-71.04983262286187,-71.05014601351725,-71.0507824930371,-71.05227735681835,-71.05317296144081,-71.05333995912778],"lat":[42.39595399824464,42.3967399842811,42.39776996603902,42.39756997247981,42.39667093835839,42.40197871738924,42.41420593544247,42.41035398167471,42.40778198777132,42.40653631691647,42.40581616384057,42.40589997021915,42.40517876121783,42.40547396317696,42.40519196926101,42.40488000384205,42.40428582248585,42.40356504205377,42.40364797535173,42.40266696888281,42.40237962703392,42.40288896157369,42.40085300651052,42.39948503092702,42.39962430365662,42.39865909062794,42.39769268165107,42.39736902422532,42.39704124112439,42.39484576620537,42.39367498749706,42.39173800669864,42.39056803516368,42.39075016808769,42.38969900177722,42.38876709330091,42.38724238946347,42.38623401820685,42.38466603292142,42.38483502843962,42.38580277318835,42.38610324613222,42.38518803250285,42.38525702783878,42.3858660606445,42.38588502885325,42.38693869313398,42.38690949549522,42.38706701094492,42.38765108643646,42.38619803049969,42.38655721915958,42.38595409439512,42.38599432590828,42.38504903514036,42.38646600574323,42.38690444329825,42.38732453803881,42.38775810798789,42.38711790818555,42.38749240483214,42.38754002347863,42.38845300796041,42.38943698547041,42.39173676749784,42.39257155960691,42.39427123039403,42.39400106341738,42.39461155426125,42.39480368859886,42.39525801821479,42.39595399824464]}]],[[{"lng":[-71.04438394731515,-71.04314449941033,-71.04379494527888,-71.04326081405917,-71.04339095905554,-71.03858901282642,-71.03562904998272,-71.03948702392448,-71.04144394627441,-71.04125104402323,-71.04438394731515],"lat":[42.40542101843295,42.40813113551568,42.40827902472935,42.40935887170794,42.41107597542777,42.41173896662183,42.40964099248974,42.40362603365631,42.40389802330209,42.40455311201742,42.40542101843295]}]]],["Chelsea","Everett"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#BC80BD","#FCCDE5"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Chelsea<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Chelsea<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Chelsea<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Everett<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Everett<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Everett - 2 of 20 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Chelsea","Everett"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.39653701805518,42.40800976982794],[-71.03268988993906,-71.0402379693105],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Chelsea.1","Everett.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Chelsea","Everett"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.38466603292142,42.41420593544247],"lng":[-71.05333995912778,-71.00993304748556]},"fitBounds":[42.38466603292142,-71.05333995912778,42.41420593544247,-71.00993304748556,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-32cad79b1c68805c2d63" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-32cad79b1c68805c2d63">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.05333995912778,-71.05302596168252,-71.05148199249268,-71.05001801489256,-71.04808999026962,-71.04057359920924,-71.03318098011341,-71.02903603922681,-71.02711503325256,-71.02687570407961,-71.02603235280182,-71.02490101054475,-71.02286488298748,-71.02244198849358,-71.02061901836419,-71.02027705711048,-71.02115637522346,-71.0208947367091,-71.01855302408843,-71.01777552316837,-71.01640056908649,-71.01375301704088,-71.00993304748556,-71.01271201546173,-71.0147021171372,-71.0170018578151,-71.01686292105826,-71.01630111031164,-71.01788760955739,-71.01921800938406,-71.01766904281403,-71.01820404116968,-71.01919901951217,-71.02067691063246,-71.0201050438084,-71.02047708567115,-71.02275448868325,-71.02343204062647,-71.02679501048549,-71.02968495372514,-71.02959379202908,-71.03134385719221,-71.03140003370099,-71.03228596795888,-71.03256021213413,-71.03448695870972,-71.0371662980735,-71.03923439923788,-71.03967893603914,-71.03946328485043,-71.04094402368682,-71.04132318121833,-71.04147202496887,-71.0424677473634,-71.0439789781189,-71.04631994843955,-71.0460583185327,-71.04679632907421,-71.04880199540094,-71.04917757467496,-71.04967970408117,-71.05224897669741,-71.05333595331359,-71.05295796516094,-71.04938695666924,-71.04896112929656,-71.04983262286187,-71.05014601351725,-71.0507824930371,-71.05227735681835,-71.05317296144081,-71.05333995912778],"lat":[42.39595399824464,42.3967399842811,42.39776996603902,42.39756997247981,42.39667093835839,42.40197871738924,42.41420593544247,42.41035398167471,42.40778198777132,42.40653631691647,42.40581616384057,42.40589997021915,42.40517876121783,42.40547396317696,42.40519196926101,42.40488000384205,42.40428582248585,42.40356504205377,42.40364797535173,42.40266696888281,42.40237962703392,42.40288896157369,42.40085300651052,42.39948503092702,42.39962430365662,42.39865909062794,42.39769268165107,42.39736902422532,42.39704124112439,42.39484576620537,42.39367498749706,42.39173800669864,42.39056803516368,42.39075016808769,42.38969900177722,42.38876709330091,42.38724238946347,42.38623401820685,42.38466603292142,42.38483502843962,42.38580277318835,42.38610324613222,42.38518803250285,42.38525702783878,42.3858660606445,42.38588502885325,42.38693869313398,42.38690949549522,42.38706701094492,42.38765108643646,42.38619803049969,42.38655721915958,42.38595409439512,42.38599432590828,42.38504903514036,42.38646600574323,42.38690444329825,42.38732453803881,42.38775810798789,42.38711790818555,42.38749240483214,42.38754002347863,42.38845300796041,42.38943698547041,42.39173676749784,42.39257155960691,42.39427123039403,42.39400106341738,42.39461155426125,42.39480368859886,42.39525801821479,42.39595399824464]}]],[[{"lng":[-71.04438394731515,-71.04314449941033,-71.04379494527888,-71.04326081405917,-71.04339095905554,-71.03858901282642,-71.03562904998272,-71.03948702392448,-71.04144394627441,-71.04125104402323,-71.04438394731515],"lat":[42.40542101843295,42.40813113551568,42.40827902472935,42.40935887170794,42.41107597542777,42.41173896662183,42.40964099248974,42.40362603365631,42.40389802330209,42.40455311201742,42.40542101843295]}]]],["Chelsea","Everett"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#80B1D3","#FB8072"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Chelsea<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Chelsea<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Chelsea<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Everett<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Everett<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Everett - 2 of 20 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Chelsea","Everett"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.39653701805518,42.40800976982794],[-71.03268988993906,-71.0402379693105],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Chelsea.1","Everett.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Chelsea","Everett"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.38466603292142,42.41420593544247],"lng":[-71.05333995912778,-71.00993304748556]},"fitBounds":[42.38466603292142,-71.05333995912778,42.41420593544247,-71.00993304748556,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="fryjhkvngp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fryjhkvngp table {
+<div id="skxiandxpf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#skxiandxpf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fryjhkvngp thead, #fryjhkvngp tbody, #fryjhkvngp tfoot, #fryjhkvngp tr, #fryjhkvngp td, #fryjhkvngp th {
+#skxiandxpf thead, #skxiandxpf tbody, #skxiandxpf tfoot, #skxiandxpf tr, #skxiandxpf td, #skxiandxpf th {
   border-style: none;
 }
 
-#fryjhkvngp p {
+#skxiandxpf p {
   margin: 0;
   padding: 0;
 }
 
-#fryjhkvngp .gt_table {
+#skxiandxpf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_caption {
+#skxiandxpf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fryjhkvngp .gt_title {
+#skxiandxpf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#fryjhkvngp .gt_subtitle {
+#skxiandxpf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#fryjhkvngp .gt_heading {
+#skxiandxpf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_bottom_border {
+#skxiandxpf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_col_headings {
+#skxiandxpf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_col_heading {
+#skxiandxpf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#fryjhkvngp .gt_column_spanner_outer {
+#skxiandxpf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#fryjhkvngp .gt_column_spanner_outer:first-child {
+#skxiandxpf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fryjhkvngp .gt_column_spanner_outer:last-child {
+#skxiandxpf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fryjhkvngp .gt_column_spanner {
+#skxiandxpf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#fryjhkvngp .gt_spanner_row {
+#skxiandxpf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fryjhkvngp .gt_group_heading {
+#skxiandxpf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#fryjhkvngp .gt_empty_group_heading {
+#skxiandxpf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#fryjhkvngp .gt_from_md > :first-child {
+#skxiandxpf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fryjhkvngp .gt_from_md > :last-child {
+#skxiandxpf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fryjhkvngp .gt_row {
+#skxiandxpf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#fryjhkvngp .gt_stub {
+#skxiandxpf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#fryjhkvngp .gt_stub_row_group {
+#skxiandxpf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#fryjhkvngp .gt_row_group_first td {
+#skxiandxpf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fryjhkvngp .gt_row_group_first th {
+#skxiandxpf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fryjhkvngp .gt_summary_row {
+#skxiandxpf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#fryjhkvngp .gt_first_summary_row {
+#skxiandxpf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_first_summary_row.thick {
+#skxiandxpf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fryjhkvngp .gt_last_summary_row {
+#skxiandxpf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_grand_summary_row {
+#skxiandxpf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#fryjhkvngp .gt_first_grand_summary_row {
+#skxiandxpf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_last_grand_summary_row_top {
+#skxiandxpf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_striped {
+#skxiandxpf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fryjhkvngp .gt_table_body {
+#skxiandxpf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_footnotes {
+#skxiandxpf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_footnote {
+#skxiandxpf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#fryjhkvngp .gt_sourcenotes {
+#skxiandxpf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#fryjhkvngp .gt_sourcenote {
+#skxiandxpf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#fryjhkvngp .gt_left {
+#skxiandxpf .gt_left {
   text-align: left;
 }
 
-#fryjhkvngp .gt_center {
+#skxiandxpf .gt_center {
   text-align: center;
 }
 
-#fryjhkvngp .gt_right {
+#skxiandxpf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fryjhkvngp .gt_font_normal {
+#skxiandxpf .gt_font_normal {
   font-weight: normal;
 }
 
-#fryjhkvngp .gt_font_bold {
+#skxiandxpf .gt_font_bold {
   font-weight: bold;
 }
 
-#fryjhkvngp .gt_font_italic {
+#skxiandxpf .gt_font_italic {
   font-style: italic;
 }
 
-#fryjhkvngp .gt_super {
+#skxiandxpf .gt_super {
   font-size: 65%;
 }
 
-#fryjhkvngp .gt_footnote_marks {
+#skxiandxpf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fryjhkvngp .gt_asterisk {
+#skxiandxpf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fryjhkvngp .gt_indent_1 {
+#skxiandxpf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fryjhkvngp .gt_indent_2 {
+#skxiandxpf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fryjhkvngp .gt_indent_3 {
+#skxiandxpf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fryjhkvngp .gt_indent_4 {
+#skxiandxpf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fryjhkvngp .gt_indent_5 {
+#skxiandxpf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#fryjhkvngp .katex-display {
+#skxiandxpf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#fryjhkvngp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#skxiandxpf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="kbgeeewgza" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kbgeeewgza table {
+<div id="gtrfhahidt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gtrfhahidt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kbgeeewgza thead, #kbgeeewgza tbody, #kbgeeewgza tfoot, #kbgeeewgza tr, #kbgeeewgza td, #kbgeeewgza th {
+#gtrfhahidt thead, #gtrfhahidt tbody, #gtrfhahidt tfoot, #gtrfhahidt tr, #gtrfhahidt td, #gtrfhahidt th {
   border-style: none;
 }
 
-#kbgeeewgza p {
+#gtrfhahidt p {
   margin: 0;
   padding: 0;
 }
 
-#kbgeeewgza .gt_table {
+#gtrfhahidt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_caption {
+#gtrfhahidt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kbgeeewgza .gt_title {
+#gtrfhahidt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#kbgeeewgza .gt_subtitle {
+#gtrfhahidt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#kbgeeewgza .gt_heading {
+#gtrfhahidt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_bottom_border {
+#gtrfhahidt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_col_headings {
+#gtrfhahidt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_col_heading {
+#gtrfhahidt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#kbgeeewgza .gt_column_spanner_outer {
+#gtrfhahidt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#kbgeeewgza .gt_column_spanner_outer:first-child {
+#gtrfhahidt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kbgeeewgza .gt_column_spanner_outer:last-child {
+#gtrfhahidt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kbgeeewgza .gt_column_spanner {
+#gtrfhahidt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#kbgeeewgza .gt_spanner_row {
+#gtrfhahidt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kbgeeewgza .gt_group_heading {
+#gtrfhahidt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#kbgeeewgza .gt_empty_group_heading {
+#gtrfhahidt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#kbgeeewgza .gt_from_md > :first-child {
+#gtrfhahidt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kbgeeewgza .gt_from_md > :last-child {
+#gtrfhahidt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kbgeeewgza .gt_row {
+#gtrfhahidt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#kbgeeewgza .gt_stub {
+#gtrfhahidt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kbgeeewgza .gt_stub_row_group {
+#gtrfhahidt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#kbgeeewgza .gt_row_group_first td {
+#gtrfhahidt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kbgeeewgza .gt_row_group_first th {
+#gtrfhahidt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kbgeeewgza .gt_summary_row {
+#gtrfhahidt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kbgeeewgza .gt_first_summary_row {
+#gtrfhahidt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_first_summary_row.thick {
+#gtrfhahidt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kbgeeewgza .gt_last_summary_row {
+#gtrfhahidt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_grand_summary_row {
+#gtrfhahidt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kbgeeewgza .gt_first_grand_summary_row {
+#gtrfhahidt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_last_grand_summary_row_top {
+#gtrfhahidt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_striped {
+#gtrfhahidt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kbgeeewgza .gt_table_body {
+#gtrfhahidt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_footnotes {
+#gtrfhahidt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_footnote {
+#gtrfhahidt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kbgeeewgza .gt_sourcenotes {
+#gtrfhahidt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#kbgeeewgza .gt_sourcenote {
+#gtrfhahidt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kbgeeewgza .gt_left {
+#gtrfhahidt .gt_left {
   text-align: left;
 }
 
-#kbgeeewgza .gt_center {
+#gtrfhahidt .gt_center {
   text-align: center;
 }
 
-#kbgeeewgza .gt_right {
+#gtrfhahidt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kbgeeewgza .gt_font_normal {
+#gtrfhahidt .gt_font_normal {
   font-weight: normal;
 }
 
-#kbgeeewgza .gt_font_bold {
+#gtrfhahidt .gt_font_bold {
   font-weight: bold;
 }
 
-#kbgeeewgza .gt_font_italic {
+#gtrfhahidt .gt_font_italic {
   font-style: italic;
 }
 
-#kbgeeewgza .gt_super {
+#gtrfhahidt .gt_super {
   font-size: 65%;
 }
 
-#kbgeeewgza .gt_footnote_marks {
+#gtrfhahidt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kbgeeewgza .gt_asterisk {
+#gtrfhahidt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kbgeeewgza .gt_indent_1 {
+#gtrfhahidt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kbgeeewgza .gt_indent_2 {
+#gtrfhahidt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kbgeeewgza .gt_indent_3 {
+#gtrfhahidt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kbgeeewgza .gt_indent_4 {
+#gtrfhahidt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kbgeeewgza .gt_indent_5 {
+#gtrfhahidt .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kbgeeewgza .katex-display {
+#gtrfhahidt .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kbgeeewgza div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#gtrfhahidt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1176,23 +1210,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ddaebgpqab" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ddaebgpqab table {
+<div id="iykyrlimxg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iykyrlimxg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ddaebgpqab thead, #ddaebgpqab tbody, #ddaebgpqab tfoot, #ddaebgpqab tr, #ddaebgpqab td, #ddaebgpqab th {
+#iykyrlimxg thead, #iykyrlimxg tbody, #iykyrlimxg tfoot, #iykyrlimxg tr, #iykyrlimxg td, #iykyrlimxg th {
   border-style: none;
 }
 
-#ddaebgpqab p {
+#iykyrlimxg p {
   margin: 0;
   padding: 0;
 }
 
-#ddaebgpqab .gt_table {
+#iykyrlimxg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1218,12 +1252,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_caption {
+#iykyrlimxg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ddaebgpqab .gt_title {
+#iykyrlimxg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1235,7 +1269,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#ddaebgpqab .gt_subtitle {
+#iykyrlimxg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1247,7 +1281,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#ddaebgpqab .gt_heading {
+#iykyrlimxg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1259,13 +1293,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_bottom_border {
+#iykyrlimxg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_col_headings {
+#iykyrlimxg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1280,7 +1314,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_col_heading {
+#iykyrlimxg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1300,7 +1334,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#ddaebgpqab .gt_column_spanner_outer {
+#iykyrlimxg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1312,15 +1346,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#ddaebgpqab .gt_column_spanner_outer:first-child {
+#iykyrlimxg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ddaebgpqab .gt_column_spanner_outer:last-child {
+#iykyrlimxg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ddaebgpqab .gt_column_spanner {
+#iykyrlimxg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1332,11 +1366,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#ddaebgpqab .gt_spanner_row {
+#iykyrlimxg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ddaebgpqab .gt_group_heading {
+#iykyrlimxg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1362,7 +1396,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#ddaebgpqab .gt_empty_group_heading {
+#iykyrlimxg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1377,15 +1411,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#ddaebgpqab .gt_from_md > :first-child {
+#iykyrlimxg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ddaebgpqab .gt_from_md > :last-child {
+#iykyrlimxg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ddaebgpqab .gt_row {
+#iykyrlimxg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1404,7 +1438,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#ddaebgpqab .gt_stub {
+#iykyrlimxg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1417,7 +1451,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ddaebgpqab .gt_stub_row_group {
+#iykyrlimxg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1431,15 +1465,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#ddaebgpqab .gt_row_group_first td {
+#iykyrlimxg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ddaebgpqab .gt_row_group_first th {
+#iykyrlimxg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ddaebgpqab .gt_summary_row {
+#iykyrlimxg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1449,16 +1483,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ddaebgpqab .gt_first_summary_row {
+#iykyrlimxg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_first_summary_row.thick {
+#iykyrlimxg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ddaebgpqab .gt_last_summary_row {
+#iykyrlimxg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1468,7 +1502,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_grand_summary_row {
+#iykyrlimxg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1478,7 +1512,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ddaebgpqab .gt_first_grand_summary_row {
+#iykyrlimxg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1488,7 +1522,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_last_grand_summary_row_top {
+#iykyrlimxg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1498,11 +1532,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_striped {
+#iykyrlimxg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ddaebgpqab .gt_table_body {
+#iykyrlimxg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1511,7 +1545,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_footnotes {
+#iykyrlimxg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1525,7 +1559,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_footnote {
+#iykyrlimxg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1534,7 +1568,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ddaebgpqab .gt_sourcenotes {
+#iykyrlimxg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1548,7 +1582,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ddaebgpqab .gt_sourcenote {
+#iykyrlimxg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1556,72 +1590,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ddaebgpqab .gt_left {
+#iykyrlimxg .gt_left {
   text-align: left;
 }
 
-#ddaebgpqab .gt_center {
+#iykyrlimxg .gt_center {
   text-align: center;
 }
 
-#ddaebgpqab .gt_right {
+#iykyrlimxg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ddaebgpqab .gt_font_normal {
+#iykyrlimxg .gt_font_normal {
   font-weight: normal;
 }
 
-#ddaebgpqab .gt_font_bold {
+#iykyrlimxg .gt_font_bold {
   font-weight: bold;
 }
 
-#ddaebgpqab .gt_font_italic {
+#iykyrlimxg .gt_font_italic {
   font-style: italic;
 }
 
-#ddaebgpqab .gt_super {
+#iykyrlimxg .gt_super {
   font-size: 65%;
 }
 
-#ddaebgpqab .gt_footnote_marks {
+#iykyrlimxg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ddaebgpqab .gt_asterisk {
+#iykyrlimxg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ddaebgpqab .gt_indent_1 {
+#iykyrlimxg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ddaebgpqab .gt_indent_2 {
+#iykyrlimxg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ddaebgpqab .gt_indent_3 {
+#iykyrlimxg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ddaebgpqab .gt_indent_4 {
+#iykyrlimxg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ddaebgpqab .gt_indent_5 {
+#iykyrlimxg .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ddaebgpqab .katex-display {
+#iykyrlimxg .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ddaebgpqab div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#iykyrlimxg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

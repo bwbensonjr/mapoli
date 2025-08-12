@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "%(office_name)s"
   district_name: "%(district_name)s"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts %(district_name)s %(office_name)s District"
+description: "%(description)s"
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

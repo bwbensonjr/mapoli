@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventh Hampden"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventh Hampden State Representative District"
+description: "The Massachusetts Seventh Hampden State Representative District is currently represented by Democrat Aaron L. Saunders of Belchertown, who is running unopposed in the 2024 election. The district includes Belchertown, Ludlow, New Salem, Pelham, Petersham, Shutesbury, and Wendell, covering 296 square miles with a population of approximately 42,313."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

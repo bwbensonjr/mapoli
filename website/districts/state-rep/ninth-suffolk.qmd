@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Ninth Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Ninth Suffolk State Representative District"
+description: "The Massachusetts Ninth Suffolk State Representative District is currently represented by Democratic incumbent John Francis Moran, who won a special election in 2023 with 100% of the vote. The district is located entirely in Boston, encompassing parts of 18 precincts within the city, and has a diverse population with 56% minority residents and 44% white residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twenty-Third Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twenty-Third Middlesex State Representative District"
+description: "The Twenty-Third Middlesex State Representative District in Massachusetts includes portions of Arlington (15 precincts) and Medford (3 precincts). The current incumbent is Sean Garballey (Democrat) from Arlington, who has held the seat since winning a special election in March 2008 and has run unopposed in most subsequent elections."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

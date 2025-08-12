@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fourteenth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourteenth Middlesex State Representative District"
+description: "The 14th Middlesex district is represented by incumbent Democrat Simon Cataldo of Concord. The district includes portions of Acton, all of Carlisle, parts of Chelmsford, and parts of Concord, covering an area of 53 square miles in Middlesex County."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

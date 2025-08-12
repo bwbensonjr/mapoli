@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Massachusetts Eighth Worcester State Representative District is currently represented by Republican Michael J. Soter of Bellingham, who has held the seat since winning election in 2018. The district covers portions of Bellingham, Blackstone, Medway, Millville, and Uxbridge, with a population of approximately 43,499 residents.">
 
 <title>Massachusetts Eighth Worcester State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Eighth Worcester State Representative District – mapoli">
+<meta property="og:description" content="The Massachusetts Eighth Worcester State Representative District is currently represented by Republican Michael J. Soter of Bellingham, who has held the seat since winning election in 2018. The district covers portions of Bellingham, Blackstone, Medway, Millville, and Uxbridge, with a population of approximately 43,499 residents.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Eighth Worcester State Representative District – mapoli">
+<meta name="twitter:description" content="The Massachusetts Eighth Worcester State Representative District is currently represented by Republican Michael J. Soter of Bellingham, who has held the seat since winning election in 2018. The district covers portions of Bellingham, Blackstone, Medway, Millville, and Uxbridge, with a population of approximately 43,499 residents.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Eighth Worcester State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Massachusetts Eighth Worcester State Representative District is currently represented by Republican Michael J. Soter of Bellingham, who has held the seat since winning election in 2018. The district covers portions of Bellingham, Blackstone, Medway, Millville, and Uxbridge, with a population of approximately 43,499 residents.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Massachusetts Eighth Worcester State Representative District is currently represented by Republican Michael J. Soter of Bellingham, who has held the seat since winning election in 2018. The district covers portions of Bellingham, Blackstone, Medway, Millville, and Uxbridge, with a population of approximately 43,499 residents.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-861a65b0918b3d19d367" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-861a65b0918b3d19d367">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.50307795756846,-71.50196497080353,-71.50138087172074,-71.50037889940754,-71.50123495468048,-71.50155295513827,-71.50104648994862,-71.50149794791621,-71.48988098103636,-71.47852198124252,-71.4429410046769,-71.44144105541116,-71.44287721100898,-71.44196105187787,-71.44236163195977,-71.44167806128438,-71.44255832147688,-71.44400988247257,-71.44645803802217,-71.45197386531717,-71.45369803605142,-71.4552793885599,-71.45586672873661,-71.45495997118408,-71.45475403258786,-71.45810403654343,-71.49825896053626,-71.4979051931474,-71.4982619592401,-71.49823996742312,-71.49815295810906,-71.49709644541451,-71.49745695863869,-71.49650614184439,-71.49651095724641,-71.49531963061001,-71.49608994448411,-71.49588810149106,-71.49662295164687,-71.49648466588995,-71.49729395111521,-71.49673773805013,-71.49951196645681,-71.50133995865123,-71.5007832786419,-71.50242295570229,-71.50307795756846],"lat":[42.11028500265056,42.11165696516827,42.1116079460239,42.11272284853046,42.11332901153821,42.11458299668771,42.1152386597557,42.11658899428015,42.12473398294745,42.13137796890379,42.13576196625609,42.13482200658582,42.13406468463838,42.13359699267599,42.13219001668766,42.13188599004868,42.13157129722549,42.11731314907936,42.10297300420354,42.08373298359949,42.0726210335799,42.0726641926075,42.06326865192019,42.06312682172946,42.04411700120953,42.01779802987602,42.01727203092864,42.0313407593989,42.03133305697222,42.09141199812935,42.09349899618645,42.09564920870699,42.09644298589137,42.09720567441678,42.09798898319253,42.09989562651874,42.10035901499266,42.10069341798695,42.1012040028663,42.10152433605403,42.10178601678105,42.10224126465192,42.10304902198018,42.10606100898833,42.10774062568161,42.10886401242575,42.11028500265056]}]],[[{"lng":[-71.56391695946959,-71.49828704073703,-71.49826183221184,-71.49790102855464,-71.49825903969734,-71.52770402135761,-71.56366496083719,-71.56391695946959],"lat":[42.06405597106123,42.06487796865459,42.03149678543429,42.03151183205933,42.01727202682201,42.01509495190756,42.01427603010157,42.06405597106123]}]],[[{"lng":[-71.47852196017683,-71.47811895888719,-71.47273856652126,-71.46394945096279,-71.44406703630887,-71.44266004191675,-71.44468101947339,-71.47852196017683],"lat":[42.13137803498908,42.15678196969024,42.15687394100374,42.15824837895038,42.17488892700361,42.13693001315441,42.13555202994855,42.13137803498908]}]],[[{"lng":[-71.5919509592652,-71.56391704025904,-71.56372104216905,-71.59109996009043,-71.5919509592652],"lat":[42.06369497078732,42.06405596900585,42.01427503025157,42.01364603163633,42.06369497078732]}]],[[{"lng":[-71.68180196152788,-71.66814537096199,-71.66679089540722,-71.66694795653848,-71.66407632291471,-71.66352796937026,-71.65973212596896,-71.65890197770541,-71.65788326642641,-71.65654401468997,-71.65616520472949,-71.65514936015158,-71.65221767037102,-71.65795071193376,-71.65561973568076,-71.65221598425626,-71.64966782961916,-71.64800297950437,-71.64155943526183,-71.63900158651224,-71.63759560541202,-71.63530099264983,-71.63291935507279,-71.62715894025557,-71.63002377497578,-71.63110300337655,-71.63216250097302,-71.63364308038223,-71.63670193827483,-71.634877176477,-71.6371499756993,-71.63904096577097,-71.64090658708281,-71.64495897563339,-71.64698429457565,-71.65310096483933,-71.65406194134357,-71.65083037744685,-71.60353101003628,-71.602810871456,-71.60153975345894,-71.59853083912931,-71.59263403856113,-71.59110004068928,-71.68087095995993,-71.68245096865192,-71.68180196152788],"lat":[42.05492395799629,42.05211494804809,42.05446790388426,42.05566498637826,42.05739160069193,42.05842097766073,42.06023268621352,42.06102897304783,42.06118182019335,42.06202695079498,42.06141163226601,42.06096704686271,42.0607107799192,42.06349789371875,42.06305340574467,42.06487397209266,42.06509199966429,42.06699297331585,42.06812762951956,42.06938285680318,42.07071249416624,42.07152696683614,42.07137579619396,42.07334526979335,42.07704356425199,42.07673402980794,42.07692672769635,42.07775849609766,42.07835901812886,42.08061370007218,42.08165501790803,42.08335701713644,42.08699175385006,42.08844602031165,42.09032083557445,42.09454802193008,42.09635595251899,42.0955100454431,42.11210996311571,42.11150093535694,42.11129995001237,42.11172057276279,42.11423794607177,42.01364602840633,42.01153003098107,42.04374199997653,42.05492395799629]}]]],["Bellingham","Blackstone","Medway","Millville","Uxbridge"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#FCCDE5","#BEBADA","#BC80BD","#D9D9D9","#8DD3C7"],"fillOpacity":[0.6,0.6,0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Bellingham<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Bellingham<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Bellingham<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Blackstone<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Blackstone<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Blackstone<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Medway<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Medway<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Medway - 1 of 4 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Millville<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Millville<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Millville<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Uxbridge<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Uxbridge<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Uxbridge - 4 of 5 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Bellingham","Blackstone","Medway","Millville","Uxbridge"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.07772361783481,42.03990970819969,42.14865529541149,42.03901323242739,42.05303504288872],[-71.47408833823575,-71.53123719067992,-71.45927468569244,-71.57768611711514,-71.62900642345191],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Bellingham.1","Blackstone.1","Medway.1","Millville.1","Uxbridge.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Bellingham","Blackstone","Medway","Millville","Uxbridge"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.01153003098107,42.17488892700361],"lng":[-71.68245096865192,-71.44144105541116]},"fitBounds":[42.01153003098107,-71.68245096865192,42.17488892700361,-71.44144105541116,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-ea0800228705acd2e843" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-ea0800228705acd2e843">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.50307795756846,-71.50196497080353,-71.50138087172074,-71.50037889940754,-71.50123495468048,-71.50155295513827,-71.50104648994862,-71.50149794791621,-71.48988098103636,-71.47852198124252,-71.4429410046769,-71.44144105541116,-71.44287721100898,-71.44196105187787,-71.44236163195977,-71.44167806128438,-71.44255832147688,-71.44400988247257,-71.44645803802217,-71.45197386531717,-71.45369803605142,-71.4552793885599,-71.45586672873661,-71.45495997118408,-71.45475403258786,-71.45810403654343,-71.49825896053626,-71.4979051931474,-71.4982619592401,-71.49823996742312,-71.49815295810906,-71.49709644541451,-71.49745695863869,-71.49650614184439,-71.49651095724641,-71.49531963061001,-71.49608994448411,-71.49588810149106,-71.49662295164687,-71.49648466588995,-71.49729395111521,-71.49673773805013,-71.49951196645681,-71.50133995865123,-71.5007832786419,-71.50242295570229,-71.50307795756846],"lat":[42.11028500265056,42.11165696516827,42.1116079460239,42.11272284853046,42.11332901153821,42.11458299668771,42.1152386597557,42.11658899428015,42.12473398294745,42.13137796890379,42.13576196625609,42.13482200658582,42.13406468463838,42.13359699267599,42.13219001668766,42.13188599004868,42.13157129722549,42.11731314907936,42.10297300420354,42.08373298359949,42.0726210335799,42.0726641926075,42.06326865192019,42.06312682172946,42.04411700120953,42.01779802987602,42.01727203092864,42.0313407593989,42.03133305697222,42.09141199812935,42.09349899618645,42.09564920870699,42.09644298589137,42.09720567441678,42.09798898319253,42.09989562651874,42.10035901499266,42.10069341798695,42.1012040028663,42.10152433605403,42.10178601678105,42.10224126465192,42.10304902198018,42.10606100898833,42.10774062568161,42.10886401242575,42.11028500265056]}]],[[{"lng":[-71.56391695946959,-71.49828704073703,-71.49826183221184,-71.49790102855464,-71.49825903969734,-71.52770402135761,-71.56366496083719,-71.56391695946959],"lat":[42.06405597106123,42.06487796865459,42.03149678543429,42.03151183205933,42.01727202682201,42.01509495190756,42.01427603010157,42.06405597106123]}]],[[{"lng":[-71.47852196017683,-71.47811895888719,-71.47273856652126,-71.46394945096279,-71.44406703630887,-71.44266004191675,-71.44468101947339,-71.47852196017683],"lat":[42.13137803498908,42.15678196969024,42.15687394100374,42.15824837895038,42.17488892700361,42.13693001315441,42.13555202994855,42.13137803498908]}]],[[{"lng":[-71.5919509592652,-71.56391704025904,-71.56372104216905,-71.59109996009043,-71.5919509592652],"lat":[42.06369497078732,42.06405596900585,42.01427503025157,42.01364603163633,42.06369497078732]}]],[[{"lng":[-71.68180196152788,-71.66814537096199,-71.66679089540722,-71.66694795653848,-71.66407632291471,-71.66352796937026,-71.65973212596896,-71.65890197770541,-71.65788326642641,-71.65654401468997,-71.65616520472949,-71.65514936015158,-71.65221767037102,-71.65795071193376,-71.65561973568076,-71.65221598425626,-71.64966782961916,-71.64800297950437,-71.64155943526183,-71.63900158651224,-71.63759560541202,-71.63530099264983,-71.63291935507279,-71.62715894025557,-71.63002377497578,-71.63110300337655,-71.63216250097302,-71.63364308038223,-71.63670193827483,-71.634877176477,-71.6371499756993,-71.63904096577097,-71.64090658708281,-71.64495897563339,-71.64698429457565,-71.65310096483933,-71.65406194134357,-71.65083037744685,-71.60353101003628,-71.602810871456,-71.60153975345894,-71.59853083912931,-71.59263403856113,-71.59110004068928,-71.68087095995993,-71.68245096865192,-71.68180196152788],"lat":[42.05492395799629,42.05211494804809,42.05446790388426,42.05566498637826,42.05739160069193,42.05842097766073,42.06023268621352,42.06102897304783,42.06118182019335,42.06202695079498,42.06141163226601,42.06096704686271,42.0607107799192,42.06349789371875,42.06305340574467,42.06487397209266,42.06509199966429,42.06699297331585,42.06812762951956,42.06938285680318,42.07071249416624,42.07152696683614,42.07137579619396,42.07334526979335,42.07704356425199,42.07673402980794,42.07692672769635,42.07775849609766,42.07835901812886,42.08061370007218,42.08165501790803,42.08335701713644,42.08699175385006,42.08844602031165,42.09032083557445,42.09454802193008,42.09635595251899,42.0955100454431,42.11210996311571,42.11150093535694,42.11129995001237,42.11172057276279,42.11423794607177,42.01364602840633,42.01153003098107,42.04374199997653,42.05492395799629]}]]],["Bellingham","Blackstone","Medway","Millville","Uxbridge"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#80B1D3","#BEBADA","#FFFFB3","#BEBADA","#FFFFB3"],"fillOpacity":[0.6,0.6,0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Bellingham<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Bellingham<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Bellingham<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Blackstone<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Blackstone<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Blackstone<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Medway<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Medway<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Medway - 1 of 4 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Millville<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Millville<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Millville<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Uxbridge<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Uxbridge<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Uxbridge - 4 of 5 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Bellingham","Blackstone","Medway","Millville","Uxbridge"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.07772361783481,42.03990970819969,42.14865529541149,42.03901323242739,42.05303504288872],[-71.47408833823575,-71.53123719067992,-71.45927468569244,-71.57768611711514,-71.62900642345191],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Bellingham.1","Blackstone.1","Medway.1","Millville.1","Uxbridge.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Bellingham","Blackstone","Medway","Millville","Uxbridge"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.01153003098107,42.17488892700361],"lng":[-71.68245096865192,-71.44144105541116]},"fitBounds":[42.01153003098107,-71.68245096865192,42.17488892700361,-71.44144105541116,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="gfqrlzthle" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#gfqrlzthle table {
+<div id="kiachfmsid" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kiachfmsid table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#gfqrlzthle thead, #gfqrlzthle tbody, #gfqrlzthle tfoot, #gfqrlzthle tr, #gfqrlzthle td, #gfqrlzthle th {
+#kiachfmsid thead, #kiachfmsid tbody, #kiachfmsid tfoot, #kiachfmsid tr, #kiachfmsid td, #kiachfmsid th {
   border-style: none;
 }
 
-#gfqrlzthle p {
+#kiachfmsid p {
   margin: 0;
   padding: 0;
 }
 
-#gfqrlzthle .gt_table {
+#kiachfmsid .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_caption {
+#kiachfmsid .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gfqrlzthle .gt_title {
+#kiachfmsid .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#gfqrlzthle .gt_subtitle {
+#kiachfmsid .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#gfqrlzthle .gt_heading {
+#kiachfmsid .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_bottom_border {
+#kiachfmsid .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_col_headings {
+#kiachfmsid .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_col_heading {
+#kiachfmsid .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#gfqrlzthle .gt_column_spanner_outer {
+#kiachfmsid .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#gfqrlzthle .gt_column_spanner_outer:first-child {
+#kiachfmsid .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gfqrlzthle .gt_column_spanner_outer:last-child {
+#kiachfmsid .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gfqrlzthle .gt_column_spanner {
+#kiachfmsid .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#gfqrlzthle .gt_spanner_row {
+#kiachfmsid .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#gfqrlzthle .gt_group_heading {
+#kiachfmsid .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#gfqrlzthle .gt_empty_group_heading {
+#kiachfmsid .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#gfqrlzthle .gt_from_md > :first-child {
+#kiachfmsid .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gfqrlzthle .gt_from_md > :last-child {
+#kiachfmsid .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gfqrlzthle .gt_row {
+#kiachfmsid .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#gfqrlzthle .gt_stub {
+#kiachfmsid .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#gfqrlzthle .gt_stub_row_group {
+#kiachfmsid .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#gfqrlzthle .gt_row_group_first td {
+#kiachfmsid .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gfqrlzthle .gt_row_group_first th {
+#kiachfmsid .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#gfqrlzthle .gt_summary_row {
+#kiachfmsid .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#gfqrlzthle .gt_first_summary_row {
+#kiachfmsid .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_first_summary_row.thick {
+#kiachfmsid .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gfqrlzthle .gt_last_summary_row {
+#kiachfmsid .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_grand_summary_row {
+#kiachfmsid .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#gfqrlzthle .gt_first_grand_summary_row {
+#kiachfmsid .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_last_grand_summary_row_top {
+#kiachfmsid .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_striped {
+#kiachfmsid .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gfqrlzthle .gt_table_body {
+#kiachfmsid .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_footnotes {
+#kiachfmsid .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_footnote {
+#kiachfmsid .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#gfqrlzthle .gt_sourcenotes {
+#kiachfmsid .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#gfqrlzthle .gt_sourcenote {
+#kiachfmsid .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#gfqrlzthle .gt_left {
+#kiachfmsid .gt_left {
   text-align: left;
 }
 
-#gfqrlzthle .gt_center {
+#kiachfmsid .gt_center {
   text-align: center;
 }
 
-#gfqrlzthle .gt_right {
+#kiachfmsid .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gfqrlzthle .gt_font_normal {
+#kiachfmsid .gt_font_normal {
   font-weight: normal;
 }
 
-#gfqrlzthle .gt_font_bold {
+#kiachfmsid .gt_font_bold {
   font-weight: bold;
 }
 
-#gfqrlzthle .gt_font_italic {
+#kiachfmsid .gt_font_italic {
   font-style: italic;
 }
 
-#gfqrlzthle .gt_super {
+#kiachfmsid .gt_super {
   font-size: 65%;
 }
 
-#gfqrlzthle .gt_footnote_marks {
+#kiachfmsid .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#gfqrlzthle .gt_asterisk {
+#kiachfmsid .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gfqrlzthle .gt_indent_1 {
+#kiachfmsid .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gfqrlzthle .gt_indent_2 {
+#kiachfmsid .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gfqrlzthle .gt_indent_3 {
+#kiachfmsid .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gfqrlzthle .gt_indent_4 {
+#kiachfmsid .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gfqrlzthle .gt_indent_5 {
+#kiachfmsid .gt_indent_5 {
   text-indent: 25px;
 }
 
-#gfqrlzthle .katex-display {
+#kiachfmsid .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#gfqrlzthle div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#kiachfmsid div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="uolpzmxkua" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#uolpzmxkua table {
+<div id="zppwkpysbv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zppwkpysbv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#uolpzmxkua thead, #uolpzmxkua tbody, #uolpzmxkua tfoot, #uolpzmxkua tr, #uolpzmxkua td, #uolpzmxkua th {
+#zppwkpysbv thead, #zppwkpysbv tbody, #zppwkpysbv tfoot, #zppwkpysbv tr, #zppwkpysbv td, #zppwkpysbv th {
   border-style: none;
 }
 
-#uolpzmxkua p {
+#zppwkpysbv p {
   margin: 0;
   padding: 0;
 }
 
-#uolpzmxkua .gt_table {
+#zppwkpysbv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_caption {
+#zppwkpysbv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#uolpzmxkua .gt_title {
+#zppwkpysbv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#uolpzmxkua .gt_subtitle {
+#zppwkpysbv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#uolpzmxkua .gt_heading {
+#zppwkpysbv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_bottom_border {
+#zppwkpysbv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_col_headings {
+#zppwkpysbv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_col_heading {
+#zppwkpysbv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#uolpzmxkua .gt_column_spanner_outer {
+#zppwkpysbv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#uolpzmxkua .gt_column_spanner_outer:first-child {
+#zppwkpysbv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#uolpzmxkua .gt_column_spanner_outer:last-child {
+#zppwkpysbv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#uolpzmxkua .gt_column_spanner {
+#zppwkpysbv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#uolpzmxkua .gt_spanner_row {
+#zppwkpysbv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#uolpzmxkua .gt_group_heading {
+#zppwkpysbv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#uolpzmxkua .gt_empty_group_heading {
+#zppwkpysbv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#uolpzmxkua .gt_from_md > :first-child {
+#zppwkpysbv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#uolpzmxkua .gt_from_md > :last-child {
+#zppwkpysbv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#uolpzmxkua .gt_row {
+#zppwkpysbv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#uolpzmxkua .gt_stub {
+#zppwkpysbv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uolpzmxkua .gt_stub_row_group {
+#zppwkpysbv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#uolpzmxkua .gt_row_group_first td {
+#zppwkpysbv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#uolpzmxkua .gt_row_group_first th {
+#zppwkpysbv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#uolpzmxkua .gt_summary_row {
+#zppwkpysbv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uolpzmxkua .gt_first_summary_row {
+#zppwkpysbv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_first_summary_row.thick {
+#zppwkpysbv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#uolpzmxkua .gt_last_summary_row {
+#zppwkpysbv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_grand_summary_row {
+#zppwkpysbv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uolpzmxkua .gt_first_grand_summary_row {
+#zppwkpysbv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_last_grand_summary_row_top {
+#zppwkpysbv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_striped {
+#zppwkpysbv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#uolpzmxkua .gt_table_body {
+#zppwkpysbv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_footnotes {
+#zppwkpysbv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_footnote {
+#zppwkpysbv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uolpzmxkua .gt_sourcenotes {
+#zppwkpysbv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#uolpzmxkua .gt_sourcenote {
+#zppwkpysbv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uolpzmxkua .gt_left {
+#zppwkpysbv .gt_left {
   text-align: left;
 }
 
-#uolpzmxkua .gt_center {
+#zppwkpysbv .gt_center {
   text-align: center;
 }
 
-#uolpzmxkua .gt_right {
+#zppwkpysbv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#uolpzmxkua .gt_font_normal {
+#zppwkpysbv .gt_font_normal {
   font-weight: normal;
 }
 
-#uolpzmxkua .gt_font_bold {
+#zppwkpysbv .gt_font_bold {
   font-weight: bold;
 }
 
-#uolpzmxkua .gt_font_italic {
+#zppwkpysbv .gt_font_italic {
   font-style: italic;
 }
 
-#uolpzmxkua .gt_super {
+#zppwkpysbv .gt_super {
   font-size: 65%;
 }
 
-#uolpzmxkua .gt_footnote_marks {
+#zppwkpysbv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#uolpzmxkua .gt_asterisk {
+#zppwkpysbv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#uolpzmxkua .gt_indent_1 {
+#zppwkpysbv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#uolpzmxkua .gt_indent_2 {
+#zppwkpysbv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#uolpzmxkua .gt_indent_3 {
+#zppwkpysbv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#uolpzmxkua .gt_indent_4 {
+#zppwkpysbv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#uolpzmxkua .gt_indent_5 {
+#zppwkpysbv .gt_indent_5 {
   text-indent: 25px;
 }
 
-#uolpzmxkua .katex-display {
+#zppwkpysbv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#uolpzmxkua div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#zppwkpysbv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1188,23 +1222,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="empqrflvsi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#empqrflvsi table {
+<div id="xvdvzvovmt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xvdvzvovmt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#empqrflvsi thead, #empqrflvsi tbody, #empqrflvsi tfoot, #empqrflvsi tr, #empqrflvsi td, #empqrflvsi th {
+#xvdvzvovmt thead, #xvdvzvovmt tbody, #xvdvzvovmt tfoot, #xvdvzvovmt tr, #xvdvzvovmt td, #xvdvzvovmt th {
   border-style: none;
 }
 
-#empqrflvsi p {
+#xvdvzvovmt p {
   margin: 0;
   padding: 0;
 }
 
-#empqrflvsi .gt_table {
+#xvdvzvovmt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1230,12 +1264,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_caption {
+#xvdvzvovmt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#empqrflvsi .gt_title {
+#xvdvzvovmt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1247,7 +1281,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#empqrflvsi .gt_subtitle {
+#xvdvzvovmt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1259,7 +1293,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#empqrflvsi .gt_heading {
+#xvdvzvovmt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1271,13 +1305,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_bottom_border {
+#xvdvzvovmt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_col_headings {
+#xvdvzvovmt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1292,7 +1326,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_col_heading {
+#xvdvzvovmt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1312,7 +1346,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#empqrflvsi .gt_column_spanner_outer {
+#xvdvzvovmt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1324,15 +1358,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#empqrflvsi .gt_column_spanner_outer:first-child {
+#xvdvzvovmt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#empqrflvsi .gt_column_spanner_outer:last-child {
+#xvdvzvovmt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#empqrflvsi .gt_column_spanner {
+#xvdvzvovmt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1344,11 +1378,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#empqrflvsi .gt_spanner_row {
+#xvdvzvovmt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#empqrflvsi .gt_group_heading {
+#xvdvzvovmt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1374,7 +1408,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#empqrflvsi .gt_empty_group_heading {
+#xvdvzvovmt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1389,15 +1423,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#empqrflvsi .gt_from_md > :first-child {
+#xvdvzvovmt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#empqrflvsi .gt_from_md > :last-child {
+#xvdvzvovmt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#empqrflvsi .gt_row {
+#xvdvzvovmt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1416,7 +1450,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#empqrflvsi .gt_stub {
+#xvdvzvovmt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1429,7 +1463,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#empqrflvsi .gt_stub_row_group {
+#xvdvzvovmt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1443,15 +1477,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#empqrflvsi .gt_row_group_first td {
+#xvdvzvovmt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#empqrflvsi .gt_row_group_first th {
+#xvdvzvovmt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#empqrflvsi .gt_summary_row {
+#xvdvzvovmt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1461,16 +1495,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#empqrflvsi .gt_first_summary_row {
+#xvdvzvovmt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_first_summary_row.thick {
+#xvdvzvovmt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#empqrflvsi .gt_last_summary_row {
+#xvdvzvovmt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1480,7 +1514,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_grand_summary_row {
+#xvdvzvovmt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1490,7 +1524,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#empqrflvsi .gt_first_grand_summary_row {
+#xvdvzvovmt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1500,7 +1534,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_last_grand_summary_row_top {
+#xvdvzvovmt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1510,11 +1544,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_striped {
+#xvdvzvovmt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#empqrflvsi .gt_table_body {
+#xvdvzvovmt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1523,7 +1557,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_footnotes {
+#xvdvzvovmt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1537,7 +1571,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_footnote {
+#xvdvzvovmt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1546,7 +1580,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#empqrflvsi .gt_sourcenotes {
+#xvdvzvovmt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1560,7 +1594,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#empqrflvsi .gt_sourcenote {
+#xvdvzvovmt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1568,72 +1602,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#empqrflvsi .gt_left {
+#xvdvzvovmt .gt_left {
   text-align: left;
 }
 
-#empqrflvsi .gt_center {
+#xvdvzvovmt .gt_center {
   text-align: center;
 }
 
-#empqrflvsi .gt_right {
+#xvdvzvovmt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#empqrflvsi .gt_font_normal {
+#xvdvzvovmt .gt_font_normal {
   font-weight: normal;
 }
 
-#empqrflvsi .gt_font_bold {
+#xvdvzvovmt .gt_font_bold {
   font-weight: bold;
 }
 
-#empqrflvsi .gt_font_italic {
+#xvdvzvovmt .gt_font_italic {
   font-style: italic;
 }
 
-#empqrflvsi .gt_super {
+#xvdvzvovmt .gt_super {
   font-size: 65%;
 }
 
-#empqrflvsi .gt_footnote_marks {
+#xvdvzvovmt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#empqrflvsi .gt_asterisk {
+#xvdvzvovmt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#empqrflvsi .gt_indent_1 {
+#xvdvzvovmt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#empqrflvsi .gt_indent_2 {
+#xvdvzvovmt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#empqrflvsi .gt_indent_3 {
+#xvdvzvovmt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#empqrflvsi .gt_indent_4 {
+#xvdvzvovmt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#empqrflvsi .gt_indent_5 {
+#xvdvzvovmt .gt_indent_5 {
   text-indent: 25px;
 }
 
-#empqrflvsi .katex-display {
+#xvdvzvovmt .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#empqrflvsi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xvdvzvovmt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

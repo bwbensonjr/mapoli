@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Ninth Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Ninth Worcester State Representative District"
+description: "The Ninth Worcester State Representative District is currently represented by Republican incumbent David Kent Muradian, Jr. of Grafton. The district encompasses the towns of Grafton, Northbridge, and Upton in central Massachusetts, covering 63 square miles with a population of 44,010."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

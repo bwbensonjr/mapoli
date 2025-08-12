@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "Governor's Council"
   district_name: "Seventh"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventh Governor's Council District"
+description: "The Massachusetts Seventh Governor's Council District is currently represented by Democrat Paul M. DePalo of Worcester, who won the seat in 2020 and was reelected in 2022 and 2024. The district covers a large portion of central Massachusetts, including Worcester and numerous surrounding communities, with a population of about 857,000 people."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

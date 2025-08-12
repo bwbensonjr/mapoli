@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Fifth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fifth Middlesex State Senate District"
+description: "The Massachusetts Fifth Middlesex State Senate District is currently represented by Democrat Jason M. Lewis of Winchester, who has held the seat since winning a special election in 2014. The district includes Malden, Melrose, Reading, Stoneham, Wakefield, and part of Winchester, covering 37 square miles in the northeastern suburbs of Boston."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

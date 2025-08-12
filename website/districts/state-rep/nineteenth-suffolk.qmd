@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Nineteenth Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Nineteenth Suffolk State Representative District"
+description: "The Nineteenth Suffolk State Representative District of Massachusetts includes parts of Revere (various precincts) and Winthrop. The current incumbent is Democratic Representative Jeffrey Rosario Turco of Winthrop, who has held the seat since winning a special election in March 2021, following longtime representative Robert DeLeo's departure."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

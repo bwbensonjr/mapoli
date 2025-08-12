@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Sixth Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Sixth Worcester State Representative District"
+description: "The Massachusetts Sixth Worcester State Representative District encompasses Charlton (precincts 1, 2, 3, 4A), Dudley, Southbridge, and Spencer (precinct 1), covering about 84 square miles with a population of 43,277. The district is currently represented by Republican John J. Marsi, Jr. of Dudley, who won a special election in March 2024 and was reelected in November 2024 with 62% of the vote."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

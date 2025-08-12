@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Worcester and Hampden"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Worcester and Hampden State Senate District"
+description: "This is a Massachusetts state senate district covering multiple towns in central Massachusetts, including Blackstone, Charlton, Dudley, and several others. The current incumbent is Ryan C. Fattman, a Republican from Sutton who won reelection in 2024 with 66% of the vote against Democratic challenger Anthony Allard."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

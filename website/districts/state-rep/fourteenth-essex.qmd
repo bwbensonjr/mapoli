@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fourteenth Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourteenth Essex State Representative District"
+description: "The Massachusetts Fourteenth Essex State Representative District is currently represented by Adrianne Pusateri Ramos (D-North Andover), who was elected in 2022. The district covers parts of Amesbury, Boxford, and North Andover, as well as all of Groveland and West Newbury, with a total population of 46,221."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

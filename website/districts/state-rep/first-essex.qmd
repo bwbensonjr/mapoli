@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "First Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts First Essex State Representative District"
+description: "The Massachusetts First Essex State Representative District is currently represented by Dawne Frances Shand, a Democrat from Newburyport who was elected in 2022 and is running unopposed in 2024. The district includes parts of Amesbury along with the full municipalities of Merrimac, Newburyport, and Salisbury in northeastern Massachusetts."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

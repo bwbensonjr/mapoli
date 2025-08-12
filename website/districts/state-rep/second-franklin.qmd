@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Second Franklin"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Second Franklin State Representative District"
+description: "The Massachusetts Second Franklin State Representative District is currently represented by Susannah M. Whipps, an Independent from Athol who has held the seat since 2015. The district encompasses parts of central/north-central Massachusetts including the towns of Athol, Erving, Gill, parts of Greenfield, Northfield, Orange, Phillipston, Royalston, Warwick, and a precinct of Winchendon."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

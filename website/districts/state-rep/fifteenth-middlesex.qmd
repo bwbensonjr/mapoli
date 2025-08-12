@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fifteenth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fifteenth Middlesex State Representative District"
+description: "The Fifteenth Middlesex State Representative District in Massachusetts includes portions of Lexington, Winchester, and Woburn, with a population of 41,829. The district is currently represented by incumbent Democrat Michelle Ciccolo of Lexington, who has held the seat since 2018 and has run unopposed in recent elections."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

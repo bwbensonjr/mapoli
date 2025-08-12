@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Tenth Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Tenth Essex State Representative District"
+description: "The Massachusetts Tenth Essex State Representative District is located entirely within the city of Lynn and is currently represented by incumbent State Representative Daniel H. Cahill (D-Lynn). Representative Cahill has run unopposed in every election since he first won the seat in a special election in 2016."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

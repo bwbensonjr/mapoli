@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fifteenth Norfolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fifteenth Norfolk State Representative District"
+description: "The Massachusetts Fifteenth Norfolk State Representative District is located entirely in Brookline, encompassing 13 precincts. The current incumbent is Democratic Representative Tommy Vitolo of Brookline, who has represented the district since 2018 and has run unopposed in all of his elections."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

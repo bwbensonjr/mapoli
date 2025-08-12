@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventh Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventh Middlesex State Representative District"
+description: "The Seventh Middlesex State Representative District is currently represented by Democrat Jack Patrick Lewis of Framingham. The district covers parts of Framingham and Ashland, with a population of about 43,673 people across 23 square miles."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

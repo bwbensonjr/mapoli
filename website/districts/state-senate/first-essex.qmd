@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "First Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts First Essex State Senate District"
+description: "The Massachusetts First Essex State Senate District is currently represented by Democratic incumbent Pavel M. Payano of Lawrence, who has held the seat since 2022. The district encompasses parts of Haverhill and all of Lawrence and Methuen, covering 34 square miles with a population of 164,705. It is a diverse district with a 67% minority population, including 59% Hispanic residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

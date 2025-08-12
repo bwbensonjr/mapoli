@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "First Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts First Suffolk State Representative District"
+description: "The First Suffolk State Representative District is a legislative district in Massachusetts covering parts of Boston, represented by incumbent Democrat Adrian C. Madaro. The district has a diverse population that is predominantly Hispanic (55%), with a total minority population of 66%."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

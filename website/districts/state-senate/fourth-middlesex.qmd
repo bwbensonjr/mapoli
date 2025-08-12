@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Fourth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourth Middlesex State Senate District"
+description: "The Massachusetts Fourth Middlesex State Senate District is currently represented by incumbent Democrat Cindy F. Friedman of Arlington, who has held the seat since winning a special election in 2017. The district encompasses Arlington, Billerica, Burlington, parts of Lexington (precincts 1, 2, 4, 5, 6, 7), and Woburn."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

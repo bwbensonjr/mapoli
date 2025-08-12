@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "First Essex and Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts First Essex and Middlesex State Senate District"
+description: "The Massachusetts First Essex and Middlesex State Senate District is represented by longtime Republican incumbent Bruce E. Tarr of Gloucester, who has held the seat since 1994. The district covers multiple communities across northeastern Massachusetts including parts of Essex and Middlesex counties, with a predominantly white (90%) population of 176,199 residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

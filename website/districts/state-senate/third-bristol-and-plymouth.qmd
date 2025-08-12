@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Third Bristol and Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Third Bristol and Plymouth State Senate District"
+description: "The Third Bristol and Plymouth State Senate District, currently represented by Republican Kelly A. Dooner who narrowly defeated Democrat Joseph Richard Pacheco in 2024, covers ten communities in southeastern Massachusetts including Taunton, Wareham, Middleborough, and several other towns. The district has a predominantly white (83%) population with 43% classified as white working-class, and spans an area of 339 square miles."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

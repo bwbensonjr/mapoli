@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventh Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventh Suffolk State Representative District"
+description: "The Massachusetts Seventh Suffolk State Representative District covers several precincts in Boston, encompassing approximately 2 square miles with a population of 39,463. The district is currently represented by incumbent Chynah Tyler (D-Boston), who has won every election since 2016, with her predecessor Gloria L. Fox (D-Boston) having represented the district from at least 1990 to 2014."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

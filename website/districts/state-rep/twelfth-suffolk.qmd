@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twelfth Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twelfth Suffolk State Representative District"
+description: "The Massachusetts Twelfth Suffolk State Representative District is currently represented by Democrat Brandy Fluker Oakley of Boston who has held the seat since 2020. The district encompasses parts of Boston and Milton, with a predominantly minority population (83%) that includes portions of the Dorchester, Mattapan, and Hyde Park neighborhoods."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

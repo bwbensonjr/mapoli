@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Tenth Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Tenth Plymouth State Representative District"
+description: "The Massachusetts Tenth Plymouth State Representative District is located entirely within the city of Brockton, comprising precincts 4-A through 6-D. The district is currently represented by incumbent Democrat Michelle Marie Dubois of Brockton, who has held the seat since 2014."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

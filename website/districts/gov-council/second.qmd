@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "Governor's Council"
   district_name: "Second"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Second Governor's Council District"
+description: "The Massachusetts Second Governor's Council District is currently represented by Tamisha L. Civil (D-Stoughton), who won the seat in 2024 with 57% of the vote against Republican Francis T. Crimmins, Jr. The district covers numerous municipalities including parts of Braintree and multiple complete towns in eastern Massachusetts, with a population of approximately 871,355 residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

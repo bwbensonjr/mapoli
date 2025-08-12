@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Fifth Hampden State Representative District in Massachusetts encompasses parts of Chicopee and Holyoke, covering 23 square miles with a population of 42,111. The current incumbent is Patricia A. Duffy, a Democrat from Holyoke, who has represented the district since 2020 after winning uncontested elections.">
 
 <title>Massachusetts Fifth Hampden State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Fifth Hampden State Representative District – mapoli">
+<meta property="og:description" content="The Fifth Hampden State Representative District in Massachusetts encompasses parts of Chicopee and Holyoke, covering 23 square miles with a population of 42,111. The current incumbent is Patricia A. Duffy, a Democrat from Holyoke, who has represented the district since 2020 after winning uncontested elections.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Fifth Hampden State Representative District – mapoli">
+<meta name="twitter:description" content="The Fifth Hampden State Representative District in Massachusetts encompasses parts of Chicopee and Holyoke, covering 23 square miles with a population of 42,111. The current incumbent is Patricia A. Duffy, a Democrat from Holyoke, who has represented the district since 2020 after winning uncontested elections.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Fifth Hampden State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Fifth Hampden State Representative District in Massachusetts encompasses parts of Chicopee and Holyoke, covering 23 square miles with a population of 42,111. The current incumbent is Patricia A. Duffy, a Democrat from Holyoke, who has represented the district since 2020 after winning uncontested elections.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Fifth Hampden State Representative District in Massachusetts encompasses parts of Chicopee and Holyoke, covering 23 square miles with a population of 42,111. The current incumbent is Patricia A. Duffy, a Democrat from Holyoke, who has represented the district since 2020 after winning uncontested elections.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-092dcb67504267d7a057" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-092dcb67504267d7a057">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-72.6286099660397,-72.62849796560718,-72.62790196483201,-72.62580574143493,-72.62461796953251,-72.61970306562871,-72.61998425006813,-72.61463904142309,-72.61428804204589,-72.62322832463492,-72.61944315057882,-72.61718305655141,-72.61800402016573,-72.62193697340609,-72.62230610921632,-72.62559395955394,-72.62565644786211,-72.62750496406036,-72.6286099660397],"lat":[42.16622700256558,42.17197399842463,42.17537997023128,42.17527979326916,42.18012695724368,42.17832699362294,42.17797534110571,42.17552998179335,42.16799702602623,42.16707659020861,42.16367818036801,42.16225199515174,42.16146502733827,42.16117803144691,42.16184923843339,42.16166103389576,42.16234771272097,42.16258602547386,42.16622700256558]}]],[[{"lng":[-72.69045495386874,-72.67007517027341,-72.66776996345877,-72.65652964411892,-72.63458496560874,-72.61313800461319,-72.61152214151353,-72.60472302303813,-72.60120862791047,-72.60037985998211,-72.59936403784751,-72.59893304502222,-72.60027803030366,-72.60777603760592,-72.61124440943465,-72.61800880157594,-72.62398145987788,-72.62365702807513,-72.62245504514743,-72.61512702328021,-72.61293403035725,-72.61165404474541,-72.61032125122165,-72.60792356494458,-72.60234912743641,-72.59627652870769,-72.5934130245371,-72.59178052358979,-72.59047604951728,-72.59023504532342,-72.59171402930446,-72.59389796607439,-72.60129527127525,-72.60692801869203,-72.62203245180643,-72.62375012596623,-72.62613513204811,-72.62765489081845,-72.6284970339067,-72.6286094199217,-72.62734204870185,-72.68489096119684,-72.68686096430889,-72.68623639291363,-72.69045495386874],"lat":[42.21308297651518,42.21650154725595,42.2254559747695,42.22776204552329,42.27394298134013,42.28626495813062,42.28542960956881,42.28424797792967,42.28125785126351,42.27740663822078,42.27533599536866,42.26809000518598,42.26531102021148,42.26058296785353,42.2572532888266,42.2483689226527,42.23592704383174,42.23166769668013,42.2302067119682,42.22680997938701,42.22499098513138,42.22294599004103,42.21857822985879,42.21622870722011,42.21331427831077,42.21180894103563,42.2115299698492,42.20982785206812,42.20668499293082,42.20412900342228,42.20111601463878,42.19936582873351,42.19499360457848,42.19096802085916,42.18563982761501,42.18454600062351,42.18111921805173,42.17662798540928,42.17197933434299,42.16622917791423,42.16203203022972,42.16293702975194,42.18339000005943,42.18907999482149,42.21308297651518]}]]],["Chicopee","Holyoke"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#BC80BD","#FFFFB3"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Chicopee<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Chicopee<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Chicopee - 2 of 19 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Holyoke<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Holyoke<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Holyoke<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Chicopee","Holyoke"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.17051491834184,42.21249675553651],[-72.62206096118686,-72.64111430070193],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Chicopee.1","Holyoke.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Chicopee","Holyoke"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.16117803144691,42.28626495813062],"lng":[-72.69045495386874,-72.59023504532342]},"fitBounds":[42.16117803144691,-72.69045495386874,42.28626495813062,-72.59023504532342,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-50536093409a7adff26a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-50536093409a7adff26a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-72.6286099660397,-72.62849796560718,-72.62790196483201,-72.62580574143493,-72.62461796953251,-72.61970306562871,-72.61998425006813,-72.61463904142309,-72.61428804204589,-72.62322832463492,-72.61944315057882,-72.61718305655141,-72.61800402016573,-72.62193697340609,-72.62230610921632,-72.62559395955394,-72.62565644786211,-72.62750496406036,-72.6286099660397],"lat":[42.16622700256558,42.17197399842463,42.17537997023128,42.17527979326916,42.18012695724368,42.17832699362294,42.17797534110571,42.17552998179335,42.16799702602623,42.16707659020861,42.16367818036801,42.16225199515174,42.16146502733827,42.16117803144691,42.16184923843339,42.16166103389576,42.16234771272097,42.16258602547386,42.16622700256558]}]],[[{"lng":[-72.69045495386874,-72.67007517027341,-72.66776996345877,-72.65652964411892,-72.63458496560874,-72.61313800461319,-72.61152214151353,-72.60472302303813,-72.60120862791047,-72.60037985998211,-72.59936403784751,-72.59893304502222,-72.60027803030366,-72.60777603760592,-72.61124440943465,-72.61800880157594,-72.62398145987788,-72.62365702807513,-72.62245504514743,-72.61512702328021,-72.61293403035725,-72.61165404474541,-72.61032125122165,-72.60792356494458,-72.60234912743641,-72.59627652870769,-72.5934130245371,-72.59178052358979,-72.59047604951728,-72.59023504532342,-72.59171402930446,-72.59389796607439,-72.60129527127525,-72.60692801869203,-72.62203245180643,-72.62375012596623,-72.62613513204811,-72.62765489081845,-72.6284970339067,-72.6286094199217,-72.62734204870185,-72.68489096119684,-72.68686096430889,-72.68623639291363,-72.69045495386874],"lat":[42.21308297651518,42.21650154725595,42.2254559747695,42.22776204552329,42.27394298134013,42.28626495813062,42.28542960956881,42.28424797792967,42.28125785126351,42.27740663822078,42.27533599536866,42.26809000518598,42.26531102021148,42.26058296785353,42.2572532888266,42.2483689226527,42.23592704383174,42.23166769668013,42.2302067119682,42.22680997938701,42.22499098513138,42.22294599004103,42.21857822985879,42.21622870722011,42.21331427831077,42.21180894103563,42.2115299698492,42.20982785206812,42.20668499293082,42.20412900342228,42.20111601463878,42.19936582873351,42.19499360457848,42.19096802085916,42.18563982761501,42.18454600062351,42.18111921805173,42.17662798540928,42.17197933434299,42.16622917791423,42.16203203022972,42.16293702975194,42.18339000005943,42.18907999482149,42.21308297651518]}]]],["Chicopee","Holyoke"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#D9D9D9","#BEBADA"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Chicopee<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Chicopee<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Chicopee - 2 of 19 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Holyoke<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Holyoke<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Holyoke<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Chicopee","Holyoke"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.17051491834184,42.21249675553651],[-72.62206096118686,-72.64111430070193],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Chicopee.1","Holyoke.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Chicopee","Holyoke"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.16117803144691,42.28626495813062],"lng":[-72.69045495386874,-72.59023504532342]},"fitBounds":[42.16117803144691,-72.69045495386874,42.28626495813062,-72.59023504532342,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="jnlhqchxax" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jnlhqchxax table {
+<div id="qtataskhsh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qtataskhsh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jnlhqchxax thead, #jnlhqchxax tbody, #jnlhqchxax tfoot, #jnlhqchxax tr, #jnlhqchxax td, #jnlhqchxax th {
+#qtataskhsh thead, #qtataskhsh tbody, #qtataskhsh tfoot, #qtataskhsh tr, #qtataskhsh td, #qtataskhsh th {
   border-style: none;
 }
 
-#jnlhqchxax p {
+#qtataskhsh p {
   margin: 0;
   padding: 0;
 }
 
-#jnlhqchxax .gt_table {
+#qtataskhsh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_caption {
+#qtataskhsh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jnlhqchxax .gt_title {
+#qtataskhsh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#jnlhqchxax .gt_subtitle {
+#qtataskhsh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#jnlhqchxax .gt_heading {
+#qtataskhsh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_bottom_border {
+#qtataskhsh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_col_headings {
+#qtataskhsh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_col_heading {
+#qtataskhsh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jnlhqchxax .gt_column_spanner_outer {
+#qtataskhsh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#jnlhqchxax .gt_column_spanner_outer:first-child {
+#qtataskhsh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jnlhqchxax .gt_column_spanner_outer:last-child {
+#qtataskhsh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jnlhqchxax .gt_column_spanner {
+#qtataskhsh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#jnlhqchxax .gt_spanner_row {
+#qtataskhsh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jnlhqchxax .gt_group_heading {
+#qtataskhsh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#jnlhqchxax .gt_empty_group_heading {
+#qtataskhsh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#jnlhqchxax .gt_from_md > :first-child {
+#qtataskhsh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jnlhqchxax .gt_from_md > :last-child {
+#qtataskhsh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jnlhqchxax .gt_row {
+#qtataskhsh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jnlhqchxax .gt_stub {
+#qtataskhsh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jnlhqchxax .gt_stub_row_group {
+#qtataskhsh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#jnlhqchxax .gt_row_group_first td {
+#qtataskhsh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jnlhqchxax .gt_row_group_first th {
+#qtataskhsh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jnlhqchxax .gt_summary_row {
+#qtataskhsh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jnlhqchxax .gt_first_summary_row {
+#qtataskhsh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_first_summary_row.thick {
+#qtataskhsh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jnlhqchxax .gt_last_summary_row {
+#qtataskhsh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_grand_summary_row {
+#qtataskhsh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jnlhqchxax .gt_first_grand_summary_row {
+#qtataskhsh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_last_grand_summary_row_top {
+#qtataskhsh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_striped {
+#qtataskhsh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jnlhqchxax .gt_table_body {
+#qtataskhsh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_footnotes {
+#qtataskhsh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_footnote {
+#qtataskhsh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jnlhqchxax .gt_sourcenotes {
+#qtataskhsh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jnlhqchxax .gt_sourcenote {
+#qtataskhsh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jnlhqchxax .gt_left {
+#qtataskhsh .gt_left {
   text-align: left;
 }
 
-#jnlhqchxax .gt_center {
+#qtataskhsh .gt_center {
   text-align: center;
 }
 
-#jnlhqchxax .gt_right {
+#qtataskhsh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jnlhqchxax .gt_font_normal {
+#qtataskhsh .gt_font_normal {
   font-weight: normal;
 }
 
-#jnlhqchxax .gt_font_bold {
+#qtataskhsh .gt_font_bold {
   font-weight: bold;
 }
 
-#jnlhqchxax .gt_font_italic {
+#qtataskhsh .gt_font_italic {
   font-style: italic;
 }
 
-#jnlhqchxax .gt_super {
+#qtataskhsh .gt_super {
   font-size: 65%;
 }
 
-#jnlhqchxax .gt_footnote_marks {
+#qtataskhsh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jnlhqchxax .gt_asterisk {
+#qtataskhsh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jnlhqchxax .gt_indent_1 {
+#qtataskhsh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jnlhqchxax .gt_indent_2 {
+#qtataskhsh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jnlhqchxax .gt_indent_3 {
+#qtataskhsh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jnlhqchxax .gt_indent_4 {
+#qtataskhsh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jnlhqchxax .gt_indent_5 {
+#qtataskhsh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jnlhqchxax .katex-display {
+#qtataskhsh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jnlhqchxax div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qtataskhsh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="hcehgfhxxu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hcehgfhxxu table {
+<div id="ahzzlifxgu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ahzzlifxgu table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hcehgfhxxu thead, #hcehgfhxxu tbody, #hcehgfhxxu tfoot, #hcehgfhxxu tr, #hcehgfhxxu td, #hcehgfhxxu th {
+#ahzzlifxgu thead, #ahzzlifxgu tbody, #ahzzlifxgu tfoot, #ahzzlifxgu tr, #ahzzlifxgu td, #ahzzlifxgu th {
   border-style: none;
 }
 
-#hcehgfhxxu p {
+#ahzzlifxgu p {
   margin: 0;
   padding: 0;
 }
 
-#hcehgfhxxu .gt_table {
+#ahzzlifxgu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_caption {
+#ahzzlifxgu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hcehgfhxxu .gt_title {
+#ahzzlifxgu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#hcehgfhxxu .gt_subtitle {
+#ahzzlifxgu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#hcehgfhxxu .gt_heading {
+#ahzzlifxgu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_bottom_border {
+#ahzzlifxgu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_col_headings {
+#ahzzlifxgu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_col_heading {
+#ahzzlifxgu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#hcehgfhxxu .gt_column_spanner_outer {
+#ahzzlifxgu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#hcehgfhxxu .gt_column_spanner_outer:first-child {
+#ahzzlifxgu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hcehgfhxxu .gt_column_spanner_outer:last-child {
+#ahzzlifxgu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hcehgfhxxu .gt_column_spanner {
+#ahzzlifxgu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#hcehgfhxxu .gt_spanner_row {
+#ahzzlifxgu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hcehgfhxxu .gt_group_heading {
+#ahzzlifxgu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#hcehgfhxxu .gt_empty_group_heading {
+#ahzzlifxgu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#hcehgfhxxu .gt_from_md > :first-child {
+#ahzzlifxgu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hcehgfhxxu .gt_from_md > :last-child {
+#ahzzlifxgu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hcehgfhxxu .gt_row {
+#ahzzlifxgu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#hcehgfhxxu .gt_stub {
+#ahzzlifxgu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#hcehgfhxxu .gt_stub_row_group {
+#ahzzlifxgu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#hcehgfhxxu .gt_row_group_first td {
+#ahzzlifxgu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hcehgfhxxu .gt_row_group_first th {
+#ahzzlifxgu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hcehgfhxxu .gt_summary_row {
+#ahzzlifxgu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#hcehgfhxxu .gt_first_summary_row {
+#ahzzlifxgu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_first_summary_row.thick {
+#ahzzlifxgu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hcehgfhxxu .gt_last_summary_row {
+#ahzzlifxgu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_grand_summary_row {
+#ahzzlifxgu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#hcehgfhxxu .gt_first_grand_summary_row {
+#ahzzlifxgu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_last_grand_summary_row_top {
+#ahzzlifxgu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_striped {
+#ahzzlifxgu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hcehgfhxxu .gt_table_body {
+#ahzzlifxgu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_footnotes {
+#ahzzlifxgu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_footnote {
+#ahzzlifxgu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#hcehgfhxxu .gt_sourcenotes {
+#ahzzlifxgu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#hcehgfhxxu .gt_sourcenote {
+#ahzzlifxgu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#hcehgfhxxu .gt_left {
+#ahzzlifxgu .gt_left {
   text-align: left;
 }
 
-#hcehgfhxxu .gt_center {
+#ahzzlifxgu .gt_center {
   text-align: center;
 }
 
-#hcehgfhxxu .gt_right {
+#ahzzlifxgu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hcehgfhxxu .gt_font_normal {
+#ahzzlifxgu .gt_font_normal {
   font-weight: normal;
 }
 
-#hcehgfhxxu .gt_font_bold {
+#ahzzlifxgu .gt_font_bold {
   font-weight: bold;
 }
 
-#hcehgfhxxu .gt_font_italic {
+#ahzzlifxgu .gt_font_italic {
   font-style: italic;
 }
 
-#hcehgfhxxu .gt_super {
+#ahzzlifxgu .gt_super {
   font-size: 65%;
 }
 
-#hcehgfhxxu .gt_footnote_marks {
+#ahzzlifxgu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hcehgfhxxu .gt_asterisk {
+#ahzzlifxgu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hcehgfhxxu .gt_indent_1 {
+#ahzzlifxgu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hcehgfhxxu .gt_indent_2 {
+#ahzzlifxgu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hcehgfhxxu .gt_indent_3 {
+#ahzzlifxgu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hcehgfhxxu .gt_indent_4 {
+#ahzzlifxgu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hcehgfhxxu .gt_indent_5 {
+#ahzzlifxgu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#hcehgfhxxu .katex-display {
+#ahzzlifxgu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#hcehgfhxxu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ahzzlifxgu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1176,23 +1210,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="jraqxxgstf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jraqxxgstf table {
+<div id="czsjcmefmd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#czsjcmefmd table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jraqxxgstf thead, #jraqxxgstf tbody, #jraqxxgstf tfoot, #jraqxxgstf tr, #jraqxxgstf td, #jraqxxgstf th {
+#czsjcmefmd thead, #czsjcmefmd tbody, #czsjcmefmd tfoot, #czsjcmefmd tr, #czsjcmefmd td, #czsjcmefmd th {
   border-style: none;
 }
 
-#jraqxxgstf p {
+#czsjcmefmd p {
   margin: 0;
   padding: 0;
 }
 
-#jraqxxgstf .gt_table {
+#czsjcmefmd .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1218,12 +1252,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_caption {
+#czsjcmefmd .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jraqxxgstf .gt_title {
+#czsjcmefmd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1235,7 +1269,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#jraqxxgstf .gt_subtitle {
+#czsjcmefmd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1247,7 +1281,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#jraqxxgstf .gt_heading {
+#czsjcmefmd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1259,13 +1293,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_bottom_border {
+#czsjcmefmd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_col_headings {
+#czsjcmefmd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1280,7 +1314,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_col_heading {
+#czsjcmefmd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1300,7 +1334,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jraqxxgstf .gt_column_spanner_outer {
+#czsjcmefmd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1312,15 +1346,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#jraqxxgstf .gt_column_spanner_outer:first-child {
+#czsjcmefmd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jraqxxgstf .gt_column_spanner_outer:last-child {
+#czsjcmefmd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jraqxxgstf .gt_column_spanner {
+#czsjcmefmd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1332,11 +1366,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#jraqxxgstf .gt_spanner_row {
+#czsjcmefmd .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jraqxxgstf .gt_group_heading {
+#czsjcmefmd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1362,7 +1396,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#jraqxxgstf .gt_empty_group_heading {
+#czsjcmefmd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1377,15 +1411,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#jraqxxgstf .gt_from_md > :first-child {
+#czsjcmefmd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jraqxxgstf .gt_from_md > :last-child {
+#czsjcmefmd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jraqxxgstf .gt_row {
+#czsjcmefmd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1404,7 +1438,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jraqxxgstf .gt_stub {
+#czsjcmefmd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1417,7 +1451,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jraqxxgstf .gt_stub_row_group {
+#czsjcmefmd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1431,15 +1465,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#jraqxxgstf .gt_row_group_first td {
+#czsjcmefmd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jraqxxgstf .gt_row_group_first th {
+#czsjcmefmd .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jraqxxgstf .gt_summary_row {
+#czsjcmefmd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1449,16 +1483,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jraqxxgstf .gt_first_summary_row {
+#czsjcmefmd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_first_summary_row.thick {
+#czsjcmefmd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jraqxxgstf .gt_last_summary_row {
+#czsjcmefmd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1468,7 +1502,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_grand_summary_row {
+#czsjcmefmd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1478,7 +1512,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jraqxxgstf .gt_first_grand_summary_row {
+#czsjcmefmd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1488,7 +1522,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_last_grand_summary_row_top {
+#czsjcmefmd .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1498,11 +1532,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_striped {
+#czsjcmefmd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jraqxxgstf .gt_table_body {
+#czsjcmefmd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1511,7 +1545,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_footnotes {
+#czsjcmefmd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1525,7 +1559,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_footnote {
+#czsjcmefmd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1534,7 +1568,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jraqxxgstf .gt_sourcenotes {
+#czsjcmefmd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1548,7 +1582,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jraqxxgstf .gt_sourcenote {
+#czsjcmefmd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1556,72 +1590,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jraqxxgstf .gt_left {
+#czsjcmefmd .gt_left {
   text-align: left;
 }
 
-#jraqxxgstf .gt_center {
+#czsjcmefmd .gt_center {
   text-align: center;
 }
 
-#jraqxxgstf .gt_right {
+#czsjcmefmd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jraqxxgstf .gt_font_normal {
+#czsjcmefmd .gt_font_normal {
   font-weight: normal;
 }
 
-#jraqxxgstf .gt_font_bold {
+#czsjcmefmd .gt_font_bold {
   font-weight: bold;
 }
 
-#jraqxxgstf .gt_font_italic {
+#czsjcmefmd .gt_font_italic {
   font-style: italic;
 }
 
-#jraqxxgstf .gt_super {
+#czsjcmefmd .gt_super {
   font-size: 65%;
 }
 
-#jraqxxgstf .gt_footnote_marks {
+#czsjcmefmd .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jraqxxgstf .gt_asterisk {
+#czsjcmefmd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jraqxxgstf .gt_indent_1 {
+#czsjcmefmd .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jraqxxgstf .gt_indent_2 {
+#czsjcmefmd .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jraqxxgstf .gt_indent_3 {
+#czsjcmefmd .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jraqxxgstf .gt_indent_4 {
+#czsjcmefmd .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jraqxxgstf .gt_indent_5 {
+#czsjcmefmd .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jraqxxgstf .katex-display {
+#czsjcmefmd .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jraqxxgstf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#czsjcmefmd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

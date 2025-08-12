@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Sixth Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Sixth Plymouth State Representative District"
+description: "The Massachusetts Sixth Plymouth State Representative District covers Duxbury, parts of Halifax, Hanson, Marshfield, and Pembroke, encompassing an area of 66 square miles with a population of 44,620. Republican Kenneth Sweezey is the current representative, having defeated Democrat Rebecca Coletta in the 2024 election with 53% of the vote."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

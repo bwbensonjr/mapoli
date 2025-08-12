@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Massachusetts Thirty-First Middlesex State Representative District covers parts of Stoneham and Winchester, with a population of 43,563. The incumbent is Democrat Michael Seamus Day of Stoneham, who has held the seat since 2014 and is running unopposed in the 2024 election.">
 
 <title>Massachusetts Thirty-First Middlesex State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Thirty-First Middlesex State Representative District – mapoli">
+<meta property="og:description" content="The Massachusetts Thirty-First Middlesex State Representative District covers parts of Stoneham and Winchester, with a population of 43,563. The incumbent is Democrat Michael Seamus Day of Stoneham, who has held the seat since 2014 and is running unopposed in the 2024 election.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Thirty-First Middlesex State Representative District – mapoli">
+<meta name="twitter:description" content="The Massachusetts Thirty-First Middlesex State Representative District covers parts of Stoneham and Winchester, with a population of 43,563. The incumbent is Democrat Michael Seamus Day of Stoneham, who has held the seat since 2014 and is running unopposed in the 2024 election.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Thirty-First Middlesex State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Massachusetts Thirty-First Middlesex State Representative District covers parts of Stoneham and Winchester, with a population of 43,563. The incumbent is Democrat Michael Seamus Day of Stoneham, who has held the seat since 2014 and is running unopposed in the 2024 election.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Massachusetts Thirty-First Middlesex State Representative District covers parts of Stoneham and Winchester, with a population of 43,563. The incumbent is Democrat Michael Seamus Day of Stoneham, who has held the seat since 2014 and is running unopposed in the 2024 election.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-106c2e1a04f3d6ca1c1b" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-106c2e1a04f3d6ca1c1b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.12176494267094,-71.11975998011232,-71.10072700001662,-71.09011502935813,-71.08549818955139,-71.07524004392309,-71.07659903656953,-71.07771604002241,-71.07918922131144,-71.08211603491716,-71.10472198255216,-71.11940194916234,-71.10957472580712,-71.11205596722949,-71.11679578212826,-71.12176494267094],"lat":[42.49871999916911,42.5002919714735,42.5022419690678,42.50126097363838,42.49226362260689,42.48800798323635,42.47749202631327,42.47731882039675,42.46164666008666,42.44394003866162,42.44884703482865,42.45344501717601,42.4738020386378,42.47382003085308,42.49463100651951,42.49871999916911]}]],[[{"lng":[-71.18237793881502,-71.18196798861214,-71.17977864253399,-71.1776510037885,-71.17689669154495,-71.17393130150073,-71.17135197681796,-71.16909962390214,-71.16855696003726,-71.16218369516096,-71.16179997580278,-71.16043166046397,-71.15974395358104,-71.15900010831812,-71.15818492915021,-71.15817668725975,-71.16056093619095,-71.15709534331954,-71.15903596243999,-71.15989572994076,-71.16140787322696,-71.16434292378952,-71.16300300370112,-71.15625360075921,-71.15232996719986,-71.1238619895409,-71.10952105961744,-71.12134602965813,-71.12410793979313,-71.12197605514555,-71.12713656306704,-71.12904102643699,-71.18227691725872,-71.17792802796289,-71.18237793881502],"lat":[42.44349899854528,42.44376196494873,42.44302194080485,42.44332396419971,42.44294322183353,42.44278390334034,42.44431697184146,42.44504233891262,42.44662997133737,42.4469903032165,42.44779895775308,42.44729623304228,42.44768795443898,42.44748357026409,42.44778332782744,42.44829909900754,42.45058798701904,42.45173951932745,42.45426501190479,42.45665491927225,42.45808506526152,42.45975799322564,42.46019596468224,42.45696578359956,42.46370697605055,42.47339196676496,42.47389496710877,42.44867000798021,42.44419176288397,42.43978602225895,42.43887868296221,42.43559902997026,42.43627902769511,42.44019467784759,42.44349899854528]}]]],["Stoneham","Winchester"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#D9D9D9","#FCCDE5"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Stoneham<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Stoneham<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Stoneham<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Winchester<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Winchester<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Winchester - 7 of 8 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Stoneham","Winchester"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.47409345926373,42.45210301581653],[-71.09715655779441,-71.14077848709371],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Stoneham.1","Winchester.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Stoneham","Winchester"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.43559902997026,42.5022419690678],"lng":[-71.18237793881502,-71.07524004392309]},"fitBounds":[42.43559902997026,-71.18237793881502,42.5022419690678,-71.07524004392309,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-18ec8d1493796936bbd0" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-18ec8d1493796936bbd0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.12176494267094,-71.11975998011232,-71.10072700001662,-71.09011502935813,-71.08549818955139,-71.07524004392309,-71.07659903656953,-71.07771604002241,-71.07918922131144,-71.08211603491716,-71.10472198255216,-71.11940194916234,-71.10957472580712,-71.11205596722949,-71.11679578212826,-71.12176494267094],"lat":[42.49871999916911,42.5002919714735,42.5022419690678,42.50126097363838,42.49226362260689,42.48800798323635,42.47749202631327,42.47731882039675,42.46164666008666,42.44394003866162,42.44884703482865,42.45344501717601,42.4738020386378,42.47382003085308,42.49463100651951,42.49871999916911]}]],[[{"lng":[-71.18237793881502,-71.18196798861214,-71.17977864253399,-71.1776510037885,-71.17689669154495,-71.17393130150073,-71.17135197681796,-71.16909962390214,-71.16855696003726,-71.16218369516096,-71.16179997580278,-71.16043166046397,-71.15974395358104,-71.15900010831812,-71.15818492915021,-71.15817668725975,-71.16056093619095,-71.15709534331954,-71.15903596243999,-71.15989572994076,-71.16140787322696,-71.16434292378952,-71.16300300370112,-71.15625360075921,-71.15232996719986,-71.1238619895409,-71.10952105961744,-71.12134602965813,-71.12410793979313,-71.12197605514555,-71.12713656306704,-71.12904102643699,-71.18227691725872,-71.17792802796289,-71.18237793881502],"lat":[42.44349899854528,42.44376196494873,42.44302194080485,42.44332396419971,42.44294322183353,42.44278390334034,42.44431697184146,42.44504233891262,42.44662997133737,42.4469903032165,42.44779895775308,42.44729623304228,42.44768795443898,42.44748357026409,42.44778332782744,42.44829909900754,42.45058798701904,42.45173951932745,42.45426501190479,42.45665491927225,42.45808506526152,42.45975799322564,42.46019596468224,42.45696578359956,42.46370697605055,42.47339196676496,42.47389496710877,42.44867000798021,42.44419176288397,42.43978602225895,42.43887868296221,42.43559902997026,42.43627902769511,42.44019467784759,42.44349899854528]}]]],["Stoneham","Winchester"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#D9D9D9","#B3DE69"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Stoneham<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Stoneham<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Stoneham<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Winchester<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Winchester<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Winchester - 7 of 8 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Stoneham","Winchester"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.47409345926373,42.45210301581653],[-71.09715655779441,-71.14077848709371],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Stoneham.1","Winchester.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Stoneham","Winchester"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.43559902997026,42.5022419690678],"lng":[-71.18237793881502,-71.07524004392309]},"fitBounds":[42.43559902997026,-71.18237793881502,42.5022419690678,-71.07524004392309,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="qmoetwkjwu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qmoetwkjwu table {
+<div id="ymnutzjwqn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ymnutzjwqn table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qmoetwkjwu thead, #qmoetwkjwu tbody, #qmoetwkjwu tfoot, #qmoetwkjwu tr, #qmoetwkjwu td, #qmoetwkjwu th {
+#ymnutzjwqn thead, #ymnutzjwqn tbody, #ymnutzjwqn tfoot, #ymnutzjwqn tr, #ymnutzjwqn td, #ymnutzjwqn th {
   border-style: none;
 }
 
-#qmoetwkjwu p {
+#ymnutzjwqn p {
   margin: 0;
   padding: 0;
 }
 
-#qmoetwkjwu .gt_table {
+#ymnutzjwqn .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_caption {
+#ymnutzjwqn .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qmoetwkjwu .gt_title {
+#ymnutzjwqn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#qmoetwkjwu .gt_subtitle {
+#ymnutzjwqn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#qmoetwkjwu .gt_heading {
+#ymnutzjwqn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_bottom_border {
+#ymnutzjwqn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_col_headings {
+#ymnutzjwqn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_col_heading {
+#ymnutzjwqn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#qmoetwkjwu .gt_column_spanner_outer {
+#ymnutzjwqn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#qmoetwkjwu .gt_column_spanner_outer:first-child {
+#ymnutzjwqn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qmoetwkjwu .gt_column_spanner_outer:last-child {
+#ymnutzjwqn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qmoetwkjwu .gt_column_spanner {
+#ymnutzjwqn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#qmoetwkjwu .gt_spanner_row {
+#ymnutzjwqn .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qmoetwkjwu .gt_group_heading {
+#ymnutzjwqn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#qmoetwkjwu .gt_empty_group_heading {
+#ymnutzjwqn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#qmoetwkjwu .gt_from_md > :first-child {
+#ymnutzjwqn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qmoetwkjwu .gt_from_md > :last-child {
+#ymnutzjwqn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qmoetwkjwu .gt_row {
+#ymnutzjwqn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#qmoetwkjwu .gt_stub {
+#ymnutzjwqn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#qmoetwkjwu .gt_stub_row_group {
+#ymnutzjwqn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#qmoetwkjwu .gt_row_group_first td {
+#ymnutzjwqn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qmoetwkjwu .gt_row_group_first th {
+#ymnutzjwqn .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qmoetwkjwu .gt_summary_row {
+#ymnutzjwqn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#qmoetwkjwu .gt_first_summary_row {
+#ymnutzjwqn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_first_summary_row.thick {
+#ymnutzjwqn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qmoetwkjwu .gt_last_summary_row {
+#ymnutzjwqn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_grand_summary_row {
+#ymnutzjwqn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#qmoetwkjwu .gt_first_grand_summary_row {
+#ymnutzjwqn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_last_grand_summary_row_top {
+#ymnutzjwqn .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_striped {
+#ymnutzjwqn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qmoetwkjwu .gt_table_body {
+#ymnutzjwqn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_footnotes {
+#ymnutzjwqn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_footnote {
+#ymnutzjwqn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#qmoetwkjwu .gt_sourcenotes {
+#ymnutzjwqn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#qmoetwkjwu .gt_sourcenote {
+#ymnutzjwqn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#qmoetwkjwu .gt_left {
+#ymnutzjwqn .gt_left {
   text-align: left;
 }
 
-#qmoetwkjwu .gt_center {
+#ymnutzjwqn .gt_center {
   text-align: center;
 }
 
-#qmoetwkjwu .gt_right {
+#ymnutzjwqn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qmoetwkjwu .gt_font_normal {
+#ymnutzjwqn .gt_font_normal {
   font-weight: normal;
 }
 
-#qmoetwkjwu .gt_font_bold {
+#ymnutzjwqn .gt_font_bold {
   font-weight: bold;
 }
 
-#qmoetwkjwu .gt_font_italic {
+#ymnutzjwqn .gt_font_italic {
   font-style: italic;
 }
 
-#qmoetwkjwu .gt_super {
+#ymnutzjwqn .gt_super {
   font-size: 65%;
 }
 
-#qmoetwkjwu .gt_footnote_marks {
+#ymnutzjwqn .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qmoetwkjwu .gt_asterisk {
+#ymnutzjwqn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qmoetwkjwu .gt_indent_1 {
+#ymnutzjwqn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qmoetwkjwu .gt_indent_2 {
+#ymnutzjwqn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qmoetwkjwu .gt_indent_3 {
+#ymnutzjwqn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qmoetwkjwu .gt_indent_4 {
+#ymnutzjwqn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qmoetwkjwu .gt_indent_5 {
+#ymnutzjwqn .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qmoetwkjwu .katex-display {
+#ymnutzjwqn .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qmoetwkjwu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ymnutzjwqn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="jkkaqroexn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jkkaqroexn table {
+<div id="ktpbazsmoj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ktpbazsmoj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jkkaqroexn thead, #jkkaqroexn tbody, #jkkaqroexn tfoot, #jkkaqroexn tr, #jkkaqroexn td, #jkkaqroexn th {
+#ktpbazsmoj thead, #ktpbazsmoj tbody, #ktpbazsmoj tfoot, #ktpbazsmoj tr, #ktpbazsmoj td, #ktpbazsmoj th {
   border-style: none;
 }
 
-#jkkaqroexn p {
+#ktpbazsmoj p {
   margin: 0;
   padding: 0;
 }
 
-#jkkaqroexn .gt_table {
+#ktpbazsmoj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_caption {
+#ktpbazsmoj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jkkaqroexn .gt_title {
+#ktpbazsmoj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#jkkaqroexn .gt_subtitle {
+#ktpbazsmoj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#jkkaqroexn .gt_heading {
+#ktpbazsmoj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_bottom_border {
+#ktpbazsmoj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_col_headings {
+#ktpbazsmoj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_col_heading {
+#ktpbazsmoj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jkkaqroexn .gt_column_spanner_outer {
+#ktpbazsmoj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#jkkaqroexn .gt_column_spanner_outer:first-child {
+#ktpbazsmoj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jkkaqroexn .gt_column_spanner_outer:last-child {
+#ktpbazsmoj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jkkaqroexn .gt_column_spanner {
+#ktpbazsmoj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#jkkaqroexn .gt_spanner_row {
+#ktpbazsmoj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jkkaqroexn .gt_group_heading {
+#ktpbazsmoj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#jkkaqroexn .gt_empty_group_heading {
+#ktpbazsmoj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#jkkaqroexn .gt_from_md > :first-child {
+#ktpbazsmoj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jkkaqroexn .gt_from_md > :last-child {
+#ktpbazsmoj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jkkaqroexn .gt_row {
+#ktpbazsmoj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jkkaqroexn .gt_stub {
+#ktpbazsmoj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jkkaqroexn .gt_stub_row_group {
+#ktpbazsmoj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#jkkaqroexn .gt_row_group_first td {
+#ktpbazsmoj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jkkaqroexn .gt_row_group_first th {
+#ktpbazsmoj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jkkaqroexn .gt_summary_row {
+#ktpbazsmoj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jkkaqroexn .gt_first_summary_row {
+#ktpbazsmoj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_first_summary_row.thick {
+#ktpbazsmoj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jkkaqroexn .gt_last_summary_row {
+#ktpbazsmoj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_grand_summary_row {
+#ktpbazsmoj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jkkaqroexn .gt_first_grand_summary_row {
+#ktpbazsmoj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_last_grand_summary_row_top {
+#ktpbazsmoj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_striped {
+#ktpbazsmoj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jkkaqroexn .gt_table_body {
+#ktpbazsmoj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_footnotes {
+#ktpbazsmoj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_footnote {
+#ktpbazsmoj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jkkaqroexn .gt_sourcenotes {
+#ktpbazsmoj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jkkaqroexn .gt_sourcenote {
+#ktpbazsmoj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jkkaqroexn .gt_left {
+#ktpbazsmoj .gt_left {
   text-align: left;
 }
 
-#jkkaqroexn .gt_center {
+#ktpbazsmoj .gt_center {
   text-align: center;
 }
 
-#jkkaqroexn .gt_right {
+#ktpbazsmoj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jkkaqroexn .gt_font_normal {
+#ktpbazsmoj .gt_font_normal {
   font-weight: normal;
 }
 
-#jkkaqroexn .gt_font_bold {
+#ktpbazsmoj .gt_font_bold {
   font-weight: bold;
 }
 
-#jkkaqroexn .gt_font_italic {
+#ktpbazsmoj .gt_font_italic {
   font-style: italic;
 }
 
-#jkkaqroexn .gt_super {
+#ktpbazsmoj .gt_super {
   font-size: 65%;
 }
 
-#jkkaqroexn .gt_footnote_marks {
+#ktpbazsmoj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jkkaqroexn .gt_asterisk {
+#ktpbazsmoj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jkkaqroexn .gt_indent_1 {
+#ktpbazsmoj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jkkaqroexn .gt_indent_2 {
+#ktpbazsmoj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jkkaqroexn .gt_indent_3 {
+#ktpbazsmoj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jkkaqroexn .gt_indent_4 {
+#ktpbazsmoj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jkkaqroexn .gt_indent_5 {
+#ktpbazsmoj .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jkkaqroexn .katex-display {
+#ktpbazsmoj .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jkkaqroexn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ktpbazsmoj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1176,23 +1210,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="texnkbyavx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#texnkbyavx table {
+<div id="zqfohqycbl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zqfohqycbl table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#texnkbyavx thead, #texnkbyavx tbody, #texnkbyavx tfoot, #texnkbyavx tr, #texnkbyavx td, #texnkbyavx th {
+#zqfohqycbl thead, #zqfohqycbl tbody, #zqfohqycbl tfoot, #zqfohqycbl tr, #zqfohqycbl td, #zqfohqycbl th {
   border-style: none;
 }
 
-#texnkbyavx p {
+#zqfohqycbl p {
   margin: 0;
   padding: 0;
 }
 
-#texnkbyavx .gt_table {
+#zqfohqycbl .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1218,12 +1252,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_caption {
+#zqfohqycbl .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#texnkbyavx .gt_title {
+#zqfohqycbl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1235,7 +1269,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#texnkbyavx .gt_subtitle {
+#zqfohqycbl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1247,7 +1281,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#texnkbyavx .gt_heading {
+#zqfohqycbl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1259,13 +1293,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_bottom_border {
+#zqfohqycbl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_col_headings {
+#zqfohqycbl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1280,7 +1314,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_col_heading {
+#zqfohqycbl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1300,7 +1334,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#texnkbyavx .gt_column_spanner_outer {
+#zqfohqycbl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1312,15 +1346,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#texnkbyavx .gt_column_spanner_outer:first-child {
+#zqfohqycbl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#texnkbyavx .gt_column_spanner_outer:last-child {
+#zqfohqycbl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#texnkbyavx .gt_column_spanner {
+#zqfohqycbl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1332,11 +1366,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#texnkbyavx .gt_spanner_row {
+#zqfohqycbl .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#texnkbyavx .gt_group_heading {
+#zqfohqycbl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1362,7 +1396,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#texnkbyavx .gt_empty_group_heading {
+#zqfohqycbl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1377,15 +1411,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#texnkbyavx .gt_from_md > :first-child {
+#zqfohqycbl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#texnkbyavx .gt_from_md > :last-child {
+#zqfohqycbl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#texnkbyavx .gt_row {
+#zqfohqycbl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1404,7 +1438,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#texnkbyavx .gt_stub {
+#zqfohqycbl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1417,7 +1451,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#texnkbyavx .gt_stub_row_group {
+#zqfohqycbl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1431,15 +1465,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#texnkbyavx .gt_row_group_first td {
+#zqfohqycbl .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#texnkbyavx .gt_row_group_first th {
+#zqfohqycbl .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#texnkbyavx .gt_summary_row {
+#zqfohqycbl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1449,16 +1483,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#texnkbyavx .gt_first_summary_row {
+#zqfohqycbl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_first_summary_row.thick {
+#zqfohqycbl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#texnkbyavx .gt_last_summary_row {
+#zqfohqycbl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1468,7 +1502,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_grand_summary_row {
+#zqfohqycbl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1478,7 +1512,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#texnkbyavx .gt_first_grand_summary_row {
+#zqfohqycbl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1488,7 +1522,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_last_grand_summary_row_top {
+#zqfohqycbl .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1498,11 +1532,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_striped {
+#zqfohqycbl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#texnkbyavx .gt_table_body {
+#zqfohqycbl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1511,7 +1545,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_footnotes {
+#zqfohqycbl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1525,7 +1559,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_footnote {
+#zqfohqycbl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1534,7 +1568,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#texnkbyavx .gt_sourcenotes {
+#zqfohqycbl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1548,7 +1582,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#texnkbyavx .gt_sourcenote {
+#zqfohqycbl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1556,72 +1590,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#texnkbyavx .gt_left {
+#zqfohqycbl .gt_left {
   text-align: left;
 }
 
-#texnkbyavx .gt_center {
+#zqfohqycbl .gt_center {
   text-align: center;
 }
 
-#texnkbyavx .gt_right {
+#zqfohqycbl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#texnkbyavx .gt_font_normal {
+#zqfohqycbl .gt_font_normal {
   font-weight: normal;
 }
 
-#texnkbyavx .gt_font_bold {
+#zqfohqycbl .gt_font_bold {
   font-weight: bold;
 }
 
-#texnkbyavx .gt_font_italic {
+#zqfohqycbl .gt_font_italic {
   font-style: italic;
 }
 
-#texnkbyavx .gt_super {
+#zqfohqycbl .gt_super {
   font-size: 65%;
 }
 
-#texnkbyavx .gt_footnote_marks {
+#zqfohqycbl .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#texnkbyavx .gt_asterisk {
+#zqfohqycbl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#texnkbyavx .gt_indent_1 {
+#zqfohqycbl .gt_indent_1 {
   text-indent: 5px;
 }
 
-#texnkbyavx .gt_indent_2 {
+#zqfohqycbl .gt_indent_2 {
   text-indent: 10px;
 }
 
-#texnkbyavx .gt_indent_3 {
+#zqfohqycbl .gt_indent_3 {
   text-indent: 15px;
 }
 
-#texnkbyavx .gt_indent_4 {
+#zqfohqycbl .gt_indent_4 {
   text-indent: 20px;
 }
 
-#texnkbyavx .gt_indent_5 {
+#zqfohqycbl .gt_indent_5 {
   text-indent: 25px;
 }
 
-#texnkbyavx .katex-display {
+#zqfohqycbl .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#texnkbyavx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#zqfohqycbl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

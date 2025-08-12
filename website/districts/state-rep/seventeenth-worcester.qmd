@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventeenth Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventeenth Worcester State Representative District"
+description: "The 17th Worcester State Representative District in Massachusetts includes parts of Leicester and Worcester. It is currently represented by Democrat David Henry Argosky LeBoeuf from Worcester, who has held the seat since 2018 and ran unopposed in the 2024 election."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

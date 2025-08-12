@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Massachusetts Ninth Hampden State Representative District is located entirely within Springfield, comprising various precincts across the city. The current incumbent is Orlando Ramos, a Democrat from Springfield, who has held the seat since 2020 and was most recently reelected in 2022 with 100% of the vote.">
 
 <title>Massachusetts Ninth Hampden State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Ninth Hampden State Representative District – mapoli">
+<meta property="og:description" content="The Massachusetts Ninth Hampden State Representative District is located entirely within Springfield, comprising various precincts across the city. The current incumbent is Orlando Ramos, a Democrat from Springfield, who has held the seat since 2020 and was most recently reelected in 2022 with 100% of the vote.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Ninth Hampden State Representative District – mapoli">
+<meta name="twitter:description" content="The Massachusetts Ninth Hampden State Representative District is located entirely within Springfield, comprising various precincts across the city. The current incumbent is Orlando Ramos, a Democrat from Springfield, who has held the seat since 2020 and was most recently reelected in 2022 with 100% of the vote.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Ninth Hampden State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Massachusetts Ninth Hampden State Representative District is located entirely within Springfield, comprising various precincts across the city. The current incumbent is Orlando Ramos, a Democrat from Springfield, who has held the seat since 2020 and was most recently reelected in 2022 with 100% of the vote.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Massachusetts Ninth Hampden State Representative District is located entirely within Springfield, comprising various precincts across the city. The current incumbent is Orlando Ramos, a Democrat from Springfield, who has held the seat since 2020 and was most recently reelected in 2022 with 100% of the vote.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-c8b5a1b50abd0a3b0e66" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-c8b5a1b50abd0a3b0e66">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-72.60827895864541,-72.54081503514539,-72.54031831853125,-72.53948030597556,-72.53825098781566,-72.53722942239594,-72.53580098422566,-72.53337061660866,-72.52874250346989,-72.52256598896653,-72.52014600059259,-72.51076774922234,-72.50562199251412,-72.49315375547734,-72.48925101649755,-72.4889260419632,-72.48987706671046,-72.4897136148832,-72.48891017715628,-72.48762898542002,-72.48698101906261,-72.48666204003048,-72.48782601374688,-72.48808895681076,-72.48717496607321,-72.48459503636683,-72.48392004601442,-72.48521918681155,-72.48494004498782,-72.48806094994561,-72.49029233119109,-72.49168850833337,-72.49330006917535,-72.49583703307479,-72.50353372795665,-72.50527869663101,-72.50550616144349,-72.50386104861774,-72.50802751154239,-72.5079035749082,-72.50539184749718,-72.50169297834213,-72.49991979391102,-72.49876798191579,-72.4978409214411,-72.49668498491933,-72.49581804006139,-72.49571204237377,-72.49661303096357,-72.50099889847631,-72.50200002381095,-72.50334695459973,-72.50387201984894,-72.50444888743803,-72.5090497095987,-72.50935504379136,-72.51032796926384,-72.51106461400308,-72.51560793439873,-72.51426096581235,-72.5131817670396,-72.51512093203549,-72.51491911911788,-72.51856296688317,-72.51899759791293,-72.52606439581903,-72.52654755596626,-72.52825801856457,-72.53117099671911,-72.53470391667618,-72.53672403970327,-72.537660022464,-72.54441199736709,-72.54660394404704,-72.54488216163671,-72.54542204799866,-72.54588894310007,-72.54551537074695,-72.54631900517384,-72.5616201373725,-72.56692795865162,-72.56710574793406,-72.57623701962375,-72.58354083398341,-72.58224805487428,-72.58593177537367,-72.58848299972178,-72.58954590215966,-72.59499699566049,-72.59712294723937,-72.59591656023933,-72.59504480022015,-72.5985403817176,-72.60026072857056,-72.60305600069124,-72.60471196599421,-72.60541150974029,-72.60752096215334,-72.60827895864541],"lat":[42.12921598263002,42.157548951186,42.1553484870446,42.154875187821,42.15477754531702,42.15530252356713,42.15747796990119,42.15736784788533,42.15830420172934,42.16102497220141,42.16128196711291,42.1604831579664,42.16217297300395,42.16122036850024,42.16208596882185,42.16156500475136,42.15970209395581,42.15921008751607,42.15906676882542,42.15994597149838,42.15994197133094,42.15935100993305,42.15874051639329,42.15796041138938,42.15729461382207,42.1565239782458,42.15322902573283,42.15304304355915,42.15156102517477,42.15119103606037,42.15356581557908,42.15275105702372,42.1491976742515,42.14130602419637,42.14008638277722,42.13931245378559,42.13855593895612,42.13309302545958,42.13269337366551,42.1321214196421,42.13211144244342,42.13335897016346,42.13346948207789,42.13450197055965,42.13462000804732,42.13554096944932,42.13560196616806,42.12926400339057,42.12603203436191,42.12576152016068,42.1249990305693,42.12472581281749,42.1241370318885,42.12487903876011,42.12432356150416,42.12368501937409,42.12342004010409,42.12665220779615,42.12621303560505,42.12838097936471,42.12903633253142,42.13056899015461,42.13101454152162,42.13069503330069,42.13198948768338,42.13096117779454,42.13116427554424,42.12976302860938,42.12962002791308,42.13073557497898,42.12662601538661,42.12564801349593,42.12160604489858,42.12419598626494,42.12468004842064,42.12559651706871,42.12562203036383,42.12683823670582,42.13359246857009,42.12878577741944,42.12636605248991,42.12657471567735,42.12123502459663,42.11852251479377,42.11593503869383,42.11647372850379,42.11458604304706,42.11532799743478,42.11112604610894,42.11338799674775,42.11434646042904,42.11741591215078,42.1206065801863,42.12006006228553,42.11799190502187,42.11963901194242,42.12138733182033,42.12296101357899,42.12921598263002]}]]],"Springfield","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#FDB462","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Springfield<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Springfield<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Springfield - 19 of 73 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Springfield",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.13963348601532,-72.54240613506815,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Springfield.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Springfield",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.11112604610894,42.16217297300395],"lng":[-72.60827895864541,-72.48392004601442]},"fitBounds":[42.11112604610894,-72.60827895864541,42.16217297300395,-72.48392004601442,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-20ece1ae9f243d93dcb7" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-20ece1ae9f243d93dcb7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-72.60827895864541,-72.54081503514539,-72.54031831853125,-72.53948030597556,-72.53825098781566,-72.53722942239594,-72.53580098422566,-72.53337061660866,-72.52874250346989,-72.52256598896653,-72.52014600059259,-72.51076774922234,-72.50562199251412,-72.49315375547734,-72.48925101649755,-72.4889260419632,-72.48987706671046,-72.4897136148832,-72.48891017715628,-72.48762898542002,-72.48698101906261,-72.48666204003048,-72.48782601374688,-72.48808895681076,-72.48717496607321,-72.48459503636683,-72.48392004601442,-72.48521918681155,-72.48494004498782,-72.48806094994561,-72.49029233119109,-72.49168850833337,-72.49330006917535,-72.49583703307479,-72.50353372795665,-72.50527869663101,-72.50550616144349,-72.50386104861774,-72.50802751154239,-72.5079035749082,-72.50539184749718,-72.50169297834213,-72.49991979391102,-72.49876798191579,-72.4978409214411,-72.49668498491933,-72.49581804006139,-72.49571204237377,-72.49661303096357,-72.50099889847631,-72.50200002381095,-72.50334695459973,-72.50387201984894,-72.50444888743803,-72.5090497095987,-72.50935504379136,-72.51032796926384,-72.51106461400308,-72.51560793439873,-72.51426096581235,-72.5131817670396,-72.51512093203549,-72.51491911911788,-72.51856296688317,-72.51899759791293,-72.52606439581903,-72.52654755596626,-72.52825801856457,-72.53117099671911,-72.53470391667618,-72.53672403970327,-72.537660022464,-72.54441199736709,-72.54660394404704,-72.54488216163671,-72.54542204799866,-72.54588894310007,-72.54551537074695,-72.54631900517384,-72.5616201373725,-72.56692795865162,-72.56710574793406,-72.57623701962375,-72.58354083398341,-72.58224805487428,-72.58593177537367,-72.58848299972178,-72.58954590215966,-72.59499699566049,-72.59712294723937,-72.59591656023933,-72.59504480022015,-72.5985403817176,-72.60026072857056,-72.60305600069124,-72.60471196599421,-72.60541150974029,-72.60752096215334,-72.60827895864541],"lat":[42.12921598263002,42.157548951186,42.1553484870446,42.154875187821,42.15477754531702,42.15530252356713,42.15747796990119,42.15736784788533,42.15830420172934,42.16102497220141,42.16128196711291,42.1604831579664,42.16217297300395,42.16122036850024,42.16208596882185,42.16156500475136,42.15970209395581,42.15921008751607,42.15906676882542,42.15994597149838,42.15994197133094,42.15935100993305,42.15874051639329,42.15796041138938,42.15729461382207,42.1565239782458,42.15322902573283,42.15304304355915,42.15156102517477,42.15119103606037,42.15356581557908,42.15275105702372,42.1491976742515,42.14130602419637,42.14008638277722,42.13931245378559,42.13855593895612,42.13309302545958,42.13269337366551,42.1321214196421,42.13211144244342,42.13335897016346,42.13346948207789,42.13450197055965,42.13462000804732,42.13554096944932,42.13560196616806,42.12926400339057,42.12603203436191,42.12576152016068,42.1249990305693,42.12472581281749,42.1241370318885,42.12487903876011,42.12432356150416,42.12368501937409,42.12342004010409,42.12665220779615,42.12621303560505,42.12838097936471,42.12903633253142,42.13056899015461,42.13101454152162,42.13069503330069,42.13198948768338,42.13096117779454,42.13116427554424,42.12976302860938,42.12962002791308,42.13073557497898,42.12662601538661,42.12564801349593,42.12160604489858,42.12419598626494,42.12468004842064,42.12559651706871,42.12562203036383,42.12683823670582,42.13359246857009,42.12878577741944,42.12636605248991,42.12657471567735,42.12123502459663,42.11852251479377,42.11593503869383,42.11647372850379,42.11458604304706,42.11532799743478,42.11112604610894,42.11338799674775,42.11434646042904,42.11741591215078,42.1206065801863,42.12006006228553,42.11799190502187,42.11963901194242,42.12138733182033,42.12296101357899,42.12921598263002]}]]],"Springfield","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#80B1D3","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Springfield<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Springfield<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Springfield - 19 of 73 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Springfield",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.13963348601532,-72.54240613506815,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Springfield.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Springfield",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.11112604610894,42.16217297300395],"lng":[-72.60827895864541,-72.48392004601442]},"fitBounds":[42.11112604610894,-72.60827895864541,42.16217297300395,-72.48392004601442,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="ivbvkkogxz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ivbvkkogxz table {
+<div id="amboetxrhz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#amboetxrhz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ivbvkkogxz thead, #ivbvkkogxz tbody, #ivbvkkogxz tfoot, #ivbvkkogxz tr, #ivbvkkogxz td, #ivbvkkogxz th {
+#amboetxrhz thead, #amboetxrhz tbody, #amboetxrhz tfoot, #amboetxrhz tr, #amboetxrhz td, #amboetxrhz th {
   border-style: none;
 }
 
-#ivbvkkogxz p {
+#amboetxrhz p {
   margin: 0;
   padding: 0;
 }
 
-#ivbvkkogxz .gt_table {
+#amboetxrhz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_caption {
+#amboetxrhz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ivbvkkogxz .gt_title {
+#amboetxrhz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#ivbvkkogxz .gt_subtitle {
+#amboetxrhz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#ivbvkkogxz .gt_heading {
+#amboetxrhz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_bottom_border {
+#amboetxrhz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_col_headings {
+#amboetxrhz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_col_heading {
+#amboetxrhz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#ivbvkkogxz .gt_column_spanner_outer {
+#amboetxrhz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#ivbvkkogxz .gt_column_spanner_outer:first-child {
+#amboetxrhz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ivbvkkogxz .gt_column_spanner_outer:last-child {
+#amboetxrhz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ivbvkkogxz .gt_column_spanner {
+#amboetxrhz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#ivbvkkogxz .gt_spanner_row {
+#amboetxrhz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ivbvkkogxz .gt_group_heading {
+#amboetxrhz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#ivbvkkogxz .gt_empty_group_heading {
+#amboetxrhz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#ivbvkkogxz .gt_from_md > :first-child {
+#amboetxrhz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ivbvkkogxz .gt_from_md > :last-child {
+#amboetxrhz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ivbvkkogxz .gt_row {
+#amboetxrhz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#ivbvkkogxz .gt_stub {
+#amboetxrhz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ivbvkkogxz .gt_stub_row_group {
+#amboetxrhz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#ivbvkkogxz .gt_row_group_first td {
+#amboetxrhz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ivbvkkogxz .gt_row_group_first th {
+#amboetxrhz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ivbvkkogxz .gt_summary_row {
+#amboetxrhz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ivbvkkogxz .gt_first_summary_row {
+#amboetxrhz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_first_summary_row.thick {
+#amboetxrhz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ivbvkkogxz .gt_last_summary_row {
+#amboetxrhz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_grand_summary_row {
+#amboetxrhz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ivbvkkogxz .gt_first_grand_summary_row {
+#amboetxrhz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_last_grand_summary_row_top {
+#amboetxrhz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_striped {
+#amboetxrhz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ivbvkkogxz .gt_table_body {
+#amboetxrhz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_footnotes {
+#amboetxrhz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_footnote {
+#amboetxrhz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ivbvkkogxz .gt_sourcenotes {
+#amboetxrhz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ivbvkkogxz .gt_sourcenote {
+#amboetxrhz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ivbvkkogxz .gt_left {
+#amboetxrhz .gt_left {
   text-align: left;
 }
 
-#ivbvkkogxz .gt_center {
+#amboetxrhz .gt_center {
   text-align: center;
 }
 
-#ivbvkkogxz .gt_right {
+#amboetxrhz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ivbvkkogxz .gt_font_normal {
+#amboetxrhz .gt_font_normal {
   font-weight: normal;
 }
 
-#ivbvkkogxz .gt_font_bold {
+#amboetxrhz .gt_font_bold {
   font-weight: bold;
 }
 
-#ivbvkkogxz .gt_font_italic {
+#amboetxrhz .gt_font_italic {
   font-style: italic;
 }
 
-#ivbvkkogxz .gt_super {
+#amboetxrhz .gt_super {
   font-size: 65%;
 }
 
-#ivbvkkogxz .gt_footnote_marks {
+#amboetxrhz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ivbvkkogxz .gt_asterisk {
+#amboetxrhz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ivbvkkogxz .gt_indent_1 {
+#amboetxrhz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ivbvkkogxz .gt_indent_2 {
+#amboetxrhz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ivbvkkogxz .gt_indent_3 {
+#amboetxrhz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ivbvkkogxz .gt_indent_4 {
+#amboetxrhz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ivbvkkogxz .gt_indent_5 {
+#amboetxrhz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ivbvkkogxz .katex-display {
+#amboetxrhz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ivbvkkogxz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#amboetxrhz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="pamoxoiqwz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#pamoxoiqwz table {
+<div id="okyawnqcnx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#okyawnqcnx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#pamoxoiqwz thead, #pamoxoiqwz tbody, #pamoxoiqwz tfoot, #pamoxoiqwz tr, #pamoxoiqwz td, #pamoxoiqwz th {
+#okyawnqcnx thead, #okyawnqcnx tbody, #okyawnqcnx tfoot, #okyawnqcnx tr, #okyawnqcnx td, #okyawnqcnx th {
   border-style: none;
 }
 
-#pamoxoiqwz p {
+#okyawnqcnx p {
   margin: 0;
   padding: 0;
 }
 
-#pamoxoiqwz .gt_table {
+#okyawnqcnx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_caption {
+#okyawnqcnx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#pamoxoiqwz .gt_title {
+#okyawnqcnx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#pamoxoiqwz .gt_subtitle {
+#okyawnqcnx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#pamoxoiqwz .gt_heading {
+#okyawnqcnx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_bottom_border {
+#okyawnqcnx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_col_headings {
+#okyawnqcnx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_col_heading {
+#okyawnqcnx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#pamoxoiqwz .gt_column_spanner_outer {
+#okyawnqcnx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#pamoxoiqwz .gt_column_spanner_outer:first-child {
+#okyawnqcnx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pamoxoiqwz .gt_column_spanner_outer:last-child {
+#okyawnqcnx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pamoxoiqwz .gt_column_spanner {
+#okyawnqcnx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#pamoxoiqwz .gt_spanner_row {
+#okyawnqcnx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#pamoxoiqwz .gt_group_heading {
+#okyawnqcnx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#pamoxoiqwz .gt_empty_group_heading {
+#okyawnqcnx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#pamoxoiqwz .gt_from_md > :first-child {
+#okyawnqcnx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pamoxoiqwz .gt_from_md > :last-child {
+#okyawnqcnx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pamoxoiqwz .gt_row {
+#okyawnqcnx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#pamoxoiqwz .gt_stub {
+#okyawnqcnx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#pamoxoiqwz .gt_stub_row_group {
+#okyawnqcnx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#pamoxoiqwz .gt_row_group_first td {
+#okyawnqcnx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pamoxoiqwz .gt_row_group_first th {
+#okyawnqcnx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#pamoxoiqwz .gt_summary_row {
+#okyawnqcnx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#pamoxoiqwz .gt_first_summary_row {
+#okyawnqcnx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_first_summary_row.thick {
+#okyawnqcnx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pamoxoiqwz .gt_last_summary_row {
+#okyawnqcnx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_grand_summary_row {
+#okyawnqcnx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#pamoxoiqwz .gt_first_grand_summary_row {
+#okyawnqcnx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_last_grand_summary_row_top {
+#okyawnqcnx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_striped {
+#okyawnqcnx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pamoxoiqwz .gt_table_body {
+#okyawnqcnx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_footnotes {
+#okyawnqcnx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_footnote {
+#okyawnqcnx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#pamoxoiqwz .gt_sourcenotes {
+#okyawnqcnx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#pamoxoiqwz .gt_sourcenote {
+#okyawnqcnx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#pamoxoiqwz .gt_left {
+#okyawnqcnx .gt_left {
   text-align: left;
 }
 
-#pamoxoiqwz .gt_center {
+#okyawnqcnx .gt_center {
   text-align: center;
 }
 
-#pamoxoiqwz .gt_right {
+#okyawnqcnx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pamoxoiqwz .gt_font_normal {
+#okyawnqcnx .gt_font_normal {
   font-weight: normal;
 }
 
-#pamoxoiqwz .gt_font_bold {
+#okyawnqcnx .gt_font_bold {
   font-weight: bold;
 }
 
-#pamoxoiqwz .gt_font_italic {
+#okyawnqcnx .gt_font_italic {
   font-style: italic;
 }
 
-#pamoxoiqwz .gt_super {
+#okyawnqcnx .gt_super {
   font-size: 65%;
 }
 
-#pamoxoiqwz .gt_footnote_marks {
+#okyawnqcnx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#pamoxoiqwz .gt_asterisk {
+#okyawnqcnx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pamoxoiqwz .gt_indent_1 {
+#okyawnqcnx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#pamoxoiqwz .gt_indent_2 {
+#okyawnqcnx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#pamoxoiqwz .gt_indent_3 {
+#okyawnqcnx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#pamoxoiqwz .gt_indent_4 {
+#okyawnqcnx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#pamoxoiqwz .gt_indent_5 {
+#okyawnqcnx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#pamoxoiqwz .katex-display {
+#okyawnqcnx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#pamoxoiqwz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#okyawnqcnx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1172,23 +1206,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="jfsvqhmzxe" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jfsvqhmzxe table {
+<div id="ybidhhxnxr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ybidhhxnxr table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jfsvqhmzxe thead, #jfsvqhmzxe tbody, #jfsvqhmzxe tfoot, #jfsvqhmzxe tr, #jfsvqhmzxe td, #jfsvqhmzxe th {
+#ybidhhxnxr thead, #ybidhhxnxr tbody, #ybidhhxnxr tfoot, #ybidhhxnxr tr, #ybidhhxnxr td, #ybidhhxnxr th {
   border-style: none;
 }
 
-#jfsvqhmzxe p {
+#ybidhhxnxr p {
   margin: 0;
   padding: 0;
 }
 
-#jfsvqhmzxe .gt_table {
+#ybidhhxnxr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1214,12 +1248,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_caption {
+#ybidhhxnxr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jfsvqhmzxe .gt_title {
+#ybidhhxnxr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1231,7 +1265,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#jfsvqhmzxe .gt_subtitle {
+#ybidhhxnxr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1243,7 +1277,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#jfsvqhmzxe .gt_heading {
+#ybidhhxnxr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1255,13 +1289,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_bottom_border {
+#ybidhhxnxr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_col_headings {
+#ybidhhxnxr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1276,7 +1310,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_col_heading {
+#ybidhhxnxr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1296,7 +1330,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jfsvqhmzxe .gt_column_spanner_outer {
+#ybidhhxnxr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1308,15 +1342,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#jfsvqhmzxe .gt_column_spanner_outer:first-child {
+#ybidhhxnxr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jfsvqhmzxe .gt_column_spanner_outer:last-child {
+#ybidhhxnxr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jfsvqhmzxe .gt_column_spanner {
+#ybidhhxnxr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1328,11 +1362,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#jfsvqhmzxe .gt_spanner_row {
+#ybidhhxnxr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jfsvqhmzxe .gt_group_heading {
+#ybidhhxnxr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1358,7 +1392,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#jfsvqhmzxe .gt_empty_group_heading {
+#ybidhhxnxr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1373,15 +1407,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#jfsvqhmzxe .gt_from_md > :first-child {
+#ybidhhxnxr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jfsvqhmzxe .gt_from_md > :last-child {
+#ybidhhxnxr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jfsvqhmzxe .gt_row {
+#ybidhhxnxr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1400,7 +1434,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jfsvqhmzxe .gt_stub {
+#ybidhhxnxr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1413,7 +1447,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jfsvqhmzxe .gt_stub_row_group {
+#ybidhhxnxr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1427,15 +1461,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#jfsvqhmzxe .gt_row_group_first td {
+#ybidhhxnxr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jfsvqhmzxe .gt_row_group_first th {
+#ybidhhxnxr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jfsvqhmzxe .gt_summary_row {
+#ybidhhxnxr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1445,16 +1479,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jfsvqhmzxe .gt_first_summary_row {
+#ybidhhxnxr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_first_summary_row.thick {
+#ybidhhxnxr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jfsvqhmzxe .gt_last_summary_row {
+#ybidhhxnxr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1464,7 +1498,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_grand_summary_row {
+#ybidhhxnxr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1474,7 +1508,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jfsvqhmzxe .gt_first_grand_summary_row {
+#ybidhhxnxr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1484,7 +1518,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_last_grand_summary_row_top {
+#ybidhhxnxr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1494,11 +1528,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_striped {
+#ybidhhxnxr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jfsvqhmzxe .gt_table_body {
+#ybidhhxnxr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1507,7 +1541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_footnotes {
+#ybidhhxnxr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1521,7 +1555,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_footnote {
+#ybidhhxnxr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1530,7 +1564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jfsvqhmzxe .gt_sourcenotes {
+#ybidhhxnxr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1544,7 +1578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jfsvqhmzxe .gt_sourcenote {
+#ybidhhxnxr .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1552,72 +1586,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jfsvqhmzxe .gt_left {
+#ybidhhxnxr .gt_left {
   text-align: left;
 }
 
-#jfsvqhmzxe .gt_center {
+#ybidhhxnxr .gt_center {
   text-align: center;
 }
 
-#jfsvqhmzxe .gt_right {
+#ybidhhxnxr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jfsvqhmzxe .gt_font_normal {
+#ybidhhxnxr .gt_font_normal {
   font-weight: normal;
 }
 
-#jfsvqhmzxe .gt_font_bold {
+#ybidhhxnxr .gt_font_bold {
   font-weight: bold;
 }
 
-#jfsvqhmzxe .gt_font_italic {
+#ybidhhxnxr .gt_font_italic {
   font-style: italic;
 }
 
-#jfsvqhmzxe .gt_super {
+#ybidhhxnxr .gt_super {
   font-size: 65%;
 }
 
-#jfsvqhmzxe .gt_footnote_marks {
+#ybidhhxnxr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jfsvqhmzxe .gt_asterisk {
+#ybidhhxnxr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jfsvqhmzxe .gt_indent_1 {
+#ybidhhxnxr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jfsvqhmzxe .gt_indent_2 {
+#ybidhhxnxr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jfsvqhmzxe .gt_indent_3 {
+#ybidhhxnxr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jfsvqhmzxe .gt_indent_4 {
+#ybidhhxnxr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jfsvqhmzxe .gt_indent_5 {
+#ybidhhxnxr .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jfsvqhmzxe .katex-display {
+#ybidhhxnxr .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jfsvqhmzxe div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ybidhhxnxr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

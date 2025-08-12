@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Massachusetts Fourth Worcester State Representative District encompasses the city of Leominster. The district is currently represented by incumbent Democrat Natalie Higgins of Leominster, who has held the seat since 2016 and most recently won reelection in 2024 with 58% of the vote against Republican challenger Salvatore Perla.">
 
 <title>Massachusetts Fourth Worcester State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Fourth Worcester State Representative District – mapoli">
+<meta property="og:description" content="The Massachusetts Fourth Worcester State Representative District encompasses the city of Leominster. The district is currently represented by incumbent Democrat Natalie Higgins of Leominster, who has held the seat since 2016 and most recently won reelection in 2024 with 58% of the vote against Republican challenger Salvatore Perla.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Fourth Worcester State Representative District – mapoli">
+<meta name="twitter:description" content="The Massachusetts Fourth Worcester State Representative District encompasses the city of Leominster. The district is currently represented by incumbent Democrat Natalie Higgins of Leominster, who has held the seat since 2016 and most recently won reelection in 2024 with 58% of the vote against Republican challenger Salvatore Perla.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Fourth Worcester State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Massachusetts Fourth Worcester State Representative District encompasses the city of Leominster. The district is currently represented by incumbent Democrat Natalie Higgins of Leominster, who has held the seat since 2016 and most recently won reelection in 2024 with 58% of the vote against Republican challenger Salvatore Perla.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Massachusetts Fourth Worcester State Representative District encompasses the city of Leominster. The district is currently represented by incumbent Democrat Natalie Higgins of Leominster, who has held the seat since 2016 and most recently won reelection in 2024 with 58% of the vote against Republican challenger Salvatore Perla.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-574ec9bf53b4526fdcd5" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-574ec9bf53b4526fdcd5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.84232595552007,-71.83712296161318,-71.8308800061499,-71.82127793173251,-71.81421399688581,-71.80789386186812,-71.80465666958865,-71.79924398333027,-71.79757900355359,-71.78937637222559,-71.78601571763284,-71.77134199829939,-71.76428702881823,-71.76158804450367,-71.7619448359799,-71.7603896777386,-71.75776600773831,-71.75416406245738,-71.74974108731449,-71.74916128489598,-71.74986893223611,-71.74784573701676,-71.75409326378795,-71.75724258929287,-71.76294992307453,-71.74506200594531,-71.72041703882448,-71.71123595338089,-71.70223606395857,-71.71227303039304,-71.71674709488342,-71.72838503068188,-71.83001894067074,-71.82236603752851,-71.84232595552007],"lat":[42.51263001740375,42.54855097284246,42.54901796398514,42.5465395275784,42.54725297334939,42.54716592372836,42.54826655536176,42.55249396881252,42.55261796674485,42.55093291083769,42.55105372767847,42.55924796263194,42.5550559816223,42.55190399255915,42.54980886149403,42.5476755959903,42.54856796314792,42.54605459754052,42.54523132731979,42.54890999195275,42.5497589766912,42.55002714139089,42.55945113461384,42.56206447298757,42.56392400634231,42.57390095917185,42.55232898300071,42.53537453550921,42.53389497982192,42.52146301676646,42.51894174466252,42.47512803575065,42.49218602109717,42.50427584810009,42.51263001740375]}]]],"Leominster","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#FCCDE5","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Leominster<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Leominster<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Leominster<\/nobr><\/td><\/tr><\/table><\/div>",null,"Leominster",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.52087728266632,-71.77167755521521,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Leominster.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Leominster",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.47512803575065,42.57390095917185],"lng":[-71.84232595552007,-71.70223606395857]},"fitBounds":[42.47512803575065,-71.84232595552007,42.57390095917185,-71.70223606395857,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-806fc9a4f2a18cf090a2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-806fc9a4f2a18cf090a2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.84232595552007,-71.83712296161318,-71.8308800061499,-71.82127793173251,-71.81421399688581,-71.80789386186812,-71.80465666958865,-71.79924398333027,-71.79757900355359,-71.78937637222559,-71.78601571763284,-71.77134199829939,-71.76428702881823,-71.76158804450367,-71.7619448359799,-71.7603896777386,-71.75776600773831,-71.75416406245738,-71.74974108731449,-71.74916128489598,-71.74986893223611,-71.74784573701676,-71.75409326378795,-71.75724258929287,-71.76294992307453,-71.74506200594531,-71.72041703882448,-71.71123595338089,-71.70223606395857,-71.71227303039304,-71.71674709488342,-71.72838503068188,-71.83001894067074,-71.82236603752851,-71.84232595552007],"lat":[42.51263001740375,42.54855097284246,42.54901796398514,42.5465395275784,42.54725297334939,42.54716592372836,42.54826655536176,42.55249396881252,42.55261796674485,42.55093291083769,42.55105372767847,42.55924796263194,42.5550559816223,42.55190399255915,42.54980886149403,42.5476755959903,42.54856796314792,42.54605459754052,42.54523132731979,42.54890999195275,42.5497589766912,42.55002714139089,42.55945113461384,42.56206447298757,42.56392400634231,42.57390095917185,42.55232898300071,42.53537453550921,42.53389497982192,42.52146301676646,42.51894174466252,42.47512803575065,42.49218602109717,42.50427584810009,42.51263001740375]}]]],"Leominster","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#B3DE69","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Leominster<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Leominster<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Leominster<\/nobr><\/td><\/tr><\/table><\/div>",null,"Leominster",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[42.52087728266632,-71.77167755521521,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Leominster.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Leominster",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.47512803575065,42.57390095917185],"lng":[-71.84232595552007,-71.70223606395857]},"fitBounds":[42.47512803575065,-71.84232595552007,42.57390095917185,-71.70223606395857,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="xojtuspvvd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xojtuspvvd table {
+<div id="apjesbmqqc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#apjesbmqqc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xojtuspvvd thead, #xojtuspvvd tbody, #xojtuspvvd tfoot, #xojtuspvvd tr, #xojtuspvvd td, #xojtuspvvd th {
+#apjesbmqqc thead, #apjesbmqqc tbody, #apjesbmqqc tfoot, #apjesbmqqc tr, #apjesbmqqc td, #apjesbmqqc th {
   border-style: none;
 }
 
-#xojtuspvvd p {
+#apjesbmqqc p {
   margin: 0;
   padding: 0;
 }
 
-#xojtuspvvd .gt_table {
+#apjesbmqqc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_caption {
+#apjesbmqqc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xojtuspvvd .gt_title {
+#apjesbmqqc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#xojtuspvvd .gt_subtitle {
+#apjesbmqqc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#xojtuspvvd .gt_heading {
+#apjesbmqqc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_bottom_border {
+#apjesbmqqc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_col_headings {
+#apjesbmqqc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_col_heading {
+#apjesbmqqc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#xojtuspvvd .gt_column_spanner_outer {
+#apjesbmqqc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#xojtuspvvd .gt_column_spanner_outer:first-child {
+#apjesbmqqc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xojtuspvvd .gt_column_spanner_outer:last-child {
+#apjesbmqqc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xojtuspvvd .gt_column_spanner {
+#apjesbmqqc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#xojtuspvvd .gt_spanner_row {
+#apjesbmqqc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xojtuspvvd .gt_group_heading {
+#apjesbmqqc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#xojtuspvvd .gt_empty_group_heading {
+#apjesbmqqc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#xojtuspvvd .gt_from_md > :first-child {
+#apjesbmqqc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xojtuspvvd .gt_from_md > :last-child {
+#apjesbmqqc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xojtuspvvd .gt_row {
+#apjesbmqqc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#xojtuspvvd .gt_stub {
+#apjesbmqqc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#xojtuspvvd .gt_stub_row_group {
+#apjesbmqqc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#xojtuspvvd .gt_row_group_first td {
+#apjesbmqqc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xojtuspvvd .gt_row_group_first th {
+#apjesbmqqc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xojtuspvvd .gt_summary_row {
+#apjesbmqqc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#xojtuspvvd .gt_first_summary_row {
+#apjesbmqqc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_first_summary_row.thick {
+#apjesbmqqc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xojtuspvvd .gt_last_summary_row {
+#apjesbmqqc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_grand_summary_row {
+#apjesbmqqc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#xojtuspvvd .gt_first_grand_summary_row {
+#apjesbmqqc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_last_grand_summary_row_top {
+#apjesbmqqc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_striped {
+#apjesbmqqc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xojtuspvvd .gt_table_body {
+#apjesbmqqc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_footnotes {
+#apjesbmqqc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_footnote {
+#apjesbmqqc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#xojtuspvvd .gt_sourcenotes {
+#apjesbmqqc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#xojtuspvvd .gt_sourcenote {
+#apjesbmqqc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#xojtuspvvd .gt_left {
+#apjesbmqqc .gt_left {
   text-align: left;
 }
 
-#xojtuspvvd .gt_center {
+#apjesbmqqc .gt_center {
   text-align: center;
 }
 
-#xojtuspvvd .gt_right {
+#apjesbmqqc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xojtuspvvd .gt_font_normal {
+#apjesbmqqc .gt_font_normal {
   font-weight: normal;
 }
 
-#xojtuspvvd .gt_font_bold {
+#apjesbmqqc .gt_font_bold {
   font-weight: bold;
 }
 
-#xojtuspvvd .gt_font_italic {
+#apjesbmqqc .gt_font_italic {
   font-style: italic;
 }
 
-#xojtuspvvd .gt_super {
+#apjesbmqqc .gt_super {
   font-size: 65%;
 }
 
-#xojtuspvvd .gt_footnote_marks {
+#apjesbmqqc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xojtuspvvd .gt_asterisk {
+#apjesbmqqc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xojtuspvvd .gt_indent_1 {
+#apjesbmqqc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xojtuspvvd .gt_indent_2 {
+#apjesbmqqc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xojtuspvvd .gt_indent_3 {
+#apjesbmqqc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xojtuspvvd .gt_indent_4 {
+#apjesbmqqc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xojtuspvvd .gt_indent_5 {
+#apjesbmqqc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xojtuspvvd .katex-display {
+#apjesbmqqc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xojtuspvvd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#apjesbmqqc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="cuqpqvoaok" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#cuqpqvoaok table {
+<div id="frawtgklhd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#frawtgklhd table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#cuqpqvoaok thead, #cuqpqvoaok tbody, #cuqpqvoaok tfoot, #cuqpqvoaok tr, #cuqpqvoaok td, #cuqpqvoaok th {
+#frawtgklhd thead, #frawtgklhd tbody, #frawtgklhd tfoot, #frawtgklhd tr, #frawtgklhd td, #frawtgklhd th {
   border-style: none;
 }
 
-#cuqpqvoaok p {
+#frawtgklhd p {
   margin: 0;
   padding: 0;
 }
 
-#cuqpqvoaok .gt_table {
+#frawtgklhd .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_caption {
+#frawtgklhd .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#cuqpqvoaok .gt_title {
+#frawtgklhd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#cuqpqvoaok .gt_subtitle {
+#frawtgklhd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#cuqpqvoaok .gt_heading {
+#frawtgklhd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_bottom_border {
+#frawtgklhd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_col_headings {
+#frawtgklhd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_col_heading {
+#frawtgklhd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#cuqpqvoaok .gt_column_spanner_outer {
+#frawtgklhd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#cuqpqvoaok .gt_column_spanner_outer:first-child {
+#frawtgklhd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cuqpqvoaok .gt_column_spanner_outer:last-child {
+#frawtgklhd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cuqpqvoaok .gt_column_spanner {
+#frawtgklhd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#cuqpqvoaok .gt_spanner_row {
+#frawtgklhd .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#cuqpqvoaok .gt_group_heading {
+#frawtgklhd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#cuqpqvoaok .gt_empty_group_heading {
+#frawtgklhd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#cuqpqvoaok .gt_from_md > :first-child {
+#frawtgklhd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cuqpqvoaok .gt_from_md > :last-child {
+#frawtgklhd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cuqpqvoaok .gt_row {
+#frawtgklhd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#cuqpqvoaok .gt_stub {
+#frawtgklhd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#cuqpqvoaok .gt_stub_row_group {
+#frawtgklhd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#cuqpqvoaok .gt_row_group_first td {
+#frawtgklhd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cuqpqvoaok .gt_row_group_first th {
+#frawtgklhd .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#cuqpqvoaok .gt_summary_row {
+#frawtgklhd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#cuqpqvoaok .gt_first_summary_row {
+#frawtgklhd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_first_summary_row.thick {
+#frawtgklhd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cuqpqvoaok .gt_last_summary_row {
+#frawtgklhd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_grand_summary_row {
+#frawtgklhd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#cuqpqvoaok .gt_first_grand_summary_row {
+#frawtgklhd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_last_grand_summary_row_top {
+#frawtgklhd .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_striped {
+#frawtgklhd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cuqpqvoaok .gt_table_body {
+#frawtgklhd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_footnotes {
+#frawtgklhd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_footnote {
+#frawtgklhd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#cuqpqvoaok .gt_sourcenotes {
+#frawtgklhd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#cuqpqvoaok .gt_sourcenote {
+#frawtgklhd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#cuqpqvoaok .gt_left {
+#frawtgklhd .gt_left {
   text-align: left;
 }
 
-#cuqpqvoaok .gt_center {
+#frawtgklhd .gt_center {
   text-align: center;
 }
 
-#cuqpqvoaok .gt_right {
+#frawtgklhd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cuqpqvoaok .gt_font_normal {
+#frawtgklhd .gt_font_normal {
   font-weight: normal;
 }
 
-#cuqpqvoaok .gt_font_bold {
+#frawtgklhd .gt_font_bold {
   font-weight: bold;
 }
 
-#cuqpqvoaok .gt_font_italic {
+#frawtgklhd .gt_font_italic {
   font-style: italic;
 }
 
-#cuqpqvoaok .gt_super {
+#frawtgklhd .gt_super {
   font-size: 65%;
 }
 
-#cuqpqvoaok .gt_footnote_marks {
+#frawtgklhd .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#cuqpqvoaok .gt_asterisk {
+#frawtgklhd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cuqpqvoaok .gt_indent_1 {
+#frawtgklhd .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cuqpqvoaok .gt_indent_2 {
+#frawtgklhd .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cuqpqvoaok .gt_indent_3 {
+#frawtgklhd .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cuqpqvoaok .gt_indent_4 {
+#frawtgklhd .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cuqpqvoaok .gt_indent_5 {
+#frawtgklhd .gt_indent_5 {
   text-indent: 25px;
 }
 
-#cuqpqvoaok .katex-display {
+#frawtgklhd .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#cuqpqvoaok div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#frawtgklhd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1172,23 +1206,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ubefkokpft" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ubefkokpft table {
+<div id="jftsbzyrkq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jftsbzyrkq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ubefkokpft thead, #ubefkokpft tbody, #ubefkokpft tfoot, #ubefkokpft tr, #ubefkokpft td, #ubefkokpft th {
+#jftsbzyrkq thead, #jftsbzyrkq tbody, #jftsbzyrkq tfoot, #jftsbzyrkq tr, #jftsbzyrkq td, #jftsbzyrkq th {
   border-style: none;
 }
 
-#ubefkokpft p {
+#jftsbzyrkq p {
   margin: 0;
   padding: 0;
 }
 
-#ubefkokpft .gt_table {
+#jftsbzyrkq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1214,12 +1248,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_caption {
+#jftsbzyrkq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ubefkokpft .gt_title {
+#jftsbzyrkq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1231,7 +1265,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#ubefkokpft .gt_subtitle {
+#jftsbzyrkq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1243,7 +1277,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#ubefkokpft .gt_heading {
+#jftsbzyrkq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1255,13 +1289,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_bottom_border {
+#jftsbzyrkq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_col_headings {
+#jftsbzyrkq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1276,7 +1310,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_col_heading {
+#jftsbzyrkq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1296,7 +1330,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#ubefkokpft .gt_column_spanner_outer {
+#jftsbzyrkq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1308,15 +1342,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#ubefkokpft .gt_column_spanner_outer:first-child {
+#jftsbzyrkq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ubefkokpft .gt_column_spanner_outer:last-child {
+#jftsbzyrkq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ubefkokpft .gt_column_spanner {
+#jftsbzyrkq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1328,11 +1362,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#ubefkokpft .gt_spanner_row {
+#jftsbzyrkq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ubefkokpft .gt_group_heading {
+#jftsbzyrkq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1358,7 +1392,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#ubefkokpft .gt_empty_group_heading {
+#jftsbzyrkq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1373,15 +1407,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#ubefkokpft .gt_from_md > :first-child {
+#jftsbzyrkq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ubefkokpft .gt_from_md > :last-child {
+#jftsbzyrkq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ubefkokpft .gt_row {
+#jftsbzyrkq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1400,7 +1434,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#ubefkokpft .gt_stub {
+#jftsbzyrkq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1413,7 +1447,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ubefkokpft .gt_stub_row_group {
+#jftsbzyrkq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1427,15 +1461,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#ubefkokpft .gt_row_group_first td {
+#jftsbzyrkq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ubefkokpft .gt_row_group_first th {
+#jftsbzyrkq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ubefkokpft .gt_summary_row {
+#jftsbzyrkq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1445,16 +1479,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ubefkokpft .gt_first_summary_row {
+#jftsbzyrkq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_first_summary_row.thick {
+#jftsbzyrkq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ubefkokpft .gt_last_summary_row {
+#jftsbzyrkq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1464,7 +1498,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_grand_summary_row {
+#jftsbzyrkq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1474,7 +1508,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ubefkokpft .gt_first_grand_summary_row {
+#jftsbzyrkq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1484,7 +1518,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_last_grand_summary_row_top {
+#jftsbzyrkq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1494,11 +1528,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_striped {
+#jftsbzyrkq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ubefkokpft .gt_table_body {
+#jftsbzyrkq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1507,7 +1541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_footnotes {
+#jftsbzyrkq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1521,7 +1555,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_footnote {
+#jftsbzyrkq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1530,7 +1564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ubefkokpft .gt_sourcenotes {
+#jftsbzyrkq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1544,7 +1578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#ubefkokpft .gt_sourcenote {
+#jftsbzyrkq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1552,72 +1586,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#ubefkokpft .gt_left {
+#jftsbzyrkq .gt_left {
   text-align: left;
 }
 
-#ubefkokpft .gt_center {
+#jftsbzyrkq .gt_center {
   text-align: center;
 }
 
-#ubefkokpft .gt_right {
+#jftsbzyrkq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ubefkokpft .gt_font_normal {
+#jftsbzyrkq .gt_font_normal {
   font-weight: normal;
 }
 
-#ubefkokpft .gt_font_bold {
+#jftsbzyrkq .gt_font_bold {
   font-weight: bold;
 }
 
-#ubefkokpft .gt_font_italic {
+#jftsbzyrkq .gt_font_italic {
   font-style: italic;
 }
 
-#ubefkokpft .gt_super {
+#jftsbzyrkq .gt_super {
   font-size: 65%;
 }
 
-#ubefkokpft .gt_footnote_marks {
+#jftsbzyrkq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ubefkokpft .gt_asterisk {
+#jftsbzyrkq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ubefkokpft .gt_indent_1 {
+#jftsbzyrkq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ubefkokpft .gt_indent_2 {
+#jftsbzyrkq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ubefkokpft .gt_indent_3 {
+#jftsbzyrkq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ubefkokpft .gt_indent_4 {
+#jftsbzyrkq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ubefkokpft .gt_indent_5 {
+#jftsbzyrkq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ubefkokpft .katex-display {
+#jftsbzyrkq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ubefkokpft div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jftsbzyrkq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

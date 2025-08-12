@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventh Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventh Plymouth State Representative District"
+description: "The Massachusetts Seventh Plymouth State Representative District is currently represented by Alyson M. Sullivan-Almeida (Republican) from Abington. The district covers the towns of Abington, Whitman, and parts of East Bridgewater (precincts 1, 2, and 3)."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

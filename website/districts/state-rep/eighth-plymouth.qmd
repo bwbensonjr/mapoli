@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Eighth Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Eighth Plymouth State Representative District"
+description: "The Massachusetts Eighth Plymouth State Representative District is currently represented by Democrat Dennis C. Gallagher of Bridgewater, who won the seat in the 2024 election with 51% of the vote over Republican Sandra Wright. The district encompasses parts of Bridgewater and Raynham, with a population of approximately 44,000 residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

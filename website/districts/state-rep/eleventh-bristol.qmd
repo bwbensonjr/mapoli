@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Eleventh Bristol"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Eleventh Bristol State Representative District"
+description: "The Massachusetts Eleventh Bristol State Representative District covers parts of New Bedford and is currently represented by Democratic incumbent Christopher Hendricks of New Bedford. The district has been consistently held by Democrats, with Hendricks winning uncontested elections since 2018."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

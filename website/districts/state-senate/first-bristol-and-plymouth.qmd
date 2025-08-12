@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "First Bristol and Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts First Bristol and Plymouth State Senate District"
+description: "The Massachusetts First Bristol and Plymouth State Senate District encompasses Fall River, Freetown, Lakeville, Rochester, Somerset, Swansea, and Westport, covering 237 square miles with a population of 171,292. The current incumbent is Democratic State Senator Michael J. Rodrigues of Westport, who has represented the district since 2010 and ran unopposed in the 2024 election."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twentieth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twentieth Middlesex State Representative District"
+description: "The Massachusetts Twentieth Middlesex State Representative District is currently represented by incumbent Republican Bradley H. Jones, Jr. of North Reading, who has held the seat continuously since at least 2002. The district includes parts of Lynnfield, Middleton, North Reading, and Reading, covering an area of 41 square miles with a population of approximately 44,611."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fourth Plymouth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourth Plymouth State Representative District"
+description: "The Fourth Plymouth State Representative District in Massachusetts is represented by incumbent Patrick Joseph Kearney (D-Scituate). The district covers parts of Marshfield, Norwell, and Scituate on Massachusetts' South Shore region."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

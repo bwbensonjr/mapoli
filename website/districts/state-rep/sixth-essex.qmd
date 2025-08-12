@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Sixth Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Sixth Essex State Representative District"
+description: "The district encompasses Beverly and Wenham, with a population of 43,831. The incumbent is Democratic State Representative Jerald A. Parisella of Beverly, who has represented the district since 2010, consistently winning reelection, most recently with 71% of the vote in 2024."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

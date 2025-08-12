@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "U.S. House"
   district_name: "Fifth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fifth U.S. House District"
+description: "This Massachusetts Fifth U.S. House District is currently represented by incumbent Democratic Representative Katherine M. Clark from Revere. The district covers eastern Massachusetts communities including parts of Cambridge, Arlington, Framingham, Lexington, Malden, Medford, and several other municipalities in the greater Boston area."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

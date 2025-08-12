@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fifteenth Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fifteenth Essex State Representative District"
+description: "The Massachusetts Fifteenth Essex State Representative District is represented by Ryan M. Hamilton (D-Methuen), who has won uncontested races in 2022 and 2024. The district covers parts of Haverhill and Methuen, with a population of 46,016 that is 70% white and 30% minority."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

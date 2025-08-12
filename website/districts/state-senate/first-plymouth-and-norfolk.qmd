@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "First Plymouth and Norfolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts First Plymouth and Norfolk State Senate District"
+description: "This district is represented by incumbent Republican Patrick A. O'Connor of Weymouth, who won reelection in 2022 with 61% of the vote. The district includes the towns of Cohasset, Duxbury, Hingham, Hull, Marshfield, Norwell, Scituate, and Weymouth, covering 146 square miles along Massachusetts' South Shore region."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

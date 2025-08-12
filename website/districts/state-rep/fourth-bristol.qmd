@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fourth Bristol"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourth Bristol State Representative District"
+description: "The Massachusetts Fourth Bristol State Representative District covers Norton (precincts 1, 2), Rehoboth, Seekonk, and Swansea (precincts 4, 5), with a predominantly white (91%) population of 41,529. The incumbent is Republican Steven S. Howitt of Seekonk, who has represented the district since 2010 when he defeated Democrat Steven J. D'Amico."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Third Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Third Suffolk State Representative District"
+description: "The Massachusetts Third Suffolk State Representative District covers a small area of about 1 square mile in Boston, encompassing parts of several Boston precincts. The incumbent is Democratic Representative Aaron M. Michlewitz of Boston, who has held the seat since winning a special election in 2009, and has run unopposed in every regular election since taking office."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

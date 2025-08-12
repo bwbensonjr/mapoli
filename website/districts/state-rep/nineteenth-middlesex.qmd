@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Nineteenth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Nineteenth Middlesex State Representative District"
+description: "The Massachusetts Nineteenth Middlesex State Representative District encompasses parts of Tewksbury and Wilmington, covering 27 square miles with a population of 40,440. The district is currently represented by incumbent Democratic Representative David Allen Robertson of Wilmington, who won reelection in 2024 with 53% of the vote against Republican and third-party challengers."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

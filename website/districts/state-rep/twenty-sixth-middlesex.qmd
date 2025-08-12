@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twenty-Sixth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twenty-Sixth Middlesex State Representative District"
+description: "This district, covering parts of Cambridge and Somerville, is currently represented by incumbent Democrat Mike Connolly of Cambridge. The district has a population of 47,124 people and has been held by Connolly since he was first elected in 2016."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

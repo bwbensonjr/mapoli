@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fourteenth Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourteenth Worcester State Representative District"
+description: "The Fourteenth Worcester district includes West Boylston and several precincts in Worcester. The district is currently represented by Democratic incumbent James J. O'Day of West Boylston, who has held the seat since 2007 and has run unopposed in most recent elections."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

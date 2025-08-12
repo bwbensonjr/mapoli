@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Twenty-Ninth Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Twenty-Ninth Middlesex State Representative District"
+description: "The Massachusetts Twenty-Ninth Middlesex State Representative District is currently represented by incumbent Democrat Steven C. Owens of Watertown. The district encompasses parts of Cambridge (8 precincts) and all of Watertown (8 precincts), covering approximately 5 square miles with a population of 43,429."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

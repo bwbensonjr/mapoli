@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Eleventh Hampden"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Eleventh Hampden State Representative District"
+description: "The Massachusetts Eleventh Hampden State Representative District covers sections of Springfield and is currently represented by Democrat Bud L. Williams. The district has a diverse population with 73% minority residents, and Williams has represented the district since 2016, winning his most recent elections with 100% of the vote."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

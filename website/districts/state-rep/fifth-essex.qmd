@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fifth Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fifth Essex State Representative District"
+description: "The Massachusetts Fifth Essex State Representative District encompasses Essex, Gloucester, Manchester-by-the-Sea, and Rockport, with a population of approximately 44,000. It is currently represented by incumbent Ann-Margaret Ferrante, a Democrat from Gloucester who has held the seat since 2008 and most recently won reelection in 2024 with 67% of the vote against an unenrolled candidate."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

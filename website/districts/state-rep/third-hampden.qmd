@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Third Hampden"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Third Hampden State Representative District"
+description: "The Massachusetts Third Hampden State Representative District is currently represented by incumbent Republican Nicholas A. Boldyga of Southwick. The district covers parts of Agawam and several small towns in western Massachusetts, with a predominantly white (90%) population of about 43,842 residents."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

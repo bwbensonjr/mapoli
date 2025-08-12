@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "Governor's Council"
   district_name: "Sixth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Sixth Governor's Council District"
+description: "The Massachusetts Sixth Governor's Council District covers several municipalities including Boston, Cambridge, Chelsea, Everett, and other communities in eastern Massachusetts. The district has a population of 899,584. The current incumbent is Terrence W. Kennedy (D-Lynnfield), who has held the seat since 2010 and has been re-elected multiple times, often running unopposed."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

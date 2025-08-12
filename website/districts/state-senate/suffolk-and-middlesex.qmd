@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Suffolk and Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Suffolk and Middlesex State Senate District"
+description: "This Massachusetts state senate district, encompassing parts of Boston, Cambridge, Belmont, and Watertown, is currently represented by incumbent Democrat William N. Brownsberger from Belmont. The district has a population of approximately 174,633 residents and covers 17 square miles in the eastern part of the state."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

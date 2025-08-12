@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Third Norfolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Third Norfolk State Representative District"
+description: "The Third Norfolk State Representative District is currently represented by Ronald Mariano (D-Quincy), who has held the seat since 1991 and serves as Speaker of the House. The district covers parts of Quincy, Weymouth, and Holbrook with a population of approximately 41,814 people."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

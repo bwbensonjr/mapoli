@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Thirteenth Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Thirteenth Worcester State Representative District"
+description: "The Thirteenth Worcester State Representative District is located entirely in Worcester, Massachusetts, covering 13 precincts within the city. The district is currently represented by incumbent John J. Mahoney, Jr. (D-Worcester), who has held the seat since 2010 and has run unopposed in most recent elections."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

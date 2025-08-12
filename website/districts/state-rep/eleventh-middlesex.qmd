@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Eleventh Middlesex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Eleventh Middlesex State Representative District"
+description: "This district is located entirely in Newton, Massachusetts, covering 16 precincts within the city. The current representative is Amy Mah Sangiolo (D-Newton), who won the most recent election in November 2024 with 81% of the vote against Republican challenger Vladislav S. Yanovsky. Prior to Sangiolo, Kay S. Khan (D-Newton) represented the district for many years, often running unopposed."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

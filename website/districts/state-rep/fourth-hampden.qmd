@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Fourth Hampden"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Fourth Hampden State Representative District"
+description: "This is the Massachusetts Fourth Hampden State Representative District, currently represented by Republican incumbent Kelly W. Pease of Westfield. The district primarily consists of Westfield and Southampton in western Massachusetts."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

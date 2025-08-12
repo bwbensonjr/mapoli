@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Tenth Suffolk"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Tenth Suffolk State Representative District"
+description: "The Tenth Suffolk State Representative District in Massachusetts encompasses parts of Boston and Brookline, covering about 8 square miles. The current incumbent is William Macgregor (D-Boston), who won a special election in 2023 and was re-elected in 2024. Previously, the district was represented by Edward Coppinger from 2010 to 2022."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

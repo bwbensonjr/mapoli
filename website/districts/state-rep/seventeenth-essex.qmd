@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Seventeenth Essex"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Seventeenth Essex State Representative District"
+description: "The 17th Essex State Representative District in Massachusetts includes parts of Andover and Lawrence. It has been represented by incumbent Democratic Representative Frank A. Moran of Lawrence since 2012, who has run unopposed in the last several elections."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Senate"
   district_name: "Middlesex and Worcester"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Middlesex and Worcester State Senate District"
+description: "The Middlesex and Worcester State Senate District in Massachusetts is currently represented by Democratic incumbent James B. Eldridge from Marlborough, who has held the seat since 2008. The district encompasses several towns in eastern Massachusetts including Acton, Ayer, Boxborough, Harvard, Hudson, Littleton, Marlborough, Maynard, Southborough, Stow, Sudbury, and Wayland."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

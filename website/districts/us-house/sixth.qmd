@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "U.S. House"
   district_name: "Sixth"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Sixth U.S. House District"
+description: "The Massachusetts Sixth U.S. House District is located in northeastern Massachusetts and is currently represented by incumbent Democrat Seth W. Moulton of Salem. The district covers a population of 771,092 across 553 square miles in Essex County and parts of Middlesex County, including communities like Beverly, Gloucester, Lynn, Peabody, Salem, and portions of several other municipalities."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

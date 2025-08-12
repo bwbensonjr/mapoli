@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Massachusetts Fourteenth Bristol State Representative District is currently represented by Democrat Adam J. Scanlon of North Attleborough, who was most recently reelected in 2024. The district encompasses portions of Attleboro, Mansfield, and North Attleborough with a population of approximately 42,608.">
 
 <title>Massachusetts Fourteenth Bristol State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Fourteenth Bristol State Representative District – mapoli">
+<meta property="og:description" content="The Massachusetts Fourteenth Bristol State Representative District is currently represented by Democrat Adam J. Scanlon of North Attleborough, who was most recently reelected in 2024. The district encompasses portions of Attleboro, Mansfield, and North Attleborough with a population of approximately 42,608.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Fourteenth Bristol State Representative District – mapoli">
+<meta name="twitter:description" content="The Massachusetts Fourteenth Bristol State Representative District is currently represented by Democrat Adam J. Scanlon of North Attleborough, who was most recently reelected in 2024. The district encompasses portions of Attleboro, Mansfield, and North Attleborough with a population of approximately 42,608.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Fourteenth Bristol State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Massachusetts Fourteenth Bristol State Representative District is currently represented by Democrat Adam J. Scanlon of North Attleborough, who was most recently reelected in 2024. The district encompasses portions of Attleboro, Mansfield, and North Attleborough with a population of approximately 42,608.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Massachusetts Fourteenth Bristol State Representative District is currently represented by Democrat Adam J. Scanlon of North Attleborough, who was most recently reelected in 2024. The district encompasses portions of Attleboro, Mansfield, and North Attleborough with a population of approximately 42,608.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-762b31a4f25cd45be5cb" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-762b31a4f25cd45be5cb">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.29146594629209,-71.29107395883223,-71.26873901142581,-71.25960196293302,-71.24338307947012,-71.24713607138469,-71.2524963529707,-71.25773300301096,-71.26463414199662,-71.26944873089802,-71.27569401802566,-71.280403773351,-71.28137702211171,-71.28335796483836,-71.28440319437108,-71.28599700602061,-71.28718798997981,-71.28784354225928,-71.29006895361142,-71.28985895685764,-71.28762396850972,-71.28805554569988,-71.29053296598519,-71.29146594629209],"lat":[41.96949399885438,41.97186098426491,41.9872999518874,41.97462467084537,41.95384504378605,41.9544695523571,41.95454890200092,41.95394303189637,41.95398777228029,41.95273357150646,41.94993744085504,41.94637096428297,41.94430004143794,41.9446690319711,41.95060207390527,41.94943303262063,41.94939203895531,41.95000227636631,41.94995505264927,41.95180699280679,41.95819019239374,41.96206371231534,41.96599101048984,41.96949399885438]}]],[[{"lng":[-71.28826494391286,-71.21158009165546,-71.21820872164061,-71.21869128008998,-71.21843498657036,-71.21514203752864,-71.2153004515711,-71.21477004932208,-71.21603616544122,-71.21436606742427,-71.22378996776595,-71.22400308284193,-71.22525187735307,-71.26036099997749,-71.28826494391286],"lat":[42.01446198753095,42.0444279324958,42.03519085760017,42.03344440807735,42.03014478428654,42.03050696516576,42.02900839388227,42.02711502353374,42.02680631627685,42.02496601955435,42.0234230354145,42.02425675874462,42.02522203625207,41.97567406348007,42.01446198753095]}]],[[{"lng":[-71.38143895990663,-71.38129896067298,-71.3643244959307,-71.2882650159206,-71.26880005037519,-71.33595802193268,-71.38143895990663],"lat":[41.91481606073091,41.98508397085567,41.98530061143415,42.01446196076067,41.98726700590684,41.94078601963616,41.91481606073091]}]]],["Attleboro","Mansfield","North.Attleborough"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#BC80BD","#8DD3C7","#FDB462"],"fillOpacity":[0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Attleboro<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Attleboro<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Attleboro - 1 of 12 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Mansfield<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Mansfield<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Mansfield - 3 of 9 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>North Attleborough<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>North Attleborough<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>North Attleborough<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Attleboro","Mansfield","North Attleborough"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[41.96501068701036,42.0120031327798,41.96991376432048],[-71.27152482726429,-71.25240747522848,-71.33447324086214],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Attleboro.1","Mansfield.1","North.Attleborough.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Attleboro","Mansfield","North Attleborough"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[41.91481606073091,42.0444279324958],"lng":[-71.38143895990663,-71.21158009165546]},"fitBounds":[41.91481606073091,-71.38143895990663,42.0444279324958,-71.21158009165546,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-cbcfa19bf6aad577107a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-cbcfa19bf6aad577107a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.29146594629209,-71.29107395883223,-71.26873901142581,-71.25960196293302,-71.24338307947012,-71.24713607138469,-71.2524963529707,-71.25773300301096,-71.26463414199662,-71.26944873089802,-71.27569401802566,-71.280403773351,-71.28137702211171,-71.28335796483836,-71.28440319437108,-71.28599700602061,-71.28718798997981,-71.28784354225928,-71.29006895361142,-71.28985895685764,-71.28762396850972,-71.28805554569988,-71.29053296598519,-71.29146594629209],"lat":[41.96949399885438,41.97186098426491,41.9872999518874,41.97462467084537,41.95384504378605,41.9544695523571,41.95454890200092,41.95394303189637,41.95398777228029,41.95273357150646,41.94993744085504,41.94637096428297,41.94430004143794,41.9446690319711,41.95060207390527,41.94943303262063,41.94939203895531,41.95000227636631,41.94995505264927,41.95180699280679,41.95819019239374,41.96206371231534,41.96599101048984,41.96949399885438]}]],[[{"lng":[-71.28826494391286,-71.21158009165546,-71.21820872164061,-71.21869128008998,-71.21843498657036,-71.21514203752864,-71.2153004515711,-71.21477004932208,-71.21603616544122,-71.21436606742427,-71.22378996776595,-71.22400308284193,-71.22525187735307,-71.26036099997749,-71.28826494391286],"lat":[42.01446198753095,42.0444279324958,42.03519085760017,42.03344440807735,42.03014478428654,42.03050696516576,42.02900839388227,42.02711502353374,42.02680631627685,42.02496601955435,42.0234230354145,42.02425675874462,42.02522203625207,41.97567406348007,42.01446198753095]}]],[[{"lng":[-71.38143895990663,-71.38129896067298,-71.3643244959307,-71.2882650159206,-71.26880005037519,-71.33595802193268,-71.38143895990663],"lat":[41.91481606073091,41.98508397085567,41.98530061143415,42.01446196076067,41.98726700590684,41.94078601963616,41.91481606073091]}]]],["Attleboro","Mansfield","North.Attleborough"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#B3DE69","#FB8072","#BC80BD"],"fillOpacity":[0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Attleboro<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Attleboro<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Attleboro - 1 of 12 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Mansfield<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Mansfield<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Mansfield - 3 of 9 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>North Attleborough<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>North Attleborough<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>North Attleborough<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Attleboro","Mansfield","North Attleborough"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[41.96501068701036,42.0120031327798,41.96991376432048],[-71.27152482726429,-71.25240747522848,-71.33447324086214],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Attleboro.1","Mansfield.1","North.Attleborough.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Attleboro","Mansfield","North Attleborough"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[41.91481606073091,42.0444279324958],"lng":[-71.38143895990663,-71.21158009165546]},"fitBounds":[41.91481606073091,-71.38143895990663,42.0444279324958,-71.21158009165546,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="wlresufltf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wlresufltf table {
+<div id="lpbwkvxquq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lpbwkvxquq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wlresufltf thead, #wlresufltf tbody, #wlresufltf tfoot, #wlresufltf tr, #wlresufltf td, #wlresufltf th {
+#lpbwkvxquq thead, #lpbwkvxquq tbody, #lpbwkvxquq tfoot, #lpbwkvxquq tr, #lpbwkvxquq td, #lpbwkvxquq th {
   border-style: none;
 }
 
-#wlresufltf p {
+#lpbwkvxquq p {
   margin: 0;
   padding: 0;
 }
 
-#wlresufltf .gt_table {
+#lpbwkvxquq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#wlresufltf .gt_caption {
+#lpbwkvxquq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wlresufltf .gt_title {
+#lpbwkvxquq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#wlresufltf .gt_subtitle {
+#lpbwkvxquq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#wlresufltf .gt_heading {
+#lpbwkvxquq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#wlresufltf .gt_bottom_border {
+#lpbwkvxquq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wlresufltf .gt_col_headings {
+#lpbwkvxquq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#wlresufltf .gt_col_heading {
+#lpbwkvxquq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#wlresufltf .gt_column_spanner_outer {
+#lpbwkvxquq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#wlresufltf .gt_column_spanner_outer:first-child {
+#lpbwkvxquq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wlresufltf .gt_column_spanner_outer:last-child {
+#lpbwkvxquq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wlresufltf .gt_column_spanner {
+#lpbwkvxquq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#wlresufltf .gt_spanner_row {
+#lpbwkvxquq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wlresufltf .gt_group_heading {
+#lpbwkvxquq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#wlresufltf .gt_empty_group_heading {
+#lpbwkvxquq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#wlresufltf .gt_from_md > :first-child {
+#lpbwkvxquq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wlresufltf .gt_from_md > :last-child {
+#lpbwkvxquq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wlresufltf .gt_row {
+#lpbwkvxquq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#wlresufltf .gt_stub {
+#lpbwkvxquq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wlresufltf .gt_stub_row_group {
+#lpbwkvxquq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#wlresufltf .gt_row_group_first td {
+#lpbwkvxquq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wlresufltf .gt_row_group_first th {
+#lpbwkvxquq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wlresufltf .gt_summary_row {
+#lpbwkvxquq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wlresufltf .gt_first_summary_row {
+#lpbwkvxquq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wlresufltf .gt_first_summary_row.thick {
+#lpbwkvxquq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wlresufltf .gt_last_summary_row {
+#lpbwkvxquq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#wlresufltf .gt_grand_summary_row {
+#lpbwkvxquq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wlresufltf .gt_first_grand_summary_row {
+#lpbwkvxquq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#wlresufltf .gt_last_grand_summary_row_top {
+#lpbwkvxquq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#wlresufltf .gt_striped {
+#lpbwkvxquq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wlresufltf .gt_table_body {
+#lpbwkvxquq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#wlresufltf .gt_footnotes {
+#lpbwkvxquq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#wlresufltf .gt_footnote {
+#lpbwkvxquq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wlresufltf .gt_sourcenotes {
+#lpbwkvxquq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#wlresufltf .gt_sourcenote {
+#lpbwkvxquq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#wlresufltf .gt_left {
+#lpbwkvxquq .gt_left {
   text-align: left;
 }
 
-#wlresufltf .gt_center {
+#lpbwkvxquq .gt_center {
   text-align: center;
 }
 
-#wlresufltf .gt_right {
+#lpbwkvxquq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wlresufltf .gt_font_normal {
+#lpbwkvxquq .gt_font_normal {
   font-weight: normal;
 }
 
-#wlresufltf .gt_font_bold {
+#lpbwkvxquq .gt_font_bold {
   font-weight: bold;
 }
 
-#wlresufltf .gt_font_italic {
+#lpbwkvxquq .gt_font_italic {
   font-style: italic;
 }
 
-#wlresufltf .gt_super {
+#lpbwkvxquq .gt_super {
   font-size: 65%;
 }
 
-#wlresufltf .gt_footnote_marks {
+#lpbwkvxquq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wlresufltf .gt_asterisk {
+#lpbwkvxquq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wlresufltf .gt_indent_1 {
+#lpbwkvxquq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wlresufltf .gt_indent_2 {
+#lpbwkvxquq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wlresufltf .gt_indent_3 {
+#lpbwkvxquq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wlresufltf .gt_indent_4 {
+#lpbwkvxquq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wlresufltf .gt_indent_5 {
+#lpbwkvxquq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wlresufltf .katex-display {
+#lpbwkvxquq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wlresufltf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#lpbwkvxquq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="sqlvdvqrls" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#sqlvdvqrls table {
+<div id="pqeufhencf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#pqeufhencf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#sqlvdvqrls thead, #sqlvdvqrls tbody, #sqlvdvqrls tfoot, #sqlvdvqrls tr, #sqlvdvqrls td, #sqlvdvqrls th {
+#pqeufhencf thead, #pqeufhencf tbody, #pqeufhencf tfoot, #pqeufhencf tr, #pqeufhencf td, #pqeufhencf th {
   border-style: none;
 }
 
-#sqlvdvqrls p {
+#pqeufhencf p {
   margin: 0;
   padding: 0;
 }
 
-#sqlvdvqrls .gt_table {
+#pqeufhencf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_caption {
+#pqeufhencf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#sqlvdvqrls .gt_title {
+#pqeufhencf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#sqlvdvqrls .gt_subtitle {
+#pqeufhencf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#sqlvdvqrls .gt_heading {
+#pqeufhencf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_bottom_border {
+#pqeufhencf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_col_headings {
+#pqeufhencf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_col_heading {
+#pqeufhencf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#sqlvdvqrls .gt_column_spanner_outer {
+#pqeufhencf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#sqlvdvqrls .gt_column_spanner_outer:first-child {
+#pqeufhencf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#sqlvdvqrls .gt_column_spanner_outer:last-child {
+#pqeufhencf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#sqlvdvqrls .gt_column_spanner {
+#pqeufhencf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#sqlvdvqrls .gt_spanner_row {
+#pqeufhencf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#sqlvdvqrls .gt_group_heading {
+#pqeufhencf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#sqlvdvqrls .gt_empty_group_heading {
+#pqeufhencf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#sqlvdvqrls .gt_from_md > :first-child {
+#pqeufhencf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#sqlvdvqrls .gt_from_md > :last-child {
+#pqeufhencf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#sqlvdvqrls .gt_row {
+#pqeufhencf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#sqlvdvqrls .gt_stub {
+#pqeufhencf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#sqlvdvqrls .gt_stub_row_group {
+#pqeufhencf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#sqlvdvqrls .gt_row_group_first td {
+#pqeufhencf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#sqlvdvqrls .gt_row_group_first th {
+#pqeufhencf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#sqlvdvqrls .gt_summary_row {
+#pqeufhencf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#sqlvdvqrls .gt_first_summary_row {
+#pqeufhencf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_first_summary_row.thick {
+#pqeufhencf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#sqlvdvqrls .gt_last_summary_row {
+#pqeufhencf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_grand_summary_row {
+#pqeufhencf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#sqlvdvqrls .gt_first_grand_summary_row {
+#pqeufhencf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_last_grand_summary_row_top {
+#pqeufhencf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_striped {
+#pqeufhencf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#sqlvdvqrls .gt_table_body {
+#pqeufhencf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_footnotes {
+#pqeufhencf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_footnote {
+#pqeufhencf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#sqlvdvqrls .gt_sourcenotes {
+#pqeufhencf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#sqlvdvqrls .gt_sourcenote {
+#pqeufhencf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#sqlvdvqrls .gt_left {
+#pqeufhencf .gt_left {
   text-align: left;
 }
 
-#sqlvdvqrls .gt_center {
+#pqeufhencf .gt_center {
   text-align: center;
 }
 
-#sqlvdvqrls .gt_right {
+#pqeufhencf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#sqlvdvqrls .gt_font_normal {
+#pqeufhencf .gt_font_normal {
   font-weight: normal;
 }
 
-#sqlvdvqrls .gt_font_bold {
+#pqeufhencf .gt_font_bold {
   font-weight: bold;
 }
 
-#sqlvdvqrls .gt_font_italic {
+#pqeufhencf .gt_font_italic {
   font-style: italic;
 }
 
-#sqlvdvqrls .gt_super {
+#pqeufhencf .gt_super {
   font-size: 65%;
 }
 
-#sqlvdvqrls .gt_footnote_marks {
+#pqeufhencf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#sqlvdvqrls .gt_asterisk {
+#pqeufhencf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#sqlvdvqrls .gt_indent_1 {
+#pqeufhencf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#sqlvdvqrls .gt_indent_2 {
+#pqeufhencf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#sqlvdvqrls .gt_indent_3 {
+#pqeufhencf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#sqlvdvqrls .gt_indent_4 {
+#pqeufhencf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#sqlvdvqrls .gt_indent_5 {
+#pqeufhencf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#sqlvdvqrls .katex-display {
+#pqeufhencf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#sqlvdvqrls div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#pqeufhencf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1180,23 +1214,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="vqxapjyhar" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vqxapjyhar table {
+<div id="azojdsaphj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#azojdsaphj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#vqxapjyhar thead, #vqxapjyhar tbody, #vqxapjyhar tfoot, #vqxapjyhar tr, #vqxapjyhar td, #vqxapjyhar th {
+#azojdsaphj thead, #azojdsaphj tbody, #azojdsaphj tfoot, #azojdsaphj tr, #azojdsaphj td, #azojdsaphj th {
   border-style: none;
 }
 
-#vqxapjyhar p {
+#azojdsaphj p {
   margin: 0;
   padding: 0;
 }
 
-#vqxapjyhar .gt_table {
+#azojdsaphj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1222,12 +1256,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_caption {
+#azojdsaphj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#vqxapjyhar .gt_title {
+#azojdsaphj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1239,7 +1273,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#vqxapjyhar .gt_subtitle {
+#azojdsaphj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1251,7 +1285,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#vqxapjyhar .gt_heading {
+#azojdsaphj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1263,13 +1297,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_bottom_border {
+#azojdsaphj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_col_headings {
+#azojdsaphj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1284,7 +1318,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_col_heading {
+#azojdsaphj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1304,7 +1338,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#vqxapjyhar .gt_column_spanner_outer {
+#azojdsaphj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1316,15 +1350,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#vqxapjyhar .gt_column_spanner_outer:first-child {
+#azojdsaphj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vqxapjyhar .gt_column_spanner_outer:last-child {
+#azojdsaphj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vqxapjyhar .gt_column_spanner {
+#azojdsaphj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1336,11 +1370,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#vqxapjyhar .gt_spanner_row {
+#azojdsaphj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#vqxapjyhar .gt_group_heading {
+#azojdsaphj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1366,7 +1400,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#vqxapjyhar .gt_empty_group_heading {
+#azojdsaphj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1381,15 +1415,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#vqxapjyhar .gt_from_md > :first-child {
+#azojdsaphj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vqxapjyhar .gt_from_md > :last-child {
+#azojdsaphj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vqxapjyhar .gt_row {
+#azojdsaphj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1408,7 +1442,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#vqxapjyhar .gt_stub {
+#azojdsaphj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1421,7 +1455,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vqxapjyhar .gt_stub_row_group {
+#azojdsaphj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1435,15 +1469,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#vqxapjyhar .gt_row_group_first td {
+#azojdsaphj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vqxapjyhar .gt_row_group_first th {
+#azojdsaphj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vqxapjyhar .gt_summary_row {
+#azojdsaphj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1453,16 +1487,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vqxapjyhar .gt_first_summary_row {
+#azojdsaphj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_first_summary_row.thick {
+#azojdsaphj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vqxapjyhar .gt_last_summary_row {
+#azojdsaphj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1472,7 +1506,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_grand_summary_row {
+#azojdsaphj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1482,7 +1516,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vqxapjyhar .gt_first_grand_summary_row {
+#azojdsaphj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1492,7 +1526,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_last_grand_summary_row_top {
+#azojdsaphj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1502,11 +1536,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_striped {
+#azojdsaphj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vqxapjyhar .gt_table_body {
+#azojdsaphj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1515,7 +1549,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_footnotes {
+#azojdsaphj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1529,7 +1563,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_footnote {
+#azojdsaphj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1538,7 +1572,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vqxapjyhar .gt_sourcenotes {
+#azojdsaphj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1552,7 +1586,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#vqxapjyhar .gt_sourcenote {
+#azojdsaphj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1560,72 +1594,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#vqxapjyhar .gt_left {
+#azojdsaphj .gt_left {
   text-align: left;
 }
 
-#vqxapjyhar .gt_center {
+#azojdsaphj .gt_center {
   text-align: center;
 }
 
-#vqxapjyhar .gt_right {
+#azojdsaphj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vqxapjyhar .gt_font_normal {
+#azojdsaphj .gt_font_normal {
   font-weight: normal;
 }
 
-#vqxapjyhar .gt_font_bold {
+#azojdsaphj .gt_font_bold {
   font-weight: bold;
 }
 
-#vqxapjyhar .gt_font_italic {
+#azojdsaphj .gt_font_italic {
   font-style: italic;
 }
 
-#vqxapjyhar .gt_super {
+#azojdsaphj .gt_super {
   font-size: 65%;
 }
 
-#vqxapjyhar .gt_footnote_marks {
+#azojdsaphj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vqxapjyhar .gt_asterisk {
+#azojdsaphj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vqxapjyhar .gt_indent_1 {
+#azojdsaphj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vqxapjyhar .gt_indent_2 {
+#azojdsaphj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vqxapjyhar .gt_indent_3 {
+#azojdsaphj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vqxapjyhar .gt_indent_4 {
+#azojdsaphj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vqxapjyhar .gt_indent_5 {
+#azojdsaphj .gt_indent_5 {
   text-indent: 25px;
 }
 
-#vqxapjyhar .katex-display {
+#azojdsaphj .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#vqxapjyhar div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#azojdsaphj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

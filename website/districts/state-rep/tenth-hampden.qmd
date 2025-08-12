@@ -8,19 +8,14 @@ execute:
 params:
   office_name: "State Representative"
   district_name: "Tenth Hampden"
-title: Massachusetts `r params$district_name` `r params$office_name` District
+title: "Massachusetts Tenth Hampden State Representative District"
+description: "The Massachusetts Tenth Hampden State Representative District is located entirely in Springfield and is currently represented by Democratic incumbent Carlos Gonzalez of Springfield. The district has a predominantly minority population (84%) with high poverty rates (42%), and Gonzalez has been re-elected without opposition since first winning the seat in 2014."
 ---
 
 ```{r}
 library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
-
-```{r}
-summary_text <- district_summary(params$office_name, params$district_name)
-```
-
-`r summary_text`
 
 ```{r}
 dist_map <- district_map(params$office_name, params$district_name)

@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The Second Bristol State Representative District is located entirely in the city of Attleboro and is currently represented by Democrat James K. Hawkins, who has held the seat since winning a special election in April 2018.">
 
 <title>Massachusetts Second Bristol State Representative District – mapoli</title>
 <style>
@@ -89,13 +90,42 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta property="og:description" content="">
+<meta property="og:title" content="Massachusetts Second Bristol State Representative District – mapoli">
+<meta property="og:description" content="The Second Bristol State Representative District is located entirely in the city of Attleboro and is currently represented by Democrat James K. Hawkins, who has held the seat since winning a special election in April 2018.">
 <meta property="og:site_name" content="mapoli">
-<meta name="twitter:title" content="Massachusetts r params$district_name r params$office_name District – mapoli">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Massachusetts Second Bristol State Representative District – mapoli">
+<meta name="twitter:description" content="The Second Bristol State Representative District is located entirely in the city of Attleboro and is currently represented by Democrat James K. Hawkins, who has held the seat since winning a special election in April 2018.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,6 +197,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h1 class="title">Massachusetts Second Bristol State Representative District</h1>
 </div>
 
+<div>
+  <div class="description">
+    The Second Bristol State Representative District is located entirely in the city of Attleboro and is currently represented by Democrat James K. Hawkins, who has held the seat since winning a special election in April 2018.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page-left">
@@ -181,11 +216,10 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Second Bristol State Representative District is located entirely in the city of Attleboro and is currently represented by Democrat James K. Hawkins, who has held the seat since winning a special election in April 2018.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-89266030457eafb14135" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-89266030457eafb14135">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.38143896145648,-71.33595808910196,-71.29107405039535,-71.29137132113478,-71.29053325167946,-71.28805404295952,-71.2876230426061,-71.2898582956079,-71.29004720198041,-71.28857198909219,-71.28782601341534,-71.28720383804307,-71.28599548130104,-71.28438703378447,-71.28333156130674,-71.28135940560441,-71.28041396305014,-71.27609997326385,-71.2694489806515,-71.26409699330647,-71.25773648132761,-71.252501045491,-71.24623800466179,-71.24338302738887,-71.20816208352041,-71.22251542879533,-71.30515913723416,-71.33978856959675,-71.38146295980931,-71.38143896145648],"lat":[41.91481598573155,41.94078607910878,41.9718609264249,41.96825608322568,41.96599333974565,41.96206399193307,41.95818300237998,41.95180689616596,41.950094404788,41.94980992066255,41.95002296372802,41.94942731713864,41.94944266956988,41.95063996712616,41.94464929398092,41.94436840346982,41.94636398323506,41.94973097535691,41.95273396932079,41.95408097068542,41.95394375892285,41.95454894233451,41.95436497150866,41.95384497276383,41.90885204966453,41.91224153884189,41.90311046895313,41.89847393235937,41.89354603491984,41.91481598573155]}]]],"Attleboro","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#B3DE69","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Attleboro<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Attleboro<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Attleboro - 11 of 12 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Attleboro",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[41.92583447863382,-71.29853153951177,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Attleboro.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Attleboro",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[41.89354603491984,41.9718609264249],"lng":[-71.38146295980931,-71.20816208352041]},"fitBounds":[41.89354603491984,-71.38146295980931,41.9718609264249,-71.20816208352041,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-dd8d48b75bbd4a5eb586" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-dd8d48b75bbd4a5eb586">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.38143896145648,-71.33595808910196,-71.29107405039535,-71.29137132113478,-71.29053325167946,-71.28805404295952,-71.2876230426061,-71.2898582956079,-71.29004720198041,-71.28857198909219,-71.28782601341534,-71.28720383804307,-71.28599548130104,-71.28438703378447,-71.28333156130674,-71.28135940560441,-71.28041396305014,-71.27609997326385,-71.2694489806515,-71.26409699330647,-71.25773648132761,-71.252501045491,-71.24623800466179,-71.24338302738887,-71.20816208352041,-71.22251542879533,-71.30515913723416,-71.33978856959675,-71.38146295980931,-71.38143896145648],"lat":[41.91481598573155,41.94078607910878,41.9718609264249,41.96825608322568,41.96599333974565,41.96206399193307,41.95818300237998,41.95180689616596,41.950094404788,41.94980992066255,41.95002296372802,41.94942731713864,41.94944266956988,41.95063996712616,41.94464929398092,41.94436840346982,41.94636398323506,41.94973097535691,41.95273396932079,41.95408097068542,41.95394375892285,41.95454894233451,41.95436497150866,41.95384497276383,41.90885204966453,41.91224153884189,41.90311046895313,41.89847393235937,41.89354603491984,41.91481598573155]}]]],"Attleboro","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#FCCDE5","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Attleboro<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Attleboro<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Attleboro - 11 of 12 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Attleboro",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[41.92583447863382,-71.29853153951177,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Attleboro.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Attleboro",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[41.89354603491984,41.9718609264249],"lng":[-71.38146295980931,-71.20816208352041]},"fitBounds":[41.89354603491984,-71.38146295980931,41.9718609264249,-71.20816208352041,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -195,23 +229,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="jgaqfprbvl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jgaqfprbvl table {
+<div id="nixkvgxica" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nixkvgxica table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jgaqfprbvl thead, #jgaqfprbvl tbody, #jgaqfprbvl tfoot, #jgaqfprbvl tr, #jgaqfprbvl td, #jgaqfprbvl th {
+#nixkvgxica thead, #nixkvgxica tbody, #nixkvgxica tfoot, #nixkvgxica tr, #nixkvgxica td, #nixkvgxica th {
   border-style: none;
 }
 
-#jgaqfprbvl p {
+#nixkvgxica p {
   margin: 0;
   padding: 0;
 }
 
-#jgaqfprbvl .gt_table {
+#nixkvgxica .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +271,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_caption {
+#nixkvgxica .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jgaqfprbvl .gt_title {
+#nixkvgxica .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +288,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#jgaqfprbvl .gt_subtitle {
+#nixkvgxica .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +300,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#jgaqfprbvl .gt_heading {
+#nixkvgxica .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +312,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_bottom_border {
+#nixkvgxica .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_col_headings {
+#nixkvgxica .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +333,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_col_heading {
+#nixkvgxica .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +353,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jgaqfprbvl .gt_column_spanner_outer {
+#nixkvgxica .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +365,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#jgaqfprbvl .gt_column_spanner_outer:first-child {
+#nixkvgxica .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jgaqfprbvl .gt_column_spanner_outer:last-child {
+#nixkvgxica .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jgaqfprbvl .gt_column_spanner {
+#nixkvgxica .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +385,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#jgaqfprbvl .gt_spanner_row {
+#nixkvgxica .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jgaqfprbvl .gt_group_heading {
+#nixkvgxica .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +415,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#jgaqfprbvl .gt_empty_group_heading {
+#nixkvgxica .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +430,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#jgaqfprbvl .gt_from_md > :first-child {
+#nixkvgxica .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jgaqfprbvl .gt_from_md > :last-child {
+#nixkvgxica .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jgaqfprbvl .gt_row {
+#nixkvgxica .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +457,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#jgaqfprbvl .gt_stub {
+#nixkvgxica .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +470,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jgaqfprbvl .gt_stub_row_group {
+#nixkvgxica .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +484,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#jgaqfprbvl .gt_row_group_first td {
+#nixkvgxica .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jgaqfprbvl .gt_row_group_first th {
+#nixkvgxica .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jgaqfprbvl .gt_summary_row {
+#nixkvgxica .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +502,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jgaqfprbvl .gt_first_summary_row {
+#nixkvgxica .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_first_summary_row.thick {
+#nixkvgxica .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jgaqfprbvl .gt_last_summary_row {
+#nixkvgxica .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +521,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_grand_summary_row {
+#nixkvgxica .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +531,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jgaqfprbvl .gt_first_grand_summary_row {
+#nixkvgxica .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_last_grand_summary_row_top {
+#nixkvgxica .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +551,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_striped {
+#nixkvgxica .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jgaqfprbvl .gt_table_body {
+#nixkvgxica .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_footnotes {
+#nixkvgxica .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_footnote {
+#nixkvgxica .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +587,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jgaqfprbvl .gt_sourcenotes {
+#nixkvgxica .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +601,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#jgaqfprbvl .gt_sourcenote {
+#nixkvgxica .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,72 +609,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#jgaqfprbvl .gt_left {
+#nixkvgxica .gt_left {
   text-align: left;
 }
 
-#jgaqfprbvl .gt_center {
+#nixkvgxica .gt_center {
   text-align: center;
 }
 
-#jgaqfprbvl .gt_right {
+#nixkvgxica .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jgaqfprbvl .gt_font_normal {
+#nixkvgxica .gt_font_normal {
   font-weight: normal;
 }
 
-#jgaqfprbvl .gt_font_bold {
+#nixkvgxica .gt_font_bold {
   font-weight: bold;
 }
 
-#jgaqfprbvl .gt_font_italic {
+#nixkvgxica .gt_font_italic {
   font-style: italic;
 }
 
-#jgaqfprbvl .gt_super {
+#nixkvgxica .gt_super {
   font-size: 65%;
 }
 
-#jgaqfprbvl .gt_footnote_marks {
+#nixkvgxica .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jgaqfprbvl .gt_asterisk {
+#nixkvgxica .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jgaqfprbvl .gt_indent_1 {
+#nixkvgxica .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jgaqfprbvl .gt_indent_2 {
+#nixkvgxica .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jgaqfprbvl .gt_indent_3 {
+#nixkvgxica .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jgaqfprbvl .gt_indent_4 {
+#nixkvgxica .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jgaqfprbvl .gt_indent_5 {
+#nixkvgxica .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jgaqfprbvl .katex-display {
+#nixkvgxica .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jgaqfprbvl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nixkvgxica div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -697,23 +731,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="yeklwgpeee" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yeklwgpeee table {
+<div id="obwpytssmx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#obwpytssmx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yeklwgpeee thead, #yeklwgpeee tbody, #yeklwgpeee tfoot, #yeklwgpeee tr, #yeklwgpeee td, #yeklwgpeee th {
+#obwpytssmx thead, #obwpytssmx tbody, #obwpytssmx tfoot, #obwpytssmx tr, #obwpytssmx td, #obwpytssmx th {
   border-style: none;
 }
 
-#yeklwgpeee p {
+#obwpytssmx p {
   margin: 0;
   padding: 0;
 }
 
-#yeklwgpeee .gt_table {
+#obwpytssmx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -739,12 +773,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_caption {
+#obwpytssmx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yeklwgpeee .gt_title {
+#obwpytssmx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -756,7 +790,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#yeklwgpeee .gt_subtitle {
+#obwpytssmx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -768,7 +802,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#yeklwgpeee .gt_heading {
+#obwpytssmx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -780,13 +814,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_bottom_border {
+#obwpytssmx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_col_headings {
+#obwpytssmx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -801,7 +835,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_col_heading {
+#obwpytssmx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -821,7 +855,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#yeklwgpeee .gt_column_spanner_outer {
+#obwpytssmx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -833,15 +867,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#yeklwgpeee .gt_column_spanner_outer:first-child {
+#obwpytssmx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yeklwgpeee .gt_column_spanner_outer:last-child {
+#obwpytssmx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yeklwgpeee .gt_column_spanner {
+#obwpytssmx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -853,11 +887,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#yeklwgpeee .gt_spanner_row {
+#obwpytssmx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yeklwgpeee .gt_group_heading {
+#obwpytssmx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -883,7 +917,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#yeklwgpeee .gt_empty_group_heading {
+#obwpytssmx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -898,15 +932,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#yeklwgpeee .gt_from_md > :first-child {
+#obwpytssmx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yeklwgpeee .gt_from_md > :last-child {
+#obwpytssmx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yeklwgpeee .gt_row {
+#obwpytssmx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -925,7 +959,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#yeklwgpeee .gt_stub {
+#obwpytssmx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -938,7 +972,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#yeklwgpeee .gt_stub_row_group {
+#obwpytssmx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -952,15 +986,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#yeklwgpeee .gt_row_group_first td {
+#obwpytssmx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yeklwgpeee .gt_row_group_first th {
+#obwpytssmx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yeklwgpeee .gt_summary_row {
+#obwpytssmx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +1004,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#yeklwgpeee .gt_first_summary_row {
+#obwpytssmx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_first_summary_row.thick {
+#obwpytssmx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yeklwgpeee .gt_last_summary_row {
+#obwpytssmx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +1023,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_grand_summary_row {
+#obwpytssmx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1033,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#yeklwgpeee .gt_first_grand_summary_row {
+#obwpytssmx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,7 +1043,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_last_grand_summary_row_top {
+#obwpytssmx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,11 +1053,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_striped {
+#obwpytssmx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yeklwgpeee .gt_table_body {
+#obwpytssmx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1032,7 +1066,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_footnotes {
+#obwpytssmx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1046,7 +1080,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_footnote {
+#obwpytssmx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1055,7 +1089,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#yeklwgpeee .gt_sourcenotes {
+#obwpytssmx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1069,7 +1103,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#yeklwgpeee .gt_sourcenote {
+#obwpytssmx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1077,72 +1111,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#yeklwgpeee .gt_left {
+#obwpytssmx .gt_left {
   text-align: left;
 }
 
-#yeklwgpeee .gt_center {
+#obwpytssmx .gt_center {
   text-align: center;
 }
 
-#yeklwgpeee .gt_right {
+#obwpytssmx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yeklwgpeee .gt_font_normal {
+#obwpytssmx .gt_font_normal {
   font-weight: normal;
 }
 
-#yeklwgpeee .gt_font_bold {
+#obwpytssmx .gt_font_bold {
   font-weight: bold;
 }
 
-#yeklwgpeee .gt_font_italic {
+#obwpytssmx .gt_font_italic {
   font-style: italic;
 }
 
-#yeklwgpeee .gt_super {
+#obwpytssmx .gt_super {
   font-size: 65%;
 }
 
-#yeklwgpeee .gt_footnote_marks {
+#obwpytssmx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yeklwgpeee .gt_asterisk {
+#obwpytssmx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yeklwgpeee .gt_indent_1 {
+#obwpytssmx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yeklwgpeee .gt_indent_2 {
+#obwpytssmx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yeklwgpeee .gt_indent_3 {
+#obwpytssmx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yeklwgpeee .gt_indent_4 {
+#obwpytssmx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yeklwgpeee .gt_indent_5 {
+#obwpytssmx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#yeklwgpeee .katex-display {
+#obwpytssmx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#yeklwgpeee div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#obwpytssmx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1172,23 +1206,23 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="kgogptswkg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kgogptswkg table {
+<div id="nhafjjlfqd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nhafjjlfqd table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kgogptswkg thead, #kgogptswkg tbody, #kgogptswkg tfoot, #kgogptswkg tr, #kgogptswkg td, #kgogptswkg th {
+#nhafjjlfqd thead, #nhafjjlfqd tbody, #nhafjjlfqd tfoot, #nhafjjlfqd tr, #nhafjjlfqd td, #nhafjjlfqd th {
   border-style: none;
 }
 
-#kgogptswkg p {
+#nhafjjlfqd p {
   margin: 0;
   padding: 0;
 }
 
-#kgogptswkg .gt_table {
+#nhafjjlfqd .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1214,12 +1248,12 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_caption {
+#nhafjjlfqd .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kgogptswkg .gt_title {
+#nhafjjlfqd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1231,7 +1265,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#kgogptswkg .gt_subtitle {
+#nhafjjlfqd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1243,7 +1277,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#kgogptswkg .gt_heading {
+#nhafjjlfqd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1255,13 +1289,13 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_bottom_border {
+#nhafjjlfqd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_col_headings {
+#nhafjjlfqd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1276,7 +1310,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_col_heading {
+#nhafjjlfqd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1296,7 +1330,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#kgogptswkg .gt_column_spanner_outer {
+#nhafjjlfqd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1308,15 +1342,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#kgogptswkg .gt_column_spanner_outer:first-child {
+#nhafjjlfqd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kgogptswkg .gt_column_spanner_outer:last-child {
+#nhafjjlfqd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kgogptswkg .gt_column_spanner {
+#nhafjjlfqd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1328,11 +1362,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#kgogptswkg .gt_spanner_row {
+#nhafjjlfqd .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kgogptswkg .gt_group_heading {
+#nhafjjlfqd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1358,7 +1392,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#kgogptswkg .gt_empty_group_heading {
+#nhafjjlfqd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1373,15 +1407,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#kgogptswkg .gt_from_md > :first-child {
+#nhafjjlfqd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kgogptswkg .gt_from_md > :last-child {
+#nhafjjlfqd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kgogptswkg .gt_row {
+#nhafjjlfqd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1400,7 +1434,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#kgogptswkg .gt_stub {
+#nhafjjlfqd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1413,7 +1447,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kgogptswkg .gt_stub_row_group {
+#nhafjjlfqd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1427,15 +1461,15 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#kgogptswkg .gt_row_group_first td {
+#nhafjjlfqd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kgogptswkg .gt_row_group_first th {
+#nhafjjlfqd .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kgogptswkg .gt_summary_row {
+#nhafjjlfqd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1445,16 +1479,16 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kgogptswkg .gt_first_summary_row {
+#nhafjjlfqd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_first_summary_row.thick {
+#nhafjjlfqd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kgogptswkg .gt_last_summary_row {
+#nhafjjlfqd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1464,7 +1498,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_grand_summary_row {
+#nhafjjlfqd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1474,7 +1508,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kgogptswkg .gt_first_grand_summary_row {
+#nhafjjlfqd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1484,7 +1518,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_last_grand_summary_row_top {
+#nhafjjlfqd .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1494,11 +1528,11 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_striped {
+#nhafjjlfqd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kgogptswkg .gt_table_body {
+#nhafjjlfqd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1507,7 +1541,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_footnotes {
+#nhafjjlfqd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1521,7 +1555,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_footnote {
+#nhafjjlfqd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1530,7 +1564,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kgogptswkg .gt_sourcenotes {
+#nhafjjlfqd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1544,7 +1578,7 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#kgogptswkg .gt_sourcenote {
+#nhafjjlfqd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1552,72 +1586,72 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#kgogptswkg .gt_left {
+#nhafjjlfqd .gt_left {
   text-align: left;
 }
 
-#kgogptswkg .gt_center {
+#nhafjjlfqd .gt_center {
   text-align: center;
 }
 
-#kgogptswkg .gt_right {
+#nhafjjlfqd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kgogptswkg .gt_font_normal {
+#nhafjjlfqd .gt_font_normal {
   font-weight: normal;
 }
 
-#kgogptswkg .gt_font_bold {
+#nhafjjlfqd .gt_font_bold {
   font-weight: bold;
 }
 
-#kgogptswkg .gt_font_italic {
+#nhafjjlfqd .gt_font_italic {
   font-style: italic;
 }
 
-#kgogptswkg .gt_super {
+#nhafjjlfqd .gt_super {
   font-size: 65%;
 }
 
-#kgogptswkg .gt_footnote_marks {
+#nhafjjlfqd .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kgogptswkg .gt_asterisk {
+#nhafjjlfqd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kgogptswkg .gt_indent_1 {
+#nhafjjlfqd .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kgogptswkg .gt_indent_2 {
+#nhafjjlfqd .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kgogptswkg .gt_indent_3 {
+#nhafjjlfqd .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kgogptswkg .gt_indent_4 {
+#nhafjjlfqd .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kgogptswkg .gt_indent_5 {
+#nhafjjlfqd .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kgogptswkg .katex-display {
+#nhafjjlfqd .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kgogptswkg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nhafjjlfqd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
