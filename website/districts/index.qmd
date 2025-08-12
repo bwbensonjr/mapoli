@@ -6,7 +6,7 @@ execute:
   echo: false
   warning: false
 title: "Massachusetts Legislative Districts"
-canonical-url: "https://mapoli.us/districts/"
+canonical-url: true
 ---
 
 ```{r}
