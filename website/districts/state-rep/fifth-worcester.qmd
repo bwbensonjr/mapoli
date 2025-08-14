@@ -10,6 +10,10 @@ params:
   district_name: "Fifth Worcester"
 title: "Massachusetts Fifth Worcester State Representative District"
 description: "The Fifth Worcester State Representative District is currently represented by Republican Donald R. Berthiaume, Jr. of Spencer, who has held the seat since 2014. The district encompasses several rural towns in central Massachusetts, including Barre, Brookfield, East Brookfield, Hardwick, Hubbardston, parts of Leicester and Spencer, New Braintree, North Brookfield, Oakham, part of Ware, and West Brookfield."
+open-graph:
+  image: "fifth-worcester.png"
+twitter-card:
+  image: "fifth-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

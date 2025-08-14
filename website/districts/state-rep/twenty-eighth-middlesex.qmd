@@ -11,6 +11,10 @@ params:
 title: "Massachusetts Twenty-Eighth Middlesex State Representative District"
 description: "The Twenty-Eighth Middlesex State Representative District is located entirely within the city of Everett, Massachusetts. The current incumbent is Democratic State Representative Joseph W. McGonagle, Jr. of Everett, who has represented the district since 2014.
 "
+open-graph:
+  image: "twenty-eighth-middlesex.png"
+twitter-card:
+  image: "twenty-eighth-middlesex.png"
 ---
 
 ```{r}
@@ -18,8 +22,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Second Berkshire"
 title: "Massachusetts Second Berkshire State Representative District"
 description: "The Massachusetts Second Berkshire State Representative District is represented by incumbent Democrat Tricia Farley-Bouvier of Pittsfield. The district encompasses portions of Pittsfield and has a population of 43,730."
+open-graph:
+  image: "second-berkshire.png"
+twitter-card:
+  image: "second-berkshire.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

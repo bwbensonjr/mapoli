@@ -10,6 +10,10 @@ params:
   district_name: "Twenty-Seventh Middlesex"
 title: "Massachusetts Twenty-Seventh Middlesex State Representative District"
 description: "The Massachusetts Twenty-Seventh Middlesex State Representative District is located entirely within Somerville and is currently represented by Democrat Erika Uyterhoeven, who has held the seat since 2021. The district is highly Democratic, with the incumbent typically winning without Republican opposition."
+open-graph:
+  image: "twenty-seventh-middlesex.png"
+twitter-card:
+  image: "twenty-seventh-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

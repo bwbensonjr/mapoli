@@ -10,6 +10,10 @@ params:
   district_name: "Cape and Islands"
 title: "Massachusetts Cape and Islands State Senate District"
 description: "The Massachusetts Cape and Islands State Senate District covers the Cape Cod region, Martha's Vineyard, and Nantucket, spanning 19 towns with a total population of 169,739 across 407 square miles. The current incumbent is Julian Andre Cyr, a Democrat from Provincetown who has represented the district since 2017 and was most recently reelected in 2024."
+open-graph:
+  image: "cape-and-islands.png"
+twitter-card:
+  image: "cape-and-islands.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

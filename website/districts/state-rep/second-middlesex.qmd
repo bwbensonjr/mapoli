@@ -10,6 +10,10 @@ params:
   district_name: "Second Middlesex"
 title: "Massachusetts Second Middlesex State Representative District"
 description: "This state legislative district encompasses parts of Chelmsford and all of Littleton and Westford. It is currently represented by Democratic incumbent James Arciero of Westford, who has held the seat since 2008."
+open-graph:
+  image: "second-middlesex.png"
+twitter-card:
+  image: "second-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Seventh Worcester"
 title: "Massachusetts Seventh Worcester State Representative District"
 description: "This district covers parts of Auburn, Charlton, Leicester, Millbury, and Oxford. It has a population of 43,511 and is predominantly white (89%). The current incumbent is Paul K. Frost, a Republican from Auburn, who has held this seat since 1997 and has been consistently re-elected, most recently in 2022 with 75% of the vote against Terry Burke Dotson."
+open-graph:
+  image: "seventh-worcester.png"
+twitter-card:
+  image: "seventh-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

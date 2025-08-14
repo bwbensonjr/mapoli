@@ -10,6 +10,10 @@ params:
   district_name: "Third Essex"
 title: "Massachusetts Third Essex State Representative District"
 description: "The Third Essex State Representative District in Massachusetts is represented by Democratic incumbent Andres X. Vargas from Haverhill. The district encompasses 18 precincts in Haverhill and has a population of approximately 46,201 residents."
+open-graph:
+  image: "third-essex.png"
+twitter-card:
+  image: "third-essex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

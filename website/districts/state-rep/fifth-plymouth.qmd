@@ -10,6 +10,10 @@ params:
   district_name: "Fifth Plymouth"
 title: "Massachusetts Fifth Plymouth State Representative District"
 description: "The Massachusetts Fifth Plymouth State Representative District is currently represented by Republican incumbent David F. Decoste of Norwell, who is running unopposed in the 2024 election. The district includes the towns of Hanover, Hanson, Norwell, and Rockland in Plymouth County."
+open-graph:
+  image: "fifth-plymouth.png"
+twitter-card:
+  image: "fifth-plymouth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

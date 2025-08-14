@@ -10,6 +10,10 @@ params:
   district_name: "Sixteenth Essex"
 title: "Massachusetts Sixteenth Essex State Representative District"
 description: "This Massachusetts Sixteenth Essex State Representative District is primarily located in the cities of Lawrence and Methuen. The current incumbent is Francisco E. Paulino, a Democrat from Methuen, who was elected in 2022 and is running for reelection in 2024."
+open-graph:
+  image: "sixteenth-essex.png"
+twitter-card:
+  image: "sixteenth-essex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

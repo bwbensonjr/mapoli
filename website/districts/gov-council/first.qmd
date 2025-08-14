@@ -10,6 +10,10 @@ params:
   district_name: "First"
 title: "Massachusetts First Governor's Council District"
 description: "The First Governor's Council District in Massachusetts encompasses southeastern Massachusetts, including Cape Cod, the Islands (Martha's Vineyard and Nantucket), and the South Coast region. The current incumbent is Democrat Joseph C. Ferreira of Swansea, who has held the position since 2014 and won his most recent election in 2022 with 100% of the vote (unopposed)."
+open-graph:
+  image: "first.png"
+twitter-card:
+  image: "first.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

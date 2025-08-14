@@ -10,6 +10,10 @@ params:
   district_name: "Eleventh Worcester"
 title: "Massachusetts Eleventh Worcester State Representative District"
 description: "The Massachusetts Eleventh Worcester State Representative District comprises Shrewsbury and parts of Westborough, covering 26 square miles with a population of 42,109. The current incumbent is Republican Hannah E. Kane of Shrewsbury, who has held the seat since winning a special election in 2015."
+open-graph:
+  image: "eleventh-worcester.png"
+twitter-card:
+  image: "eleventh-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

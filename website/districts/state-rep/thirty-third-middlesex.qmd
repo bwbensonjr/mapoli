@@ -10,6 +10,10 @@ params:
   district_name: "Thirty-Third Middlesex"
 title: "Massachusetts Thirty-Third Middlesex State Representative District"
 description: "The Thirty-Third Middlesex State Representative District is located entirely within Malden, covering 18 precincts of the city. It is currently represented by Democrat Steven Ultrino of Malden, who has won every election since 2014, running unopposed in the most recent elections."
+open-graph:
+  image: "thirty-third-middlesex.png"
+twitter-card:
+  image: "thirty-third-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

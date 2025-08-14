@@ -10,6 +10,10 @@ params:
   district_name: "Third Plymouth"
 title: "Massachusetts Third Plymouth State Representative District"
 description: "The Massachusetts Third Plymouth State Representative District includes the towns of Cohasset, Hingham, and Hull. The current incumbent is Joan Meschino (D-Hull), who has represented the district since 2016 and has run unopposed in the last three election cycles (2020, 2022, and 2024)."
+open-graph:
+  image: "third-plymouth.png"
+twitter-card:
+  image: "third-plymouth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Thirty-Second Middlesex"
 title: "Massachusetts Thirty-Second Middlesex State Representative District"
 description: "The Massachusetts Thirty-Second Middlesex State Representative District covers parts of Malden, all of Melrose, and precincts 4, 5, and 6 in Wakefield. The district is currently represented by Democratic incumbent Kate Lipper-Garabedian of Melrose, who has held the seat since winning a special election in March 2020."
+open-graph:
+  image: "thirty-second-middlesex.png"
+twitter-card:
+  image: "thirty-second-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

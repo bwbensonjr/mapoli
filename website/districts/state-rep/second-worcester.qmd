@@ -10,6 +10,10 @@ params:
   district_name: "Second Worcester"
 title: "Massachusetts Second Worcester State Representative District"
 description: "The Second Worcester State Representative District in Massachusetts is represented by incumbent Democrat Jonathan D. Zlotnik of Gardner, who has held the seat since 2013. The district includes the cities/towns of Ashburnham, Gardner, Templeton, and parts of Winchendon (precincts 2 and 3), covering a mostly rural area in central Massachusetts."
+open-graph:
+  image: "second-worcester.png"
+twitter-card:
+  image: "second-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

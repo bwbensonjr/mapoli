@@ -10,6 +10,10 @@ params:
   district_name: "Sixth Bristol"
 title: "Massachusetts Sixth Bristol State Representative District"
 description: "The Massachusetts Sixth Bristol State Representative District includes parts of Fall River and one precinct in Freetown, with a population of 42,660. The current incumbent is Democrat Carole A. Fiola of Fall River, who has held the seat since winning a special election in September 2013."
+open-graph:
+  image: "sixth-bristol.png"
+twitter-card:
+  image: "sixth-bristol.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

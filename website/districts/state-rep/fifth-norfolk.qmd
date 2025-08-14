@@ -10,6 +10,10 @@ params:
   district_name: "Fifth Norfolk"
 title: "Massachusetts Fifth Norfolk State Representative District"
 description: "The Fifth Norfolk State Representative District is located in Massachusetts and includes parts of Braintree and precincts 1 and 2 of Holbrook. The current incumbent is Mark J. Cusack, a Democrat from Braintree who has held this seat since 2010 and ran unopposed in the 2022 and 2024 elections."
+open-graph:
+  image: "fifth-norfolk.png"
+twitter-card:
+  image: "fifth-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

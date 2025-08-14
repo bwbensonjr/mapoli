@@ -10,6 +10,10 @@ params:
   district_name: "Sixteenth Worcester"
 title: "Massachusetts Sixteenth Worcester State Representative District"
 description: "Massachusetts Sixteenth Worcester State Representative District encompasses 13 precincts in Worcester. The current incumbent is Democrat Daniel M. Donahue of Worcester, who has represented the district since winning a special election in 2013 and has run unopposed in most recent elections."
+open-graph:
+  image: "sixteenth-worcester.png"
+twitter-card:
+  image: "sixteenth-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

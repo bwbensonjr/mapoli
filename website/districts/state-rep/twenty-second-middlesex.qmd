@@ -10,6 +10,10 @@ params:
   district_name: "Twenty-Second Middlesex"
 title: "Massachusetts Twenty-Second Middlesex State Representative District"
 description: "This district covers the town of Billerica and is currently represented by Republican incumbent Marc T. Lombardo, who has held the seat since 2010 and won his most recent election in 2022 with 54% of the vote against Democratic challenger Teresa Nicole English."
+open-graph:
+  image: "twenty-second-middlesex.png"
+twitter-card:
+  image: "twenty-second-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

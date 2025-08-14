@@ -20,7 +20,13 @@ def main():
             continue
         if args.district and (args.district != district_name):
             continue
-        generate_district_page(office_name, district_name, summary)
+        image_name = f"{district_slug(district_name)}.png"
+        generate_district_page(
+            office_name,
+            district_name,
+            summary,
+            image_name,
+        )
 
 def local_file_path(file_name):
     file_path = f"{pathlib.Path(__file__).parent}/{file_name}"
@@ -76,7 +82,7 @@ def generate_office_page(office_name):
     with open(output_file, "w") as f:
         f.write(file_contents)
 
-def generate_district_page(office_name, district_name, summary):
+def generate_district_page(office_name, district_name, summary, image_name):
     output_file = district_file(office_name, district_name)
     print(f"Generating district page {office_name} - {district_name} - {output_file}...")
     with open(here("website/_gen/district_page.qmd")) as f:
@@ -86,6 +92,7 @@ def generate_district_page(office_name, district_name, summary):
             "office_name": office_name,
             "district_name": district_name,
             "description": summary,
+            "image_name": image_name,
         }
     )
     with open(output_file, "w") as f:

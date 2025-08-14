@@ -10,6 +10,10 @@ params:
   district_name: "Sixth Middlesex"
 title: "Massachusetts Sixth Middlesex State Representative District"
 description: "The Massachusetts Sixth Middlesex State Representative District encompasses Framingham with a diverse population of 40,033 residents. The current incumbent is Democrat Priscila S. Sousa from Framingham, who won reelection in 2022 and 2024 with 100% of the vote."
+open-graph:
+  image: "sixth-middlesex.png"
+twitter-card:
+  image: "sixth-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

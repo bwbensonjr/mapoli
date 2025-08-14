@@ -10,6 +10,10 @@ params:
   district_name: "Worcester and Hampshire"
 title: "Massachusetts Worcester and Hampshire State Senate District"
 description: "This state senate district, currently represented by Peter J. Durant (R-Spencer) who won the seat in a 2023 special election, covers approximately 617 square miles of central Massachusetts. The district includes 21 municipalities, primarily rural and suburban towns in Worcester and Hampshire counties, along with several precincts in the city of Worcester."
+open-graph:
+  image: "worcester-and-hampshire.png"
+twitter-card:
+  image: "worcester-and-hampshire.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

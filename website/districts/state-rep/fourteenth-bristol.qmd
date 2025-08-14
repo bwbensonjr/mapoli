@@ -10,6 +10,10 @@ params:
   district_name: "Fourteenth Bristol"
 title: "Massachusetts Fourteenth Bristol State Representative District"
 description: "The Massachusetts Fourteenth Bristol State Representative District is currently represented by Democrat Adam J. Scanlon of North Attleborough, who was most recently reelected in 2024. The district encompasses portions of Attleboro, Mansfield, and North Attleborough with a population of approximately 42,608."
+open-graph:
+  image: "fourteenth-bristol.png"
+twitter-card:
+  image: "fourteenth-bristol.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

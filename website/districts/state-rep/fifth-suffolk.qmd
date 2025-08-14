@@ -10,6 +10,10 @@ params:
   district_name: "Fifth Suffolk"
 title: "Massachusetts Fifth Suffolk State Representative District"
 description: "The Fifth Suffolk State Representative District is located in Boston, encompassing parts of neighborhoods including Dorchester and Roxbury. The district is currently represented by Democratic incumbent Christopher J. Worrell of Boston, who was first elected in 2022. The district is majority-minority with 92% of residents identifying as non-white, particularly Black (48%) and Hispanic (29%) populations."
+open-graph:
+  image: "fifth-suffolk.png"
+twitter-card:
+  image: "fifth-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Fifth"
 title: "Massachusetts Fifth Governor's Council District"
 description: "The Massachusetts Fifth Governor's Council District covers northeast Massachusetts including cities like Lawrence, Lowell, Salem, and Gloucester, spanning 35 municipalities with a population of 864,180. The current incumbent is Eunice Delice Zeigler (D-Methuen), who won the 2024 election with 47% of the vote against Republican Anne Manning-Martin (41%) and independent Jody Elliott (12%). The district has predominantly elected Democratic representatives since at least 1992."
+open-graph:
+  image: "fifth.png"
+twitter-card:
+  image: "fifth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

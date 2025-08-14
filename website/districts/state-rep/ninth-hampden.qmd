@@ -10,6 +10,10 @@ params:
   district_name: "Ninth Hampden"
 title: "Massachusetts Ninth Hampden State Representative District"
 description: "The Massachusetts Ninth Hampden State Representative District is located entirely within Springfield, comprising various precincts across the city. The current incumbent is Orlando Ramos, a Democrat from Springfield, who has held the seat since 2020 and was most recently reelected in 2022 with 100% of the vote."
+open-graph:
+  image: "ninth-hampden.png"
+twitter-card:
+  image: "ninth-hampden.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

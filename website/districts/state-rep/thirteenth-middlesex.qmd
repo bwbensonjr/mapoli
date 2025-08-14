@@ -10,6 +10,10 @@ params:
   district_name: "Thirteenth Middlesex"
 title: "Massachusetts Thirteenth Middlesex State Representative District"
 description: "This legislative district encompasses parts of Concord, Lincoln, Marlborough, Sudbury, and Wayland. The current incumbent is Democrat Carmine Lawrence Gentile from Sudbury, who has represented the district since 2014 and most recently won reelection in 2024 with 74% of the vote."
+open-graph:
+  image: "thirteenth-middlesex.png"
+twitter-card:
+  image: "thirteenth-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

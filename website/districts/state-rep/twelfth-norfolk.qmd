@@ -10,6 +10,10 @@ params:
   district_name: "Twelfth Norfolk"
 title: "Massachusetts Twelfth Norfolk State Representative District"
 description: "The Massachusetts Twelfth Norfolk State Representative District is represented by incumbent Democrat John H. Rogers of Norwood, who has held the seat since at least 1992. The district covers the town of Norwood and several precincts in Walpole, with a population of about 44,415 people."
+open-graph:
+  image: "twelfth-norfolk.png"
+twitter-card:
+  image: "twelfth-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

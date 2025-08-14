@@ -10,6 +10,10 @@ params:
   district_name: "Second Bristol"
 title: "Massachusetts Second Bristol State Representative District"
 description: "The Second Bristol State Representative District is located entirely in the city of Attleboro and is currently represented by Democrat James K. Hawkins, who has held the seat since winning a special election in April 2018."
+open-graph:
+  image: "second-bristol.png"
+twitter-card:
+  image: "second-bristol.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

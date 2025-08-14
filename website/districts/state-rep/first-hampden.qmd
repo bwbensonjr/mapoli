@@ -10,6 +10,10 @@ params:
   district_name: "First Hampden"
 title: "Massachusetts First Hampden State Representative District"
 description: "The Massachusetts First Hampden State Representative District encompasses Brimfield, Holland, Palmer, Sturbridge, Wales, parts of Ware (precincts B and C), and Warren, covering 197 square miles in western Massachusetts. The district is currently represented by Republican incumbent Todd M. Smola of Warren, who has held the seat since 2004 and was most recently reelected in 2022 without opposition."
+open-graph:
+  image: "first-hampden.png"
+twitter-card:
+  image: "first-hampden.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

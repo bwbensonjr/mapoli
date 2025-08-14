@@ -10,6 +10,10 @@ params:
   district_name: "Barnstable, Dukes and Nantucket"
 title: "Massachusetts Barnstable, Dukes and Nantucket State Representative District"
 description: "The Barnstable, Dukes and Nantucket State Representative District in Massachusetts is currently represented by Democrat Thomas W. Moakley of Falmouth. The district encompasses Martha's Vineyard, Nantucket, Gosnold, and portions of Falmouth on Cape Cod."
+open-graph:
+  image: "barnstable-dukes-and-nantucket.png"
+twitter-card:
+  image: "barnstable-dukes-and-nantucket.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

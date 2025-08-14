@@ -7,7 +7,11 @@ execute:
   warning: false
 params:
   office_name: "State Representative"
-title: Massachusetts `r params$office_name` Districts
+title: "Massachusetts State Representative Districts"
+open-graph:
+  image: "statewide-map.png"
+twitter-card:
+  image: "statewide-map.png"
 canonical-url: true
 ---
 
@@ -16,8 +20,15 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
+```{r, include=FALSE}
+## Hidden chunk to produce static map
+off_map <- office_map(params$office_name)
+save_office_map_image(tmap_leaflet(off_map), params$office_name)
+```
+
 ```{r}
-office_map(params$office_name)
+## Display interactive map
+off_map
 ```
 
 <br/>

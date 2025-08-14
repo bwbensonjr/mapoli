@@ -10,6 +10,10 @@ params:
   district_name: "Ninth"
 title: "Massachusetts Ninth U.S. House District"
 description: "The Massachusetts Ninth U.S. House District is currently represented by Democratic incumbent Bill Keating of Bourne, who won re-election in 2024 with 57% of the vote. The district covers southeastern Massachusetts, including Cape Cod, the Islands (Martha's Vineyard and Nantucket), and portions of the South Shore and South Coast, encompassing numerous towns from New Bedford to Provincetown."
+open-graph:
+  image: "ninth.png"
+twitter-card:
+  image: "ninth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

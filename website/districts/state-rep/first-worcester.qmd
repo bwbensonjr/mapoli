@@ -10,6 +10,10 @@ params:
   district_name: "First Worcester"
 title: "Massachusetts First Worcester State Representative District"
 description: "The Massachusetts First Worcester State Representative District is currently represented by Republican Kimberly N. Ferguson from Holden. The district includes the communities of Holden, Paxton, Princeton, Rutland, and Westminster in central Massachusetts, covering 161 square miles with a population of 45,656."
+open-graph:
+  image: "first-worcester.png"
+twitter-card:
+  image: "first-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

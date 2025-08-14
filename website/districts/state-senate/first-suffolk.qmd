@@ -10,6 +10,10 @@ params:
   district_name: "First Suffolk"
 title: "Massachusetts First Suffolk State Senate District"
 description: "The Massachusetts First Suffolk State Senate District is currently represented by Democratic incumbent Nicholas P. Collins from Boston. The district includes parts of Boston, covering 12 square miles with a population of 179,012, and encompasses a diverse area with 54% minority population."
+open-graph:
+  image: "first-suffolk.png"
+twitter-card:
+  image: "first-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

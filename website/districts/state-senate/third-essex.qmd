@@ -10,6 +10,10 @@ params:
   district_name: "Third Essex"
 title: "Massachusetts Third Essex State Senate District"
 description: "The Massachusetts Third Essex State Senate District is currently represented by Democrat Brendan Peter Crighton of Lynn, who has held the seat since winning a special election in 2018 and has run unopposed in most elections. The district includes Lynn, Lynnfield, Marblehead, Nahant, Saugus, and Swampscott, covering 42 square miles with a population of 179,487."
+open-graph:
+  image: "third-essex.png"
+twitter-card:
+  image: "third-essex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

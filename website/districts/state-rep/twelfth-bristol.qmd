@@ -10,6 +10,10 @@ params:
   district_name: "Twelfth Bristol"
 title: "Massachusetts Twelfth Bristol State Representative District"
 description: "The Massachusetts Twelfth Bristol State Representative District covers Berkley, Lakeville, parts of Middleborough (precincts 2, 4, 5, 7), and parts of Taunton (precincts 3-A, 3-B, 4-A, 4-B). The current incumbent is Norman J. Orrall, a Republican from Lakeville, who has held the seat since winning election in 2018."
+open-graph:
+  image: "twelfth-bristol.png"
+twitter-card:
+  image: "twelfth-bristol.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

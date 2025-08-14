@@ -10,6 +10,10 @@ params:
   district_name: "Eleventh Norfolk"
 title: "Massachusetts Eleventh Norfolk State Representative District"
 description: "The Massachusetts Eleventh Norfolk State Representative District is currently represented by incumbent Democrat Paul McMurtry of Dedham, who has held the seat since 2007. The district includes areas of Dedham, Walpole, and Westwood, with a predominantly white population (80%) and covering approximately 26 square miles in the Norfolk County area."
+open-graph:
+  image: "eleventh-norfolk.png"
+twitter-card:
+  image: "eleventh-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

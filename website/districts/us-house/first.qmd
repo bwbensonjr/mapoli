@@ -10,6 +10,10 @@ params:
   district_name: "First"
 title: "Massachusetts First U.S. House District"
 description: "The First U.S. House District in Massachusetts is represented by incumbent Richard E. Neal (D-Springfield), who has held the seat since 2012. The district covers much of western Massachusetts, including Springfield, Pittsfield, Holyoke, and numerous towns across Berkshire, Hampden, Hampshire, Franklin, and Worcester counties, spanning 2,293 square miles."
+open-graph:
+  image: "first.png"
+twitter-card:
+  image: "first.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

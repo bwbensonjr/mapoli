@@ -10,6 +10,10 @@ params:
   district_name: "Eighth Worcester"
 title: "Massachusetts Eighth Worcester State Representative District"
 description: "The Massachusetts Eighth Worcester State Representative District is currently represented by Republican Michael J. Soter of Bellingham, who has held the seat since winning election in 2018. The district covers portions of Bellingham, Blackstone, Medway, Millville, and Uxbridge, with a population of approximately 43,499 residents."
+open-graph:
+  image: "eighth-worcester.png"
+twitter-card:
+  image: "eighth-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

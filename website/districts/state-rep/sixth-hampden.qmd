@@ -10,6 +10,10 @@ params:
   district_name: "Sixth Hampden"
 title: "Massachusetts Sixth Hampden State Representative District"
 description: "The Massachusetts Sixth Hampden State Representative District includes portions of Agawam, Chicopee, West Springfield, and Westfield, with a population of approximately 43,764. The current incumbent is Democratic Representative Michael J. Finn of West Springfield, who has held the seat since 2010 and has run unopposed in most recent elections."
+open-graph:
+  image: "sixth-hampden.png"
+twitter-card:
+  image: "sixth-hampden.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "First Norfolk"
 title: "Massachusetts First Norfolk State Representative District"
 description: "The First Norfolk State Representative District in Massachusetts covers parts of Quincy and Randolph, comprising about 49,065 residents across 13 square miles. The district is currently represented by Bruce J. Ayers, a Democrat from Quincy who has been consistently reelected without opposition since 2006, with his most recent contested election being in 2004."
+open-graph:
+  image: "first-norfolk.png"
+twitter-card:
+  image: "first-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

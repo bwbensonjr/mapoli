@@ -10,6 +10,10 @@ params:
   district_name: "First Hampshire"
 title: "Massachusetts First Hampshire State Representative District"
 description: "This Massachusetts State Representative district, known as the First Hampshire District, includes Northampton and surrounding towns. The current incumbent is Lindsay N. Sabadosa (D-Northampton), who has represented the district since winning election in 2018 and has run unopposed in all her elections."
+open-graph:
+  image: "first-hampshire.png"
+twitter-card:
+  image: "first-hampshire.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Second Suffolk"
 title: "Massachusetts Second Suffolk State Representative District"
 description: "The Massachusetts Second Suffolk State Representative District is currently represented by incumbent Daniel J. Ryan (D-Boston), who has held the seat since winning a special election in 2014 and has run unopposed in subsequent elections. The district includes portions of Boston, Cambridge, and Everett, with a population of approximately 42,463 residents."
+open-graph:
+  image: "second-suffolk.png"
+twitter-card:
+  image: "second-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Bristol and Norfolk"
 title: "Massachusetts Bristol and Norfolk State Senate District"
 description: "The Massachusetts Bristol and Norfolk State Senate District is currently represented by Democratic incumbent Paul R. Feeney from Foxborough. The district covers parts of southeastern Massachusetts including Attleboro, Canton, Foxborough, Mansfield, North Attleborough, Norton, and Sharon."
+open-graph:
+  image: "bristol-and-norfolk.png"
+twitter-card:
+  image: "bristol-and-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

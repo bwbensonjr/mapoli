@@ -10,6 +10,10 @@ params:
   district_name: "Sixteenth Suffolk"
 title: "Massachusetts Sixteenth Suffolk State Representative District"
 description: "The Massachusetts Sixteenth Suffolk State Representative District is represented by incumbent Democrat Jessica Ann Giannino from Revere. The district encompasses most of Revere and a small portion of Saugus, with a population of approximately 40,000 residents."
+open-graph:
+  image: "sixteenth-suffolk.png"
+twitter-card:
+  image: "sixteenth-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

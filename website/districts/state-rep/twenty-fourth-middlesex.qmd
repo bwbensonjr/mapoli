@@ -10,6 +10,10 @@ params:
   district_name: "Twenty-Fourth Middlesex"
 title: "Massachusetts Twenty-Fourth Middlesex State Representative District"
 description: "The Massachusetts Twenty-Fourth Middlesex State Representative District is currently represented by incumbent David M. Rogers (D-Cambridge), who has run unopposed in every election since 2014. The district covers parts of Arlington, Belmont, and Cambridge, encompassing approximately 7 square miles with a population of 46,340."
+open-graph:
+  image: "twenty-fourth-middlesex.png"
+twitter-card:
+  image: "twenty-fourth-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

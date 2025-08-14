@@ -10,6 +10,10 @@ params:
   district_name: "Norfolk, Plymouth and Bristol"
 title: "Massachusetts Norfolk, Plymouth and Bristol State Senate District"
 description: "This is a Massachusetts state senate district with an incumbent Democrat, William J. Driscoll, Jr. of Milton (who appears to be replacing Walter F. Timilty, Jr.). The district includes parts of Braintree and Randolph, as well as the towns of Bridgewater, Easton, Milton, Stoughton, and West Bridgewater, covering an area of 120 square miles with a population of 166,202."
+open-graph:
+  image: "norfolk-plymouth-and-bristol.png"
+twitter-card:
+  image: "norfolk-plymouth-and-bristol.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

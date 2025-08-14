@@ -10,6 +10,10 @@ params:
   district_name: "Eleventh Suffolk"
 title: "Massachusetts Eleventh Suffolk State Representative District"
 description: "The Massachusetts Eleventh Suffolk State Representative District covers parts of Chelsea and Everett, with a diverse population that is predominantly Hispanic (65%). The current incumbent is Democratic Representative Judith A. Garcia of Chelsea, who was first elected in 2022, winning with 73% of the vote against Republican Todd B. Taylor."
+open-graph:
+  image: "eleventh-suffolk.png"
+twitter-card:
+  image: "eleventh-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

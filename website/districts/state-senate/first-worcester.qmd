@@ -10,6 +10,10 @@ params:
   district_name: "First Worcester"
 title: "Massachusetts First Worcester State Senate District"
 description: "The First Worcester State Senate District is currently represented by Robyn K. Kennedy (D-Worcester), who is running unopposed in the 2024 election. The district encompasses parts of Worcester and several surrounding towns, with 58% white and 42% minority population, covering an area of 107 square miles."
+open-graph:
+  image: "first-worcester.png"
+twitter-card:
+  image: "first-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Fourth"
 title: "Massachusetts Fourth U.S. House District"
 description: "The Massachusetts Fourth U.S. House District is currently represented by Democratic incumbent Jake Auchincloss of Newton, who has held the seat since 2021. The district covers 710 square miles in eastern Massachusetts, including portions of Norfolk, Bristol, and Middlesex counties, with a population of approximately 778,000 residents."
+open-graph:
+  image: "fourth.png"
+twitter-card:
+  image: "fourth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

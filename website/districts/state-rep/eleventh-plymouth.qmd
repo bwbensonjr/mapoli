@@ -10,6 +10,10 @@ params:
   district_name: "Eleventh Plymouth"
 title: "Massachusetts Eleventh Plymouth State Representative District"
 description: "The Massachusetts Eleventh Plymouth State Representative District is located entirely within the city of Brockton, covering 11 precincts. The district is currently represented by incumbent Democratic State Representative Rita A. Mendes of Brockton, who was first elected in 2022 and is running unopposed in 2024."
+open-graph:
+  image: "eleventh-plymouth.png"
+twitter-card:
+  image: "eleventh-plymouth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

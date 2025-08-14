@@ -10,6 +10,10 @@ params:
   district_name: "Thirty-Seventh Middlesex"
 title: "Massachusetts Thirty-Seventh Middlesex State Representative District"
 description: "The Thirty-Seventh Middlesex State Representative District in Massachusetts is currently represented by Democrat Danillo A. Sena of Acton. The district includes portions of Acton, as well as Ayer, Boxborough, part of Groton, Harvard, and Shirley, covering an area of 86 square miles in north-central Massachusetts."
+open-graph:
+  image: "thirty-seventh-middlesex.png"
+twitter-card:
+  image: "thirty-seventh-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

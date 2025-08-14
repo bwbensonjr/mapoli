@@ -10,6 +10,10 @@ params:
   district_name: "Third Middlesex"
 title: "Massachusetts Third Middlesex State Representative District"
 description: "The Massachusetts Third Middlesex State Representative District is currently represented by incumbent Democrat Kate Hogan of Stow, who has held the seat since 2008. The district encompasses the towns of Bolton, Hudson, Maynard, and Stow in Middlesex County."
+open-graph:
+  image: "third-middlesex.png"
+twitter-card:
+  image: "third-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Norfolk and Middlesex"
 title: "Massachusetts Norfolk and Middlesex State Senate District"
 description: "This Massachusetts state senate district is represented by incumbent Democrat Cynthia Stone Creem of Newton, who has run unopposed in recent elections. The district covers parts of Brookline, Newton, and Wellesley, with a total population of about 181,313."
+open-graph:
+  image: "norfolk-and-middlesex.png"
+twitter-card:
+  image: "norfolk-and-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

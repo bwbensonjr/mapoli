@@ -10,6 +10,10 @@ params:
   district_name: "First Franklin"
 title: "Massachusetts First Franklin State Representative District"
 description: "The Massachusetts First Franklin State Representative District is located in western Massachusetts, covering all or part of 18 cities/towns including portions of Greenfield and communities like Deerfield, Montague, and Sunderland. The current incumbent is Democratic Representative Natalie M. Blais of Deerfield, who has represented the district since 2018 and has run unopposed in all her elections."
+open-graph:
+  image: "first-franklin.png"
+twitter-card:
+  image: "first-franklin.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

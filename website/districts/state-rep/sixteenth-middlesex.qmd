@@ -10,6 +10,10 @@ params:
   district_name: "Sixteenth Middlesex"
 title: "Massachusetts Sixteenth Middlesex State Representative District"
 description: "The Massachusetts Sixteenth Middlesex State Representative District covers parts of Chelmsford and Lowell, with a population of 43,352. The current incumbent is Democratic Representative Rodney M. Elliott of Lowell, who was elected in 2022 with 65% of the vote and is running unopposed in the 2024 election."
+open-graph:
+  image: "sixteenth-middlesex.png"
+twitter-card:
+  image: "sixteenth-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

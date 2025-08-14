@@ -10,6 +10,10 @@ params:
   district_name: "Fourteenth Suffolk"
 title: "Massachusetts Fourteenth Suffolk State Representative District"
 description: "The Massachusetts Fourteenth Suffolk State Representative District is currently represented by Rob Consalvo (D-Boston), who has held the seat since 2020. The district is located entirely within Boston and has a diverse population that is predominantly minority (67%), with significant Black (37%) and Hispanic (24%) communities."
+open-graph:
+  image: "fourteenth-suffolk.png"
+twitter-card:
+  image: "fourteenth-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

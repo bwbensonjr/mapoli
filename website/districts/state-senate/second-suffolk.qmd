@@ -10,6 +10,10 @@ params:
   district_name: "Second Suffolk"
 title: "Massachusetts Second Suffolk State Senate District"
 description: "This district is currently represented by incumbent State Senator Liz Miranda (D-Boston). The district encompasses parts of Boston, including sections of Dorchester, Roxbury, and parts of Jamaica Plain, with a diverse population that is 80% minority and 20% white."
+open-graph:
+  image: "second-suffolk.png"
+twitter-card:
+  image: "second-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

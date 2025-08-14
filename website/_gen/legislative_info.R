@@ -4,6 +4,8 @@ library(sf)
 library(tmap)
 library(quarto)
 library(here)
+library(htmlwidgets)
+library(webshot2)
 
 fix_district <- function(district_name) {
     str_replace_all(
@@ -321,6 +323,23 @@ office_map <- function(office_name) {
      tm_basemap("OpenStreetMap"))
 }
 
+save_office_map_image <- function(leaflet_map, office_name) {
+    out_file <- here(
+        "docs/districts",
+        office_slug(office_name),
+        "statewide-map.png"
+    )
+    temp_html = tempfile(fileext=".html")
+    saveWidget(leaflet_map, temp_html, selfcontained=TRUE)
+    webshot(
+        temp_html,
+        file=out_file,
+        vwidth=800,
+        vheight=600,
+        cliprect="viewport"
+    )
+}
+
 district_elections <- function(office_name, district_name) {
     leg_elections |>
         filter(office == office_name, district == district_name) |>
@@ -430,6 +449,23 @@ district_map <- function(office_name, district_name, simp_tol=50) {
      ) +
      tm_text("city_town") +
      tm_basemap("OpenStreetMap"))
+}
+
+save_district_map_image <- function(leaflet_map, office_name, district_name) {
+    out_file <- here(
+        "docs/districts",
+        office_slug(office_name),
+        str_c(district_slug(district_name), ".png")
+    )
+    temp_html = tempfile(fileext=".html")
+    saveWidget(leaflet_map, temp_html, selfcontained=TRUE)
+    webshot(
+        temp_html,
+        file=out_file,
+        vwidth=800,
+        vheight=600,
+        cliprect="viewport"
+    )
 }
 
 district_demographics <- function(office_name, district_name) {

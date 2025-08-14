@@ -10,6 +10,10 @@ params:
   district_name: "Tenth Middlesex"
 title: "Massachusetts Tenth Middlesex State Representative District"
 description: "The Massachusetts Tenth Middlesex State Representative District includes portions of Newton, Waltham, and Watertown, covering an area of 5 square miles with a population of 43,110. The district is currently represented by incumbent John J. Lawn, Jr. (D-Watertown), who has held the seat since winning a special election in 2011 and has run unopposed in most recent elections."
+open-graph:
+  image: "tenth-middlesex.png"
+twitter-card:
+  image: "tenth-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

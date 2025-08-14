@@ -10,6 +10,10 @@ params:
   district_name: "Norfolk and Suffolk"
 title: "Massachusetts Norfolk and Suffolk State Senate District"
 description: "The Norfolk and Suffolk State Senate District in Massachusetts is represented by incumbent Michael F. Rush (D-Boston), who has run unopposed since at least 2012. The district encompasses parts of Boston as well as Dedham, Norwood, Walpole, and Westwood, with a population of 183,656 that is predominantly white (69%) with 31% minority residents."
+open-graph:
+  image: "norfolk-and-suffolk.png"
+twitter-card:
+  image: "norfolk-and-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

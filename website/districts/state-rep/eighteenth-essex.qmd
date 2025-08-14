@@ -10,6 +10,10 @@ params:
   district_name: "Eighteenth Essex"
 title: "Massachusetts Eighteenth Essex State Representative District"
 description: "The Massachusetts Eighteenth Essex State Representative District is currently represented by incumbent Democrat Tram T. Nguyen from Andover. The district includes parts of Andover, Boxford, North Andover, and Tewksbury, covering an area of 57 square miles with a population of approximately 46,164."
+open-graph:
+  image: "eighteenth-essex.png"
+twitter-card:
+  image: "eighteenth-essex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

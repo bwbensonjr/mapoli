@@ -10,6 +10,10 @@ params:
   district_name: "Worcester and Middlesex"
 title: "Massachusetts Worcester and Middlesex State Senate District"
 description: "The Massachusetts Worcester and Middlesex State Senate District is currently represented by incumbent John J. Cronin (D-Fitchburg), who was reelected in 2024 with 59% of the vote. The district encompasses ten municipalities in north-central Massachusetts including Fitchburg, Leominster, Clinton, and portions of Middlesex County."
+open-graph:
+  image: "worcester-and-middlesex.png"
+twitter-card:
+  image: "worcester-and-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Hampshire, Franklin and Worcester"
 title: "Massachusetts Hampshire, Franklin and Worcester State Senate District"
 description: "The Massachusetts Hampshire, Franklin and Worcester State Senate District is currently represented by incumbent Jo Comerford (D-Northampton) who has held the seat since 2018 and has run unopposed in recent elections. The district spans 25 municipalities in western Massachusetts including Amherst, Northampton, Greenfield, and surrounding towns, covering 783 square miles with approximately 160,574 residents."
+open-graph:
+  image: "hampshire-franklin-and-worcester.png"
+twitter-card:
+  image: "hampshire-franklin-and-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

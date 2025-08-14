@@ -10,6 +10,10 @@ params:
   district_name: "Fourteenth Norfolk"
 title: "Massachusetts Fourteenth Norfolk State Representative District"
 description: "The Massachusetts Fourteenth Norfolk State Representative District is represented by incumbent Democrat Alice Hanlon Peisch of Wellesley. The district includes parts of Lincoln, Wellesley, and Weston, covering about 34 square miles with a population of approximately 44,653 people."
+open-graph:
+  image: "fourteenth-norfolk.png"
+twitter-card:
+  image: "fourteenth-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

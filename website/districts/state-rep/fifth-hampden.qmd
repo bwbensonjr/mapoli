@@ -10,6 +10,10 @@ params:
   district_name: "Fifth Hampden"
 title: "Massachusetts Fifth Hampden State Representative District"
 description: "The Fifth Hampden State Representative District in Massachusetts encompasses parts of Chicopee and Holyoke, covering 23 square miles with a population of 42,111. The current incumbent is Patricia A. Duffy, a Democrat from Holyoke, who has represented the district since 2020 after winning uncontested elections."
+open-graph:
+  image: "fifth-hampden.png"
+twitter-card:
+  image: "fifth-hampden.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Thirty-First Middlesex"
 title: "Massachusetts Thirty-First Middlesex State Representative District"
 description: "The Massachusetts Thirty-First Middlesex State Representative District covers parts of Stoneham and Winchester, with a population of 43,563. The incumbent is Democrat Michael Seamus Day of Stoneham, who has held the seat since 2014 and is running unopposed in the 2024 election."
+open-graph:
+  image: "thirty-first-middlesex.png"
+twitter-card:
+  image: "thirty-first-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

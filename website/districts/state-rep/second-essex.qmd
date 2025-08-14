@@ -10,6 +10,10 @@ params:
   district_name: "Second Essex"
 title: "Massachusetts Second Essex State Representative District"
 description: "The Second Essex State Representative District in Massachusetts is currently represented by Kristin E. Kassner, a Democrat from Hamilton, who won a close race in 2022 and was reelected in 2024. The district encompasses Georgetown, Hamilton, Ipswich, Newbury, Rowley, and part of Topsfield, covering 112 square miles with a population of 46,046."
+open-graph:
+  image: "second-essex.png"
+twitter-card:
+  image: "second-essex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

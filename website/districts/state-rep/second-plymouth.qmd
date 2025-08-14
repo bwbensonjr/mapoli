@@ -10,6 +10,10 @@ params:
   district_name: "Second Plymouth"
 title: "Massachusetts Second Plymouth State Representative District"
 description: "The Massachusetts Second Plymouth State Representative District is currently represented by Republican John Robert Gaskey from Carver, who won election in 2024 succeeding long-time incumbent Susan Williams Gifford. The district includes the towns of Carver and Wareham, plus parts of Middleborough, with a predominantly white (86%) population of approximately 42,045 residents."
+open-graph:
+  image: "second-plymouth.png"
+twitter-card:
+  image: "second-plymouth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

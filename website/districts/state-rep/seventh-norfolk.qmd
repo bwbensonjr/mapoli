@@ -10,6 +10,10 @@ params:
   district_name: "Seventh Norfolk"
 title: "Massachusetts Seventh Norfolk State Representative District"
 description: "The Massachusetts Seventh Norfolk State Representative District covers parts of Milton and Randolph, with a population of 42,319. The district is currently represented by Richard Gerard Wells, Jr. (D-Milton), who won the 2024 election with 65% of the vote against Clinton Graham."
+open-graph:
+  image: "seventh-norfolk.png"
+twitter-card:
+  image: "seventh-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

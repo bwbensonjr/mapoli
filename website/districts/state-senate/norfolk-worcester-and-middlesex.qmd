@@ -10,6 +10,10 @@ params:
   district_name: "Norfolk, Worcester and Middlesex"
 title: "Massachusetts Norfolk, Worcester and Middlesex State Senate District"
 description: "The Norfolk, Worcester and Middlesex State Senate District is currently represented by Democratic incumbent Rebecca L. Rausch of Needham, who won re-election in 2024 with 59% of the vote. The district spans 11 communities across three counties including Bellingham, Dover, Franklin, Medfield, Milford, Millis, Needham, Norfolk, Plainville, Sherborn, and Wrentham."
+open-graph:
+  image: "norfolk-worcester-and-middlesex.png"
+twitter-card:
+  image: "norfolk-worcester-and-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Third Suffolk"
 title: "Massachusetts Third Suffolk State Senate District"
 description: "This Massachusetts state senate district includes parts of Boston, with a population of approximately 176,801 people. The incumbent is Lydia Marie Edwards (D-Boston), who won reelection in 2024 with 70% of the vote against Republican challenger Jeannamarie Tamas."
+open-graph:
+  image: "third-suffolk.png"
+twitter-card:
+  image: "third-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

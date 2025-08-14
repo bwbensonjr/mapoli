@@ -10,6 +10,10 @@ params:
   district_name: "Sixth Norfolk"
 title: "Massachusetts Sixth Norfolk State Representative District"
 description: "The Massachusetts Sixth Norfolk State Representative District encompasses Avon, Canton, and parts of Stoughton, with a population of 43,712. The district is currently represented by William C. Galvin (D-Canton), who has consistently won elections since at least 1990, often running unopposed in recent elections."
+open-graph:
+  image: "sixth-norfolk.png"
+twitter-card:
+  image: "sixth-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "First Middlesex"
 title: "Massachusetts First Middlesex State Representative District"
 description: "The Massachusetts First Middlesex State Representative District is currently represented by Democrat Margaret R. Scarsdale of Pepperell, who narrowly won the 2024 election with 51% of the vote. The district covers portions of Middlesex County including the towns of Ashby, Dunstable, parts of Groton, parts of Lunenburg, Pepperell, and Townsend."
+open-graph:
+  image: "first-middlesex.png"
+twitter-card:
+  image: "first-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

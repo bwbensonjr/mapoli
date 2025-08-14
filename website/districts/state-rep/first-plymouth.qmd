@@ -10,6 +10,10 @@ params:
   district_name: "First Plymouth"
 title: "Massachusetts First Plymouth State Representative District"
 description: "The Massachusetts First Plymouth State Representative District is represented by incumbent Michelle L. Badger (Democrat) who won the most recent election in 2024. The district is located in Plymouth, encompassing 13 precincts in the town, with a predominantly white population (91%) and covers approximately 93 square miles."
+open-graph:
+  image: "first-plymouth.png"
+twitter-card:
+  image: "first-plymouth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

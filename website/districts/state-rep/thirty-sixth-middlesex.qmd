@@ -10,6 +10,10 @@ params:
   district_name: "Thirty-Sixth Middlesex"
 title: "Massachusetts Thirty-Sixth Middlesex State Representative District"
 description: "The Thirty-Sixth Middlesex State Representative District in Massachusetts includes the towns of Dracut and Tyngsborough. It is currently represented by Democrat Colleen M. Garry of Dracut, who has held this seat since at least 2002 and has won several elections, sometimes unopposed."
+open-graph:
+  image: "thirty-sixth-middlesex.png"
+twitter-card:
+  image: "thirty-sixth-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

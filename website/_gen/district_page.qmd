@@ -10,6 +10,10 @@ params:
   district_name: "%(district_name)s"
 title: "Massachusetts %(district_name)s %(office_name)s District"
 description: "%(description)s"
+open-graph:
+  image: "%(image_name)s"
+twitter-card:
+  image: "%(image_name)s"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

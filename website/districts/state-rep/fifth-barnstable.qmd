@@ -10,6 +10,10 @@ params:
   district_name: "Fifth Barnstable"
 title: "Massachusetts Fifth Barnstable State Representative District"
 description: "The Massachusetts Fifth Barnstable State Representative District covers portions of Barnstable, Bourne, and Sandwich with a population of 41,150. The district is currently represented by Republican incumbent Steven G. Xiarhos of Barnstable, who won reelection in 2024 with 61% of the vote against Democratic challenger Owen G. Fletcher."
+open-graph:
+  image: "fifth-barnstable.png"
+twitter-card:
+  image: "fifth-barnstable.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

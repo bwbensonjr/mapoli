@@ -10,6 +10,10 @@ params:
   district_name: "Third Worcester"
 title: "Massachusetts Third Worcester State Representative District"
 description: "The Massachusetts Third Worcester State Representative District is primarily located in Fitchburg with some precincts from Lunenburg. The district is currently represented by incumbent Democrat Michael P. Kushmerek of Fitchburg, who has held the seat since 2020."
+open-graph:
+  image: "third-worcester.png"
+twitter-card:
+  image: "third-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

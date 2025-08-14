@@ -10,6 +10,10 @@ params:
   district_name: "Ninth Norfolk"
 title: "Massachusetts Ninth Norfolk State Representative District"
 description: "This Massachusetts Ninth Norfolk State Representative District is currently represented by Republican incumbent Marcus S. Vaughn of Wrentham, who won the seat in 2022 and was re-elected in 2024. The district includes parts of Medfield and Walpole, as well as Millis, Norfolk, Plainville, and Wrentham."
+open-graph:
+  image: "ninth-norfolk.png"
+twitter-card:
+  image: "ninth-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

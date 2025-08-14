@@ -10,6 +10,10 @@ params:
   district_name: "Thirteenth Norfolk"
 title: "Massachusetts Thirteenth Norfolk State Representative District"
 description: "The Massachusetts Thirteenth Norfolk State Representative District includes all of Dover, parts of Medfield, and all of Needham, covering a predominantly white, affluent area with low poverty rates. The district is currently represented by Joshua Tarsky, a Democrat from Needham, who won the seat in 2024 with 61% of the vote after longtime Democratic representative Denise C. Garlick held the position from 2010 to 2022."
+open-graph:
+  image: "thirteenth-norfolk.png"
+twitter-card:
+  image: "thirteenth-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

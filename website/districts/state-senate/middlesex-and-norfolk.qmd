@@ -10,6 +10,10 @@ params:
   district_name: "Middlesex and Norfolk"
 title: "Massachusetts Middlesex and Norfolk State Senate District"
 description: "The Massachusetts Middlesex and Norfolk State Senate District, represented by incumbent Karen E. Spilka (D-Ashland), encompasses the cities/towns of Ashland, Framingham, Holliston, Hopkinton, Medway, and Natick. Spilka has won re-election unopposed in the most recent elections."
+open-graph:
+  image: "middlesex-and-norfolk.png"
+twitter-card:
+  image: "middlesex-and-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

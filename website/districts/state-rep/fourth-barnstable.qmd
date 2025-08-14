@@ -10,6 +10,10 @@ params:
   district_name: "Fourth Barnstable"
 title: "Massachusetts Fourth Barnstable State Representative District"
 description: "The Massachusetts Fourth Barnstable State Representative District covers seven Cape Cod towns including Chatham, Eastham, Harwich, Orleans, Provincetown, Truro, and Wellfleet. The current incumbent is Democrat Sarah K. Peake of Provincetown, who has held the seat since 2007 and has run unopposed in most recent elections."
+open-graph:
+  image: "fourth-barnstable.png"
+twitter-card:
+  image: "fourth-barnstable.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

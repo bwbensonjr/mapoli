@@ -10,6 +10,10 @@ params:
   district_name: "Hampden"
 title: "Massachusetts Hampden State Senate District"
 description: "The Massachusetts Hampden State Senate District is currently represented by Adam Gomez (D-Springfield), who has been in office since 2020 and was most recently reelected unopposed in 2022. The district covers parts of Springfield and Chicopee, with a diverse population that is 69% minority (48% Hispanic, 16% Black) and has a 25% poverty rate."
+open-graph:
+  image: "hampden.png"
+twitter-card:
+  image: "hampden.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

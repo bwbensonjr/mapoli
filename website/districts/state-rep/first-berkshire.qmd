@@ -10,6 +10,10 @@ params:
   district_name: "First Berkshire"
 title: "Massachusetts First Berkshire State Representative District"
 description: "The Massachusetts First Berkshire State Representative District is currently represented by incumbent Democrat John P. Barrett, III of North Adams. The district encompasses several communities in northwestern Massachusetts including North Adams, Williamstown, Adams, and surrounding towns in Berkshire County."
+open-graph:
+  image: "first-berkshire.png"
+twitter-card:
+  image: "first-berkshire.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

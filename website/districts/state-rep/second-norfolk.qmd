@@ -10,6 +10,10 @@ params:
   district_name: "Second Norfolk"
 title: "Massachusetts Second Norfolk State Representative District"
 description: "The Massachusetts Second Norfolk State Representative District is located entirely within the city of Quincy, encompassing 14 precincts. The district is currently represented by Democratic incumbent Tackey Chan, who has held the seat since 2010 and won reelection in 2024 with 70% of the vote."
+open-graph:
+  image: "second-norfolk.png"
+twitter-card:
+  image: "second-norfolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

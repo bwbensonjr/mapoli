@@ -10,6 +10,10 @@ params:
   district_name: "Ninth Plymouth"
 title: "Massachusetts Ninth Plymouth State Representative District"
 description: "The Massachusetts Ninth Plymouth State Representative District encompasses parts of Brockton, East Bridgewater, Easton, and West Bridgewater, with a population of 46,626. The current representative is Democrat Bridget M. Plouffe of Brockton, who was elected in 2024, succeeding longtime Democratic representative Gerard J. Cassidy."
+open-graph:
+  image: "ninth-plymouth.png"
+twitter-card:
+  image: "ninth-plymouth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

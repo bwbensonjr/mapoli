@@ -10,6 +10,10 @@ params:
   district_name: "Third Berkshire"
 title: "Massachusetts Third Berkshire State Representative District"
 description: "The Massachusetts Third Berkshire State Representative District covers 18 towns in western Massachusetts including Great Barrington, Lenox, and several other Berkshire County communities. The district is currently represented by Democrat Leigh Susan Davis of Great Barrington, who won the seat in 2024 with 57% of the vote against independent candidate Marybeth F. Mitts."
+open-graph:
+  image: "third-berkshire.png"
+twitter-card:
+  image: "third-berkshire.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

@@ -10,6 +10,10 @@ params:
   district_name: "Plymouth and Barnstable"
 title: "Massachusetts Plymouth and Barnstable State Senate District"
 description: "The Massachusetts Plymouth and Barnstable State Senate District covers towns including Bourne, Falmouth, Kingston, Mashpee, Pembroke, Plymouth, Plympton, and Sandwich. The district is currently represented by Democrat Susan Lynn Moran of Falmouth, who won her seat in the 2022 election with 56% of the vote."
+open-graph:
+  image: "plymouth-and-barnstable.png"
+twitter-card:
+  image: "plymouth-and-barnstable.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

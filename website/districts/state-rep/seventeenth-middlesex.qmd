@@ -10,6 +10,10 @@ params:
   district_name: "Seventeenth Middlesex"
 title: "Massachusetts Seventeenth Middlesex State Representative District"
 description: "The Seventeenth Middlesex State Representative District primarily covers portions of Lowell and one precinct of Tewksbury, with a population of 45,189. The current incumbent is Democratic Representative Vanna Howard of Lowell, who has held the seat since 2020 and was most recently reelected in 2024 with 78% of the vote."
+open-graph:
+  image: "seventeenth-middlesex.png"
+twitter-card:
+  image: "seventeenth-middlesex.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

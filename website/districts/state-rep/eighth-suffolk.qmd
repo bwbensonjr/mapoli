@@ -10,6 +10,10 @@ params:
   district_name: "Eighth Suffolk"
 title: "Massachusetts Eighth Suffolk State Representative District"
 description: "The Massachusetts Eighth Suffolk State Representative District is currently represented by Democratic incumbent Jay D. Livingstone of Boston, who has held the seat since winning a special election in 2013. The district is located entirely within Boston, covering portions of the city across 18 precincts. It is a compact urban district with an area of just 1 square mile and a population of 41,784."
+open-graph:
+  image: "eighth-suffolk.png"
+twitter-card:
+  image: "eighth-suffolk.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

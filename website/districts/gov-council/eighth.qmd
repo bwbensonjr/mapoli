@@ -10,6 +10,10 @@ params:
   district_name: "Eighth"
 title: "Massachusetts Eighth Governor's Council District"
 description: "The Massachusetts Eighth Governor's Council District is currently represented by incumbent Tara J. Jacobs (D-North Adams) who was first elected in 2022. The district covers a large portion of western Massachusetts, including 103 cities and towns with a total population of approximately 828,000 people."
+open-graph:
+  image: "eighth.png"
+twitter-card:
+  image: "eighth.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 

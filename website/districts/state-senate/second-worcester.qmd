@@ -10,6 +10,10 @@ params:
   district_name: "Second Worcester"
 title: "Massachusetts Second Worcester State Senate District"
 description: "The Massachusetts Second Worcester State Senate District is currently represented by incumbent Democratic Senator Michael O. Moore from Millbury, who has held the seat since 2008 and has run unopposed in the last four elections. The district includes portions of Worcester and the towns of Auburn, Grafton, Millbury, Shrewsbury, and Westborough, with a population of approximately 167,287 residents."
+open-graph:
+  image: "second-worcester.png"
+twitter-card:
+  image: "second-worcester.png"
 ---
 
 ```{r}
@@ -17,8 +21,14 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-```{r}
+```{r, include=FALSE}
+## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
+save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$district_name)
+```
+
+```{r}
+## Display interactive map
 tmap_leaflet(dist_map)
 ```
 
