@@ -21,7 +21,7 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
-*`r district_display_name(params$office_name, params$district_name)`*   
+*`r district_display_name(params$office_name, params$district_name)` District*   
 **Incumbent**: `r district_incumbent(params$office_name, params$district_name)`
 
 ```{r, include=FALSE}
