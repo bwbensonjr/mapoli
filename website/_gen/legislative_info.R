@@ -145,6 +145,7 @@ legislative_district_info <-
             office,
             district_id,
             district,
+            district_display,
             district_md_ref,
             district_web_ref,
             legislator=display_winner,
@@ -164,8 +165,8 @@ office_table_political <- function(office_name) {
     legislative_district_info |>
         filter(office == office_name) |>
         arrange(district_id) |>
+        select(district_md_ref, legislator, party, city_town, percent, PVI, PVI_N) |>
         gt() |>
-        cols_hide(columns=c(office, district_id, district, district_web_ref, summary)) |>
         cols_label(
             district_md_ref = "District",
             legislator = "Legislator",
@@ -225,8 +226,8 @@ office_table_demographic <- function(office_name) {
             office_demographics(office_name),
             by=c("district")
         ) |>
+        select(district_md_ref, legislator, area_sq_miles, density_type, below_poverty_pct, ed_college_degree_pct, wwc_pct, race_minority_pct, race_white_pct, race_black_pct, race_asian_pct, race_hispanic_pct) |>
         gt() |>
-        cols_hide(columns=c(district)) |>
         cols_label(
             district_md_ref = "District",
             legislator = "Legislator",
@@ -290,6 +291,8 @@ office_map <- function(office_name) {
     scale <- office_map_scale(office_name)
     office_df <-
         read_sf(office_map_geom_file(office_name)) |>
+        ## This column already exists in the next df
+        select(-district_display) |> 
         mutate(office = office_name) |>
         left_join(legislative_district_info,
                   by=c("office", "district")) |>
@@ -518,8 +521,8 @@ simple_office_table <- function(office_name) {
         ## Hack to make the link work from the "districts" path level
         mutate(district_md_ref = str_replace(district_md_ref, fixed("("), fixed(off_rep_slug))) |>
         arrange(district_id) |>
+        select(district_md_ref, legislator, party, city_town, percent, PVI, PVI_N) |>
         gt() |>
-        cols_hide(columns=c(office, district_id, district, district_web_ref, summary)) |>
         cols_label(
             district_md_ref = "District",
             legislator = "Legislator",
@@ -542,4 +545,18 @@ district_summary <- function(office_name, district_name) {
         filter(office == office_name,
                district == district_name) |>
         pull(summary)
+}
+
+district_display_name <- function(office_name, district_name) {
+    legislative_district_info |>
+        filter(office == office_name,
+               district == district_name) |>
+        pull(district_display)
+}
+
+district_incumbent <- function(office_name, district_name) {
+    legislative_district_info |>
+        filter(office == office_name,
+               district == district_name) |>
+        pull(legislator)
 }

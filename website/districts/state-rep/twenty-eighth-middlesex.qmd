@@ -22,6 +22,9 @@ library(here)
 source(here("website/_gen/legislative_info.R"))
 ```
 
+*`r district_display_name(params$office_name, params$district_name)`*   
+**Incumbent**: `r district_incumbent(params$office_name, params$district_name)`
+
 ```{r, include=FALSE}
 ## Hidden chunk to produce static map
 dist_map <- district_map(params$office_name, params$district_name)
