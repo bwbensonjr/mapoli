@@ -9,7 +9,7 @@ params:
   office_name: "State Representative"
   district_name: "Third Suffolk"
 title: "Massachusetts Third Suffolk State Representative District"
-description: "The Massachusetts Third Suffolk State Representative District covers a small area of about 1 square mile in Boston, encompassing parts of several Boston precincts. The incumbent is Democratic Representative Aaron M. Michlewitz of Boston, who has held the seat since winning a special election in 2009, and has run unopposed in every regular election since taking office."
+description: "The Massachusetts Third Suffolk State Representative District covers a small area of about 1 square mile in Boston, encompassing parts of several Boston precincts. The incumbent is House Ways and Mean Chair Aaron M. Michlewitz of Boston, who has held the seat since winning a special election in 2009, and has run unopposed in every regular election since taking office."
 open-graph:
   image: "third-suffolk.png"
 twitter-card:
