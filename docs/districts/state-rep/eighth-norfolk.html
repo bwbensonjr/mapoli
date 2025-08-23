@@ -90,35 +90,6 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Massachusetts Eighth Norfolk State Representative District – mapoli">
@@ -222,8 +193,8 @@ window.Quarto = {
 <strong>Incumbent</strong>: Ted Philips (D-Sharon)</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-bfbc2066c1f1c7fd5bc0" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-bfbc2066c1f1c7fd5bc0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.19262895545884,-71.16868103100116,-71.16144804951152,-71.18081598501118,-71.1852572540629,-71.18926294698107,-71.18836445154272,-71.18755912937006,-71.18788886482507,-71.19020296434931,-71.19079213946753,-71.19262895545884],"lat":[42.05182498373593,42.06116095367098,42.02601003759287,42.02874803455752,42.0306542868157,42.03162401872395,42.03338007040325,42.03892089241893,42.04023149116554,42.04318800538091,42.04848139693622,42.05182498373593]}]],[[{"lng":[-71.23989794474777,-71.23329302767203,-71.23308495231916,-71.23119298727072,-71.23330696164544,-71.23347495602296,-71.23187296390748,-71.23068220148005,-71.23039797179494,-71.22783389675628,-71.22598997464095,-71.18693164532088,-71.18869095425612,-71.18814602608437,-71.18660422646946,-71.18583297685363,-71.18280840908373,-71.18131298236595,-71.18018202428624,-71.17973266906969,-71.17904587003079,-71.17918794976612,-71.17824701883045,-71.17576304650683,-71.17628786594601,-71.17199044100802,-71.16219804791233,-71.16348820444128,-71.14916605242166,-71.15017783411537,-71.14985627627404,-71.14854204797503,-71.14835721788985,-71.14573251138675,-71.13910202860316,-71.13582153473538,-71.13369804044773,-71.13202804340195,-71.13113004239113,-71.13139203753791,-71.13581004042534,-71.13765952786875,-71.13941657071369,-71.13872803984492,-71.13959162187237,-71.13946738106196,-71.13846204405566,-71.13901783264686,-71.13860704354576,-71.17845698273683,-71.19630300020852,-71.20592099926765,-71.23887896171156,-71.23891695606773,-71.23800549272205,-71.23941695231373,-71.23846856956294,-71.23912994354463,-71.2391273345616,-71.23989794474777],"lat":[42.12082997754226,42.12341195574938,42.12301612376481,42.12331113889596,42.12595900811098,42.12856899333272,42.13163297807058,42.13205691587178,42.13257396890147,42.13308170483409,42.1354099792596,42.15324693821945,42.16112698819943,42.16148894361962,42.16150057690413,42.16216097788842,42.16330047727808,42.16552296957477,42.16549597114496,42.16500948477264,42.16529468763152,42.1659029642119,42.16581297077541,42.15559901590734,42.15529451805318,42.15152253456558,42.14527898920841,42.14146406509589,42.13861197940481,42.13613555148576,42.13399712179585,42.13116099322115,42.12844399038027,42.12512669171795,42.12023498719871,42.11357371079652,42.11137898578991,42.10749999091618,42.10178999976444,42.10047800872726,42.09082001153066,42.08864721305832,42.08488216169305,42.08368599498019,42.08126883145337,42.07829177900451,42.07655999408166,42.0748284549386,42.07277501608676,42.05736204040056,42.08237444290425,42.07410804815546,42.10420601052907,42.11221998771402,42.1129270889722,42.11550600379328,42.11774732608834,42.11882602830518,42.11998969280962,42.12082997754226]}]],[[{"lng":[-71.15016495187315,-71.14916597435654,-71.14455219985146,-71.14084012129499,-71.13991497072622,-71.13868500988069,-71.13749598002144,-71.13686003522521,-71.13681153732641,-71.13184003607439,-71.13160004108278,-71.13274003146908,-71.13352723700389,-71.13392087827692,-71.1317480150956,-71.13012899954821,-71.12596000919885,-71.1156200520726,-71.11715079852205,-71.11400004152449,-71.11406003935593,-71.12106833266688,-71.11966005833557,-71.12230088262453,-71.12346003893983,-71.12507222483362,-71.12500942521449,-71.12451020714767,-71.12347099642173,-71.12181762442562,-71.12133297399403,-71.12018817622526,-71.11839501674802,-71.11634195538623,-71.11224598386742,-71.10614999264516,-71.10068939238623,-71.10109995676875,-71.09934344714226,-71.09574195250933,-71.09739183696564,-71.09951993724641,-71.09547001569803,-71.09715994545343,-71.09463023649344,-71.0925599826196,-71.08935682946756,-71.0884499865429,-71.08230284442922,-71.07771001113501,-71.07144945302595,-71.06832602336182,-71.0603350446244,-71.06125603796932,-71.13860696820481,-71.13901995320259,-71.13847151355104,-71.13946895707514,-71.13959195270654,-71.13873060061324,-71.13942795281073,-71.13765996269646,-71.13581217578192,-71.13139334664828,-71.13113153120008,-71.1315979961546,-71.13369622989644,-71.13582196364429,-71.1390992953523,-71.14601697456861,-71.14815336055389,-71.14854358051188,-71.14975695762389,-71.15016495187315],"lat":[42.13585300107778,42.13861196432293,42.1376989271451,42.13805559833774,42.13987097211216,42.13995697081235,42.13943092446538,42.14066984606466,42.13930859737474,42.1377999786614,42.13657000247644,42.13418002243593,42.13390528212528,42.13181930509749,42.13146396957055,42.13076527623237,42.13080997612616,42.12784998236386,42.12483921242278,42.12377998047612,42.12270002290256,42.12122690673679,42.1185800278427,42.11846948649113,42.11484002882661,42.11472488994929,42.11269512374338,42.11173840895376,42.11198996826005,42.11178431400908,42.11263596655294,42.11251821196733,42.1129489650202,42.11072258958423,42.11283097009272,42.11421996942617,42.11452491074203,42.11714997818943,42.11764542460528,42.12029150343478,42.12185829389689,42.12264001113519,42.12540479435111,42.12687000015826,42.12882164494351,42.13197995908634,42.13066996372785,42.13159996016108,42.12911106271759,42.12860996875209,42.12610105313837,42.12587395810262,42.10696199746204,42.10319402069926,42.07277504645457,42.07483099885129,42.07654918538089,42.07829400452945,42.08127685712948,42.0836764395975,42.08487000046291,42.08864998620858,42.09081806633579,42.10047830986217,42.10178998790516,42.10550924085129,42.11137153096139,42.11357101297324,42.12023057149936,42.12536901734271,42.12802200618319,42.1311607753702,42.13363100779802,42.13585300107778]}]],[[{"lng":[-71.2586399497678,-71.25382080117404,-71.25606993857646,-71.24163300906601,-71.24001803022146,-71.23957004089485,-71.24025169226904,-71.23906004382269,-71.23927104581792,-71.24024854514266,-71.23984946373588,-71.23656000285287,-71.2357822004856,-71.22603802093464,-71.21874137434153,-71.21530615417424,-71.2259742573779,-71.22783202963464,-71.23036750336973,-71.23066603491382,-71.2318563616622,-71.23347200041611,-71.23330815722102,-71.23109806609195,-71.2331679687568,-71.23342050432832,-71.23984139844997,-71.23911604196904,-71.23844904586369,-71.23941294602379,-71.23799304360566,-71.2389132535443,-71.23880403845835,-71.25327955001841,-71.25549997340849,-71.25384936368191,-71.2538102132916,-71.25402302776679,-71.25509999390735,-71.25565995125984,-71.25371396566209,-71.2520243387406,-71.25435994123747,-71.2485854361467,-71.2488243950973,-71.25102586665581,-71.25395498113882,-71.25592696035692,-71.25604296217058,-71.25514788695477,-71.25560095517795,-71.25430881412777,-71.25703996041138,-71.2586399497678],"lat":[42.13773000508713,42.14473626626716,42.14646299814173,42.15471095554264,42.153756979961,42.15301099787266,42.15128857671608,42.15048998736529,42.14940701200862,42.14873849338213,42.14737689725141,42.14791996596502,42.14770062011882,42.14445797394573,42.1403133231441,42.14032596402733,42.13541711656922,42.13308002623666,42.13256669332686,42.13205902426981,42.13163214912991,42.12856608189159,42.12597698538441,42.12329802152465,42.12300103638316,42.12336230493793,42.12080463879085,42.12000098707156,42.11775099639384,42.11550134703331,42.11289600946789,42.11219345335044,42.10640102656087,42.10534516904038,42.10407859789004,42.1050561304537,42.10587311702746,42.1088665071746,42.10814005253341,42.10890999780705,42.11202098007018,42.11315407759204,42.11375001766371,42.12165547975541,42.12250585446674,42.12432243522798,42.12500602420972,42.12613301571737,42.12724499478641,42.12874529387458,42.12918100623727,42.13210455827841,42.13428701906313,42.13773000508713]}]]],["Mansfield","Sharon","Stoughton","Walpole"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#FFFFB3","#FCCDE5","#BC80BD","#BC80BD"],"fillOpacity":[0.6,0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Mansfield<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Mansfield<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Mansfield - 2 of 9 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Sharon<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Sharon<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Sharon<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Stoughton<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Stoughton<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Stoughton - 7 of 13 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Walpole<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Walpole<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Walpole - 4 of 10 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Mansfield","Sharon","Stoughton","Walpole"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.04245099814174,42.10853175012958,42.10770740829852,42.13159310562377],[-71.17625905383338,-71.18300291045222,-71.10679167151177,-71.24246389209596],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Mansfield.1","Sharon.1","Stoughton.1","Walpole.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Mansfield","Sharon","Stoughton","Walpole"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.02601003759287,42.1659029642119],"lng":[-71.2586399497678,-71.0603350446244]},"fitBounds":[42.02601003759287,-71.2586399497678,42.1659029642119,-71.0603350446244,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-fa1addfe48a40e9c47d4" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-fa1addfe48a40e9c47d4">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.19262895545884,-71.16868103100116,-71.16144804951152,-71.18081598501118,-71.1852572540629,-71.18926294698107,-71.18836445154272,-71.18755912937006,-71.18788886482507,-71.19020296434931,-71.19079213946753,-71.19262895545884],"lat":[42.05182498373593,42.06116095367098,42.02601003759287,42.02874803455752,42.0306542868157,42.03162401872395,42.03338007040325,42.03892089241893,42.04023149116554,42.04318800538091,42.04848139693622,42.05182498373593]}]],[[{"lng":[-71.23989794474777,-71.23329302767203,-71.23308495231916,-71.23119298727072,-71.23330696164544,-71.23347495602296,-71.23187296390748,-71.23068220148005,-71.23039797179494,-71.22783389675628,-71.22598997464095,-71.18693164532088,-71.18869095425612,-71.18814602608437,-71.18660422646946,-71.18583297685363,-71.18280840908373,-71.18131298236595,-71.18018202428624,-71.17973266906969,-71.17904587003079,-71.17918794976612,-71.17824701883045,-71.17576304650683,-71.17628786594601,-71.17199044100802,-71.16219804791233,-71.16348820444128,-71.14916605242166,-71.15017783411537,-71.14985627627404,-71.14854204797503,-71.14835721788985,-71.14573251138675,-71.13910202860316,-71.13582153473538,-71.13369804044773,-71.13202804340195,-71.13113004239113,-71.13139203753791,-71.13581004042534,-71.13765952786875,-71.13941657071369,-71.13872803984492,-71.13959162187237,-71.13946738106196,-71.13846204405566,-71.13901783264686,-71.13860704354576,-71.17845698273683,-71.19630300020852,-71.20592099926765,-71.23887896171156,-71.23891695606773,-71.23800549272205,-71.23941695231373,-71.23846856956294,-71.23912994354463,-71.2391273345616,-71.23989794474777],"lat":[42.12082997754226,42.12341195574938,42.12301612376481,42.12331113889596,42.12595900811098,42.12856899333272,42.13163297807058,42.13205691587178,42.13257396890147,42.13308170483409,42.1354099792596,42.15324693821945,42.16112698819943,42.16148894361962,42.16150057690413,42.16216097788842,42.16330047727808,42.16552296957477,42.16549597114496,42.16500948477264,42.16529468763152,42.1659029642119,42.16581297077541,42.15559901590734,42.15529451805318,42.15152253456558,42.14527898920841,42.14146406509589,42.13861197940481,42.13613555148576,42.13399712179585,42.13116099322115,42.12844399038027,42.12512669171795,42.12023498719871,42.11357371079652,42.11137898578991,42.10749999091618,42.10178999976444,42.10047800872726,42.09082001153066,42.08864721305832,42.08488216169305,42.08368599498019,42.08126883145337,42.07829177900451,42.07655999408166,42.0748284549386,42.07277501608676,42.05736204040056,42.08237444290425,42.07410804815546,42.10420601052907,42.11221998771402,42.1129270889722,42.11550600379328,42.11774732608834,42.11882602830518,42.11998969280962,42.12082997754226]}]],[[{"lng":[-71.15016495187315,-71.14916597435654,-71.14455219985146,-71.14084012129499,-71.13991497072622,-71.13868500988069,-71.13749598002144,-71.13686003522521,-71.13681153732641,-71.13184003607439,-71.13160004108278,-71.13274003146908,-71.13352723700389,-71.13392087827692,-71.1317480150956,-71.13012899954821,-71.12596000919885,-71.1156200520726,-71.11715079852205,-71.11400004152449,-71.11406003935593,-71.12106833266688,-71.11966005833557,-71.12230088262453,-71.12346003893983,-71.12507222483362,-71.12500942521449,-71.12451020714767,-71.12347099642173,-71.12181762442562,-71.12133297399403,-71.12018817622526,-71.11839501674802,-71.11634195538623,-71.11224598386742,-71.10614999264516,-71.10068939238623,-71.10109995676875,-71.09934344714226,-71.09574195250933,-71.09739183696564,-71.09951993724641,-71.09547001569803,-71.09715994545343,-71.09463023649344,-71.0925599826196,-71.08935682946756,-71.0884499865429,-71.08230284442922,-71.07771001113501,-71.07144945302595,-71.06832602336182,-71.0603350446244,-71.06125603796932,-71.13860696820481,-71.13901995320259,-71.13847151355104,-71.13946895707514,-71.13959195270654,-71.13873060061324,-71.13942795281073,-71.13765996269646,-71.13581217578192,-71.13139334664828,-71.13113153120008,-71.1315979961546,-71.13369622989644,-71.13582196364429,-71.1390992953523,-71.14601697456861,-71.14815336055389,-71.14854358051188,-71.14975695762389,-71.15016495187315],"lat":[42.13585300107778,42.13861196432293,42.1376989271451,42.13805559833774,42.13987097211216,42.13995697081235,42.13943092446538,42.14066984606466,42.13930859737474,42.1377999786614,42.13657000247644,42.13418002243593,42.13390528212528,42.13181930509749,42.13146396957055,42.13076527623237,42.13080997612616,42.12784998236386,42.12483921242278,42.12377998047612,42.12270002290256,42.12122690673679,42.1185800278427,42.11846948649113,42.11484002882661,42.11472488994929,42.11269512374338,42.11173840895376,42.11198996826005,42.11178431400908,42.11263596655294,42.11251821196733,42.1129489650202,42.11072258958423,42.11283097009272,42.11421996942617,42.11452491074203,42.11714997818943,42.11764542460528,42.12029150343478,42.12185829389689,42.12264001113519,42.12540479435111,42.12687000015826,42.12882164494351,42.13197995908634,42.13066996372785,42.13159996016108,42.12911106271759,42.12860996875209,42.12610105313837,42.12587395810262,42.10696199746204,42.10319402069926,42.07277504645457,42.07483099885129,42.07654918538089,42.07829400452945,42.08127685712948,42.0836764395975,42.08487000046291,42.08864998620858,42.09081806633579,42.10047830986217,42.10178998790516,42.10550924085129,42.11137153096139,42.11357101297324,42.12023057149936,42.12536901734271,42.12802200618319,42.1311607753702,42.13363100779802,42.13585300107778]}]],[[{"lng":[-71.2586399497678,-71.25382080117404,-71.25606993857646,-71.24163300906601,-71.24001803022146,-71.23957004089485,-71.24025169226904,-71.23906004382269,-71.23927104581792,-71.24024854514266,-71.23984946373588,-71.23656000285287,-71.2357822004856,-71.22603802093464,-71.21874137434153,-71.21530615417424,-71.2259742573779,-71.22783202963464,-71.23036750336973,-71.23066603491382,-71.2318563616622,-71.23347200041611,-71.23330815722102,-71.23109806609195,-71.2331679687568,-71.23342050432832,-71.23984139844997,-71.23911604196904,-71.23844904586369,-71.23941294602379,-71.23799304360566,-71.2389132535443,-71.23880403845835,-71.25327955001841,-71.25549997340849,-71.25384936368191,-71.2538102132916,-71.25402302776679,-71.25509999390735,-71.25565995125984,-71.25371396566209,-71.2520243387406,-71.25435994123747,-71.2485854361467,-71.2488243950973,-71.25102586665581,-71.25395498113882,-71.25592696035692,-71.25604296217058,-71.25514788695477,-71.25560095517795,-71.25430881412777,-71.25703996041138,-71.2586399497678],"lat":[42.13773000508713,42.14473626626716,42.14646299814173,42.15471095554264,42.153756979961,42.15301099787266,42.15128857671608,42.15048998736529,42.14940701200862,42.14873849338213,42.14737689725141,42.14791996596502,42.14770062011882,42.14445797394573,42.1403133231441,42.14032596402733,42.13541711656922,42.13308002623666,42.13256669332686,42.13205902426981,42.13163214912991,42.12856608189159,42.12597698538441,42.12329802152465,42.12300103638316,42.12336230493793,42.12080463879085,42.12000098707156,42.11775099639384,42.11550134703331,42.11289600946789,42.11219345335044,42.10640102656087,42.10534516904038,42.10407859789004,42.1050561304537,42.10587311702746,42.1088665071746,42.10814005253341,42.10890999780705,42.11202098007018,42.11315407759204,42.11375001766371,42.12165547975541,42.12250585446674,42.12432243522798,42.12500602420972,42.12613301571737,42.12724499478641,42.12874529387458,42.12918100623727,42.13210455827841,42.13428701906313,42.13773000508713]}]]],["Mansfield","Sharon","Stoughton","Walpole"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#CCEBC5","#FFFFB3","#BC80BD","#BC80BD"],"fillOpacity":[0.6,0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Mansfield<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Mansfield<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Mansfield - 2 of 9 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Sharon<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Sharon<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Sharon<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Stoughton<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Stoughton<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Stoughton - 7 of 13 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Walpole<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Walpole<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Walpole - 4 of 10 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Mansfield","Sharon","Stoughton","Walpole"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.04245101694109,42.10853189915762,42.10770749249562,42.13159314687174],[-71.17625905487208,-71.18300293242677,-71.10679167497449,-71.24246388701367],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Mansfield.1","Sharon.1","Stoughton.1","Walpole.1"],"dist_centroids",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Mansfield","Sharon","Stoughton","Walpole"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],["dist_geom","dist_centroids"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.02601003759287,42.1659029642119],"lng":[-71.2586399497678,-71.0603350446244]},"fitBounds":[42.02601003759287,-71.2586399497678,42.1659029642119,-71.0603350446244,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -233,23 +204,23 @@ window.Quarto = {
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="mopilgjohm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mopilgjohm table {
+<div id="omzinwmzeg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#omzinwmzeg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mopilgjohm thead, #mopilgjohm tbody, #mopilgjohm tfoot, #mopilgjohm tr, #mopilgjohm td, #mopilgjohm th {
+#omzinwmzeg thead, #omzinwmzeg tbody, #omzinwmzeg tfoot, #omzinwmzeg tr, #omzinwmzeg td, #omzinwmzeg th {
   border-style: none;
 }
 
-#mopilgjohm p {
+#omzinwmzeg p {
   margin: 0;
   padding: 0;
 }
 
-#mopilgjohm .gt_table {
+#omzinwmzeg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -275,12 +246,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_caption {
+#omzinwmzeg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mopilgjohm .gt_title {
+#omzinwmzeg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -292,7 +263,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#mopilgjohm .gt_subtitle {
+#omzinwmzeg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -304,7 +275,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#mopilgjohm .gt_heading {
+#omzinwmzeg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -316,13 +287,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_bottom_border {
+#omzinwmzeg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_col_headings {
+#omzinwmzeg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -337,7 +308,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_col_heading {
+#omzinwmzeg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -357,7 +328,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#mopilgjohm .gt_column_spanner_outer {
+#omzinwmzeg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -369,15 +340,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#mopilgjohm .gt_column_spanner_outer:first-child {
+#omzinwmzeg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mopilgjohm .gt_column_spanner_outer:last-child {
+#omzinwmzeg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mopilgjohm .gt_column_spanner {
+#omzinwmzeg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -389,11 +360,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#mopilgjohm .gt_spanner_row {
+#omzinwmzeg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mopilgjohm .gt_group_heading {
+#omzinwmzeg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -419,7 +390,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#mopilgjohm .gt_empty_group_heading {
+#omzinwmzeg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -434,15 +405,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#mopilgjohm .gt_from_md > :first-child {
+#omzinwmzeg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mopilgjohm .gt_from_md > :last-child {
+#omzinwmzeg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mopilgjohm .gt_row {
+#omzinwmzeg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -461,7 +432,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#mopilgjohm .gt_stub {
+#omzinwmzeg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -474,7 +445,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#mopilgjohm .gt_stub_row_group {
+#omzinwmzeg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,15 +459,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#mopilgjohm .gt_row_group_first td {
+#omzinwmzeg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mopilgjohm .gt_row_group_first th {
+#omzinwmzeg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mopilgjohm .gt_summary_row {
+#omzinwmzeg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -506,16 +477,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#mopilgjohm .gt_first_summary_row {
+#omzinwmzeg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_first_summary_row.thick {
+#omzinwmzeg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mopilgjohm .gt_last_summary_row {
+#omzinwmzeg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,7 +496,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_grand_summary_row {
+#omzinwmzeg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -535,7 +506,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#mopilgjohm .gt_first_grand_summary_row {
+#omzinwmzeg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -545,7 +516,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_last_grand_summary_row_top {
+#omzinwmzeg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,11 +526,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_striped {
+#omzinwmzeg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mopilgjohm .gt_table_body {
+#omzinwmzeg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -568,7 +539,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_footnotes {
+#omzinwmzeg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -582,7 +553,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_footnote {
+#omzinwmzeg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -591,7 +562,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#mopilgjohm .gt_sourcenotes {
+#omzinwmzeg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -605,7 +576,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#mopilgjohm .gt_sourcenote {
+#omzinwmzeg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -613,72 +584,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#mopilgjohm .gt_left {
+#omzinwmzeg .gt_left {
   text-align: left;
 }
 
-#mopilgjohm .gt_center {
+#omzinwmzeg .gt_center {
   text-align: center;
 }
 
-#mopilgjohm .gt_right {
+#omzinwmzeg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mopilgjohm .gt_font_normal {
+#omzinwmzeg .gt_font_normal {
   font-weight: normal;
 }
 
-#mopilgjohm .gt_font_bold {
+#omzinwmzeg .gt_font_bold {
   font-weight: bold;
 }
 
-#mopilgjohm .gt_font_italic {
+#omzinwmzeg .gt_font_italic {
   font-style: italic;
 }
 
-#mopilgjohm .gt_super {
+#omzinwmzeg .gt_super {
   font-size: 65%;
 }
 
-#mopilgjohm .gt_footnote_marks {
+#omzinwmzeg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mopilgjohm .gt_asterisk {
+#omzinwmzeg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mopilgjohm .gt_indent_1 {
+#omzinwmzeg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mopilgjohm .gt_indent_2 {
+#omzinwmzeg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mopilgjohm .gt_indent_3 {
+#omzinwmzeg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mopilgjohm .gt_indent_4 {
+#omzinwmzeg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mopilgjohm .gt_indent_5 {
+#omzinwmzeg .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mopilgjohm .katex-display {
+#omzinwmzeg .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mopilgjohm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#omzinwmzeg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -735,23 +706,23 @@ window.Quarto = {
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="ukbuxywiej" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ukbuxywiej table {
+<div id="gknmfzidks" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gknmfzidks table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ukbuxywiej thead, #ukbuxywiej tbody, #ukbuxywiej tfoot, #ukbuxywiej tr, #ukbuxywiej td, #ukbuxywiej th {
+#gknmfzidks thead, #gknmfzidks tbody, #gknmfzidks tfoot, #gknmfzidks tr, #gknmfzidks td, #gknmfzidks th {
   border-style: none;
 }
 
-#ukbuxywiej p {
+#gknmfzidks p {
   margin: 0;
   padding: 0;
 }
 
-#ukbuxywiej .gt_table {
+#gknmfzidks .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -777,12 +748,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_caption {
+#gknmfzidks .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ukbuxywiej .gt_title {
+#gknmfzidks .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -794,7 +765,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#ukbuxywiej .gt_subtitle {
+#gknmfzidks .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -806,7 +777,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#ukbuxywiej .gt_heading {
+#gknmfzidks .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -818,13 +789,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_bottom_border {
+#gknmfzidks .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_col_headings {
+#gknmfzidks .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -839,7 +810,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_col_heading {
+#gknmfzidks .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -859,7 +830,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#ukbuxywiej .gt_column_spanner_outer {
+#gknmfzidks .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -871,15 +842,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#ukbuxywiej .gt_column_spanner_outer:first-child {
+#gknmfzidks .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ukbuxywiej .gt_column_spanner_outer:last-child {
+#gknmfzidks .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ukbuxywiej .gt_column_spanner {
+#gknmfzidks .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -891,11 +862,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#ukbuxywiej .gt_spanner_row {
+#gknmfzidks .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ukbuxywiej .gt_group_heading {
+#gknmfzidks .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -921,7 +892,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#ukbuxywiej .gt_empty_group_heading {
+#gknmfzidks .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -936,15 +907,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#ukbuxywiej .gt_from_md > :first-child {
+#gknmfzidks .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ukbuxywiej .gt_from_md > :last-child {
+#gknmfzidks .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ukbuxywiej .gt_row {
+#gknmfzidks .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -963,7 +934,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#ukbuxywiej .gt_stub {
+#gknmfzidks .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -976,7 +947,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ukbuxywiej .gt_stub_row_group {
+#gknmfzidks .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -990,15 +961,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#ukbuxywiej .gt_row_group_first td {
+#gknmfzidks .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ukbuxywiej .gt_row_group_first th {
+#gknmfzidks .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ukbuxywiej .gt_summary_row {
+#gknmfzidks .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1008,16 +979,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ukbuxywiej .gt_first_summary_row {
+#gknmfzidks .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_first_summary_row.thick {
+#gknmfzidks .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ukbuxywiej .gt_last_summary_row {
+#gknmfzidks .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1027,7 +998,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_grand_summary_row {
+#gknmfzidks .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1037,7 +1008,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ukbuxywiej .gt_first_grand_summary_row {
+#gknmfzidks .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1047,7 +1018,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_last_grand_summary_row_top {
+#gknmfzidks .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1057,11 +1028,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_striped {
+#gknmfzidks .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ukbuxywiej .gt_table_body {
+#gknmfzidks .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1070,7 +1041,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_footnotes {
+#gknmfzidks .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1084,7 +1055,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_footnote {
+#gknmfzidks .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1093,7 +1064,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ukbuxywiej .gt_sourcenotes {
+#gknmfzidks .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1107,7 +1078,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ukbuxywiej .gt_sourcenote {
+#gknmfzidks .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1115,72 +1086,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ukbuxywiej .gt_left {
+#gknmfzidks .gt_left {
   text-align: left;
 }
 
-#ukbuxywiej .gt_center {
+#gknmfzidks .gt_center {
   text-align: center;
 }
 
-#ukbuxywiej .gt_right {
+#gknmfzidks .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ukbuxywiej .gt_font_normal {
+#gknmfzidks .gt_font_normal {
   font-weight: normal;
 }
 
-#ukbuxywiej .gt_font_bold {
+#gknmfzidks .gt_font_bold {
   font-weight: bold;
 }
 
-#ukbuxywiej .gt_font_italic {
+#gknmfzidks .gt_font_italic {
   font-style: italic;
 }
 
-#ukbuxywiej .gt_super {
+#gknmfzidks .gt_super {
   font-size: 65%;
 }
 
-#ukbuxywiej .gt_footnote_marks {
+#gknmfzidks .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ukbuxywiej .gt_asterisk {
+#gknmfzidks .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ukbuxywiej .gt_indent_1 {
+#gknmfzidks .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ukbuxywiej .gt_indent_2 {
+#gknmfzidks .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ukbuxywiej .gt_indent_3 {
+#gknmfzidks .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ukbuxywiej .gt_indent_4 {
+#gknmfzidks .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ukbuxywiej .gt_indent_5 {
+#gknmfzidks .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ukbuxywiej .katex-display {
+#gknmfzidks .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ukbuxywiej div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#gknmfzidks div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1222,23 +1193,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="yzvdclsrsy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yzvdclsrsy table {
+<div id="gwtzhlyrcb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gwtzhlyrcb table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yzvdclsrsy thead, #yzvdclsrsy tbody, #yzvdclsrsy tfoot, #yzvdclsrsy tr, #yzvdclsrsy td, #yzvdclsrsy th {
+#gwtzhlyrcb thead, #gwtzhlyrcb tbody, #gwtzhlyrcb tfoot, #gwtzhlyrcb tr, #gwtzhlyrcb td, #gwtzhlyrcb th {
   border-style: none;
 }
 
-#yzvdclsrsy p {
+#gwtzhlyrcb p {
   margin: 0;
   padding: 0;
 }
 
-#yzvdclsrsy .gt_table {
+#gwtzhlyrcb .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1264,12 +1235,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_caption {
+#gwtzhlyrcb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yzvdclsrsy .gt_title {
+#gwtzhlyrcb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1281,7 +1252,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#yzvdclsrsy .gt_subtitle {
+#gwtzhlyrcb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1293,7 +1264,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#yzvdclsrsy .gt_heading {
+#gwtzhlyrcb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1305,13 +1276,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_bottom_border {
+#gwtzhlyrcb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_col_headings {
+#gwtzhlyrcb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1326,7 +1297,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_col_heading {
+#gwtzhlyrcb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1346,7 +1317,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#yzvdclsrsy .gt_column_spanner_outer {
+#gwtzhlyrcb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1358,15 +1329,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#yzvdclsrsy .gt_column_spanner_outer:first-child {
+#gwtzhlyrcb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yzvdclsrsy .gt_column_spanner_outer:last-child {
+#gwtzhlyrcb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yzvdclsrsy .gt_column_spanner {
+#gwtzhlyrcb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1378,11 +1349,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#yzvdclsrsy .gt_spanner_row {
+#gwtzhlyrcb .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yzvdclsrsy .gt_group_heading {
+#gwtzhlyrcb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1408,7 +1379,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#yzvdclsrsy .gt_empty_group_heading {
+#gwtzhlyrcb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1423,15 +1394,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#yzvdclsrsy .gt_from_md > :first-child {
+#gwtzhlyrcb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yzvdclsrsy .gt_from_md > :last-child {
+#gwtzhlyrcb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yzvdclsrsy .gt_row {
+#gwtzhlyrcb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1450,7 +1421,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#yzvdclsrsy .gt_stub {
+#gwtzhlyrcb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1463,7 +1434,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yzvdclsrsy .gt_stub_row_group {
+#gwtzhlyrcb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1477,15 +1448,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#yzvdclsrsy .gt_row_group_first td {
+#gwtzhlyrcb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yzvdclsrsy .gt_row_group_first th {
+#gwtzhlyrcb .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yzvdclsrsy .gt_summary_row {
+#gwtzhlyrcb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1495,16 +1466,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yzvdclsrsy .gt_first_summary_row {
+#gwtzhlyrcb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_first_summary_row.thick {
+#gwtzhlyrcb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yzvdclsrsy .gt_last_summary_row {
+#gwtzhlyrcb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1514,7 +1485,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_grand_summary_row {
+#gwtzhlyrcb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1524,7 +1495,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yzvdclsrsy .gt_first_grand_summary_row {
+#gwtzhlyrcb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1534,7 +1505,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_last_grand_summary_row_top {
+#gwtzhlyrcb .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1544,11 +1515,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_striped {
+#gwtzhlyrcb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yzvdclsrsy .gt_table_body {
+#gwtzhlyrcb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1557,7 +1528,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_footnotes {
+#gwtzhlyrcb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1571,7 +1542,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_footnote {
+#gwtzhlyrcb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1580,7 +1551,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yzvdclsrsy .gt_sourcenotes {
+#gwtzhlyrcb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1594,7 +1565,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#yzvdclsrsy .gt_sourcenote {
+#gwtzhlyrcb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1602,72 +1573,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yzvdclsrsy .gt_left {
+#gwtzhlyrcb .gt_left {
   text-align: left;
 }
 
-#yzvdclsrsy .gt_center {
+#gwtzhlyrcb .gt_center {
   text-align: center;
 }
 
-#yzvdclsrsy .gt_right {
+#gwtzhlyrcb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yzvdclsrsy .gt_font_normal {
+#gwtzhlyrcb .gt_font_normal {
   font-weight: normal;
 }
 
-#yzvdclsrsy .gt_font_bold {
+#gwtzhlyrcb .gt_font_bold {
   font-weight: bold;
 }
 
-#yzvdclsrsy .gt_font_italic {
+#gwtzhlyrcb .gt_font_italic {
   font-style: italic;
 }
 
-#yzvdclsrsy .gt_super {
+#gwtzhlyrcb .gt_super {
   font-size: 65%;
 }
 
-#yzvdclsrsy .gt_footnote_marks {
+#gwtzhlyrcb .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yzvdclsrsy .gt_asterisk {
+#gwtzhlyrcb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yzvdclsrsy .gt_indent_1 {
+#gwtzhlyrcb .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yzvdclsrsy .gt_indent_2 {
+#gwtzhlyrcb .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yzvdclsrsy .gt_indent_3 {
+#gwtzhlyrcb .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yzvdclsrsy .gt_indent_4 {
+#gwtzhlyrcb .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yzvdclsrsy .gt_indent_5 {
+#gwtzhlyrcb .gt_indent_5 {
   text-indent: 25px;
 }
 
-#yzvdclsrsy .katex-display {
+#gwtzhlyrcb .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#yzvdclsrsy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#gwtzhlyrcb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

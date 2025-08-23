@@ -441,6 +441,11 @@ district_map <- function(office_name, district_name, simp_tol=50) {
         st_buffer(dist = -10) |>     # Negative buffer to return to original size
         st_simplify(dTolerance = 25)
         ## st_simplify(dTolerance=simp_tol)
+    # Create centroids for municipality labels to avoid multiple labels on fragmented areas
+    dist_centroids <- dist_geom |>
+        st_centroid() |>
+        select(label = city_town, geometry)
+    
     (tm_shape(dist_geom) +
      tm_polygons(
          col="MAP_COLORS",
@@ -450,7 +455,8 @@ district_map <- function(office_name, district_name, simp_tol=50) {
              "Precincts"="name"
          )
      ) +
-     tm_text("city_town") +
+     tm_shape(dist_centroids) +
+     tm_text("label") +
      tm_basemap("OpenStreetMap"))
 }
 

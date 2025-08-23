@@ -90,35 +90,6 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Massachusetts Second Bristol State Representative District – mapoli">
@@ -222,8 +193,8 @@ window.Quarto = {
 <strong>Incumbent</strong>: James K. Hawkins (D-Attleboro)</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-54c75618e2ca694c17bc" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-54c75618e2ca694c17bc">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.38143896145648,-71.33595808910196,-71.29107405039535,-71.29137132113478,-71.29053325167946,-71.28805404295952,-71.2876230426061,-71.2898582956079,-71.29004720198041,-71.28857198909219,-71.28782601341534,-71.28720383804307,-71.28599548130104,-71.28438703378447,-71.28333156130674,-71.28135940560441,-71.28041396305014,-71.27609997326385,-71.2694489806515,-71.26409699330647,-71.25773648132761,-71.252501045491,-71.24623800466179,-71.24338302738887,-71.20816208352041,-71.22251542879533,-71.30515913723416,-71.33978856959675,-71.38146295980931,-71.38143896145648],"lat":[41.91481598573155,41.94078607910878,41.9718609264249,41.96825608322568,41.96599333974565,41.96206399193307,41.95818300237998,41.95180689616596,41.950094404788,41.94980992066255,41.95002296372802,41.94942731713864,41.94944266956988,41.95063996712616,41.94464929398092,41.94436840346982,41.94636398323506,41.94973097535691,41.95273396932079,41.95408097068542,41.95394375892285,41.95454894233451,41.95436497150866,41.95384497276383,41.90885204966453,41.91224153884189,41.90311046895313,41.89847393235937,41.89354603491984,41.91481598573155]}]]],"Attleboro","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#BEBADA","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Attleboro<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Attleboro<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Attleboro - 11 of 12 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Attleboro",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[41.92583447863382,-71.29853153951177,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Attleboro.1","dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Attleboro",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[41.89354603491984,41.9718609264249],"lng":[-71.38146295980931,-71.20816208352041]},"fitBounds":[41.89354603491984,-71.38146295980931,41.9718609264249,-71.20816208352041,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-051251f6efef78054416" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-051251f6efef78054416">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.38143896145648,-71.33595808910196,-71.29107405039535,-71.29137132113478,-71.29053325167946,-71.28805404295952,-71.2876230426061,-71.2898582956079,-71.29004720198041,-71.28857198909219,-71.28782601341534,-71.28720383804307,-71.28599548130104,-71.28438703378447,-71.28333156130674,-71.28135940560441,-71.28041396305014,-71.27609997326385,-71.2694489806515,-71.26409699330647,-71.25773648132761,-71.252501045491,-71.24623800466179,-71.24338302738887,-71.20816208352041,-71.22251542879533,-71.30515913723416,-71.33978856959675,-71.38146295980931,-71.38143896145648],"lat":[41.91481598573155,41.94078607910878,41.9718609264249,41.96825608322568,41.96599333974565,41.96206399193307,41.95818300237998,41.95180689616596,41.950094404788,41.94980992066255,41.95002296372802,41.94942731713864,41.94944266956988,41.95063996712616,41.94464929398092,41.94436840346982,41.94636398323506,41.94973097535691,41.95273396932079,41.95408097068542,41.95394375892285,41.95454894233451,41.95436497150866,41.95384497276383,41.90885204966453,41.91224153884189,41.90311046895313,41.89847393235937,41.89354603491984,41.91481598573155]}]]],"Attleboro","dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":"#BEBADA","fillOpacity":0.6,"dashArray":"none","smoothFactor":1,"noClip":false},"<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Attleboro<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Attleboro<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Attleboro - 11 of 12 precincts<\/nobr><\/td><\/tr><\/table><\/div>",null,"Attleboro",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[41.92583459400868,-71.29853154509695,{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},"Attleboro.1","dist_centroids",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,"Attleboro",{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],["dist_geom","dist_centroids"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[41.89354603491984,41.9718609264249],"lng":[-71.38146295980931,-71.20816208352041]},"fitBounds":[41.89354603491984,-71.38146295980931,41.9718609264249,-71.20816208352041,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -233,23 +204,23 @@ window.Quarto = {
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="zjgiwzxavk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zjgiwzxavk table {
+<div id="bwdlwuhnti" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bwdlwuhnti table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zjgiwzxavk thead, #zjgiwzxavk tbody, #zjgiwzxavk tfoot, #zjgiwzxavk tr, #zjgiwzxavk td, #zjgiwzxavk th {
+#bwdlwuhnti thead, #bwdlwuhnti tbody, #bwdlwuhnti tfoot, #bwdlwuhnti tr, #bwdlwuhnti td, #bwdlwuhnti th {
   border-style: none;
 }
 
-#zjgiwzxavk p {
+#bwdlwuhnti p {
   margin: 0;
   padding: 0;
 }
 
-#zjgiwzxavk .gt_table {
+#bwdlwuhnti .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -275,12 +246,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_caption {
+#bwdlwuhnti .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zjgiwzxavk .gt_title {
+#bwdlwuhnti .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -292,7 +263,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#zjgiwzxavk .gt_subtitle {
+#bwdlwuhnti .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -304,7 +275,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#zjgiwzxavk .gt_heading {
+#bwdlwuhnti .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -316,13 +287,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_bottom_border {
+#bwdlwuhnti .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_col_headings {
+#bwdlwuhnti .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -337,7 +308,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_col_heading {
+#bwdlwuhnti .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -357,7 +328,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#zjgiwzxavk .gt_column_spanner_outer {
+#bwdlwuhnti .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -369,15 +340,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#zjgiwzxavk .gt_column_spanner_outer:first-child {
+#bwdlwuhnti .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zjgiwzxavk .gt_column_spanner_outer:last-child {
+#bwdlwuhnti .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zjgiwzxavk .gt_column_spanner {
+#bwdlwuhnti .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -389,11 +360,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#zjgiwzxavk .gt_spanner_row {
+#bwdlwuhnti .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zjgiwzxavk .gt_group_heading {
+#bwdlwuhnti .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -419,7 +390,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#zjgiwzxavk .gt_empty_group_heading {
+#bwdlwuhnti .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -434,15 +405,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#zjgiwzxavk .gt_from_md > :first-child {
+#bwdlwuhnti .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zjgiwzxavk .gt_from_md > :last-child {
+#bwdlwuhnti .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zjgiwzxavk .gt_row {
+#bwdlwuhnti .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -461,7 +432,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#zjgiwzxavk .gt_stub {
+#bwdlwuhnti .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -474,7 +445,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zjgiwzxavk .gt_stub_row_group {
+#bwdlwuhnti .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,15 +459,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#zjgiwzxavk .gt_row_group_first td {
+#bwdlwuhnti .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zjgiwzxavk .gt_row_group_first th {
+#bwdlwuhnti .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zjgiwzxavk .gt_summary_row {
+#bwdlwuhnti .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -506,16 +477,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zjgiwzxavk .gt_first_summary_row {
+#bwdlwuhnti .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_first_summary_row.thick {
+#bwdlwuhnti .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zjgiwzxavk .gt_last_summary_row {
+#bwdlwuhnti .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,7 +496,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_grand_summary_row {
+#bwdlwuhnti .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -535,7 +506,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zjgiwzxavk .gt_first_grand_summary_row {
+#bwdlwuhnti .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -545,7 +516,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_last_grand_summary_row_top {
+#bwdlwuhnti .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,11 +526,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_striped {
+#bwdlwuhnti .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zjgiwzxavk .gt_table_body {
+#bwdlwuhnti .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -568,7 +539,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_footnotes {
+#bwdlwuhnti .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -582,7 +553,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_footnote {
+#bwdlwuhnti .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -591,7 +562,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zjgiwzxavk .gt_sourcenotes {
+#bwdlwuhnti .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -605,7 +576,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#zjgiwzxavk .gt_sourcenote {
+#bwdlwuhnti .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -613,72 +584,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zjgiwzxavk .gt_left {
+#bwdlwuhnti .gt_left {
   text-align: left;
 }
 
-#zjgiwzxavk .gt_center {
+#bwdlwuhnti .gt_center {
   text-align: center;
 }
 
-#zjgiwzxavk .gt_right {
+#bwdlwuhnti .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zjgiwzxavk .gt_font_normal {
+#bwdlwuhnti .gt_font_normal {
   font-weight: normal;
 }
 
-#zjgiwzxavk .gt_font_bold {
+#bwdlwuhnti .gt_font_bold {
   font-weight: bold;
 }
 
-#zjgiwzxavk .gt_font_italic {
+#bwdlwuhnti .gt_font_italic {
   font-style: italic;
 }
 
-#zjgiwzxavk .gt_super {
+#bwdlwuhnti .gt_super {
   font-size: 65%;
 }
 
-#zjgiwzxavk .gt_footnote_marks {
+#bwdlwuhnti .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zjgiwzxavk .gt_asterisk {
+#bwdlwuhnti .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zjgiwzxavk .gt_indent_1 {
+#bwdlwuhnti .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zjgiwzxavk .gt_indent_2 {
+#bwdlwuhnti .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zjgiwzxavk .gt_indent_3 {
+#bwdlwuhnti .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zjgiwzxavk .gt_indent_4 {
+#bwdlwuhnti .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zjgiwzxavk .gt_indent_5 {
+#bwdlwuhnti .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zjgiwzxavk .katex-display {
+#bwdlwuhnti .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zjgiwzxavk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bwdlwuhnti div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -735,23 +706,23 @@ window.Quarto = {
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="icddgmhzgu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#icddgmhzgu table {
+<div id="bfvmuaefqb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bfvmuaefqb table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#icddgmhzgu thead, #icddgmhzgu tbody, #icddgmhzgu tfoot, #icddgmhzgu tr, #icddgmhzgu td, #icddgmhzgu th {
+#bfvmuaefqb thead, #bfvmuaefqb tbody, #bfvmuaefqb tfoot, #bfvmuaefqb tr, #bfvmuaefqb td, #bfvmuaefqb th {
   border-style: none;
 }
 
-#icddgmhzgu p {
+#bfvmuaefqb p {
   margin: 0;
   padding: 0;
 }
 
-#icddgmhzgu .gt_table {
+#bfvmuaefqb .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -777,12 +748,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_caption {
+#bfvmuaefqb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#icddgmhzgu .gt_title {
+#bfvmuaefqb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -794,7 +765,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#icddgmhzgu .gt_subtitle {
+#bfvmuaefqb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -806,7 +777,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#icddgmhzgu .gt_heading {
+#bfvmuaefqb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -818,13 +789,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_bottom_border {
+#bfvmuaefqb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_col_headings {
+#bfvmuaefqb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -839,7 +810,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_col_heading {
+#bfvmuaefqb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -859,7 +830,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#icddgmhzgu .gt_column_spanner_outer {
+#bfvmuaefqb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -871,15 +842,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#icddgmhzgu .gt_column_spanner_outer:first-child {
+#bfvmuaefqb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#icddgmhzgu .gt_column_spanner_outer:last-child {
+#bfvmuaefqb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#icddgmhzgu .gt_column_spanner {
+#bfvmuaefqb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -891,11 +862,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#icddgmhzgu .gt_spanner_row {
+#bfvmuaefqb .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#icddgmhzgu .gt_group_heading {
+#bfvmuaefqb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -921,7 +892,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#icddgmhzgu .gt_empty_group_heading {
+#bfvmuaefqb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -936,15 +907,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#icddgmhzgu .gt_from_md > :first-child {
+#bfvmuaefqb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#icddgmhzgu .gt_from_md > :last-child {
+#bfvmuaefqb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#icddgmhzgu .gt_row {
+#bfvmuaefqb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -963,7 +934,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#icddgmhzgu .gt_stub {
+#bfvmuaefqb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -976,7 +947,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#icddgmhzgu .gt_stub_row_group {
+#bfvmuaefqb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -990,15 +961,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#icddgmhzgu .gt_row_group_first td {
+#bfvmuaefqb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#icddgmhzgu .gt_row_group_first th {
+#bfvmuaefqb .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#icddgmhzgu .gt_summary_row {
+#bfvmuaefqb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1008,16 +979,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#icddgmhzgu .gt_first_summary_row {
+#bfvmuaefqb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_first_summary_row.thick {
+#bfvmuaefqb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#icddgmhzgu .gt_last_summary_row {
+#bfvmuaefqb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1027,7 +998,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_grand_summary_row {
+#bfvmuaefqb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1037,7 +1008,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#icddgmhzgu .gt_first_grand_summary_row {
+#bfvmuaefqb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1047,7 +1018,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_last_grand_summary_row_top {
+#bfvmuaefqb .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1057,11 +1028,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_striped {
+#bfvmuaefqb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#icddgmhzgu .gt_table_body {
+#bfvmuaefqb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1070,7 +1041,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_footnotes {
+#bfvmuaefqb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1084,7 +1055,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_footnote {
+#bfvmuaefqb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1093,7 +1064,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#icddgmhzgu .gt_sourcenotes {
+#bfvmuaefqb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1107,7 +1078,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#icddgmhzgu .gt_sourcenote {
+#bfvmuaefqb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1115,72 +1086,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#icddgmhzgu .gt_left {
+#bfvmuaefqb .gt_left {
   text-align: left;
 }
 
-#icddgmhzgu .gt_center {
+#bfvmuaefqb .gt_center {
   text-align: center;
 }
 
-#icddgmhzgu .gt_right {
+#bfvmuaefqb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#icddgmhzgu .gt_font_normal {
+#bfvmuaefqb .gt_font_normal {
   font-weight: normal;
 }
 
-#icddgmhzgu .gt_font_bold {
+#bfvmuaefqb .gt_font_bold {
   font-weight: bold;
 }
 
-#icddgmhzgu .gt_font_italic {
+#bfvmuaefqb .gt_font_italic {
   font-style: italic;
 }
 
-#icddgmhzgu .gt_super {
+#bfvmuaefqb .gt_super {
   font-size: 65%;
 }
 
-#icddgmhzgu .gt_footnote_marks {
+#bfvmuaefqb .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#icddgmhzgu .gt_asterisk {
+#bfvmuaefqb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#icddgmhzgu .gt_indent_1 {
+#bfvmuaefqb .gt_indent_1 {
   text-indent: 5px;
 }
 
-#icddgmhzgu .gt_indent_2 {
+#bfvmuaefqb .gt_indent_2 {
   text-indent: 10px;
 }
 
-#icddgmhzgu .gt_indent_3 {
+#bfvmuaefqb .gt_indent_3 {
   text-indent: 15px;
 }
 
-#icddgmhzgu .gt_indent_4 {
+#bfvmuaefqb .gt_indent_4 {
   text-indent: 20px;
 }
 
-#icddgmhzgu .gt_indent_5 {
+#bfvmuaefqb .gt_indent_5 {
   text-indent: 25px;
 }
 
-#icddgmhzgu .katex-display {
+#bfvmuaefqb .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#icddgmhzgu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bfvmuaefqb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1210,23 +1181,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="bavubfeggp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bavubfeggp table {
+<div id="xvtwpgdwps" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xvtwpgdwps table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#bavubfeggp thead, #bavubfeggp tbody, #bavubfeggp tfoot, #bavubfeggp tr, #bavubfeggp td, #bavubfeggp th {
+#xvtwpgdwps thead, #xvtwpgdwps tbody, #xvtwpgdwps tfoot, #xvtwpgdwps tr, #xvtwpgdwps td, #xvtwpgdwps th {
   border-style: none;
 }
 
-#bavubfeggp p {
+#xvtwpgdwps p {
   margin: 0;
   padding: 0;
 }
 
-#bavubfeggp .gt_table {
+#xvtwpgdwps .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1252,12 +1223,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_caption {
+#xvtwpgdwps .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#bavubfeggp .gt_title {
+#xvtwpgdwps .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1269,7 +1240,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#bavubfeggp .gt_subtitle {
+#xvtwpgdwps .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1281,7 +1252,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#bavubfeggp .gt_heading {
+#xvtwpgdwps .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1293,13 +1264,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_bottom_border {
+#xvtwpgdwps .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_col_headings {
+#xvtwpgdwps .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1314,7 +1285,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_col_heading {
+#xvtwpgdwps .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1334,7 +1305,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#bavubfeggp .gt_column_spanner_outer {
+#xvtwpgdwps .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1346,15 +1317,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#bavubfeggp .gt_column_spanner_outer:first-child {
+#xvtwpgdwps .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bavubfeggp .gt_column_spanner_outer:last-child {
+#xvtwpgdwps .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bavubfeggp .gt_column_spanner {
+#xvtwpgdwps .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1366,11 +1337,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#bavubfeggp .gt_spanner_row {
+#xvtwpgdwps .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#bavubfeggp .gt_group_heading {
+#xvtwpgdwps .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1396,7 +1367,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#bavubfeggp .gt_empty_group_heading {
+#xvtwpgdwps .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1411,15 +1382,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#bavubfeggp .gt_from_md > :first-child {
+#xvtwpgdwps .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bavubfeggp .gt_from_md > :last-child {
+#xvtwpgdwps .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bavubfeggp .gt_row {
+#xvtwpgdwps .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1438,7 +1409,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#bavubfeggp .gt_stub {
+#xvtwpgdwps .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1451,7 +1422,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#bavubfeggp .gt_stub_row_group {
+#xvtwpgdwps .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1465,15 +1436,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#bavubfeggp .gt_row_group_first td {
+#xvtwpgdwps .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bavubfeggp .gt_row_group_first th {
+#xvtwpgdwps .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#bavubfeggp .gt_summary_row {
+#xvtwpgdwps .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1483,16 +1454,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#bavubfeggp .gt_first_summary_row {
+#xvtwpgdwps .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_first_summary_row.thick {
+#xvtwpgdwps .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bavubfeggp .gt_last_summary_row {
+#xvtwpgdwps .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1502,7 +1473,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_grand_summary_row {
+#xvtwpgdwps .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1512,7 +1483,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#bavubfeggp .gt_first_grand_summary_row {
+#xvtwpgdwps .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1522,7 +1493,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_last_grand_summary_row_top {
+#xvtwpgdwps .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1532,11 +1503,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_striped {
+#xvtwpgdwps .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bavubfeggp .gt_table_body {
+#xvtwpgdwps .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1545,7 +1516,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_footnotes {
+#xvtwpgdwps .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1559,7 +1530,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_footnote {
+#xvtwpgdwps .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1568,7 +1539,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#bavubfeggp .gt_sourcenotes {
+#xvtwpgdwps .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1582,7 +1553,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#bavubfeggp .gt_sourcenote {
+#xvtwpgdwps .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1590,72 +1561,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#bavubfeggp .gt_left {
+#xvtwpgdwps .gt_left {
   text-align: left;
 }
 
-#bavubfeggp .gt_center {
+#xvtwpgdwps .gt_center {
   text-align: center;
 }
 
-#bavubfeggp .gt_right {
+#xvtwpgdwps .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bavubfeggp .gt_font_normal {
+#xvtwpgdwps .gt_font_normal {
   font-weight: normal;
 }
 
-#bavubfeggp .gt_font_bold {
+#xvtwpgdwps .gt_font_bold {
   font-weight: bold;
 }
 
-#bavubfeggp .gt_font_italic {
+#xvtwpgdwps .gt_font_italic {
   font-style: italic;
 }
 
-#bavubfeggp .gt_super {
+#xvtwpgdwps .gt_super {
   font-size: 65%;
 }
 
-#bavubfeggp .gt_footnote_marks {
+#xvtwpgdwps .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#bavubfeggp .gt_asterisk {
+#xvtwpgdwps .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bavubfeggp .gt_indent_1 {
+#xvtwpgdwps .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bavubfeggp .gt_indent_2 {
+#xvtwpgdwps .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bavubfeggp .gt_indent_3 {
+#xvtwpgdwps .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bavubfeggp .gt_indent_4 {
+#xvtwpgdwps .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bavubfeggp .gt_indent_5 {
+#xvtwpgdwps .gt_indent_5 {
   text-indent: 25px;
 }
 
-#bavubfeggp .katex-display {
+#xvtwpgdwps .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#bavubfeggp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#xvtwpgdwps div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

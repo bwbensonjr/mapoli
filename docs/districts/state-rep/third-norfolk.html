@@ -90,35 +90,6 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Massachusetts Third Norfolk State Representative District – mapoli">
@@ -222,8 +193,8 @@ window.Quarto = {
 <strong>Incumbent</strong>: Ronald Mariano (D-Quincy)</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-8ec3538e913be242f04e" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-8ec3538e913be242f04e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.03509295186672,-71.02691097464826,-71.02613204332171,-71.02645603084564,-71.02554804882884,-71.02669206746432,-71.02651967630584,-71.02556195619023,-71.02357935658443,-71.02086901557621,-71.01976278568335,-71.01890996954629,-71.01788009805921,-71.01840246545534,-71.01714004206639,-71.01682969464343,-71.01282004414514,-71.01293253767741,-71.01133363362757,-71.00880479912229,-71.00826054810301,-71.00854995580038,-71.00310001144641,-70.99780004173543,-70.99863083998405,-70.9961326226728,-70.99173693878916,-70.98672701581852,-70.980670043225,-70.98127003636252,-71.00208005663701,-71.00197540101361,-71.0218589891886,-71.0269529568579,-71.02752096680693,-71.0272294676232,-71.03509295186672],"lat":[42.13563401616416,42.15778395570968,42.15747698252653,42.15543648395376,42.15420000425237,42.15322576299774,42.15197015603005,42.15058458432166,42.14976018030296,42.14935197404584,42.14811615994297,42.1491199779944,42.14927997599651,42.14859849739855,42.14811997640638,42.14733723754988,42.14692997345978,42.14533489306726,42.14527192554074,42.14580505174904,42.15100001575352,42.15478996864263,42.15470996911785,42.15231998513444,42.14448218164884,42.14412030676552,42.14418005057802,42.14511296471824,42.13959298946959,42.13551101950847,42.12733214648539,42.12652545162177,42.11874503812818,42.12373401292659,42.12641500175206,42.13292741690589,42.13563401616416]}]],[[{"lng":[-71.01787090180646,-71.01710806780326,-71.01780195503184,-71.01712401727592,-71.01612889612473,-71.01505226103995,-71.01618993414354,-71.01403817749473,-71.01375996665199,-71.00980169408919,-71.00979995518756,-71.00666449313408,-71.0044000541231,-71.00499301136082,-71.0039233883398,-71.00323996072507,-71.00192988335078,-71.00034834614783,-71.0026047349362,-71.00326995551009,-71.00311596075763,-71.00269000989935,-71.00224688233887,-71.00039002410827,-71.00009424805221,-70.99762212226288,-70.99742918862773,-70.99853994334177,-70.997941487452,-70.9977299671678,-70.99517000291182,-70.98499081737708,-70.98412735260392,-70.98573994769232,-70.98494312132868,-70.98581994161367,-70.98485298876369,-70.98280803748357,-70.98232634315393,-70.98107699487313,-70.97947124917241,-70.97839899001104,-70.97697501694596,-70.9763520429096,-70.97641859526951,-70.97419204700991,-70.97442638030914,-70.97389673055316,-70.9692534456299,-70.96756598551127,-70.96611106482979,-70.96647205362012,-70.96787697150211,-70.96844804027151,-70.97116545289921,-70.97290524881659,-70.97268631451367,-70.96953205652684,-70.97031202532081,-70.97294308883568,-70.97354878684465,-70.97088402724394,-70.97562499299299,-70.97671242797644,-70.97781581549617,-70.98040398732951,-70.98117412031219,-71.0020929034927,-71.00833699787414,-71.01391995920369,-71.01391170265889,-71.01599323619725,-71.01787090180646],"lat":[42.23580991571442,42.23616801578868,42.23736298566457,42.23757297033386,42.23699917510404,42.23789345925385,42.23909998407179,42.23914603080797,42.23971997203512,42.24046366275301,42.24113996106808,42.24053703174798,42.24150994179333,42.2390227050802,42.23796722491977,42.23975997552549,42.24004045372195,42.24155168854496,42.24422438973538,42.24426001342678,42.2454589841352,42.24571995441394,42.24530716691141,42.24578996144419,42.24545861377498,42.24677135650061,42.24710862831473,42.24828000306324,42.24879852078939,42.25007995941846,42.25004996257242,42.24872719172511,42.24952236167799,42.25025001325302,42.25172649844274,42.25196401909924,42.25339395091527,42.2529719768451,42.25203108286604,42.2527589654504,42.25288875375939,42.25345297000538,42.25329796900008,42.2526469974621,42.25173444782971,42.24969799709384,42.24930273428571,42.24828929446385,42.24685099486725,42.24835796527939,42.24783798433324,42.24700799558295,42.24593639171071,42.24447001572305,42.24417657896829,42.24228715866493,42.24205617556508,42.24226296636434,42.24054303965593,42.24122296900376,42.24012243792168,42.23894803077089,42.23774303224909,42.23835772307504,42.23826930530772,42.23532004111277,42.23573797739087,42.23222055360037,42.2296690368816,42.2323100152469,42.23274568479099,42.23389998165242,42.23580991571442]}]],[[{"lng":[-70.98126995148422,-70.96857695787368,-70.96771449995461,-70.96806595938368,-70.96702196630085,-70.96428298038228,-70.96262074348337,-70.9606874046821,-70.96026292799034,-70.96053895417928,-70.96006996882737,-70.95915230969021,-70.9594089546395,-70.95891796367636,-70.95834097236281,-70.95633051520974,-70.95622595976903,-70.95546500937263,-70.95412502766848,-70.95249740976051,-70.95146124400686,-70.95055515040612,-70.95091667182716,-70.94984664986339,-70.94824704359388,-70.95154105625754,-70.95188592980365,-70.95104570341522,-70.94807657914355,-70.94620002749194,-70.94535003772509,-70.94521866663916,-70.94307005436939,-70.94511472494247,-70.94395005634078,-70.94725959304554,-70.9482280247942,-70.95208000347179,-70.95612743091615,-70.95577604190157,-70.95687996423486,-70.95612003819805,-70.95565904038031,-70.95962548927838,-70.96069592306948,-70.96030806493809,-70.96243212168608,-70.96217222155734,-70.95560003903566,-70.95538003807917,-70.9632128748683,-70.96375700566465,-70.95812766986346,-70.95535535870874,-70.94896305247518,-70.98126995148422],"lat":[42.1355110533842,42.2199679855806,42.22064934209194,42.22168999407065,42.2233529749766,42.2245849714508,42.2246269768363,42.22622360972321,42.22745733949625,42.22850699620309,42.22933098446435,42.22963449885535,42.23066599450106,42.2327189886865,42.23326897418555,42.23395867777095,42.23499797108585,42.23504696861344,42.23444397990284,42.23235823593735,42.23211932738024,42.23249690471194,42.23109022758474,42.23062676760829,42.23069396873152,42.23005792520802,42.2285246149653,42.22710140885692,42.22684161706074,42.22728996249431,42.22611998988001,42.22493069354631,42.22282000543068,42.22160408648059,42.22022000766357,42.21880248146562,42.21782902686949,42.21709003017165,42.2171965983144,42.20655406813898,42.20710713594646,42.20481999638008,42.19449703976472,42.19572662873689,42.19349018277848,42.19334097838679,42.190747488019,42.18796484175372,42.1890309601669,42.17673003303931,42.17817307986851,42.17630774715013,42.16764019882378,42.15847016179385,42.14815601348612,42.1355110533842]}]]],["Holbrook","Quincy","Weymouth"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#B3DE69","#D9D9D9","#BEBADA"],"fillOpacity":[0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Holbrook<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Holbrook<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Holbrook - 2 of 4 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Quincy<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Quincy<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Quincy - 7 of 31 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Weymouth<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Weymouth<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Weymouth - 5 of 19 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Holbrook","Quincy","Weymouth"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.13748987112169,42.24122905186162,42.18155405059481],[-71.0104789700539,-70.99140611342314,-70.96443047583386],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Holbrook.1","Quincy.1","Weymouth.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Holbrook","Quincy","Weymouth"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.11874503812818,42.25345297000538],"lng":[-71.03509295186672,-70.94307005436939]},"fitBounds":[42.11874503812818,-71.03509295186672,42.25345297000538,-70.94307005436939,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-6bb58cce10184ffb68d2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-6bb58cce10184ffb68d2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.03509295186672,-71.02691097464826,-71.02613204332171,-71.02645603084564,-71.02554804882884,-71.02669206746432,-71.02651967630584,-71.02556195619023,-71.02357935658443,-71.02086901557621,-71.01976278568335,-71.01890996954629,-71.01788009805921,-71.01840246545534,-71.01714004206639,-71.01682969464343,-71.01282004414514,-71.01293253767741,-71.01133363362757,-71.00880479912229,-71.00826054810301,-71.00854995580038,-71.00310001144641,-70.99780004173543,-70.99863083998405,-70.9961326226728,-70.99173693878916,-70.98672701581852,-70.980670043225,-70.98127003636252,-71.00208005663701,-71.00197540101361,-71.0218589891886,-71.0269529568579,-71.02752096680693,-71.0272294676232,-71.03509295186672],"lat":[42.13563401616416,42.15778395570968,42.15747698252653,42.15543648395376,42.15420000425237,42.15322576299774,42.15197015603005,42.15058458432166,42.14976018030296,42.14935197404584,42.14811615994297,42.1491199779944,42.14927997599651,42.14859849739855,42.14811997640638,42.14733723754988,42.14692997345978,42.14533489306726,42.14527192554074,42.14580505174904,42.15100001575352,42.15478996864263,42.15470996911785,42.15231998513444,42.14448218164884,42.14412030676552,42.14418005057802,42.14511296471824,42.13959298946959,42.13551101950847,42.12733214648539,42.12652545162177,42.11874503812818,42.12373401292659,42.12641500175206,42.13292741690589,42.13563401616416]}]],[[{"lng":[-71.01787090180646,-71.01710806780326,-71.01780195503184,-71.01712401727592,-71.01612889612473,-71.01505226103995,-71.01618993414354,-71.01403817749473,-71.01375996665199,-71.00980169408919,-71.00979995518756,-71.00666449313408,-71.0044000541231,-71.00499301136082,-71.0039233883398,-71.00323996072507,-71.00192988335078,-71.00034834614783,-71.0026047349362,-71.00326995551009,-71.00311596075763,-71.00269000989935,-71.00224688233887,-71.00039002410827,-71.00009424805221,-70.99762212226288,-70.99742918862773,-70.99853994334177,-70.997941487452,-70.9977299671678,-70.99517000291182,-70.98499081737708,-70.98412735260392,-70.98573994769232,-70.98494312132868,-70.98581994161367,-70.98485298876369,-70.98280803748357,-70.98232634315393,-70.98107699487313,-70.97947124917241,-70.97839899001104,-70.97697501694596,-70.9763520429096,-70.97641859526951,-70.97419204700991,-70.97442638030914,-70.97389673055316,-70.9692534456299,-70.96756598551127,-70.96611106482979,-70.96647205362012,-70.96787697150211,-70.96844804027151,-70.97116545289921,-70.97290524881659,-70.97268631451367,-70.96953205652684,-70.97031202532081,-70.97294308883568,-70.97354878684465,-70.97088402724394,-70.97562499299299,-70.97671242797644,-70.97781581549617,-70.98040398732951,-70.98117412031219,-71.0020929034927,-71.00833699787414,-71.01391995920369,-71.01391170265889,-71.01599323619725,-71.01787090180646],"lat":[42.23580991571442,42.23616801578868,42.23736298566457,42.23757297033386,42.23699917510404,42.23789345925385,42.23909998407179,42.23914603080797,42.23971997203512,42.24046366275301,42.24113996106808,42.24053703174798,42.24150994179333,42.2390227050802,42.23796722491977,42.23975997552549,42.24004045372195,42.24155168854496,42.24422438973538,42.24426001342678,42.2454589841352,42.24571995441394,42.24530716691141,42.24578996144419,42.24545861377498,42.24677135650061,42.24710862831473,42.24828000306324,42.24879852078939,42.25007995941846,42.25004996257242,42.24872719172511,42.24952236167799,42.25025001325302,42.25172649844274,42.25196401909924,42.25339395091527,42.2529719768451,42.25203108286604,42.2527589654504,42.25288875375939,42.25345297000538,42.25329796900008,42.2526469974621,42.25173444782971,42.24969799709384,42.24930273428571,42.24828929446385,42.24685099486725,42.24835796527939,42.24783798433324,42.24700799558295,42.24593639171071,42.24447001572305,42.24417657896829,42.24228715866493,42.24205617556508,42.24226296636434,42.24054303965593,42.24122296900376,42.24012243792168,42.23894803077089,42.23774303224909,42.23835772307504,42.23826930530772,42.23532004111277,42.23573797739087,42.23222055360037,42.2296690368816,42.2323100152469,42.23274568479099,42.23389998165242,42.23580991571442]}]],[[{"lng":[-70.98126995148422,-70.96857695787368,-70.96771449995461,-70.96806595938368,-70.96702196630085,-70.96428298038228,-70.96262074348337,-70.9606874046821,-70.96026292799034,-70.96053895417928,-70.96006996882737,-70.95915230969021,-70.9594089546395,-70.95891796367636,-70.95834097236281,-70.95633051520974,-70.95622595976903,-70.95546500937263,-70.95412502766848,-70.95249740976051,-70.95146124400686,-70.95055515040612,-70.95091667182716,-70.94984664986339,-70.94824704359388,-70.95154105625754,-70.95188592980365,-70.95104570341522,-70.94807657914355,-70.94620002749194,-70.94535003772509,-70.94521866663916,-70.94307005436939,-70.94511472494247,-70.94395005634078,-70.94725959304554,-70.9482280247942,-70.95208000347179,-70.95612743091615,-70.95577604190157,-70.95687996423486,-70.95612003819805,-70.95565904038031,-70.95962548927838,-70.96069592306948,-70.96030806493809,-70.96243212168608,-70.96217222155734,-70.95560003903566,-70.95538003807917,-70.9632128748683,-70.96375700566465,-70.95812766986346,-70.95535535870874,-70.94896305247518,-70.98126995148422],"lat":[42.1355110533842,42.2199679855806,42.22064934209194,42.22168999407065,42.2233529749766,42.2245849714508,42.2246269768363,42.22622360972321,42.22745733949625,42.22850699620309,42.22933098446435,42.22963449885535,42.23066599450106,42.2327189886865,42.23326897418555,42.23395867777095,42.23499797108585,42.23504696861344,42.23444397990284,42.23235823593735,42.23211932738024,42.23249690471194,42.23109022758474,42.23062676760829,42.23069396873152,42.23005792520802,42.2285246149653,42.22710140885692,42.22684161706074,42.22728996249431,42.22611998988001,42.22493069354631,42.22282000543068,42.22160408648059,42.22022000766357,42.21880248146562,42.21782902686949,42.21709003017165,42.2171965983144,42.20655406813898,42.20710713594646,42.20481999638008,42.19449703976472,42.19572662873689,42.19349018277848,42.19334097838679,42.190747488019,42.18796484175372,42.1890309601669,42.17673003303931,42.17817307986851,42.17630774715013,42.16764019882378,42.15847016179385,42.14815601348612,42.1355110533842]}]]],["Holbrook","Quincy","Weymouth"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#D9D9D9","#FFFFB3","#CCEBC5"],"fillOpacity":[0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Holbrook<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Holbrook<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Holbrook - 2 of 4 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Quincy<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Quincy<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Quincy - 7 of 31 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Weymouth<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Weymouth<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Weymouth - 5 of 19 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Holbrook","Quincy","Weymouth"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.13748989208902,42.24122906385216,42.18155428753917],[-71.01047896942221,-70.99140610097049,-70.96443045111988],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Holbrook.1","Quincy.1","Weymouth.1"],"dist_centroids",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Holbrook","Quincy","Weymouth"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],["dist_geom","dist_centroids"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.11874503812818,42.25345297000538],"lng":[-71.03509295186672,-70.94307005436939]},"fitBounds":[42.11874503812818,-71.03509295186672,42.25345297000538,-70.94307005436939,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -233,23 +204,23 @@ window.Quarto = {
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="yfjqkbdpxp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yfjqkbdpxp table {
+<div id="fjnbzegizz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fjnbzegizz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yfjqkbdpxp thead, #yfjqkbdpxp tbody, #yfjqkbdpxp tfoot, #yfjqkbdpxp tr, #yfjqkbdpxp td, #yfjqkbdpxp th {
+#fjnbzegizz thead, #fjnbzegizz tbody, #fjnbzegizz tfoot, #fjnbzegizz tr, #fjnbzegizz td, #fjnbzegizz th {
   border-style: none;
 }
 
-#yfjqkbdpxp p {
+#fjnbzegizz p {
   margin: 0;
   padding: 0;
 }
 
-#yfjqkbdpxp .gt_table {
+#fjnbzegizz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -275,12 +246,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_caption {
+#fjnbzegizz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yfjqkbdpxp .gt_title {
+#fjnbzegizz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -292,7 +263,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#yfjqkbdpxp .gt_subtitle {
+#fjnbzegizz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -304,7 +275,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#yfjqkbdpxp .gt_heading {
+#fjnbzegizz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -316,13 +287,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_bottom_border {
+#fjnbzegizz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_col_headings {
+#fjnbzegizz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -337,7 +308,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_col_heading {
+#fjnbzegizz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -357,7 +328,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#yfjqkbdpxp .gt_column_spanner_outer {
+#fjnbzegizz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -369,15 +340,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#yfjqkbdpxp .gt_column_spanner_outer:first-child {
+#fjnbzegizz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yfjqkbdpxp .gt_column_spanner_outer:last-child {
+#fjnbzegizz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yfjqkbdpxp .gt_column_spanner {
+#fjnbzegizz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -389,11 +360,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#yfjqkbdpxp .gt_spanner_row {
+#fjnbzegizz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yfjqkbdpxp .gt_group_heading {
+#fjnbzegizz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -419,7 +390,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#yfjqkbdpxp .gt_empty_group_heading {
+#fjnbzegizz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -434,15 +405,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#yfjqkbdpxp .gt_from_md > :first-child {
+#fjnbzegizz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yfjqkbdpxp .gt_from_md > :last-child {
+#fjnbzegizz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yfjqkbdpxp .gt_row {
+#fjnbzegizz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -461,7 +432,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#yfjqkbdpxp .gt_stub {
+#fjnbzegizz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -474,7 +445,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yfjqkbdpxp .gt_stub_row_group {
+#fjnbzegizz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,15 +459,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#yfjqkbdpxp .gt_row_group_first td {
+#fjnbzegizz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yfjqkbdpxp .gt_row_group_first th {
+#fjnbzegizz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yfjqkbdpxp .gt_summary_row {
+#fjnbzegizz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -506,16 +477,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yfjqkbdpxp .gt_first_summary_row {
+#fjnbzegizz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_first_summary_row.thick {
+#fjnbzegizz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yfjqkbdpxp .gt_last_summary_row {
+#fjnbzegizz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,7 +496,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_grand_summary_row {
+#fjnbzegizz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -535,7 +506,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yfjqkbdpxp .gt_first_grand_summary_row {
+#fjnbzegizz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -545,7 +516,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_last_grand_summary_row_top {
+#fjnbzegizz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,11 +526,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_striped {
+#fjnbzegizz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yfjqkbdpxp .gt_table_body {
+#fjnbzegizz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -568,7 +539,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_footnotes {
+#fjnbzegizz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -582,7 +553,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_footnote {
+#fjnbzegizz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -591,7 +562,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yfjqkbdpxp .gt_sourcenotes {
+#fjnbzegizz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -605,7 +576,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#yfjqkbdpxp .gt_sourcenote {
+#fjnbzegizz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -613,72 +584,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#yfjqkbdpxp .gt_left {
+#fjnbzegizz .gt_left {
   text-align: left;
 }
 
-#yfjqkbdpxp .gt_center {
+#fjnbzegizz .gt_center {
   text-align: center;
 }
 
-#yfjqkbdpxp .gt_right {
+#fjnbzegizz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yfjqkbdpxp .gt_font_normal {
+#fjnbzegizz .gt_font_normal {
   font-weight: normal;
 }
 
-#yfjqkbdpxp .gt_font_bold {
+#fjnbzegizz .gt_font_bold {
   font-weight: bold;
 }
 
-#yfjqkbdpxp .gt_font_italic {
+#fjnbzegizz .gt_font_italic {
   font-style: italic;
 }
 
-#yfjqkbdpxp .gt_super {
+#fjnbzegizz .gt_super {
   font-size: 65%;
 }
 
-#yfjqkbdpxp .gt_footnote_marks {
+#fjnbzegizz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yfjqkbdpxp .gt_asterisk {
+#fjnbzegizz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yfjqkbdpxp .gt_indent_1 {
+#fjnbzegizz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yfjqkbdpxp .gt_indent_2 {
+#fjnbzegizz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yfjqkbdpxp .gt_indent_3 {
+#fjnbzegizz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yfjqkbdpxp .gt_indent_4 {
+#fjnbzegizz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yfjqkbdpxp .gt_indent_5 {
+#fjnbzegizz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#yfjqkbdpxp .katex-display {
+#fjnbzegizz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#yfjqkbdpxp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#fjnbzegizz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -735,23 +706,23 @@ window.Quarto = {
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="jnplrwsizp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jnplrwsizp table {
+<div id="mulcjwptpa" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mulcjwptpa table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jnplrwsizp thead, #jnplrwsizp tbody, #jnplrwsizp tfoot, #jnplrwsizp tr, #jnplrwsizp td, #jnplrwsizp th {
+#mulcjwptpa thead, #mulcjwptpa tbody, #mulcjwptpa tfoot, #mulcjwptpa tr, #mulcjwptpa td, #mulcjwptpa th {
   border-style: none;
 }
 
-#jnplrwsizp p {
+#mulcjwptpa p {
   margin: 0;
   padding: 0;
 }
 
-#jnplrwsizp .gt_table {
+#mulcjwptpa .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -777,12 +748,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_caption {
+#mulcjwptpa .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jnplrwsizp .gt_title {
+#mulcjwptpa .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -794,7 +765,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#jnplrwsizp .gt_subtitle {
+#mulcjwptpa .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -806,7 +777,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#jnplrwsizp .gt_heading {
+#mulcjwptpa .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -818,13 +789,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_bottom_border {
+#mulcjwptpa .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_col_headings {
+#mulcjwptpa .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -839,7 +810,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_col_heading {
+#mulcjwptpa .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -859,7 +830,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#jnplrwsizp .gt_column_spanner_outer {
+#mulcjwptpa .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -871,15 +842,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#jnplrwsizp .gt_column_spanner_outer:first-child {
+#mulcjwptpa .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jnplrwsizp .gt_column_spanner_outer:last-child {
+#mulcjwptpa .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jnplrwsizp .gt_column_spanner {
+#mulcjwptpa .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -891,11 +862,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#jnplrwsizp .gt_spanner_row {
+#mulcjwptpa .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jnplrwsizp .gt_group_heading {
+#mulcjwptpa .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -921,7 +892,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#jnplrwsizp .gt_empty_group_heading {
+#mulcjwptpa .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -936,15 +907,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#jnplrwsizp .gt_from_md > :first-child {
+#mulcjwptpa .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jnplrwsizp .gt_from_md > :last-child {
+#mulcjwptpa .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jnplrwsizp .gt_row {
+#mulcjwptpa .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -963,7 +934,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#jnplrwsizp .gt_stub {
+#mulcjwptpa .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -976,7 +947,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jnplrwsizp .gt_stub_row_group {
+#mulcjwptpa .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -990,15 +961,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#jnplrwsizp .gt_row_group_first td {
+#mulcjwptpa .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jnplrwsizp .gt_row_group_first th {
+#mulcjwptpa .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jnplrwsizp .gt_summary_row {
+#mulcjwptpa .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1008,16 +979,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jnplrwsizp .gt_first_summary_row {
+#mulcjwptpa .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_first_summary_row.thick {
+#mulcjwptpa .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jnplrwsizp .gt_last_summary_row {
+#mulcjwptpa .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1027,7 +998,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_grand_summary_row {
+#mulcjwptpa .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1037,7 +1008,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jnplrwsizp .gt_first_grand_summary_row {
+#mulcjwptpa .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1047,7 +1018,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_last_grand_summary_row_top {
+#mulcjwptpa .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1057,11 +1028,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_striped {
+#mulcjwptpa .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jnplrwsizp .gt_table_body {
+#mulcjwptpa .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1070,7 +1041,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_footnotes {
+#mulcjwptpa .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1084,7 +1055,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_footnote {
+#mulcjwptpa .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1093,7 +1064,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jnplrwsizp .gt_sourcenotes {
+#mulcjwptpa .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1107,7 +1078,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#jnplrwsizp .gt_sourcenote {
+#mulcjwptpa .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1115,72 +1086,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jnplrwsizp .gt_left {
+#mulcjwptpa .gt_left {
   text-align: left;
 }
 
-#jnplrwsizp .gt_center {
+#mulcjwptpa .gt_center {
   text-align: center;
 }
 
-#jnplrwsizp .gt_right {
+#mulcjwptpa .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jnplrwsizp .gt_font_normal {
+#mulcjwptpa .gt_font_normal {
   font-weight: normal;
 }
 
-#jnplrwsizp .gt_font_bold {
+#mulcjwptpa .gt_font_bold {
   font-weight: bold;
 }
 
-#jnplrwsizp .gt_font_italic {
+#mulcjwptpa .gt_font_italic {
   font-style: italic;
 }
 
-#jnplrwsizp .gt_super {
+#mulcjwptpa .gt_super {
   font-size: 65%;
 }
 
-#jnplrwsizp .gt_footnote_marks {
+#mulcjwptpa .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jnplrwsizp .gt_asterisk {
+#mulcjwptpa .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jnplrwsizp .gt_indent_1 {
+#mulcjwptpa .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jnplrwsizp .gt_indent_2 {
+#mulcjwptpa .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jnplrwsizp .gt_indent_3 {
+#mulcjwptpa .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jnplrwsizp .gt_indent_4 {
+#mulcjwptpa .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jnplrwsizp .gt_indent_5 {
+#mulcjwptpa .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jnplrwsizp .katex-display {
+#mulcjwptpa .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jnplrwsizp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mulcjwptpa div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1218,23 +1189,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ijwxrvmpwa" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ijwxrvmpwa table {
+<div id="idhdbkwlce" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#idhdbkwlce table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ijwxrvmpwa thead, #ijwxrvmpwa tbody, #ijwxrvmpwa tfoot, #ijwxrvmpwa tr, #ijwxrvmpwa td, #ijwxrvmpwa th {
+#idhdbkwlce thead, #idhdbkwlce tbody, #idhdbkwlce tfoot, #idhdbkwlce tr, #idhdbkwlce td, #idhdbkwlce th {
   border-style: none;
 }
 
-#ijwxrvmpwa p {
+#idhdbkwlce p {
   margin: 0;
   padding: 0;
 }
 
-#ijwxrvmpwa .gt_table {
+#idhdbkwlce .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1260,12 +1231,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_caption {
+#idhdbkwlce .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ijwxrvmpwa .gt_title {
+#idhdbkwlce .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1277,7 +1248,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#ijwxrvmpwa .gt_subtitle {
+#idhdbkwlce .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1289,7 +1260,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#ijwxrvmpwa .gt_heading {
+#idhdbkwlce .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1301,13 +1272,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_bottom_border {
+#idhdbkwlce .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_col_headings {
+#idhdbkwlce .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1322,7 +1293,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_col_heading {
+#idhdbkwlce .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1342,7 +1313,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#ijwxrvmpwa .gt_column_spanner_outer {
+#idhdbkwlce .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1354,15 +1325,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#ijwxrvmpwa .gt_column_spanner_outer:first-child {
+#idhdbkwlce .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ijwxrvmpwa .gt_column_spanner_outer:last-child {
+#idhdbkwlce .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ijwxrvmpwa .gt_column_spanner {
+#idhdbkwlce .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1374,11 +1345,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#ijwxrvmpwa .gt_spanner_row {
+#idhdbkwlce .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ijwxrvmpwa .gt_group_heading {
+#idhdbkwlce .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1404,7 +1375,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#ijwxrvmpwa .gt_empty_group_heading {
+#idhdbkwlce .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1419,15 +1390,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#ijwxrvmpwa .gt_from_md > :first-child {
+#idhdbkwlce .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ijwxrvmpwa .gt_from_md > :last-child {
+#idhdbkwlce .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ijwxrvmpwa .gt_row {
+#idhdbkwlce .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1446,7 +1417,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#ijwxrvmpwa .gt_stub {
+#idhdbkwlce .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1459,7 +1430,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ijwxrvmpwa .gt_stub_row_group {
+#idhdbkwlce .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1473,15 +1444,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#ijwxrvmpwa .gt_row_group_first td {
+#idhdbkwlce .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ijwxrvmpwa .gt_row_group_first th {
+#idhdbkwlce .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ijwxrvmpwa .gt_summary_row {
+#idhdbkwlce .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1491,16 +1462,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ijwxrvmpwa .gt_first_summary_row {
+#idhdbkwlce .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_first_summary_row.thick {
+#idhdbkwlce .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ijwxrvmpwa .gt_last_summary_row {
+#idhdbkwlce .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1510,7 +1481,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_grand_summary_row {
+#idhdbkwlce .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1520,7 +1491,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ijwxrvmpwa .gt_first_grand_summary_row {
+#idhdbkwlce .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1530,7 +1501,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_last_grand_summary_row_top {
+#idhdbkwlce .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1540,11 +1511,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_striped {
+#idhdbkwlce .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ijwxrvmpwa .gt_table_body {
+#idhdbkwlce .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1553,7 +1524,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_footnotes {
+#idhdbkwlce .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1567,7 +1538,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_footnote {
+#idhdbkwlce .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1576,7 +1547,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ijwxrvmpwa .gt_sourcenotes {
+#idhdbkwlce .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1590,7 +1561,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ijwxrvmpwa .gt_sourcenote {
+#idhdbkwlce .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1598,72 +1569,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ijwxrvmpwa .gt_left {
+#idhdbkwlce .gt_left {
   text-align: left;
 }
 
-#ijwxrvmpwa .gt_center {
+#idhdbkwlce .gt_center {
   text-align: center;
 }
 
-#ijwxrvmpwa .gt_right {
+#idhdbkwlce .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ijwxrvmpwa .gt_font_normal {
+#idhdbkwlce .gt_font_normal {
   font-weight: normal;
 }
 
-#ijwxrvmpwa .gt_font_bold {
+#idhdbkwlce .gt_font_bold {
   font-weight: bold;
 }
 
-#ijwxrvmpwa .gt_font_italic {
+#idhdbkwlce .gt_font_italic {
   font-style: italic;
 }
 
-#ijwxrvmpwa .gt_super {
+#idhdbkwlce .gt_super {
   font-size: 65%;
 }
 
-#ijwxrvmpwa .gt_footnote_marks {
+#idhdbkwlce .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ijwxrvmpwa .gt_asterisk {
+#idhdbkwlce .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ijwxrvmpwa .gt_indent_1 {
+#idhdbkwlce .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ijwxrvmpwa .gt_indent_2 {
+#idhdbkwlce .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ijwxrvmpwa .gt_indent_3 {
+#idhdbkwlce .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ijwxrvmpwa .gt_indent_4 {
+#idhdbkwlce .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ijwxrvmpwa .gt_indent_5 {
+#idhdbkwlce .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ijwxrvmpwa .katex-display {
+#idhdbkwlce .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ijwxrvmpwa div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#idhdbkwlce div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

@@ -5,3 +5,6 @@ generate_qmd_pages:
 render_html:
 	find districts -name "*.qmd" -exec quarto render {} \;
 
+fix_sitemap:
+	perl -pi -e 's|<loc>([^<]*)/index\.html</loc>|<loc>$1/</loc>|g' ../docs/sitemap.xml
+

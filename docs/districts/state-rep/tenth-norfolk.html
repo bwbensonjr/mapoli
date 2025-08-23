@@ -90,35 +90,6 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Massachusetts Tenth Norfolk State Representative District – mapoli">
@@ -222,8 +193,8 @@ window.Quarto = {
 <strong>Incumbent</strong>: Jeffrey N. Roy (D-Franklin)</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-02928d0ea17b8636fb67" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-02928d0ea17b8636fb67">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.45590395531605,-71.45475396743123,-71.45495797526101,-71.45587195795054,-71.45527396016153,-71.45368609219909,-71.451927964715,-71.4465901163497,-71.44401037816918,-71.44255195947133,-71.44182276720679,-71.44242194005258,-71.44199375985009,-71.44285094362597,-71.44252897202298,-71.44016399665976,-71.43853037595055,-71.43561483636641,-71.43457344847477,-71.43474496647336,-71.43379661179817,-71.43352108761155,-71.43386494212095,-71.43278795804629,-71.4302289863179,-71.4278797378352,-71.42708498405585,-71.42319100708715,-71.42181875605125,-71.41921980465267,-71.41903603571137,-71.42048850814497,-71.4200361404544,-71.41967398598287,-71.41932303457038,-71.41885729654437,-71.41509800849339,-71.41470703670085,-71.41582038094261,-71.41455882758248,-71.41293161178911,-71.41132646885137,-71.4100377959667,-71.40880549507328,-71.40623697787117,-71.40498820956925,-71.40325896874704,-71.40245599436896,-71.39933901791747,-71.39700304546507,-71.38396296380324,-71.38209604498991,-71.38280037866494,-71.38291989144896,-71.38207404841118,-71.38329308405172,-71.38278174484687,-71.38209201241706,-71.38111583482863,-71.38059100000643,-71.38012805904437,-71.38060714293351,-71.38103630092084,-71.38025805299851,-71.38069301917649,-71.38195055716061,-71.38164504896405,-71.38205176936637,-71.38071304049247,-71.37997175173993,-71.36771803907695,-71.35927204345755,-71.36530205609367,-71.38827202721052,-71.45590395531605],"lat":[42.03489503476765,42.04412089812855,42.06304698988283,42.06318702739276,42.0727529667637,42.07270071125546,42.08384299602715,42.10213701453989,42.11730977278253,42.13154897991411,42.13187615854276,42.13216701065458,42.13357786104265,42.13393202100916,42.13447897416162,42.13527096670516,42.1351676086564,42.13421162990648,42.13435507071281,42.13558997093621,42.13517564015351,42.13563393683005,42.13597099694038,42.13713998273851,42.13901196874972,42.13811635449441,42.13856597206665,42.13911496570991,42.13873013964776,42.13896723342686,42.13832101843747,42.1375471292956,42.1372497902795,42.13760195805025,42.13744598068039,42.13641197041138,42.1382589610298,42.13733900483027,42.13561579459425,42.13427312983817,42.1335926459989,42.13441521888613,42.13399176994422,42.13422323556076,42.1363089787989,42.13680417946691,42.13913398040011,42.1395389642437,42.13885296963095,42.13730610029819,42.13517293322284,42.1355469680579,42.13501009546489,42.13424918584012,42.13378201873432,42.13352989614301,42.13316418994108,42.13349096834325,42.1328917438878,42.13314296265951,42.13270706862601,42.13294333934351,42.13264081290098,42.13142599918001,42.13100403037573,42.13087791352091,42.13049899539235,42.1298087035803,42.12913498639571,42.12653389602058,42.10726298798801,42.08952099978834,42.07622201765894,42.04100002865397,42.03489503476765]}]],[[{"lng":[-71.44468088189771,-71.44266314276291,-71.44406696028069,-71.43017399131065,-71.42373003644074,-71.42344365970801,-71.4022950270419,-71.37561807960439,-71.37810899063028,-71.37956950969496,-71.37999293962322,-71.37921861217556,-71.37991101777969,-71.38110099681803,-71.38194061680981,-71.38271601023219,-71.38334494825257,-71.38211626451367,-71.38292595638852,-71.38280296361204,-71.38218255803014,-71.3849909938619,-71.39710295472702,-71.39932888152764,-71.40234963933132,-71.40331732898866,-71.40500002520703,-71.4062381219609,-71.40924001670774,-71.41110065567686,-71.41269100321841,-71.41390897878968,-71.41586395599191,-71.41471073011006,-71.41496297110929,-71.4189709711813,-71.41934565437829,-71.41999001146597,-71.42053494339474,-71.41904512832215,-71.41899816613815,-71.41943835960537,-71.42182899314655,-71.42437256544692,-71.42708019020299,-71.42785201022019,-71.42880097791806,-71.42952282578059,-71.43040698289944,-71.43094003427997,-71.43209392795355,-71.43379912125049,-71.433797028374,-71.43473930167778,-71.43444305767348,-71.43516100500011,-71.43861232445349,-71.44025659174083,-71.4414259884567,-71.44270147296251,-71.44468088189771],"lat":[42.13555204200888,42.13696802396016,42.17488898083555,42.1793859663203,42.17925297070163,42.1781348916082,42.1787939677853,42.13545406233613,42.13539203300676,42.1357534734946,42.13460361148248,42.13343988825604,42.13297203287006,42.13286603739233,42.1334503944082,42.13314504674253,42.13357200547018,42.1337988309122,42.13421301195268,42.13503098102645,42.13553626287906,42.13527502834197,42.13732302411496,42.13884708398713,42.13953663958338,42.13906009144092,42.13679302328546,42.13630603175092,42.13404403105539,42.13444470003747,42.13360403385322,42.13385302787921,42.13570800157987,42.13733044400139,42.13820031156508,42.1364220396702,42.13745379636428,42.13720204635109,42.13754100401226,42.1383337192032,42.13883240954674,42.13898410464314,42.13872803133095,42.13904543426978,42.13856341478004,42.13810803202364,42.13828902501131,42.13896411571784,42.13897257138606,42.13826202047052,42.13786177846097,42.13601124925287,42.13516102578226,42.135560420616,42.13440401870537,42.13424403489956,42.13517992545918,42.13525899604821,42.13482903736637,42.13577824357061,42.13555204200888]}]]],["Franklin","Medway"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#CCEBC5","#80B1D3"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Franklin<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Franklin<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Franklin<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Medway<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Medway<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Medway - 3 of 4 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Franklin","Medway"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.08621398828542,42.15571394395892],[-71.41129536511799,-71.41539464947897],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Franklin.1","Medway.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Franklin","Medway"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.03489503476765,42.1793859663203],"lng":[-71.45590395531605,-71.35927204345755]},"fitBounds":[42.03489503476765,-71.45590395531605,42.1793859663203,-71.35927204345755,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-d567b08ea6ff31820b47" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d567b08ea6ff31820b47">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.45590395531605,-71.45475396743123,-71.45495797526101,-71.45587195795054,-71.45527396016153,-71.45368609219909,-71.451927964715,-71.4465901163497,-71.44401037816918,-71.44255195947133,-71.44182276720679,-71.44242194005258,-71.44199375985009,-71.44285094362597,-71.44252897202298,-71.44016399665976,-71.43853037595055,-71.43561483636641,-71.43457344847477,-71.43474496647336,-71.43379661179817,-71.43352108761155,-71.43386494212095,-71.43278795804629,-71.4302289863179,-71.4278797378352,-71.42708498405585,-71.42319100708715,-71.42181875605125,-71.41921980465267,-71.41903603571137,-71.42048850814497,-71.4200361404544,-71.41967398598287,-71.41932303457038,-71.41885729654437,-71.41509800849339,-71.41470703670085,-71.41582038094261,-71.41455882758248,-71.41293161178911,-71.41132646885137,-71.4100377959667,-71.40880549507328,-71.40623697787117,-71.40498820956925,-71.40325896874704,-71.40245599436896,-71.39933901791747,-71.39700304546507,-71.38396296380324,-71.38209604498991,-71.38280037866494,-71.38291989144896,-71.38207404841118,-71.38329308405172,-71.38278174484687,-71.38209201241706,-71.38111583482863,-71.38059100000643,-71.38012805904437,-71.38060714293351,-71.38103630092084,-71.38025805299851,-71.38069301917649,-71.38195055716061,-71.38164504896405,-71.38205176936637,-71.38071304049247,-71.37997175173993,-71.36771803907695,-71.35927204345755,-71.36530205609367,-71.38827202721052,-71.45590395531605],"lat":[42.03489503476765,42.04412089812855,42.06304698988283,42.06318702739276,42.0727529667637,42.07270071125546,42.08384299602715,42.10213701453989,42.11730977278253,42.13154897991411,42.13187615854276,42.13216701065458,42.13357786104265,42.13393202100916,42.13447897416162,42.13527096670516,42.1351676086564,42.13421162990648,42.13435507071281,42.13558997093621,42.13517564015351,42.13563393683005,42.13597099694038,42.13713998273851,42.13901196874972,42.13811635449441,42.13856597206665,42.13911496570991,42.13873013964776,42.13896723342686,42.13832101843747,42.1375471292956,42.1372497902795,42.13760195805025,42.13744598068039,42.13641197041138,42.1382589610298,42.13733900483027,42.13561579459425,42.13427312983817,42.1335926459989,42.13441521888613,42.13399176994422,42.13422323556076,42.1363089787989,42.13680417946691,42.13913398040011,42.1395389642437,42.13885296963095,42.13730610029819,42.13517293322284,42.1355469680579,42.13501009546489,42.13424918584012,42.13378201873432,42.13352989614301,42.13316418994108,42.13349096834325,42.1328917438878,42.13314296265951,42.13270706862601,42.13294333934351,42.13264081290098,42.13142599918001,42.13100403037573,42.13087791352091,42.13049899539235,42.1298087035803,42.12913498639571,42.12653389602058,42.10726298798801,42.08952099978834,42.07622201765894,42.04100002865397,42.03489503476765]}]],[[{"lng":[-71.44468088189771,-71.44266314276291,-71.44406696028069,-71.43017399131065,-71.42373003644074,-71.42344365970801,-71.4022950270419,-71.37561807960439,-71.37810899063028,-71.37956950969496,-71.37999293962322,-71.37921861217556,-71.37991101777969,-71.38110099681803,-71.38194061680981,-71.38271601023219,-71.38334494825257,-71.38211626451367,-71.38292595638852,-71.38280296361204,-71.38218255803014,-71.3849909938619,-71.39710295472702,-71.39932888152764,-71.40234963933132,-71.40331732898866,-71.40500002520703,-71.4062381219609,-71.40924001670774,-71.41110065567686,-71.41269100321841,-71.41390897878968,-71.41586395599191,-71.41471073011006,-71.41496297110929,-71.4189709711813,-71.41934565437829,-71.41999001146597,-71.42053494339474,-71.41904512832215,-71.41899816613815,-71.41943835960537,-71.42182899314655,-71.42437256544692,-71.42708019020299,-71.42785201022019,-71.42880097791806,-71.42952282578059,-71.43040698289944,-71.43094003427997,-71.43209392795355,-71.43379912125049,-71.433797028374,-71.43473930167778,-71.43444305767348,-71.43516100500011,-71.43861232445349,-71.44025659174083,-71.4414259884567,-71.44270147296251,-71.44468088189771],"lat":[42.13555204200888,42.13696802396016,42.17488898083555,42.1793859663203,42.17925297070163,42.1781348916082,42.1787939677853,42.13545406233613,42.13539203300676,42.1357534734946,42.13460361148248,42.13343988825604,42.13297203287006,42.13286603739233,42.1334503944082,42.13314504674253,42.13357200547018,42.1337988309122,42.13421301195268,42.13503098102645,42.13553626287906,42.13527502834197,42.13732302411496,42.13884708398713,42.13953663958338,42.13906009144092,42.13679302328546,42.13630603175092,42.13404403105539,42.13444470003747,42.13360403385322,42.13385302787921,42.13570800157987,42.13733044400139,42.13820031156508,42.1364220396702,42.13745379636428,42.13720204635109,42.13754100401226,42.1383337192032,42.13883240954674,42.13898410464314,42.13872803133095,42.13904543426978,42.13856341478004,42.13810803202364,42.13828902501131,42.13896411571784,42.13897257138606,42.13826202047052,42.13786177846097,42.13601124925287,42.13516102578226,42.135560420616,42.13440401870537,42.13424403489956,42.13517992545918,42.13525899604821,42.13482903736637,42.13577824357061,42.13555204200888]}]]],["Franklin","Medway"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#FDB462","#D9D9D9"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Franklin<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Franklin<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Franklin<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Medway<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Medway<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Medway - 3 of 4 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Franklin","Medway"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.08621418502642,42.15571399182905],[-71.41129534635382,-71.41539465707139],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Franklin.1","Medway.1"],"dist_centroids",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Franklin","Medway"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],["dist_geom","dist_centroids"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.03489503476765,42.1793859663203],"lng":[-71.45590395531605,-71.35927204345755]},"fitBounds":[42.03489503476765,-71.45590395531605,42.1793859663203,-71.35927204345755,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -233,23 +204,23 @@ window.Quarto = {
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="eebnevpmnm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#eebnevpmnm table {
+<div id="unptvimdxy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#unptvimdxy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#eebnevpmnm thead, #eebnevpmnm tbody, #eebnevpmnm tfoot, #eebnevpmnm tr, #eebnevpmnm td, #eebnevpmnm th {
+#unptvimdxy thead, #unptvimdxy tbody, #unptvimdxy tfoot, #unptvimdxy tr, #unptvimdxy td, #unptvimdxy th {
   border-style: none;
 }
 
-#eebnevpmnm p {
+#unptvimdxy p {
   margin: 0;
   padding: 0;
 }
 
-#eebnevpmnm .gt_table {
+#unptvimdxy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -275,12 +246,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_caption {
+#unptvimdxy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#eebnevpmnm .gt_title {
+#unptvimdxy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -292,7 +263,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#eebnevpmnm .gt_subtitle {
+#unptvimdxy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -304,7 +275,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#eebnevpmnm .gt_heading {
+#unptvimdxy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -316,13 +287,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_bottom_border {
+#unptvimdxy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_col_headings {
+#unptvimdxy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -337,7 +308,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_col_heading {
+#unptvimdxy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -357,7 +328,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#eebnevpmnm .gt_column_spanner_outer {
+#unptvimdxy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -369,15 +340,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#eebnevpmnm .gt_column_spanner_outer:first-child {
+#unptvimdxy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eebnevpmnm .gt_column_spanner_outer:last-child {
+#unptvimdxy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eebnevpmnm .gt_column_spanner {
+#unptvimdxy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -389,11 +360,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#eebnevpmnm .gt_spanner_row {
+#unptvimdxy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#eebnevpmnm .gt_group_heading {
+#unptvimdxy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -419,7 +390,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#eebnevpmnm .gt_empty_group_heading {
+#unptvimdxy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -434,15 +405,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#eebnevpmnm .gt_from_md > :first-child {
+#unptvimdxy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eebnevpmnm .gt_from_md > :last-child {
+#unptvimdxy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eebnevpmnm .gt_row {
+#unptvimdxy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -461,7 +432,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#eebnevpmnm .gt_stub {
+#unptvimdxy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -474,7 +445,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#eebnevpmnm .gt_stub_row_group {
+#unptvimdxy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,15 +459,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#eebnevpmnm .gt_row_group_first td {
+#unptvimdxy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#eebnevpmnm .gt_row_group_first th {
+#unptvimdxy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#eebnevpmnm .gt_summary_row {
+#unptvimdxy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -506,16 +477,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#eebnevpmnm .gt_first_summary_row {
+#unptvimdxy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_first_summary_row.thick {
+#unptvimdxy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#eebnevpmnm .gt_last_summary_row {
+#unptvimdxy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,7 +496,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_grand_summary_row {
+#unptvimdxy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -535,7 +506,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#eebnevpmnm .gt_first_grand_summary_row {
+#unptvimdxy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -545,7 +516,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_last_grand_summary_row_top {
+#unptvimdxy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,11 +526,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_striped {
+#unptvimdxy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eebnevpmnm .gt_table_body {
+#unptvimdxy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -568,7 +539,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_footnotes {
+#unptvimdxy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -582,7 +553,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_footnote {
+#unptvimdxy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -591,7 +562,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#eebnevpmnm .gt_sourcenotes {
+#unptvimdxy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -605,7 +576,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#eebnevpmnm .gt_sourcenote {
+#unptvimdxy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -613,72 +584,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#eebnevpmnm .gt_left {
+#unptvimdxy .gt_left {
   text-align: left;
 }
 
-#eebnevpmnm .gt_center {
+#unptvimdxy .gt_center {
   text-align: center;
 }
 
-#eebnevpmnm .gt_right {
+#unptvimdxy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eebnevpmnm .gt_font_normal {
+#unptvimdxy .gt_font_normal {
   font-weight: normal;
 }
 
-#eebnevpmnm .gt_font_bold {
+#unptvimdxy .gt_font_bold {
   font-weight: bold;
 }
 
-#eebnevpmnm .gt_font_italic {
+#unptvimdxy .gt_font_italic {
   font-style: italic;
 }
 
-#eebnevpmnm .gt_super {
+#unptvimdxy .gt_super {
   font-size: 65%;
 }
 
-#eebnevpmnm .gt_footnote_marks {
+#unptvimdxy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#eebnevpmnm .gt_asterisk {
+#unptvimdxy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#eebnevpmnm .gt_indent_1 {
+#unptvimdxy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#eebnevpmnm .gt_indent_2 {
+#unptvimdxy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#eebnevpmnm .gt_indent_3 {
+#unptvimdxy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#eebnevpmnm .gt_indent_4 {
+#unptvimdxy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#eebnevpmnm .gt_indent_5 {
+#unptvimdxy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#eebnevpmnm .katex-display {
+#unptvimdxy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#eebnevpmnm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#unptvimdxy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -735,23 +706,23 @@ window.Quarto = {
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="adevndcwkb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#adevndcwkb table {
+<div id="jweorvjrhu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jweorvjrhu table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#adevndcwkb thead, #adevndcwkb tbody, #adevndcwkb tfoot, #adevndcwkb tr, #adevndcwkb td, #adevndcwkb th {
+#jweorvjrhu thead, #jweorvjrhu tbody, #jweorvjrhu tfoot, #jweorvjrhu tr, #jweorvjrhu td, #jweorvjrhu th {
   border-style: none;
 }
 
-#adevndcwkb p {
+#jweorvjrhu p {
   margin: 0;
   padding: 0;
 }
 
-#adevndcwkb .gt_table {
+#jweorvjrhu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -777,12 +748,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_caption {
+#jweorvjrhu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#adevndcwkb .gt_title {
+#jweorvjrhu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -794,7 +765,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#adevndcwkb .gt_subtitle {
+#jweorvjrhu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -806,7 +777,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#adevndcwkb .gt_heading {
+#jweorvjrhu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -818,13 +789,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_bottom_border {
+#jweorvjrhu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_col_headings {
+#jweorvjrhu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -839,7 +810,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_col_heading {
+#jweorvjrhu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -859,7 +830,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#adevndcwkb .gt_column_spanner_outer {
+#jweorvjrhu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -871,15 +842,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#adevndcwkb .gt_column_spanner_outer:first-child {
+#jweorvjrhu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#adevndcwkb .gt_column_spanner_outer:last-child {
+#jweorvjrhu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#adevndcwkb .gt_column_spanner {
+#jweorvjrhu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -891,11 +862,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#adevndcwkb .gt_spanner_row {
+#jweorvjrhu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#adevndcwkb .gt_group_heading {
+#jweorvjrhu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -921,7 +892,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#adevndcwkb .gt_empty_group_heading {
+#jweorvjrhu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -936,15 +907,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#adevndcwkb .gt_from_md > :first-child {
+#jweorvjrhu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#adevndcwkb .gt_from_md > :last-child {
+#jweorvjrhu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#adevndcwkb .gt_row {
+#jweorvjrhu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -963,7 +934,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#adevndcwkb .gt_stub {
+#jweorvjrhu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -976,7 +947,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#adevndcwkb .gt_stub_row_group {
+#jweorvjrhu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -990,15 +961,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#adevndcwkb .gt_row_group_first td {
+#jweorvjrhu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#adevndcwkb .gt_row_group_first th {
+#jweorvjrhu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#adevndcwkb .gt_summary_row {
+#jweorvjrhu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1008,16 +979,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#adevndcwkb .gt_first_summary_row {
+#jweorvjrhu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_first_summary_row.thick {
+#jweorvjrhu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#adevndcwkb .gt_last_summary_row {
+#jweorvjrhu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1027,7 +998,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_grand_summary_row {
+#jweorvjrhu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1037,7 +1008,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#adevndcwkb .gt_first_grand_summary_row {
+#jweorvjrhu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1047,7 +1018,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_last_grand_summary_row_top {
+#jweorvjrhu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1057,11 +1028,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_striped {
+#jweorvjrhu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#adevndcwkb .gt_table_body {
+#jweorvjrhu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1070,7 +1041,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_footnotes {
+#jweorvjrhu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1084,7 +1055,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_footnote {
+#jweorvjrhu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1093,7 +1064,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#adevndcwkb .gt_sourcenotes {
+#jweorvjrhu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1107,7 +1078,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#adevndcwkb .gt_sourcenote {
+#jweorvjrhu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1115,72 +1086,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#adevndcwkb .gt_left {
+#jweorvjrhu .gt_left {
   text-align: left;
 }
 
-#adevndcwkb .gt_center {
+#jweorvjrhu .gt_center {
   text-align: center;
 }
 
-#adevndcwkb .gt_right {
+#jweorvjrhu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#adevndcwkb .gt_font_normal {
+#jweorvjrhu .gt_font_normal {
   font-weight: normal;
 }
 
-#adevndcwkb .gt_font_bold {
+#jweorvjrhu .gt_font_bold {
   font-weight: bold;
 }
 
-#adevndcwkb .gt_font_italic {
+#jweorvjrhu .gt_font_italic {
   font-style: italic;
 }
 
-#adevndcwkb .gt_super {
+#jweorvjrhu .gt_super {
   font-size: 65%;
 }
 
-#adevndcwkb .gt_footnote_marks {
+#jweorvjrhu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#adevndcwkb .gt_asterisk {
+#jweorvjrhu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#adevndcwkb .gt_indent_1 {
+#jweorvjrhu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#adevndcwkb .gt_indent_2 {
+#jweorvjrhu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#adevndcwkb .gt_indent_3 {
+#jweorvjrhu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#adevndcwkb .gt_indent_4 {
+#jweorvjrhu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#adevndcwkb .gt_indent_5 {
+#jweorvjrhu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#adevndcwkb .katex-display {
+#jweorvjrhu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#adevndcwkb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jweorvjrhu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1214,23 +1185,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="vithyrwwuu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vithyrwwuu table {
+<div id="cwqttfaolc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cwqttfaolc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#vithyrwwuu thead, #vithyrwwuu tbody, #vithyrwwuu tfoot, #vithyrwwuu tr, #vithyrwwuu td, #vithyrwwuu th {
+#cwqttfaolc thead, #cwqttfaolc tbody, #cwqttfaolc tfoot, #cwqttfaolc tr, #cwqttfaolc td, #cwqttfaolc th {
   border-style: none;
 }
 
-#vithyrwwuu p {
+#cwqttfaolc p {
   margin: 0;
   padding: 0;
 }
 
-#vithyrwwuu .gt_table {
+#cwqttfaolc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1256,12 +1227,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_caption {
+#cwqttfaolc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#vithyrwwuu .gt_title {
+#cwqttfaolc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1273,7 +1244,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#vithyrwwuu .gt_subtitle {
+#cwqttfaolc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1285,7 +1256,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#vithyrwwuu .gt_heading {
+#cwqttfaolc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1297,13 +1268,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_bottom_border {
+#cwqttfaolc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_col_headings {
+#cwqttfaolc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1318,7 +1289,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_col_heading {
+#cwqttfaolc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1338,7 +1309,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#vithyrwwuu .gt_column_spanner_outer {
+#cwqttfaolc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1350,15 +1321,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#vithyrwwuu .gt_column_spanner_outer:first-child {
+#cwqttfaolc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vithyrwwuu .gt_column_spanner_outer:last-child {
+#cwqttfaolc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vithyrwwuu .gt_column_spanner {
+#cwqttfaolc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1370,11 +1341,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#vithyrwwuu .gt_spanner_row {
+#cwqttfaolc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#vithyrwwuu .gt_group_heading {
+#cwqttfaolc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1400,7 +1371,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#vithyrwwuu .gt_empty_group_heading {
+#cwqttfaolc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1415,15 +1386,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#vithyrwwuu .gt_from_md > :first-child {
+#cwqttfaolc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vithyrwwuu .gt_from_md > :last-child {
+#cwqttfaolc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vithyrwwuu .gt_row {
+#cwqttfaolc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1442,7 +1413,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#vithyrwwuu .gt_stub {
+#cwqttfaolc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1455,7 +1426,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#vithyrwwuu .gt_stub_row_group {
+#cwqttfaolc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1469,15 +1440,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#vithyrwwuu .gt_row_group_first td {
+#cwqttfaolc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vithyrwwuu .gt_row_group_first th {
+#cwqttfaolc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vithyrwwuu .gt_summary_row {
+#cwqttfaolc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1487,16 +1458,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#vithyrwwuu .gt_first_summary_row {
+#cwqttfaolc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_first_summary_row.thick {
+#cwqttfaolc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vithyrwwuu .gt_last_summary_row {
+#cwqttfaolc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1506,7 +1477,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_grand_summary_row {
+#cwqttfaolc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1516,7 +1487,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#vithyrwwuu .gt_first_grand_summary_row {
+#cwqttfaolc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1526,7 +1497,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_last_grand_summary_row_top {
+#cwqttfaolc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1536,11 +1507,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_striped {
+#cwqttfaolc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vithyrwwuu .gt_table_body {
+#cwqttfaolc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1549,7 +1520,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_footnotes {
+#cwqttfaolc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1563,7 +1534,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_footnote {
+#cwqttfaolc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1572,7 +1543,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#vithyrwwuu .gt_sourcenotes {
+#cwqttfaolc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1586,7 +1557,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#vithyrwwuu .gt_sourcenote {
+#cwqttfaolc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1594,72 +1565,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#vithyrwwuu .gt_left {
+#cwqttfaolc .gt_left {
   text-align: left;
 }
 
-#vithyrwwuu .gt_center {
+#cwqttfaolc .gt_center {
   text-align: center;
 }
 
-#vithyrwwuu .gt_right {
+#cwqttfaolc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vithyrwwuu .gt_font_normal {
+#cwqttfaolc .gt_font_normal {
   font-weight: normal;
 }
 
-#vithyrwwuu .gt_font_bold {
+#cwqttfaolc .gt_font_bold {
   font-weight: bold;
 }
 
-#vithyrwwuu .gt_font_italic {
+#cwqttfaolc .gt_font_italic {
   font-style: italic;
 }
 
-#vithyrwwuu .gt_super {
+#cwqttfaolc .gt_super {
   font-size: 65%;
 }
 
-#vithyrwwuu .gt_footnote_marks {
+#cwqttfaolc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vithyrwwuu .gt_asterisk {
+#cwqttfaolc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vithyrwwuu .gt_indent_1 {
+#cwqttfaolc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vithyrwwuu .gt_indent_2 {
+#cwqttfaolc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vithyrwwuu .gt_indent_3 {
+#cwqttfaolc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vithyrwwuu .gt_indent_4 {
+#cwqttfaolc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vithyrwwuu .gt_indent_5 {
+#cwqttfaolc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#vithyrwwuu .katex-display {
+#cwqttfaolc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#vithyrwwuu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cwqttfaolc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

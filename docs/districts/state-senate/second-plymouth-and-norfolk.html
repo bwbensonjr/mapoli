@@ -90,35 +90,6 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Massachusetts Second Plymouth and Norfolk State Senate District – mapoli">
@@ -222,8 +193,8 @@ window.Quarto = {
 <strong>Incumbent</strong>: Michael D. Brady (D-Brockton)</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-829d23a9cb8949c8aa08" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-829d23a9cb8949c8aa08">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.07097295436394,-71.06384820685474,-71.05651098921281,-71.0401270230762,-71.02721004151864,-71.02757582049759,-71.02695496583222,-71.02185906161995,-71.06125594760275,-71.06034217996482,-71.07097295436394],"lat":[42.13214499528502,42.14046975910455,42.15381493832304,42.13720313722429,42.13293898116343,42.12759214675043,42.12374675267742,42.11874500999869,42.10319405368957,42.10697856876672,42.13214499528502]}]],[[{"lng":[-71.08048295500784,-71.0019740308762,-70.99856257671432,-70.97911702771918,-70.97886304104573,-70.97987303299651,-70.98082362966618,-70.98065720188873,-70.97813004202911,-70.97736403976009,-70.97786123209961,-70.97683387510504,-70.97673304706913,-70.97716981528544,-70.97523376220684,-70.97569108268534,-70.97525004139621,-70.97586972425543,-70.97499004916563,-70.97652271235675,-70.97523104341488,-70.98085823966612,-70.98990463097093,-70.98715904586878,-71.0229239661049,-71.02583923702514,-71.06959496691117,-71.08048295500784],"lat":[42.09553898330356,42.12652595384834,42.11166666165379,42.11407696526598,42.1129860164629,42.11162402008373,42.1111498041792,42.1092532587848,42.10786198697242,42.1057730010417,42.10475453740668,42.1032817781746,42.10053500708718,42.09978068112983,42.09663669916034,42.09235653284017,42.09069402155112,42.08973515730524,42.08792999710926,42.08713570552501,42.07117801713942,42.06878571066762,42.05949652621013,42.04656802476832,42.04217803387395,42.05507930493812,42.04970403427863,42.09553898330356]}]],[[{"lng":[-70.98991895699301,-70.98078897039213,-70.97523100071163,-70.95099925785428,-70.92908799554768,-70.91289780457737,-70.90818803977382,-70.8997416956245,-70.89741804816184,-70.8976319141717,-70.89661804172304,-70.89957056801737,-70.89918704260268,-70.90336598721144,-70.90843899675403,-70.9106569483388,-70.91269998142987,-70.91734296256867,-70.91739075512385,-70.91855545847275,-70.92145329565496,-70.92565571664224,-70.93022200882319,-70.93628295733207,-70.94299400531406,-70.95366399720429,-70.97958496416246,-70.98991895699301],"lat":[42.05948699277069,42.0688579749215,42.07117796467183,42.06088505165454,42.06625596810554,42.06501816448895,42.06172698385736,42.0253548502931,42.02494097684149,42.0242174741182,42.0232849892766,42.00297715462965,41.99637103319579,41.99662653085124,41.99616402769951,41.99690914515779,41.99694902703006,42.00226301184973,42.00462567238593,42.00592771657843,42.00754851163665,42.00894626370221,42.00784503279715,42.00773099509799,42.00654102373269,42.00585002729253,42.01099902367724,42.05948699277069]}]],[[{"lng":[-70.91220995910845,-70.9114799617051,-70.90138596792667,-70.89977443766875,-70.89918514460304,-70.89957096453166,-70.89774414058962,-70.89446297027047,-70.86443402624957,-70.8601032803746,-70.84921290004833,-70.81497800878142,-70.81297504744865,-70.81374709951314,-70.81336704649496,-70.81363391738863,-70.81229604050787,-70.81184929571489,-70.80938905022671,-70.80967518954685,-70.80731803886242,-70.80793124139763,-70.80649505282092,-70.81869515524195,-70.82288503711951,-70.86298313185721,-70.86088205529934,-70.86912800784295,-70.90853293631515,-70.90731699320253,-70.90723329662848,-70.90746336524187,-70.90884095336445,-70.90839428272548,-70.91013775670909,-70.91172596192942,-70.91220995910845],"lat":[41.97855199539664,41.98022697767207,41.98302411201779,41.98829165684716,41.99632100031195,42.00297499982071,42.01644795068583,42.02643196386526,42.02096997231293,42.01615659526612,42.01572772802642,42.02397496534404,42.02272199089813,42.02122283785815,42.02042400253296,42.019433313878,42.01862698520198,42.01763010182771,42.01666798599103,42.01531833236684,42.01310998263443,42.01167877744427,42.01033299520964,41.99672544833163,41.98450301670071,41.95685900364943,41.95498800005417,41.94827703935477,41.96638700725327,41.96740903815683,41.96933380522567,41.97064538018275,41.97220500323846,41.97401780324356,41.97595182730895,41.97700701992901,41.97855199539664]}]],[[{"lng":[-70.91296195499945,-70.87494503029419,-70.87432557336376,-70.86999909324307,-70.86768916409413,-70.86529499768064,-70.86451203219512,-70.86425325815431,-70.86130673201771,-70.8588239809196,-70.85549834431228,-70.85498143816223,-70.85513695631363,-70.8535729934429,-70.85065629440892,-70.84834998155193,-70.84740101082217,-70.84496859051603,-70.84334906738577,-70.84549935211342,-70.84563457398296,-70.84426788965514,-70.84266004429394,-70.8438946811043,-70.83821904604838,-70.84094799787403,-70.83892941448684,-70.83682513368441,-70.84578409660166,-70.84536726203299,-70.84699826277885,-70.84711905064287,-70.84565392157562,-70.84107105693391,-70.84224602591928,-70.84472989916274,-70.83346305098021,-70.84922200546406,-70.86016397733984,-70.86446162420822,-70.89437794569542,-70.89694294617038,-70.89662313839507,-70.89764895678523,-70.89748473957602,-70.89972896551359,-70.90845975421358,-70.91296195499945],"lat":[42.08441697720455,42.08966696429139,42.08847980862194,42.08731325422112,42.08827139267063,42.09062396769165,42.09041197733114,42.08978485036295,42.08923344322796,42.09104197398281,42.0924155514838,42.09333463580595,42.09416599326178,42.09544696447723,42.09493161343195,42.09621996861803,42.09633596851393,42.09507165566765,42.09476198285081,42.09286188620716,42.09223619412082,42.09021732660277,42.08886898893395,42.07718285230565,42.06388500202488,42.06041277554269,42.05929218169438,42.05929097112839,42.05508549397798,42.05408977564886,42.05190592363392,42.04846371891009,42.04615879558328,42.04489298452442,42.04343202334429,42.04262472502315,42.01954801853866,42.01572503153213,42.01615902973312,42.0209738450401,42.02641342256229,42.01914925489817,42.02327370758167,42.02422400728304,42.02493933546709,42.0252990251231,42.06288397536139,42.08441697720455]}]],[[{"lng":[-71.05398694198502,-71.05248239949363,-71.05281994837034,-71.05204488653752,-71.05230918235407,-71.05309996463114,-71.05384895556666,-71.05080292027121,-71.04666705219076,-71.04422792916475,-71.05015994460145,-71.0501399563526,-71.04841502492937,-71.04837996015851,-71.04510195359481,-71.04466996795958,-71.04163898857315,-71.03659680573455,-71.03239103556606,-71.03186997652222,-71.02990003562745,-71.02977200075998,-71.0281800402099,-71.02804544557452,-71.01936903880242,-71.01899705984547,-71.01992955301276,-71.01969103867374,-71.02014631999887,-71.02014875979852,-71.01954904399295,-71.01987804307335,-71.02062103750816,-71.02057404034566,-71.02109020312813,-71.02085904541958,-71.02159889429662,-71.02129804181442,-71.02239589776653,-71.02162004230746,-71.02691152750283,-71.0350930274605,-71.04011997155756,-71.05392694220033,-71.05189638287997,-71.05093841029277,-71.05105749489584,-71.05253295357502,-71.05191626817366,-71.05398694198502],"lat":[42.15617400479731,42.15688231835979,42.15754998890807,42.15865487063352,42.16297179487386,42.16331002007432,42.16547095827143,42.16505027501104,42.16525723255995,42.16716012713679,42.17776997825825,42.17940997218063,42.17957696288125,42.18078996483397,42.18057230069202,42.18237995636765,42.18179039714076,42.18187257270591,42.18281101900878,42.18339997204225,42.18357996812915,42.18298132062854,42.18308996692757,42.18273880647864,42.18451995951887,42.18411598186442,42.18191825363638,42.18125901672586,42.18094218025755,42.17963297557402,42.17879400090013,42.17793801419356,42.17754669622697,42.17656501042715,42.17610638850702,42.17502700664173,42.17410937880251,42.17340999883738,42.17062341821374,42.17016600112772,42.15778261405428,42.13563404162291,42.13719402660717,42.15119499201042,42.15188289416665,42.15263217003409,42.15312357252922,42.1533860232641,42.15501400465291,42.15617400479731]}]],[[{"lng":[-70.97652695846658,-70.94683799316999,-70.9159080165897,-70.90241206743515,-70.91294308364606,-70.90818805292766,-70.91292025738532,-70.92898709286423,-70.9509999964114,-70.97523096225478,-70.97652695846658],"lat":[42.08723897867544,42.09453398157277,42.10012296642336,42.08589701992336,42.08435912637267,42.06172707671453,42.06501942764609,42.06624652055479,42.06087503220668,42.07117801690787,42.08723897867544]}]]],["Avon","Brockton","East.Bridgewater","Halifax","Hanson","Randolph","Whitman"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#BC80BD","#8DD3C7","#CCEBC5","#FB8072","#FDB462","#8DD3C7","#80B1D3"],"fillOpacity":[0.6,0.6,0.6,0.6,0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Avon<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Avon<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Avon<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Brockton<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Brockton<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Brockton<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>East Bridgewater<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>East Bridgewater<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>East Bridgewater<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Halifax<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Halifax<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Halifax<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Hanson<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Hanson<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Hanson<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Randolph<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Randolph<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Randolph - 5 of 12 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Whitman<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Whitman<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Whitman<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Avon","Brockton","East Bridgewater","Halifax","Hanson","Randolph","Whitman"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.12666584231521,42.08204280341236,42.035157971606,41.99138534254651,42.05575407965978,42.16277877425339,42.08002048280499],[-71.04926091251849,-71.02418160901858,-70.94240757624232,-70.86324554171077,-70.87233179676306,-71.03713260147508,-70.93990139878184],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Avon.1","Brockton.1","East.Bridgewater.1","Halifax.1","Hanson.1","Randolph.1","Whitman.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Avon","Brockton","East Bridgewater","Halifax","Hanson","Randolph","Whitman"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[41.94827703935477,42.18451995951887],"lng":[-71.08048295500784,-70.80649505282092]},"fitBounds":[41.94827703935477,-71.08048295500784,42.18451995951887,-70.80649505282092,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-861066bbd483eac393ef" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-861066bbd483eac393ef">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.07097295436394,-71.06384820685474,-71.05651098921281,-71.0401270230762,-71.02721004151864,-71.02757582049759,-71.02695496583222,-71.02185906161995,-71.06125594760275,-71.06034217996482,-71.07097295436394],"lat":[42.13214499528502,42.14046975910455,42.15381493832304,42.13720313722429,42.13293898116343,42.12759214675043,42.12374675267742,42.11874500999869,42.10319405368957,42.10697856876672,42.13214499528502]}]],[[{"lng":[-71.08048295500784,-71.0019740308762,-70.99856257671432,-70.97911702771918,-70.97886304104573,-70.97987303299651,-70.98082362966618,-70.98065720188873,-70.97813004202911,-70.97736403976009,-70.97786123209961,-70.97683387510504,-70.97673304706913,-70.97716981528544,-70.97523376220684,-70.97569108268534,-70.97525004139621,-70.97586972425543,-70.97499004916563,-70.97652271235675,-70.97523104341488,-70.98085823966612,-70.98990463097093,-70.98715904586878,-71.0229239661049,-71.02583923702514,-71.06959496691117,-71.08048295500784],"lat":[42.09553898330356,42.12652595384834,42.11166666165379,42.11407696526598,42.1129860164629,42.11162402008373,42.1111498041792,42.1092532587848,42.10786198697242,42.1057730010417,42.10475453740668,42.1032817781746,42.10053500708718,42.09978068112983,42.09663669916034,42.09235653284017,42.09069402155112,42.08973515730524,42.08792999710926,42.08713570552501,42.07117801713942,42.06878571066762,42.05949652621013,42.04656802476832,42.04217803387395,42.05507930493812,42.04970403427863,42.09553898330356]}]],[[{"lng":[-70.98991895699301,-70.98078897039213,-70.97523100071163,-70.95099925785428,-70.92908799554768,-70.91289780457737,-70.90818803977382,-70.8997416956245,-70.89741804816184,-70.8976319141717,-70.89661804172304,-70.89957056801737,-70.89918704260268,-70.90336598721144,-70.90843899675403,-70.9106569483388,-70.91269998142987,-70.91734296256867,-70.91739075512385,-70.91855545847275,-70.92145329565496,-70.92565571664224,-70.93022200882319,-70.93628295733207,-70.94299400531406,-70.95366399720429,-70.97958496416246,-70.98991895699301],"lat":[42.05948699277069,42.0688579749215,42.07117796467183,42.06088505165454,42.06625596810554,42.06501816448895,42.06172698385736,42.0253548502931,42.02494097684149,42.0242174741182,42.0232849892766,42.00297715462965,41.99637103319579,41.99662653085124,41.99616402769951,41.99690914515779,41.99694902703006,42.00226301184973,42.00462567238593,42.00592771657843,42.00754851163665,42.00894626370221,42.00784503279715,42.00773099509799,42.00654102373269,42.00585002729253,42.01099902367724,42.05948699277069]}]],[[{"lng":[-70.91220995910845,-70.9114799617051,-70.90138596792667,-70.89977443766875,-70.89918514460304,-70.89957096453166,-70.89774414058962,-70.89446297027047,-70.86443402624957,-70.8601032803746,-70.84921290004833,-70.81497800878142,-70.81297504744865,-70.81374709951314,-70.81336704649496,-70.81363391738863,-70.81229604050787,-70.81184929571489,-70.80938905022671,-70.80967518954685,-70.80731803886242,-70.80793124139763,-70.80649505282092,-70.81869515524195,-70.82288503711951,-70.86298313185721,-70.86088205529934,-70.86912800784295,-70.90853293631515,-70.90731699320253,-70.90723329662848,-70.90746336524187,-70.90884095336445,-70.90839428272548,-70.91013775670909,-70.91172596192942,-70.91220995910845],"lat":[41.97855199539664,41.98022697767207,41.98302411201779,41.98829165684716,41.99632100031195,42.00297499982071,42.01644795068583,42.02643196386526,42.02096997231293,42.01615659526612,42.01572772802642,42.02397496534404,42.02272199089813,42.02122283785815,42.02042400253296,42.019433313878,42.01862698520198,42.01763010182771,42.01666798599103,42.01531833236684,42.01310998263443,42.01167877744427,42.01033299520964,41.99672544833163,41.98450301670071,41.95685900364943,41.95498800005417,41.94827703935477,41.96638700725327,41.96740903815683,41.96933380522567,41.97064538018275,41.97220500323846,41.97401780324356,41.97595182730895,41.97700701992901,41.97855199539664]}]],[[{"lng":[-70.91296195499945,-70.87494503029419,-70.87432557336376,-70.86999909324307,-70.86768916409413,-70.86529499768064,-70.86451203219512,-70.86425325815431,-70.86130673201771,-70.8588239809196,-70.85549834431228,-70.85498143816223,-70.85513695631363,-70.8535729934429,-70.85065629440892,-70.84834998155193,-70.84740101082217,-70.84496859051603,-70.84334906738577,-70.84549935211342,-70.84563457398296,-70.84426788965514,-70.84266004429394,-70.8438946811043,-70.83821904604838,-70.84094799787403,-70.83892941448684,-70.83682513368441,-70.84578409660166,-70.84536726203299,-70.84699826277885,-70.84711905064287,-70.84565392157562,-70.84107105693391,-70.84224602591928,-70.84472989916274,-70.83346305098021,-70.84922200546406,-70.86016397733984,-70.86446162420822,-70.89437794569542,-70.89694294617038,-70.89662313839507,-70.89764895678523,-70.89748473957602,-70.89972896551359,-70.90845975421358,-70.91296195499945],"lat":[42.08441697720455,42.08966696429139,42.08847980862194,42.08731325422112,42.08827139267063,42.09062396769165,42.09041197733114,42.08978485036295,42.08923344322796,42.09104197398281,42.0924155514838,42.09333463580595,42.09416599326178,42.09544696447723,42.09493161343195,42.09621996861803,42.09633596851393,42.09507165566765,42.09476198285081,42.09286188620716,42.09223619412082,42.09021732660277,42.08886898893395,42.07718285230565,42.06388500202488,42.06041277554269,42.05929218169438,42.05929097112839,42.05508549397798,42.05408977564886,42.05190592363392,42.04846371891009,42.04615879558328,42.04489298452442,42.04343202334429,42.04262472502315,42.01954801853866,42.01572503153213,42.01615902973312,42.0209738450401,42.02641342256229,42.01914925489817,42.02327370758167,42.02422400728304,42.02493933546709,42.0252990251231,42.06288397536139,42.08441697720455]}]],[[{"lng":[-71.05398694198502,-71.05248239949363,-71.05281994837034,-71.05204488653752,-71.05230918235407,-71.05309996463114,-71.05384895556666,-71.05080292027121,-71.04666705219076,-71.04422792916475,-71.05015994460145,-71.0501399563526,-71.04841502492937,-71.04837996015851,-71.04510195359481,-71.04466996795958,-71.04163898857315,-71.03659680573455,-71.03239103556606,-71.03186997652222,-71.02990003562745,-71.02977200075998,-71.0281800402099,-71.02804544557452,-71.01936903880242,-71.01899705984547,-71.01992955301276,-71.01969103867374,-71.02014631999887,-71.02014875979852,-71.01954904399295,-71.01987804307335,-71.02062103750816,-71.02057404034566,-71.02109020312813,-71.02085904541958,-71.02159889429662,-71.02129804181442,-71.02239589776653,-71.02162004230746,-71.02691152750283,-71.0350930274605,-71.04011997155756,-71.05392694220033,-71.05189638287997,-71.05093841029277,-71.05105749489584,-71.05253295357502,-71.05191626817366,-71.05398694198502],"lat":[42.15617400479731,42.15688231835979,42.15754998890807,42.15865487063352,42.16297179487386,42.16331002007432,42.16547095827143,42.16505027501104,42.16525723255995,42.16716012713679,42.17776997825825,42.17940997218063,42.17957696288125,42.18078996483397,42.18057230069202,42.18237995636765,42.18179039714076,42.18187257270591,42.18281101900878,42.18339997204225,42.18357996812915,42.18298132062854,42.18308996692757,42.18273880647864,42.18451995951887,42.18411598186442,42.18191825363638,42.18125901672586,42.18094218025755,42.17963297557402,42.17879400090013,42.17793801419356,42.17754669622697,42.17656501042715,42.17610638850702,42.17502700664173,42.17410937880251,42.17340999883738,42.17062341821374,42.17016600112772,42.15778261405428,42.13563404162291,42.13719402660717,42.15119499201042,42.15188289416665,42.15263217003409,42.15312357252922,42.1533860232641,42.15501400465291,42.15617400479731]}]],[[{"lng":[-70.97652695846658,-70.94683799316999,-70.9159080165897,-70.90241206743515,-70.91294308364606,-70.90818805292766,-70.91292025738532,-70.92898709286423,-70.9509999964114,-70.97523096225478,-70.97652695846658],"lat":[42.08723897867544,42.09453398157277,42.10012296642336,42.08589701992336,42.08435912637267,42.06172707671453,42.06501942764609,42.06624652055479,42.06087503220668,42.07117801690787,42.08723897867544]}]]],["Avon","Brockton","East.Bridgewater","Halifax","Hanson","Randolph","Whitman"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#FCCDE5","#80B1D3","#8DD3C7","#FFFFB3","#FB8072","#8DD3C7","#BEBADA"],"fillOpacity":[0.6,0.6,0.6,0.6,0.6,0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Avon<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Avon<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Avon<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Brockton<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Brockton<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Brockton<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>East Bridgewater<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>East Bridgewater<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>East Bridgewater<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Halifax<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Halifax<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Halifax<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Hanson<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Hanson<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Hanson<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Randolph<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Randolph<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Randolph - 5 of 12 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Whitman<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Whitman<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Whitman<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Avon","Brockton","East Bridgewater","Halifax","Hanson","Randolph","Whitman"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.12666587827579,42.08204292002294,42.03515805236265,41.99138542548331,42.05575417873553,42.1627788195925,42.08002051369122],[-71.04926091759053,-71.02418160323775,-70.94240758930364,-70.86324552828422,-70.87233180480791,-71.03713259331062,-70.93990139276585],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Avon.1","Brockton.1","East.Bridgewater.1","Halifax.1","Hanson.1","Randolph.1","Whitman.1"],"dist_centroids",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Avon","Brockton","East Bridgewater","Halifax","Hanson","Randolph","Whitman"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],["dist_geom","dist_centroids"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[41.94827703935477,42.18451995951887],"lng":[-71.08048295500784,-70.80649505282092]},"fitBounds":[41.94827703935477,-71.08048295500784,42.18451995951887,-70.80649505282092,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -233,23 +204,23 @@ window.Quarto = {
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="xuhitfdplp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xuhitfdplp table {
+<div id="uvdpeqcbjf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#uvdpeqcbjf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xuhitfdplp thead, #xuhitfdplp tbody, #xuhitfdplp tfoot, #xuhitfdplp tr, #xuhitfdplp td, #xuhitfdplp th {
+#uvdpeqcbjf thead, #uvdpeqcbjf tbody, #uvdpeqcbjf tfoot, #uvdpeqcbjf tr, #uvdpeqcbjf td, #uvdpeqcbjf th {
   border-style: none;
 }
 
-#xuhitfdplp p {
+#uvdpeqcbjf p {
   margin: 0;
   padding: 0;
 }
 
-#xuhitfdplp .gt_table {
+#uvdpeqcbjf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -275,12 +246,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_caption {
+#uvdpeqcbjf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xuhitfdplp .gt_title {
+#uvdpeqcbjf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -292,7 +263,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#xuhitfdplp .gt_subtitle {
+#uvdpeqcbjf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -304,7 +275,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#xuhitfdplp .gt_heading {
+#uvdpeqcbjf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -316,13 +287,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_bottom_border {
+#uvdpeqcbjf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_col_headings {
+#uvdpeqcbjf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -337,7 +308,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_col_heading {
+#uvdpeqcbjf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -357,7 +328,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#xuhitfdplp .gt_column_spanner_outer {
+#uvdpeqcbjf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -369,15 +340,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#xuhitfdplp .gt_column_spanner_outer:first-child {
+#uvdpeqcbjf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xuhitfdplp .gt_column_spanner_outer:last-child {
+#uvdpeqcbjf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xuhitfdplp .gt_column_spanner {
+#uvdpeqcbjf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -389,11 +360,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#xuhitfdplp .gt_spanner_row {
+#uvdpeqcbjf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xuhitfdplp .gt_group_heading {
+#uvdpeqcbjf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -419,7 +390,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#xuhitfdplp .gt_empty_group_heading {
+#uvdpeqcbjf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -434,15 +405,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#xuhitfdplp .gt_from_md > :first-child {
+#uvdpeqcbjf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xuhitfdplp .gt_from_md > :last-child {
+#uvdpeqcbjf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xuhitfdplp .gt_row {
+#uvdpeqcbjf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -461,7 +432,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#xuhitfdplp .gt_stub {
+#uvdpeqcbjf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -474,7 +445,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuhitfdplp .gt_stub_row_group {
+#uvdpeqcbjf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,15 +459,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#xuhitfdplp .gt_row_group_first td {
+#uvdpeqcbjf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xuhitfdplp .gt_row_group_first th {
+#uvdpeqcbjf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xuhitfdplp .gt_summary_row {
+#uvdpeqcbjf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -506,16 +477,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuhitfdplp .gt_first_summary_row {
+#uvdpeqcbjf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_first_summary_row.thick {
+#uvdpeqcbjf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xuhitfdplp .gt_last_summary_row {
+#uvdpeqcbjf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,7 +496,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_grand_summary_row {
+#uvdpeqcbjf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -535,7 +506,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuhitfdplp .gt_first_grand_summary_row {
+#uvdpeqcbjf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -545,7 +516,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_last_grand_summary_row_top {
+#uvdpeqcbjf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,11 +526,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_striped {
+#uvdpeqcbjf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xuhitfdplp .gt_table_body {
+#uvdpeqcbjf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -568,7 +539,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_footnotes {
+#uvdpeqcbjf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -582,7 +553,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_footnote {
+#uvdpeqcbjf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -591,7 +562,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuhitfdplp .gt_sourcenotes {
+#uvdpeqcbjf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -605,7 +576,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xuhitfdplp .gt_sourcenote {
+#uvdpeqcbjf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -613,72 +584,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuhitfdplp .gt_left {
+#uvdpeqcbjf .gt_left {
   text-align: left;
 }
 
-#xuhitfdplp .gt_center {
+#uvdpeqcbjf .gt_center {
   text-align: center;
 }
 
-#xuhitfdplp .gt_right {
+#uvdpeqcbjf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xuhitfdplp .gt_font_normal {
+#uvdpeqcbjf .gt_font_normal {
   font-weight: normal;
 }
 
-#xuhitfdplp .gt_font_bold {
+#uvdpeqcbjf .gt_font_bold {
   font-weight: bold;
 }
 
-#xuhitfdplp .gt_font_italic {
+#uvdpeqcbjf .gt_font_italic {
   font-style: italic;
 }
 
-#xuhitfdplp .gt_super {
+#uvdpeqcbjf .gt_super {
   font-size: 65%;
 }
 
-#xuhitfdplp .gt_footnote_marks {
+#uvdpeqcbjf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xuhitfdplp .gt_asterisk {
+#uvdpeqcbjf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xuhitfdplp .gt_indent_1 {
+#uvdpeqcbjf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xuhitfdplp .gt_indent_2 {
+#uvdpeqcbjf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xuhitfdplp .gt_indent_3 {
+#uvdpeqcbjf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xuhitfdplp .gt_indent_4 {
+#uvdpeqcbjf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xuhitfdplp .gt_indent_5 {
+#uvdpeqcbjf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xuhitfdplp .katex-display {
+#uvdpeqcbjf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xuhitfdplp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#uvdpeqcbjf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -735,23 +706,23 @@ window.Quarto = {
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="hyeobozwsf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hyeobozwsf table {
+<div id="lazbcsivxk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lazbcsivxk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hyeobozwsf thead, #hyeobozwsf tbody, #hyeobozwsf tfoot, #hyeobozwsf tr, #hyeobozwsf td, #hyeobozwsf th {
+#lazbcsivxk thead, #lazbcsivxk tbody, #lazbcsivxk tfoot, #lazbcsivxk tr, #lazbcsivxk td, #lazbcsivxk th {
   border-style: none;
 }
 
-#hyeobozwsf p {
+#lazbcsivxk p {
   margin: 0;
   padding: 0;
 }
 
-#hyeobozwsf .gt_table {
+#lazbcsivxk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -777,12 +748,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_caption {
+#lazbcsivxk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hyeobozwsf .gt_title {
+#lazbcsivxk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -794,7 +765,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#hyeobozwsf .gt_subtitle {
+#lazbcsivxk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -806,7 +777,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#hyeobozwsf .gt_heading {
+#lazbcsivxk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -818,13 +789,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_bottom_border {
+#lazbcsivxk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_col_headings {
+#lazbcsivxk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -839,7 +810,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_col_heading {
+#lazbcsivxk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -859,7 +830,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#hyeobozwsf .gt_column_spanner_outer {
+#lazbcsivxk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -871,15 +842,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#hyeobozwsf .gt_column_spanner_outer:first-child {
+#lazbcsivxk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hyeobozwsf .gt_column_spanner_outer:last-child {
+#lazbcsivxk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hyeobozwsf .gt_column_spanner {
+#lazbcsivxk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -891,11 +862,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#hyeobozwsf .gt_spanner_row {
+#lazbcsivxk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hyeobozwsf .gt_group_heading {
+#lazbcsivxk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -921,7 +892,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#hyeobozwsf .gt_empty_group_heading {
+#lazbcsivxk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -936,15 +907,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#hyeobozwsf .gt_from_md > :first-child {
+#lazbcsivxk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hyeobozwsf .gt_from_md > :last-child {
+#lazbcsivxk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hyeobozwsf .gt_row {
+#lazbcsivxk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -963,7 +934,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#hyeobozwsf .gt_stub {
+#lazbcsivxk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -976,7 +947,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#hyeobozwsf .gt_stub_row_group {
+#lazbcsivxk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -990,15 +961,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#hyeobozwsf .gt_row_group_first td {
+#lazbcsivxk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hyeobozwsf .gt_row_group_first th {
+#lazbcsivxk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hyeobozwsf .gt_summary_row {
+#lazbcsivxk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1008,16 +979,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#hyeobozwsf .gt_first_summary_row {
+#lazbcsivxk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_first_summary_row.thick {
+#lazbcsivxk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hyeobozwsf .gt_last_summary_row {
+#lazbcsivxk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1027,7 +998,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_grand_summary_row {
+#lazbcsivxk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1037,7 +1008,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#hyeobozwsf .gt_first_grand_summary_row {
+#lazbcsivxk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1047,7 +1018,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_last_grand_summary_row_top {
+#lazbcsivxk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1057,11 +1028,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_striped {
+#lazbcsivxk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hyeobozwsf .gt_table_body {
+#lazbcsivxk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1070,7 +1041,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_footnotes {
+#lazbcsivxk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1084,7 +1055,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_footnote {
+#lazbcsivxk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1093,7 +1064,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#hyeobozwsf .gt_sourcenotes {
+#lazbcsivxk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1107,7 +1078,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#hyeobozwsf .gt_sourcenote {
+#lazbcsivxk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1115,72 +1086,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#hyeobozwsf .gt_left {
+#lazbcsivxk .gt_left {
   text-align: left;
 }
 
-#hyeobozwsf .gt_center {
+#lazbcsivxk .gt_center {
   text-align: center;
 }
 
-#hyeobozwsf .gt_right {
+#lazbcsivxk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hyeobozwsf .gt_font_normal {
+#lazbcsivxk .gt_font_normal {
   font-weight: normal;
 }
 
-#hyeobozwsf .gt_font_bold {
+#lazbcsivxk .gt_font_bold {
   font-weight: bold;
 }
 
-#hyeobozwsf .gt_font_italic {
+#lazbcsivxk .gt_font_italic {
   font-style: italic;
 }
 
-#hyeobozwsf .gt_super {
+#lazbcsivxk .gt_super {
   font-size: 65%;
 }
 
-#hyeobozwsf .gt_footnote_marks {
+#lazbcsivxk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hyeobozwsf .gt_asterisk {
+#lazbcsivxk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hyeobozwsf .gt_indent_1 {
+#lazbcsivxk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hyeobozwsf .gt_indent_2 {
+#lazbcsivxk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hyeobozwsf .gt_indent_3 {
+#lazbcsivxk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hyeobozwsf .gt_indent_4 {
+#lazbcsivxk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hyeobozwsf .gt_indent_5 {
+#lazbcsivxk .gt_indent_5 {
   text-indent: 25px;
 }
 
-#hyeobozwsf .katex-display {
+#lazbcsivxk .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#hyeobozwsf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#lazbcsivxk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1234,23 +1205,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="zxfobrybew" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zxfobrybew table {
+<div id="mwjgwlkyqr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mwjgwlkyqr table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zxfobrybew thead, #zxfobrybew tbody, #zxfobrybew tfoot, #zxfobrybew tr, #zxfobrybew td, #zxfobrybew th {
+#mwjgwlkyqr thead, #mwjgwlkyqr tbody, #mwjgwlkyqr tfoot, #mwjgwlkyqr tr, #mwjgwlkyqr td, #mwjgwlkyqr th {
   border-style: none;
 }
 
-#zxfobrybew p {
+#mwjgwlkyqr p {
   margin: 0;
   padding: 0;
 }
 
-#zxfobrybew .gt_table {
+#mwjgwlkyqr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1276,12 +1247,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_caption {
+#mwjgwlkyqr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zxfobrybew .gt_title {
+#mwjgwlkyqr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1293,7 +1264,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#zxfobrybew .gt_subtitle {
+#mwjgwlkyqr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1305,7 +1276,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#zxfobrybew .gt_heading {
+#mwjgwlkyqr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1317,13 +1288,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_bottom_border {
+#mwjgwlkyqr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_col_headings {
+#mwjgwlkyqr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1338,7 +1309,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_col_heading {
+#mwjgwlkyqr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1358,7 +1329,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#zxfobrybew .gt_column_spanner_outer {
+#mwjgwlkyqr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1370,15 +1341,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#zxfobrybew .gt_column_spanner_outer:first-child {
+#mwjgwlkyqr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zxfobrybew .gt_column_spanner_outer:last-child {
+#mwjgwlkyqr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zxfobrybew .gt_column_spanner {
+#mwjgwlkyqr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1390,11 +1361,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#zxfobrybew .gt_spanner_row {
+#mwjgwlkyqr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zxfobrybew .gt_group_heading {
+#mwjgwlkyqr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1420,7 +1391,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#zxfobrybew .gt_empty_group_heading {
+#mwjgwlkyqr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1435,15 +1406,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#zxfobrybew .gt_from_md > :first-child {
+#mwjgwlkyqr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zxfobrybew .gt_from_md > :last-child {
+#mwjgwlkyqr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zxfobrybew .gt_row {
+#mwjgwlkyqr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1462,7 +1433,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#zxfobrybew .gt_stub {
+#mwjgwlkyqr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1475,7 +1446,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zxfobrybew .gt_stub_row_group {
+#mwjgwlkyqr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1489,15 +1460,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#zxfobrybew .gt_row_group_first td {
+#mwjgwlkyqr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zxfobrybew .gt_row_group_first th {
+#mwjgwlkyqr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zxfobrybew .gt_summary_row {
+#mwjgwlkyqr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1507,16 +1478,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zxfobrybew .gt_first_summary_row {
+#mwjgwlkyqr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_first_summary_row.thick {
+#mwjgwlkyqr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zxfobrybew .gt_last_summary_row {
+#mwjgwlkyqr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1526,7 +1497,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_grand_summary_row {
+#mwjgwlkyqr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1536,7 +1507,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zxfobrybew .gt_first_grand_summary_row {
+#mwjgwlkyqr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1546,7 +1517,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_last_grand_summary_row_top {
+#mwjgwlkyqr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1556,11 +1527,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_striped {
+#mwjgwlkyqr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zxfobrybew .gt_table_body {
+#mwjgwlkyqr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1569,7 +1540,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_footnotes {
+#mwjgwlkyqr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1583,7 +1554,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_footnote {
+#mwjgwlkyqr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1592,7 +1563,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zxfobrybew .gt_sourcenotes {
+#mwjgwlkyqr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1606,7 +1577,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#zxfobrybew .gt_sourcenote {
+#mwjgwlkyqr .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1614,72 +1585,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#zxfobrybew .gt_left {
+#mwjgwlkyqr .gt_left {
   text-align: left;
 }
 
-#zxfobrybew .gt_center {
+#mwjgwlkyqr .gt_center {
   text-align: center;
 }
 
-#zxfobrybew .gt_right {
+#mwjgwlkyqr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zxfobrybew .gt_font_normal {
+#mwjgwlkyqr .gt_font_normal {
   font-weight: normal;
 }
 
-#zxfobrybew .gt_font_bold {
+#mwjgwlkyqr .gt_font_bold {
   font-weight: bold;
 }
 
-#zxfobrybew .gt_font_italic {
+#mwjgwlkyqr .gt_font_italic {
   font-style: italic;
 }
 
-#zxfobrybew .gt_super {
+#mwjgwlkyqr .gt_super {
   font-size: 65%;
 }
 
-#zxfobrybew .gt_footnote_marks {
+#mwjgwlkyqr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zxfobrybew .gt_asterisk {
+#mwjgwlkyqr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zxfobrybew .gt_indent_1 {
+#mwjgwlkyqr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zxfobrybew .gt_indent_2 {
+#mwjgwlkyqr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zxfobrybew .gt_indent_3 {
+#mwjgwlkyqr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zxfobrybew .gt_indent_4 {
+#mwjgwlkyqr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zxfobrybew .gt_indent_5 {
+#mwjgwlkyqr .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zxfobrybew .katex-display {
+#mwjgwlkyqr .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zxfobrybew div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mwjgwlkyqr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

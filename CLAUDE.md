@@ -29,15 +29,43 @@ This is a multi-language data science project with the following main components
 ## Common Development Commands
 
 ### Website Generation
+
+The website generation process uses templates in `website/_gen/` and a Makefile-based workflow:
+
 From the `website/` directory:
 ```bash
-# Render entire website
+# Generate all .qmd files from templates (creates district and office pages)
+make -f _Makefile generate_qmd_pages
+
+# Render all generated .qmd files to HTML
+make -f _Makefile render_html
+
+# Or render entire website with Quarto (includes both generation and rendering)
 quarto render
 
 # Render specific pages
 quarto render index.qmd
 quarto render districts/state-rep/
 ```
+
+#### Website Generation Architecture
+
+The website uses a two-step template-based generation process:
+
+1. **Template Processing** (`website/_gen/`):
+   - `generate_pages.py`: Python script that creates .qmd files from templates
+   - `district_page.qmd`: Template for individual district pages
+   - `office_page.qmd`: Template for office summary pages  
+   - `legislative_info.R`: R functions for maps, tables, and data processing
+
+2. **Quarto Rendering**: Converts generated .qmd files to final HTML pages
+
+#### Template System
+
+- Templates use Python string formatting (`%(variable_name)s`) for parameter substitution
+- `generate_pages.py` reads district data from `districts/ma_leg_dists_w_summary.csv`
+- Each district gets its own .qmd file with populated parameters (office, district name, description, etc.)
+- Office pages are generated for each legislative office type (State Rep, State Senate, etc.)
 
 ### District Page Generation
 From the `districts/` directory:
@@ -99,19 +127,36 @@ uv run python generate_pages.py
 
 ## Key Files for Understanding the System
 
+### Website Generation
 - `website/_quarto.yml`: Main website configuration
-- `districts/generate_pages.py`: District page generation logic
-- `website/_gen/district_page.qmd`: District page template
-- `website/_gen/office_page.qmd`: Office summary page template
-- `districts/legislative_info.R`: Core R functions for data processing and visualization
+- `website/_Makefile`: Makefile for website generation workflow
+- `website/_gen/generate_pages.py`: Python script that creates .qmd files from templates
+- `website/_gen/district_page.qmd`: Template for individual district pages
+- `website/_gen/office_page.qmd`: Template for office summary pages  
+- `website/_gen/legislative_info.R`: R functions for maps, tables, and data processing (website version)
+
+### Data Processing
+- `districts/generate_pages.py`: Legacy district page generation logic (districts version)
+- `districts/legislative_info.R`: Core R functions for data processing and visualization (districts version)
+- `districts/ma_leg_dists_w_summary.csv`: District data with summaries used by website generation
 - `pvi/ma_legislative_district_pvi_2024.csv`: Current district PVI data
 
 ## Development Workflow
 
 1. Update underlying data in respective directories (`demographics/`, `pvi/`, `results/`)
-2. Generate district pages using Python scripts in `districts/`
-3. Render website using Quarto from `website/`
+2. Generate district summaries and ensure `districts/ma_leg_dists_w_summary.csv` is current
+3. Generate website pages using template system from `website/`:
+   - Run `make -f _Makefile generate_qmd_pages` to create .qmd files from templates
+   - Run `make -f _Makefile render_html` to render HTML, or use `quarto render` for full site
 4. Final output appears in `docs/` directory for GitHub Pages hosting
+
+### Two-Track System
+
+The project currently maintains both:
+- **Legacy system**: `districts/` directory with standalone Python/R scripts
+- **Website system**: `website/_gen/` template-based generation for the main website
+
+The website system in `website/_gen/` is the primary method for generating the public website.
 
 ## Testing and Quality Control
 

@@ -90,35 +90,6 @@ gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 <script src="../../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 <script src="../../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Massachusetts Seventeenth Middlesex State Representative District – mapoli">
@@ -222,8 +193,8 @@ window.Quarto = {
 <strong>Incumbent</strong>: Vanna Howard (D-Lowell)</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-ce520d43842ffb91de4a" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-ce520d43842ffb91de4a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.3251389578771,-71.31602966870739,-71.31508372628386,-71.31647396273972,-71.31661097260343,-71.31591420563805,-71.313332901636,-71.31286426529367,-71.3119079789666,-71.31101705489135,-71.30955650904522,-71.31060894698712,-71.31040797597504,-71.30887253914919,-71.30792298566136,-71.30213939057289,-71.2987160148993,-71.29496592841326,-71.29225870418573,-71.29031184454958,-71.28661859098507,-71.28601096069701,-71.28040596971542,-71.27515402452414,-71.27201806189662,-71.27118827452095,-71.27470904366098,-71.27779056338454,-71.28342702219845,-71.29627099326487,-71.29702794911501,-71.29637213557534,-71.31804747313073,-71.32002037895462,-71.32015099195857,-71.32013295967757,-71.31870307514767,-71.31952895957431,-71.31915228616721,-71.3198946356288,-71.32001590406375,-71.319981701621,-71.32125500358327,-71.32148803672948,-71.32361695025618,-71.32183785486197,-71.32367396844322,-71.3239761686299,-71.32513696237321,-71.3251389578771],"lat":[42.63540797709162,42.63798729147317,42.63906550149277,42.64008401340833,42.64155594927418,42.64148457339901,42.64473600579918,42.64471207669323,42.64582196730098,42.64580142753325,42.64750579974377,42.6479690133957,42.64827196854867,42.6481987215008,42.64930195746976,42.6470939447306,42.6466439704463,42.64496172905662,42.64459619527124,42.64523329514226,42.64765225477895,42.64955897992176,42.65411997284301,42.65621595905468,42.64921598851758,42.64424080200829,42.62885900736644,42.62084813568209,42.61529902466301,42.61267503562816,42.61301101320397,42.6146738724727,42.61375092187431,42.61601647405573,42.61422114663043,42.61653797169287,42.61814103097701,42.62176600077004,42.624918016563,42.62515079437214,42.62454791007895,42.6252018004275,42.62556834273458,42.62418402877483,42.6245240181838,42.62876617525235,42.62888502876685,42.62960665929922,42.62954603302595,42.63540797709162]}]],[[{"lng":[-71.29631890209026,-71.28343345312774,-71.27779743148955,-71.27608296649115,-71.27420810823838,-71.27024498161533,-71.26668597881965,-71.26079001897628,-71.25944054716408,-71.25869797681102,-71.25509700374772,-71.25406104681602,-71.25459730609906,-71.25224503642342,-71.25118704107454,-71.25213807941344,-71.23292612165733,-71.23243396067539,-71.23107799786716,-71.23054304620949,-71.23117166910414,-71.23125168756867,-71.2290210457403,-71.23100698573711,-71.23199489919605,-71.23159304559279,-71.23196201911473,-71.23416909829633,-71.24829912293436,-71.2506710365753,-71.25798305218682,-71.2607800061279,-71.26265696327664,-71.26446065496349,-71.2697639853413,-71.27171224706265,-71.27313101594295,-71.2799710061895,-71.28022603502525,-71.29631890209026],"lat":[42.61266698984594,42.61530195062102,42.62084148855124,42.62526798390721,42.62640132971298,42.62836897617812,42.62961696007275,42.63105896318417,42.63064912852611,42.63123997507237,42.63215296830997,42.63075899798822,42.62890027185563,42.62740898327746,42.62559798845557,42.62275130082902,42.62020251773486,42.62181398226338,42.62256796302397,42.62193300528926,42.62176471351892,42.62076658764698,42.61996398686932,42.61701611847521,42.61416882558226,42.61202200092133,42.6110330598576,42.61239086769,42.61737307821445,42.61282902113298,42.60828972446281,42.60561704200646,42.60675302315117,42.60889264784625,42.60655604079553,42.60907688064426,42.60814202869757,42.60773684449386,42.605240050157,42.61266698984594]}]]],["Lowell","Tewksbury"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#BEBADA","#FB8072"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Lowell<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Lowell<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Lowell - 14 of 39 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Tewksbury<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Tewksbury<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Tewksbury - 1 of 9 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Lowell","Tewksbury"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.63196206419211,42.61754425418258],[-71.29652259485741,-71.26288524977153],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Lowell.1","Tewksbury.1"],"dist_geom",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Lowell","Tewksbury"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"dist_geom",{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.605240050157,42.65621595905468],"lng":[-71.3251389578771,-71.2290210457403]},"fitBounds":[42.605240050157,-71.3251389578771,42.65621595905468,-71.2290210457403,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-cc428b0cb8c035028e2e" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-cc428b0cb8c035028e2e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addPolygons","args":[[[[{"lng":[-71.3251389578771,-71.31602966870739,-71.31508372628386,-71.31647396273972,-71.31661097260343,-71.31591420563805,-71.313332901636,-71.31286426529367,-71.3119079789666,-71.31101705489135,-71.30955650904522,-71.31060894698712,-71.31040797597504,-71.30887253914919,-71.30792298566136,-71.30213939057289,-71.2987160148993,-71.29496592841326,-71.29225870418573,-71.29031184454958,-71.28661859098507,-71.28601096069701,-71.28040596971542,-71.27515402452414,-71.27201806189662,-71.27118827452095,-71.27470904366098,-71.27779056338454,-71.28342702219845,-71.29627099326487,-71.29702794911501,-71.29637213557534,-71.31804747313073,-71.32002037895462,-71.32015099195857,-71.32013295967757,-71.31870307514767,-71.31952895957431,-71.31915228616721,-71.3198946356288,-71.32001590406375,-71.319981701621,-71.32125500358327,-71.32148803672948,-71.32361695025618,-71.32183785486197,-71.32367396844322,-71.3239761686299,-71.32513696237321,-71.3251389578771],"lat":[42.63540797709162,42.63798729147317,42.63906550149277,42.64008401340833,42.64155594927418,42.64148457339901,42.64473600579918,42.64471207669323,42.64582196730098,42.64580142753325,42.64750579974377,42.6479690133957,42.64827196854867,42.6481987215008,42.64930195746976,42.6470939447306,42.6466439704463,42.64496172905662,42.64459619527124,42.64523329514226,42.64765225477895,42.64955897992176,42.65411997284301,42.65621595905468,42.64921598851758,42.64424080200829,42.62885900736644,42.62084813568209,42.61529902466301,42.61267503562816,42.61301101320397,42.6146738724727,42.61375092187431,42.61601647405573,42.61422114663043,42.61653797169287,42.61814103097701,42.62176600077004,42.624918016563,42.62515079437214,42.62454791007895,42.6252018004275,42.62556834273458,42.62418402877483,42.6245240181838,42.62876617525235,42.62888502876685,42.62960665929922,42.62954603302595,42.63540797709162]}]],[[{"lng":[-71.29631890209026,-71.28343345312774,-71.27779743148955,-71.27608296649115,-71.27420810823838,-71.27024498161533,-71.26668597881965,-71.26079001897628,-71.25944054716408,-71.25869797681102,-71.25509700374772,-71.25406104681602,-71.25459730609906,-71.25224503642342,-71.25118704107454,-71.25213807941344,-71.23292612165733,-71.23243396067539,-71.23107799786716,-71.23054304620949,-71.23117166910414,-71.23125168756867,-71.2290210457403,-71.23100698573711,-71.23199489919605,-71.23159304559279,-71.23196201911473,-71.23416909829633,-71.24829912293436,-71.2506710365753,-71.25798305218682,-71.2607800061279,-71.26265696327664,-71.26446065496349,-71.2697639853413,-71.27171224706265,-71.27313101594295,-71.2799710061895,-71.28022603502525,-71.29631890209026],"lat":[42.61266698984594,42.61530195062102,42.62084148855124,42.62526798390721,42.62640132971298,42.62836897617812,42.62961696007275,42.63105896318417,42.63064912852611,42.63123997507237,42.63215296830997,42.63075899798822,42.62890027185563,42.62740898327746,42.62559798845557,42.62275130082902,42.62020251773486,42.62181398226338,42.62256796302397,42.62193300528926,42.62176471351892,42.62076658764698,42.61996398686932,42.61701611847521,42.61416882558226,42.61202200092133,42.6110330598576,42.61239086769,42.61737307821445,42.61282902113298,42.60828972446281,42.60561704200646,42.60675302315117,42.60889264784625,42.60655604079553,42.60907688064426,42.60814202869757,42.60773684449386,42.605240050157,42.61266698984594]}]]],["Lowell","Tewksbury"],"dist_geom",{"interactive":true,"className":"","pane":"tmap401","stroke":true,"color":"#666666","weight":1,"opacity":1,"fill":true,"fillColor":["#8DD3C7","#80B1D3"],"fillOpacity":[0.6,0.6],"dashArray":"none","smoothFactor":1,"noClip":false},["<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Lowell<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Lowell<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Lowell - 14 of 39 precincts<\/nobr><\/td><\/tr><\/table><\/div>","<style> div.leaflet-popup-content {width:auto !important;overflow-y:auto; overflow-x:hidden;}<\/style><div style=\"max-height:25em;padding-right:0px;\"><table>\n\t\t\t   <thead><tr><th colspan=\"2\"><b>Tewksbury<\/b><\/th><\/thead><\/tr><tr><td style=\"color: #888888;\"><nobr>City/Town<\/nobr><\/td><td align=\"right\"><nobr>Tewksbury<\/nobr><\/td><\/tr><tr><td style=\"color: #888888;\"><nobr>Precincts<\/nobr><\/td><td align=\"right\"><nobr>Tewksbury - 1 of 9 precincts<\/nobr><\/td><\/tr><\/table><\/div>"],null,["Lowell","Tewksbury"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[42.63196212423936,42.61754427171554],[-71.29652256723884,-71.26288523559813],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},["Lowell.1","Tewksbury.1"],"dist_centroids",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250,"pane":"tmap402"},null,null,null,null,["Lowell","Tewksbury"],{"interactive":false,"permanent":true,"direction":"center","offset":[0,0],"textsize":"12px","textOnly":true,"style":{"color":"#000000"},"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],["dist_geom","dist_centroids"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]}],"limits":{"lat":[42.605240050157,42.65621595905468],"lng":[-71.3251389578771,-71.2290210457403]},"fitBounds":[42.605240050157,-71.3251389578771,42.65621595905468,-71.2290210457403,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -233,23 +204,23 @@ window.Quarto = {
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="kmvdefdoyv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kmvdefdoyv table {
+<div id="rybeiooudm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rybeiooudm table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kmvdefdoyv thead, #kmvdefdoyv tbody, #kmvdefdoyv tfoot, #kmvdefdoyv tr, #kmvdefdoyv td, #kmvdefdoyv th {
+#rybeiooudm thead, #rybeiooudm tbody, #rybeiooudm tfoot, #rybeiooudm tr, #rybeiooudm td, #rybeiooudm th {
   border-style: none;
 }
 
-#kmvdefdoyv p {
+#rybeiooudm p {
   margin: 0;
   padding: 0;
 }
 
-#kmvdefdoyv .gt_table {
+#rybeiooudm .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -275,12 +246,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_caption {
+#rybeiooudm .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kmvdefdoyv .gt_title {
+#rybeiooudm .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -292,7 +263,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#kmvdefdoyv .gt_subtitle {
+#rybeiooudm .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -304,7 +275,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#kmvdefdoyv .gt_heading {
+#rybeiooudm .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -316,13 +287,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_bottom_border {
+#rybeiooudm .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_col_headings {
+#rybeiooudm .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -337,7 +308,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_col_heading {
+#rybeiooudm .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -357,7 +328,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#kmvdefdoyv .gt_column_spanner_outer {
+#rybeiooudm .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -369,15 +340,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#kmvdefdoyv .gt_column_spanner_outer:first-child {
+#rybeiooudm .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kmvdefdoyv .gt_column_spanner_outer:last-child {
+#rybeiooudm .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kmvdefdoyv .gt_column_spanner {
+#rybeiooudm .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -389,11 +360,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#kmvdefdoyv .gt_spanner_row {
+#rybeiooudm .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kmvdefdoyv .gt_group_heading {
+#rybeiooudm .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -419,7 +390,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#kmvdefdoyv .gt_empty_group_heading {
+#rybeiooudm .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -434,15 +405,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#kmvdefdoyv .gt_from_md > :first-child {
+#rybeiooudm .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kmvdefdoyv .gt_from_md > :last-child {
+#rybeiooudm .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kmvdefdoyv .gt_row {
+#rybeiooudm .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -461,7 +432,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#kmvdefdoyv .gt_stub {
+#rybeiooudm .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -474,7 +445,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#kmvdefdoyv .gt_stub_row_group {
+#rybeiooudm .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,15 +459,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#kmvdefdoyv .gt_row_group_first td {
+#rybeiooudm .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kmvdefdoyv .gt_row_group_first th {
+#rybeiooudm .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kmvdefdoyv .gt_summary_row {
+#rybeiooudm .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -506,16 +477,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#kmvdefdoyv .gt_first_summary_row {
+#rybeiooudm .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_first_summary_row.thick {
+#rybeiooudm .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kmvdefdoyv .gt_last_summary_row {
+#rybeiooudm .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,7 +496,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_grand_summary_row {
+#rybeiooudm .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -535,7 +506,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#kmvdefdoyv .gt_first_grand_summary_row {
+#rybeiooudm .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -545,7 +516,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_last_grand_summary_row_top {
+#rybeiooudm .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,11 +526,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_striped {
+#rybeiooudm .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kmvdefdoyv .gt_table_body {
+#rybeiooudm .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -568,7 +539,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_footnotes {
+#rybeiooudm .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -582,7 +553,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_footnote {
+#rybeiooudm .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -591,7 +562,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#kmvdefdoyv .gt_sourcenotes {
+#rybeiooudm .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -605,7 +576,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#kmvdefdoyv .gt_sourcenote {
+#rybeiooudm .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -613,72 +584,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#kmvdefdoyv .gt_left {
+#rybeiooudm .gt_left {
   text-align: left;
 }
 
-#kmvdefdoyv .gt_center {
+#rybeiooudm .gt_center {
   text-align: center;
 }
 
-#kmvdefdoyv .gt_right {
+#rybeiooudm .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kmvdefdoyv .gt_font_normal {
+#rybeiooudm .gt_font_normal {
   font-weight: normal;
 }
 
-#kmvdefdoyv .gt_font_bold {
+#rybeiooudm .gt_font_bold {
   font-weight: bold;
 }
 
-#kmvdefdoyv .gt_font_italic {
+#rybeiooudm .gt_font_italic {
   font-style: italic;
 }
 
-#kmvdefdoyv .gt_super {
+#rybeiooudm .gt_super {
   font-size: 65%;
 }
 
-#kmvdefdoyv .gt_footnote_marks {
+#rybeiooudm .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kmvdefdoyv .gt_asterisk {
+#rybeiooudm .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kmvdefdoyv .gt_indent_1 {
+#rybeiooudm .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kmvdefdoyv .gt_indent_2 {
+#rybeiooudm .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kmvdefdoyv .gt_indent_3 {
+#rybeiooudm .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kmvdefdoyv .gt_indent_4 {
+#rybeiooudm .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kmvdefdoyv .gt_indent_5 {
+#rybeiooudm .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kmvdefdoyv .katex-display {
+#rybeiooudm .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kmvdefdoyv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#rybeiooudm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -735,23 +706,23 @@ window.Quarto = {
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
 <div class="cell-output-display">
-<div id="xicjxyqqdd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xicjxyqqdd table {
+<div id="aqrzubblmr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#aqrzubblmr table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xicjxyqqdd thead, #xicjxyqqdd tbody, #xicjxyqqdd tfoot, #xicjxyqqdd tr, #xicjxyqqdd td, #xicjxyqqdd th {
+#aqrzubblmr thead, #aqrzubblmr tbody, #aqrzubblmr tfoot, #aqrzubblmr tr, #aqrzubblmr td, #aqrzubblmr th {
   border-style: none;
 }
 
-#xicjxyqqdd p {
+#aqrzubblmr p {
   margin: 0;
   padding: 0;
 }
 
-#xicjxyqqdd .gt_table {
+#aqrzubblmr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -777,12 +748,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_caption {
+#aqrzubblmr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xicjxyqqdd .gt_title {
+#aqrzubblmr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -794,7 +765,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#xicjxyqqdd .gt_subtitle {
+#aqrzubblmr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -806,7 +777,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#xicjxyqqdd .gt_heading {
+#aqrzubblmr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -818,13 +789,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_bottom_border {
+#aqrzubblmr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_col_headings {
+#aqrzubblmr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -839,7 +810,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_col_heading {
+#aqrzubblmr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -859,7 +830,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#xicjxyqqdd .gt_column_spanner_outer {
+#aqrzubblmr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -871,15 +842,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#xicjxyqqdd .gt_column_spanner_outer:first-child {
+#aqrzubblmr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xicjxyqqdd .gt_column_spanner_outer:last-child {
+#aqrzubblmr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xicjxyqqdd .gt_column_spanner {
+#aqrzubblmr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -891,11 +862,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#xicjxyqqdd .gt_spanner_row {
+#aqrzubblmr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xicjxyqqdd .gt_group_heading {
+#aqrzubblmr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -921,7 +892,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#xicjxyqqdd .gt_empty_group_heading {
+#aqrzubblmr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -936,15 +907,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#xicjxyqqdd .gt_from_md > :first-child {
+#aqrzubblmr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xicjxyqqdd .gt_from_md > :last-child {
+#aqrzubblmr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xicjxyqqdd .gt_row {
+#aqrzubblmr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -963,7 +934,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#xicjxyqqdd .gt_stub {
+#aqrzubblmr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -976,7 +947,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xicjxyqqdd .gt_stub_row_group {
+#aqrzubblmr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -990,15 +961,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#xicjxyqqdd .gt_row_group_first td {
+#aqrzubblmr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xicjxyqqdd .gt_row_group_first th {
+#aqrzubblmr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xicjxyqqdd .gt_summary_row {
+#aqrzubblmr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1008,16 +979,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xicjxyqqdd .gt_first_summary_row {
+#aqrzubblmr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_first_summary_row.thick {
+#aqrzubblmr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xicjxyqqdd .gt_last_summary_row {
+#aqrzubblmr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1027,7 +998,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_grand_summary_row {
+#aqrzubblmr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1037,7 +1008,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xicjxyqqdd .gt_first_grand_summary_row {
+#aqrzubblmr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1047,7 +1018,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_last_grand_summary_row_top {
+#aqrzubblmr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1057,11 +1028,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_striped {
+#aqrzubblmr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xicjxyqqdd .gt_table_body {
+#aqrzubblmr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1070,7 +1041,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_footnotes {
+#aqrzubblmr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1084,7 +1055,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_footnote {
+#aqrzubblmr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1093,7 +1064,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xicjxyqqdd .gt_sourcenotes {
+#aqrzubblmr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1107,7 +1078,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xicjxyqqdd .gt_sourcenote {
+#aqrzubblmr .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1115,72 +1086,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xicjxyqqdd .gt_left {
+#aqrzubblmr .gt_left {
   text-align: left;
 }
 
-#xicjxyqqdd .gt_center {
+#aqrzubblmr .gt_center {
   text-align: center;
 }
 
-#xicjxyqqdd .gt_right {
+#aqrzubblmr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xicjxyqqdd .gt_font_normal {
+#aqrzubblmr .gt_font_normal {
   font-weight: normal;
 }
 
-#xicjxyqqdd .gt_font_bold {
+#aqrzubblmr .gt_font_bold {
   font-weight: bold;
 }
 
-#xicjxyqqdd .gt_font_italic {
+#aqrzubblmr .gt_font_italic {
   font-style: italic;
 }
 
-#xicjxyqqdd .gt_super {
+#aqrzubblmr .gt_super {
   font-size: 65%;
 }
 
-#xicjxyqqdd .gt_footnote_marks {
+#aqrzubblmr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xicjxyqqdd .gt_asterisk {
+#aqrzubblmr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xicjxyqqdd .gt_indent_1 {
+#aqrzubblmr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xicjxyqqdd .gt_indent_2 {
+#aqrzubblmr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xicjxyqqdd .gt_indent_3 {
+#aqrzubblmr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xicjxyqqdd .gt_indent_4 {
+#aqrzubblmr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xicjxyqqdd .gt_indent_5 {
+#aqrzubblmr .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xicjxyqqdd .katex-display {
+#aqrzubblmr .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xicjxyqqdd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#aqrzubblmr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1214,23 +1185,23 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="elections">Elections</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="jkohiksyqf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jkohiksyqf table {
+<div id="eqsitvyave" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#eqsitvyave table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jkohiksyqf thead, #jkohiksyqf tbody, #jkohiksyqf tfoot, #jkohiksyqf tr, #jkohiksyqf td, #jkohiksyqf th {
+#eqsitvyave thead, #eqsitvyave tbody, #eqsitvyave tfoot, #eqsitvyave tr, #eqsitvyave td, #eqsitvyave th {
   border-style: none;
 }
 
-#jkohiksyqf p {
+#eqsitvyave p {
   margin: 0;
   padding: 0;
 }
 
-#jkohiksyqf .gt_table {
+#eqsitvyave .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1256,12 +1227,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_caption {
+#eqsitvyave .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jkohiksyqf .gt_title {
+#eqsitvyave .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1273,7 +1244,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#jkohiksyqf .gt_subtitle {
+#eqsitvyave .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1285,7 +1256,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#jkohiksyqf .gt_heading {
+#eqsitvyave .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1297,13 +1268,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_bottom_border {
+#eqsitvyave .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_col_headings {
+#eqsitvyave .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1318,7 +1289,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_col_heading {
+#eqsitvyave .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1338,7 +1309,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#jkohiksyqf .gt_column_spanner_outer {
+#eqsitvyave .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1350,15 +1321,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#jkohiksyqf .gt_column_spanner_outer:first-child {
+#eqsitvyave .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jkohiksyqf .gt_column_spanner_outer:last-child {
+#eqsitvyave .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jkohiksyqf .gt_column_spanner {
+#eqsitvyave .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1370,11 +1341,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#jkohiksyqf .gt_spanner_row {
+#eqsitvyave .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jkohiksyqf .gt_group_heading {
+#eqsitvyave .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1400,7 +1371,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#jkohiksyqf .gt_empty_group_heading {
+#eqsitvyave .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1415,15 +1386,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#jkohiksyqf .gt_from_md > :first-child {
+#eqsitvyave .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jkohiksyqf .gt_from_md > :last-child {
+#eqsitvyave .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jkohiksyqf .gt_row {
+#eqsitvyave .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1442,7 +1413,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#jkohiksyqf .gt_stub {
+#eqsitvyave .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1455,7 +1426,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jkohiksyqf .gt_stub_row_group {
+#eqsitvyave .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1469,15 +1440,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#jkohiksyqf .gt_row_group_first td {
+#eqsitvyave .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jkohiksyqf .gt_row_group_first th {
+#eqsitvyave .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jkohiksyqf .gt_summary_row {
+#eqsitvyave .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1487,16 +1458,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jkohiksyqf .gt_first_summary_row {
+#eqsitvyave .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_first_summary_row.thick {
+#eqsitvyave .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jkohiksyqf .gt_last_summary_row {
+#eqsitvyave .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1506,7 +1477,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_grand_summary_row {
+#eqsitvyave .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1516,7 +1487,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jkohiksyqf .gt_first_grand_summary_row {
+#eqsitvyave .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1526,7 +1497,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_last_grand_summary_row_top {
+#eqsitvyave .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1536,11 +1507,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_striped {
+#eqsitvyave .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jkohiksyqf .gt_table_body {
+#eqsitvyave .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1549,7 +1520,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_footnotes {
+#eqsitvyave .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1563,7 +1534,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_footnote {
+#eqsitvyave .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1572,7 +1543,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jkohiksyqf .gt_sourcenotes {
+#eqsitvyave .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1586,7 +1557,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#jkohiksyqf .gt_sourcenote {
+#eqsitvyave .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1594,72 +1565,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#jkohiksyqf .gt_left {
+#eqsitvyave .gt_left {
   text-align: left;
 }
 
-#jkohiksyqf .gt_center {
+#eqsitvyave .gt_center {
   text-align: center;
 }
 
-#jkohiksyqf .gt_right {
+#eqsitvyave .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jkohiksyqf .gt_font_normal {
+#eqsitvyave .gt_font_normal {
   font-weight: normal;
 }
 
-#jkohiksyqf .gt_font_bold {
+#eqsitvyave .gt_font_bold {
   font-weight: bold;
 }
 
-#jkohiksyqf .gt_font_italic {
+#eqsitvyave .gt_font_italic {
   font-style: italic;
 }
 
-#jkohiksyqf .gt_super {
+#eqsitvyave .gt_super {
   font-size: 65%;
 }
 
-#jkohiksyqf .gt_footnote_marks {
+#eqsitvyave .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jkohiksyqf .gt_asterisk {
+#eqsitvyave .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jkohiksyqf .gt_indent_1 {
+#eqsitvyave .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jkohiksyqf .gt_indent_2 {
+#eqsitvyave .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jkohiksyqf .gt_indent_3 {
+#eqsitvyave .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jkohiksyqf .gt_indent_4 {
+#eqsitvyave .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jkohiksyqf .gt_indent_5 {
+#eqsitvyave .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jkohiksyqf .katex-display {
+#eqsitvyave .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jkohiksyqf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#eqsitvyave div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
