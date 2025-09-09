@@ -1,0 +1,63 @@
+---
+format:
+  html:
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+params:
+  city_town_name: "%(city_town_name)s"
+title: "%(city_town_name)s Massachusetts"
+# description: "%(description)s"
+open-graph:
+  image: "%(image_name)s"
+twitter-card:
+  image: "%(image_name)s"
+---
+
+```{r}
+library(here)
+source(here("website/_gen/legislative_info.R"))
+```
+
+```{r, include=FALSE}
+## Hidden chunk to produce static map
+ct_map <- city_town_map(params$city_town_name)
+save_city_town_map_image(tmap_leaflet(ct_map), params$city_town_name)
+```
+
+```{r}
+## Display interactive map
+tmap_leaflet(ct_map)
+```
+
+<br/>
+
+## Legislative Districts
+
+### State Representative
+
+```{r}
+city_town_districts(params$city_town_name, "State Representative")
+```
+
+### State Senate
+
+```{r}
+city_town_districts(params$city_town_name, "State Senate")
+```
+
+### Governor's Council
+
+```{r}
+city_town_districts(params$city_town_name, "Governor's Council")
+```
+
+### U.S. House
+
+```{r}
+city_town_districts(params$city_town_name, "U.S. House")
+```
+
+
+

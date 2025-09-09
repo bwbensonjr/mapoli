@@ -566,3 +566,47 @@ district_incumbent <- function(office_name, district_name) {
                district == district_name) |>
         pull(legislator)
 }
+
+city_town_precincts <- function(office_name) {
+    office_col <- office_column(office_name)
+    prec_dist |>
+        group_by(
+            city_town,
+            !!sym(office_col)
+        ) |>
+        summarize(
+            precincts = if_else((n() == 1),
+                "-",
+                str_flatten_comma(ward_precinct(ward, precinct))
+            )
+        )
+}
+
+city_town_precincts <- function(office_name) {
+    office_col <- office_column(office_name)
+    prec_dist |>
+        left_join(city_town_total_precincts, by = "city_town") |>
+        rename(district = !!sym(office_col)) |>
+        group_by(
+            city_town,
+            district
+        ) |>
+        summarize(
+            precincts = if_else((first(total_precincts) == n()),
+                "-",
+                str_flatten_comma(ward_precinct(ward, precinct))
+            )
+        ) |>
+        left_join(
+            (legislative_district_info |>
+                filter(office == office_name) |>
+                select(district, legislator)),
+            by = c("district")
+        ) |>
+        select(
+            city_town,
+            district,
+            legislator,
+            precincts
+        )
+}

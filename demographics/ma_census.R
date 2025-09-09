@@ -166,17 +166,22 @@ district_density <- function(dist_geom) {
         ungroup()
 }
 
-## city_town_vars <- census_query("county subdivision",
-##                                census_vars,
-##                                state=25) %>%
-##     filter(!str_detect(NAME, "not defined")) %>%
-##     mutate(city_town = city_town_name(NAME),
-##            county = city_town_county(NAME)) %>%
-##     rename(city_town_fips = GEOID) %>%
-##     select(-NAME) %>%
-##     add_calculated_factors() %>%
-##     add_percentage_factors() %>%
-##     select(-all_of(temp_var_names))
+city_town_vars <- census_query("county subdivision",
+                               census_vars,
+                               state=25) |>
+    filter(!str_detect(NAME, "not defined")) |>
+    mutate(city_town = city_town_name(NAME),
+           county = city_town_county(NAME)) |>
+    rename(city_town_fips = GEOID) |>
+    select(-NAME) |>
+    add_calculated_factors() |>
+    add_percentage_factors() |>
+    select(-all_of(temp_var_names))
+
+city_town_file <- "data/ma_city_town_demographics.csv"
+message(str_glue("Writing City/Town variables to file {city_town_file}..."))
+city_town_vars |>
+    write_csv(city_town_file)
 
 ## county_vars <- census_query("county",
 ##                                census_vars,
