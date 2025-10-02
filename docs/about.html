@@ -77,35 +77,6 @@ gtag('js', new Date());
 gtag('config', 'G-D7H3929JG1', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="About – mapoli">
@@ -192,7 +163,8 @@ window.Quarto = {
 </header>
 
 
-<p>The <a href="index.html">mapoli</a> Legislative District Atlas was created by Brent Benson who has a passion for collecting, combining, and analyzing data, with a particular interest in Massachusetts politics and policy. You can get in touch with Brent on <a href="https://bsky.app/profile/brentwbenson.org">Bluesky</a>, <a href="https://www.threads.com/@bwbensonjr">Threads</a>, or by email using the address <code>brent</code> at <code>mapoli.us</code>.</p>
+<p>The <a href="index.html">mapoli</a> Legislative District Atlas has overview pages with a map and comparative demographics for Massachusetts State Representative, State Senate, Governor’s Council, and U.S. House districts and individual pages for the 217 individual districts with a map, overview, election results, and demographics for each district.</p>
+<p>The site was created and is maintained by Brent Benson who has a passion for collecting, combining, and analyzing data, with a particular interest in Massachusetts politics and policy. You can get in touch with Brent on <a href="https://bsky.app/profile/brentwbenson.org">Bluesky</a>, <a href="https://www.threads.com/@bwbensonjr">Threads</a>, or by email using the address <code>brent</code> at <code>mapoli.us</code>.</p>
 <p>The primary sources for the data in the district atlas are:</p>
 <ul>
 <li>Election results data from the invaluable <a href="https://electionstats.state.ma.us/">electionstats.state.ma.us</a> site created by <a href="https://civera.com/team/">Adam Friedman of Civera</a> and supported by the <a href="https://www.sec.state.ma.us/">Secretary of the Commonwealth</a>.</li>

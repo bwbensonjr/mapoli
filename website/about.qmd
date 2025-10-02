@@ -5,13 +5,19 @@ format:
     page-layout: full
 ---
 
-The [mapoli](index.html) Legislative District Atlas was created by
-Brent Benson who has a passion for collecting, combining, and
-analyzing data, with a particular interest in Massachusetts politics
-and policy. You can get in touch with Brent on
+The [mapoli](index.html) Legislative District Atlas has overview pages
+with a map and comparative demographics for Massachusetts State
+Representative, State Senate, Governor's Council, and U.S. House
+districts and individual pages for the 217 individual districts with a
+map, overview, election results, and demographics for each district.
+
+The site was created and is maintained by Brent Benson who has a
+passion for collecting, combining, and analyzing data, with a
+particular interest in Massachusetts politics and policy. You can get
+in touch with Brent on
 [Bluesky](https://bsky.app/profile/brentwbenson.org),
-[Threads](https://www.threads.com/@bwbensonjr), or by email
-using the address `brent` at `mapoli.us`.
+[Threads](https://www.threads.com/@bwbensonjr), or by email using the
+address `brent` at `mapoli.us`.
 
 The primary sources for the data in the district atlas are:
 
