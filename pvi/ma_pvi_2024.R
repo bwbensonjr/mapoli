@@ -38,39 +38,44 @@ combine_22 <- tribble(
 combine_precincts <- function(df, parentage) {
   # Identify join columns
   join_cols <- c("city_town", "ward", "precinct")
-  
-  # Identify numeric columns
-  numeric_cols <- names(df)[sapply(df, is.numeric)]
-  
-  # Identify other columns to preserve
-  other_cols <- setdiff(names(df), c(join_cols, numeric_cols))
-  
+
+  # District identifier columns that should be preserved, not aggregated
+  # These represent district assignments and must remain consistent within each precinct
+  district_id_cols <- c("State_Rep", "State_Senate", "Gov_Council", "US_House")
+
+  # Vote columns are numeric columns that should be summed when combining precincts
+  all_numeric_cols <- names(df)[sapply(df, is.numeric)]
+  vote_cols <- setdiff(all_numeric_cols, district_id_cols)
+
+  # Identifier columns for grouping (district IDs + any other non-vote columns)
+  identifier_cols <- setdiff(names(df), c(join_cols, vote_cols))
+
   # Merge the parentage information with the original dataframe
   df_with_parents <- df %>%
     left_join(parentage, by = join_cols)
-  
+
   # Separate parent and child rows
   parent_rows <- df_with_parents %>%
     filter(is.na(parent_precinct))
-  
+
   child_rows <- df_with_parents %>%
     filter(!is.na(parent_precinct))
-  
+
   # Aggregate child rows
   aggregated_children <- child_rows %>%
-    group_by(city_town, ward, parent_precinct, across(all_of(other_cols))) %>%
-    summarize(across(all_of(numeric_cols), sum)) %>%
+    group_by(city_town, ward, parent_precinct, across(all_of(identifier_cols))) %>%
+    summarize(across(all_of(vote_cols), sum), .groups = "drop") %>%
     ungroup() %>%
     rename(precinct = parent_precinct)
-  
+
   # Combine parent rows with aggregated child rows
   combined <- parent_rows %>%
     select(-parent_precinct) %>%
     bind_rows(aggregated_children) %>%
-    group_by(across(all_of(c(join_cols, other_cols)))) %>%
-    summarize(across(all_of(numeric_cols), sum)) %>%
+    group_by(across(all_of(c(join_cols, identifier_cols)))) %>%
+    summarize(across(all_of(vote_cols), sum), .groups = "drop") %>%
     ungroup()
-  
+
   return(combined)
 }
 
@@ -99,8 +104,8 @@ comb_results <- read_csv("ma_precincts_districts_pres_2022.csv") %>%
     mutate(Harris_24 = replace_na(Harris_24, 0),
            Trump_24 = replace_na(Trump_24, 0))
 
-# comb_results %>% write_csv("ma_precincts_districts_pres_2024.csv")
-comb_results <- read_csv("ma_precincts_districts_pres_2024.csv")
+comb_results %>% write_csv("ma_precincts_districts_pres_2024.csv")
+# comb_results <- read_csv("ma_precincts_districts_pres_2024.csv")
 
 US_Harris_24 <- 75017626
 US_Trump_24 <- 77301997
