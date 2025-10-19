@@ -392,10 +392,10 @@ office_column <- function(office_name) {
     )
 }
 
-city_town_total_precincts <-
+city_town_num_precincts <-
     prec_dist |>
         group_by(city_town) |>
-        summarize(total_precincts = n())
+        summarize(num_precincts = n())
 
 ward_precinct <- function(ward, precinct) {
     if_else(ward == "-",
@@ -407,9 +407,9 @@ district_precincts <- function(office_name, district_name) {
     office_col <- office_column(office_name)
     prec_dist |>
         filter(!!sym(office_col) == district_name) |>
-        left_join(city_town_total_precincts, by="city_town") |>
+        left_join(city_town_num_precincts, by="city_town") |>
         group_by(city_town) |>
-        summarize(precincts = if_else((first(total_precincts) == n()),
+        summarize(precincts = if_else((first(num_precincts) == n()),
                                       "-",
                                       str_flatten_comma(ward_precinct(ward, precinct)))) |>
         gt() |>
@@ -423,17 +423,17 @@ district_map <- function(office_name, district_name, simp_tol=50) {
     office_col <- office_column(office_name)
     dist_pcts <- prec_dist |>
         filter(!!sym(office_col) == district_name) |>
-        left_join(city_town_total_precincts, by="city_town") |>
-        select(city_town, ward, precinct, total_precincts)
+        left_join(city_town_num_precincts, by="city_town") |>
+        select(city_town, ward, precinct, num_precincts)
     dist_geom <- read_sf(here("gis/geojson/wards_pcts_subs_2022.geojson")) |>
         select(city_town, ward=Ward, precinct=Pct, geometry) |>
         right_join(dist_pcts, by=c("city_town", "ward", "precinct")) |>
         filter(!st_is_empty(geometry)) |>
         group_by(city_town) |>
         summarize(name = if_else(
-            first(total_precincts) == n(),
+            first(num_precincts) == n(),
             first(city_town),
-            str_glue("{first(city_town)} - {n()} of {first(total_precincts)} precincts")
+            str_glue("{first(city_town)} - {n()} of {first(num_precincts)} precincts")
             )
         ) |>
         st_make_valid() |>
@@ -585,14 +585,14 @@ city_town_precincts <- function(office_name) {
 city_town_precincts <- function(office_name) {
     office_col <- office_column(office_name)
     prec_dist |>
-        left_join(city_town_total_precincts, by = "city_town") |>
+        left_join(city_town_num_precincts, by = "city_town") |>
         rename(district = !!sym(office_col)) |>
         group_by(
             city_town,
             district
         ) |>
         summarize(
-            precincts = if_else((first(total_precincts) == n()),
+            precincts = if_else((first(num_precincts) == n()),
                 "-",
                 str_flatten_comma(ward_precinct(ward, precinct))
             )
