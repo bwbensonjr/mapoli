@@ -4,3 +4,11 @@
 \#*
 .#*
 
+# Exclude package.json files bundled by R packages in output directories
+# These contain devDependencies that trigger false positive security warnings
+docs/**/libs/**/package.json
+docs/**/site_libs/**/package.json
+website/_freeze/**/libs/**/package.json
+website/_freeze/**/site_libs/**/package.json
+districts/pages/**/libs/**/package.json
+
