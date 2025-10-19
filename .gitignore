@@ -10,5 +10,7 @@ docs/**/libs/**/package.json
 docs/**/site_libs/**/package.json
 website/_freeze/**/libs/**/package.json
 website/_freeze/**/site_libs/**/package.json
+website/.quarto/_freeze/**/package.json
 districts/pages/**/libs/**/package.json
+districts/.quarto/_freeze/**/package.json
 
