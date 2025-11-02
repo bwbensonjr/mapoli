@@ -50,10 +50,13 @@ legislative_offices <- unique(pvi_all$office)
 ##
 leg_elections <-
     read_csv(
-        str_c("https://bwbensonjr.github.io/",
-              "ma-election-db/data/",
-              "ma_general_election_summaries.csv.gz")
+        str_c(
+            "https://bwbensonjr.github.io/",
+            "ma-election-db/data/",
+            "ma_general_election_summaries.csv.gz"
+        )
     ) |>
+    select(-num_incumbents) |>
     filter(office %in% legislative_offices) |>
     mutate(district = fix_district(district))
 
