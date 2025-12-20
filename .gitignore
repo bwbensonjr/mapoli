@@ -3,6 +3,7 @@
 .DS_Store
 \#*
 .#*
+.venv
 
 # Exclude package.json files bundled by R packages in output directories
 # These contain devDependencies that trigger false positive security warnings

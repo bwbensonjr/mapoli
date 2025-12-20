@@ -15,7 +15,7 @@ def main():
 def election_results(election_date, office):
     elecs = pd.read_csv(
         "https://bwbensonjr.github.io/ma-election-db/"
-        "data/ma_general_election_summaries_1990_2024.csv.gz"
+        "data/ma_general_election_summaries.csv.gz"
     )
     matched_elecs = elecs[(elecs["election_date"] == election_date) &
                           (elecs["office"] == office)]
