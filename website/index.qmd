@@ -13,9 +13,38 @@ legislative districts*
 - [Governor's Council Districts](districts/gov-council/)
 - [U.S. House Districts](districts/us-house/)
 
-### Fun Facts
+## Upcoming Special Elections
 
-#### The largest and smallest State Rep districts
+### [First Middlesex State Senate District](districts/state-senate/first-middlesex.qmd)
+
+To fill the seat left vacant by the late Edward J. Kennedy who passed
+away on October 1, 2025.
+
+- Special State Primary - February 3, 2026
+  - Democratic Candidates 
+    - [State Rep. Rodney M. Elliott](https://www.ocpf.us/filers?q=12877) (D-Lowell) - [Sixteenth Middlesex District](districts/state-rep/sixteenth-middlesex.qmd)
+    - [State Rep. Vanna Howard](https://www.ocpf.us/filers?q=17499) (D-Lowell) - [Seventeenth Middlesex District](districts/state-rep/seventeenth-middlesex.qmd)
+  - Republican Candidates
+    - [Sam Meas](https://www.ocpf.us/filers?q=15519) (R-Haverhill)
+- Special State Election - March 3, 2026 
+
+### [Fifth Essex State Representative District](districts/state-rep/fifth-essex.qmd)
+
+To fill the seat left vacant by the late Ann-Margaret Ferrante
+(D-Gloucester) who passed away on November 27, 2025.
+
+- Special State Primary - March 3, 2026
+  - Democratic Candidates 
+    - [Andrew Tarr](https://www.ocpf.us/Filers/?q=19580) (D-Gloucester)
+    - [Sarah Wilkinson](https://www.ocpf.us/Filers/?q=19579) (D-Rockport)
+  - Republican Candidates
+    - [Christina Delisio](https://www.ocpf.us/Filers/?q=19596) (R-Manchester)
+    - [Ashley Sullivan](https://www.ocpf.us/Filers/?q=17678) (R-Gloucester)
+- Special State Election - March 31, 2026
+
+## Fun Facts
+
+### The largest and smallest State Rep districts
 
 - While every `mapoli` State Representative district has approximately
   the same population (currently about 44,000 people) the districts
@@ -29,7 +58,7 @@ legislative districts*
   represented by Leigh Davis of Great Barrington. The district covers
   a whopping 551 square miles and contains 18 separate municipalities.
 
-### Statewide District Overviews and Comparisons
+## Statewide District Overviews and Comparisons
 
 The district atlas contains statewide maps for each legislative office
 with district-to-district comparison tables on political and
@@ -37,7 +66,7 @@ demographic data.
 
 ![Example office page](districts/office-page-example-small.png)
 
-### Per-District Map, Demographics, and Election Information
+## Per-District Map, Demographics, and Election Information
 
 There is also a separate page for each of the 160 State
 Representative, 40 State Senate, 9 U.S. House, and 8 Governor's
@@ -46,7 +75,7 @@ Council districts with demographic details and electon results back to
 
 ![Example district page](districts/district-page-example-small.png)
 
-### Full Legislative District List
+## Full Legislative District List
 
 The full list of 160 State Representative, 40 State Senate, 8
 Governor's Council, 9 U.S. House districts.
