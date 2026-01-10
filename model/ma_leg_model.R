@@ -3,7 +3,7 @@ library(lubridate)
 library(rstanarm)
 
 URL_BASE <- "https://bwbensonjr.github.io/ma-election-db/"
-GEN_ELEC_FILE <- "data/ma_general_election_summaries_1990_2024.csv.gz"
+GEN_ELEC_FILE <- "data/ma_general_election_summaries.csv.gz"
 GEN_ELECS_URL <- paste0(URL_BASE, GEN_ELEC_FILE)
 
 START_DATE <- "2008-11-04"
@@ -12,7 +12,8 @@ pres_elec_dates <- c(
     "2008-11-04",
     "2012-11-06",
     "2016-11-08",
-    "2020-11-03"
+    "2020-11-03",
+    "2024-11-05"
 )
 
 pvi_years <- tribble(
@@ -33,11 +34,17 @@ pvi_years <- tribble(
     2021, 2022,
     2022, 2022,
     2023, 2022,
-    2024, 2022)
+    2024, 2022,
+    2025, 2024,
+    2026, 2024
+)
 
-leg_dist_pvi <- read_csv("../pvi/ma_state_leg_pvi_2008_2022.csv") %>%
-    rename(district_display = district)
+# PVI file now has both district (word format) and district_display (numeric format)
+leg_dist_pvi <- read_csv("../pvi/ma_state_leg_pvi_2008_2024.csv")
 
+# Election data uses "&" in some district names, PVI uses "and".
+# Some 2022 redistricting districts also have word ordinals in district_display
+# (e.g., "First Plymouth & Norfolk" instead of "1st Plymouth & Norfolk").
 dist_name_changes <- c(
     " & " = " and ",
     "First " = "1st ",

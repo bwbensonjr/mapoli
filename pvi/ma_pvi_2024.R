@@ -1,5 +1,50 @@
 library(tidyverse)
 
+# Convert word ordinals to numeric format for district_display
+# e.g., "First Bristol" -> "1st Bristol", "Twenty-Third Suffolk" -> "23rd Suffolk"
+word_to_numeric_ordinal <- function(name) {
+    ordinal_map <- c(
+        "First" = "1st", "Second" = "2nd", "Third" = "3rd", "Fourth" = "4th",
+        "Fifth" = "5th", "Sixth" = "6th", "Seventh" = "7th", "Eighth" = "8th",
+        "Ninth" = "9th", "Tenth" = "10th", "Eleventh" = "11th", "Twelfth" = "12th",
+        "Thirteenth" = "13th", "Fourteenth" = "14th", "Fifteenth" = "15th",
+        "Sixteenth" = "16th", "Seventeenth" = "17th", "Eighteenth" = "18th",
+        "Nineteenth" = "19th", "Twentieth" = "20th", "Twenty-First" = "21st",
+        "Twenty-Second" = "22nd", "Twenty-Third" = "23rd", "Twenty-Fourth" = "24th",
+        "Twenty-Fifth" = "25th", "Twenty-Sixth" = "26th", "Twenty-Seventh" = "27th",
+        "Twenty-Eighth" = "28th", "Twenty-Ninth" = "29th", "Thirtieth" = "30th",
+        "Thirty-First" = "31st", "Thirty-Second" = "32nd", "Thirty-Third" = "33rd",
+        "Thirty-Fourth" = "34th", "Thirty-Fifth" = "35th", "Thirty-Sixth" = "36th",
+        "Thirty-Seventh" = "37th"
+    )
+    str_replace_all(name, ordinal_map)
+}
+
+# Normalize ampersand to "and" for consistency with election data
+normalize_ampersand <- function(name) {
+    str_replace_all(name, " & ", " and ")
+}
+
+# Convert numeric ordinals to word format for district
+# e.g., "1st Bristol" -> "First Bristol", "23rd Suffolk" -> "Twenty-Third Suffolk"
+numeric_to_word_ordinal <- function(name) {
+    ordinal_map <- c(
+        "1st" = "First", "2nd" = "Second", "3rd" = "Third", "4th" = "Fourth",
+        "5th" = "Fifth", "6th" = "Sixth", "7th" = "Seventh", "8th" = "Eighth",
+        "9th" = "Ninth", "10th" = "Tenth", "11th" = "Eleventh", "12th" = "Twelfth",
+        "13th" = "Thirteenth", "14th" = "Fourteenth", "15th" = "Fifteenth",
+        "16th" = "Sixteenth", "17th" = "Seventeenth", "18th" = "Eighteenth",
+        "19th" = "Nineteenth", "20th" = "Twentieth", "21st" = "Twenty-First",
+        "22nd" = "Twenty-Second", "23rd" = "Twenty-Third", "24th" = "Twenty-Fourth",
+        "25th" = "Twenty-Fifth", "26th" = "Twenty-Sixth", "27th" = "Twenty-Seventh",
+        "28th" = "Twenty-Eighth", "29th" = "Twenty-Ninth", "30th" = "Thirtieth",
+        "31st" = "Thirty-First", "32nd" = "Thirty-Second", "33rd" = "Thirty-Third",
+        "34th" = "Thirty-Fourth", "35th" = "Thirty-Fifth", "36th" = "Thirty-Sixth",
+        "37th" = "Thirty-Seventh"
+    )
+    str_replace_all(name, ordinal_map)
+}
+
 unabbreviate_compass <- function(name) {
     str_replace_all(name,
                     fixed(c("N. " = "North ",
@@ -224,59 +269,31 @@ us_house_pvi %>%
 
 state_rep_pvi <-
     read_csv("ma_state_rep_pres_pvi_2024.csv") |>
-    mutate(office = "State Representative") |>
-    select(
-        office,
-        district=State_Rep,
-        PVI,
-        PVI_N
-    )
+    mutate(office = "State Representative",
+           district = normalize_ampersand(State_Rep),
+           district_display = word_to_numeric_ordinal(normalize_ampersand(State_Rep))) |>
+    select(office, district, district_display, PVI, PVI_N)
 
 state_senate_pvi <-
     read_csv("ma_state_senate_pres_pvi_2024.csv") |>
-    mutate(office = "State Senate") |>
-    select(
-        office,
-        district=State_Senate,
-        PVI,
-        PVI_N
-    )
+    mutate(office = "State Senate",
+           district = normalize_ampersand(State_Senate),
+           district_display = word_to_numeric_ordinal(normalize_ampersand(State_Senate))) |>
+    select(office, district, district_display, PVI, PVI_N)
 
 gov_council_pvi <-
     read_csv("ma_gov_council_pres_pvi_2024.csv") |>
-    mutate(office = "Governor's Council") |>
-    select(
-        office,
-        district=Gov_Council,
-        PVI,
-        PVI_N
-    )
-
-district_num_to_district <- function(district_num) {
-    case_when(
-        (district_num == 1) ~ "First",
-        (district_num == 2) ~ "Second",
-        (district_num == 3) ~ "Third",
-        (district_num == 4) ~ "Fourth",
-        (district_num == 5) ~ "Fifth",
-        (district_num == 6) ~ "Sixth",
-        (district_num == 7) ~ "Seventh",
-        (district_num == 8) ~ "Eighth",
-        (district_num == 9) ~ "Ninth",
-        TRUE ~ as.character(district_num)
-    )
-}
+    mutate(office = "Governor's Council",
+           district = as.character(Gov_Council),
+           district_display = as.character(Gov_Council)) |>
+    select(office, district, district_display, PVI, PVI_N)
 
 us_house_pvi <-
     read_csv("ma_us_house_pres_pvi_2024.csv") |>
     mutate(office = "U.S. House",
-           district = as.character(US_House)) |>
-    select(
-        office,
-        district,
-        PVI,
-        PVI_N
-    )
+           district = as.character(US_House),
+           district_display = as.character(US_House)) |>
+    select(office, district, district_display, PVI, PVI_N)
 
 legislative_pvi <-
    bind_rows(
@@ -288,3 +305,25 @@ legislative_pvi <-
 
 legislative_pvi |>
     write_csv("ma_legislative_district_pvi_2024.csv")
+
+# Historical file has `district` in numeric format (e.g., "1st Bristol")
+# which is actually district_display. Fix column names, normalize "&" to "and",
+# and add word-format district.
+hist_pvi_2022 <- read_csv("ma_state_leg_pvi_2008_2022.csv") |>
+    rename(district_display = district) |>
+    mutate(district_display = normalize_ampersand(district_display),
+           district = numeric_to_word_ordinal(district_display)) |>
+    select(pvi_year, office, district, district_display, PVI_N, PVI)
+
+hist_pvi <-
+    rbind(
+        hist_pvi_2022,
+        (legislative_pvi |>
+         filter(office %in% c("State Representative", "State Senate")) |>
+         mutate(pvi_year = 2024) |>
+         select(pvi_year, office, district, district_display, PVI_N, PVI))
+    )
+
+hist_pvi |>
+    write_csv("ma_state_leg_pvi_2008_2024.csv")
+
