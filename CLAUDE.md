@@ -18,7 +18,7 @@ This is a multi-language data science project with the following main components
 ### Key Directories
 
 - `demographics/`: R scripts for census data processing and demographic analysis
-- `districts/`: Python scripts for district page generation and R scripts for legislative data
+- `districts/`: Contains a definition list of Massachusetts election districts
 - `gis/`: Geospatial data (GeoJSON, shapefiles) and conversion scripts
 - `pvi/`: Partisan Voting Index calculations and political analysis
 - `results/`: Election results data and analysis scripts
