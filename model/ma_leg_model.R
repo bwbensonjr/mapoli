@@ -92,9 +92,9 @@ leg_elecs <- read_csv(GEN_ELECS_URL) %>%
                                  "district_display",
                                  "pvi_year"))
 
-## leg_elecs %>% write_csv("ma_leg_two_party_2008_2024.csv")
+## leg_elecs %>% write_csv("ma_leg_two_party_2008_2025.csv")
 ##
-## leg_elecs <- read_csv("ma_leg_two_party_2008_2024.csv")
+## leg_elecs <- read_csv("ma_leg_two_party_2008_2025.csv")
 
 win_model <- stan_glm(dem_win ~ PVI_N + incumbent_status + pres_elec,
                       data=leg_elecs,
