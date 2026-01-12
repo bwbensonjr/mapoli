@@ -17,6 +17,7 @@ This is a multi-language data science project with the following main components
 
 ### Key Directories
 
+- `R/`: **Shared R modules** for working with Massachusetts legislative district data
 - `demographics/`: R scripts for census data processing and demographic analysis
 - `districts/`: Contains a definition list of Massachusetts election districts
 - `gis/`: Geospatial data (GeoJSON, shapefiles) and conversion scripts
@@ -25,6 +26,172 @@ This is a multi-language data science project with the following main components
 - `model/`: Statistical modeling of legislative elections
 - `website/`: Quarto website source files and generated content
 - `docs/`: Final rendered website (output directory)
+
+## R API for District Data
+
+The `R/` directory contains shared modules for working with Massachusetts legislative district data. These can be used from any R script in the repository.
+
+### Quick Start
+
+```r
+library(here)
+source(here("R/ma_district_data.R"))
+source(here("R/ma_district_query.R"))
+
+# Load all data at once
+data <- load_all_district_data()
+
+# Query a district
+get_district_incumbent(data$district_info, "State Representative", "First Suffolk")
+get_district_pvi(data$district_info, "State Senate", "First Middlesex")
+```
+
+### R Modules
+
+| Module | Purpose |
+|--------|---------|
+| `R/ma_district_data.R` | Data loading functions |
+| `R/ma_district_query.R` | Query and lookup functions |
+| `R/district_utils.R` | District name formatting and conversion |
+| `R/precinct_utils.R` | Precinct data manipulation |
+| `R/pvi_utils.R` | PVI calculation utilities |
+| `R/geo_utils.R` | Compass direction abbreviation |
+
+### Data Loading Functions (`ma_district_data.R`)
+
+```r
+# Load all data (convenience function)
+data <- load_all_district_data()
+# Returns: list with prec_dist, pvi, elections, summaries, district_info
+
+# Load specific datasets
+prec_dist <- load_precinct_districts()      # Precinct-to-district mapping
+pvi <- load_district_pvi()                   # District PVI data
+elections <- load_legislative_elections()   # Election history since 1990
+summaries <- load_district_summaries()      # District text descriptions
+
+# Build combined district info
+district_info <- build_district_info()      # Joins elections + PVI + summaries
+
+# Demographics and geometry
+demographics <- load_office_demographics("State Representative")
+district_demo <- load_district_demographics("State Senate", "First Middlesex")
+geometry <- load_office_geometry("State Senate")  # Returns sf object
+precinct_geom <- load_precinct_geometry()         # Returns sf object
+```
+
+### Query Functions (`ma_district_query.R`)
+
+**District Information:**
+```r
+# Get info for a specific district
+info <- get_district_info(district_info, "State Representative", "First Suffolk")
+get_district_summary(district_info, office, district)      # Text description
+get_district_display_name(district_info, office, district) # e.g., "1st Suffolk"
+get_district_incumbent(district_info, office, district)    # Legislator name
+get_district_pvi(district_info, office, district)          # e.g., "D+15"
+get_district_pvi_n(district_info, office, district)        # Numeric PVI
+
+# Get all districts for an office
+districts <- get_office_districts(district_info, "State Senate")
+```
+
+**Election History:**
+```r
+# Get election history for a district
+history <- get_district_election_history(elections, office, district)
+latest <- get_district_latest_election(elections, office, district)
+```
+
+**Precinct Queries:**
+```r
+# Get precincts in a district
+precincts <- get_district_precincts(prec_dist, office, district)
+by_city <- get_district_precincts_by_city_town(prec_dist, office, district)
+
+# Get districts serving a city/town
+representation <- get_city_town_representation(prec_dist, "Boston")
+districts_by_town <- get_city_town_districts(prec_dist, "State Representative")
+```
+
+**Geometry Queries:**
+```r
+# Get district geometry with info joined
+geom <- get_office_geometry_with_info(office_geom, district_info, office)
+
+# Build district boundary from precincts
+dist_geom <- get_district_geometry(precinct_geom, prec_dist, office, district)
+```
+
+**Listing Functions:**
+```r
+list_offices()                              # All 4 legislative offices
+list_districts(district_info, office)       # All districts for an office
+list_city_towns(prec_dist)                  # All 351 MA municipalities
+```
+
+### Utility Functions
+
+**District Name Formatting (`district_utils.R`):**
+```r
+fix_district("1st Bristol")                 # "First Bristol"
+word_to_numeric_ordinal("First Bristol")    # "1st Bristol"
+numeric_to_word_ordinal("1st Bristol")      # "First Bristol"
+normalize_ampersand("Norfolk & Plymouth")   # "Norfolk and Plymouth"
+office_slug("State Representative")         # "state-rep"
+district_slug("First Bristol")              # "first-bristol"
+office_column("State Representative")       # "State_Rep"
+```
+
+**PVI Calculations (`pvi_utils.R`):**
+```r
+dem_percent(dem_2024, gop_2024, dem_2020, gop_2020)  # Two-election average
+pvi_string(15.3)                                     # "D+15"
+add_pvi_24(df)                                       # Add PVI columns to data frame
+add_calculations(df)                                 # Add all PVI and shift columns
+```
+
+### Example: Analyze a District
+
+```r
+library(here)
+source(here("R/ma_district_data.R"))
+source(here("R/ma_district_query.R"))
+
+data <- load_all_district_data()
+
+# Get First Suffolk info
+office <- "State Representative"
+district <- "First Suffolk"
+
+cat("District:", get_district_display_name(data$district_info, office, district), "\n")
+cat("Incumbent:", get_district_incumbent(data$district_info, office, district), "\n")
+cat("PVI:", get_district_pvi(data$district_info, office, district), "\n")
+cat("Summary:", get_district_summary(data$district_info, office, district), "\n")
+
+# Get precincts
+precincts <- get_district_precincts_by_city_town(data$prec_dist, office, district)
+print(precincts)
+
+# Get election history
+history <- get_district_election_history(data$elections, office, district)
+print(history |> select(election_date, display_winner, percent_winner))
+```
+
+### Example: Find City/Town Representation
+
+```r
+# What districts represent Boston?
+boston_reps <- get_city_town_representation(data$prec_dist, "Boston")
+print(boston_reps)
+
+# Which State Rep districts include Brookline?
+brookline_districts <- data$prec_dist |>
+    filter(city_town == "Brookline") |>
+    pull(State_Rep) |>
+    unique()
+print(brookline_districts)
+```
 
 ## Common Development Commands
 
@@ -112,8 +279,9 @@ uv run python generate_pages.py
 ## Data Sources and Dependencies
 
 ### R Dependencies
-- Uses `renv` for package management in `demographics/` directory
-- Key packages: tidyverse, sf, tmap, gt, quarto
+- Uses `renv` for package management at the **project root**
+- Restore packages with `renv::restore()` from the project root
+- Key packages: tidyverse, sf, tmap, gt, quarto, tidycensus, tigris, here
 
 ### Python Dependencies
 - Defined in `districts/pyproject.toml`
@@ -127,19 +295,27 @@ uv run python generate_pages.py
 
 ## Key Files for Understanding the System
 
+### Shared R Modules
+- `R/ma_district_data.R`: Data loading functions for districts, elections, demographics, geometry
+- `R/ma_district_query.R`: Query functions for looking up district info, precincts, elections
+- `R/district_utils.R`: District name formatting and conversion utilities
+- `R/precinct_utils.R`: Precinct data manipulation utilities
+- `R/pvi_utils.R`: PVI calculation functions
+- `R/geo_utils.R`: Compass direction abbreviation utilities
+
 ### Website Generation
 - `website/_quarto.yml`: Main website configuration
 - `website/_Makefile`: Makefile for website generation workflow
 - `website/_gen/generate_pages.py`: Python script that creates .qmd files from templates
 - `website/_gen/district_page.qmd`: Template for individual district pages
-- `website/_gen/office_page.qmd`: Template for office summary pages  
-- `website/_gen/legislative_info.R`: R functions for maps, tables, and data processing (website version)
+- `website/_gen/office_page.qmd`: Template for office summary pages
+- `website/_gen/legislative_info.R`: Website-specific gt tables and tmap maps (uses shared R modules)
 
 ### Data Processing
 - `districts/generate_pages.py`: Legacy district page generation logic (districts version)
-- `districts/legislative_info.R`: Core R functions for data processing and visualization (districts version)
 - `districts/ma_leg_dists_w_summary.csv`: District data with summaries used by website generation
 - `pvi/ma_legislative_district_pvi_2024.csv`: Current district PVI data
+- `pvi/ma_pvi_2024.R`: PVI calculation script (uses shared R modules)
 
 ## Development Workflow
 
@@ -150,13 +326,11 @@ uv run python generate_pages.py
    - Run `make -f _Makefile render_html` to render HTML, or use `quarto render` for full site
 4. Final output appears in `docs/` directory for GitHub Pages hosting
 
-### Two-Track System
+### Code Organization
 
-The project currently maintains both:
-- **Legacy system**: `districts/` directory with standalone Python/R scripts
-- **Website system**: `website/_gen/` template-based generation for the main website
-
-The website system in `website/_gen/` is the primary method for generating the public website.
+- **Shared R modules** (`R/`): Reusable functions for loading and querying district data
+- **Website rendering** (`website/_gen/`): gt tables and tmap maps that use the shared modules
+- **Data processing** (`pvi/`, `demographics/`): Scripts that generate underlying data files
 
 ## Testing and Quality Control
 

@@ -5,6 +5,14 @@
 .#*
 .venv
 
+# renv
+renv/library/
+renv/staging/
+renv/local/
+renv/cellar/
+renv/sandbox/
+renv/python/
+
 # Exclude package.json files bundled by R packages in output directories
 # These contain devDependencies that trigger false positive security warnings
 docs/**/libs/**/package.json
