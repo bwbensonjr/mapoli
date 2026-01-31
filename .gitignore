@@ -4,6 +4,7 @@
 \#*
 .#*
 .venv
+.quarto/
 
 # renv
 renv/library/
