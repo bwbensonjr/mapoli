@@ -1,0 +1,19 @@
+# Output directories
+docs/
+
+# Quarto build artifacts
+.quarto/
+website/_site/
+website/_freeze/
+
+# Python environments
+.venv/
+elections/
+
+# Static files (HTML, GeoJSON, shapefiles)
+interactive/
+gis/geojson/
+gis/shp/
+
+# Misc files
+misc/
