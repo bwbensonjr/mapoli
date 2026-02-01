@@ -19,6 +19,24 @@ source(here("R/precinct_utils.R"))
 source(here("R/ma_district_data.R"))
 source(here("R/ma_district_query.R"))
 
+# --- Website URL Functions ---
+# These must be defined before data loading since they're used in mutate()
+
+#' Generate district page filename
+district_file <- function(office_name, district_name) {
+    str_glue("{district_slug(district_name)}.html")
+}
+
+#' Generate markdown link to district page
+district_md_ref <- function(office_name, district_name) {
+    str_glue("[{district_name}]({district_file(office_name, district_name)})")
+}
+
+#' Generate HTML link to district page (for map popups)
+district_web_ref <- function(office_name, district_name) {
+    str_glue("<a href={district_file(office_name, district_name)}>{district_name}</a>")
+}
+
 # --- Load Data ---
 # Data is loaded once when this file is sourced
 
@@ -37,23 +55,6 @@ legislative_district_info <- build_district_info(leg_elections, pvi_all, distric
 # Derived data
 legislative_offices <- unique(pvi_all$office)
 city_town_num_precincts <- count_city_town_precincts(prec_dist)
-
-# --- Website URL Functions ---
-
-#' Generate district page filename
-district_file <- function(office_name, district_name) {
-    str_glue("{district_slug(district_name)}.html")
-}
-
-#' Generate markdown link to district page
-district_md_ref <- function(office_name, district_name) {
-    str_glue("[{district_name}]({district_file(office_name, district_name)})")
-}
-
-#' Generate HTML link to district page (for map popups)
-district_web_ref <- function(office_name, district_name) {
-    str_glue("<a href={district_file(office_name, district_name)}>{district_name}</a>")
-}
 
 # --- Query Wrapper Functions ---
 # These wrap the shared query functions using the pre-loaded data
@@ -294,7 +295,8 @@ district_demographics <- function(office_name, district_name) {
 # --- tmap Functions ---
 
 tmap_mode("view")
-tmap_options(check.and.fix = TRUE)
+# Note: check.and.fix option removed - not supported in tmap v4
+# Geometry validation is handled via st_make_valid() in query functions
 
 #' Map scale factor for an office
 office_map_scale <- function(office_name) {
@@ -365,6 +367,51 @@ district_map <- function(office_name, district_name, simp_tol = 50) {
             popup.vars = c(
                 "City/Town" = "city_town",
                 "Precincts" = "label"
+            )
+        ) +
+        tm_shape(dist_centroids) +
+        tm_text("label") +
+        tm_basemap("OpenStreetMap"))
+}
+
+#' Map showing overlap between a district and another office's districts
+#' @param office_name Office of the primary district (e.g., "State Senate")
+#' @param district_name Primary district name (e.g., "First Middlesex")
+#' @param overlap_office Office to show overlaps with (e.g., "State Representative")
+#' @return tmap object with interactive map
+intersection_map <- function(office_name, district_name, overlap_office) {
+    office_col <- office_column(office_name)
+    overlap_col <- office_column(overlap_office)
+
+    # Get precincts in the primary district with their overlap office assignments
+    dist_prec <- prec_dist |>
+        filter(!!sym(office_col) == district_name) |>
+        select(city_town, ward, precinct, overlap_district = !!sym(overlap_col))
+
+    # Join with precinct geometry
+    prec_geom <- load_precinct_geometry()
+
+    dist_geom <- prec_geom |>
+        right_join(dist_prec, by = c("city_town", "ward", "precinct")) |>
+        filter(!st_is_empty(geometry)) |>
+        st_make_valid()
+
+    # Create centroids for overlap district labels
+    dist_centroids <- dist_geom |>
+        group_by(overlap_district) |>
+        summarize(geometry = st_union(geometry)) |>
+        st_centroid() |>
+        select(label = overlap_district, geometry)
+
+    # Create the map colored by overlap district
+    (tm_shape(dist_geom) +
+        tm_polygons(
+            fill = "overlap_district",
+            fill.scale = tm_scale_categorical(value.na = NA),
+            fill_alpha = 0.6,
+            popup.vars = c(
+                "City/Town" = "city_town",
+                overlap_office = "overlap_district"
             )
         ) +
         tm_shape(dist_centroids) +
