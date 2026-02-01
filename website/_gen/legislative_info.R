@@ -44,6 +44,8 @@ prec_dist <- load_precinct_districts()
 pvi_all <- load_district_pvi()
 leg_elections <- load_legislative_elections()
 district_summaries <- load_district_summaries()
+prec_demographics <- read_csv(here("demographics/data/ma_precinct_demographics.csv"),
+                              show_col_types = FALSE)
 
 # Build the main district info data frame
 legislative_district_info <- build_district_info(leg_elections, pvi_all, district_summaries) |>
@@ -388,30 +390,56 @@ intersection_map <- function(office_name, district_name, overlap_office) {
         filter(!!sym(office_col) == district_name) |>
         select(city_town, ward, precinct, overlap_district = !!sym(overlap_col))
 
-    # Join with precinct geometry
+    # Join with precinct geometry and demographics
     prec_geom <- load_precinct_geometry()
 
     dist_geom <- prec_geom |>
         right_join(dist_prec, by = c("city_town", "ward", "precinct")) |>
+        left_join(
+            prec_demographics |> select(city_town, ward, precinct, total_population),
+            by = c("city_town", "ward", "precinct")
+        ) |>
         filter(!st_is_empty(geometry)) |>
         st_make_valid()
 
-    # Create centroids for overlap district labels
-    dist_centroids <- dist_geom |>
+    # Aggregate precincts by overlap district
+    dist_agg <- dist_geom |>
         group_by(overlap_district) |>
-        summarize(geometry = st_union(geometry)) |>
+        summarize(
+            num_precincts = n(),
+            population = sum(total_population, na.rm = TRUE),
+            geometry = st_union(geometry)
+        ) |>
+        st_make_valid() |>
+        st_buffer(dist = 10) |>
+        st_buffer(dist = -10) |>
+        st_simplify(dTolerance = 25)
+
+    # Join legislator information
+    dist_agg <- dist_agg |>
+        left_join(
+            legislative_district_info |>
+                filter(office == overlap_office) |>
+                select(overlap_district = district, legislator),
+            by = "overlap_district"
+        )
+
+    # Create centroids for labels
+    dist_centroids <- dist_agg |>
         st_centroid() |>
         select(label = overlap_district, geometry)
 
-    # Create the map colored by overlap district
-    (tm_shape(dist_geom) +
+    # Create the map with aggregated districts
+    (tm_shape(dist_agg) +
         tm_polygons(
             fill = "overlap_district",
             fill.scale = tm_scale_categorical(value.na = NA),
             fill_alpha = 0.6,
             popup.vars = c(
-                "City/Town" = "city_town",
-                overlap_office = "overlap_district"
+                "District" = "overlap_district",
+                "Legislator" = "legislator",
+                "Precincts" = "num_precincts",
+                "Intersecting Population" = "population"
             )
         ) +
         tm_shape(dist_centroids) +
