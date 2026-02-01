@@ -56,6 +56,7 @@ get_district_pvi(data$district_info, "State Senate", "First Middlesex")
 | `R/precinct_utils.R` | Precinct data manipulation |
 | `R/pvi_utils.R` | PVI calculation utilities |
 | `R/geo_utils.R` | Compass direction abbreviation |
+| `pvi/ma_pvi_maps.R` | Precinct-level PVI mapping |
 
 ### Data Loading Functions (`ma_district_data.R`)
 
@@ -150,6 +151,37 @@ pvi_string(15.3)                                     # "D+15"
 add_pvi_24(df)                                       # Add PVI columns to data frame
 add_calculations(df)                                 # Add all PVI and shift columns
 ```
+
+### PVI Mapping Functions (`pvi/ma_pvi_maps.R`)
+
+Interactive maps showing precinct-level Partisan Voting Index within legislative districts.
+
+```r
+library(here)
+source(here("pvi/ma_pvi_maps.R"))
+
+# Create interactive map of precinct-level PVI for a district
+district_pvi_map("State Representative", "First Suffolk")
+district_pvi_map("State Senate", "First Middlesex")
+district_pvi_map("U.S. House", "Seventh")
+district_pvi_map("Governor's Council", "Fourth")
+
+# Load precinct geometry with PVI data (used internally)
+prec_pvi <- load_precinct_pvi_data()
+```
+
+**Color Scheme:**
+- Blue shading indicates Democratic lean (positive PVI)
+- Red shading indicates Republican lean (negative PVI)
+- White indicates EVEN (PVI near 0)
+- Values beyond ±15 are clamped to darkest colors for better visibility of small differences
+
+**Popup Information:**
+- City/Town
+- Precinct (e.g., "3-1" or "5")
+- PVI (e.g., "D+15", "R+3", "EVEN")
+- Harris 2024 vote total
+- Trump 2024 vote total
 
 ### Example: Analyze a District
 
@@ -316,6 +348,7 @@ uv run python generate_pages.py
 - `districts/ma_leg_dists_w_summary.csv`: District data with summaries used by website generation
 - `pvi/ma_legislative_district_pvi_2024.csv`: Current district PVI data
 - `pvi/ma_pvi_2024.R`: PVI calculation script (uses shared R modules)
+- `pvi/ma_pvi_maps.R`: Precinct-level PVI mapping functions
 
 ## Development Workflow
 
