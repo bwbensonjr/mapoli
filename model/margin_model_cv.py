@@ -16,14 +16,15 @@ from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.preprocessing import OneHotEncoder
 import xgboost as xgb
 
+FEATURES = ["PVI_N", "incumbent_status", "pres_elec", "num_candidates"]
+
 
 def load_data(filepath="ma_leg_two_party_2008_2025.csv"):
     """Load and prepare the election data."""
     df = pd.read_csv(filepath)
 
     # Select columns needed for modeling
-    cols = ["dem_margin", "PVI_N", "incumbent_status", "pres_elec",
-            "election_year", "office", "district_display"]
+    cols = ["dem_margin", "election_year", "office", "district_display"] + FEATURES
     df = df[cols].copy()
 
     # Convert boolean to int for modeling
@@ -56,7 +57,7 @@ def fit_baseline_model(train_df, samples=2000, chains=4, random_seed=42):
     Model: dem_margin ~ PVI_N + incumbent_status + pres_elec
     """
     model = bmb.Model(
-        "dem_margin ~ PVI_N + incumbent_status + pres_elec",
+        "dem_margin ~ " + " + ".join(FEATURES),
         data=train_df,
         family="gaussian"
     )
@@ -98,7 +99,7 @@ def prepare_features_for_trees(train_df, test_df):
     Converts categorical variables to numeric format suitable for
     gradient boosted trees.
     """
-    feature_cols = ["PVI_N", "incumbent_status", "pres_elec"]
+    feature_cols = FEATURES
 
     # Create copies
     X_train = train_df[feature_cols].copy()
@@ -112,15 +113,12 @@ def prepare_features_for_trees(train_df, test_df):
     # Get feature names for the encoded columns
     inc_feature_names = encoder.get_feature_names_out(["incumbent_status"])
 
-    # Build final feature matrices
-    X_train_final = pd.DataFrame({
-        "PVI_N": X_train["PVI_N"].values,
-        "pres_elec": X_train["pres_elec"].astype(int).values,
-    })
-    X_test_final = pd.DataFrame({
-        "PVI_N": X_test["PVI_N"].values,
-        "pres_elec": X_test["pres_elec"].astype(int).values,
-    })
+    # Build final feature matrices from numeric columns
+    numeric_cols = [c for c in FEATURES if c != "incumbent_status"]
+    X_train_final = X_train[numeric_cols].copy()
+    X_train_final["pres_elec"] = X_train_final["pres_elec"].astype(int)
+    X_test_final = X_test[numeric_cols].copy()
+    X_test_final["pres_elec"] = X_test_final["pres_elec"].astype(int)
 
     # Add one-hot encoded columns
     for i, name in enumerate(inc_feature_names):
@@ -188,7 +186,8 @@ def print_model_summary(results):
     print("\n" + "=" * 60)
     print("MODEL SUMMARY")
     print("=" * 60)
-    print(az.summary(results, var_names=["Intercept", "PVI_N", "incumbent_status", "pres_elec", "sigma"]))
+    var_names = ["Intercept"] + FEATURES + ["sigma"]
+    print(az.summary(results, var_names=var_names))
 
 
 def print_evaluation_metrics(metrics, model_name="Baseline"):
@@ -242,7 +241,7 @@ def main():
     print("\n" + "=" * 60)
     print("FITTING BAYESIAN LINEAR MODEL (Baseline)")
     print("=" * 60)
-    print("  Model: dem_margin ~ PVI_N + incumbent_status + pres_elec")
+    print("  Model: dem_margin ~ " + " + ".join(FEATURES))
 
     bayesian_model, bayesian_results = fit_baseline_model(train_df)
     print_model_summary(bayesian_results)
