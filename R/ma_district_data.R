@@ -185,7 +185,12 @@ load_office_geometry <- function(office_name) {
 
 #' Load precinct geometry
 #' @return sf object with precinct boundaries
-load_precinct_geometry <- function() {
-    read_sf(here("gis/geojson/wards_pcts_subs_2022.geojson")) |>
-        select(city_town, ward = Ward, precinct = Pct, geometry)
+load_precinct_geometry <- function(with_subs=TRUE) {
+    if (with_subs) {
+        read_sf(here("gis/geojson/wards_pcts_subs_2022.geojson")) |>
+            select(city_town, ward = Ward, precinct = Pct, geometry)
+    } else {
+        read_sf(here("gis/geojson/wardsprecincts2022.geojson")) |>
+            select(city_town, ward, precinct, geometry)
+    }
 }
