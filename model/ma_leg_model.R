@@ -103,3 +103,28 @@ win_model <- stan_glm(dem_win ~ PVI_N + incumbent_status + pres_elec,
 margin_model <- stan_glm(dem_margin ~ PVI_N + incumbent_status + pres_elec,
                          data=leg_elecs,
                          family=gaussian(link="identity"))
+
+## win_model_nc <- stan_glm(dem_win ~ PVI_N + incumbent_status + pres_elec + num_candidates,
+##                       data=leg_elecs,
+##                       family=binomial(link="logit"))
+
+## margin_model_nc <- stan_glm(dem_margin ~ PVI_N + incumbent_status + pres_elec + num_candidates,
+##                          data=leg_elecs,
+##                          family=gaussian(link="identity"))
+
+win_model_nc_sp <- stan_glm(dem_win ~ PVI_N + incumbent_status + pres_elec + num_candidates + is_special,
+                      data=leg_elecs,
+                      family=binomial(link="logit"))
+
+margin_model_nc_sp <- stan_glm(dem_margin ~ PVI_N + incumbent_status + pres_elec + num_candidates + is_special,
+                         data=leg_elecs,
+                         family=gaussian(link="identity"))
+
+## first_middlesex_df <- tibble(PVI_N=7.84478328395695, incumbent_status="No_Incumbent", pres_elec=FALSE, num_candidates=3, is_special=TRUE)
+## win_pred_nc <- predict(win_model_nc, newdata=first_middlesex_df, type="response")
+## 0.7884518
+## margin_pred_nc <- predict(margin_model_nc, newdata=first_middlesex_df, type="response")
+## 11.44075 
+## win_preds_nc <- posterior_predict(win_model_nc, newdata=first_middlesex_df, draws=500)
+## margin_preds_nc <- posterior_predict(margin_model_nc, newdata=first_middlesex_df, draws=500)
+

@@ -16,7 +16,7 @@ from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.preprocessing import OneHotEncoder
 import xgboost as xgb
 
-FEATURES = ["PVI_N", "incumbent_status", "pres_elec", "num_candidates"]
+FEATURES = ["PVI_N", "incumbent_status", "pres_elec", "num_candidates", "is_special"]
 
 
 def load_data(filepath="ma_leg_two_party_2008_2025.csv"):
