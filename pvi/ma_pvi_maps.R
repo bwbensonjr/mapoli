@@ -109,6 +109,13 @@ district_pvi_map <- function(office_name, district_name) {
     dist_pvi <- dist_pvi |>
         mutate(PVI_N_clamped = pmin(pmax(PVI_N, -pvi_limit), pvi_limit))
 
+    # Workaround for tmap 4.2 bug: tm_scale_continuous errors when all values
+    # are identical because is.na(scale$limits) returns length-2 vector.
+    # Add tiny epsilon to first value to break uniqueness.
+    if (length(unique(dist_pvi$PVI_N_clamped)) == 1) {
+        dist_pvi$PVI_N_clamped[1] <- dist_pvi$PVI_N_clamped[1] - 0.001
+    }
+
     # Create the map with diverging color scale
     # Limits set to ±15 so small values occupy more of the color range
     (tm_shape(dist_pvi) +
