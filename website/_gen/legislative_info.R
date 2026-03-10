@@ -390,6 +390,10 @@ intersection_map <- function(office_name, district_name, overlap_office) {
         filter(!!sym(office_col) == district_name) |>
         select(city_town, ward, precinct, overlap_district = !!sym(overlap_col))
 
+    if (nrow(dist_prec) == 0) {
+        stop(str_glue("No precincts found for {office_name} district '{district_name}'"))
+    }
+
     # Join with precinct geometry and demographics
     prec_geom <- load_precinct_geometry()
 
@@ -408,12 +412,14 @@ intersection_map <- function(office_name, district_name, overlap_office) {
         summarize(
             num_precincts = n(),
             population = sum(total_population, na.rm = TRUE),
-            geometry = st_union(geometry)
+            geometry = st_union(geometry),
+            .groups = "drop"
         ) |>
         st_make_valid() |>
         st_buffer(dist = 10) |>
         st_buffer(dist = -10) |>
-        st_simplify(dTolerance = 25)
+        st_simplify(dTolerance = 25) |>
+        filter(!st_is_empty(geometry))
 
     # Join legislator information
     dist_agg <- dist_agg |>
