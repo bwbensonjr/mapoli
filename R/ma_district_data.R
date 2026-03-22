@@ -109,7 +109,8 @@ build_district_info <- function(leg_elections = NULL,
             city_town = city_town_winner,
             percent = percent_winner
         ) |>
-        left_join(pvi_all, by = c("office", "district")) |>
+        left_join(pvi_all |> select(-any_of("district_display")),
+                  by = c("office", "district")) |>
         left_join(district_summaries, by = c("office", "district"))
 }
 

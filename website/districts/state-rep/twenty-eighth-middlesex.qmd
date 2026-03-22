@@ -19,7 +19,7 @@ twitter-card:
 
 ```{r}
 library(here)
-source(here("website/_gen/legislative_info.R"))
+source(here("_gen/legislative_info.R"))
 ```
 
 *`r district_display_name(params$office_name, params$district_name)` District*   
@@ -32,8 +32,9 @@ save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$distr
 ```
 
 ```{r}
-## Display interactive map
-tmap_leaflet(dist_map)
+## Display interactive map (tmap_leaflet returns invisibly in tmap v4)
+dist_leaflet <- tmap_leaflet(dist_map)
+dist_leaflet
 ```
 
 <br/>

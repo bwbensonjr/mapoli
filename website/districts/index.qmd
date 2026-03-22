@@ -11,7 +11,7 @@ canonical-url: true
 
 ```{r}
 library(here)
-source(here("website/_gen/legislative_info.R"))
+source(here("_gen/legislative_info.R"))
 ```
 
 ## State Representative Districts

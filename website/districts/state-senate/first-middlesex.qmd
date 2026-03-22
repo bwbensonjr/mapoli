@@ -9,7 +9,7 @@ params:
   office_name: "State Senate"
   district_name: "First Middlesex"
 title: "Massachusetts First Middlesex State Senate District"
-description: "The First Middlesex State Senate District of Massachusetts is currently represented by incumbent Edward J. Kennedy (D-Lowell). The district is located in northeastern Massachusetts and includes the municipalities of Lowell, Dracut, Dunstable, Pepperell, and Tyngsborough."
+description: "The First Middlesex State Senate District of Massachusetts is currently represented by incumbent Vanna Howard (D-Lowell) who was elected in a special election to replace Edward J. Kennedy (D-Lowell) who died on October 1, 2025. The district is located in northeastern Massachusetts and includes the municipalities of Lowell, Dracut, Dunstable, Pepperell, and Tyngsborough."
 open-graph:
   image: "first-middlesex.png"
 twitter-card:
@@ -18,7 +18,7 @@ twitter-card:
 
 ```{r}
 library(here)
-source(here("website/_gen/legislative_info.R"))
+source(here("_gen/legislative_info.R"))
 ```
 
 *`r district_display_name(params$office_name, params$district_name)` District*   
@@ -31,8 +31,9 @@ save_district_map_image(tmap_leaflet(dist_map), params$office_name, params$distr
 ```
 
 ```{r}
-## Display interactive map
-tmap_leaflet(dist_map)
+## Display interactive map (tmap_leaflet returns invisibly in tmap v4)
+dist_leaflet <- tmap_leaflet(dist_map)
+dist_leaflet
 ```
 
 <br/>

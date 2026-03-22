@@ -13,6 +13,9 @@ library(here)
 library(htmlwidgets)
 library(webshot2)
 
+# Reset here() to project root (here 1.0.2 detects _quarto.yml in website/)
+here::i_am("website/_gen/legislative_info.R")
+
 # Source shared modules
 source(here("R/district_utils.R"))
 source(here("R/precinct_utils.R"))
