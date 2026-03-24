@@ -1,5 +1,6 @@
 ---
 title: About
+description: "About the mapoli Massachusetts Legislative District Atlas, its data sources, and how to get in touch."
 format:
   html:
     page-layout: full

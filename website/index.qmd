@@ -1,5 +1,6 @@
 ---
 title: "mapoli"
+description: "Massachusetts Legislative District Atlas with interactive maps, demographics, and election history for all 217 State Representative, State Senate, Governor's Council, and U.S. House districts."
 canonical-url: true
 ---
 

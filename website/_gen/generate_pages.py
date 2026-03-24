@@ -53,6 +53,13 @@ OFFICE_SLUG = {
     "U.S. House": "us-house",
 }
 
+OFFICE_DESCRIPTION = {
+    "State Representative": "Interactive maps, demographics, and election history for all 160 Massachusetts State Representative districts.",
+    "State Senate": "Interactive maps, demographics, and election history for all 40 Massachusetts State Senate districts.",
+    "Governor's Council": "Interactive maps, demographics, and election history for all 8 Massachusetts Governor's Council districts.",
+    "U.S. House": "Interactive maps, demographics, and election history for all 9 Massachusetts U.S. House congressional districts.",
+}
+
 def office_summary_file(office_name):
     file_name = here(f"website/districts/{OFFICE_SLUG[office_name]}/index.qmd")
     return file_name
@@ -78,7 +85,10 @@ def generate_office_page(office_name):
     print(f"Generating office page {office_name} - {output_file}...")
     with open(here("website/_gen/office_page.qmd")) as f:
         template_str = f.read()
-    file_contents = template_str % {"office_name": office_name}
+    file_contents = template_str % {
+        "office_name": office_name,
+        "description": OFFICE_DESCRIPTION[office_name],
+    }
     with open(output_file, "w") as f:
         f.write(file_contents)
 

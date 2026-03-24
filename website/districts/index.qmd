@@ -6,6 +6,7 @@ execute:
   echo: false
   warning: false
 title: "Massachusetts Legislative Districts"
+description: "Directory of all 217 Massachusetts legislative districts including State Representative, State Senate, Governor's Council, and U.S. House districts."
 canonical-url: true
 ---
 

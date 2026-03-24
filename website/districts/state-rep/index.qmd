@@ -8,6 +8,7 @@ execute:
 params:
   office_name: "State Representative"
 title: "Massachusetts State Representative Districts"
+description: "Interactive maps, demographics, and election history for all 160 Massachusetts State Representative districts."
 open-graph:
   image: "statewide-map.png"
 twitter-card:
@@ -48,3 +49,9 @@ office_table_demographic(params$office_name)
 ```
 
 :::
+
+## All Districts
+
+```{r, results='asis'}
+office_district_links(params$office_name)
+```

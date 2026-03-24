@@ -8,6 +8,7 @@ execute:
 params:
   office_name: "U.S. House"
 title: "Massachusetts U.S. House Districts"
+description: "Interactive maps, demographics, and election history for all 9 Massachusetts U.S. House congressional districts."
 open-graph:
   image: "statewide-map.png"
 twitter-card:
@@ -48,3 +49,9 @@ office_table_demographic(params$office_name)
 ```
 
 :::
+
+## All Districts
+
+```{r, results='asis'}
+office_district_links(params$office_name)
+```

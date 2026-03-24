@@ -9,10 +9,10 @@ project:
     - districts/state-senate/*.qmd
     - districts/gov-council/*.qmd
     - districts/us-house/*.qmd
-# post-render:
-#  # Rewrite every <loc>…/index.html</loc> to <loc>…/</loc>
-#  # - |
-#  #   perl -pi -e 's|<loc>([^<]*)/index\.html</loc>|<loc>$1/</loc>|g' "$QUARTO_PROJECT_OUTPUT_DIR/sitemap.xml"
+  resources:
+    - robots.txt
+  post-render:
+    - ./_fix_sitemap.sh
 
 website:
   title: "mapoli"

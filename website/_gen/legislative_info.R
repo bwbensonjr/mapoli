@@ -214,6 +214,19 @@ simple_office_table <- function(office_name) {
         )
 }
 
+#' Static HTML list of district links for an office (for SEO crawlability)
+office_district_links <- function(office_name) {
+    legislative_district_info |>
+        filter(office == office_name) |>
+        arrange(district_id) |>
+        mutate(link = str_glue(
+            '<a href="{district_file(office, district)}">{district}</a>'
+        )) |>
+        pull(link) |>
+        str_c(collapse = " | ") |>
+        cat()
+}
+
 #' Election history table for a district
 district_elections <- function(office_name, district_name) {
     leg_elections |>

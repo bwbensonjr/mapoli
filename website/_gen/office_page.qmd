@@ -8,6 +8,7 @@ execute:
 params:
   office_name: "%(office_name)s"
 title: "Massachusetts %(office_name)s Districts"
+description: "%(description)s"
 open-graph:
   image: "statewide-map.png"
 twitter-card:
@@ -48,3 +49,9 @@ office_table_demographic(params$office_name)
 ```
 
 :::
+
+## All Districts
+
+```{r, results='asis'}
+office_district_links(params$office_name)
+```
