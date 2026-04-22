@@ -3,10 +3,14 @@ library(tidycensus)
 library(sf)
 library(tigris)
 library(glue)
+library(here)
+
+## ACS 5-year endpoint year (e.g., 2024 = 2020-2024 ACS)
+acs_year <- 2024
 
 ## Read the table of variables we want to capture or use
 message("Reading census variables to collect...")
-census_vars <- read_csv("census_vars.csv")
+census_vars <- read_csv(here("demographics/census_vars.csv"))
 
 ## The set of variables that are only used for calculations but
 ## aren't kept around after use.
@@ -17,7 +21,7 @@ temp_var_names <- census_vars %>%
 census_query <- function(geography, vars, state=NULL) {
     get_acs(geography=geography,
             variables=vars$variable,
-            year=2022,
+            year=acs_year,
             state=state) %>%
         left_join(vars, by="variable") %>%
         pivot_wider(id_cols=c("GEOID", "NAME"),
@@ -100,7 +104,7 @@ city_town_county <- function(comp_name) {
 ## geometry.
 ma_tract_hh <- get_acs(geography="tract",
                        variables=c("NAME", "DP02_0001E"),
-                       year=2022,
+                       year=acs_year,
                        state=25) %>%
     rename(total_households = estimate) %>%
     select(-c(variable, moe))
@@ -178,7 +182,7 @@ city_town_vars <- census_query("county subdivision",
     add_percentage_factors() |>
     select(-all_of(temp_var_names))
 
-city_town_file <- "data/ma_city_town_demographics.csv"
+city_town_file <- here("demographics/data/ma_city_town_demographics.csv")
 message(str_glue("Writing City/Town variables to file {city_town_file}..."))
 city_town_vars |>
     write_csv(city_town_file)
@@ -195,7 +199,7 @@ city_town_vars |>
 
 ## cong_dist_vars <- get_acs(geography="congressional district",
 ##                           variables=census_vars$variable,
-##                           year=2022,
+##                           year=acs_year,
 ##                           sumfile="cd118",
 ##                           state=25) %>%
 ##     left_join(census_vars, by="variable") %>%
@@ -225,20 +229,20 @@ tract_count_vars <- census_vars %>%
     filter(geography == "tract")
 
 message("Reading block geometry...")
-block_geom <- blocks(state=25, year=2022) %>%
+block_geom <- blocks(state=25, year=acs_year) %>%
     st_transform(6491)
 
 message("Reading block group geometry...")
 block_group_geom <- block_groups(state=25,
                                  cb=TRUE,
-                                 year=2022) %>%
+                                 year=acs_year) %>%
     st_transform(6491) %>%
     select(GEOID)
 
 message("Reading tract geometry...")
 tract_geom <- tracts(state=25,
                      cb=TRUE,
-                     year=2022) %>%
+                     year=acs_year) %>%
     st_transform(6491) %>%
     select(GEOID)
 
@@ -323,31 +327,31 @@ interpolate_districts <- function(office, geom_file, out_file) {
 
 interpolate_districts(
     "State Representative",
-    "../gis/geojson/house2021.geojson",
-    "data/ma_state_rep_demographics.csv"
+    here("gis/geojson/house2021.geojson"),
+    here("demographics/data/ma_state_rep_demographics.csv")
 )
 
 interpolate_districts(
     "State Senate",
-    "../gis/geojson/senate2021.geojson",
-    "data/ma_state_senate_demographics.csv"
+    here("gis/geojson/senate2021.geojson"),
+    here("demographics/data/ma_state_senate_demographics.csv")
 )
 
 interpolate_districts(
     "Governor's Council",
-    "../gis/geojson/govcouncil2021.geojson",
-    "data/ma_gov_council_demographics.csv"    
+    here("gis/geojson/govcouncil2021.geojson"),
+    here("demographics/data/ma_gov_council_demographics.csv")
 )
 
 interpolate_districts(
     "U.S. House",
-    "../gis/geojson/congressma118.geojson",
-    "data/ma_us_house_demographics.csv"    
+    here("gis/geojson/congressma118.geojson"),
+    here("demographics/data/ma_us_house_demographics.csv")
 )
 
 message("Interpolating precinct-level values...")
 precinct_geom <-
-    read_sf("../gis/geojson/wards_pcts_subs_2022.geojson") |>
+    read_sf(here("gis/geojson/wards_pcts_subs_2022.geojson")) |>
     rename(
         precinct_name = name,
         ward = Ward,
@@ -360,7 +364,7 @@ precinct_ids <- precinct_geom |>
 precinct_vars <- interpolate_geom(precinct_geom, "precinct_name", 6491) |>
     left_join(precinct_ids, by="precinct_name") |>
     relocate(name=precinct_name, city_town, ward, precinct)
-precinct_file_name <- "data/ma_precinct_demographics.csv"
+precinct_file_name <- here("demographics/data/ma_precinct_demographics.csv")
 message(glue("Writing precinct-level variables to file {precinct_file_name}..."))
 precinct_vars |> write_csv(precinct_file_name)
 

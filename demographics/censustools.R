@@ -3,14 +3,18 @@ library(tidycensus)
 library(sf)
 library(tigris)
 library(e1071)
+library(here)
 
-census_vars <- read_csv("census_vars.csv")
+## ACS 5-year endpoint year (e.g., 2024 = 2020-2024 ACS)
+acs_year <- 2024
+
+census_vars <- read_csv(here("demographics/census_vars.csv"))
 
 census_query <- function(geography, census_vars, geometry=FALSE, state=NULL) {
     get_acs(geography=geography,
             variables=census_vars$variable,
             geometry=geometry,
-            year=2022,
+            year=acs_year,
             sumfile="cd118",
             state=state) %>%
         left_join(census_vars, by="variable") %>%
@@ -18,13 +22,13 @@ census_query <- function(geography, census_vars, geometry=FALSE, state=NULL) {
                     names_from="var_name",
                     values_from="estimate") %>%
         add_calculated_factors()
-}    
+}
 
 census_query_nf <- function(geography, census_vars, geometry=FALSE, state=NULL) {
     get_acs(geography=geography,
             variables=census_vars$variable,
             geometry=geometry,
-            year=2022,
+            year=acs_year,
             state=state) %>%
         left_join(census_vars, by="variable") %>%
         pivot_wider(id_cols=c("GEOID", "NAME"),
@@ -91,8 +95,8 @@ us_cong_geom <- as_tibble(congressional_districts(cb=TRUE, class="sf")) %>%
            water_area = AWATER / 2589988) %>%
     select(GEOID, land_area, water_area, center_latitude, center_longitude)
 
-us_cong_geom %>% write_csv("us_congress_geom_stats.csv")
-# us_cong_geom <- read_csv("us_congress_geom_stats.csv")
+us_cong_geom %>% write_csv(here("demographics/us_congress_geom_stats.csv"))
+# us_cong_geom <- read_csv(here("demographics/us_congress_geom_stats.csv"))
 
 ## Election results for PVI
 ## us_cong_pvi <- read_csv("pres_results_by_congressional_district_08_12_16.csv") %>%
@@ -116,7 +120,7 @@ us_cong <- census_query("congressional district", census_vars) %>%
     left_join(us_cong_geom, by="GEOID") %>%
     mutate(pop_density = total_population / land_area)
 
-write_csv(us_cong, "us_congress_demographics.csv")
+write_csv(us_cong, here("demographics/us_congress_demographics.csv"))
 
 us_states_geom <- as_tibble(states(cb=TRUE, class="sf")) %>%
     mutate(center = (st_transform(geometry, 29101) %>%
@@ -136,18 +140,18 @@ us_states_geom <- as_tibble(states(cb=TRUE, class="sf")) %>%
            center_latitude,
            center_longitude)
 
-write_csv(us_states_geom, "us_states_geom_stats.csv")
+write_csv(us_states_geom, here("demographics/us_states_geom_stats.csv"))
 
-## us_states_geom <- read_csv("us_states_geom_stats.csv") %>%
+## us_states_geom <- read_csv(here("demographics/us_states_geom_stats.csv")) %>%
 ##     select(-c(state_name))
 
-## us_states_religion <- read_csv("us_states_religion_stats.csv") %>%
+## us_states_religion <- read_csv(here("demographics/us_states_religion_stats.csv")) %>%
 ##     select(-c(state, state_name))
 
-## us_states_density <- read_csv("us_states_density_stats.csv") %>%
+## us_states_density <- read_csv(here("demographics/us_states_density_stats.csv")) %>%
 ##     select(-c(state, state_name))
 
-## us_states_pvi <- read_csv("us_states_pvi_2016.csv") %>%
+## us_states_pvi <- read_csv(here("demographics/us_states_pvi_2016.csv")) %>%
 ##     mutate(dem_margin_12 = (Obama_12_Pct - Romney_12_Pct)/100,
 ##            dem_margin_16 = (Clinton_16_Pct - Trump_16_Pct)/100) %>%
 ##     select(state, PVI_N, PVI, dem_margin_16, dem_margin_12, PVI_N_12)
@@ -161,14 +165,14 @@ us_states <- census_query("state", census_vars) %>%
     ## left_join(us_states_pvi, by="state") %>%
     mutate(pop_density = total_population / land_area)
 
-write_csv(us_states, "us_state_demographics.csv")
+write_csv(us_states, here("demographics/us_state_demographics.csv"))
 
 ### Density calculations
 
 ### MA
 ma_tract_hh <- get_acs(geography="tract",
                        variables=c("NAME", "DP02_0001E"),
-                       year=2022,
+                       year=acs_year,
                        state=25) %>%
     rename(total_households = estimate) %>%
     select(-c(variable, moe))
@@ -214,7 +218,7 @@ state_densities <- state_codes %>%
     right_join(state_codes, by="state_fips")
 
 state_densities %>% select(state_fips, state, state_name, density_very_low, density_low, density_medium, density_high) %>%
-    write_csv("us_states_density_stats.csv")
+    write_csv(here("demographics/us_states_density_stats.csv"))
 
 ## County density
 
@@ -249,7 +253,7 @@ state_county_density <- function(state_fips) {
 ## GA Counties
 
 ga_county_density <- state_county_density(13)
-ga_county_religion <- read_csv("arda_religion/us_counties_religion_stats.csv",
+ga_county_religion <- read_csv(here("demographics/arda_religion/us_counties_religion_stats.csv"),
                                col_types=cols(fips = col_character())) %>%
     filter(stabbr == "GA") %>%
     select(county_geoid = fips,
@@ -266,7 +270,7 @@ ga_counties <- census_query("county", census_vars, state="GA") %>%
     left_join(ga_county_density, by="county_geoid") %>%
     mutate(county = str_replace(NAME, " County, Georgia", ""))
 
-write_csv(ga_counties, "ga_county_demographics.csv")
+write_csv(ga_counties, here("demographics/ga_county_demographics.csv"))
 
 ## MA Cities and Towns
 
@@ -337,14 +341,14 @@ ma_towns <- census_query("county subdivision",
              center_latitude,
              center_longitude)
 
-# write_csv(ma_towns, "ma_city_town_demographics_2020.csv")
+# write_csv(ma_towns, here("demographics/ma_city_town_demographics_2020.csv"))
 
-tract_to_town <- read_csv("geocorr2022_2217308962.csv", comment="#") %>%
+tract_to_town <- read_csv(here("demographics/geocorr2022_2217308962.csv"), comment="#") %>%
     mutate(tract_fips = str_c(county, str_remove(tract, fixed("."))),
            city_town_fips = str_c(county, cousub20)) %>%
     select(tract_fips, city_town_fips)
 
-## write_csv(tract_to_town, "ma_tract_fips_to_city_town.csv")
+## write_csv(tract_to_town, here("demographics/ma_tract_fips_to_city_town.csv"))
 
 
 ma_town_density_calc <- function() {
@@ -353,7 +357,7 @@ ma_town_density_calc <- function() {
         select(-c(variable, moe))
     tract_geom <- as_tibble(tracts("25", cb=TRUE, class="sf")) %>%
         mutate(area = (st_area(geometry)/2.59e+6))
-    tract_to_town <- read_csv("ma_tract_fips_to_city_town.csv",
+    tract_to_town <- read_csv(here("demographics/ma_tract_fips_to_city_town.csv"),
                               col_types=list(.default = col_character())) %>%
         rename(GEOID = tract_fips)
     tract_density <- tract_households %>%
@@ -385,7 +389,7 @@ ma_city_town_density <- ma_town_density_calc()
 
 ma_towns_density_pvi <- ma_towns %>%
     left_join(ma_city_town_density, by="city_town_fips") %>%
-    left_join((read_csv("ma_city_town_pvi_2020.csv") %>% rename(city_town_abbr = `City/Town`)),
+    left_join((read_csv(here("demographics/ma_city_town_pvi_2020.csv")) %>% rename(city_town_abbr = `City/Town`)),
               by="city_town_abbr") %>%
     relocate(city_town_fips,
              city_town,
@@ -393,7 +397,7 @@ ma_towns_density_pvi <- ma_towns %>%
              PVI_N,
              total_population)
 
-## write_csv(ma_towns_density_pvi, "ma_city_town_demographics_pvi_2020.csv")
+## write_csv(ma_towns_density_pvi, here("demographics/ma_city_town_demographics_pvi_2020.csv"))
 
 ## MA House Districts
 
@@ -421,7 +425,7 @@ ma_house_geom <- as_tibble(state_legislative_districts(state="25",
            center_latitude,
            center_longitude)
 
-ma_sr_tracts <- read_csv("ma_state_rep_tracts.csv") %>%
+ma_sr_tracts <- read_csv(here("demographics/ma_state_rep_tracts.csv")) %>%
     mutate(GEOID = str_c(state_fips, county_fips, tract_fips)) %>%
     select(GEOID, state_rep_fips)
 
@@ -476,10 +480,10 @@ ma_house_density_cl <- ma_house_density %>%
     left_join(cluster_names, by="density_cluster_number") %>%
     select(-density_cluster_number)
 
-ma_house_pvi <- read_csv("ma_state_rep_dist_pvi_2016.csv") %>%
+ma_house_pvi <- read_csv(here("demographics/ma_state_rep_dist_pvi_2016.csv")) %>%
     rename(district = `State Rep`)
 
-ma_house_inc <- read_csv("ma_state_rep_incumbents_2018.csv") %>%
+ma_house_inc <- read_csv(here("demographics/ma_state_rep_incumbents_2018.csv")) %>%
     select(-office)
 
 ma_house <- census_query("state legislative district (lower chamber)", census_vars, state="25") %>%
@@ -492,7 +496,7 @@ ma_house <- census_query("state legislative district (lower chamber)", census_va
     inner_join(ma_house_pvi, by="district") %>%
     inner_join(ma_house_inc, by="district")
 
-write_csv(ma_house, "ma_state_rep_demographics.csv")
+write_csv(ma_house, here("demographics/ma_state_rep_demographics.csv"))
 
 ## New
 
@@ -507,5 +511,5 @@ ma_tracts <- census_query_nf("tract",
 ma_tracts <- get_acs(geography="tract",
                      variables=cv_tot_pop$varible,
                      geometry=TRUE,
-                     year=2022,
+                     year=acs_year,
                      state=25)
