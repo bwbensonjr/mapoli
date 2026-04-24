@@ -96,3 +96,18 @@ win_model <- stan_glm(dem_win ~ PVI_N + incumbent_status + pres_elec,
 margin_model <- stan_glm(dem_margin ~ PVI_N + incumbent_status + pres_elec,
                          data=leg_elecs,
                          family=gaussian(link="identity"))
+
+## Train/Test
+
+leg_elecs <- read_csv("ma_leg_two_party_2008_2024.csv")
+elecs_train <- leg_elecs %>% filter(election_date < "2022-11-08")
+elecs_test <- leg_elecs %>% filter(election_date >= "2022-11-08")
+
+margin_model <- stan_glm(dem_margin ~ PVI_N + incumbent_status + pres_elec,
+                         data=elecs_train,
+                         family=gaussian(link="identity"))
+
+test_margin <- posterior_predict(margin_model, elecs_test)
+elecs_test$pred_dem_margin <- colMeans(test_margin)
+rmse(elecs_test$dem_margin, elecs_test$pred_dem_margin) # 15.38167
+
