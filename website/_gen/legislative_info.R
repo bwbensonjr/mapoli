@@ -47,8 +47,7 @@ prec_dist <- load_precinct_districts()
 pvi_all <- load_district_pvi()
 leg_elections <- load_legislative_elections()
 district_summaries <- load_district_summaries()
-prec_demographics <- read_csv(here("demographics/data/ma_precinct_demographics.csv"),
-                              show_col_types = FALSE)
+prec_demographics <- load_precinct_demographics()
 
 # Build the main district info data frame
 legislative_district_info <- build_district_info(leg_elections, pvi_all, district_summaries) |>

@@ -182,6 +182,13 @@ load_district_demographics <- function(office_name, district_name) {
         filter(district == district_name)
 }
 
+#' Load precinct-level demographics (most recent census vintage)
+#' @return Data frame with demographic variables for each precinct
+load_precinct_demographics <- function() {
+    read_db_csv("demographics/ma_precinct_demographics.csv.gz") |>
+        filter(census_year == max(census_year))
+}
+
 # --- Geometry Data ---
 
 #' Get the geometry file path for an office
