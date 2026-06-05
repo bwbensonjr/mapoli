@@ -17,6 +17,7 @@ twitter-card:
 ---
 
 ```{r}
+# data-fingerprint: pvi=2024 election=2024-11-05 census=2024 redistricting=2021 summary=2023-01-04
 library(here)
 source(here("_gen/legislative_info.R"))
 ```

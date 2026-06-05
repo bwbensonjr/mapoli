@@ -17,6 +17,7 @@ twitter-card:
 ---
 
 ```{r}
+# data-fingerprint: %(data_fingerprint)s
 library(here)
 source(here("_gen/legislative_info.R"))
 ```
