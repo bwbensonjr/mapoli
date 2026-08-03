@@ -2,7 +2,15 @@
 title: "mapoli"
 description: "Massachusetts Legislative District Atlas with interactive maps, demographics, and election history for all 217 State Representative, State Senate, Governor's Council, and U.S. House districts."
 canonical-url: true
+execute:
+  echo: false
+  warning: false
 ---
+
+```{r}
+library(here)
+source(here("_gen/legislative_info.R"))
+```
 
 ## Massachusetts Legislative District Atlas
 
@@ -14,34 +22,19 @@ legislative districts*
 - [Governor's Council Districts](districts/gov-council/)
 - [U.S. House Districts](districts/us-house/)
 
-## Upcoming Special Elections
+## September Primaries
 
-### [First Middlesex State Senate District](districts/state-senate/first-middlesex.qmd)
+The Massachusetts state primary is **`r PRIMARY_2026_DATE`**. Below is a count
+of the legislative districts with a contested primary — where more than one
+candidate of the same party is on the ballot.
 
-To fill the seat left vacant by the late Edward J. Kennedy who passed
-away on October 1, 2025.
+```{r}
+primary_2026_summary_table()
+```
 
-- Special State Primary - February 3, 2026
-  - Democratic Candidates 
-    - [State Rep. Rodney M. Elliott](https://www.ocpf.us/filers?q=12877) (D-Lowell) - [Sixteenth Middlesex District](districts/state-rep/sixteenth-middlesex.qmd)
-    - [State Rep. Vanna Howard](https://www.ocpf.us/filers?q=17499) (D-Lowell) - [Seventeenth Middlesex District](districts/state-rep/seventeenth-middlesex.qmd)
-  - Republican Candidates
-    - [Sam Meas](https://www.ocpf.us/filers?q=15519) (R-Haverhill)
-- Special State Election - March 3, 2026 
-
-### [Fifth Essex State Representative District](districts/state-rep/fifth-essex.qmd)
-
-To fill the seat left vacant by the late Ann-Margaret Ferrante
-(D-Gloucester) who passed away on November 27, 2025.
-
-- Special State Primary - March 3, 2026
-  - Democratic Candidates 
-    - [Andrew Tarr](https://www.ocpf.us/Filers/?q=19580) (D-Gloucester)
-    - [Sarah Wilkinson](https://www.ocpf.us/Filers/?q=19579) (D-Rockport)
-  - Republican Candidates
-    - [Christina Delisio](https://www.ocpf.us/Filers/?q=19596) (R-Manchester)
-    - [Ashley Sullivan](https://www.ocpf.us/Filers/?q=17678) (R-Gloucester)
-- Special State Election - March 31, 2026
+See the [September 2026 primary candidates](primaries-2026.html) page for the
+Democratic and Republican candidates in each of those districts, grouped by
+office, with incumbents and open seats marked.
 
 ## Fun Facts
 

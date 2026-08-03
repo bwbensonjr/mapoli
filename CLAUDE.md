@@ -70,6 +70,7 @@ prec_dist <- load_precinct_districts()      # Precinct-to-district mapping
 pvi <- load_district_pvi()                   # District PVI data
 elections <- load_legislative_elections()   # Election history since 1990
 summaries <- load_district_summaries()      # District text descriptions
+primaries <- load_primary_2026_candidates() # Sept 1, 2026 primary candidates
 
 # Build combined district info
 district_info <- build_district_info()      # Joins elections + PVI + summaries
@@ -103,6 +104,22 @@ districts <- get_office_districts(district_info, "State Senate")
 history <- get_district_election_history(elections, office, district)
 latest <- get_district_latest_election(elections, office, district)
 ```
+
+**Primary Election Queries:**
+```r
+# Contested primaries (more than one candidate of the same party)
+contested <- get_contested_primaries(primaries)
+# Returns: office, district, district_id, party, num_candidates
+
+# Districts with a contested primary for one office, in district_id order
+districts <- get_contested_primary_districts(primaries, "State Senate")
+
+# All candidates in a district, both parties, Democrats first
+cands <- get_district_primary_candidates(primaries, office, district)
+```
+
+Candidate rows carry `is_incumbent` and `incumbent_running` resolved upstream
+in ma-election-db, so no name matching is needed here.
 
 **Precinct Queries:**
 ```r
@@ -342,6 +359,7 @@ uv run python generate_pages.py
 - `website/_gen/district_page.qmd`: Template for individual district pages
 - `website/_gen/office_page.qmd`: Template for office summary pages
 - `website/_gen/legislative_info.R`: Website-specific gt tables and tmap maps (uses shared R modules)
+- `website/primaries-2026.qmd`: Hand-maintained page listing contested September 1, 2026 primaries by office and district (not template-generated)
 
 ### Data Processing
 - `districts/generate_pages.py`: Legacy district page generation logic (districts version)

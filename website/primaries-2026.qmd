@@ -1,0 +1,52 @@
+---
+execute:
+  echo: false
+  warning: false
+title: "September 2026 Primary Candidates"
+description: "Democratic and Republican candidates in contested Massachusetts legislative primaries for the September 1, 2026 state primary, by district."
+canonical-url: true
+---
+
+```{r}
+library(here)
+source(here("_gen/legislative_info.R"))
+```
+
+Candidates on the ballot for the **`r PRIMARY_2026_DATE`** Massachusetts state
+primary, for every legislative district with a contested primary — that is,
+where more than one candidate of the same party is running. Districts where
+both parties field a single candidate are not listed.
+
+Where a district is contested for one party only, the other party's candidate
+is shown marked *unopposed*. Sitting legislators are marked *incumbent*, and
+seats whose incumbent is not seeking re-election are flagged as open. District
+names link to the full district page with maps, demographics, and election
+history.
+
+```{r}
+primary_2026_summary_table()
+```
+
+## State Representative
+
+```{r, results='asis'}
+primary_2026_office_section("State Representative")
+```
+
+## State Senate
+
+```{r, results='asis'}
+primary_2026_office_section("State Senate")
+```
+
+## Governor's Council
+
+```{r, results='asis'}
+primary_2026_office_section("Governor's Council")
+```
+
+## U.S. House
+
+```{r, results='asis'}
+primary_2026_office_section("U.S. House")
+```

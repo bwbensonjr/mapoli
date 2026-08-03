@@ -84,6 +84,24 @@ load_legislative_elections <- function() {
         mutate(district = fix_district(district))
 }
 
+#' Load candidates for the September 1, 2026 state primary
+#'
+#' Nominations (not results) transcribed from the Secretary of the
+#' Commonwealth candidate listings. Restricted to the four legislative
+#' offices; the source data also covers Governor and U.S. Senate.
+#' Incumbency is resolved upstream in ma-election-db, so `is_incumbent`
+#' and `incumbent_running` can be used directly.
+#' @return Data frame with one row per candidate on the primary ballot
+load_primary_2026_candidates <- function() {
+    # Get list of valid legislative offices
+    pvi <- load_district_pvi()
+    legislative_offices <- unique(pvi$office)
+
+    read_db_csv("primary_2026/ma_primary_2026_candidates.csv.gz") |>
+        filter(office %in% legislative_offices) |>
+        mutate(district = fix_district(district))
+}
+
 #' Get the most recent general election date for each office
 #' @param leg_elections Data frame from load_legislative_elections()
 #' @return Data frame with office and latest_general date
