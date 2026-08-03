@@ -112,6 +112,46 @@ get_district_latest_election <- function(leg_elections, office_name, district_na
         slice(1)
 }
 
+# --- Primary Election Queries ---
+
+#' Get contested primaries (more than one candidate of the same party)
+#' @param primary_cands Data frame from load_primary_2026_candidates()
+#' @return Data frame with office, district, district_id, party, num_candidates
+get_contested_primaries <- function(primary_cands) {
+    primary_cands |>
+        count(office, district, district_id, party,
+              name = "num_candidates") |>
+        filter(num_candidates > 1) |>
+        arrange(office, district_id, party)
+}
+
+#' Get districts with at least one contested primary for an office
+#' @param primary_cands Data frame from load_primary_2026_candidates()
+#' @param office_name Office name
+#' @return Character vector of district names, in district_id order
+get_contested_primary_districts <- function(primary_cands, office_name) {
+    get_contested_primaries(primary_cands) |>
+        filter(office == office_name) |>
+        distinct(district, district_id) |>
+        arrange(district_id) |>
+        pull(district)
+}
+
+#' Get all primary candidates for a district, both parties
+#'
+#' Includes parties fielding a single candidate so an unopposed candidate
+#' can be shown alongside a contested one in the same district.
+#' @param primary_cands Data frame from load_primary_2026_candidates()
+#' @param office_name Office name
+#' @param district_name District name
+#' @return Data frame with one row per candidate, Democrats first
+get_district_primary_candidates <- function(primary_cands, office_name,
+                                           district_name) {
+    primary_cands |>
+        filter(office == office_name, district == district_name) |>
+        arrange(party, desc(is_incumbent), name)
+}
+
 # --- Precinct Queries ---
 
 #' Count precincts per city/town

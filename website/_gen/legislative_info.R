@@ -40,6 +40,15 @@ district_web_ref <- function(office_name, district_name) {
     str_glue("<a href={district_file(office_name, district_name)}>{district_name}</a>")
 }
 
+#' Generate district page path relative to the website root
+#'
+#' Unlike district_file(), which is only valid from within an office
+#' directory, this includes the office directory and so works from
+#' top-level pages such as index.qmd and primaries-2026.qmd.
+district_page_href <- function(office_name, district_name) {
+    str_glue("districts/{office_slug(office_name)}/{district_slug(district_name)}.html")
+}
+
 # --- Load Data ---
 # Data is loaded once when this file is sourced
 
@@ -48,6 +57,7 @@ pvi_all <- load_district_pvi()
 leg_elections <- load_legislative_elections()
 district_summaries <- load_district_summaries()
 prec_demographics <- load_precinct_demographics()
+primary_2026_candidates <- load_primary_2026_candidates()
 
 # Build the main district info data frame
 legislative_district_info <- build_district_info(leg_elections, pvi_all, district_summaries) |>
@@ -224,6 +234,117 @@ office_district_links <- function(office_name) {
         pull(link) |>
         str_c(collapse = " | ") |>
         cat()
+}
+
+# --- September 2026 Primary Functions ---
+
+PRIMARY_2026_DATE <- "September 1, 2026"
+
+#' Contested-primary counts by office (for the front page)
+primary_2026_summary_table <- function() {
+    contested <- get_contested_primaries(primary_2026_candidates)
+
+    by_party <- contested |>
+        count(office, party, name = "num_primaries") |>
+        pivot_wider(
+            names_from = party,
+            values_from = num_primaries,
+            values_fill = 0
+        )
+    # A party with no contested primary anywhere yields no column
+    for (p in c("Democratic", "Republican")) {
+        if (!p %in% names(by_party)) by_party[[p]] <- 0L
+    }
+
+    contested |>
+        distinct(office, district) |>
+        count(office, name = "num_districts") |>
+        left_join(by_party, by = "office") |>
+        mutate(office = factor(office, levels = list_offices())) |>
+        arrange(office) |>
+        select(office, num_districts, Democratic, Republican) |>
+        gt() |>
+        cols_label(
+            office = "Office",
+            num_districts = "Districts",
+            Democratic = "Democratic",
+            Republican = "Republican"
+        ) |>
+        tab_spanner(
+            label = "Contested Primaries",
+            columns = c(Democratic, Republican)
+        ) |>
+        cols_align(align = "center", columns = c(num_districts, Democratic, Republican)) |>
+        cols_width(
+            office ~ px(220),
+            everything() ~ px(130)
+        )
+}
+
+#' Markdown candidate table for one district's primaries
+#'
+#' Includes every candidate in the district, both parties, so a party
+#' fielding a single candidate appears marked as unopposed alongside a
+#' contested one. The incumbent is flagged from the upstream
+#' `is_incumbent` field.
+primary_2026_district_table <- function(cands) {
+    cands |>
+        add_count(party, name = "party_cands") |>
+        mutate(
+            Party = if_else(
+                party_cands > 1,
+                party,
+                str_c(party, " *(unopposed)*")
+            ),
+            Candidate = if_else(
+                is_incumbent == 1,
+                str_c(name, " *(incumbent)*"),
+                name
+            )
+        ) |>
+        select(Party, Candidate, `City/Town` = city_town) |>
+        knitr::kable(format = "markdown")
+}
+
+#' Hyperlinked headings and candidate tables for an office's contested
+#' primaries. Call from a `results='asis'` chunk.
+primary_2026_office_section <- function(office_name) {
+    districts <- get_contested_primary_districts(primary_2026_candidates, office_name)
+
+    if (length(districts) == 0) {
+        cat("No contested primaries for this office.\n\n")
+        return(invisible(NULL))
+    }
+
+    for (district_name in districts) {
+        cands <- get_district_primary_candidates(
+            primary_2026_candidates, office_name, district_name
+        )
+
+        # Heading links to the district page, annotated with PVI and
+        # whether the incumbent is defending the seat
+        notes <- character(0)
+        pvi <- get_district_pvi(legislative_district_info, office_name, district_name)
+        if (length(pvi) > 0 && !is.na(pvi[1])) {
+            notes <- c(notes, str_c("PVI ", pvi[1]))
+        }
+        if (first(cands$incumbent_running) == 0) {
+            notes <- c(notes, str_c(
+                "open seat — ", first(cands$incumbent_name), " not running"
+            ))
+        }
+        annotation <- if (length(notes) > 0) {
+            str_c(" — ", str_c(notes, collapse = " · "))
+        } else {
+            ""
+        }
+
+        href <- district_page_href(office_name, district_name)
+        cat(str_c("### [", district_name, "](", href, ")", annotation, "\n\n"))
+        cat(primary_2026_district_table(cands), sep = "\n")
+        cat("\n\n")
+    }
+    invisible(NULL)
 }
 
 #' Election history table for a district

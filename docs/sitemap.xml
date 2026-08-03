@@ -474,7 +474,7 @@
   </url>
   <url>
     <loc>https://mapoli.us/districts/state-rep/eleventh-hampden.html</loc>
-    <lastmod>2026-03-22T14:34:14.555Z</lastmod>
+    <lastmod>2026-06-05T00:14:40.663Z</lastmod>
   </url>
   <url>
     <loc>https://mapoli.us/districts/state-rep/eleventh-norfolk.html</loc>
@@ -866,7 +866,7 @@
   </url>
   <url>
     <loc>https://mapoli.us/districts/us-house/first.html</loc>
-    <lastmod>2026-03-22T14:34:16.127Z</lastmod>
+    <lastmod>2026-06-05T00:14:40.722Z</lastmod>
   </url>
   <url>
     <loc>https://mapoli.us/districts/us-house/second.html</loc>
@@ -895,5 +895,9 @@
   <url>
     <loc>https://mapoli.us/districts/</loc>
     <lastmod>2025-08-11T22:15:24.347Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mapoli.us/primaries-2026.html</loc>
+    <lastmod>2026-08-03T17:46:53.654Z</lastmod>
   </url>
 </urlset>
